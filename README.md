@@ -1,102 +1,101 @@
-# [Software name]
+# RegulonDB Web Data Prosses Services
 
-# Description
+welcome n.n/
+version 0.2.0
 
-[High-level description, describing what exactly software does.]
+## Description
+This service allows data processing from RegulonDB-HT GraphQL API services. It transforms datamat information into CVS, BED, GFF3 and regulonDB specific formats.
 
-# Motivation
+## Hardware requirements
 
-[Why the software does things the way it does and why it was designed in the first place. What problems are solved by it. Links to publications and comparisons to similar software.]
+### Server
 
+minimum requirements
 
+-   CPU > 2 GHz, 4 cores
+-   RAM > 8Gb
+-   Space on disk > 5 Gb
+-   A connection to the Internet if RegulonDB-HT GraphQL API is not installed on the server
 
-# System requirements
+### Client
 
-[If the software does make high demand on particular resources, then this should be clearly advertised and explained.]
+This application is rendered on server side. Any device that supports connections to a network is supported
 
-# Install 
+minimum requirements
 
-[This may be described in a separate INSTALL file, but the README must then clearly state this.]
+-   A connection to the Internet
 
+## Software Requirements
 
+### server:
 
-# Quick start
+-   RegulonDB-HT GraphQL API
+-   Python 3.8
 
-[How the first task can be performed with the software, or, in the more extensive  documentation, a link to the quick start. Outlines how to quickly get started with the software using a basic yet practical example]
+### Client
 
+- Chrome 60+
+- Safari 10+ / iOS Safari 10+
+- Edge 12+
+- Firefox ESR+
+- Internet Explorer 11
+- Opera
 
+## Installation
 
-# Project website 
+**Step 1 download project**
+You need to download this repository, in its master branch,
 
-[Website where the software is described and allows users to obtain it as well as its documentation.]
+```shell
+git clone https://github.com/regulondbunam/RegulonDBHT-Web.git
+```
 
-# License
+You can also download the zip file from the repository and unzip it to a designated location
 
-[Defines the set of rules and conditions for people who want to use the software.]
+**Step 2 install venv**
+install venv python library
+```shell
+sudo apt install python3-venv
+```
+Enter the project directory and src and install venv with the following command
+```shell
+cd regulonDB-wdpservice/src
+python3 -m venv venv
+```
+**Step 3 activate venv**
+on project directory
+```shell
+. venv/bin/activate
+```
+**Step 4 install project dependencies**
 
-# Support contact information
+dependencies: 
+- flask
+- sgqlc
+- flask-cors
+- csv
+- python-dotenv
+```shell
+pip install flask flask-cors sgqlc python-dotenv
+```
+**Step 5 configuration**
 
-[It should be clear where to go for support, for example a contact e-mail address]
+At the root of the project, you will find the .envExample file where you will find the information to declare the environment variables so that the application can connect to the regulonDB web services.
 
-# Software quality checklist
+duplicate the .env-sample file and rename it to .env and add the information requested in the .envExample file.
 
-[This may describe the state of the code, providing the necessary guidance on which aspects could be improved]
+``` 
+#rename this file to '.env' when the fields have been filled
+# GQL_SERVICE = "url of RegulonDB-HT GraphQL API"
 
-**Accessibility**
+GQL_SERVICE=000.000.000.00
+```
 
-- [ ] Unique DOI [identifier](http://....) (Please update identifier and link)
-- [ ] Version control system
+**Step 6 start service**
 
-**Documentation**
+You can find more information on how to implement this application in the following link [Flask Minimal Application](https://flask.palletsprojects.com/en/2.0.x/quickstart/#a-minimal-application)
 
-- [ ] README file
-
-**Learnability**
-
-- [ ] Quick start
-
-**Buildability**
-
-- [ ] INSTALL file
-
-**Identity**
-
-- [ ] Website
-
-**Copyright & Licensing**
-
-- [ ] LICENSE file
-
-**Portability**
-
-- [ ] Multiple platforms
-- [ ] Browsers
-
-**Supportability**
-
-- [ ] E-mail address
-- [ ] Issue tracker
-- [ ] Slack
-- [ ] Gitter
-
-**Analysability**
-
-- [ ] Source code structured
-- [ ] Sensible names
-- [ ] Coding standards - [style guides](http://google.github.io/styleguide/)
-
-**Changeability**
-
-- [ ] CONTRIBUTING file
-- [ ] Code of Conduct file
-- [ ] Code changes, and their authorship, publicly visible
-
-**Reusability**
-
-- [ ] Source code set up in a modular fashion
-
-**Security & Privacy**
-
-- [ ] Passwords must never be stored in unhashed form
-
-
+```shell
+export FLASK_APP=app.py
+flask run --host=0.0.0.0
+```
