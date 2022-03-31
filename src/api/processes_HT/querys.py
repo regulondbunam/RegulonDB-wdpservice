@@ -48,22 +48,6 @@ class Querys:
                     distanceTo
                 }
             }
-            foundClassicRIs {
-                tfbsLeftPosition
-                tfbsRightPosition
-                relativeGeneDistance
-                relativeTSSDistance
-                strand
-                sequence
-            }
-            foundDatasetRIs {
-                tfbsLeftPosition
-                tfbsRightPosition
-                relativeGeneDistance
-                relativeTSSDistance
-                strand
-                sequence
-            }
             peakId
             score
             strand
@@ -164,11 +148,33 @@ class Querys:
         }
         """
 
+    GEDataOfDataset = """
+    query GEDataOfDataset($datasetId: String!){
+    getAllGeneExpressionOfDataset(datasetId: $datasetId limit: 0){
+      _id
+        datasetIds
+        gene {
+          _id
+          name
+          synonyms
+          bnumber
+          leftEndPosition
+          rightEndPosition
+        }
+        count
+        tpm
+        fpkm
+        temporalId
+      }
+    }
+    """
+
     switch_querys = {
         "author": AuthorsDataOfDataset,
         "peaks": PeaksDataOfDataset,
         "sites": SitesDataOfDataset,
         "tus": TuDataOfDataset,
         "tts": TtsOfDataset,
-        "tss": TssDataOfDataset
+        "tss": TssDataOfDataset,
+        "ge": GEDataOfDataset
     }

@@ -89,7 +89,7 @@ ObjectTested = {
 }
 
 DatasetPublication = {
-    "pmid": int,
+    "pmid": str,
     "doi": str,
     "authors": str,
     "title": str,

@@ -20,22 +20,23 @@ class DatasetsSearch:
             self.response = 'invalid format: ' + file_format
             return ""
         data = False
-        if not self.is_caching:
+        if self.is_caching:
             data = self.check_cache(file_format)
         if not data:
             try:
                 ws = WServices(self.gql_service, self.advanced_search)
                 data = ws.get_data()
                 if file_format == 'jsontable':
-                    data = dataset_jsontable(data)
-                    data = json.dumps(data)
-                    data = json.loads(data)
-                    self.response = jsonify(data)
+                    json_data = dataset_jsontable(data)
+                    json_data = json.dumps(json_data)
+                    json_data = json.loads(json_data)
+                    self.response = jsonify(json_data)
                 else:
                     self.response = {"error": "formato invalido"}
                 data = str(data)
-                with open("./cache/" + file_format + "_" + self.advanced_search + ".cache", "w") as file:
-                    file.write(data)
+                if self.is_caching:
+                    with open("./cache/" + file_format + "_" + self.advanced_search + ".cache", "w") as file:
+                        file.write(data)
             except Exception as e:
                 print("dataset error: "+str(e))
                 self.response = "dataset process error: " + str(e)

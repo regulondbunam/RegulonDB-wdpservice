@@ -23,5 +23,7 @@ class WServices:
             return data['data']['getAllTTSOfDataset']
         elif self.data_type == "tss":
             return data['data']['getAllTSSOfDataset']
+        elif self.data_type == "ge":
+            return data['data']['getAllGeneExpressionOfDataset']
         else:
             return {"error": "data type"}

@@ -31,8 +31,8 @@ def ht_datasets(file_format):
     file_format = file_format.lower()
     if request.method == 'POST':
         data_json = request.get_json()
-        print(data_json['advancedSearch'])
-        dataset_search = DatasetsSearch(data_json['advancedSearch'], True, gql_service)
+        print(data_json)
+        dataset_search = DatasetsSearch(data_json['advancedSearch'], False, gql_service)
         dataset_search.get_data(file_format)
         return dataset_search.response
     return '''
@@ -45,7 +45,7 @@ def process_ht(id_dataset, data_type, file_format):
     data_type = data_type.lower()
     ht_process = HTprocess(id_dataset, gql_service)
     response = 'error a'
-    valid_types = ["sites", "peaks", "tus", "tts", "tss"]
+    valid_types = ["sites", "peaks", "tus", "tts", "tss", "ge"]
     if data_type == 'authordata':
         ht_process.author_data(file_format)
         return ht_process.get_response()

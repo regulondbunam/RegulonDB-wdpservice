@@ -29,7 +29,6 @@ class Querys:
       }
       platform {
         _id
-        source
         title
       }
       title
