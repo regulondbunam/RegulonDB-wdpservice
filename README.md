@@ -1,7 +1,7 @@
 # RegulonDB Web Data Prosses Services
 
 welcome n.n/
-version 0.2.0
+version 0.3.2
 
 ## Description
 This service allows data processing from RegulonDB-HT GraphQL API services. It transforms datamat information into CVS, BED, GFF3 and regulonDB specific formats.
