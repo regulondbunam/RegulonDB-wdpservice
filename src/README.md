@@ -1,4 +1,4 @@
-# RegulonDB Web Data Prosses Services
+# RegulonDB Web Data Process Services
 
 welcome n.n/
 version 0.3.2
