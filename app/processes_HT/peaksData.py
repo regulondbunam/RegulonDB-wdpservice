@@ -1,3 +1,12 @@
+import json 
+
+
+def process_peaks_to_jsonGQL(peaks):
+    jsongql = {'data': peaks }
+    jsongql = json.dumps( jsongql ) 
+    return jsongql
+
+
 def process_peaks_to_jsonT(peaks):
     columns = """[
         {"Header": "Start", "accessor": "_start"},
@@ -16,20 +25,22 @@ def process_peaks_to_jsonT(peaks):
             try:
                 for gen in peak["closestGenes"]:
                     products = ", ".join(gen["productName"])
-                    dat = "{'_id':'"+gen["_id"]+"','name':'"+gen["name"]+"','distanceTo': '"+str(
-                        gen["distanceTo"])+"', 'productName': '"+products+"'},"
+                    dat = '{"_id":"'+gen['_id']+'","name":"'+gen['name']+'","distanceTo": "'+str(
+                        gen['distanceTo'])+'", "productName": "'+products+'"},'
                     genes = genes + dat
                 genes = genes[:-1]
             except:
                 print('An exception occurred on peak')
             genes = genes + "]"
+            if genes is "]":
+              genes = []
             data.append(
                 f"""{{
                     "_start": "{peak["peakLeftPosition"]}",
                     "_end": "{peak["peakRightPosition"]}",
                     "_score": "{peak["score"]}",
                     "_name": "{peak["name"]}",
-                    "_gene": "{genes}"
+                    "_gene": {genes}
                     }}"""
             )
         data = ",\n".join(data)

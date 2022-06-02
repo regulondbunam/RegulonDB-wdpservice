@@ -4,8 +4,8 @@ from flask import Response, jsonify
 from .querys import Querys
 from .web_services import WServices
 from .authorData import formatData_to_json_author_table
-from .sitesData import process_sites_to_gff3, process_sites_to_jsonT
-from .peaksData import process_peaks_to_gff3, process_peaks_to_jsonT
+from .sitesData import process_sites_to_gff3, process_sites_to_jsonT, process_sites_to_jsonGQL
+from .peaksData import process_peaks_to_gff3, process_peaks_to_jsonT, process_peaks_to_jsonGQL
 from .tuData import process_tus_to_gff3, process_tus_to_jsonT
 from .ttsData import process_tts_to_gff3, process_tts_to_jsonT
 from .tssData import process_tss_to_gff3, process_tss_to_jsonT
@@ -22,7 +22,7 @@ class HTprocess:
 
     def get_data(self, file_format, data_type):
         file_format = file_format.lower()
-        valid_formats = ["gff3", "jsontable", "bedgraph"]
+        valid_formats = ["gff3", "jsontable","jsongql", "bedgraph"]
         if file_format not in valid_formats:
             self.ht_response = 'invalid format: ' + file_format
             return ""
@@ -47,7 +47,7 @@ class HTprocess:
                     self.ht_response = Response(
                         data,
                         mimetype="text/gff3",
-                        headers={"Content-disposition": "attachment; gff3_"+data_type+"_" + self.dataset_id + ".gff3"}
+                        headers={"Content-disposition": "attachment; filename=gff3_"+data_type+"_" + self.dataset_id + ".gff3"}
                     )
                 elif file_format == "bedgraph":
                     if data_type == "ge":
@@ -73,6 +73,17 @@ class HTprocess:
                         data = process_ge_to_jsont(data)
                     else:
                         data = "{error : file format ht process}"
+                    data_json = json.loads(data)
+                    self.ht_response = jsonify(data_json)
+                elif file_format == "jsongql":
+                    if data_type == "sites":
+                        data = process_sites_to_jsonGQL(data)
+                    elif data_type == "peaks":
+                        data = process_peaks_to_jsonGQL(data)
+                    else:
+                        data = '{"error" : "file format ht process"}'
+                    with open("./cache/" + self.dataset_id + "_"+data_type+"_" + file_format + ".cache", "w") as file:
+                        file.write(data)
                     data_json = json.loads(data)
                     self.ht_response = jsonify(data_json)
                 else:

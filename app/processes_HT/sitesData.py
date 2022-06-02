@@ -1,3 +1,12 @@
+import json 
+
+
+def process_sites_to_jsonGQL(sites):
+    jsongql = {'data': sites }
+    jsongql = json.dumps( jsongql ) 
+    return jsongql
+
+
 def process_sites_to_jsonT(sites):
     columns = """[
         {"Header": "Start", "accessor": "_start"},
