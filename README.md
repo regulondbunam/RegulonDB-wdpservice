@@ -57,9 +57,8 @@ install venv python library
 ```shell
 sudo apt install python3-venv
 ```
-Enter the project directory and src and install venv with the following command
+Enter the project directory and install venv with the following command
 ```shell
-cd regulonDB-wdpservice/src
 python3 -m venv venv
 ```
 **Step 3 activate venv**
@@ -88,7 +87,7 @@ duplicate the .env-sample file and rename it to .env and add the information req
 #rename this file to '.env' when the fields have been filled
 # GQL_SERVICE = "url of RegulonDB-HT GraphQL API"
 
-GQL_SERVICE=000.000.000.00
+GQL_SERVICE=http://000.000.000.00
 ```
 
 **Step 6 start service**
@@ -99,3 +98,4 @@ You can find more information on how to implement this application in the follow
 export FLASK_APP=app.py
 flask run --host=0.0.0.0
 ```
+Development note, if you are using visual code you have to execute the following command "pip install Flask-Session" before entering venv

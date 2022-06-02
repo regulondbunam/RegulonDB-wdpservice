@@ -120,7 +120,7 @@ class HTprocess:
             self.ht_response = Response(
                 data,
                 mimetype="text/csv",
-                headers={"Content-disposition": "attachment; authorData_author_" + self.dataset_id + ".csv"}
+                headers={"Content-disposition": "attachment; filename=authorData_author_" + self.dataset_id + ".csv"}
             )
         elif file_format == 'jsontable':
             # print(data)

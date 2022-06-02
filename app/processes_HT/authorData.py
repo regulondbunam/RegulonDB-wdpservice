@@ -9,7 +9,7 @@ def formatData_to_json_author_table(authorsData):
         'columns': [],
         'data': []
     }
-    font_size = 8
+    font_size = 9
     file = StringIO(""+authorsData)
     reader = csv.reader(file, delimiter=',')
     author_data = []

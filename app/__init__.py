@@ -2,9 +2,9 @@ import os
 from flask import Flask, request
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
-from api.processes_HT.ht_process import HTprocess
-from api.processes_HT.authorData import formatData_to_json_author_table
-from api.ht.dataset.datasets import DatasetsSearch
+from app.processes_HT.ht_process import HTprocess
+from app.processes_HT.authorData import formatData_to_json_author_table
+from app.ht.dataset.datasets import DatasetsSearch
 
 app = Flask(__name__)
 CORS(app)
@@ -26,7 +26,7 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-@app.route('/ht/wdps/<file_format>', methods=['GET', 'POST'])
+@app.route('/wdps/<file_format>', methods=['GET', 'POST'])
 def ht_datasets(file_format):
     file_format = file_format.lower()
     if request.method == 'POST':
@@ -40,7 +40,7 @@ def ht_datasets(file_format):
         '''
 
 
-@app.route('/ht/wdps/<id_dataset>/<data_type>/<file_format>')
+@app.route('/wdps/<id_dataset>/<data_type>/<file_format>')
 def process_ht(id_dataset, data_type, file_format):
     data_type = data_type.lower()
     ht_process = HTprocess(id_dataset, gql_service)
@@ -53,21 +53,3 @@ def process_ht(id_dataset, data_type, file_format):
         ht_process.get_data(file_format, data_type)
         return ht_process.get_response()
     return response
-
-
-'''
-# check if the post request has the file part
-        if 'file' not in request.files:
-            flash('No file part')
-            return redirect(request.url)
-        file = request.files['file']
-        # If the user does not select a file, the browser submits an
-        # empty file without a filename.
-        if file.filename == '':
-            flash('No selected file')
-            return redirect(request.url)
-        if file and allowed_file(file.filename):
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            return redirect(url_for('download_file', name=filename))
-'''
