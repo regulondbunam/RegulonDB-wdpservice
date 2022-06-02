@@ -1,16 +1,44 @@
 
-
-def process_tus_to_jsont(tus):
-    json_tus_table = {
-        'comments': [],
-        'columns': [],
-        'data': []
-    }
-    columns = ['start', 'end', 'score', 'strand', 'sequence', 'genes']
-    return json_tus_table
+def process_tus_to_jsonT(tus):
+    columns = """[
+        {"Header": "Start", "accessor": "_start"},
+        {"Header": "End", "accessor": "_end"},
+        {"Header": "Name", "accessor": "_name"},
+        {"Header": "Strand", "accessor": "_strand"},
+        {"Header": "Genes", "accessor": "_gene"}
+        ]"""
+    data = []
+    try:
+        for tu in tus:
+            genes = "["
+            for key in tu:
+                if not tu[key]:
+                    tu[key] = ""
+            try:
+                for gen in tu["genes"]:
+                    dat = "{'_id':'"+gen["_id"]+"','name':'"+gen["name"]+"'},"
+                    genes = genes + dat
+                genes = genes[:-1]
+            except:
+                print('An exception occurred on tus gene')
+            genes = genes + "]"
+            data.append(
+                f"""{{
+                    "_start": "{tu["leftEndPosition"]}",
+                    "_end": "{tu["rightEndPosition"]}",
+                    "_name": "{tu["name"]}",
+                    "_strand": "{tu["strand"]}",
+                    "_gene": "{genes}"
+                    }}"""
+            )
+        data = ",\n".join(data)
+    except:
+        print('An exception occurred on process_peaks_to_jsonT')
+    return f'{{ "columns": {columns}, "data":[{data}] }}'
 
 
 def process_tus_to_gff3(tus):
+    print(tus[0])
     # chromosome,RegulonDB,transcript_region,chrLeftPosition,chrRightPosition,score,strand,.,name=TU_1;TUlength=162;TUgenes=b0001
     gff3_tus = ""
     for tu in tus:

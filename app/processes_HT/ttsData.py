@@ -1,16 +1,45 @@
 
-
-def process_tts_to_jsont(tts):
-    json_tts_table = {
-        'comments': [],
-        'columns': [],
-        'data': []
-    }
-    columns = ['start', 'end', 'score', 'strand', 'sequence', 'genes']
-    return json_tts_table
+def process_tts_to_jsonT(tts):
+    columns = """[
+        {"Header": "Start", "accessor": "_start"},
+        {"Header": "End", "accessor": "_end"},
+        {"Header": "Name", "accessor": "_name"},
+        {"Header": "Strand", "accessor": "_strand"},
+        {"Header": "ClosestGenes", "accessor": "_gene"}
+        ]"""
+    data = []
+    try:
+        for tt in tts:
+            genes = "["
+            for key in tt:
+                if not tt[key]:
+                    tt[key] = ""
+            try:
+                for gen in tt["closestGenes"]:
+                    dat = "{'_id':'"+gen["_id"]+"','name':'"+gen["name"]+"','distanceTo': '"+str(
+                        gen["distanceTo"])+"'},"
+                    genes = genes + dat
+                genes = genes[:-1]
+            except:
+                print('An exception occurred on tts gene')
+            genes = genes + "]"
+            data.append(
+                f"""{{
+                    "_start": "{tt["leftEndPosition"]}",
+                    "_end": "{tt["rightEndPosition"]}",
+                    "_name": "{tt["name"]}",
+                    "_strand": "{tt["strand"]}",
+                    "_gene": "{genes}"
+                    }}"""
+            )
+        data = ",\n".join(data)
+    except:
+        print('An exception occurred on process_peaks_to_jsonT')
+    return f'{{ "columns": {columns}, "data":[{data}] }}'
 
 
 def process_tts_to_gff3(tts):
+    #print(tts[0])
     # NC_000913.3	RegulonDB	transcription_termination_site	308	308	.	+	0	name=TTS_1
     gff3_tts = ""
     for tt in tts:

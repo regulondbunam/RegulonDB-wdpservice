@@ -1,3 +1,22 @@
+def process_ge_to_csv(ge):
+    table = {
+        "columns": ["gene","leftEndPosition","rightEndPosition","TPM","FPKM",],
+        "data": []
+    }
+    try:
+      for ex in ge:
+        data = []
+        if ex["gene"]:
+            gene = ex["gene"]["name"]
+            lp = ex["gene"]["leftEndPosition"]
+            rp = ex["gene"]["rightEndPosition"]
+            data = [gene,lp,rp,ex["tpm"],ex["fpkm"]]
+        table["data"].append(data)
+    except:
+      print('An exception occurred on process_ge_to_csv')
+    return table;
+    
+
 def process_ge_to_jsont(ge):
     columns = """[
         {"Header": "Gene", "accessor": "_gene"},

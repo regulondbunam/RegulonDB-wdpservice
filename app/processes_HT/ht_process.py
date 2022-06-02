@@ -4,11 +4,11 @@ from flask import Response, jsonify
 from .querys import Querys
 from .web_services import WServices
 from .authorData import formatData_to_json_author_table
-from .sitesData import process_sites_to_gff3
-from .peaksData import process_peaks_to_gff3
-from .tuData import process_tus_to_gff3
-from .ttsData import process_tts_to_gff3
-from .tssData import process_tss_to_gff3
+from .sitesData import process_sites_to_gff3, process_sites_to_jsonT
+from .peaksData import process_peaks_to_gff3, process_peaks_to_jsonT
+from .tuData import process_tus_to_gff3, process_tus_to_jsonT
+from .ttsData import process_tts_to_gff3, process_tts_to_jsonT
+from .tssData import process_tss_to_gff3, process_tss_to_jsonT
 from .geneExpression import process_ge_to_bedgraph, process_ge_to_jsont
 
 
@@ -61,7 +61,15 @@ class HTprocess:
                             "Content-disposition": "attachment; bedgraph_" + data_type + "_" + self.dataset_id + ".bedgraph"}
                     )
                 elif file_format == "jsontable":
-                    if data_type == "ge":
+                    if data_type == "sites":
+                        data = process_sites_to_jsonT(data)
+                    elif data_type == "peaks":
+                        data = process_peaks_to_jsonT(data)
+                    elif data_type == "tus":
+                        data = process_tus_to_jsonT(data)
+                    elif data_type == "tts":
+                        data = process_tts_to_jsonT(data)
+                    elif data_type == "ge":
                         data = process_ge_to_jsont(data)
                     else:
                         data = "{error : file format ht process}"

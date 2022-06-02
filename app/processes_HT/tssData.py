@@ -1,17 +1,56 @@
-
-
-def process_tss_to_jsont(tss):
-    json_tss_table = {
-        'comments': [],
-        'columns': [],
-        'data': []
-    }
-    columns = ['start', 'end', 'score', 'strand', 'sequence', 'genes']
-    return json_tss_table
+def process_tss_to_jsonT(tss):
+    columns = """[
+        {"Header": "Start", "accessor": "_start"},
+        {"Header": "End", "accessor": "_end"},
+        {"Header": "Pos 1", "accessor": "_pos"},
+        {"Header": "Strand", "accessor": "_strand"},
+        {"Header": "ClosestGenes", "accessor": "_gene"},
+        {"Header": "Promoter", "accessor": "_prom"},
+        ]"""
+    data = []
+    try:
+        for ts in tss:
+            genes = "["
+            promoters = "["
+            for key in ts:
+                if not ts[key]:
+                    ts[key] = ""
+            try:
+                for gen in ts["closestGenes"]:
+                    dat = "{'_id':'"+gen["_id"]+"','name':'"+gen["name"]+"','distanceTo': '"+str(
+                        gen["distanceTo"])+"'},"
+                    genes = genes + dat
+                genes = genes[:-1]
+            except:
+                print('An exception occurred on tss gene')
+            genes = genes + "]"
+            try:
+                for prom in ts["promoter"]:
+                    dat = "{'_id':'"+prom["_id"]+"','name':'"+prom["name"]+"'},"
+                    promoters = promoters + dat
+                promoters = promoters[:-1]
+            except:
+                print('An exception occurred on tss gene')
+            promoters = promoters + "]"
+            data.append(
+                f"""{{
+                    "_start": "{ts["leftEndPosition"]}",
+                    "_end": "{ts["rightEndPosition"]}",
+                    "_pos": "{ts["pos_1"]}",
+                    "_strand": "{ts["strand"]}",
+                    "_gene": "{genes}"
+                    "_prom": "{promoters}"
+                    }}"""
+            )
+        data = ",\n".join(data)
+    except:
+        print('An exception occurred on process_peaks_to_jsonT')
+    return f'{{ "columns": {columns}, "data":[{data}] }}'
 
 
 def process_tss_to_gff3(tss):
     # NC_000913.3	RegulonDB	transcription_start_cluster	38	38	.	+	0	name=TSS_1
+    print(tss[0])
     gff3_tss = ""
     for ts in tss:
         for key in ts:
