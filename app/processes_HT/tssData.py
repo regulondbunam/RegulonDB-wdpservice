@@ -1,3 +1,12 @@
+import json 
+
+
+def process_tss_to_jsonGQL(tss):
+    jsongql = {'data': tss }
+    jsongql = json.dumps( jsongql ) 
+    return jsongql
+
+
 def process_tss_to_jsonT(tss):
     columns = """[
         {"Header": "Start", "accessor": "_start"},
@@ -5,7 +14,7 @@ def process_tss_to_jsonT(tss):
         {"Header": "Pos 1", "accessor": "_pos"},
         {"Header": "Strand", "accessor": "_strand"},
         {"Header": "ClosestGenes", "accessor": "_gene"},
-        {"Header": "Promoter", "accessor": "_prom"},
+        {"Header": "Promoter", "accessor": "_prom"}
         ]"""
     data = []
     try:
@@ -17,29 +26,33 @@ def process_tss_to_jsonT(tss):
                     ts[key] = ""
             try:
                 for gen in ts["closestGenes"]:
-                    dat = "{'_id':'"+gen["_id"]+"','name':'"+gen["name"]+"','distanceTo': '"+str(
-                        gen["distanceTo"])+"'},"
+                    dat = '{"_id":"'+gen['_id']+'","name":"'+gen['name']+'","distanceTo": "'+str(
+                        gen['distanceTo'])+'"},'
                     genes = genes + dat
                 genes = genes[:-1]
             except:
                 print('An exception occurred on tss gene')
             genes = genes + "]"
+            if genes is "]":
+              genes = []
             try:
                 for prom in ts["promoter"]:
-                    dat = "{'_id':'"+prom["_id"]+"','name':'"+prom["name"]+"'},"
+                    dat = '{"_id":"'+prom['_id']+'","name":"'+prom['name']+'"},'
                     promoters = promoters + dat
                 promoters = promoters[:-1]
             except:
                 print('An exception occurred on tss gene')
             promoters = promoters + "]"
+            if promoters is "]":
+              promoters = []
             data.append(
                 f"""{{
                     "_start": "{ts["leftEndPosition"]}",
                     "_end": "{ts["rightEndPosition"]}",
                     "_pos": "{ts["pos_1"]}",
                     "_strand": "{ts["strand"]}",
-                    "_gene": "{genes}"
-                    "_prom": "{promoters}"
+                    "_gene": {genes},
+                    "_prom": {promoters}
                     }}"""
             )
         data = ",\n".join(data)
@@ -50,7 +63,7 @@ def process_tss_to_jsonT(tss):
 
 def process_tss_to_gff3(tss):
     # NC_000913.3	RegulonDB	transcription_start_cluster	38	38	.	+	0	name=TSS_1
-    print(tss[0])
+    #print(tss[0])
     gff3_tss = ""
     for ts in tss:
         for key in ts:

@@ -1,3 +1,10 @@
+import json 
+
+
+def process_tts_to_jsonGQL(tts):
+    jsongql = {'data': tts }
+    jsongql = json.dumps( jsongql ) 
+    return jsongql
 
 def process_tts_to_jsonT(tts):
     columns = """[
@@ -16,20 +23,22 @@ def process_tts_to_jsonT(tts):
                     tt[key] = ""
             try:
                 for gen in tt["closestGenes"]:
-                    dat = "{'_id':'"+gen["_id"]+"','name':'"+gen["name"]+"','distanceTo': '"+str(
-                        gen["distanceTo"])+"'},"
+                    dat = '{"_id":"'+gen['_id']+'","name":"'+gen['name']+'","distanceTo": "'+str(
+                        gen['distanceTo'])+'"},'
                     genes = genes + dat
                 genes = genes[:-1]
             except:
                 print('An exception occurred on tts gene')
             genes = genes + "]"
+            if genes is "]":
+              genes = []
             data.append(
                 f"""{{
                     "_start": "{tt["leftEndPosition"]}",
                     "_end": "{tt["rightEndPosition"]}",
                     "_name": "{tt["name"]}",
                     "_strand": "{tt["strand"]}",
-                    "_gene": "{genes}"
+                    "_gene": {genes}
                     }}"""
             )
         data = ",\n".join(data)

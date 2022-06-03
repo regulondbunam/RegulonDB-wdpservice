@@ -1,3 +1,11 @@
+import json 
+
+
+def process_tus_to_jsonGQL(tus):
+    jsongql = {'data': tus }
+    jsongql = json.dumps( jsongql ) 
+    return jsongql
+
 
 def process_tus_to_jsonT(tus):
     columns = """[
@@ -16,19 +24,21 @@ def process_tus_to_jsonT(tus):
                     tu[key] = ""
             try:
                 for gen in tu["genes"]:
-                    dat = "{'_id':'"+gen["_id"]+"','name':'"+gen["name"]+"'},"
+                    dat = '{"_id":"'+gen['_id']+'","name":"'+gen['name']+'"},'
                     genes = genes + dat
                 genes = genes[:-1]
             except:
                 print('An exception occurred on tus gene')
             genes = genes + "]"
+            if genes is "]":
+              genes = []
             data.append(
                 f"""{{
                     "_start": "{tu["leftEndPosition"]}",
                     "_end": "{tu["rightEndPosition"]}",
                     "_name": "{tu["name"]}",
                     "_strand": "{tu["strand"]}",
-                    "_gene": "{genes}"
+                    "_gene": {genes}
                     }}"""
             )
         data = ",\n".join(data)

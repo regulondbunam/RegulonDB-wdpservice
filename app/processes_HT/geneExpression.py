@@ -1,3 +1,11 @@
+import json 
+
+
+def process_ge_to_jsonGQL(ge):
+    jsongql = {'data': ge }
+    jsongql = json.dumps( jsongql ) 
+    return jsongql
+
 def process_ge_to_csv(ge):
     table = {
         "columns": ["gene","leftEndPosition","rightEndPosition","TPM","FPKM",],
@@ -30,7 +38,7 @@ def process_ge_to_jsont(ge):
     try:
         for ex in ge:
             if ex["gene"]:
-                gene = ex["gene"]["name"]
+                gene = f'[{{"_id":"{ex["gene"]["_id"]}","name":"{ex["gene"]["name"]}","bnumber": "{ex["gene"]["bnumber"]}"}}]'
                 lp = ex["gene"]["leftEndPosition"]
                 rp = ex["gene"]["rightEndPosition"]
                 # NC_000913.3:603,209-621,582
@@ -42,7 +50,7 @@ def process_ge_to_jsont(ge):
                     "_fpkm": "{ex["fpkm"]}",
                     "_lp": "{str(lp)}",
                     "_rp": "{str(rp)}",
-                    "_gene": "{gene}",
+                    "_gene": {gene},
                     "_position": "{position}"
                     }}"""
                 )
@@ -56,6 +64,7 @@ def process_ge_to_jsont(ge):
 def process_ge_to_bedgraph(ge):
     # NC_000913.3 pl pr tpm  localhost:5000/ht/wdps/SRR10907670/ge/bedgraph
     # NC_000913.3	190	255	3780.619382
+    print(ge[0])
     header = 'track type=bedGraph name="BedGraph Format" description="BedGraph format" visibility=full color=200,100,0 altColor=0,100,200 priority=20'
     bedgraph_ge = ""
     for ex in ge:
