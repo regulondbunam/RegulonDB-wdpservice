@@ -29,7 +29,7 @@ def formatData_to_json_author_table(authorsData):
                 json_author_table['columns'].append({
                     'Header': "" + cell,
                     'accessor': "" + str(cc) + "_" + cell.replace(" ", "_").casefold(),
-                    'width': 0
+                    'width': len(cell)*font_size
                 })
                 cc += 1
         else:
