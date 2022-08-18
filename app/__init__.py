@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
 from app.processes_HT.ht_process import HTprocess
@@ -17,8 +17,13 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 @app.route('/')
+@app.route('/wdps')
 def index():
-    return "welcome :)"
+    return render_template('/home/index.html')
+
+@app.route('/wdps/RDBECOLI/')
+def ecoli_page():
+    return render_template('/ecoli/index.html')
 
 
 def allowed_file(filename):

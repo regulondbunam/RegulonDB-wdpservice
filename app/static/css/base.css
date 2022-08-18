@@ -1,0 +1,50 @@
+body {
+    min-height: 100vh;
+    background-color: #000000;
+  }
+  
+  h1{
+      color: #FFFFFF;
+  }
+
+  .enlaces{
+    margin-left: 5%;
+  }
+  
+  .description {
+    color: #02AE00;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    animation: typing 2s steps(38) 1s 1 normal both;
+  }
+  
+  .description2 {
+    color: #02AE00;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    animation: typing 4s steps(38) 1s 1 normal both;
+    animation-delay: 2s;
+  }
+
+  .description3 {
+    color: #02AE00;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    animation: typing 4s steps(38) 1s 1 normal both;
+    animation-delay: 4s;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 465px;
+    }
+  }
