@@ -21,7 +21,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def index():
     return render_template('/home/index.html')
 
-@app.route('/wdps/RDBECOLI/')
+@app.route('/wdps/RDBECOLI')
 def ecoli_page():
     return render_template('/ecoli/index.html')
 
