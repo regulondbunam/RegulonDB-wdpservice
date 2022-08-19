@@ -8,6 +8,14 @@ class WServices:
 
     def __init__(self, gql_service):
         self.gql_service = gql_service
+    
+    def getAll_genes(self):
+        try:
+            data = self.gql_service(self.queries.GET_ALL_GENES)
+            return data
+        except Exception as e:
+            print("error:",e)
+            return {"error": "try"}
 
     def getSearch(self,variables):
         try:
