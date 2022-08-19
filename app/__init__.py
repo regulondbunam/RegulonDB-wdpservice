@@ -2,6 +2,7 @@ import os
 from flask import Flask, request, render_template
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
+from app.processes.ecoli.gene import Gene_collection
 from app.processes_HT.ht_process import HTprocess
 from app.processes_HT.authorData import formatData_to_json_author_table
 from app.ht.dataset.datasets import DatasetsSearch
@@ -24,6 +25,14 @@ def index():
 @app.route('/wdps/RDBECOLI')
 def ecoli_page():
     return render_template('/ecoli/index.html')
+
+@app.route('/wdps/RDBECOLI/gene')
+def ecoli_gene():
+    print(gql_url)
+    collection = Gene_collection(gql_service)
+    collection.search("RDBECOLI")
+    return "gene"
+    #return render_template('/ecoli/index.html')
 
 
 def allowed_file(filename):
