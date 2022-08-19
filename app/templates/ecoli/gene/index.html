@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/base.css') }}">
@@ -7,18 +8,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=}, initial-scale=1.0">
 </head>
+
 <body>
     <div>
         <h1>RegulonDB WDPS</h1>
-        <h2 class="description" >Escherichia Coli K12 Documents</h2>
+        <h2 class="description">Escherichia Coli K12</h2>
         <div>
-            <p class="description2" >select colection or serach termn</p>
+            <p class="description2">Gene Documents</p>
         </div>
-        <div class="enlaces" >
+        
+        <div class="enlaces">
+            
+            {% for gene in data %}
             <p class="description3">
-                <a  href="/wdps/RDBECOLI">../</a>
+                <a href="/wdps/RDBECOLI/gene/{{ gene['_id'] }}">{{ gene["gene"]["name"] }}</a>
             </p>
+            {% endfor %}
         </div>
     </div>
 </body>
+
 </html>

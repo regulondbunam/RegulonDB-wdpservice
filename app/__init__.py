@@ -30,9 +30,8 @@ def ecoli_page():
 def ecoli_gene():
     print(gql_url)
     collection = Gene_collection(gql_service)
-    collection.search("RDBECOLI")
-    return "gene"
-    #return render_template('/ecoli/index.html')
+    results = collection.search("RDBECOLI")
+    return render_template('/ecoli/gene/index.html', data = results["data"], pagination = results["pagination"])
 
 
 def allowed_file(filename):

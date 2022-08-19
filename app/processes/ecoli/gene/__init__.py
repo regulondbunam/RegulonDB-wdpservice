@@ -8,5 +8,5 @@ class Gene_collection:
     
     def search(self,keyword):
         ws = WServices(self.gql_service)
-        data = ws.getSearch({"search": keyword})
-        print(data)
+        results = ws.getSearch({"search": keyword})
+        return results

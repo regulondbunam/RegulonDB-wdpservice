@@ -12,7 +12,7 @@ class WServices:
     def getSearch(self,variables):
         try:
             data = self.gql_service(self.queries.GET_GENE_BY_SEARCH, variables)
-            return data
+            return data["data"]["getGenesBy"]
         except Exception as e:
             print("error:",e)
             return {"error": "try"}
