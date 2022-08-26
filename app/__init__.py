@@ -22,17 +22,20 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def index():
     return render_template('/home/index.html')
 
-@app.route('/wdps/RDBECOLI')
+@app.route('/wdps/ecoli')
 def ecoli_page():
     return render_template('/ecoli/index.html')
 
-@app.route('/wdps/RDBECOLI/gene')
-def ecoli_gene():
-    print(gql_url)
+@app.route('/wdps/ecoli/gene')
+def ecoli_gene_list():
     collection = Gene_collection(gql_service)
     results = collection.search("RDBECOLI")
     return render_template('/ecoli/gene/index.html', data = results["data"], pagination = results["pagination"])
 
+@app.route('/wdps/ecoli/gene/<id>/<format>')
+def ecoli_gene_id(id,format):
+    collection = Gene_collection(gql_service)
+    return collection.getGeneById(id,format)
 
 def allowed_file(filename):
     return '.' in filename and \
