@@ -99,3 +99,10 @@ export FLASK_APP=app.py
 flask run --host=0.0.0.0
 ```
 Development note, if you are using visual code you have to execute the following command "pip install Flask-Session" before entering venv, and to debug mode "export FLASK_DEBUG=1"
+
+debug on windows
+```shell
+ $env:FLASK_DEBUG = "1"
+ set FLASK_DEBUG=1
+ flask run --host=0.0.0.0
+```

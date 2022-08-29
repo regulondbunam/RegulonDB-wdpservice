@@ -1,5 +1,7 @@
 import os
-from flask import Flask, request, render_template
+from urllib import response
+import pdfkit
+from flask import Flask, request, render_template, make_response
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
 from app.processes.ecoli.gene import Gene_collection
@@ -17,6 +19,22 @@ ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
+pdf_options = {
+'page-size': 'Letter',
+'margin-top': '0.9in',
+'margin-right': '0.9in',
+'margin-bottom': '0.9in',
+'margin-left': '0.9in',
+'encoding': "UTF-8",
+'header-left': 'RegulonDB Browser',
+'footer-center': 'RegulonDB Creative Commons',
+'custom-header' : [
+    ('Accept-Encoding', 'gzip')
+],
+'no-outline':None
+}
+
+
 @app.route('/')
 @app.route('/wdps')
 def index():
@@ -32,10 +50,21 @@ def ecoli_gene_list():
     results = collection.search("RDBECOLI")
     return render_template('/ecoli/gene/index.html', data = results["data"], pagination = results["pagination"])
 
+
 @app.route('/wdps/ecoli/gene/<id>/<format>')
 def ecoli_gene_id(id,format):
     collection = Gene_collection(gql_service)
+    if format == "pdf":
+        resp = collection.getGeneById(id,format)
+        css = "app/static/css/pdf.css"
+        rendered = render_template('/ecoli/gene/pdf.html', data = resp["data"][0])
+        pdf =  pdfkit.from_string(rendered,css=css, options=pdf_options)
+        response = make_response(pdf)
+        response.headers['Content-Type'] = 'application/pdf'
+        response.headers['Content-Disposition'] = 'inline; filename=gene.pdf'
+        return response
     return collection.getGeneById(id,format)
+    
 
 def allowed_file(filename):
     return '.' in filename and \

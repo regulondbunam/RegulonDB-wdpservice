@@ -6,7 +6,7 @@ from .processes.txt import format_txt_gene
 
 class Gene_collection:
     
-    format_available = ["jsontable","jsongql","cvs","txt"]
+    format_available = ["jsontable","jsongql","pdf","txt"]
     
     def __init__(self, gql_service):
         self.gql_service = gql_service
@@ -33,7 +33,8 @@ class Gene_collection:
                         headers={
                             "Content-disposition": "attachment; filename=ecoli_gene_" + id + "_" + ".txt"}
                     )
-                return 
+            elif format == "pdf":
+                return gene
             return gene
         except Exception as e:
             print(e)
