@@ -57,14 +57,27 @@ install venv python library
 ```shell
 sudo apt install python3-venv
 ```
-Enter the project directory and install venv with the following command
+on Windows
+```sell
+pip install virtualenv
+```
+Enter the project directory and creates the virtual runtime environment
 ```shell
 python3 -m venv venv
+```
+on Windows
+```shell
+virtualenv venv
 ```
 **Step 3 activate venv**
 on project directory
 ```shell
 . venv/bin/activate
+```
+On windows you need to modify about_Execution_Policies to allow the execution of the venv script, visit https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2.
+for more information
+```shell
+./venv/Scripts/activate
 ```
 **Step 4 install project dependencies**
 
@@ -96,6 +109,11 @@ You can find more information on how to implement this application in the follow
 
 ```shell
 export FLASK_APP=app.py
+flask run --host=0.0.0.0
+```
+onWindows
+```shell
+set FLASK_APP=app.py
 flask run --host=0.0.0.0
 ```
 Development note, if you are using visual code you have to execute the following command "pip install Flask-Session" before entering venv
