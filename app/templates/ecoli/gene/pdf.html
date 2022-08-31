@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    {{data["gene"]["id"]}}
+  </head>
+  <body>
+    <div class="id_doc">{{data["gene"]["id"]}}</div>
     <div class="header" >
+      <div class="cover">
         <h1>Gene {{data["gene"]["name"]}}</h1>
-        products:
-        {% for product in data["products"] %}
-            <p class="header_product">{{ product["name"] }}</p>
+        products: {% for product in data["products"] %}
+        <p class="header_product">{{ product["name"] }}</p>
         {% endfor %}
     </div>
-    <div>
+    </div>
+    <article>
+      <div>
         <h2>Gene Information</h2>
         <table class="table_gene_information">
-            <tbody>
-                <tr><td style="font-weight: bold;">Name:</td><td>{{data["gene"]["name"]}}</td></tr>
-                <tr><td style="font-weight: bold;">Synonyms: </td><td>{{data["gene"]["synonyms"]}}</td></tr>
-                <tr><td style="font-weight: bold;">Bnumber:</td><td>{{data["gene"]["bnumber"]}}</td></tr>
-                <tr><td style="font-weight: bold;">Position:</td>
-                    <td>{{data["gene"]["leftEndPosition"]}}
-                        {% if data["gene"]["strand"] == "reverse" %}
-                        <-
-                        {% else %}
-                        ->
-                        {% endif %}
-                        {{data["gene"]["rightEndPosition"]}}
-                    </td>
-                </tr>
-                <tr><td style="font-weight: bold;">Size:</td><td>
-                    {{ data["gene"]["rightEndPosition"] - data["gene"]["leftEndPosition"] }} bp
-                </td></tr>
-                <tr><td style="font-weight: bold;">Strand:</td><td>{{data["gene"]["strand"]}}</td></tr>
-                <tr><td style="font-weight: bold;">gc content:</td><td>{{data["gene"]["gcContent"]}}%</td></tr>
-                <tr><td style="font-weight: bold;">Centisome Position:</td><td>{{data["gene"]["centisomePosition"]}}</td></tr>
-            </tbody>
+          <tbody>
+            <tr>
+              <td style="font-weight: bold">Name:</td>
+              <td>{{data["gene"]["name"]}}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Synonyms:</td>
+              <td>{{data["gene"]["synonyms"]}}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Bnumber:</td>
+              <td>{{data["gene"]["bnumber"]}}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Position:</td>
+              <td>
+                {{data["gene"]["leftEndPosition"]}} {% if data["gene"]["strand"]
+                == "reverse" %} <- {% else %} -> {% endif %}
+                {{data["gene"]["rightEndPosition"]}}
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Size:</td>
+              <td>
+                {{ data["gene"]["rightEndPosition"] -
+                data["gene"]["leftEndPosition"] }} bp
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Strand:</td>
+              <td>{{data["gene"]["strand"]}}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">gc content:</td>
+              <td>{{data["gene"]["gcContent"]}}%</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Centisome Position:</td>
+              <td>{{data["gene"]["centisomePosition"]}}</td>
+            </tr>
+          </tbody>
         </table>
-    </div>
-    <p class="header_product">Sequence:</p>
-    <div class="div_sequence p_sequence" >{{data["gene"]["sequence"]}}</div>
-    <p class="header_product">Note</p>
-    <p>{{data["gene"]["note"]}}</p>
-</body>
+      </div>
+      <p class="header_product">Sequence:</p>
+      <div class="div_sequence p_sequence">{{data["gene"]["sequence"]}}</div>
+      <p class="header_product">Note</p>
+      <p>{{data["gene"]["note"]}}</p>
+    </article>
+  </body>
 </html>

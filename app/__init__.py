@@ -18,21 +18,16 @@ UPLOAD_FOLDER = '/cache'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-license = """Data and graphics is available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0);
-additional terms may apply. By using this site, you agree to our terms of use and privacy policy. 
-RegulonDB®️ is a registered trademark of CCG-UNAM.
-RegulonDB Release 11.0"""
 
 pdf_options = {
 'page-size': 'A4',
 'margin-top': '1in',
 'margin-right': '0in',
-'margin-bottom': '0.5in',
+'margin-bottom': '1in',
 'margin-left': '0in',
 'encoding': "UTF-8",
 'header-html': 'app/templates/header.html',
-'footer-font-size': '8',
-'footer-center': license,
+'footer-html': 'app/templates/footer.html',
 'custom-header' : [
     ('Accept-Encoding', 'gzip')
 ],
