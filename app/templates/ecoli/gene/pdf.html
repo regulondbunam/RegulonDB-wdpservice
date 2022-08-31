@@ -63,10 +63,48 @@
           </tbody>
         </table>
       </div>
-      <p class="header_product">Sequence:</p>
+      <p class="p_accent">multifunTerms</p>
+      {% for mft in data["gene"]["multifunTerms"] %}
+      <div style="margin-left: 15px;" >
+        <p class="p_accent">{{mft["name"]}}</p>
+        <p>{{mft["label"]}}</p>
+      </div>
+      {% endfor %}
+      <p class="p_accent" >External Cross References</p>
+      <div style="margin-left: 15px;" >
+        {% for ecr in data["gene"]["externalCrossReferences"] %}
+        <a style="margin-right: 4px;" href="{{ecr["url"]}}" >{{ecr["externalCrossReferenceName"]}}</a>
+        {% endfor %}
+      </div>
+      <p class="p_accent">Sequence:</p>
       <div class="div_sequence p_sequence">{{data["gene"]["sequence"]}}</div>
-      <p class="header_product">Note</p>
-      <p>{{data["gene"]["note"]}}</p>
+      <p class="p_accent">Note</p>
+      <p style="margin-left: 15px;" >{{data["gene"]["note"]}}</p>
+      
+      <h2>Regulation Info</h2>
+      <p>[ promoters: {{data["regulation"]["statistics"]["promoters"]}} | regulators: {{data["regulation"]["statistics"]["regulators"]}} | Regulatory Interaction: {{data["regulation"]["statistics"]["regulatoryInteractions"]}} ]</p>
+      <h3>Operon {{data["regulation"]["operon"]["name"]}}</h3>
+      <div style="margin-left: 15px;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Promoters</th>
+                    <th>Regulators</th>
+                    <th>Transcription Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+        {% for arrangement in data["regulation"]["operon"]["arrangement"] %}
+            <tr>
+                <td>{{arrangement["promoters"]}}</td>
+                <td>{{arrangement["regulator"]}}</td>
+                <td>{{arrangement["transcriptionUnit"]["name"]}}</td>
+            </tr>
+        {% endfor %}
+            </tbody>
+        </table>
+      </div>
+      
     </article>
   </body>
 </html>

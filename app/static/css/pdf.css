@@ -76,6 +76,10 @@ h1 {
     font-weight: bold;
 }
 
+.p_accent{
+    font-weight: bold;
+}
+
 
 .div_sequence{
     word-wrap: break-word;   
