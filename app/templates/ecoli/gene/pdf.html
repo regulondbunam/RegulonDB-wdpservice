@@ -10,7 +10,7 @@
     <div class="id_doc">{{data["gene"]["id"]}}</div>
     <div class="header" >
       <div class="cover">
-        <h1>Gene {{data["gene"]["name"]}}</h1>
+        <h1>Gene {{data["gene"]["name"] | safe}}</h1>
         products: {% for product in data["products"] %}
         <p class="header_product">{{ product["name"] }}</p>
         {% endfor %}
@@ -23,7 +23,7 @@
           <tbody>
             <tr>
               <td style="font-weight: bold">Name:</td>
-              <td>{{data["gene"]["name"]}}</td>
+              <td>{{data["gene"]["name"] | safe}}</td>
             </tr>
             <tr>
               <td style="font-weight: bold">Synonyms:</td>
@@ -79,7 +79,7 @@
       <p class="p_accent">Sequence:</p>
       <div class="div_sequence p_sequence">{{data["gene"]["sequence"]}}</div>
       <p class="p_accent">Note</p>
-      <p style="margin-left: 15px;" >{{data["gene"]["note"]}}</p>
+      <p style="margin-left: 15px;" >{{data["gene"]["note"] | safe}}</p>
       
       <h2>Regulation Info</h2>
       <p>[ promoters: {{data["regulation"]["statistics"]["promoters"]}} | regulators: {{data["regulation"]["statistics"]["regulators"]}} | Regulatory Interaction: {{data["regulation"]["statistics"]["regulatoryInteractions"]}} ]</p>
@@ -104,6 +104,102 @@
             </tbody>
         </table>
       </div>
+      <h3>Regulators</h3>
+      <div style="margin-left: 15px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Function</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for regulator in data["regulation"]["regulators"] %}
+            <tr>
+              <td>{{regulator["type"]}}</td>
+              <td>{{regulator["function"]}}</td>
+              <td>{{regulator["name"]}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <h2>Products</h2>
+      {% for product in  data["products"] %}
+      <div style="margin-left: 15px;" >
+        <h3>{{product["name"]}}</h3>
+        <div style="margin-left: 10px;" >
+          <table class="table_gene_information">
+            <tbody>
+              <tr>
+                <td style="font-weight: bold">anticodon:</td>
+                <td>{{product["anticodon"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">cellularLocations</td>
+                <td>{{product["cellularLocations"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">isRegulator</td>
+                <td>{{product["isRegulator"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">isoelectricPoint</td>
+                <td>{{product["isoelectricPoint"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">molecularWeight</td>
+                <td>{{product["molecularWeight"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">synonyms</td>
+                <td>{{product["synonyms"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">type</td>
+                <td>{{product["type"]}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="p_accent" >External Cross References</p>
+          <div style="margin-left: 15px;" >
+            {% for ecr in product["externalCrossReferences"] %}
+            <a style="margin-right: 4px;" href="{{ecr["url"]}}" >{{ecr["externalCrossReferenceName"]}}</a>
+            {% endfor %}
+          </div>
+          <p class="p_accent" >Notes</p>
+          <div style="margin-left: 15px;" >
+            <p>{{product["note"] | safe}}</p>
+          </div>
+          <p class="p_accent" >Sequence</p>
+          <div style="margin-left: 15px;" >
+            <div  class="div_sequence p_sequence" >{{product["sequence"]}}</div>
+          </div>
+          <h4>Gene Ontology Terms</h4>
+          <div style="margin-left: 15px;">
+            <p class="p_accent">Biological Process</p>
+            {% for bProcess in product["geneOntologyTerms"]["biologicalProcess"] %}
+              <p>
+                {{bProcess["name"]}}
+                {% for cit in bProcess["citations"] %}
+                |CITS:[{{cit["evidence"]["id"]}}]||CITS:[{{cit["publication"]["id"]}}]|
+                {% endfor %}
+              </p>
+            {% endfor %}
+            <p class="p_accent">Cellular Component</p>
+            {% for bProcess in product["geneOntologyTerms"]["cellularComponent"] %}
+              <p>
+                {{bProcess["name"]}}
+                {% for cit in bProcess["citations"] %}
+                |CITS:[{{cit["evidence"]["id"]}}]||CITS:[{{cit["publication"]["id"]}}]|
+                {% endfor %}
+              </p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
       
     </article>
   </body>
