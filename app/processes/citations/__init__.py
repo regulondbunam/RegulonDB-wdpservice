@@ -62,7 +62,16 @@ class Citations:
         else:
             return f"{publication}.{evidence_code}"
 
+    def getCitation_by_id(self, id):
+        index = self.getIndex_citation_by_id(id)
+        return {
+            "index": index,
+            "citation": self.allCitations[index]
+        }
+
     def note(self, note):
+        if note == None:
+            return ""
         while re.search("(\|CITS:)|\|\.", note):
             note = re.sub("(\|CITS:)|\|\.", "", note)
         safe = 200
@@ -71,7 +80,7 @@ class Citations:
             index_citation = self.getIndex_citation_by_id(id)
             if index_citation != -1:
                 citation = self.citation_toLink(
-                    index_citation, self.allCitations[index_citation], True)
+                    index_citation+1, self.allCitations[index_citation], True)
                 note = re.sub(
                     "\[\s*RDBECOLI(PRC|EVC)[0-9]{5}\]", citation, note, 1)
             else:

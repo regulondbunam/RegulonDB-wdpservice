@@ -79,7 +79,7 @@
       <p class="p_accent">Sequence:</p>
       <div class="div_sequence p_sequence">{{data["gene"]["sequence"]}}</div>
       <p class="p_accent">Note</p>
-      <p style="margin-left: 15px;" >{{data["gene"]["note"] | safe}}</p>
+      <p style="margin-left: 15px;" >{{citations.note(data["gene"]["note"]) | safe}}</p>
       
       <h2>Regulation Info</h2>
       <p>[ promoters: {{data["regulation"]["statistics"]["promoters"]}} | regulators: {{data["regulation"]["statistics"]["regulators"]}} | Regulatory Interaction: {{data["regulation"]["statistics"]["regulatoryInteractions"]}} ]</p>
@@ -183,7 +183,7 @@
               <p>
                 {{bProcess["name"]}}
                 {% for cit in bProcess["citations"] %}
-                |CITS:[{{cit["evidence"]["id"]}}]||CITS:[{{cit["publication"]["id"]}}]|
+                {{ citations.citation_toLink(citations.getIndex_citation_by_id(cit["publication"]["id"])+1,citations.allCitations[citations.getIndex_citation_by_id(cit["publication"]["id"])],True) | safe }}
                 {% endfor %}
               </p>
             {% endfor %}
@@ -192,7 +192,7 @@
               <p>
                 {{bProcess["name"]}}
                 {% for cit in bProcess["citations"] %}
-                |CITS:[{{cit["evidence"]["id"]}}]||CITS:[{{cit["publication"]["id"]}}]|
+                {{ citations.citation_toLink(citations.getIndex_citation_by_id(cit["publication"]["id"])+1,citations.allCitations[citations.getIndex_citation_by_id(cit["publication"]["id"])],True) | safe }}
                 {% endfor %}
               </p>
             {% endfor %}
@@ -201,7 +201,7 @@
               <p>
                 {{bProcess["name"]}}
                 {% for cit in bProcess["citations"] %}
-                |CITS:[{{cit["evidence"]["id"]}}]||CITS:[{{cit["publication"]["id"]}}]|
+                {{ citations.citation_toLink(citations.getIndex_citation_by_id(cit["publication"]["id"])+1,citations.allCitations[citations.getIndex_citation_by_id(cit["publication"]["id"])],True) | safe }}
                 {% endfor %}
               </p>
             {% endfor %}
