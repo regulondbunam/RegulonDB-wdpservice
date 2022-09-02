@@ -196,6 +196,25 @@
                 {% endfor %}
               </p>
             {% endfor %}
+            <p class="p_accent">Molecular Function</p>
+            {% for bProcess in product["geneOntologyTerms"]["molecularFunction"] %}
+              <p>
+                {{bProcess["name"]}}
+                {% for cit in bProcess["citations"] %}
+                |CITS:[{{cit["evidence"]["id"]}}]||CITS:[{{cit["publication"]["id"]}}]|
+                {% endfor %}
+              </p>
+            {% endfor %}
+          </div>
+          <h4>Motifs</h4>
+          <div style="margin-left: 15px;">
+            {% for motif in product["motifs"]%}
+              <p> <span class="p_accent"> Type: </span>  {{motif["type"]}} <span class="p_accent">Source:</span> {{motif["dataSource"]}}</p>
+              <p> <span class="p_accent">Position:</span> {{motif["leftEndPosition"]}} - {{motif["rightEndPosition"]}}</p>
+              <p class="p_accent">sequence:</p>
+              <div class="div_sequence p_sequence" >{{motif["sequence"]}}</div>
+              <p >Note: {{motif["description"] | safe}}</p>
+            {% endfor %}
           </div>
         </div>
       </div>
