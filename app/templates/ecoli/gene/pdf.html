@@ -170,7 +170,7 @@
           </div>
           <p class="p_accent" >Notes</p>
           <div style="margin-left: 15px;" >
-            <p>{{product["note"] | safe}}</p>
+            <p>{{citations.note(product["note"]) | safe}}</p>
           </div>
           <p class="p_accent" >Sequence</p>
           <div style="margin-left: 15px;" >
@@ -219,7 +219,10 @@
         </div>
       </div>
       {% endfor %}
-      
+      <h2>Citations</h2>
+      {% for citation in citations.list_citations() %}
+        <a href="{{citation["url"]}}">[{{citation["index"]}}] {{citation["citation"] | safe}}</a><br>
+      {% endfor %}
     </article>
   </body>
 </html>

@@ -4,6 +4,7 @@ import pdfkit
 from flask import Flask, request, render_template, make_response
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
+from app.processes.citations import Citations
 from app.processes.ecoli.gene import Gene_collection
 from app.processes_HT.ht_process import HTprocess
 from app.processes_HT.authorData import formatData_to_json_author_table
@@ -20,18 +21,18 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 pdf_options = {
-'page-size': 'A4',
-'margin-top': '1in',
-'margin-right': '0in',
-'margin-bottom': '1in',
-'margin-left': '0in',
-'encoding': "UTF-8",
-'header-html': 'app/templates/header.html',
-'footer-html': 'app/templates/footer.html',
-'custom-header' : [
-    ('Accept-Encoding', 'gzip')
-],
-'no-outline':None
+    'page-size': 'A4',
+    'margin-top': '1in',
+    'margin-right': '0in',
+    'margin-bottom': '1in',
+    'margin-left': '0in',
+    'encoding': "UTF-8",
+    'header-html': 'app/templates/header.html',
+    'footer-html': 'app/templates/footer.html',
+    'custom-header': [
+        ('Accept-Encoding', 'gzip')
+    ],
+    'no-outline': None
 }
 
 
@@ -40,31 +41,39 @@ pdf_options = {
 def index():
     return render_template('/home/index.html')
 
+
 @app.route('/wdps/ecoli')
 def ecoli_page():
     return render_template('/ecoli/index.html')
+
 
 @app.route('/wdps/ecoli/gene')
 def ecoli_gene_list():
     collection = Gene_collection(gql_service)
     results = collection.search("RDBECOLI")
-    return render_template('/ecoli/gene/index.html', data = results["data"], pagination = results["pagination"])
+    return render_template('/ecoli/gene/index.html', data=results["data"], pagination=results["pagination"])
 
 
 @app.route('/wdps/ecoli/gene/<id>/<format>')
-def ecoli_gene_id(id,format):
+def ecoli_gene_id(id, format):
     collection = Gene_collection(gql_service)
     if format == "pdf":
-        resp = collection.getGeneById(id,format)
+        resp = collection.getGeneById(id, format)
         css = "app/static/css/pdf.css"
-        rendered = render_template('/ecoli/gene/pdf.html', data = resp["data"][0])
-        pdf =  pdfkit.from_string(rendered,css=css, options=pdf_options)
+        citations = None
+        try:
+            citations = Citations(resp["data"][0]["allCitations"])
+        except Exception as e:
+            print("Error. load allCitations in gene")
+        rendered = render_template(
+            '/ecoli/gene/pdf.html', data=resp["data"][0], citations=citations)
+        pdf = pdfkit.from_string(rendered, css=css, options=pdf_options)
         response = make_response(pdf)
         response.headers['Content-Type'] = 'application/pdf'
         response.headers['Content-Disposition'] = 'inline; filename=gene.pdf'
         return response
-    return collection.getGeneById(id,format)
-    
+    return collection.getGeneById(id, format)
+
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -77,7 +86,8 @@ def ht_datasets(file_format):
     if request.method == 'POST':
         data_json = request.get_json()
         print(data_json)
-        dataset_search = DatasetsSearch(data_json['advancedSearch'], False, gql_service)
+        dataset_search = DatasetsSearch(
+            data_json['advancedSearch'], False, gql_service)
         dataset_search.get_data(file_format)
         return dataset_search.response
     return '''
