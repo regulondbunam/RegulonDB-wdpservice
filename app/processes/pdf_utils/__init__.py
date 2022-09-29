@@ -49,13 +49,12 @@ class CreatePDF:
             canvas.setFont('Times-Roman', 14)
 
             # add text in the x,y coordinates of interest
-            canvas.drawCentredString(297, 820, "RegulonDB Database")
-            canvas.drawCentredString(297, 806, "Escherichia coli")
+            canvas.drawCentredString(297, 800, "RegulonDB Database")
+            canvas.drawCentredString(297, 786, "Escherichia coli")
             
-            # Draw ccg logo 
-            canvas.drawImage(self.ccg_logo,450,790,100,50,preserveAspectRatio=True)
-            #Draw regulonDB Logo
-            canvas.drawImage(self.regulondb_logo,40,790,100,50,preserveAspectRatio=True)
+            # Draw logos 
+            canvas.drawImage(self.ccg_logo,450,770,100,50,preserveAspectRatio=True)
+            canvas.drawImage(self.regulondb_logo,40,770,100,50,preserveAspectRatio=True)
             
             #Add footer
             canvas.setFont('Times-Roman', 8)

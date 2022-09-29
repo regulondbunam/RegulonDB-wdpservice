@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from urllib import response
 from flask import Flask, request, render_template, make_response
 from flask_cors import CORS
@@ -9,6 +10,7 @@ from app.processes_HT.ht_process import HTprocess
 from app.processes_HT.authorData import formatData_to_json_author_table
 from app.ht.dataset.datasets import DatasetsSearch
 from app.processes.pdf_utils import CreatePDF
+
 
 app = Flask(__name__)
 CORS(app)
@@ -48,8 +50,10 @@ def ecoli_gene_id(id, format):
             citations = Citations(resp["data"][0]["allCitations"])
         except Exception as e:
             print("Error. load allCitations in gene")
+        now = datetime.now()
+        date = now.strftime("%H:%M:%S %B %d, %Y")
         rendered = render_template(
-            '/ecoli/gene/pdf.html', data=resp["data"][0], citations=citations)
+            '/ecoli/gene/pdf.html', data=resp["data"][0], date=date, citations=citations)
         #pdf_n = pdfkit.from_string(rendered, css=css, options=pdf_options)
         pdf = CreatePDF(id,-1,rendered)
         pdf_file=open(pdf.file_path,'rb')

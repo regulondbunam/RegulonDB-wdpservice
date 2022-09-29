@@ -55,9 +55,18 @@ h1 {
 	line-height: var(--fontWeight);
   }
 
+.source_data{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
 .id_doc{
     font-size: 10px;
-    margin-left: 1in;
+    margin-right: 0.5in;
+}
+
+.id{
+    font-size: 10px;
 }
 
 .cover{
@@ -66,8 +75,8 @@ h1 {
 }
 
 .header{
-    color: rgb(255, 255, 255);
-    background-color: #3d779b;
+    color: rgb(0, 0, 0);
+    background-color: var(--color-blue4);
 }
 
 .header_product{

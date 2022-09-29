@@ -7,13 +7,16 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="id_doc">{{data["gene"]["id"]}}</div>
+    <div class="source_data" >
+      <div class="id_doc">
+        https:/regulondb.ccg.unam.mx/gene/{{data["gene"]["id"]}}
+        <br>
+        {{date}}
+      </div>
+    </div>
     <div class="header" >
       <div class="cover">
-        <h1>Gene {{data["gene"]["name"] | safe}}</h1>
-        products: {% for product in data["products"] %}
-        <p class="header_product">{{ product["name"] }}</p>
-        {% endfor %}
+        <h1>Gene {{data["gene"]["name"] | safe}} <span class="id"> ({{data["gene"]["id"]}}) </span> </h1>
     </div>
     </div>
     <article>
@@ -66,7 +69,6 @@
       <p class="p_accent">multifunTerms</p>
       {% for mft in data["gene"]["multifunTerms"] %}
       <div style="margin-left: 15px;" >
-        <p class="p_accent">{{mft["name"]}}</p>
         <p>{{mft["label"]}}</p>
       </div>
       {% endfor %}
@@ -78,9 +80,10 @@
       </div>
       <p class="p_accent">Sequence:</p>
       <div class="div_sequence p_sequence">{{data["gene"]["sequence"]}}</div>
+      {%if data["gene"]["note"] != None %}
       <p class="p_accent">Note</p>
       <p style="margin-left: 15px;" >{{citations.note(data["gene"]["note"]) | safe}}</p>
-      
+      {% endif %}
       <h2>Regulation Info</h2>
       <p>[ promoters: {{data["regulation"]["statistics"]["promoters"]}} | regulators: {{data["regulation"]["statistics"]["regulators"]}} | Regulatory Interaction: {{data["regulation"]["statistics"]["regulatoryInteractions"]}} ]</p>
       <h3>Operon {{data["regulation"]["operon"]["name"]}}</h3>
