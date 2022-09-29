@@ -1,6 +1,5 @@
 import os
 from urllib import response
-import pdfkit
 from flask import Flask, request, render_template, make_response
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
@@ -9,6 +8,7 @@ from app.processes.ecoli.gene import Gene_collection
 from app.processes_HT.ht_process import HTprocess
 from app.processes_HT.authorData import formatData_to_json_author_table
 from app.ht.dataset.datasets import DatasetsSearch
+from app.processes.pdf_utils import CreatePDF
 
 app = Flask(__name__)
 CORS(app)
@@ -18,16 +18,6 @@ gql_service = HTTPEndpoint(gql_url)
 UPLOAD_FOLDER = '/cache'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
-pdf_options = {
-    'page-size': 'A4',
-    'margin-top': '1in',
-    'margin-right': '0in',
-    'margin-bottom': '1in',
-    'margin-left': '0in',
-    'encoding': "UTF-8",
-    'no-outline': None
-}
 
 @app.route('/')
 @app.route('/wdps')
@@ -52,7 +42,7 @@ def ecoli_gene_id(id, format):
     collection = Gene_collection(gql_service)
     if format == "pdf":
         resp = collection.getGeneById(id, format)
-        css = "app/static/css/pdf.css"
+        
         citations = None
         try:
             citations = Citations(resp["data"][0]["allCitations"])
@@ -60,8 +50,11 @@ def ecoli_gene_id(id, format):
             print("Error. load allCitations in gene")
         rendered = render_template(
             '/ecoli/gene/pdf.html', data=resp["data"][0], citations=citations)
-        pdf = pdfkit.from_string(rendered, css=css, options=pdf_options)
-        response = make_response(pdf)
+        #pdf_n = pdfkit.from_string(rendered, css=css, options=pdf_options)
+        pdf = CreatePDF(id,-1,rendered)
+        pdf_file=open(pdf.file_path,'rb')
+        response = make_response(pdf_file.read())
+        pdf_file.close()
         response.headers['Content-Type'] = 'application/pdf'
         response.headers['Content-Disposition'] = 'inline; filename=gene.pdf'
         return response
