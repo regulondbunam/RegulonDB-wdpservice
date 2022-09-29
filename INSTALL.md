@@ -34,8 +34,13 @@ dependencies:
 - csv
 - python-dotenv
 ```shell
-pip install flask flask-cors sgqlc python-dotenv
+pip install flask flask-cors sgqlc python-dotenv pdfkit
 ```
+dependency wkhtmltopdf
+```shell
+sudo apt-get install wkhtmltopdf
+```
+
 **Step 5 configuration**
 
 At the root of the project, you will find the .envExample file where you will find the information to declare the environment variables so that the application can connect to the regulonDB web services.

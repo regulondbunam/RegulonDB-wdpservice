@@ -19,7 +19,6 @@ UPLOAD_FOLDER = '/cache'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-
 pdf_options = {
     'page-size': 'A4',
     'margin-top': '1in',
@@ -27,14 +26,8 @@ pdf_options = {
     'margin-bottom': '1in',
     'margin-left': '0in',
     'encoding': "UTF-8",
-    'header-html': 'app/templates/header.html',
-    'footer-html': 'app/templates/footer.html',
-    'custom-header': [
-        ('Accept-Encoding', 'gzip')
-    ],
     'no-outline': None
 }
-
 
 @app.route('/')
 @app.route('/wdps')

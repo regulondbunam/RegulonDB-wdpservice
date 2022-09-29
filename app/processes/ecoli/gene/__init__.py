@@ -1,7 +1,7 @@
 import os
 from flask import Response
 from .web_services import WServices
-from .processes.txt import format_txt_gene
+from .adapters.txt import format_txt_gene
 
 
 class Gene_collection:
