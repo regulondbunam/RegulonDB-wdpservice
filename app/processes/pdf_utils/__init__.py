@@ -20,6 +20,8 @@ class CreatePDF:
     }
     
     css = "app/static/css/pdf.css"
+    ccg_logo = "app/static/img/ccg_logo.jpg"
+    regulondb_logo = "app/static/img/regulondb_logo.jpg"
 
     def __init__(self, id: str, version, rendered):
         self.file_path = "./cache/" + id + "_pdf_v" + str(version) + ".pdf.cache"
@@ -31,7 +33,6 @@ class CreatePDF:
             
 
     def add_header(self):
-        header_text = "RegulonDB encabezado XD"
         # read pdf using pdfrw
         reader = PdfReader(self.file_path)
         pages = [pagexobj(p) for p in reader.pages]
@@ -44,38 +45,25 @@ class CreatePDF:
 
             # make a report lab object
             canvas.doForm(makerl(canvas, page))
-            # Draw footer
             canvas.saveState()
-            canvas.setFont('Times-Roman', 17)
+            canvas.setFont('Times-Roman', 14)
 
             # add text in the x,y coordinates of interest
-            canvas.drawString(50, 820, header_text)
-            canvas.restoreState()
-            canvas.showPage()
-        canvas.save()
-
-    def add_pdf_footer(self):
-        footer_text = "Pie de pagina ajskndajsnhdajnsd"
-        # Get pages
-        reader = PdfReader(self.pdf)
-        pages = [pagexobj(p) for p in reader.pages]
-        # Compose new pdf
-        canvas = Canvas(self.pdf)
-        for page_num, page in enumerate(pages, start=1):
-            # Add page
-            canvas.setPageSize((page.BBox[2], page.BBox[3]))
-            canvas.doForm(makerl(canvas, page))
-            canvas.saveState()
-            canvas.setStrokeColorRGB(0, 0, 0)
-
-            # draw a footer line
-            canvas.setLineWidth(0.5)
-            canvas.line(66, 78, page.BBox[2] - 66, 78)
+            canvas.drawCentredString(297, 820, "RegulonDB Database")
+            canvas.drawCentredString(297, 806, "Escherichia coli")
+            
+            # Draw ccg logo 
+            canvas.drawImage(self.ccg_logo,450,790,100,50,preserveAspectRatio=True)
+            #Draw regulonDB Logo
+            canvas.drawImage(self.regulondb_logo,40,790,100,50,preserveAspectRatio=True)
+            
+            #Add footer
             canvas.setFont('Times-Roman', 8)
-
-            # add footer text using x,y coordinates
-            canvas.drawString(0, 0, footer_text)
+            canvas.drawCentredString(297, 50, "Data and graphics is available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0);")
+            canvas.drawCentredString(297, 42, "additional terms may apply. By using this site, you agree to our terms of use and privacy policy. RegulonDB® is a registered trademark of CCG-UNAM.")
+            canvas.drawCentredString(297, 34, "RegulonDB Release 11.0")
+            
             canvas.restoreState()
             canvas.showPage()
         canvas.save()
-        return self.pdf
+
