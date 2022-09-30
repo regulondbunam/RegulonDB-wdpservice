@@ -10,6 +10,7 @@ from app.processes_HT.ht_process import HTprocess
 from app.processes_HT.authorData import formatData_to_json_author_table
 from app.ht.dataset.datasets import DatasetsSearch
 from app.processes.pdf_utils import CreatePDF
+from app.processes.pdf_utils.sequence_format import SequenceFormat
 
 
 app = Flask(__name__)
@@ -46,14 +47,17 @@ def ecoli_gene_id(id, format):
         resp = collection.getGeneById(id, format)
         
         citations = None
+        sequence = None
         try:
             citations = Citations(resp["data"][0]["allCitations"])
+            sequence_format = SequenceFormat(resp["data"][0]["gene"]["sequence"],"")
+            sequence = sequence_format.get_genebank_format(True)
         except Exception as e:
-            print("Error. load allCitations in gene")
+            print("Error. load allCitations in gene"+str(e))
         now = datetime.now()
         date = now.strftime("%H:%M:%S %B %d, %Y")
         rendered = render_template(
-            '/ecoli/gene/pdf.html', data=resp["data"][0], date=date, citations=citations)
+            '/ecoli/gene/pdf.html', data=resp["data"][0], date=date, citations=citations, sequence=sequence)
         #pdf_n = pdfkit.from_string(rendered, css=css, options=pdf_options)
         pdf = CreatePDF(id,-1,rendered)
         pdf_file=open(pdf.file_path,'rb')

@@ -97,3 +97,33 @@ h1 {
 .p_sequence{
     font-family: "Courier New", Courier, monospace;
 }
+
+.rdb_p_sequence {
+	font-family: var(--fontFamily-sequence);
+	font-size: 14px;
+  }
+
+.rdb_sequence_A{
+    background-color: #2BF063;
+}
+.rdb_sequence_a{
+    background-color: #8BF0A3;
+}
+.rdb_sequence_C{
+    background-color: #606CEB;
+}
+.rdb_sequence_c{
+    background-color: #BEC4EB;
+}
+.rdb_sequence_T{
+    background-color: #EBC53D;
+}
+.rdb_sequence_t{
+    background-color: #EBD89B;
+}
+.rdb_sequence_G{
+    background-color: #EB3131;
+}
+.rdb_sequence_g{
+    background-color: #EB8F97;
+}

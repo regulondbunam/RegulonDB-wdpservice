@@ -56,7 +56,6 @@ class CreatePDF:
         pdf_info = PdfFileReader(open(self.fileTemp_path, "rb"))
         output = PdfFileWriter()
         
-        #iteracion de paginas
         num_pages = pdf_info.getNumPages()
         for num_page in range(0,num_pages):
             page = pdf_info.getPage(num_page)

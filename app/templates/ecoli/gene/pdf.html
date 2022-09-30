@@ -79,7 +79,7 @@
         {% endfor %}
       </div>
       <p class="p_accent">Sequence:</p>
-      <div class="div_sequence p_sequence">{{data["gene"]["sequence"]}}</div>
+      <div class="div_sequence p_sequence">{{sequence |  safe}}</div>
       {%if data["gene"]["note"] != None %}
       <p class="p_accent">Note</p>
       <p style="margin-left: 15px;" >{{citations.note(data["gene"]["note"]) | safe}}</p>
