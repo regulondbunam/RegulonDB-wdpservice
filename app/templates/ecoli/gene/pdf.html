@@ -231,7 +231,7 @@
     {% endfor %}
     <h2>Citations</h2>
     {% for citation in citations.list_citations() %}
-    <a href="{{citation[" url"]}}">[{{citation["index"]}}] {{citation["citation"] | safe}}</a><br>
+    <a href="{{citation['url']}}">[{{citation["index"]}}] {{citation["citation"] | safe}}</a><br>
     {% endfor %}
   </article>
 </body>
