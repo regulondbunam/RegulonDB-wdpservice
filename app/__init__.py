@@ -11,6 +11,7 @@ from app.processes_HT.authorData import formatData_to_json_author_table
 from app.ht.dataset.datasets import DatasetsSearch
 from app.processes.pdf_utils import CreatePDF
 from app.processes.pdf_utils.sequence_format import SequenceFormat, fasta_format
+from app.processes.web_services import get_RegulonDB_version
 
 
 app = Flask(__name__)
@@ -60,7 +61,8 @@ def ecoli_gene_id(id, format):
         rendered = render_template(
             '/ecoli/gene/pdf.html', data=resp["data"][0], date=date, citations=citations, sequence=sequence, fasta_format=fasta_format)
         #pdf_n = pdfkit.from_string(rendered, css=css, options=pdf_options)
-        pdf = CreatePDF(id,-1,rendered)
+        regulonDB_version = get_RegulonDB_version(gql_service)
+        pdf = CreatePDF(id,-1,rendered,regulonDB_version)
         pdf_file=open(pdf.file_path,'rb')
         response = make_response(pdf_file.read())
         pdf_file.close()

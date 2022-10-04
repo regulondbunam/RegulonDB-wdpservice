@@ -23,7 +23,8 @@ class CreatePDF:
     regulondb_logo = "app/static/img/regulondb_logo.jpg"
     
 
-    def __init__(self, id: str, version, rendered):
+    def __init__(self, id: str, version, rendered, rdb_version):
+        self.rdb_version = rdb_version
         self.fileTemp_path = "./cache/_temp_" + id + "_pdf_v" + str(version) + ".pdf.cache"
         self.file_path = "./cache/" + id + "_pdf_v" + str(version) + ".pdf.cache"
         if not os.path.exists(self.file_path) or version == -1:
@@ -48,7 +49,7 @@ class CreatePDF:
         canvas.setFont('Times-Roman', 8)
         canvas.drawCentredString(297, 50, "Data and graphics is available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0);")
         canvas.drawCentredString(297, 42, "additional terms may apply. By using this site, you agree to our terms of use and privacy policy. RegulonDB® is a registered trademark of CCG-UNAM.")
-        canvas.drawCentredString(297, 34, "RegulonDB Release 11.0")
+        canvas.drawCentredString(297, 34, "RegulonDB Release"+self.rdb_version["regulonDBVersion"])
         
         canvas.save()
         packet.seek(0)
