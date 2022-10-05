@@ -1,0 +1,14 @@
+{
+  "objectType": "gene",
+  "height": 40,
+  "rowSize": 0.5,
+  "color": "#EFEBEB",
+  "stroke": { "color": "#000", "width": 1, "linecap": "round" },
+  "font": {
+    "size": 12,
+    "family": "arial",
+    "fill": "#000"
+  },
+  "drawPriority": 1,
+  "verticalPriority": 1
+}

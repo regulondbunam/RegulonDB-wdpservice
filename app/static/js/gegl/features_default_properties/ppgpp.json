@@ -1,0 +1,14 @@
+{
+    "objectType": "ppGpp",
+    "defaultColor": "#EFEBEB",
+    "height": 40,
+    "stroke": { "color": "#000", "width": 1, "linecap": "round" },
+    "font": {
+      "size": 6,
+      "family": "arial",
+      "fill": "#000",
+      "weight": "bold"
+    },
+    "drawPriority": 10,
+    "verticalPriority": 4
+  }

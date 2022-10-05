@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 from urllib import response
-from flask import Flask, request, render_template, make_response
+from flask import Flask, request, render_template, make_response, send_from_directory
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
 from app.processes.citations import Citations
@@ -33,6 +33,13 @@ def index():
 def ecoli_page():
     return render_template('/ecoli/index.html')
 
+@app.route('/wdps/dtt')
+def dtt():
+    return render_template('/dtt/index.html')
+
+@app.route("/static/<path:path>")
+def static_dir(path):
+    return send_from_directory("static", path)
 
 @app.route('/wdps/ecoli/gene')
 def ecoli_gene_list():
