@@ -1,6 +1,7 @@
 from ast import keyword
 import os
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from datetime import datetime
 from flask import Flask, request, render_template, make_response, send_from_directory
 from flask_cors import CORS
@@ -82,13 +83,19 @@ def ecoli_gene_id(id, format):
 
 @app.route('/wdps/ecoli/dtt')
 def dtt():
-    url = "https://www.google.com/"
-    driver = webdriver.Chrome(executable_path="app/static/drivers/chromedriver")
-    driver.get(url)
+    options = Options()
+    options.add_argument('--no-sandbox')
+    options.add_argument("--headless")
+    options.add_argument('--disable-dev-shm-usage')
+    driver = webdriver.Chrome(executable_path="app/static/drivers/chromedriver", options = options)
+    site = "embed/dtt/leftEndPosition=100&rightEndPosition=1000"
+    driver.get(browser_url+site)
     page = driver.page_source
+    #recordar que el renderizado del dtt debe ser con el server
+    page_source = driver.page_source
     print(driver.page_source)
     driver.quit()
-    return page
+    return page_source
 
 #HT routes and apps
 
