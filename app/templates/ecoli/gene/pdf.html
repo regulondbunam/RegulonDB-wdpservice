@@ -18,7 +18,9 @@
   </div>
   <div class="header">
     <div class="cover">
+      <br>
       <h1>Gene {{data["gene"]["name"] | safe}} <span class="id"> ({{data["gene"]["id"]}}) </span> </h1>
+      <br>
     </div>
   </div>
   <article>
@@ -41,9 +43,9 @@
           <tr>
             <td style="font-weight: bold">Position:</td>
             <td>
-              {{data["gene"]["leftEndPosition"]}} {% if data["gene"]["strand"]
-              == "reverse" %} <- {% else %} -> {% endif %}
-                {{data["gene"]["rightEndPosition"]}}
+              {{data["gene"]["leftEndPosition"]}}
+              {% if data["gene"]["strand"] == "reverse" %} <- {% else %} -> {% endif %}
+              {{data["gene"]["rightEndPosition"]}}
             </td>
           </tr>
           <tr>
@@ -77,7 +79,7 @@
     <p class="p_accent">External Cross References</p>
     <div style="margin-left: 15px;">
       {% for ecr in data["gene"]["externalCrossReferences"] %}
-      <a style="margin-right: 4px;" href="{{ecr[" url"]}}">{{ecr["externalCrossReferenceName"]}}</a>
+      <a style="margin-right: 4px;" href="{{ecr['url']}}">{{ecr["externalCrossReferenceName"]}}</a>
       {% endfor %}
     </div>
     <p class="p_accent">Sequence:</p>
@@ -152,7 +154,7 @@
         <p class="p_accent">External Cross References</p>
         <div style="margin-left: 15px;">
           {% for ecr in product["externalCrossReferences"] %}
-          <a style="margin-right: 4px;" href="{{ecr[" url"]}}">{{ecr["externalCrossReferenceName"]}}</a>
+          <a style="margin-right: 4px;" href="{{ecr['url']}}">{{ecr["externalCrossReferenceName"]}}</a>
           {% endfor %}
         </div>
         <p class="p_accent">Notes</p>

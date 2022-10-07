@@ -27,15 +27,13 @@
             </form>
         </div>
         <br>
-        <div class="description animationFrame3" >
+        <div class="description {{'animationFrame1' if not header_animation }} {{'animationFrame3' if header_animation }}" >
             <form action="" method="post">
                 <input type="submit" id="prev_page" name="search" value="PrevPage" />
                 <label for="current_page">current page: {{pagination.currentPage}} </label>
                 <input style="width: 15px; display:none" type="text" id="current_page" name="current_page" value="{{pagination.currentPage}}"/>
                 <input type="submit" id="next_page" name="search" value="NextPage" />
             </form>
-        </div>
-        <div class="enlaces description  animationFrame3" >
             <table>
                 <thead>
                     <tr>
@@ -48,7 +46,7 @@
                         <td>{{ gene["_id"] }}</td><td>{{ gene["gene"]["name"] | safe }}</td>
                         <td>
                             <a href="./gene/{{ gene['_id'] }}/txt">.txt</a>
-                            <a href="./gene/{{ gene['_id'] }}/txt">.pdf</a>
+                            <a href="./gene/{{ gene['_id'] }}/pdf">.pdf</a>
                         </td>
                     </tr>
                     <!--
