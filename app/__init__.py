@@ -97,12 +97,13 @@ def dtt():
     page_source = ""
     try:
         
-        element = WebDriverWait(driver, 10).until(
+        WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "embed_data")))
-        print(element.text)
+        element = driver.find_element(By.ID, "embed_dtt_draw")
+        print(element.get_attribute("innerHTML"))
         page_source = driver.page_source
     except TimeoutException:
-        print("Cannot find product title.")
+        print("Cannot find embedData.")
     finally:
         driver.quit()
     return page_source
