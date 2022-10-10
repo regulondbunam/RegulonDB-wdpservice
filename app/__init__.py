@@ -2,6 +2,10 @@ from ast import keyword
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 from datetime import datetime
 from flask import Flask, request, render_template, make_response, send_from_directory
 from flask_cors import CORS
@@ -80,7 +84,7 @@ def ecoli_gene_id(id, format):
         response.headers['Content-Disposition'] = 'inline; filename=gene.pdf'
         return response
     return collection.getGeneById(id, format)
-
+  
 @app.route('/wdps/ecoli/dtt')
 def dtt():
     options = Options()
@@ -90,11 +94,17 @@ def dtt():
     driver = webdriver.Chrome(executable_path="app/static/drivers/chromedriver", options = options)
     site = "embed/dtt/leftEndPosition=100&rightEndPosition=1000"
     driver.get(browser_url+site)
-    page = driver.page_source
-    #recordar que el renderizado del dtt debe ser con el server
-    page_source = driver.page_source
-    print(driver.page_source)
-    driver.quit()
+    page_source = ""
+    try:
+        
+        element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.ID, "embed_data")))
+        print(element.text)
+        page_source = driver.page_source
+    except TimeoutException:
+        print("Cannot find product title.")
+    finally:
+        driver.quit()
     return page_source
 
 #HT routes and apps
