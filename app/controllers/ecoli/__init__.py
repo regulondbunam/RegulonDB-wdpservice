@@ -1,6 +1,5 @@
-import re
 from flask import Flask, request, render_template, make_response, send_from_directory
-from app.processes.ecoli.gene import Gene_collection
+from .gene import Gene_collection
 
 def collection_list(collection_name,gql_service):
     template = "no collection support"

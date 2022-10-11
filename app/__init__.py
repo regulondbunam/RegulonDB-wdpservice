@@ -1,23 +1,13 @@
-from ast import keyword
 import os
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from datetime import datetime
+
 from flask import Flask, request, render_template, make_response
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
 from app.processes.citations import Citations
-from app.processes.ecoli.gene import Gene_collection
+from app.controllers.ecoli.gene import Gene_collection
 from app.processes_HT.ht_process import HTprocess
 from app.ht.dataset.datasets import DatasetsSearch
-from app.processes.pdf_utils import CreatePDF
-from app.processes.pdf_utils.sequence_format import SequenceFormat, fasta_format
-from app.processes.web_services import get_RegulonDB_version
-from app.routes.ecoli import collection_list
+from app.controllers.ecoli import collection_list
 
 
 app = Flask(__name__)
@@ -47,54 +37,12 @@ def ecoli_collection_list(collection_name):
 @app.route('/wdps/ecoli/gene/<id>/<format>')
 def ecoli_gene_id(id, format):
     collection = Gene_collection(gql_service)
-    if format == "pdf":
-        resp = collection.getGeneById(id, format)
-        citations = None
-        sequence = None
-        try:
-            citations = Citations(resp["data"][0]["allCitations"])
-            sequence_format = SequenceFormat(resp["data"][0]["gene"]["sequence"],"")
-            sequence = sequence_format.get_genebank_format(False)
-            product_sequence = SequenceFormat()
-        except Exception as e:
-            print("Error. load allCitations in gene"+str(e))
-        now = datetime.now()
-        date = now.strftime("%H:%M:%S %B %d, %Y")
-        rendered = render_template(
-            '/ecoli/gene/pdf.html', data=resp["data"][0], date=date, citations=citations, sequence=sequence, fasta_format=fasta_format)
-        #pdf_n = pdfkit.from_string(rendered, css=css, options=pdf_options)
-        regulonDB_version = get_RegulonDB_version(gql_service)
-        pdf = CreatePDF(id,-1,rendered,regulonDB_version)
-        pdf_file=open(pdf.file_path,'rb')
-        response = make_response(pdf_file.read())
-        pdf_file.close()
-        response.headers['Content-Type'] = 'application/pdf'
-        response.headers['Content-Disposition'] = 'inline; filename=gene.pdf'
-        return response
     return collection.getGeneById(id, format)
   
-@app.route('/wdps/ecoli/dtt')
-def dtt():
-    options = Options()
-    options.add_argument('--no-sandbox')
-    options.add_argument("--headless")
-    options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome(executable_path="app/static/drivers/chromedriver", options = options)
-    site = "embed/dtt/leftEndPosition=100&rightEndPosition=1000"
-    driver.get(browser_url+site)
-    page_source = ""
-    try:
-        
-        WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.ID, "embed_data")))
-        element = driver.find_element(By.ID, "embed_dtt_draw")
-        print(element.get_attribute("innerHTML"))
-        page_source = driver.page_source
-    except TimeoutException:
-        print("Cannot find embedData.")
-    finally:
-        driver.quit()
-    return page_source
+@app.route('/wdps/ecoli/dtt/<format>/<variables>')
+def dtt(format,variables):
+    
+    return "image"
 
 #HT routes and apps
 
