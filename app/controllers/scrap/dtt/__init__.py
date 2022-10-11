@@ -45,5 +45,6 @@ class DrawingTraceScrap:
         return canvas
     
     def get_dtt_svg(self):
-        svg2png(bytestring=self.canvas,write_to='/cache/'+self.scrap_code+'.png.cache')
-        return '/cache/'+self.scrap_code+'.png.cache'
+        out = "/tmp/"+self.scrap_code+".png"
+        svg2png(bytestring=self.canvas,write_to=out)
+        return out

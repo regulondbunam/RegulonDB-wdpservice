@@ -36,7 +36,7 @@ def ecoli_collection_list(collection_name):
 
 @app.route('/wdps/ecoli/gene/<id>/<format>')
 def ecoli_gene_id(id, format):
-    collection = Gene_collection(gql_service)
+    collection = Gene_collection(gql_service,browser_url)
     return collection.getGeneById(id, format)
   
 @app.route('/wdps/ecoli/dtt/<format>/<variables>')

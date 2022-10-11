@@ -23,8 +23,9 @@ class CreatePDF:
     regulondb_logo = "app/static/img/regulondb_logo.jpg"
     
 
-    def __init__(self, id: str, version, rendered, rdb_version):
+    def __init__(self, id: str, version, rendered, rdb_version, dtt_gene):
         self.rdb_version = rdb_version
+        self.path_dtt_gene = dtt_gene
         self.fileTemp_path = "./cache/_temp_" + id + "_pdf_v" + str(version) + ".pdf.cache"
         self.file_path = "./cache/" + id + "_pdf_v" + str(version) + ".pdf.cache"
         if not os.path.exists(self.file_path) or version == -1:
@@ -44,6 +45,7 @@ class CreatePDF:
         # Draw logos 
         canvas.drawImage(self.ccg_logo,450,770,100,50,preserveAspectRatio=True)
         canvas.drawImage(self.regulondb_logo,40,770,100,50,preserveAspectRatio=True)
+        canvas.drawImage(self.path_dtt_gene,0,600,400,200,preserveAspectRatio=True)
         
         #Add footer
         canvas.setFont('Times-Roman', 8)
@@ -66,5 +68,6 @@ class CreatePDF:
         output.write(outputStream)
         outputStream.close()
         os.remove(self.fileTemp_path)
+        os.remove(self.path_dtt_gene)
         
 

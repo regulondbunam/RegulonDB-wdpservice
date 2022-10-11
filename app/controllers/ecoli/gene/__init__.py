@@ -10,8 +10,9 @@ class Gene_collection:
     format_available = ["jsontable", "jsongql", "pdf", "txt"]
     allCitations = []
 
-    def __init__(self, gql_service):
+    def __init__(self, gql_service, browser_url):
         self.gql_service = gql_service
+        self.browser_url = browser_url
         self.response = ""
 
     def search(self, keyword, page=0,limit=50):
@@ -36,7 +37,7 @@ class Gene_collection:
                         "Content-disposition": "attachment; filename=ecoli_gene_" + id + "_" + ".txt"}
                 )
             elif format == "pdf":
-                return format_pdf_gene(id,gene,self.gql_service)
+                return format_pdf_gene(id,gene,self.gql_service,self.browser_url)
             return gene
         except Exception as e:
             print(e)
