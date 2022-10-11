@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from datetime import datetime
-from flask import Flask, request, render_template, make_response, send_from_directory
+from flask import Flask, request, render_template, make_response
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
 from app.processes.citations import Citations
@@ -17,6 +17,7 @@ from app.ht.dataset.datasets import DatasetsSearch
 from app.processes.pdf_utils import CreatePDF
 from app.processes.pdf_utils.sequence_format import SequenceFormat, fasta_format
 from app.processes.web_services import get_RegulonDB_version
+from app.routes.ecoli import collection_list
 
 
 app = Flask(__name__)
@@ -40,21 +41,8 @@ def ecoli_page():
     return render_template('/ecoli/index.html')
 
 @app.route('/wdps/ecoli/<collection_name>', methods=["GET", "POST"])
-def ecoli_gene_list(collection_name):
-    template = "no collection support"
-    header_animation = True
-    if collection_name == "gene":
-        if request.method == 'POST':
-            keyword = request.form['keyword']
-            collection = Gene_collection(gql_service)
-            results = collection.search(keyword)
-            header_animation = False
-            template =render_template('/ecoli/gene/index.html', data=results["data"], pagination=results["pagination"], search_result=keyword, header_animation=header_animation)
-        else:
-            collection = Gene_collection(gql_service)
-            results = collection.search("RDBECOLI")
-            template =render_template('/ecoli/gene/index.html', data=results["data"], pagination=results["pagination"], search_result="", header_animation=header_animation)
-    return template
+def ecoli_collection_list(collection_name):
+    return collection_list(collection_name, gql_service)
 
 @app.route('/wdps/ecoli/gene/<id>/<format>')
 def ecoli_gene_id(id, format):

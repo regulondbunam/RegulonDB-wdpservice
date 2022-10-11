@@ -13,9 +13,9 @@ class Gene_collection:
         self.gql_service = gql_service
         self.response = ""
 
-    def search(self, keyword):
+    def search(self, keyword, page=0,limit=50):
         ws = WServices(self.gql_service)
-        results = ws.getSearch({"search": keyword})
+        results = ws.getSearch({"search": keyword,"page": page,"limit":limit})
         return results
 
     def getGeneById(self, id, format):
