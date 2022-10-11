@@ -1,6 +1,6 @@
+import os
 from datetime import datetime
-from logging import exception
-from flask import Flask, request, render_template, make_response
+from flask import render_template, make_response
 from app.controllers.citations import Citations
 from app.controllers.pdf_utils.sequence_format import SequenceFormat, fasta_format
 from app.controllers.pdf_utils import CreatePDF
@@ -8,6 +8,19 @@ from app.controllers.web_services import get_RegulonDB_version
 from app.controllers.scrap.dtt import DrawingTraceScrap
 
 def format_pdf_gene(id,gene,gql_service,browser_url):
+    file_path = "./cache/" + id + "_pdf_v" + str(1) + ".pdf.cache"
+    if not os.path.exists(file_path):
+        return createPDf(id,gene,gql_service,browser_url)
+    else:
+        pdf_file=open(file_path,'rb')
+        response = make_response(pdf_file.read())
+        pdf_file.close()
+        response.headers['Content-Type'] = 'application/pdf'
+        response.headers['Content-Disposition'] = 'inline; filename=gene.pdf'
+        return response
+        
+
+def createPDf(id,gene,gql_service,browser_url):
     citations = None
     sequence = None
     dtt_gene = ""
@@ -33,7 +46,7 @@ def format_pdf_gene(id,gene,gql_service,browser_url):
         rendered = render_template(
                 '/ecoli/gene/pdf.html', data=gene["data"][0], date=date, citations=citations, sequence=sequence, fasta_format=fasta_format)
         try:
-            pdf = CreatePDF(id,-1,rendered,regulonDB_version,dtt_gene)
+            pdf = CreatePDF(id,1,rendered,regulonDB_version,dtt_gene)
             pdf_file=open(pdf.file_path,'rb')
             response = make_response(pdf_file.read())
             pdf_file.close()

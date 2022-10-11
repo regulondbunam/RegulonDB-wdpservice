@@ -1,5 +1,6 @@
 import os
 from flask import Response
+from flask import make_response
 from .web_services import WServices
 from .adapters.txt import format_txt_gene
 from .adapters.pdf import format_pdf_gene
