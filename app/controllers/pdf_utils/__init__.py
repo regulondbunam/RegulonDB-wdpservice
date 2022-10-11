@@ -35,7 +35,15 @@ class CreatePDF:
     
     def addLayout(self):
         packet = io.BytesIO()
+        image = Canvas(packet, pagesize=A4)
+        image.drawImage(self.path_dtt_gene,20,610,550,100,preserveAspectRatio=False)
+        image.save()
+        packet.seek(0)
+        pdf_dtt = PdfFileReader(packet)
+        
+        packet = io.BytesIO()
         canvas = Canvas(packet, pagesize=A4)
+        
         
         canvas.setFont('Times-Roman', 14)
         # add text in the x,y coordinates of interest
@@ -45,7 +53,6 @@ class CreatePDF:
         # Draw logos 
         canvas.drawImage(self.ccg_logo,450,770,100,50,preserveAspectRatio=True)
         canvas.drawImage(self.regulondb_logo,40,770,100,50,preserveAspectRatio=True)
-        canvas.drawImage(self.path_dtt_gene,0,600,400,200,preserveAspectRatio=True)
         
         #Add footer
         canvas.setFont('Times-Roman', 8)
@@ -62,6 +69,8 @@ class CreatePDF:
         num_pages = pdf_info.getNumPages()
         for num_page in range(0,num_pages):
             page = pdf_info.getPage(num_page)
+            if num_page == 0:
+                page.mergePage(pdf_dtt.getPage(0))
             page.mergePage(pdf_layout.getPage(0))
             output.addPage(page)
         outputStream = open(self.file_path,'wb')
