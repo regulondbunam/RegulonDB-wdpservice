@@ -32,7 +32,7 @@ def ecoli_page():
 
 @app.route('/wdps/ecoli/<collection_name>', methods=["GET", "POST"])
 def ecoli_collection_list(collection_name):
-    return collection_list(collection_name, gql_service)
+    return collection_list(collection_name, gql_service,browser_url)
 
 @app.route('/wdps/ecoli/gene/<id>/<format>')
 def ecoli_gene_id(id, format):
