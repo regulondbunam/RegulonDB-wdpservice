@@ -1,9 +1,10 @@
-import os
+import sys, os
 from flask import Response
 from flask import make_response
 from .web_services import WServices
 from .adapters.txt import format_txt_gene
 from .adapters.pdf import format_pdf_gene
+from ...validateDM import validateDM
 
 
 class Gene_collection:
@@ -32,7 +33,7 @@ class Gene_collection:
                 return gene
             elif format == "txt":
                 return Response(
-                    format_txt_gene(gene),
+                    format_txt_gene(gene["data"][0]),
                     mimetype="text/plain; charset=utf-8",
                     headers={
                         "Content-disposition": "attachment; filename=ecoli_gene_" + id + "_" + ".txt"}
@@ -41,7 +42,9 @@ class Gene_collection:
                 return format_pdf_gene(id,gene,self.gql_service,self.browser_url)
             return gene
         except Exception as e:
-            print(e)
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(e, exc_type, fname, exc_tb.tb_lineno)
             return "ups... error"+str(e)
 
     def setCitations(self, allCitations):

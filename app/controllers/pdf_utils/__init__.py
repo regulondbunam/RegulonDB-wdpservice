@@ -34,12 +34,14 @@ class CreatePDF:
             
     
     def addLayout(self):
-        packet = io.BytesIO()
-        image = Canvas(packet, pagesize=A4)
-        image.drawImage(self.path_dtt_gene,20,610,550,100,preserveAspectRatio=False)
-        image.save()
-        packet.seek(0)
-        pdf_dtt = PdfFileReader(packet)
+        pdf_dtt = None
+        if not self.path_dtt_gene == "":
+            packet = io.BytesIO()
+            image = Canvas(packet, pagesize=A4)
+            image.drawImage(self.path_dtt_gene,20,610,550,100,preserveAspectRatio=False)
+            image.save()
+            packet.seek(0)
+            pdf_dtt = PdfFileReader(packet)
         
         packet = io.BytesIO()
         canvas = Canvas(packet, pagesize=A4)
@@ -69,7 +71,7 @@ class CreatePDF:
         num_pages = pdf_info.getNumPages()
         for num_page in range(0,num_pages):
             page = pdf_info.getPage(num_page)
-            if num_page == 0:
+            if num_page == 0 and pdf_dtt != None:
                 page.mergePage(pdf_dtt.getPage(0))
             page.mergePage(pdf_layout.getPage(0))
             output.addPage(page)
@@ -77,6 +79,7 @@ class CreatePDF:
         output.write(outputStream)
         outputStream.close()
         os.remove(self.fileTemp_path)
-        os.remove(self.path_dtt_gene)
+        if not self.path_dtt_gene == "":
+            os.remove(self.path_dtt_gene)
         
 

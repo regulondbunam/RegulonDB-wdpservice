@@ -1,7 +1,7 @@
 from array import array
 from ..Citations import Citations
 from ..Gene import ExternalCrossReferences
-from GeneOntologyTerms import GeneOntologyTerms
+from ..GeneOntologyTerms import GeneOntologyTerms
 from .Motifs import Motifs
 
 Products = {

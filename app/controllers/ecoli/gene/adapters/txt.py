@@ -1,7 +1,9 @@
-import json
+
 
 
 def display_dict(dictionary):
+    if dictionary == None:
+        return ""
     rel = ""
     for key in dictionary:
         if key != "__typename":
@@ -40,26 +42,77 @@ def statistics(st):
             rel = rel+" "+key+" "+str(st[key])+","
     return rel
 
-def format_txt_gene(gene):
-    gene_data = gene["data"][0]
+
+
+def format_txt_gene(gene_data):
+    id = ""
+    if not gene_data["_id"] == None:
+        id = f"""
+        id - {gene_data["_id"]}"""
+    name = ""
+    if not gene_data["gene"]["name"] == None:
+        name = f"""
+        name - {gene_data["gene"]["name"]}"""
+    bnumber = ""
+    if not gene_data["gene"]["bnumber"] == None:
+        bnumber = f"""
+        bnumber - {gene_data["gene"]["bnumber"]}"""
+    centisomePosition = ""
+    if not gene_data["gene"]["centisomePosition"] == None:
+        centisomePosition = f"""
+        centisomePosition - {gene_data["gene"]["centisomePosition"]}"""
+    gcContent = ""
+    if not gene_data["gene"]["gcContent"] == None:
+        gcContent = f"""
+        gcContent - {gene_data["gene"]["gcContent"]}"""
+    leftEndPosition = ""
+    if not gene_data["gene"]["leftEndPosition"] == None:
+        leftEndPosition = f"""
+        leftEndPosition - {gene_data["gene"]["leftEndPosition"]}"""
+    rightEndPosition = ""
+    if not gene_data["gene"]["rightEndPosition"] == None:
+        rightEndPosition = f"""
+        rightEndPosition - {gene_data["gene"]["rightEndPosition"]}"""
+    strand = ""
+    if not gene_data["gene"]["strand"] == None:
+        strand = f"""
+        strand - {gene_data["gene"]["strand"]}"""
+    sequence = ""
+    if not gene_data["gene"]["sequence"] == None:
+        sequence = f"""
+        sequence - {gene_data["gene"]["sequence"]}"""
+    note = ""
+    if not gene_data["gene"]["note"] == None:
+        note = f"""
+        note - {gene_data["gene"]["note"]}"""
+    externalCrossReferences = ""
+    if not gene_data["gene"]["externalCrossReferences"] == None:
+        externalCrossReferences = f"""
+        {display_array("externalCrossReferences",gene_data["gene"]["externalCrossReferences"],False)}"""   
+    products = ""
+    if not gene_data["products"] == None:
+        products = f"""
+        {display_array("products",gene_data["products"],False)}"""
+    regulation = ""
+    if not gene_data["regulation"] == None:
+        statistics = ""
+        if not gene_data["regulation"]["statistics"] == None:
+            statistics = f"""[{statistics(gene_data["regulation"]["statistics"])}]"""
+        operon = ""
+        if not gene_data["regulation"]["operon"] == None:
+            operon = f"""operon - {gene_data["regulation"]["operon"]["name"]}[{gene_data["regulation"]["operon"]["id"]}]"""
+        arrangement = ""
+        if not gene_data["regulation"]["operon"]["arrangement"] == None:
+            arrangement = f"""{display_array("    arrangement",gene_data["regulation"]["operon"]["arrangement"],True)}"""
+        regulation = f"""
+        regulation - {statistics}{{
+            {operon}
+            {arrangement}
+            }}"""
+    
     try:
-        return f"""#RegulonDB WDPS txt gene file
-id - {gene_data["_id"]}
-name - {gene_data["gene"]["name"]}
-bnumber - {gene_data["gene"]["bnumber"]}
-centisomePosition - {gene_data["gene"]["centisomePosition"]}
-gcContent - {gene_data["gene"]["gcContent"]}
-leftEndPosition - {gene_data["gene"]["leftEndPosition"]}
-rightEndPosition - {gene_data["gene"]["rightEndPosition"]}
-strand - {gene_data["gene"]["strand"]}
-sequence - {gene_data["gene"]["sequence"]}
-note - {gene_data["gene"]["note"]}
-{display_array("externalCrossReferences",gene_data["gene"]["externalCrossReferences"],False)}
-regulation - [{statistics(gene_data["regulation"]["statistics"])}]{{
-    operon - {gene_data["regulation"]["operon"]["name"]}[{gene_data["regulation"]["operon"]["id"]}]
-{display_array("    arrangement",gene_data["regulation"]["operon"]["arrangement"],True)}
-{display_array("products",gene_data["products"],False)}
-}}
+        return f"""#RegulonDB txt gene file
+{id}{name}{bnumber}{centisomePosition}{gcContent}{leftEndPosition}{rightEndPosition}{strand}{sequence}{note}{externalCrossReferences}{products}{regulation}
     """
     except Exception as e:
         print(e)
