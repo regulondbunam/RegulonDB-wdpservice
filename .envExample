@@ -1,2 +1,2 @@
 # GraphQL service
-GQL_SEVICE=000.000.000.00
+GQL_SERVICE=http://132.248.220.219:7000/graphql

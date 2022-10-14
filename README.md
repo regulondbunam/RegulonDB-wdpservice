@@ -111,9 +111,14 @@ You can find more information on how to implement this application in the follow
 export FLASK_APP=app.py
 flask run --host=0.0.0.0
 ```
-onWindows
+Development note, if you are using visual code you have to execute the following command "pip install Flask-Session" before entering venv, and to debug mode "export FLASK_DEBUG=1"
+debug on linux
 ```shell
-set FLASK_APP=app.py
-flask run --host=0.0.0.0
+export FLASK_DEBUG=1
 ```
-Development note, if you are using visual code you have to execute the following command "pip install Flask-Session" before entering venv
+debug on windows
+```shell
+ $env:FLASK_DEBUG = "1"
+ set FLASK_DEBUG=1
+ flask run --host=0.0.0.0
+```

@@ -1,0 +1,46 @@
+body {
+    min-height: 100vh;
+    background-color: #000000;
+  }
+  
+  h1{
+      color: #FFFFFF;
+  }
+
+  .enlaces{
+    margin-left: 5%;
+  }
+
+  .animationFrame1{
+    width: 0;
+    animation: typing 2s steps(38) 1s 1 normal both;
+  }
+
+  .animationFrame2{
+    width: 0;
+    animation: typing 4s steps(38) 1s 1 normal both;
+    animation-delay: 2s;
+  }
+
+  .animationFrame3{
+    width: 0;
+    animation: typing 4s steps(38) 1s 1 normal both;
+    animation-delay: 4s;
+  }
+  
+  .description {
+    color: #02AE00;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 465px;
+    }
+  }

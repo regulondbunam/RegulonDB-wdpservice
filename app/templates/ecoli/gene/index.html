@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/base.css') }}">
+    <title>RDBwdps</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        console.log("{{pagination}}")
+    </script>
+    <div>
+        <h1>RegulonDB WDPS</h1>
+        <h2 class="description {{'animationFrame1' if header_animation }}">Escherichia Coli K12</h2>
+        <div>
+            <p class="description {{'animationFrame2' if header_animation }}">Gene Documents</p>
+        </div>
+        <div class="description {{'animationFrame2' if header_animation }}" >
+            <form action="" method="post">
+                <label for="keyword">Search</label>
+                <input type="text" id="keyword" name="keyword" value="{{search_result}}" />
+                <input type="submit" id="search-keyword" name="search" value="search" />
+            </form>
+        </div>
+        <br>
+        <div class="description {{'animationFrame1' if not header_animation }} {{'animationFrame3' if header_animation }}" >
+            <form action="" method="post">
+                <input type="submit" id="prev_page" name="prevPage" value="prevPage" />
+                <label for="current_page">current page: {{pagination.currentPage}} </label>
+                <input style="width: 15px; display:none" type="text" id="current_page" name="current_page" value="{{pagination.currentPage}}"/>
+                <input style="width: 15px; display:none" type="text" id="last_page" name="last_page" value="{{pagination.lastPage}}"/>
+                <input type="submit" id="next_page" name="nextPage" value="nextPage" />
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>_id</th><th>Name</th><th>Download File</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for gene in data %}
+                    <tr  >
+                        <td>{{ gene["_id"] }}</td><td>{{ gene["gene"]["name"] | safe }}</td>
+                        <td>
+                            <a href="./gene/{{ gene['_id'] }}/txt">.txt</a>
+                            <a href="./gene/{{ gene['_id'] }}/pdf">.pdf</a>
+                        </td>
+                    </tr>
+                    <!--
+            <p class="description3">
+                <a href="./gene/{{ gene['_id'] }}/txt">{{ gene["gene"]["name"] }}</a>
+            </p> -->
+            {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="source_data">
+      <div class="id_doc">
+        https:/regulondb.ccg.unam.mx/gene/{{data["gene"]["id"]}}
+        <br />
+        {{date}}
+      </div>
+    </div>
+    <div class="header">
+      <div class="cover">
+        <br />
+        <h1>
+          Gene {{data["gene"]["name"] | safe}}
+          <span class="id"> ({{data["gene"]["id"]}}) </span>
+        </h1>
+        <br />
+      </div>
+    </div>
+    <div style="width: 800px; height: 200px">.</div>
+    <article>
+      <div>
+        <h2>Gene Information</h2>
+        <table class="table_gene_information">
+          <tbody>
+            <tr>
+              <td style="font-weight: bold">Name:</td>
+              <td>{{data["gene"]["name"] | safe}}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Synonyms:</td>
+              <td>{{data["gene"]["synonyms"]}}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Bnumber:</td>
+              <td>{{data["gene"]["bnumber"]}}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Position:</td>
+              <td>
+                {{data["gene"]["leftEndPosition"]}} {% if data["gene"]["strand"]
+                == "reverse" %} <- {% else %} -> {% endif %}
+                {{data["gene"]["rightEndPosition"]}}
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Size:</td>
+              <td>
+                {{ data["gene"]["rightEndPosition"] -
+                data["gene"]["leftEndPosition"] }} bp
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Strand:</td>
+              <td>{{data["gene"]["strand"]}}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">gc content:</td>
+              <td>{{data["gene"]["gcContent"]}}%</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold">Centisome Position:</td>
+              <td>{{data["gene"]["centisomePosition"]}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="p_accent">multifunTerms</p>
+      {% for mft in data["gene"]["multifunTerms"] %}
+      <div style="margin-left: 15px">
+        <p>{{mft["label"]}}</p>
+      </div>
+      {% endfor %}
+      <p class="p_accent">External Cross References</p>
+      <div style="margin-left: 15px">
+        {% for ecr in data["gene"]["externalCrossReferences"] %}
+        <a style="margin-right: 4px" href="{{ecr['url']}}"
+          >{{ecr["externalCrossReferenceName"]}}</a
+        >
+        {% endfor %}
+      </div>
+      <p class="p_accent">Sequence:</p>
+      <div class="div_sequence p_sequence">{{sequence | safe}}</div>
+      {%if data["gene"]["note"] != None %}
+      <p class="p_accent">Note</p>
+      <p style="margin-left: 15px">
+        {{citations.note(data["gene"]["note"]) | safe}}
+      </p>
+      {% endif %} {%if not data["regulation"] == None %}
+      <h2>Regulation Info</h2>
+      <p>
+        [ promoters: {{data["regulation"]["statistics"]["promoters"]}} |
+        regulators: {{data["regulation"]["statistics"]["regulators"]}} |
+        Regulatory Interaction:
+        {{data["regulation"]["statistics"]["regulatoryInteractions"]}} ]
+      </p>
+      <h3>Operon {{data["regulation"]["operon"]["name"]}}</h3>
+      <h3>Regulators</h3>
+      <div style="margin-left: 15px">
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Function</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for regulator in data["regulation"]["regulators"] %}
+            <tr>
+              <td>{{regulator["type"]}}</td>
+              <td>{{regulator["function"]}}</td>
+              <td>{{regulator["name"]}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+      <h2>Products</h2>
+      {% for product in data["products"] %}
+      <div style="margin-left: 15px">
+        <h3>{{product["name"]}}</h3>
+        <div style="margin-left: 10px">
+          <table class="table_gene_information">
+            <tbody>
+              <tr>
+                <td style="font-weight: bold">anticodon:</td>
+                <td>{{product["anticodon"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">cellularLocations</td>
+                <td>{{product["cellularLocations"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">isRegulator</td>
+                <td>{{product["isRegulator"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">isoelectricPoint</td>
+                <td>{{product["isoelectricPoint"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">molecularWeight</td>
+                <td>{{product["molecularWeight"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">synonyms</td>
+                <td>{{product["synonyms"]}}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">type</td>
+                <td>{{product["type"]}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="p_accent">External Cross References</p>
+          <div style="margin-left: 15px">
+            {% for ecr in product["externalCrossReferences"] %}
+            <a style="margin-right: 4px" href="{{ecr['url']}}"
+              >{{ecr["externalCrossReferenceName"]}}</a
+            >
+            {% endfor %}
+          </div>
+          <p class="p_accent">Notes</p>
+          <div style="margin-left: 15px">
+            <p>{{citations.note(product["note"]) | safe}}</p>
+          </div>
+          <p class="p_accent">Sequence</p>
+          <div style="margin-left: 15px">
+            <div class="div_sequence p_sequence">
+              {{fasta_format(product["sequence"],"Product Sequence") | safe}}
+            </div>
+          </div>
+          <h4>Gene Ontology Terms</h4>
+          <div style="margin-left: 15px">
+            <p class="p_accent">Biological Process</p>
+            {% for bProcess in product["geneOntologyTerms"]["biologicalProcess"]
+            %}
+            <p>
+              {{bProcess["name"]}} {% for cit in bProcess["citations"] %} {{
+              citations.citation_toLink(citations.getIndex_citation_by_id(cit["publication"]["id"])+1,citations.allCitations[citations.getIndex_citation_by_id(cit["publication"]["id"])],True)
+              | safe }} {% endfor %}
+            </p>
+            {% endfor %}
+            <p class="p_accent">Cellular Component</p>
+            {% for bProcess in product["geneOntologyTerms"]["cellularComponent"]
+            %}
+            <p>
+              {{bProcess["name"]}} {% for cit in bProcess["citations"] %} {{
+              citations.citation_toLink(citations.getIndex_citation_by_id(cit["publication"]["id"])+1,citations.allCitations[citations.getIndex_citation_by_id(cit["publication"]["id"])],True)
+              | safe }} {% endfor %}
+            </p>
+            {% endfor %}
+            <p class="p_accent">Molecular Function</p>
+            {% for bProcess in product["geneOntologyTerms"]["molecularFunction"]
+            %}
+            <p>
+              {{bProcess["name"]}} {% for cit in bProcess["citations"] %} {{
+              citations.citation_toLink(citations.getIndex_citation_by_id(cit["publication"]["id"])+1,citations.allCitations[citations.getIndex_citation_by_id(cit["publication"]["id"])],True)
+              | safe }} {% endfor %}
+            </p>
+            {% endfor %}
+          </div>
+          <h4>Motifs</h4>
+          <div style="margin-left: 15px">
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Source</th>
+                  <th>Position</th>
+                  <th>Sequence</th>
+                  <th>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for motif in product["motifs"]%}
+                <tr>
+                  <td>{{motif["type"]}}</td>
+                  <td>{{motif["dataSource"]}}</td>
+                  <td>
+                    {{motif["leftEndPosition"]}} - {{motif["rightEndPosition"]}}
+                  </td>
+                  <td>
+                    <div class="div_sequence p_sequence">
+                      {{fasta_format(motif["sequence"],"") | safe}}
+                    </div>
+                  </td>
+                  <td>{{motif["description"] | safe}}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <h2>Citations</h2>
+      {% for citation in citations.list_citations() %}
+      <a href="{{citation['url']}}"
+        >[{{citation["index"]}}] {{citation["citation"] | safe}}</a
+      ><br />
+      {% endfor %}
+    </article>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+:root {
+	--color-blue1: #1f3d4e;
+	--color-blue2: #32617d;
+	--color-blue3: #3d779b;
+	--color-blue4: #72a7c7;
+	--color-blue5: #cadce7;
+	--color-grey1: #373737;
+	--color-grey2: #666666;
+	--color-grey3: #999999;
+	--color-grey3A: #99999999;
+	--color-grey4: #d5d5d7;
+	--color-grey5: #f4f5f5;
+	--color-rest: #ffffff;
+	--color-accentA: #c93a1d;
+	--color-accentAA: #c93a1d99;
+	--color-accentB: #cc9900;
+	--color-postit: #fff8a6;
+  }
+  /*font family */
+  :root {
+	--fontFamily-principal: Arial, sans-serif;
+	--fontFamily-option: Arial, Helvetica, sans-serif;
+	--fontFamily-simpleText: "Times New Roman", Times, serif;
+	--fontFamily-cita: "Times New Roman", Times;
+	--fontFamily-sequence: "Courier New", Courier, monospace;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+article{
+    margin-left: 1in;
+    margin-right: 0.8in;
+}
+
+h1 {
+    color: white;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 26px;
+	font-family: var(--font-title);
+	font-style: var(--fontStyle-title);
+	font-weight: bold;
+  }
+
+  h2{
+    font-size: 20px;
+    font-family: var(--font-title);
+	font-style: var(--fontStyle-title);
+	font-weight: var(--fontWeight);
+	line-height: var(--fontWeight);
+  }
+
+.source_data{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.id_doc{
+    font-size: 10px;
+    margin-right: 0.5in;
+}
+
+.id{
+    font-size: 10px;
+}
+
+.cover{
+    padding-left: 1in;
+    padding-right: 0.8in;
+}
+
+.header{
+    color: rgb(0, 0, 0);
+    background-color: var(--color-blue4);
+}
+
+.header_product{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.p_accent{
+    font-weight: bold;
+}
+
+
+.div_sequence{
+    word-wrap: break-word;   
+}
+
+.p_sequence{
+    font-family: "Courier New", Courier, monospace;
+}
+
+.rdb_p_sequence {
+	font-family: var(--fontFamily-sequence);
+	font-size: 14px;
+  }
+
+.rdb_sequence_A{
+    background-color: #2BF063;
+}
+.rdb_sequence_a{
+    background-color: #8BF0A3;
+}
+.rdb_sequence_C{
+    background-color: #606CEB;
+}
+.rdb_sequence_c{
+    background-color: #BEC4EB;
+}
+.rdb_sequence_T{
+    background-color: #EBC53D;
+}
+.rdb_sequence_t{
+    background-color: #EBD89B;
+}
+.rdb_sequence_G{
+    background-color: #EB3131;
+}
+.rdb_sequence_g{
+    background-color: #EB8F97;
+}
