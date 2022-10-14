@@ -1,10 +1,10 @@
 # RegulonDB Web Data Prosses Services
 
 welcome n.n/
-version 0.3.2
+version 0.4.1
 
 ## Description
-This service allows data processing from RegulonDB-HT GraphQL API services. It transforms datamat information into CVS, BED, GFF3 and regulonDB specific formats.
+This service allows data processing from RegulonDB-WebService GraphQL API services. It transforms datamat information into CVS, BED, GFF3 and regulonDB specific formats.
 
 ## Hardware requirements
 
@@ -30,7 +30,31 @@ minimum requirements
 ### server:
 
 -   RegulonDB-HT GraphQL API
+-   RegulonDB-Browser
 -   Python 3.8
+-   wkhtmltopdf
+-   google-chrome
+
+#### Install Dependencies server
+
+```shell
+apt-get install -y wkhtmltopdf
+
+apt-get install xvfb
+
+apt-get install -y fonts-liberation libasound2 libnspr4 libnss3 wget xdg-utils
+
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt-get update
+sudo apt-get install libappindicator1
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+It is important to know the version of chrome that has been installed, this to download the corresponding driver in the installation of the service, to know the version try the following command
+
+```shell
+    google-chrome --version
+```
 
 ### Client
 
@@ -68,7 +92,17 @@ python3 -m venv venv
 on Windows
 ```shell
 virtualenv venv
+
 ```
+**Step 4 activate Download chrome driver**
+Depending on the version of chrome installed on your server, download the corresponding driver.
+
+https://chromedriver.chromium.org/downloads
+
+Once downloaded, rename the file to "chromedriver" and move it to the folder inside the flask app/static/drivers project.
+
+This step is essential for processing images coming from RegulonDb-Browser.
+
 **Step 3 activate venv**
 on project directory
 ```shell
@@ -81,14 +115,8 @@ for more information
 ```
 **Step 4 install project dependencies**
 
-dependencies: 
-- flask
-- sgqlc
-- flask-cors
-- csv
-- python-dotenv
 ```shell
-pip install flask flask-cors sgqlc python-dotenv
+pip install -r requirements.txt
 ```
 **Step 5 configuration**
 
@@ -98,9 +126,11 @@ duplicate the .env-sample file and rename it to .env and add the information req
 
 ``` 
 #rename this file to '.env' when the fields have been filled
-# GQL_SERVICE = "url of RegulonDB-HT GraphQL API"
+# GQL_SERVICE = "url of RegulonDB GraphQL API"
+# REGULONDB_BROWSER = "url of RegulonDB Browser, use this element to create image web"
 
 GQL_SERVICE=http://000.000.000.00
+REGULONDB_BROWSER=http://127.0.0.1/
 ```
 
 **Step 6 start service**
