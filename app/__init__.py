@@ -3,7 +3,6 @@ import os
 from flask import Flask, request, render_template, make_response
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
-from app.processes.citations import Citations
 from app.controllers.ecoli.gene import Gene_collection
 from app.processes_HT.ht_process import HTprocess
 from app.ht.dataset.datasets import DatasetsSearch
