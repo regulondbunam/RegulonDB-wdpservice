@@ -1,3 +1,5 @@
+import os, sys
+from app.utiles import errorRegister
 import json 
 
 
@@ -57,6 +59,10 @@ def process_ge_to_jsont(ge):
         data = ",\n".join(data)
 
     except Exception as e:
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+        errorRegister(error)
         print("error", e)
     return f'{{ "columns": {columns}, "data":[{data}] }}'
 
@@ -81,12 +87,20 @@ def process_ge_to_bedgraph(ge):
                 str(ex['tpm'])
             )
         except Exception as e:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+            errorRegister(error)
             print(e)
             print(ex)
 
         try:
             bedgraph_ge = bedgraph_ge+"\t".join(tuple_ts)+"\n"
         except Exception as e:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+            errorRegister(error)
             print(e)
             print(ex)
     return header+"\n"+bedgraph_ge

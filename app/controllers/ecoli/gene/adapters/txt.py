@@ -1,4 +1,5 @@
-
+import sys, os
+from app.utiles import errorRegister
 
 
 def display_dict(dictionary):
@@ -115,12 +116,17 @@ def format_txt_gene(gene_data):
 {id}{name}{bnumber}{centisomePosition}{gcContent}{leftEndPosition}{rightEndPosition}{strand}{sequence}{note}{externalCrossReferences}{products}{regulation}
     """
     except Exception as e:
-        print(e)
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+        errorRegister(error)
         return f"""
 Sorry, we seem to have an error in the data mapping.
 Please report this problem in the User feedback section:
 Error Details:
 wdps_ecoli_gene_txt_process - {str(e)}
+more Information
+{error}
     """
     
 

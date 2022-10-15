@@ -1,4 +1,6 @@
+import os, sys
 from .introspection import Dataset
+from app.utiles import errorRegister
 
 COLUMNS = [
     {"Header": "_id", "accessor": "_id"},
@@ -62,11 +64,19 @@ def dataset_jsontable(datasets):
                     publications = publications + " " + publication['title']
                     authors = authors + " " + str(publication['authors'])
             except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+                errorRegister(error)
                 print(e)
             try:
                 for tf in dataset["objectsTested"]:
                     tfs = tfs + " " + tf["name"]
             except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+                errorRegister(error)
                 print(e)
             if dataset["growthConditions"]:
                 growthConditions_organism = str(dataset["growthConditions"]["organism"])
@@ -115,6 +125,10 @@ def dataset_jsontable(datasets):
             }
             data.append(row)
         except Exception as e:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+            errorRegister(error)
             print("error", e)
             print(dataset["_id"])
     return {

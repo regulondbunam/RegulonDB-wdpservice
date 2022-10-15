@@ -1,4 +1,5 @@
-import os
+import os, sys
+from app.utiles import errorRegister
 import json
 from flask import jsonify
 from .web_services import WServices
@@ -38,6 +39,10 @@ class DatasetsSearch:
                     with open("./cache/" + file_format + "_" + self.advanced_search + ".cache", "w") as file:
                         file.write(data)
             except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+                errorRegister(error)
                 print("dataset error: "+str(e))
                 self.response = "dataset process error: " + str(e)
         else:
@@ -53,5 +58,9 @@ class DatasetsSearch:
             try:
                 return open("./cache/" + file_format + "_" + self.advanced_search + ".cache", "r").read()
             except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+                errorRegister(error)
                 print(e)
         return data

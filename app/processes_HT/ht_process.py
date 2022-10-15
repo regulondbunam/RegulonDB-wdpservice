@@ -1,4 +1,5 @@
-import os
+import os, sys
+from app.utiles import errorRegister
 import json
 from flask import Response, jsonify
 from .querys import Querys
@@ -99,6 +100,10 @@ class HTprocess:
                 with open("./cache/" + self.dataset_id + "_"+data_type+"_" + file_format + ".cache", "w") as file:
                     file.write(data)
             except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+                errorRegister(error)
                 print(e)
                 self.ht_response = "51 ht process Error: " + str(e)
         else:
@@ -140,6 +145,10 @@ class HTprocess:
                 with open("./cache/" + self.dataset_id + "_author_" + file_format + ".cache", "w") as file:
                     file.write(data)
             except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+                errorRegister(error)
                 print(e)
                 data = "error: " + str(e)
         # print("cache")
@@ -162,6 +171,10 @@ class HTprocess:
             try:
                 return open("./cache/" + self.dataset_id + "_" + file_format + "_" + data_type + ".cache", "r").read()
             except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+                errorRegister(error)
                 print(e)
         return data
 

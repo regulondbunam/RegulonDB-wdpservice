@@ -1,4 +1,5 @@
 import sys, os
+from app.utiles import errorRegister
 from .geneDatamart import geneDatamart
 
 datamartSchemaSelect={
@@ -18,7 +19,8 @@ class validateDM:
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(exc_type, fname, exc_tb.tb_lineno)
+            error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+            errorRegister(error)
         return validateData
     
     def check(self,schema_obj,data_obj):
@@ -45,7 +47,8 @@ class validateDM:
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(e, exc_type, fname, exc_tb.tb_lineno)
+            error = f"""on {str(fname)} def format_txt_gene, build txt [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+            errorRegister(error)
         return validateData
     
     def completeSchema(self,schema):

@@ -5,6 +5,7 @@ from .web_services import WServices
 from .adapters.txt import format_txt_gene
 from .adapters.pdf import format_pdf_gene
 from ...validateDM import validateDM
+from app.utiles import errorRegister
 
 
 class Gene_collection:
@@ -44,8 +45,9 @@ class Gene_collection:
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(e, exc_type, fname, exc_tb.tb_lineno)
-            return "ups... error"+str(e)
+            error = f"""on {str(fname)} def getGeneById [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+            errorRegister(error)
+            return error
 
     def setCitations(self, allCitations):
         self.allCitations = allCitations
@@ -64,5 +66,8 @@ class Gene_collection:
             try:
                 return open("./cache/" + queryType + "_" + format + "_" + id + ".cache", "r").read()
             except Exception as e:
-                print(e)
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                error = f"""on {str(fname)} def check_cache [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+                errorRegister(error)
         return data
