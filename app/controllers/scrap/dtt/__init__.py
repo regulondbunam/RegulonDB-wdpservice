@@ -1,3 +1,5 @@
+import sys, os
+from app.utiles import errorRegister
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -38,8 +40,16 @@ class DrawingTraceScrap:
             canvas = element.get_attribute("innerHTML")
             #with open('/cache/', 'w', encoding='utf-8') as f:
             #    f.write(canvas)
-        except TimeoutException:
-            print("Cannot find embedData.")
+        except TimeoutException as e:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            error = f"""on {str(fname)} def crate scrap [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+            errorRegister(error)
+        except Exception as e:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            error = f"""on {str(fname)} def crate scrap [{str(exc_tb.tb_lineno)}];{str(e)};type={str(exc_type)}"""
+            errorRegister(error)
         finally:
             driver.quit()
         return canvas
