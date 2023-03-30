@@ -1,12 +1,11 @@
 import os
-
-from flask import Flask, request, render_template, make_response
+from flask import Flask, request#, render_template, make_response
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
-from app.controllers.ecoli.gene import Gene_collection
+#from app.controllers.ecoli.gene import Gene_collection
 from app.processes_HT.ht_process import HTprocess
 from app.ht.dataset.datasets import DatasetsSearch
-from app.controllers.ecoli import collection_list
+#from app.controllers.ecoli import collection_list
 
 
 app = Flask(__name__)
@@ -20,6 +19,11 @@ UPLOAD_FOLDER = '/cache'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+
+@app.route('/wdps')
+def index():
+    return "Plastilina para HT"
+'''
 @app.route('/wdps')
 def index():
     return render_template('/home/index.html')
@@ -42,7 +46,7 @@ def ecoli_gene_id(id, format):
 def dtt(format,variables):
     
     return "image"
-
+'''
 #HT routes and apps
 
 def allowed_file(filename):
