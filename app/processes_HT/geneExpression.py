@@ -75,17 +75,18 @@ def process_ge_to_bedgraph(ge):
     bedgraph_ge = ""
     for ex in ge:
         try:
-            posL = ""
-            posR = ""
             if ex['gene']:
-                posL = str(ex['gene']['leftEndPosition'])
-                posR = str(ex['gene']['rightEndPosition'])
-            tuple_ts = (
-                "NC_000913.3",
-                posL,
-                posR,
-                str(ex['tpm'])
-            )
+                posL = ""
+                posR = ""
+                if ex['gene']['leftEndPosition'] is not None or ex['gene']['rightEndPosition'] is not None:
+                    posL = str(ex['gene']['leftEndPosition'])
+                    posR = str(ex['gene']['rightEndPosition'])
+                    tuple_ts = (
+                        "NC_000913.3",
+                        posL,
+                        posR,
+                        str(ex['tpm'])
+                    )
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
