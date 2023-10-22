@@ -1,0 +1,369 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= GadX/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+GadX_0                   1.0000     26  GadX_1                   1.0000     26  
+GadX_2                   1.0000     26  GadX_3                   1.0000     26  
+GadX_4                   1.0000     26  GadX_5                   1.0000     26  
+GadX_6                   1.0000     26  GadX_7                   1.0000     26  
+GadX_8                   1.0000     26  GadX_9                   1.0000     26  
+GadX_10                  1.0000     26  GadX_11                  1.0000     26  
+GadX_12                  1.0000     26  GadX_13                  1.0000     26  
+GadX_14                  1.0000     26  GadX_15                  1.0000     26  
+GadX_16                  1.0000     26  GadX_17                  1.0000     26  
+GadX_18                  1.0000     26  GadX_19                  1.0000     26  
+GadX_20                  1.0000     26  GadX_21                  1.0000     26  
+GadX_22                  1.0000     26  GadX_23                  1.0000     26  
+GadX_24                  1.0000     26  GadX_25                  1.0000     26  
+GadX_26                  1.0000     26  GadX_27                  1.0000     26  
+GadX_28                  1.0000     26  GadX_29                  1.0000     26  
+GadX_30                  1.0000     26  GadX_31                  1.0000     25  
+GadX_32                  1.0000     26  GadX_33                  1.0000     26  
+GadX_34                  1.0000     26  GadX_35                  1.0000     26  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme GadX/ri_sites.fasta -oc GadX/meme_out -mod oops -nmotifs 1 -minw 17 -maxw 23 -bfile ../U00096.3.bfile -dna -maxsize 0 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           17    maxw=           23
+nsites: minsites=       36    maxsites=       36    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             935    N=              36
+sample: seed=            0    hsfrac=          0
+        searchsize=    935    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.318 C 0.163 G 0.16 T 0.359 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AWNAHNKHTRAWTYYDWTHWNWK MEME-1	width =  23  sites =  36  llr = 175  E-value = 1.7e-013
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AWNAHNKHTRAWTYYDWTHWNWK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  633623:4235322144143251
+pos.-specific     C  ::2:3214111113321221311
+probability       G  22211331141:11122112213
+matrix            T  25334252623665633534335
+
+         bits    2.0                        
+                 1.8                        
+                 1.6                        
+                 1.4                        
+Relative         1.2                        
+Entropy          1.0                        
+(7.0 bits)       0.8    *                   
+                 0.6 *  *        *          
+                 0.4 ** *  * * *** *      **
+                 0.2 ** ** ********* **** **
+                 0.0 -----------------------
+
+Multilevel           ATTATATATGATTTTAATATTAT
+consensus             AATCGGC ATA CCTTCTACTG
+sequence              GC A  T       G  C A  
+                                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWNAHNKHTRAWTYYDWTHWNWK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site        
+-------------             ----- ---------            -----------------------
+GadX_10                       1  1.44e-10          . ataAAGTCTGTTTTTAATATTAT cat       
+GadX_7                        1  3.90e-10          . aaaATATCTGATTTTGATATTTT cca       
+GadX_32                       1  3.88e-07          . atcATGTTAAATGTTTATATTAT aaa       
+GadX_22                       2  1.19e-06          t atCTATTATGGTTTTAATATTTg tt        
+GadX_1                        1  7.53e-06          . atcATGGCTGATATTTTCCGTAG tca       
+GadX_5                        1  2.48e-05          . ttaAGGTCTGATTTTTACGTGAT aat       
+GadX_28                       1  3.77e-05          . aaaAAATATTATTCGCGTAATAT ctc       
+GadX_27                       3  3.77e-05         ac tTTATCGATAAATCCTACTTTtt t         
+GadX_34                       1  4.32e-05          . aaaATGGCTGATCTTATTTCCAG taa       
+GadX_9                        4  4.32e-05        cgt ATAGCTTATGTTTATAAAAAaat           
+GadX_8                        1  7.33e-05          . aaaTTAGCCATTTCAAACATTAT cat       
+GadX_25                       2  1.37e-04          a gtTAAATATAACTTTTACTGGAa at        
+GadX_3                        1  1.97e-04          . ataTTGTATTGTTTTTCAATGAA aaa       
+GadX_30                       1  3.90e-04          . aggATTTTGTTATTTAAATTAAG cct       
+GadX_18                       4  4.85e-04        ctt TTTTTAGCTAAATCTGCTATctc           
+GadX_24                       4  6.65e-04        aac ATCAGACAGGTTTACGTTACtat           
+GadX_0                        3  9.99e-04         ag aATGCAGTCGATTTAATAAAAat t         
+GadX_29                       2  1.62e-03          g gaTAAATCCTACTTTTTTATTGc ct        
+GadX_31                       1  1.78e-03          . aaaAAGTCGTTTTTCTGCTTAGg at        
+GadX_17                       2  1.78e-03          t atGTAATAATTTTATAAATGCGt tc        
+GadX_15                       2  2.14e-03          a ttTTTATTTCAATACAATGAGTt ac        
+GadX_12                       4  3.93e-03        gaa AGGTGCGATGATTGCGTTATgcg           
+GadX_4                        4  3.93e-03        tca AGTACTAATAGTGATATTTTaag           
+GadX_6                        4  4.27e-03        gaa AGGATATAAACATCAGACAGgtt           
+GadX_14                       1  5.45e-03          . agtATCTTAGATACCCCTCCAAG ccc       
+GadX_11                       1  5.45e-03          . gtaATGCCTTGCTTCCATTGCGG ata       
+GadX_35                       3  7.44e-03         ag gTTTACGTTACTATCAGGCATat c         
+GadX_23                       2  9.31e-03          a ttTGTTGATAAGGATAGTAACAt ga        
+GadX_33                       2  1.42e-02          c agGATGCCTGAAAATCGGCACCg gg        
+GadX_16                       4  2.25e-02        cag GAGACACAGAATGCGCATAAaaa           
+GadX_2                        4  2.55e-02        cac GAGTCCTTTGCACTTGCTTActt           
+GadX_26                       2  4.28e-02          t ggCACGGGAAACTTTGTGCTCTc ag        
+GadX_19                       4  4.51e-02        tta TGCACTTGCATAACCTGTTGcat           
+GadX_20                       3  8.93e-02         ca aCCAGGGCAGAAAGCATCCAAta a         
+GadX_21                       3  1.06e-01         cc aTCACCCCCCTCTCAGTGCAGtg a         
+GadX_13                       4  1.20e-01        tgc CATTCGGTGGGAAGTCATCAtct           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWNAHNKHTRAWTYYDWTHWNWK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GadX_10                           1.4e-10  [+1]_3
+GadX_7                            3.9e-10  [+1]_3
+GadX_32                           3.9e-07  [+1]_3
+GadX_22                           1.2e-06  1_[+1]_2
+GadX_1                            7.5e-06  [+1]_3
+GadX_5                            2.5e-05  [+1]_3
+GadX_28                           3.8e-05  [+1]_3
+GadX_27                           3.8e-05  2_[+1]_1
+GadX_34                           4.3e-05  [+1]_3
+GadX_9                            4.3e-05  3_[+1]
+GadX_8                            7.3e-05  [+1]_3
+GadX_25                           0.00014  1_[+1]_2
+GadX_3                             0.0002  [+1]_3
+GadX_30                           0.00039  [+1]_3
+GadX_18                           0.00048  3_[+1]
+GadX_24                           0.00067  3_[+1]
+GadX_0                              0.001  2_[+1]_1
+GadX_29                            0.0016  1_[+1]_2
+GadX_31                            0.0018  [+1]_2
+GadX_17                            0.0018  1_[+1]_2
+GadX_15                            0.0021  1_[+1]_2
+GadX_12                            0.0039  3_[+1]
+GadX_4                             0.0039  3_[+1]
+GadX_6                             0.0043  3_[+1]
+GadX_14                            0.0054  [+1]_3
+GadX_11                            0.0054  [+1]_3
+GadX_35                            0.0074  2_[+1]_1
+GadX_23                            0.0093  1_[+1]_2
+GadX_33                             0.014  1_[+1]_2
+GadX_16                             0.023  3_[+1]
+GadX_2                              0.025  3_[+1]
+GadX_26                             0.043  1_[+1]_2
+GadX_19                             0.045  3_[+1]
+GadX_20                             0.089  2_[+1]_1
+GadX_21                              0.11  2_[+1]_1
+GadX_13                              0.12  3_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWNAHNKHTRAWTYYDWTHWNWK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AWNAHNKHTRAWTYYDWTHWNWK width=23 seqs=36
+GadX_10                  (    1) ATAAAGTCTGTTTTTAATATTAT  1 
+GadX_7                   (    1) AAAATATCTGATTTTGATATTTT  1 
+GadX_32                  (    1) ATCATGTTAAATGTTTATATTAT  1 
+GadX_22                  (    2) ATCTATTATGGTTTTAATATTTG  1 
+GadX_1                   (    1) ATCATGGCTGATATTTTCCGTAG  1 
+GadX_5                   (    1) TTAAGGTCTGATTTTTACGTGAT  1 
+GadX_28                  (    1) AAAAAATATTATTCGCGTAATAT  1 
+GadX_27                  (    3) TTTATCGATAAATCCTACTTTTT  1 
+GadX_34                  (    1) AAAATGGCTGATCTTATTTCCAG  1 
+GadX_9                   (    4) ATAGCTTATGTTTATAAAAAAAT  1 
+GadX_8                   (    1) AAATTAGCCATTTCAAACATTAT  1 
+GadX_25                  (    2) GTTAAATATAACTTTTACTGGAA  1 
+GadX_3                   (    1) ATATTGTATTGTTTTTCAATGAA  1 
+GadX_30                  (    1) AGGATTTTGTTATTTAAATTAAG  1 
+GadX_18                  (    4) TTTTTAGCTAAATCTGCTATCTC  1 
+GadX_24                  (    4) ATCAGACAGGTTTACGTTACTAT  1 
+GadX_0                   (    3) AATGCAGTCGATTTAATAAAAAT  1 
+GadX_29                  (    2) GATAAATCCTACTTTTTTATTGC  1 
+GadX_31                  (    1) AAAAAGTCGTTTTTCTGCTTAGG  1 
+GadX_17                  (    2) ATGTAATAATTTTATAAATGCGT  1 
+GadX_15                  (    2) TTTTTATTTCAATACAATGAGTT  1 
+GadX_12                  (    4) AGGTGCGATGATTGCGTTATGCG  1 
+GadX_4                   (    4) AGTACTAATAGTGATATTTTAAG  1 
+GadX_6                   (    4) AGGATATAAACATCAGACAGGTT  1 
+GadX_14                  (    1) AGTATCTTAGATACCCCTCCAAG  1 
+GadX_11                  (    1) GTAATGCCTTGCTTCCATTGCGG  1 
+GadX_35                  (    3) GTTTACGTTACTATCAGGCATAT  1 
+GadX_23                  (    2) TTTGTTGATAAGGATAGTAACAT  1 
+GadX_33                  (    2) AGGATGCCTGAAAATCGGCACCG  1 
+GadX_16                  (    4) GAGACACAGAATGCGCATAAAAA  1 
+GadX_2                   (    4) GAGTCCTTTGCACTTGCTTACTT  1 
+GadX_26                  (    2) GGCACGGGAAACTTTGTGCTCTC  1 
+GadX_19                  (    4) TGCACTTGCATAACCTGTTGCAT  1 
+GadX_20                  (    3) ACCAGGGCAGAAAGCATCCAATA  1 
+GadX_21                  (    3) ATCACCCCCCTCTCAGTGCAGTG  1 
+GadX_13                  (    4) CATTCGGTGGGAAGTCATCATCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWNAHNKHTRAWTYYDWTHWNWK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 23 n= 143 bayes= 1.57154 E= 1.7e-013 
+   131   -319    -39    -56 
+    18   -319    -19     94 
+    18    -19    -39     31 
+   138  -1181   -161     18 
+   -15     -2   -119     76 
+    44    -61     39    -56 
+  -314    -87     39    102 
+    55     51   -219    -15 
+   -56    -87    -87    118 
+    44   -219     71    -34 
+   110   -161    -87      2 
+    18    -87   -319    118 
+   -34   -219   -119    138 
+   -34     -2   -161     94 
+  -115     13   -219    118 
+    55    -61    -19      2 
+    85   -119    -61     18 
+   -82    -19   -119    110 
+    85    -19   -219     18 
+    44   -161    -61     76 
+   -15     -2    -39     44 
+   110   -161   -119     18 
+  -115   -161     27    102 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWNAHNKHTRAWTYYDWTHWNWK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 23 nsites= 36 E= 1.7e-013 
+ 0.611111  0.027778  0.194444  0.166667 
+ 0.277778  0.027778  0.222222  0.472222 
+ 0.277778  0.222222  0.194444  0.305556 
+ 0.638889  0.000000  0.083333  0.277778 
+ 0.222222  0.250000  0.111111  0.416667 
+ 0.333333  0.166667  0.333333  0.166667 
+ 0.027778  0.138889  0.333333  0.500000 
+ 0.361111  0.361111  0.055556  0.222222 
+ 0.166667  0.138889  0.138889  0.555556 
+ 0.333333  0.055556  0.416667  0.194444 
+ 0.527778  0.083333  0.138889  0.250000 
+ 0.277778  0.138889  0.027778  0.555556 
+ 0.194444  0.055556  0.111111  0.638889 
+ 0.194444  0.250000  0.083333  0.472222 
+ 0.111111  0.277778  0.055556  0.555556 
+ 0.361111  0.166667  0.222222  0.250000 
+ 0.444444  0.111111  0.166667  0.277778 
+ 0.138889  0.222222  0.111111  0.527778 
+ 0.444444  0.222222  0.055556  0.277778 
+ 0.333333  0.083333  0.166667  0.416667 
+ 0.222222  0.250000  0.194444  0.333333 
+ 0.527778  0.083333  0.111111  0.277778 
+ 0.111111  0.083333  0.305556  0.500000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AWNAHNKHTRAWTYYDWTHWNWK MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TAG][TAC][AT][TCA][AG][TG][ACT]T[GA][AT][TA]T[TC][TC][ATG][AT][TC][ATC][TA][TCA][AT][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.34 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GadX_0                           3.99e-03  26
+GadX_1                           3.01e-05  [+1(7.53e-06)]_3
+GadX_2                           9.80e-02  26
+GadX_3                           7.87e-04  26
+GadX_4                           1.56e-02  26
+GadX_5                           9.92e-05  [+1(2.48e-05)]_3
+GadX_6                           1.70e-02  26
+GadX_7                           1.56e-09  [+1(3.90e-10)]_3
+GadX_8                           2.93e-04  [+1(7.33e-05)]_3
+GadX_9                           1.73e-04  3_[+1(4.32e-05)]
+GadX_10                          5.75e-10  [+1(1.44e-10)]_3
+GadX_11                          2.16e-02  26
+GadX_12                          1.56e-02  26
+GadX_13                          4.00e-01  26
+GadX_14                          2.16e-02  26
+GadX_15                          8.52e-03  26
+GadX_16                          8.70e-02  26
+GadX_17                          7.09e-03  26
+GadX_18                          1.94e-03  26
+GadX_19                          1.69e-01  26
+GadX_20                          3.12e-01  26
+GadX_21                          3.61e-01  26
+GadX_22                          4.77e-06  1_[+1(1.19e-06)]_2
+GadX_23                          3.67e-02  26
+GadX_24                          2.66e-03  26
+GadX_25                          5.49e-04  26
+GadX_26                          1.60e-01  26
+GadX_27                          1.51e-04  2_[+1(3.77e-05)]_1
+GadX_28                          1.51e-04  [+1(3.77e-05)]_3
+GadX_29                          6.46e-03  26
+GadX_30                          1.56e-03  26
+GadX_31                          5.33e-03  25
+GadX_32                          1.55e-06  [+1(3.88e-07)]_3
+GadX_33                          5.58e-02  26
+GadX_34                          1.73e-04  [+1(4.32e-05)]_3
+GadX_35                          2.94e-02  26
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: rfc1918.address.not.used.bu.edu
+
+********************************************************************************

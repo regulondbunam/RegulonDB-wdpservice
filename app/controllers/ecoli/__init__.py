@@ -34,5 +34,6 @@ def collection_list(collection_name,gql_service,browser_url):
         else:
             collection = Gene_collection(gql_service,browser_url)
             results = collection.search("RDBECOLI")
+            print(results)
             template =render_template('/ecoli/gene/index.html', data=results["data"], pagination=results["pagination"], search_result="", header_animation=header_animation)
     return template

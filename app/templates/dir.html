@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./wdps/static/css/base.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/base.css') }}">
     <title>RDBWDPS</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=}, initial-scale=1.0">
@@ -10,14 +10,14 @@
 <body>
     <div>
         <h1>RegulonDB WDPS</h1>
+        <h2 class="description animationFrame1" >MEME Documents</h2>
         <div>
-            <p class="description animationFrame1" >Welcome to RegulonDB Web Data Processing Service</p>
-            <p class="description animationFrame2" >Select Organism</p>
+            <p class="description animationFrame2" >select collection</p>
         </div>
         <div class="enlaces description animationFrame3" >
-            <p>
-                <a  href="/wdps/ecoli">Escharichia Coli K12</a>
-            </p>
+        {% for file in list %}
+            <p><a href="{{url}}{{file}}" >{{ file }}</a></p>
+        {% endfor %}
         </div>
     </div>
 </body>
