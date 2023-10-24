@@ -1,0 +1,1223 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= Fis/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Fis_0                    1.0000     21  Fis_1                    1.0000     21  
+Fis_2                    1.0000     21  Fis_3                    1.0000     21  
+Fis_4                    1.0000     21  Fis_5                    1.0000     21  
+Fis_6                    1.0000     21  Fis_7                    1.0000     21  
+Fis_8                    1.0000     26  Fis_9                    1.0000     21  
+Fis_10                   1.0000     21  Fis_11                   1.0000     21  
+Fis_12                   1.0000     21  Fis_13                   1.0000     21  
+Fis_14                   1.0000     21  Fis_15                   1.0000     21  
+Fis_16                   1.0000     21  Fis_17                   1.0000     21  
+Fis_18                   1.0000     21  Fis_19                   1.0000     21  
+Fis_20                   1.0000     21  Fis_21                   1.0000     21  
+Fis_22                   1.0000     21  Fis_23                   1.0000     21  
+Fis_24                   1.0000     21  Fis_25                   1.0000     21  
+Fis_26                   1.0000     21  Fis_27                   1.0000     21  
+Fis_28                   1.0000     21  Fis_29                   1.0000     21  
+Fis_30                   1.0000     21  Fis_31                   1.0000     21  
+Fis_32                   1.0000     21  Fis_33                   1.0000     21  
+Fis_34                   1.0000     21  Fis_35                   1.0000     21  
+Fis_36                   1.0000     21  Fis_37                   1.0000     21  
+Fis_38                   1.0000     21  Fis_39                   1.0000     21  
+Fis_40                   1.0000     21  Fis_41                   1.0000     21  
+Fis_42                   1.0000     25  Fis_43                   1.0000     25  
+Fis_44                   1.0000     21  Fis_45                   1.0000     21  
+Fis_46                   1.0000     21  Fis_47                   1.0000     21  
+Fis_48                   1.0000     25  Fis_49                   1.0000     25  
+Fis_50                   1.0000     25  Fis_51                   1.0000     25  
+Fis_52                   1.0000     21  Fis_53                   1.0000     21  
+Fis_54                   1.0000     21  Fis_55                   1.0000     21  
+Fis_56                   1.0000     21  Fis_57                   1.0000     21  
+Fis_58                   1.0000     21  Fis_59                   1.0000     21  
+Fis_60                   1.0000     21  Fis_61                   1.0000     21  
+Fis_62                   1.0000     21  Fis_63                   1.0000     21  
+Fis_64                   1.0000     21  Fis_65                   1.0000     21  
+Fis_66                   1.0000     21  Fis_67                   1.0000     21  
+Fis_68                   1.0000     21  Fis_69                   1.0000     21  
+Fis_70                   1.0000     21  Fis_71                   1.0000     21  
+Fis_72                   1.0000     21  Fis_73                   1.0000     21  
+Fis_74                   1.0000     21  Fis_75                   1.0000     21  
+Fis_76                   1.0000     21  Fis_77                   1.0000     21  
+Fis_78                   1.0000     21  Fis_79                   1.0000     21  
+Fis_80                   1.0000     21  Fis_81                   1.0000     21  
+Fis_82                   1.0000     21  Fis_83                   1.0000     21  
+Fis_84                   1.0000     21  Fis_85                   1.0000     21  
+Fis_86                   1.0000     21  Fis_87                   1.0000     21  
+Fis_88                   1.0000     21  Fis_89                   1.0000     21  
+Fis_90                   1.0000     21  Fis_91                   1.0000     21  
+Fis_92                   1.0000     21  Fis_93                   1.0000     21  
+Fis_94                   1.0000     21  Fis_95                   1.0000     21  
+Fis_96                   1.0000     21  Fis_97                   1.0000     21  
+Fis_98                   1.0000     21  Fis_99                   1.0000     25  
+Fis_100                  1.0000     21  Fis_101                  1.0000     21  
+Fis_102                  1.0000     21  Fis_103                  1.0000     21  
+Fis_104                  1.0000     21  Fis_105                  1.0000     21  
+Fis_106                  1.0000     21  Fis_107                  1.0000     21  
+Fis_108                  1.0000     21  Fis_109                  1.0000     21  
+Fis_110                  1.0000     21  Fis_111                  1.0000     21  
+Fis_112                  1.0000     21  Fis_113                  1.0000     21  
+Fis_114                  1.0000     21  Fis_115                  1.0000     21  
+Fis_116                  1.0000     21  Fis_117                  1.0000     21  
+Fis_118                  1.0000     21  Fis_119                  1.0000     21  
+Fis_120                  1.0000     21  Fis_121                  1.0000     21  
+Fis_122                  1.0000     21  Fis_123                  1.0000     21  
+Fis_124                  1.0000     21  Fis_125                  1.0000     21  
+Fis_126                  1.0000     21  Fis_127                  1.0000     21  
+Fis_128                  1.0000     21  Fis_129                  1.0000     21  
+Fis_130                  1.0000     21  Fis_131                  1.0000     21  
+Fis_132                  1.0000     21  Fis_133                  1.0000     21  
+Fis_134                  1.0000     21  Fis_135                  1.0000     21  
+Fis_136                  1.0000     21  Fis_137                  1.0000     21  
+Fis_138                  1.0000     21  Fis_139                  1.0000     21  
+Fis_140                  1.0000     21  Fis_141                  1.0000     21  
+Fis_142                  1.0000     21  Fis_143                  1.0000     21  
+Fis_144                  1.0000     21  Fis_145                  1.0000     21  
+Fis_146                  1.0000     21  Fis_147                  1.0000     21  
+Fis_148                  1.0000     21  Fis_149                  1.0000     21  
+Fis_150                  1.0000     21  Fis_151                  1.0000     21  
+Fis_152                  1.0000     21  Fis_153                  1.0000     21  
+Fis_154                  1.0000     21  Fis_155                  1.0000     21  
+Fis_156                  1.0000     21  Fis_157                  1.0000     21  
+Fis_158                  1.0000     21  Fis_159                  1.0000     21  
+Fis_160                  1.0000     21  Fis_161                  1.0000     21  
+Fis_162                  1.0000     21  Fis_163                  1.0000     21  
+Fis_164                  1.0000     21  Fis_165                  1.0000     21  
+Fis_166                  1.0000     21  Fis_167                  1.0000     21  
+Fis_168                  1.0000     21  Fis_169                  1.0000     21  
+Fis_170                  1.0000     21  Fis_171                  1.0000     21  
+Fis_172                  1.0000     21  Fis_173                  1.0000     21  
+Fis_174                  1.0000     21  Fis_175                  1.0000     21  
+Fis_176                  1.0000     25  Fis_177                  1.0000     25  
+Fis_178                  1.0000     25  Fis_179                  1.0000     25  
+Fis_180                  1.0000     21  Fis_181                  1.0000     21  
+Fis_182                  1.0000     21  Fis_183                  1.0000     21  
+Fis_184                  1.0000     21  Fis_185                  1.0000     21  
+Fis_186                  1.0000     21  Fis_187                  1.0000     25  
+Fis_188                  1.0000     25  Fis_189                  1.0000     21  
+Fis_190                  1.0000     21  Fis_191                  1.0000     21  
+Fis_192                  1.0000     21  Fis_193                  1.0000     21  
+Fis_194                  1.0000     21  Fis_195                  1.0000     21  
+Fis_196                  1.0000     21  Fis_197                  1.0000     21  
+Fis_198                  1.0000     21  Fis_199                  1.0000     21  
+Fis_200                  1.0000     21  Fis_201                  1.0000     25  
+Fis_202                  1.0000     21  Fis_203                  1.0000     21  
+Fis_204                  1.0000     21  Fis_205                  1.0000     21  
+Fis_206                  1.0000     21  Fis_207                  1.0000     21  
+Fis_208                  1.0000     21  Fis_209                  1.0000     21  
+Fis_210                  1.0000     21  Fis_211                  1.0000     21  
+Fis_212                  1.0000     21  Fis_213                  1.0000     25  
+Fis_214                  1.0000     25  Fis_215                  1.0000     25  
+Fis_216                  1.0000     25  Fis_217                  1.0000     25  
+Fis_218                  1.0000     21  Fis_219                  1.0000     21  
+Fis_220                  1.0000     25  Fis_221                  1.0000     21  
+Fis_222                  1.0000     21  Fis_223                  1.0000     25  
+Fis_224                  1.0000     25  Fis_225                  1.0000     21  
+Fis_226                  1.0000     21  Fis_227                  1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme Fis/ri_sites.fasta -oc Fis/./ -mod oops -nmotifs 1 -minw 12 -maxw 18 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           12    maxw=           18
+nsites: minsites=      228    maxsites=      228    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            4881    N=             228
+sample: seed=           10    hsfrac=          0
+        searchsize=   4881    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.317 C 0.184 G 0.192 T 0.308 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGNHYAWWWWWTRRNCAA MEME-1	width =  18  sites = 228  llr = 910  E-value = 1.2e-193
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGNHYAWWWWWTRRNCAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  213216545431443155
+pos.-specific     C  2:223111:112213811
+probability       G  18222311111:223:22
+matrix            T  513441334456122122
+
+         bits    2.0                   
+                 1.8                   
+                 1.6                   
+                 1.4                   
+Relative         1.2                   
+Entropy          1.0  *                
+(5.8 bits)       0.8  *             *  
+                 0.6  *      *  *   *  
+                 0.4  *   ** * **   *  
+                 0.2 **  ********** ***
+                 0.0 ------------------
+
+Multilevel           TGATTAAAATTTAAGCAA
+consensus              TACGTTTAACGGA GT
+sequence               GC        C C   
+                       C           T   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGNHYAWWWWWTRRNCAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Fis_154                       2  7.32e-07          t cgCTCAAATAATAAACAa ta        
+Fis_169                       2  7.95e-07          a tgGTCATATTTTTATCAa ta        
+Fis_9                         3  4.17e-06         cc tGTTTAAAATATGTTCag c         
+Fis_139                       4  4.47e-06        caa TGCTGAAAATTTCAGcac           
+Fis_70                        3  5.89e-06         tt tGTCTATTTTTTGCACaa a         
+Fis_76                        3  7.20e-06         tt tGCCGATTATTTACGCaa a         
+Fis_98                        3  9.35e-06         tt gGTATAATTTTTCAGCaa t         
+Fis_123                       4  1.21e-05        att TGCCTGATTTTTCAGcga           
+Fis_111                       2  1.28e-05          c tgTTCATTTTTCAACCAc ca        
+Fis_189                       3  1.37e-05         ca tGCTCATTTTTTAGACtt a         
+Fis_159                       4  1.37e-05        aac TGATTAATTATAAATcag           
+Fis_117                       3  1.64e-05         ga tGGACATTTTTCCAGCaa t         
+Fis_44                        3  1.85e-05         ta tGTGTAACAAATAACCac a         
+Fis_49                        5  2.09e-05       taaA TGTTTATATTATAAAAAG tcg       
+Fis_218                       3  2.35e-05         gg tGGCTGTTAATTATCCta a         
+Fis_138                       3  2.35e-05         gt cGCATAAAATGTGACCaa t         
+Fis_105                       3  2.49e-05         tt tGCTTGACATTCGACCaa a         
+Fis_119                       3  2.96e-05         tt tGGCTGTTTTTCAGGCaa a         
+Fis_83                        4  2.96e-05        ggt AGTTTAAATTTTGACtaa           
+Fis_52                        3  3.72e-05         aa tGATTAAAAGATGAGCgg t         
+Fis_77                        3  3.93e-05         tg aGTGTAAATTTTAGTCac t         
+Fis_43                        5  4.16e-05       attG TGATCTATATTTAACAAA gtg       
+Fis_153                       2  4.39e-05          t cgCCTATCTTTTCAGCAa ca        
+Fis_5                         3  4.64e-05         tt cGTCGTAAATTTAAGCaa g         
+Fis_168                       3  5.18e-05         at cGATTATATTCTATCCaa a         
+Fis_68                        3  5.46e-05         ac tTAAGAAAATTTATACaa a         
+Fis_50                        5  6.08e-05       agtC TGTTTTTAATATTATCAT gtt       
+Fis_179                       5  6.76e-05       tgtT TGCATATTTTTAACACAA aat       
+Fis_209                       3  7.13e-05         at tGTTTGATATTTATCAta t         
+Fis_45                        3  8.77e-05         gt cGCCCAAATACTAAACaa a         
+Fis_23                        3  8.77e-05         tt tGCCTGAAAAGTGAGCga a         
+Fis_136                       3  1.07e-04         ga tGTTGAAAAAGTGTGCta a         
+Fis_3                         3  1.13e-04         gt tGCGCAATTTGTCAACga a         
+Fis_58                        3  1.19e-04         gc tGAACAATTATTGCCCgt t         
+Fis_25                        3  1.31e-04         tt tGTCTATAAGTTAGACgg a         
+Fis_165                       3  1.44e-04         gt tGTTTAAAAATTGTTAac a         
+Fis_178                       5  1.52e-04       ttaA TGCCTGTAAAACATGCAT gag       
+Fis_223                       5  1.67e-04       atcT CGGTCATAAATCAAGAAA taa       
+Fis_203                       3  1.75e-04         tg tGAACAGTTATTAAGCgg g         
+Fis_127                       4  1.75e-04        ggt CGTTCACTTGTTCAGcaa           
+Fis_146                       4  2.02e-04        gac TGTTCTACTTTTCATcat           
+Fis_99                        5  2.02e-04       gcgG TGATTGTTACTTATTAAA act       
+Fis_30                        2  2.02e-04          t tgCTGAAAAAATGCGCGg tc        
+Fis_176                       5  2.11e-04       tgcT CGTTTTTATTTCATGCAA tct       
+Fis_80                        3  2.22e-04         ca cGCTCATTTTAAATGCaa t         
+Fis_63                        3  2.22e-04         gg tGATCACAATTTTGACtg t         
+Fis_28                        3  2.22e-04         gc tGAACACGTTATAGACat g         
+Fis_212                       3  2.32e-04         tt aGAGAGTTTTTTGACCaa a         
+Fis_166                       3  2.32e-04         at tGAACAAAACTTGAACcg a         
+Fis_124                       4  2.32e-04        tgc TGATGGCGAATTAATcag           
+Fis_54                        3  2.32e-04         at tGGGTGTTAAATAGCCtg g         
+Fis_120                       4  2.43e-04        cat TGATTGAAGTTTGAAtaa           
+Fis_41                        3  2.43e-04         aa tGAAAAAATATTATTCgc g         
+Fis_160                       3  2.54e-04         ac tGGCGAAGATTTCGCCag t         
+Fis_215                       5  2.92e-04       aagC AGATCGCATTATAAGCTT tct       
+Fis_75                        3  2.92e-04         gc cGTTCAAGAAATCGCCga a         
+Fis_81                        3  3.33e-04         at tGGTCAAAGTTTGGCCtt t         
+Fis_205                       3  3.48e-04         tc aGACCATTTTTTTTCCag c         
+Fis_39                        3  3.64e-04         ct tGCTTACTTTATCGATaa a         
+Fis_186                       3  3.80e-04         ta tGGCTAAATGGTAAAAaa c         
+Fis_19                        3  3.80e-04         tt tGTGCAAAAGTTTCACta c         
+Fis_194                       3  3.97e-04         ca cGTTTTATTAATAAATaa a         
+Fis_158                       3  3.97e-04         gt cGTGCGAATCATAAGCag t         
+Fis_65                        3  3.97e-04         ag aGGACGGAATATGAACaa g         
+Fis_15                        3  3.97e-04         aa aGAATAAAAAATGCGCgg t         
+Fis_200                       3  4.15e-04         ac cGAACAATAATTACTCct c         
+Fis_78                        3  4.15e-04         ta tGAGTAATTATCGCACca c         
+Fis_73                        3  4.15e-04         aa aGATTAATAAGCCATCta t         
+Fis_71                        3  4.33e-04         ac cGAATAGAAAACAACCat t         
+Fis_46                        3  4.33e-04         cc tGCCGTTTATTTGCACaa t         
+Fis_208                       3  4.52e-04         cc cGGCTAAAAAATAGAAta g         
+Fis_201                       5  4.52e-04       cttT CGAGTGAAAATCTACCTA tct       
+Fis_163                       3  4.52e-04         tg tAATCATCATTTCCACaa c         
+Fis_40                        3  4.52e-04         gg aTTTTGTTATTTAAACac g         
+Fis_33                        3  5.36e-04         aa aGGGTGAAAAAACAACaa a         
+Fis_191                       3  5.59e-04         tt tGAGGAGTATATATACac t         
+Fis_82                        3  5.59e-04         aa aGTGAATTATTTGAACca g         
+Fis_69                        3  5.59e-04         at cGAGGCAAAAATGAGCaa a         
+Fis_213                       5  5.83e-04       ataT GGATTAAAAAGCAGACTA aac       
+Fis_152                       3  5.83e-04         tt tGGTCGTTTCCTCAGCaa c         
+Fis_217                       5  6.08e-04       ataT CGTTTATCAGACAAGCAT cac       
+Fis_79                        3  6.08e-04         ta tGGTCATTTCTTAACTca t         
+Fis_17                        3  6.08e-04         at cGCCCATTTAACCGACaa a         
+Fis_227                       3  6.34e-04         tc tGGTCGAGATATTGCCca t         
+Fis_126                       4  6.34e-04        ggg TGATGCAAAAGTAGCcat           
+Fis_56                        3  6.60e-04         tt tGGTTGAATGTTGCGCgg t         
+Fis_122                       3  7.17e-04         aa aGGTCATTAACTGCCCaa t         
+Fis_62                        3  7.46e-04         cg tGGGCAAAATACAGAAat t         
+Fis_187                       5  7.77e-04       atcG TGGCGATTTTATGTGCGC atc       
+Fis_112                       2  8.09e-04          a cgCACAAATAATCGCCTg aa        
+Fis_42                        5  8.09e-04       ccgT CGATTGTCATTCTACCGA tat       
+Fis_220                       5  8.76e-04       ttaT CGTTTGATTTACATCAAA ttg       
+Fis_188                       5  9.12e-04       tagA TTATGAAAATAAAAACAG gtg       
+Fis_116                       4  9.12e-04        att TGCCGCAATCTTAAGcag           
+Fis_1                         4  9.87e-04        atg GTGCTAAAAAGTAACcaa           
+Fis_185                       3  1.03e-03         ca cTTTCGAATTATGAGCga a         
+Fis_164                       3  1.07e-03         tg tGGCGATTTATCGCGCag c         
+Fis_204                       3  1.11e-03         tt cGTCTATCTCTTTAGCta c         
+Fis_216                       5  1.15e-03       gggG TGTTGCTTAATTGATCTG gta       
+Fis_210                       2  1.15e-03          a tgAAGTAAAATTTATTAa ta        
+Fis_86                        1  1.15e-03          . aggCCGAAATTTGCTCGT atc       
+Fis_171                       3  1.24e-03         tc tGTGTAATAAATAAAGgg c         
+Fis_224                       5  1.29e-03       tcaT AAATCAAGAAATAAACCA aaa       
+Fis_221                       3  1.29e-03         ag tAAATAAAAAATCCACtt a         
+Fis_182                       3  1.29e-03         ga tGTTAAGAAAACATTCat a         
+Fis_207                       3  1.34e-03         gc tGCTGATTTTTCGTTCtc t         
+Fis_38                        3  1.34e-03         aa tGGATAAGAAGCAAGTaa c         
+Fis_214                       5  1.39e-03       cttA TGTTTTACTTTAGACCTA ttc       
+Fis_57                        3  1.39e-03         aa cGCTCGAAAAACTGGCag t         
+Fis_48                        5  1.39e-03       ccaT TGCGGATAAATCCTACTT ttt       
+Fis_31                        2  1.39e-03          t tgCTTGTTTTATGGCACa tt        
+Fis_198                       3  1.50e-03         ca tTGTTATAATTTTATTat t         
+Fis_162                       3  1.50e-03         gc tGGCAAATTGTTAGCCgc t         
+Fis_193                       3  1.62e-03         ga tCTCCAAAATATATTCac g         
+Fis_190                       3  1.62e-03         at tGGTAAAATTTCACACcc g         
+Fis_183                       3  1.62e-03         at tAAATAAGATTTACAAaa t         
+Fis_206                       3  1.68e-03         cg gGAATGAAAGATGAACgt c         
+Fis_195                       3  1.68e-03         tt tATTAATAAATAAAGCta t         
+Fis_137                       3  1.94e-03         tt cGGCTGTTTCTTCATCgt g         
+Fis_64                        4  1.94e-03        gaa TGGTGGTTAAAACGTcat           
+Fis_32                        2  1.94e-03          a cgGTTGCAAAAACGGCAa at        
+Fis_85                        3  2.01e-03         ac aGATTAACACCTCGTCaa a         
+Fis_211                       3  2.09e-03         at tTATTAATAGTTGTAAaa c         
+Fis_140                       4  2.16e-03        gcc TGCTGACTTTCTCGCcga           
+Fis_8                         4  2.24e-03        aga CGTTTGGGTGTTCACCAA CGtgt     
+Fis_4                         3  2.32e-03         ga tGATCGCAAAACAGACcg t         
+Fis_184                       3  2.49e-03         aa gATTTACAAAATGTTCaa a         
+Fis_7                         3  2.58e-03         gt tGTAAAAATGTGACGCaa a         
+Fis_100                       1  2.77e-03          . tgcAGACAAATATACCAC gct       
+Fis_74                        3  2.86e-03         tt tTAACAAATTTTTCTCtt c         
+Fis_34                        3  2.96e-03         tt tGTGTGCGATTGCAGCaa a         
+Fis_16                        3  2.96e-03         ac cGACGCTGAAATAAGCat a         
+Fis_0                         3  2.96e-03         ac tGGGTACTTACTATTCgt t         
+Fis_197                       4  3.07e-03        gtt TGTTACAAATTTATCtga           
+Fis_121                       3  3.07e-03         at tGTACATTCCTTAACCgg a         
+Fis_199                       3  3.39e-03         ta aTTTTATTATTTGTACct c         
+Fis_177                       5  3.39e-03       ggtT AGATGATCTTTTTGTCGC tta       
+Fis_6                         3  3.51e-03         tt tCCAGAATTTTTCGTCat t         
+Fis_226                       4  3.63e-03        gcg GCAATATTTATTAACcac           
+Fis_196                       3  3.75e-03         at gGGTGGTTAATCATGCgt t         
+Fis_128                       4  3.75e-03        aaa CGCACAAACCGTAACcaa           
+Fis_72                        3  3.75e-03         at tGACCACAACTGATACat c         
+Fis_129                       3  3.88e-03         ag aGTACGCGTACTAACCaa a         
+Fis_181                       3  4.28e-03         gt gGTCTTATTTATGATTaa c         
+Fis_115                       2  4.28e-03          a caAATAGGAATTCATCAa ga        
+Fis_202                       3  4.42e-03         ca aGCCTATATAGCGAACtg c         
+Fis_108                       2  4.42e-03          g tgGAAGGTTTATCAACGt gc        
+Fis_51                        5  4.57e-03       tgtT TGGGCGATTTTTATTACG ata       
+Fis_141                       3  5.03e-03         ga tGTACTGCATGTATGCaa a         
+Fis_132                       2  5.03e-03          a tgTACTGCATGTATGCAa ag        
+Fis_192                       3  5.19e-03         gc cGTTTAATTCTTCGTTtt g         
+Fis_14                        3  5.36e-03         aa aGCACGCCATATCGCCga a         
+Fis_67                        3  5.89e-03         ac aGAAGATCTCTTGCGCag t         
+Fis_219                       3  6.26e-03         tt tACTTTATTTTTCATCcc c         
+Fis_2                         1  6.26e-03          . atgGTATTTAAAATGCAA att       
+Fis_149                       3  6.66e-03         ta aGGCTCTATTATTACCtc a         
+Fis_27                        3  6.66e-03         at aGCGGAACACATAGCCgg t         
+Fis_11                        3  6.87e-03         ca gGACCGTTTTCCAACCga t         
+Fis_10                        3  6.87e-03         gc aGTTGATGGAATAGACtt t         
+Fis_36                        2  7.08e-03          t tgGGGGCATTATTGGCCt tg        
+Fis_167                       3  7.52e-03         gg tGCGCATGATAACGCCtt t         
+Fis_29                        3  7.52e-03         gc cGCTTAAAAGCGACGCaa t         
+Fis_180                       3  7.99e-03         ga gGAAAACAATCTGAACat c         
+Fis_114                       1  8.23e-03          . tgcCTGCAGATTTTACGT ccc       
+Fis_24                        3  8.23e-03         aa aGACTATATTTAAGATgt t         
+Fis_26                        3  8.47e-03         cc gGTGCTATACTTAATCtc g         
+Fis_222                       3  9.26e-03         ct cGCACATAATACGCCCcc g         
+Fis_142                       3  9.53e-03         aa aGGACGTCACATTACCgt g         
+Fis_131                       2  9.53e-03          a agGACGTCACATTACCGt gc        
+Fis_170                       2  9.81e-03          a ttGCTATTTTCTCTGCAc gc        
+Fis_175                       3  1.04e-02         tt tGTCAAAATGTGCAACtt c         
+Fis_101                       3  1.04e-02         ca aGAGCGCCTTACTGGCaa c         
+Fis_66                        4  1.07e-02        acg GGCTTGAAAAAGCGCcca           
+Fis_37                        4  1.16e-02        acc TCAGCAATAAATGATtta           
+Fis_13                        3  1.20e-02         ag tGCACATTCCTTTAACgc t         
+Fis_125                       4  1.30e-02        act TGGGCGATTTTTGCAgca           
+Fis_84                        3  1.30e-02         ca tCCTTAACGATTCAGCca c         
+Fis_60                        3  1.41e-02         tc tGTGCGTAAAAAGGTAta a         
+Fis_144                       2  1.62e-02          c ggCACAAAATAAAGAACa at        
+Fis_53                        3  1.62e-02         aa aGCAGCAAAAACCGGCac a         
+Fis_147                       4  1.66e-02        tcg TAAACACAACTAATAcag           
+Fis_35                        4  1.66e-02        ttg TGCAAGTCTTTTAGTatg           
+Fis_12                        3  1.66e-02         ac gGTTTGACGTACAGACca t         
+Fis_143                       3  1.80e-02         gc aGTACAGTTGATAGCCcc t         
+Fis_130                       2  1.80e-02          c agTACAGTTGATAGCCCc tt        
+Fis_59                        3  1.85e-02         tt tGCTGGGGAATGCAGCag t         
+Fis_110                       1  1.90e-02          . aggGGTTGATATCCGCAG aga       
+Fis_102                       4  1.95e-02        gca TGCTAATAAAGTTGCgta           
+Fis_97                        1  1.95e-02          . tgaGTGCGAAGAACGCGA tat       
+Fis_61                        3  2.05e-02         ga tGATTGTGGATAACTCtg t         
+Fis_155                       2  2.16e-02          c taTGTTAATAACCATTAa tt        
+Fis_55                        3  2.32e-02         gg tGCGTACGGGTAAACCta t         
+Fis_107                       2  2.38e-02          t caCCTGAATTTTCGTGAa ca        
+Fis_89                        2  2.70e-02          t tgATGCGGTCTTCAGCGt at        
+Fis_172                       3  3.12e-02         at tGGCACTGAATTATTTta c         
+Fis_20                        3  3.27e-02         ta gTTGTGCAAAACATGCta a         
+Fis_18                        2  3.34e-02          g gtGGCGAATTTCGCCCGa ga        
+Fis_93                        1  3.42e-02          . ctgCAAAATAGTGACCTC gcg       
+Fis_90                        3  3.67e-02         ga aGCTGACCAGACAGTCgc c         
+Fis_173                       3  3.84e-02         cg aGTAAAGTTCACCGCCga a         
+Fis_174                       3  3.93e-02         gg cGGTGAATAACCACGTtt g         
+Fis_118                       3  4.02e-02         aa aCAGTCACTTTCGAGCaa t         
+Fis_134                       2  4.21e-02          a aaAATAACTGGTTACCTt ta        
+Fis_133                       3  4.40e-02         gt aATCGAACGATTATTCtt t         
+Fis_103                       3  4.70e-02         tc gGATTTTATCAGGTACag t         
+Fis_21                        3  5.58e-02         aa tTGCTATCATTCGTTAtt g         
+Fis_88                        3  6.31e-02         tt gGACGAAGCATTCCGCgg g         
+Fis_22                        3  7.86e-02         aa tGTTAGCCATAAATAAgg t         
+Fis_109                       3  8.01e-02         ag cGAGTCCATATCGGTAac t         
+Fis_225                       3  8.49e-02         ta cGCTCTGTATAATGCCgc g         
+Fis_87                        1  9.15e-02          . ggcGATTGGAATGCGCAA cgc       
+Fis_156                       4  1.12e-01        ccc GGCATAAATGGCGAGggt           
+Fis_104                       2  1.12e-01          g tgACGCTTTCGTCAATCt gg        
+Fis_161                       3  1.22e-01         tg tCGTAAAGCTGTTACCga c         
+Fis_150                       4  1.22e-01        ata TAAGTTTGAGATTACtac           
+Fis_96                        1  1.28e-01          . cagCTGTAGAGCAAGAAT ggg       
+Fis_95                        2  1.33e-01          t cgCGAAATGAGCGATGAa ga        
+Fis_145                       2  1.85e-01          a tgAATCAGGAAGTTTTAa cc        
+Fis_94                        2  1.85e-01          t caATTGATCGACAAGATt gc        
+Fis_135                       1  2.10e-01          . aatCCGTTACGGATGAAA att       
+Fis_151                       4  2.32e-01        ata AAGCGTATAGGTTTAcct           
+Fis_157                       4  2.58e-01        aaa GTGATGATAGATTGTgca           
+Fis_106                       4  2.81e-01        tag CGCCTGTAGGCCAAGacc           
+Fis_47                        1  3.66e-01          . caaAAACCGTGCAAAATA aca       
+Fis_92                        4  3.70e-01        gca AAATGAACCGTCTGGtat           
+Fis_113                       2  3.74e-01          t ttGTTGCTGCGTTTTTGt ta        
+Fis_148                       3  3.82e-01         at aTGCCGCGTCTTTTCTgg c         
+Fis_91                        1  4.55e-01          . gagGAAGTTCTGACTCTG gcg       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGNHYAWWWWWTRRNCAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Fis_154                           7.3e-07  1_[+1]_2
+Fis_169                           7.9e-07  1_[+1]_2
+Fis_9                             4.2e-06  2_[+1]_1
+Fis_139                           4.5e-06  3_[+1]
+Fis_70                            5.9e-06  2_[+1]_1
+Fis_76                            7.2e-06  2_[+1]_1
+Fis_98                            9.3e-06  2_[+1]_1
+Fis_123                           1.2e-05  3_[+1]
+Fis_111                           1.3e-05  1_[+1]_2
+Fis_189                           1.4e-05  2_[+1]_1
+Fis_159                           1.4e-05  3_[+1]
+Fis_117                           1.6e-05  2_[+1]_1
+Fis_44                            1.9e-05  2_[+1]_1
+Fis_49                            2.1e-05  4_[+1]_3
+Fis_218                           2.3e-05  2_[+1]_1
+Fis_138                           2.3e-05  2_[+1]_1
+Fis_105                           2.5e-05  2_[+1]_1
+Fis_119                             3e-05  2_[+1]_1
+Fis_83                              3e-05  3_[+1]
+Fis_52                            3.7e-05  2_[+1]_1
+Fis_77                            3.9e-05  2_[+1]_1
+Fis_43                            4.2e-05  4_[+1]_3
+Fis_153                           4.4e-05  1_[+1]_2
+Fis_5                             4.6e-05  2_[+1]_1
+Fis_168                           5.2e-05  2_[+1]_1
+Fis_68                            5.5e-05  2_[+1]_1
+Fis_50                            6.1e-05  4_[+1]_3
+Fis_179                           6.8e-05  4_[+1]_3
+Fis_209                           7.1e-05  2_[+1]_1
+Fis_45                            8.8e-05  2_[+1]_1
+Fis_23                            8.8e-05  2_[+1]_1
+Fis_136                           0.00011  2_[+1]_1
+Fis_3                             0.00011  2_[+1]_1
+Fis_58                            0.00012  2_[+1]_1
+Fis_25                            0.00013  2_[+1]_1
+Fis_165                           0.00014  2_[+1]_1
+Fis_178                           0.00015  4_[+1]_3
+Fis_223                           0.00017  4_[+1]_3
+Fis_203                           0.00018  2_[+1]_1
+Fis_127                           0.00018  3_[+1]
+Fis_146                            0.0002  3_[+1]
+Fis_99                             0.0002  4_[+1]_3
+Fis_30                             0.0002  1_[+1]_2
+Fis_176                           0.00021  4_[+1]_3
+Fis_80                            0.00022  2_[+1]_1
+Fis_63                            0.00022  2_[+1]_1
+Fis_28                            0.00022  2_[+1]_1
+Fis_212                           0.00023  2_[+1]_1
+Fis_166                           0.00023  2_[+1]_1
+Fis_124                           0.00023  3_[+1]
+Fis_54                            0.00023  2_[+1]_1
+Fis_120                           0.00024  3_[+1]
+Fis_41                            0.00024  2_[+1]_1
+Fis_160                           0.00025  2_[+1]_1
+Fis_215                           0.00029  4_[+1]_3
+Fis_75                            0.00029  2_[+1]_1
+Fis_81                            0.00033  2_[+1]_1
+Fis_205                           0.00035  2_[+1]_1
+Fis_39                            0.00036  2_[+1]_1
+Fis_186                           0.00038  2_[+1]_1
+Fis_19                            0.00038  2_[+1]_1
+Fis_194                            0.0004  2_[+1]_1
+Fis_158                            0.0004  2_[+1]_1
+Fis_65                             0.0004  2_[+1]_1
+Fis_15                             0.0004  2_[+1]_1
+Fis_200                           0.00042  2_[+1]_1
+Fis_78                            0.00042  2_[+1]_1
+Fis_73                            0.00042  2_[+1]_1
+Fis_71                            0.00043  2_[+1]_1
+Fis_46                            0.00043  2_[+1]_1
+Fis_208                           0.00045  2_[+1]_1
+Fis_201                           0.00045  4_[+1]_3
+Fis_163                           0.00045  2_[+1]_1
+Fis_40                            0.00045  2_[+1]_1
+Fis_33                            0.00054  2_[+1]_1
+Fis_191                           0.00056  2_[+1]_1
+Fis_82                            0.00056  2_[+1]_1
+Fis_69                            0.00056  2_[+1]_1
+Fis_213                           0.00058  4_[+1]_3
+Fis_152                           0.00058  2_[+1]_1
+Fis_217                           0.00061  4_[+1]_3
+Fis_79                            0.00061  2_[+1]_1
+Fis_17                            0.00061  2_[+1]_1
+Fis_227                           0.00063  2_[+1]_1
+Fis_126                           0.00063  3_[+1]
+Fis_56                            0.00066  2_[+1]_1
+Fis_122                           0.00072  2_[+1]_1
+Fis_62                            0.00075  2_[+1]_1
+Fis_187                           0.00078  4_[+1]_3
+Fis_112                           0.00081  1_[+1]_2
+Fis_42                            0.00081  4_[+1]_3
+Fis_220                           0.00088  4_[+1]_3
+Fis_188                           0.00091  4_[+1]_3
+Fis_116                           0.00091  3_[+1]
+Fis_1                             0.00099  3_[+1]
+Fis_185                             0.001  2_[+1]_1
+Fis_164                            0.0011  2_[+1]_1
+Fis_204                            0.0011  2_[+1]_1
+Fis_216                            0.0012  4_[+1]_3
+Fis_210                            0.0012  1_[+1]_2
+Fis_86                             0.0012  [+1]_3
+Fis_171                            0.0012  2_[+1]_1
+Fis_224                            0.0013  4_[+1]_3
+Fis_221                            0.0013  2_[+1]_1
+Fis_182                            0.0013  2_[+1]_1
+Fis_207                            0.0013  2_[+1]_1
+Fis_38                             0.0013  2_[+1]_1
+Fis_214                            0.0014  4_[+1]_3
+Fis_57                             0.0014  2_[+1]_1
+Fis_48                             0.0014  4_[+1]_3
+Fis_31                             0.0014  1_[+1]_2
+Fis_198                            0.0015  2_[+1]_1
+Fis_162                            0.0015  2_[+1]_1
+Fis_193                            0.0016  2_[+1]_1
+Fis_190                            0.0016  2_[+1]_1
+Fis_183                            0.0016  2_[+1]_1
+Fis_206                            0.0017  2_[+1]_1
+Fis_195                            0.0017  2_[+1]_1
+Fis_137                            0.0019  2_[+1]_1
+Fis_64                             0.0019  3_[+1]
+Fis_32                             0.0019  1_[+1]_2
+Fis_85                              0.002  2_[+1]_1
+Fis_211                            0.0021  2_[+1]_1
+Fis_140                            0.0022  3_[+1]
+Fis_8                              0.0022  3_[+1]_5
+Fis_4                              0.0023  2_[+1]_1
+Fis_184                            0.0025  2_[+1]_1
+Fis_7                              0.0026  2_[+1]_1
+Fis_100                            0.0028  [+1]_3
+Fis_74                             0.0029  2_[+1]_1
+Fis_34                              0.003  2_[+1]_1
+Fis_16                              0.003  2_[+1]_1
+Fis_0                               0.003  2_[+1]_1
+Fis_197                            0.0031  3_[+1]
+Fis_121                            0.0031  2_[+1]_1
+Fis_199                            0.0034  2_[+1]_1
+Fis_177                            0.0034  4_[+1]_3
+Fis_6                              0.0035  2_[+1]_1
+Fis_226                            0.0036  3_[+1]
+Fis_196                            0.0038  2_[+1]_1
+Fis_128                            0.0038  3_[+1]
+Fis_72                             0.0038  2_[+1]_1
+Fis_129                            0.0039  2_[+1]_1
+Fis_181                            0.0043  2_[+1]_1
+Fis_115                            0.0043  1_[+1]_2
+Fis_202                            0.0044  2_[+1]_1
+Fis_108                            0.0044  1_[+1]_2
+Fis_51                             0.0046  4_[+1]_3
+Fis_141                             0.005  2_[+1]_1
+Fis_132                             0.005  1_[+1]_2
+Fis_192                            0.0052  2_[+1]_1
+Fis_14                             0.0054  2_[+1]_1
+Fis_67                             0.0059  2_[+1]_1
+Fis_219                            0.0063  2_[+1]_1
+Fis_2                              0.0063  [+1]_3
+Fis_149                            0.0067  2_[+1]_1
+Fis_27                             0.0067  2_[+1]_1
+Fis_11                             0.0069  2_[+1]_1
+Fis_10                             0.0069  2_[+1]_1
+Fis_36                             0.0071  1_[+1]_2
+Fis_167                            0.0075  2_[+1]_1
+Fis_29                             0.0075  2_[+1]_1
+Fis_180                             0.008  2_[+1]_1
+Fis_114                            0.0082  [+1]_3
+Fis_24                             0.0082  2_[+1]_1
+Fis_26                             0.0085  2_[+1]_1
+Fis_222                            0.0093  2_[+1]_1
+Fis_142                            0.0095  2_[+1]_1
+Fis_131                            0.0095  1_[+1]_2
+Fis_170                            0.0098  1_[+1]_2
+Fis_175                              0.01  2_[+1]_1
+Fis_101                              0.01  2_[+1]_1
+Fis_66                              0.011  3_[+1]
+Fis_37                              0.012  3_[+1]
+Fis_13                              0.012  2_[+1]_1
+Fis_125                             0.013  3_[+1]
+Fis_84                              0.013  2_[+1]_1
+Fis_60                              0.014  2_[+1]_1
+Fis_144                             0.016  1_[+1]_2
+Fis_53                              0.016  2_[+1]_1
+Fis_147                             0.017  3_[+1]
+Fis_35                              0.017  3_[+1]
+Fis_12                              0.017  2_[+1]_1
+Fis_143                             0.018  2_[+1]_1
+Fis_130                             0.018  1_[+1]_2
+Fis_59                              0.018  2_[+1]_1
+Fis_110                             0.019  [+1]_3
+Fis_102                             0.019  3_[+1]
+Fis_97                              0.019  [+1]_3
+Fis_61                               0.02  2_[+1]_1
+Fis_155                             0.022  1_[+1]_2
+Fis_55                              0.023  2_[+1]_1
+Fis_107                             0.024  1_[+1]_2
+Fis_89                              0.027  1_[+1]_2
+Fis_172                             0.031  2_[+1]_1
+Fis_20                              0.033  2_[+1]_1
+Fis_18                              0.033  1_[+1]_2
+Fis_93                              0.034  [+1]_3
+Fis_90                              0.037  2_[+1]_1
+Fis_173                             0.038  2_[+1]_1
+Fis_174                             0.039  2_[+1]_1
+Fis_118                              0.04  2_[+1]_1
+Fis_134                             0.042  1_[+1]_2
+Fis_133                             0.044  2_[+1]_1
+Fis_103                             0.047  2_[+1]_1
+Fis_21                              0.056  2_[+1]_1
+Fis_88                              0.063  2_[+1]_1
+Fis_22                              0.079  2_[+1]_1
+Fis_109                              0.08  2_[+1]_1
+Fis_225                             0.085  2_[+1]_1
+Fis_87                              0.091  [+1]_3
+Fis_156                              0.11  3_[+1]
+Fis_104                              0.11  1_[+1]_2
+Fis_161                              0.12  2_[+1]_1
+Fis_150                              0.12  3_[+1]
+Fis_96                               0.13  [+1]_3
+Fis_95                               0.13  1_[+1]_2
+Fis_145                              0.18  1_[+1]_2
+Fis_94                               0.18  1_[+1]_2
+Fis_135                              0.21  [+1]_3
+Fis_151                              0.23  3_[+1]
+Fis_157                              0.26  3_[+1]
+Fis_106                              0.28  3_[+1]
+Fis_47                               0.37  [+1]_3
+Fis_92                               0.37  3_[+1]
+Fis_113                              0.37  1_[+1]_2
+Fis_148                              0.38  2_[+1]_1
+Fis_91                               0.45  [+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGNHYAWWWWWTRRNCAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGNHYAWWWWWTRRNCAA width=18 seqs=228
+Fis_154                  (    2) CGCTCAAATAATAAACAA  1 
+Fis_169                  (    2) TGGTCATATTTTTATCAA  1 
+Fis_9                    (    3) TGTTTAAAATATGTTCAG  1 
+Fis_139                  (    4) TGCTGAAAATTTCAGCAC  1 
+Fis_70                   (    3) TGTCTATTTTTTGCACAA  1 
+Fis_76                   (    3) TGCCGATTATTTACGCAA  1 
+Fis_98                   (    3) GGTATAATTTTTCAGCAA  1 
+Fis_123                  (    4) TGCCTGATTTTTCAGCGA  1 
+Fis_111                  (    2) TGTTCATTTTTCAACCAC  1 
+Fis_189                  (    3) TGCTCATTTTTTAGACTT  1 
+Fis_159                  (    4) TGATTAATTATAAATCAG  1 
+Fis_117                  (    3) TGGACATTTTTCCAGCAA  1 
+Fis_44                   (    3) TGTGTAACAAATAACCAC  1 
+Fis_49                   (    5) TGTTTATATTATAAAAAG  1 
+Fis_218                  (    3) TGGCTGTTAATTATCCTA  1 
+Fis_138                  (    3) CGCATAAAATGTGACCAA  1 
+Fis_105                  (    3) TGCTTGACATTCGACCAA  1 
+Fis_119                  (    3) TGGCTGTTTTTCAGGCAA  1 
+Fis_83                   (    4) AGTTTAAATTTTGACTAA  1 
+Fis_52                   (    3) TGATTAAAAGATGAGCGG  1 
+Fis_77                   (    3) AGTGTAAATTTTAGTCAC  1 
+Fis_43                   (    5) TGATCTATATTTAACAAA  1 
+Fis_153                  (    2) CGCCTATCTTTTCAGCAA  1 
+Fis_5                    (    3) CGTCGTAAATTTAAGCAA  1 
+Fis_168                  (    3) CGATTATATTCTATCCAA  1 
+Fis_68                   (    3) TTAAGAAAATTTATACAA  1 
+Fis_50                   (    5) TGTTTTTAATATTATCAT  1 
+Fis_179                  (    5) TGCATATTTTTAACACAA  1 
+Fis_209                  (    3) TGTTTGATATTTATCATA  1 
+Fis_45                   (    3) CGCCCAAATACTAAACAA  1 
+Fis_23                   (    3) TGCCTGAAAAGTGAGCGA  1 
+Fis_136                  (    3) TGTTGAAAAAGTGTGCTA  1 
+Fis_3                    (    3) TGCGCAATTTGTCAACGA  1 
+Fis_58                   (    3) TGAACAATTATTGCCCGT  1 
+Fis_25                   (    3) TGTCTATAAGTTAGACGG  1 
+Fis_165                  (    3) TGTTTAAAAATTGTTAAC  1 
+Fis_178                  (    5) TGCCTGTAAAACATGCAT  1 
+Fis_223                  (    5) CGGTCATAAATCAAGAAA  1 
+Fis_203                  (    3) TGAACAGTTATTAAGCGG  1 
+Fis_127                  (    4) CGTTCACTTGTTCAGCAA  1 
+Fis_146                  (    4) TGTTCTACTTTTCATCAT  1 
+Fis_99                   (    5) TGATTGTTACTTATTAAA  1 
+Fis_30                   (    2) TGCTGAAAAAATGCGCGG  1 
+Fis_176                  (    5) CGTTTTTATTTCATGCAA  1 
+Fis_80                   (    3) CGCTCATTTTAAATGCAA  1 
+Fis_63                   (    3) TGATCACAATTTTGACTG  1 
+Fis_28                   (    3) TGAACACGTTATAGACAT  1 
+Fis_212                  (    3) AGAGAGTTTTTTGACCAA  1 
+Fis_166                  (    3) TGAACAAAACTTGAACCG  1 
+Fis_124                  (    4) TGATGGCGAATTAATCAG  1 
+Fis_54                   (    3) TGGGTGTTAAATAGCCTG  1 
+Fis_120                  (    4) TGATTGAAGTTTGAATAA  1 
+Fis_41                   (    3) TGAAAAAATATTATTCGC  1 
+Fis_160                  (    3) TGGCGAAGATTTCGCCAG  1 
+Fis_215                  (    5) AGATCGCATTATAAGCTT  1 
+Fis_75                   (    3) CGTTCAAGAAATCGCCGA  1 
+Fis_81                   (    3) TGGTCAAAGTTTGGCCTT  1 
+Fis_205                  (    3) AGACCATTTTTTTTCCAG  1 
+Fis_39                   (    3) TGCTTACTTTATCGATAA  1 
+Fis_186                  (    3) TGGCTAAATGGTAAAAAA  1 
+Fis_19                   (    3) TGTGCAAAAGTTTCACTA  1 
+Fis_194                  (    3) CGTTTTATTAATAAATAA  1 
+Fis_158                  (    3) CGTGCGAATCATAAGCAG  1 
+Fis_65                   (    3) AGGACGGAATATGAACAA  1 
+Fis_15                   (    3) AGAATAAAAAATGCGCGG  1 
+Fis_200                  (    3) CGAACAATAATTACTCCT  1 
+Fis_78                   (    3) TGAGTAATTATCGCACCA  1 
+Fis_73                   (    3) AGATTAATAAGCCATCTA  1 
+Fis_71                   (    3) CGAATAGAAAACAACCAT  1 
+Fis_46                   (    3) TGCCGTTTATTTGCACAA  1 
+Fis_208                  (    3) CGGCTAAAAAATAGAATA  1 
+Fis_201                  (    5) CGAGTGAAAATCTACCTA  1 
+Fis_163                  (    3) TAATCATCATTTCCACAA  1 
+Fis_40                   (    3) ATTTTGTTATTTAAACAC  1 
+Fis_33                   (    3) AGGGTGAAAAAACAACAA  1 
+Fis_191                  (    3) TGAGGAGTATATATACAC  1 
+Fis_82                   (    3) AGTGAATTATTTGAACCA  1 
+Fis_69                   (    3) CGAGGCAAAAATGAGCAA  1 
+Fis_213                  (    5) GGATTAAAAAGCAGACTA  1 
+Fis_152                  (    3) TGGTCGTTTCCTCAGCAA  1 
+Fis_217                  (    5) CGTTTATCAGACAAGCAT  1 
+Fis_79                   (    3) TGGTCATTTCTTAACTCA  1 
+Fis_17                   (    3) CGCCCATTTAACCGACAA  1 
+Fis_227                  (    3) TGGTCGAGATATTGCCCA  1 
+Fis_126                  (    4) TGATGCAAAAGTAGCCAT  1 
+Fis_56                   (    3) TGGTTGAATGTTGCGCGG  1 
+Fis_122                  (    3) AGGTCATTAACTGCCCAA  1 
+Fis_62                   (    3) TGGGCAAAATACAGAAAT  1 
+Fis_187                  (    5) TGGCGATTTTATGTGCGC  1 
+Fis_112                  (    2) CGCACAAATAATCGCCTG  1 
+Fis_42                   (    5) CGATTGTCATTCTACCGA  1 
+Fis_220                  (    5) CGTTTGATTTACATCAAA  1 
+Fis_188                  (    5) TTATGAAAATAAAAACAG  1 
+Fis_116                  (    4) TGCCGCAATCTTAAGCAG  1 
+Fis_1                    (    4) GTGCTAAAAAGTAACCAA  1 
+Fis_185                  (    3) CTTTCGAATTATGAGCGA  1 
+Fis_164                  (    3) TGGCGATTTATCGCGCAG  1 
+Fis_204                  (    3) CGTCTATCTCTTTAGCTA  1 
+Fis_216                  (    5) TGTTGCTTAATTGATCTG  1 
+Fis_210                  (    2) TGAAGTAAAATTTATTAA  1 
+Fis_86                   (    1) AGGCCGAAATTTGCTCGT  1 
+Fis_171                  (    3) TGTGTAATAAATAAAGGG  1 
+Fis_224                  (    5) AAATCAAGAAATAAACCA  1 
+Fis_221                  (    3) TAAATAAAAAATCCACTT  1 
+Fis_182                  (    3) TGTTAAGAAAACATTCAT  1 
+Fis_207                  (    3) TGCTGATTTTTCGTTCTC  1 
+Fis_38                   (    3) TGGATAAGAAGCAAGTAA  1 
+Fis_214                  (    5) TGTTTTACTTTAGACCTA  1 
+Fis_57                   (    3) CGCTCGAAAAACTGGCAG  1 
+Fis_48                   (    5) TGCGGATAAATCCTACTT  1 
+Fis_31                   (    2) TGCTTGTTTTATGGCACA  1 
+Fis_198                  (    3) TTGTTATAATTTTATTAT  1 
+Fis_162                  (    3) TGGCAAATTGTTAGCCGC  1 
+Fis_193                  (    3) TCTCCAAAATATATTCAC  1 
+Fis_190                  (    3) TGGTAAAATTTCACACCC  1 
+Fis_183                  (    3) TAAATAAGATTTACAAAA  1 
+Fis_206                  (    3) GGAATGAAAGATGAACGT  1 
+Fis_195                  (    3) TATTAATAAATAAAGCTA  1 
+Fis_137                  (    3) CGGCTGTTTCTTCATCGT  1 
+Fis_64                   (    4) TGGTGGTTAAAACGTCAT  1 
+Fis_32                   (    2) CGGTTGCAAAAACGGCAA  1 
+Fis_85                   (    3) AGATTAACACCTCGTCAA  1 
+Fis_211                  (    3) TTATTAATAGTTGTAAAA  1 
+Fis_140                  (    4) TGCTGACTTTCTCGCCGA  1 
+Fis_8                    (    4) CGTTTGGGTGTTCACCAA  1 
+Fis_4                    (    3) TGATCGCAAAACAGACCG  1 
+Fis_184                  (    3) GATTTACAAAATGTTCAA  1 
+Fis_7                    (    3) TGTAAAAATGTGACGCAA  1 
+Fis_100                  (    1) TGCAGACAAATATACCAC  1 
+Fis_74                   (    3) TTAACAAATTTTTCTCTT  1 
+Fis_34                   (    3) TGTGTGCGATTGCAGCAA  1 
+Fis_16                   (    3) CGACGCTGAAATAAGCAT  1 
+Fis_0                    (    3) TGGGTACTTACTATTCGT  1 
+Fis_197                  (    4) TGTTACAAATTTATCTGA  1 
+Fis_121                  (    3) TGTACATTCCTTAACCGG  1 
+Fis_199                  (    3) ATTTTATTATTTGTACCT  1 
+Fis_177                  (    5) AGATGATCTTTTTGTCGC  1 
+Fis_6                    (    3) TCCAGAATTTTTCGTCAT  1 
+Fis_226                  (    4) GCAATATTTATTAACCAC  1 
+Fis_196                  (    3) GGGTGGTTAATCATGCGT  1 
+Fis_128                  (    4) CGCACAAACCGTAACCAA  1 
+Fis_72                   (    3) TGACCACAACTGATACAT  1 
+Fis_129                  (    3) AGTACGCGTACTAACCAA  1 
+Fis_181                  (    3) GGTCTTATTTATGATTAA  1 
+Fis_115                  (    2) CAAATAGGAATTCATCAA  1 
+Fis_202                  (    3) AGCCTATATAGCGAACTG  1 
+Fis_108                  (    2) TGGAAGGTTTATCAACGT  1 
+Fis_51                   (    5) TGGGCGATTTTTATTACG  1 
+Fis_141                  (    3) TGTACTGCATGTATGCAA  1 
+Fis_132                  (    2) TGTACTGCATGTATGCAA  1 
+Fis_192                  (    3) CGTTTAATTCTTCGTTTT  1 
+Fis_14                   (    3) AGCACGCCATATCGCCGA  1 
+Fis_67                   (    3) AGAAGATCTCTTGCGCAG  1 
+Fis_219                  (    3) TACTTTATTTTTCATCCC  1 
+Fis_2                    (    1) ATGGTATTTAAAATGCAA  1 
+Fis_149                  (    3) AGGCTCTATTATTACCTC  1 
+Fis_27                   (    3) AGCGGAACACATAGCCGG  1 
+Fis_11                   (    3) GGACCGTTTTCCAACCGA  1 
+Fis_10                   (    3) AGTTGATGGAATAGACTT  1 
+Fis_36                   (    2) TGGGGGCATTATTGGCCT  1 
+Fis_167                  (    3) TGCGCATGATAACGCCTT  1 
+Fis_29                   (    3) CGCTTAAAAGCGACGCAA  1 
+Fis_180                  (    3) GGAAAACAATCTGAACAT  1 
+Fis_114                  (    1) TGCCTGCAGATTTTACGT  1 
+Fis_24                   (    3) AGACTATATTTAAGATGT  1 
+Fis_26                   (    3) GGTGCTATACTTAATCTC  1 
+Fis_222                  (    3) CGCACATAATACGCCCCC  1 
+Fis_142                  (    3) AGGACGTCACATTACCGT  1 
+Fis_131                  (    2) AGGACGTCACATTACCGT  1 
+Fis_170                  (    2) TTGCTATTTTCTCTGCAC  1 
+Fis_175                  (    3) TGTCAAAATGTGCAACTT  1 
+Fis_101                  (    3) AGAGCGCCTTACTGGCAA  1 
+Fis_66                   (    4) GGCTTGAAAAAGCGCCCA  1 
+Fis_37                   (    4) TCAGCAATAAATGATTTA  1 
+Fis_13                   (    3) TGCACATTCCTTTAACGC  1 
+Fis_125                  (    4) TGGGCGATTTTTGCAGCA  1 
+Fis_84                   (    3) TCCTTAACGATTCAGCCA  1 
+Fis_60                   (    3) TGTGCGTAAAAAGGTATA  1 
+Fis_144                  (    2) GGCACAAAATAAAGAACA  1 
+Fis_53                   (    3) AGCAGCAAAAACCGGCAC  1 
+Fis_147                  (    4) TAAACACAACTAATACAG  1 
+Fis_35                   (    4) TGCAAGTCTTTTAGTATG  1 
+Fis_12                   (    3) GGTTTGACGTACAGACCA  1 
+Fis_143                  (    3) AGTACAGTTGATAGCCCC  1 
+Fis_130                  (    2) AGTACAGTTGATAGCCCC  1 
+Fis_59                   (    3) TGCTGGGGAATGCAGCAG  1 
+Fis_110                  (    1) AGGGGTTGATATCCGCAG  1 
+Fis_102                  (    4) TGCTAATAAAGTTGCGTA  1 
+Fis_97                   (    1) TGAGTGCGAAGAACGCGA  1 
+Fis_61                   (    3) TGATTGTGGATAACTCTG  1 
+Fis_155                  (    2) TATGTTAATAACCATTAA  1 
+Fis_55                   (    3) TGCGTACGGGTAAACCTA  1 
+Fis_107                  (    2) CACCTGAATTTTCGTGAA  1 
+Fis_89                   (    2) TGATGCGGTCTTCAGCGT  1 
+Fis_172                  (    3) TGGCACTGAATTATTTTA  1 
+Fis_20                   (    3) GTTGTGCAAAACATGCTA  1 
+Fis_18                   (    2) GTGGCGAATTTCGCCCGA  1 
+Fis_93                   (    1) CTGCAAAATAGTGACCTC  1 
+Fis_90                   (    3) AGCTGACCAGACAGTCGC  1 
+Fis_173                  (    3) AGTAAAGTTCACCGCCGA  1 
+Fis_174                  (    3) CGGTGAATAACCACGTTT  1 
+Fis_118                  (    3) ACAGTCACTTTCGAGCAA  1 
+Fis_134                  (    2) AAAATAACTGGTTACCTT  1 
+Fis_133                  (    3) AATCGAACGATTATTCTT  1 
+Fis_103                  (    3) GGATTTTATCAGGTACAG  1 
+Fis_21                   (    3) TTGCTATCATTCGTTATT  1 
+Fis_88                   (    3) GGACGAAGCATTCCGCGG  1 
+Fis_22                   (    3) TGTTAGCCATAAATAAGG  1 
+Fis_109                  (    3) CGAGTCCATATCGGTAAC  1 
+Fis_225                  (    3) CGCTCTGTATAATGCCGC  1 
+Fis_87                   (    1) GGCGATTGGAATGCGCAA  1 
+Fis_156                  (    4) GGCATAAATGGCGAGGGT  1 
+Fis_104                  (    2) TGACGCTTTCGTCAATCT  1 
+Fis_161                  (    3) TCGTAAAGCTGTTACCGA  1 
+Fis_150                  (    4) TAAGTTTGAGATTACTAC  1 
+Fis_96                   (    1) CAGCTGTAGAGCAAGAAT  1 
+Fis_95                   (    2) CGCGAAATGAGCGATGAA  1 
+Fis_145                  (    2) TGAATCAGGAAGTTTTAA  1 
+Fis_94                   (    2) CAATTGATCGACAAGATT  1 
+Fis_135                  (    1) AATCCGTTACGGATGAAA  1 
+Fis_151                  (    4) AAGCGTATAGGTTTACCT  1 
+Fis_157                  (    4) GTGATGATAGATTGTGCA  1 
+Fis_106                  (    4) CGCCTGTAGGCCAAGACC  1 
+Fis_47                   (    1) CAAAAACCGTGCAAAATA  1 
+Fis_92                   (    4) AAATGAACCGTCTGGTAT  1 
+Fis_113                  (    2) TTGTTGCTGCGTTTTTGT  1 
+Fis_148                  (    3) ATGCCGCGTCTTTTCTGG  1 
+Fis_91                   (    1) GAGGAAGTTCTGACTCTG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGNHYAWWWWWTRRNCAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 1005 bayes= 1.76888 E= 1.2e-193 
+   -42    -36   -140    109 
+  -142   -305    165   -164 
+    21    -16    -13      5 
+   -14    -27    -53     67 
+  -129     21    -46     78 
+   120   -205     14   -142 
+    90    -95   -177     44 
+    71    -95   -105     48 
+   100   -305   -186     73 
+    51   -105   -116     74 
+    49   -205   -110     95 
+  -142    -27   -240    140 
+    79    -33    -16    -77 
+    82    -86    -16    -32 
+     5      0     12    -19 
+  -117    159   -305   -135 
+    97   -116    -30    -32 
+    93    -90    -57    -14 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGNHYAWWWWWTRRNCAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 228 E= 1.2e-193 
+ 0.184211  0.197368  0.096491  0.521930 
+ 0.092105  0.030702  0.798246  0.078947 
+ 0.285088  0.228070  0.232456  0.254386 
+ 0.223684  0.210526  0.175439  0.390351 
+ 0.100877  0.293860  0.184211  0.421053 
+ 0.565789  0.061404  0.280702  0.092105 
+ 0.460526  0.131579  0.074561  0.333333 
+ 0.403509  0.131579  0.122807  0.342105 
+ 0.491228  0.030702  0.070175  0.407895 
+ 0.350877  0.122807  0.114035  0.412281 
+ 0.346491  0.061404  0.118421  0.473684 
+ 0.092105  0.210526  0.048246  0.649123 
+ 0.425439  0.201754  0.228070  0.144737 
+ 0.434211  0.140351  0.228070  0.197368 
+ 0.254386  0.254386  0.276316  0.214912 
+ 0.109649  0.763158  0.030702  0.096491 
+ 0.482456  0.114035  0.206140  0.197368 
+ 0.469298  0.135965  0.171053  0.223684 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGNHYAWWWWWTRRNCAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+TG[ATGC][TAC][TC][AG][AT][AT][AT][TA][TA][TC][AGC][AG][GACT]C[AG][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  1.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Fis_0                            1.18e-02  21
+Fis_1                            3.94e-03  21
+Fis_2                            2.48e-02  21
+Fis_3                            4.51e-04  21
+Fis_4                            9.26e-03  21
+Fis_5                            1.86e-04  2_[+1(4.64e-05)]_1
+Fis_6                            1.40e-02  21
+Fis_7                            1.03e-02  21
+Fis_8                            2.00e-02  26
+Fis_9                            1.67e-05  2_[+1(4.17e-06)]_1
+Fis_10                           2.72e-02  21
+Fis_11                           2.72e-02  21
+Fis_12                           6.48e-02  21
+Fis_13                           4.70e-02  21
+Fis_14                           2.13e-02  21
+Fis_15                           1.59e-03  21
+Fis_16                           1.18e-02  21
+Fis_17                           2.43e-03  21
+Fis_18                           1.27e-01  21
+Fis_19                           1.52e-03  21
+Fis_20                           1.24e-01  21
+Fis_21                           2.05e-01  21
+Fis_22                           2.79e-01  21
+Fis_23                           3.51e-04  2_[+1(8.77e-05)]_1
+Fis_24                           3.25e-02  21
+Fis_25                           5.24e-04  21
+Fis_26                           3.35e-02  21
+Fis_27                           2.64e-02  21
+Fis_28                           8.86e-04  21
+Fis_29                           2.97e-02  21
+Fis_30                           8.07e-04  21
+Fis_31                           5.57e-03  21
+Fis_32                           7.75e-03  21
+Fis_33                           2.14e-03  21
+Fis_34                           1.18e-02  21
+Fis_35                           6.48e-02  21
+Fis_36                           2.80e-02  21
+Fis_37                           4.58e-02  21
+Fis_38                           5.36e-03  21
+Fis_39                           1.46e-03  21
+Fis_40                           1.81e-03  21
+Fis_41                           9.72e-04  21
+Fis_42                           6.45e-03  25
+Fis_43                           3.33e-04  4_[+1(4.16e-05)]_3
+Fis_44                           7.41e-05  2_[+1(1.85e-05)]_1
+Fis_45                           3.51e-04  2_[+1(8.77e-05)]_1
+Fis_46                           1.73e-03  21
+Fis_47                           8.39e-01  21
+Fis_48                           1.11e-02  25
+Fis_49                           1.67e-04  4_[+1(2.09e-05)]_3
+Fis_50                           4.87e-04  4_[+1(6.08e-05)]_3
+Fis_51                           3.59e-02  25
+Fis_52                           1.49e-04  2_[+1(3.72e-05)]_1
+Fis_53                           6.32e-02  21
+Fis_54                           9.28e-04  21
+Fis_55                           8.98e-02  21
+Fis_56                           2.64e-03  21
+Fis_57                           5.57e-03  21
+Fis_58                           4.74e-04  21
+Fis_59                           7.18e-02  21
+Fis_60                           5.54e-02  21
+Fis_61                           7.94e-02  21
+Fis_62                           2.98e-03  21
+Fis_63                           8.86e-04  21
+Fis_64                           7.75e-03  21
+Fis_65                           1.59e-03  21
+Fis_66                           4.21e-02  21
+Fis_67                           2.33e-02  21
+Fis_68                           2.19e-04  2_[+1(5.46e-05)]_1
+Fis_69                           2.24e-03  21
+Fis_70                           2.36e-05  2_[+1(5.89e-06)]_1
+Fis_71                           1.73e-03  21
+Fis_72                           1.49e-02  21
+Fis_73                           1.66e-03  21
+Fis_74                           1.14e-02  21
+Fis_75                           1.17e-03  21
+Fis_76                           2.88e-05  2_[+1(7.20e-06)]_1
+Fis_77                           1.57e-04  2_[+1(3.93e-05)]_1
+Fis_78                           1.66e-03  21
+Fis_79                           2.43e-03  21
+Fis_80                           8.86e-04  21
+Fis_81                           1.33e-03  21
+Fis_82                           2.24e-03  21
+Fis_83                           1.18e-04  3_[+1(2.96e-05)]
+Fis_84                           5.11e-02  21
+Fis_85                           8.03e-03  21
+Fis_86                           4.60e-03  21
+Fis_87                           3.19e-01  21
+Fis_88                           2.30e-01  21
+Fis_89                           1.04e-01  21
+Fis_90                           1.39e-01  21
+Fis_91                           9.12e-01  21
+Fis_92                           8.43e-01  21
+Fis_93                           1.30e-01  21
+Fis_94                           5.58e-01  21
+Fis_95                           4.34e-01  21
+Fis_96                           4.22e-01  21
+Fis_97                           7.56e-02  21
+Fis_98                           3.74e-05  2_[+1(9.35e-06)]_1
+Fis_99                           1.61e-03  25
+Fis_100                          1.10e-02  21
+Fis_101                          4.09e-02  21
+Fis_102                          7.56e-02  21
+Fis_103                          1.75e-01  21
+Fis_104                          3.77e-01  21
+Fis_105                          9.96e-05  2_[+1(2.49e-05)]_1
+Fis_106                          7.33e-01  21
+Fis_107                          9.20e-02  21
+Fis_108                          1.76e-02  21
+Fis_109                          2.84e-01  21
+Fis_110                          7.37e-02  21
+Fis_111                          5.13e-05  1_[+1(1.28e-05)]_2
+Fis_112                          3.23e-03  21
+Fis_113                          8.47e-01  21
+Fis_114                          3.25e-02  21
+Fis_115                          1.70e-02  21
+Fis_116                          3.64e-03  21
+Fis_117                          6.56e-05  2_[+1(1.64e-05)]_1
+Fis_118                          1.51e-01  21
+Fis_119                          1.18e-04  2_[+1(2.96e-05)]_1
+Fis_120                          9.72e-04  21
+Fis_121                          1.22e-02  21
+Fis_122                          2.86e-03  21
+Fis_123                          4.82e-05  3_[+1(1.21e-05)]
+Fis_124                          9.28e-04  21
+Fis_125                          5.11e-02  21
+Fis_126                          2.53e-03  21
+Fis_127                          7.00e-04  21
+Fis_128                          1.49e-02  21
+Fis_129                          1.54e-02  21
+Fis_130                          7.00e-02  21
+Fis_131                          3.76e-02  21
+Fis_132                          2.00e-02  21
+Fis_133                          1.65e-01  21
+Fis_134                          1.58e-01  21
+Fis_135                          6.11e-01  21
+Fis_136                          4.29e-04  21
+Fis_137                          7.75e-03  21
+Fis_138                          9.39e-05  2_[+1(2.35e-05)]_1
+Fis_139                          1.79e-05  3_[+1(4.47e-06)]
+Fis_140                          8.63e-03  21
+Fis_141                          2.00e-02  21
+Fis_142                          3.76e-02  21
+Fis_143                          7.00e-02  21
+Fis_144                          6.32e-02  21
+Fis_145                          5.58e-01  21
+Fis_146                          8.07e-04  21
+Fis_147                          6.48e-02  21
+Fis_148                          8.54e-01  21
+Fis_149                          2.64e-02  21
+Fis_150                          4.05e-01  21
+Fis_151                          6.52e-01  21
+Fis_152                          2.33e-03  21
+Fis_153                          1.76e-04  1_[+1(4.39e-05)]_2
+Fis_154                          2.93e-06  1_[+1(7.32e-07)]_2
+Fis_155                          8.35e-02  21
+Fis_156                          3.77e-01  21
+Fis_157                          6.11e-01  21
+Fis_158                          1.59e-03  21
+Fis_159                          5.46e-05  3_[+1(1.37e-05)]
+Fis_160                          1.02e-03  21
+Fis_161                          4.05e-01  21
+Fis_162                          6.00e-03  21
+Fis_163                          1.81e-03  21
+Fis_164                          4.26e-03  21
+Fis_165                          5.77e-04  21
+Fis_166                          9.28e-04  21
+Fis_167                          2.97e-02  21
+Fis_168                          2.07e-04  2_[+1(5.18e-05)]_1
+Fis_169                          3.18e-06  1_[+1(7.95e-07)]_2
+Fis_170                          3.87e-02  21
+Fis_171                          4.97e-03  21
+Fis_172                          1.19e-01  21
+Fis_173                          1.45e-01  21
+Fis_174                          1.48e-01  21
+Fis_175                          4.09e-02  21
+Fis_176                          1.69e-03  25
+Fis_177                          2.68e-02  25
+Fis_178                          1.21e-03  25
+Fis_179                          5.41e-04  4_[+1(6.76e-05)]_3
+Fis_180                          3.16e-02  21
+Fis_181                          1.70e-02  21
+Fis_182                          5.16e-03  21
+Fis_183                          6.46e-03  21
+Fis_184                          9.93e-03  21
+Fis_185                          4.10e-03  21
+Fis_186                          1.52e-03  21
+Fis_187                          6.20e-03  25
+Fis_188                          7.27e-03  25
+Fis_189                          5.46e-05  2_[+1(1.37e-05)]_1
+Fis_190                          6.46e-03  21
+Fis_191                          2.24e-03  21
+Fis_192                          2.06e-02  21
+Fis_193                          6.46e-03  21
+Fis_194                          1.59e-03  21
+Fis_195                          6.70e-03  21
+Fis_196                          1.49e-02  21
+Fis_197                          8.03e-03  21
+Fis_198                          6.00e-03  21
+Fis_199                          1.35e-02  21
+Fis_200                          1.66e-03  21
+Fis_201                          3.61e-03  25
+Fis_202                          1.76e-02  21
+Fis_203                          7.00e-04  21
+Fis_204                          4.43e-03  21
+Fis_205                          1.39e-03  21
+Fis_206                          6.70e-03  21
+Fis_207                          5.36e-03  21
+Fis_208                          1.81e-03  21
+Fis_209                          2.85e-04  2_[+1(7.13e-05)]_1
+Fis_210                          4.60e-03  21
+Fis_211                          8.32e-03  21
+Fis_212                          9.28e-04  21
+Fis_213                          4.66e-03  25
+Fis_214                          1.11e-02  25
+Fis_215                          2.33e-03  25
+Fis_216                          9.18e-03  25
+Fis_217                          4.85e-03  25
+Fis_218                          9.39e-05  2_[+1(2.35e-05)]_1
+Fis_219                          2.48e-02  21
+Fis_220                          6.99e-03  25
+Fis_221                          5.16e-03  21
+Fis_222                          3.65e-02  21
+Fis_223                          1.33e-03  25
+Fis_224                          1.03e-02  25
+Fis_225                          2.99e-01  21
+Fis_226                          1.44e-02  21
+Fis_227                          2.53e-03  21
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

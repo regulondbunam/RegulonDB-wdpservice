@@ -1,0 +1,245 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= GalS/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+GalS_0                   1.0000     22  GalS_1                   1.0000     22  
+GalS_2                   1.0000     22  GalS_3                   1.0000     22  
+GalS_4                   1.0000     22  GalS_5                   1.0000     22  
+GalS_6                   1.0000     22  GalS_7                   1.0000     22  
+GalS_8                   1.0000     22  GalS_9                   1.0000     22  
+GalS_10                  1.0000     22  GalS_11                  1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme GalS/ri_sites.fasta -oc GalS/./ -mod oops -nmotifs 1 -minw 13 -maxw 19 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           13    maxw=           19
+nsites: minsites=       12    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             264    N=              12
+sample: seed=           10    hsfrac=          0
+        searchsize=    264    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.258 C 0.216 G 0.197 T 0.33 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTAANCGWTTWCAY MEME-1	width =  15  sites =  12  llr = 126  E-value = 5.3e-020
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTAANCGWTTWCAY MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::17a3123::3:81
+pos.-specific     C  1:12:37:2::2926
+probability       G  :83::3:82:21:1:
+matrix            T  9362:23:4a841:3
+
+         bits    2.0     *    *     
+                 1.8     *    *     
+                 1.6 *   *    *  *  
+                 1.4 *   *  * ** *  
+Relative         1.2 **  *  * ** *  
+Entropy          1.0 **  *  * ** ** 
+(15.2 bits)      0.8 ** ** ** ** ***
+                 0.6 ** ** ** ** ***
+                 0.4 ***** ** ** ***
+                 0.2 ***** *********
+                 0.0 ---------------
+
+Multilevel           TGTAACCGTTTTCAC
+consensus             TG  AT A  A  T
+sequence                  G         
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAANCGWTTWCAY MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+GalS_10                       5  2.36e-08       ttaG TGTAAGCGATTACAC tga       
+GalS_7                        5  5.69e-08       cggC TGTAACCGTTTCCAT tgc       
+GalS_5                        5  9.26e-08       cttG TGTAAACGATTCCAC taa       
+GalS_11                       5  1.99e-07       agaA TGTAAGCGTTTACCC act       
+GalS_0                        5  5.17e-07       caaC TGAAACCGATTACAC caa       
+GalS_6                        5  6.03e-07       gcgA TGTAACCGCTTTCAA tct       
+GalS_4                        6  4.12e-06      accGG TGGTAGCGGTTACAt tg        
+GalS_8                        5  8.29e-06       tctG TGGCAACGGTTTCCC ggg       
+GalS_2                        4  3.02e-05        gat TTGTAATATTTTCAT Atta      
+GalS_9                        6  8.45e-05      atcGG TGTAATTGCTGGCGc ac        
+GalS_1                        3  9.67e-05         gt tTTCACAGTTGTTAC ATttc     
+GalS_3                        5  1.40e-04       ataA CTCAATTATTTTCAT gca       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAANCGWTTWCAY MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GalS_10                           2.4e-08  4_[+1]_3
+GalS_7                            5.7e-08  4_[+1]_3
+GalS_5                            9.3e-08  4_[+1]_3
+GalS_11                             2e-07  4_[+1]_3
+GalS_0                            5.2e-07  4_[+1]_3
+GalS_6                              6e-07  4_[+1]_3
+GalS_4                            4.1e-06  5_[+1]_2
+GalS_8                            8.3e-06  4_[+1]_3
+GalS_2                              3e-05  3_[+1]_4
+GalS_9                            8.4e-05  5_[+1]_2
+GalS_1                            9.7e-05  2_[+1]_5
+GalS_3                            0.00014  4_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAANCGWTTWCAY MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTAANCGWTTWCAY width=15 seqs=12
+GalS_10                  (    5) TGTAAGCGATTACAC  1 
+GalS_7                   (    5) TGTAACCGTTTCCAT  1 
+GalS_5                   (    5) TGTAAACGATTCCAC  1 
+GalS_11                  (    5) TGTAAGCGTTTACCC  1 
+GalS_0                   (    5) TGAAACCGATTACAC  1 
+GalS_6                   (    5) TGTAACCGCTTTCAA  1 
+GalS_4                   (    6) TGGTAGCGGTTACAT  1 
+GalS_8                   (    5) TGGCAACGGTTTCCC  1 
+GalS_2                   (    4) TTGTAATATTTTCAT  1 
+GalS_9                   (    6) TGTAATTGCTGGCGC  1 
+GalS_1                   (    3) TTTCACAGTTGTTAC  1 
+GalS_3                   (    5) CTCAATTATTTTCAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAANCGWTTWCAY MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 96 bayes= 2.80735 E= 5.3e-020 
+ -1023   -161  -1023    190 
+ -1023  -1023    156      2 
+  -156   -161     -2    124 
+   144    -61  -1023    -56 
+   202  -1023  -1023  -1023 
+     2     39     -2    -56 
+  -156    139  -1023      2 
+   -56  -1023    171  -1023 
+     2    -61    -61     76 
+ -1023  -1023  -1023    202 
+ -1023  -1023    -61    176 
+    44    -61   -161     76 
+ -1023    185  -1023   -156 
+   161    -61   -161  -1023 
+  -156    120  -1023     44 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAANCGWTTWCAY MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 12 E= 5.3e-020 
+ 0.000000  0.083333  0.000000  0.916667 
+ 0.000000  0.000000  0.750000  0.250000 
+ 0.083333  0.083333  0.250000  0.583333 
+ 0.666667  0.166667  0.000000  0.166667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.250000  0.333333  0.250000  0.166667 
+ 0.083333  0.666667  0.000000  0.250000 
+ 0.166667  0.000000  0.833333  0.000000 
+ 0.250000  0.166667  0.166667  0.416667 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.166667  0.833333 
+ 0.333333  0.166667  0.083333  0.416667 
+ 0.000000  0.916667  0.000000  0.083333 
+ 0.750000  0.166667  0.083333  0.000000 
+ 0.083333  0.583333  0.000000  0.333333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAANCGWTTWCAY MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GT][TG]AA[CAG][CT]G[TA]TT[TA]CA[CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.21 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GalS_0                           4.13e-06  4_[+1(5.17e-07)]_3
+GalS_1                           7.74e-04  2_[+1(9.67e-05)]_5
+GalS_2                           2.42e-04  3_[+1(3.02e-05)]_4
+GalS_3                           1.12e-03  22
+GalS_4                           3.29e-05  5_[+1(4.12e-06)]_2
+GalS_5                           7.41e-07  4_[+1(9.26e-08)]_3
+GalS_6                           4.82e-06  4_[+1(6.03e-07)]_3
+GalS_7                           4.55e-07  4_[+1(5.69e-08)]_3
+GalS_8                           6.63e-05  4_[+1(8.29e-06)]_3
+GalS_9                           6.76e-04  5_[+1(8.45e-05)]_2
+GalS_10                          1.89e-07  4_[+1(2.36e-08)]_3
+GalS_11                          1.60e-06  4_[+1(1.99e-07)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

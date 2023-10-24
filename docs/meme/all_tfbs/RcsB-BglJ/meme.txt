@@ -1,0 +1,255 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= RcsB-BglJ/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+RcsB-BglJ_0              1.0000     26  RcsB-BglJ_1              1.0000     26  
+RcsB-BglJ_2              1.0000     26  RcsB-BglJ_3              1.0000     26  
+RcsB-BglJ_4              1.0000     26  RcsB-BglJ_5              1.0000     26  
+RcsB-BglJ_6              1.0000     26  RcsB-BglJ_7              1.0000     26  
+RcsB-BglJ_8              1.0000     26  RcsB-BglJ_9              1.0000     26  
+RcsB-BglJ_10             1.0000     26  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme RcsB-BglJ/ri_sites.fasta -oc RcsB-BglJ/./ -mod oops -nmotifs 1 -minw 17 -maxw 23 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           17    maxw=           23
+nsites: minsites=       11    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             286    N=              11
+sample: seed=           10    hsfrac=          0
+        searchsize=    286    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.332 C 0.157 G 0.112 T 0.399 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AKCTTKATAWATTCYGAAAWTT MEME-1	width =  22  sites =  11  llr = 164  E-value = 3.2e-029
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AKCTTKATAWATTCYGAAAWTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  613:32626472:11199642:
+pos.-specific     C  :26::121:::::94:::1::2
+probability       G  23:213::3::::::6:::2:2
+matrix            T  251865271638a:53113586
+
+         bits    2.0             *         
+                 1.8             *         
+                 1.6             **  **    
+                 1.4    *       ***  **  * 
+Relative         1.2    *      ****  **  * 
+Entropy          1.0    *   * *****  **  * 
+(21.5 bits)      0.8   ***  ******* **** * 
+                 0.6 * *** ****************
+                 0.4 * *** ****************
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           ATCTTTATATATTCTGAAATTT
+consensus             GA AG  GAT   CT  TA  
+sequence                                   
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKCTTKATAWATTCYGAAAWTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+RcsB-BglJ_2                   2  1.16e-12          c atCTTTATATATTCTGAATATT cac       
+RcsB-BglJ_8                   2  3.29e-11          t acCTTGATATATTCTGAATTTT taa       
+RcsB-BglJ_0                   4  1.27e-10        cgt ATCTTTATGTTTTCCGAATTtt a         
+RcsB-BglJ_10                  2  3.13e-10          t aaCTTTATAAATTCCTAAAATT aca       
+RcsB-BglJ_1                   2  6.36e-10          t ttCTTTATAAATTCCTAAAGTT gtt       
+RcsB-BglJ_3                   2  9.53e-10          c atCTAAATGTATTCTGAAAATG gac       
+RcsB-BglJ_5                   2  3.28e-08          a ggATAAATATTTTCTGAAAATG aca       
+RcsB-BglJ_9                   2  2.70e-07          a ttCGAGTCATATTCTGAAATAT cca       
+RcsB-BglJ_7                   2  5.60e-06          g ggAGGGCATTTTTCTGAAATAT cct       
+RcsB-BglJ_6                   5  1.01e-05       agtC AGATTCTTAAAATACAAACgtc           
+RcsB-BglJ_4                   4  1.98e-05        cgg ACTTTTCAGAAATCATTTATtc c         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKCTTKATAWATTCYGAAAWTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RcsB-BglJ_2                       1.2e-12  1_[+1]_3
+RcsB-BglJ_8                       3.3e-11  1_[+1]_3
+RcsB-BglJ_0                       1.3e-10  3_[+1]_1
+RcsB-BglJ_10                      3.1e-10  1_[+1]_3
+RcsB-BglJ_1                       6.4e-10  1_[+1]_3
+RcsB-BglJ_3                       9.5e-10  1_[+1]_3
+RcsB-BglJ_5                       3.3e-08  1_[+1]_3
+RcsB-BglJ_9                       2.7e-07  1_[+1]_3
+RcsB-BglJ_7                       5.6e-06  1_[+1]_3
+RcsB-BglJ_6                         1e-05  4_[+1]
+RcsB-BglJ_4                         2e-05  3_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKCTTKATAWATTCYGAAAWTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AKCTTKATAWATTCYGAAAWTT width=22 seqs=11
+RcsB-BglJ_2              (    2) ATCTTTATATATTCTGAATATT  1 
+RcsB-BglJ_8              (    2) ACCTTGATATATTCTGAATTTT  1 
+RcsB-BglJ_0              (    4) ATCTTTATGTTTTCCGAATTTT  1 
+RcsB-BglJ_10             (    2) AACTTTATAAATTCCTAAAATT  1 
+RcsB-BglJ_1              (    2) TTCTTTATAAATTCCTAAAGTT  1 
+RcsB-BglJ_3              (    2) ATCTAAATGTATTCTGAAAATG  1 
+RcsB-BglJ_5              (    2) GGATAAATATTTTCTGAAAATG  1 
+RcsB-BglJ_9              (    2) TTCGAGTCATATTCTGAAATAT  1 
+RcsB-BglJ_7              (    2) GGAGGGCATTTTTCTGAAATAT  1 
+RcsB-BglJ_6              (    5) AGATTCTTAAAATACAAACGTC  1 
+RcsB-BglJ_4              (    4) ACTTTTCAGAAATCATTTATTC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKCTTKATAWATTCYGAAAWTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 55 bayes= 2 E= 3.2e-029 
+   137  -1010    -48    -44 
+  -143    -48     10     89 
+    15    132  -1010   -143 
+ -1010  -1010    -48    173 
+    15  -1010   -148    137 
+   -44   -148     10     89 
+   137    -48  -1010    -44 
+   -44   -148  -1010    156 
+   137  -1010     10   -143 
+    56  -1010  -1010    137 
+   156  -1010  -1010     15 
+   -44  -1010  -1010    173 
+ -1010  -1010  -1010    202 
+  -143    184  -1010  -1010 
+  -143     52  -1010    115 
+  -143  -1010    132     15 
+   188  -1010  -1010   -143 
+   188  -1010  -1010   -143 
+   137   -148  -1010     15 
+    56  -1010    -48     89 
+   -44  -1010  -1010    173 
+ -1010    -48    -48    137 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKCTTKATAWATTCYGAAAWTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 11 E= 3.2e-029 
+ 0.636364  0.000000  0.181818  0.181818 
+ 0.090909  0.181818  0.272727  0.454545 
+ 0.272727  0.636364  0.000000  0.090909 
+ 0.000000  0.000000  0.181818  0.818182 
+ 0.272727  0.000000  0.090909  0.636364 
+ 0.181818  0.090909  0.272727  0.454545 
+ 0.636364  0.181818  0.000000  0.181818 
+ 0.181818  0.090909  0.000000  0.727273 
+ 0.636364  0.000000  0.272727  0.090909 
+ 0.363636  0.000000  0.000000  0.636364 
+ 0.727273  0.000000  0.000000  0.272727 
+ 0.181818  0.000000  0.000000  0.818182 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.090909  0.909091  0.000000  0.000000 
+ 0.090909  0.363636  0.000000  0.545455 
+ 0.090909  0.000000  0.636364  0.272727 
+ 0.909091  0.000000  0.000000  0.090909 
+ 0.909091  0.000000  0.000000  0.090909 
+ 0.636364  0.090909  0.000000  0.272727 
+ 0.363636  0.000000  0.181818  0.454545 
+ 0.181818  0.000000  0.000000  0.818182 
+ 0.000000  0.181818  0.181818  0.636364 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKCTTKATAWATTCYGAAAWTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TG][CA]T[TA][TG]AT[AG][TA][AT]TTC[TC][GT]AA[AT][TA]TT
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.24 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+RcsB-BglJ_0                      6.36e-10  3_[+1(1.27e-10)]_1
+RcsB-BglJ_1                      3.18e-09  1_[+1(6.36e-10)]_3
+RcsB-BglJ_2                      5.78e-12  1_[+1(1.16e-12)]_3
+RcsB-BglJ_3                      4.77e-09  1_[+1(9.53e-10)]_3
+RcsB-BglJ_4                      9.90e-05  3_[+1(1.98e-05)]_1
+RcsB-BglJ_5                      1.64e-07  1_[+1(3.28e-08)]_3
+RcsB-BglJ_6                      5.05e-05  4_[+1(1.01e-05)]
+RcsB-BglJ_7                      2.80e-05  1_[+1(5.60e-06)]_3
+RcsB-BglJ_8                      1.65e-10  1_[+1(3.29e-11)]_3
+RcsB-BglJ_9                      1.35e-06  1_[+1(2.70e-07)]_3
+RcsB-BglJ_10                     1.57e-09  1_[+1(3.13e-10)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

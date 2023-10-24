@@ -1,0 +1,283 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= TyrR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TyrR_0                   1.0000     24  TyrR_1                   1.0000     24  
+TyrR_2                   1.0000     24  TyrR_3                   1.0000     24  
+TyrR_4                   1.0000     24  TyrR_5                   1.0000     24  
+TyrR_6                   1.0000     24  TyrR_7                   1.0000     24  
+TyrR_8                   1.0000     24  TyrR_9                   1.0000     24  
+TyrR_10                  1.0000     24  TyrR_11                  1.0000     24  
+TyrR_12                  1.0000     24  TyrR_13                  1.0000     24  
+TyrR_14                  1.0000     24  TyrR_15                  1.0000     24  
+TyrR_16                  1.0000     24  TyrR_17                  1.0000     24  
+TyrR_18                  1.0000     24  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme TyrR/ri_sites.fasta -oc TyrR/./ -mod oops -nmotifs 1 -minw 15 -maxw 21 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           15    maxw=           21
+nsites: minsites=       19    maxsites=       19    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             456    N=              19
+sample: seed=           10    hsfrac=          0
+        searchsize=    456    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.333 C 0.173 G 0.18 T 0.314 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTAAWTHWAWVTTTACA MEME-1	width =  18  sites =  19  llr = 190  E-value = 2.4e-034
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTAAWTHWAWVTTTACA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::1885234533121917
+pos.-specific     C  2::1112222141::19:
+probability       G  :a21:1211222122::3
+matrix            T  8:7114544241867::1
+
+         bits    2.0  *                
+                 1.8  *                
+                 1.6  *             ** 
+                 1.4  *             ** 
+Relative         1.2 **             ** 
+Entropy          1.0 *****       * *** 
+(14.5 bits)      0.8 *****       * ****
+                 0.6 *****       ******
+                 0.4 ******  *   ******
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           TGTAAATTAATCTTTACA
+consensus            C    TGATCAA A   G
+sequence                    C   G      
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAWTHWAWVTTTACA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+TyrR_0                        4  1.35e-09        gag TGTAAATTTATCTATACA gag       
+TyrR_4                        2  2.82e-09          a tgTAATTTATTATTTACA CTtca     
+TyrR_14                       4  1.48e-08        atc TGTAAAATAATATATACA gcc       
+TyrR_11                       4  1.77e-08        tat TGTACATTTATATTTACA cca       
+TyrR_18                       4  5.48e-08        tga CGTAAATCACACTTTACA gct       
+TyrR_6                        3  6.35e-08         ag tGGAATTTTTTCTTTACA Atcg      
+TyrR_1                        4  6.35e-08        ctg TGTAAATAAAAATGTACG aaa       
+TyrR_3                        5  1.62e-06       ataG TGTAAAACCCCGTTTACa ca        
+TyrR_8                        5  2.22e-06       ttgA TGTAAACAAATTAATACa ac        
+TyrR_16                       4  5.38e-06        ttg TGTCAATGATTGTTGACA gaa       
+TyrR_2                        4  1.98e-05        ata TGGATTGAAAACTTTACT tta       
+TyrR_13                       4  3.17e-05        atg CGTAATCATCGCTGAACA gcg       
+TyrR_7                        5  4.60e-05       caaA CGGAATTGCAAACTTACa ca        
+TyrR_12                       4  7.49e-05        ata TGTAACGTCGGTTTGACG aag       
+TyrR_5                        4  1.26e-04        tat TGAGATTTTCACTTTAAG tgg       
+TyrR_15                       4  1.51e-04        tgc TGACCGGATATCTTTACG ccg       
+TyrR_10                       4  2.27e-04        gcg TGTTTCAAAAAGTTGACG cct       
+TyrR_17                       4  5.18e-04        cat TGTAATGCGGCGAGTCCA ggg       
+TyrR_9                        4  8.82e-04        gcc CGTAAACCTGGAGAACCA tcg       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAWTHWAWVTTTACA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TyrR_0                            1.3e-09  3_[+1]_3
+TyrR_4                            2.8e-09  1_[+1]_5
+TyrR_14                           1.5e-08  3_[+1]_3
+TyrR_11                           1.8e-08  3_[+1]_3
+TyrR_18                           5.5e-08  3_[+1]_3
+TyrR_6                            6.3e-08  2_[+1]_4
+TyrR_1                            6.3e-08  3_[+1]_3
+TyrR_3                            1.6e-06  4_[+1]_2
+TyrR_8                            2.2e-06  4_[+1]_2
+TyrR_16                           5.4e-06  3_[+1]_3
+TyrR_2                              2e-05  3_[+1]_3
+TyrR_13                           3.2e-05  3_[+1]_3
+TyrR_7                            4.6e-05  4_[+1]_2
+TyrR_12                           7.5e-05  3_[+1]_3
+TyrR_5                            0.00013  3_[+1]_3
+TyrR_15                           0.00015  3_[+1]_3
+TyrR_10                           0.00023  3_[+1]_3
+TyrR_17                           0.00052  3_[+1]_3
+TyrR_9                            0.00088  3_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAWTHWAWVTTTACA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTAAWTHWAWVTTTACA width=18 seqs=19
+TyrR_0                   (    4) TGTAAATTTATCTATACA  1 
+TyrR_4                   (    2) TGTAATTTATTATTTACA  1 
+TyrR_14                  (    4) TGTAAAATAATATATACA  1 
+TyrR_11                  (    4) TGTACATTTATATTTACA  1 
+TyrR_18                  (    4) CGTAAATCACACTTTACA  1 
+TyrR_6                   (    3) TGGAATTTTTTCTTTACA  1 
+TyrR_1                   (    4) TGTAAATAAAAATGTACG  1 
+TyrR_3                   (    5) TGTAAAACCCCGTTTACA  1 
+TyrR_8                   (    5) TGTAAACAAATTAATACA  1 
+TyrR_16                  (    4) TGTCAATGATTGTTGACA  1 
+TyrR_2                   (    4) TGGATTGAAAACTTTACT  1 
+TyrR_13                  (    4) CGTAATCATCGCTGAACA  1 
+TyrR_7                   (    5) CGGAATTGCAAACTTACA  1 
+TyrR_12                  (    4) TGTAACGTCGGTTTGACG  1 
+TyrR_5                   (    4) TGAGATTTTCACTTTAAG  1 
+TyrR_15                  (    4) TGACCGGATATCTTTACG  1 
+TyrR_10                  (    4) TGTTTCAAAAAGTTGACG  1 
+TyrR_17                  (    4) TGTAATGCGGCGAGTCCA  1 
+TyrR_9                   (    4) CGTAAACCTGGAGAACCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAWTHWAWVTTTACA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 133 bayes= 2.58496 E= 2.4e-034 
+ -1089    -27  -1089    168 
+ -1089  -1089    198  -1089 
+  -122  -1089    -69    158 
+   168   -127   -227   -222 
+   168   -127  -1089   -122 
+    94   -127   -227     58 
+   -64    -69    -27     94 
+    36    -27   -127     58 
+    78    -69   -227     58 
+    94    -27    -69    -64 
+    36   -127    -69     78 
+    36     54    -27   -122 
+  -122   -227   -227    168 
+   -22  -1089    -69    136 
+  -122  -1089    -69    158 
+   186   -127  -1089  -1089 
+  -222    190  -1089  -1089 
+   148  -1089      5   -222 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAWTHWAWVTTTACA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 19 E= 2.4e-034 
+ 0.000000  0.210526  0.000000  0.789474 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.105263  0.000000  0.157895  0.736842 
+ 0.789474  0.105263  0.052632  0.052632 
+ 0.789474  0.105263  0.000000  0.105263 
+ 0.473684  0.105263  0.052632  0.368421 
+ 0.157895  0.157895  0.210526  0.473684 
+ 0.315789  0.210526  0.105263  0.368421 
+ 0.421053  0.157895  0.052632  0.368421 
+ 0.473684  0.210526  0.157895  0.157895 
+ 0.315789  0.105263  0.157895  0.421053 
+ 0.315789  0.368421  0.210526  0.105263 
+ 0.105263  0.052632  0.052632  0.789474 
+ 0.210526  0.000000  0.157895  0.631579 
+ 0.105263  0.000000  0.157895  0.736842 
+ 0.894737  0.105263  0.000000  0.000000 
+ 0.052632  0.947368  0.000000  0.000000 
+ 0.684211  0.000000  0.263158  0.052632 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTAAWTHWAWVTTTACA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]GTAA[AT][TG][TAC][AT][AC][TA][CAG]T[TA]TAC[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TyrR_0                           9.44e-09  3_[+1(1.35e-09)]_3
+TyrR_1                           4.44e-07  3_[+1(6.35e-08)]_3
+TyrR_2                           1.39e-04  3_[+1(1.98e-05)]_3
+TyrR_3                           1.14e-05  4_[+1(1.62e-06)]_2
+TyrR_4                           1.97e-08  1_[+1(2.82e-09)]_5
+TyrR_5                           8.80e-04  24
+TyrR_6                           4.44e-07  2_[+1(6.35e-08)]_4
+TyrR_7                           3.22e-04  4_[+1(4.60e-05)]_2
+TyrR_8                           1.56e-05  4_[+1(2.22e-06)]_2
+TyrR_9                           6.15e-03  24
+TyrR_10                          1.59e-03  24
+TyrR_11                          1.24e-07  3_[+1(1.77e-08)]_3
+TyrR_12                          5.24e-04  3_[+1(7.49e-05)]_3
+TyrR_13                          2.22e-04  3_[+1(3.17e-05)]_3
+TyrR_14                          1.03e-07  3_[+1(1.48e-08)]_3
+TyrR_15                          1.06e-03  24
+TyrR_16                          3.77e-05  3_[+1(5.38e-06)]_3
+TyrR_17                          3.62e-03  24
+TyrR_18                          3.84e-07  3_[+1(5.48e-08)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

@@ -1,0 +1,387 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= OmpR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+OmpR_0                   1.0000     26  OmpR_1                   1.0000     26  
+OmpR_2                   1.0000     26  OmpR_3                   1.0000     26  
+OmpR_4                   1.0000     26  OmpR_5                   1.0000     26  
+OmpR_6                   1.0000     26  OmpR_7                   1.0000     26  
+OmpR_8                   1.0000     26  OmpR_9                   1.0000     26  
+OmpR_10                  1.0000     26  OmpR_11                  1.0000     26  
+OmpR_12                  1.0000     26  OmpR_13                  1.0000     26  
+OmpR_14                  1.0000     26  OmpR_15                  1.0000     26  
+OmpR_16                  1.0000     26  OmpR_17                  1.0000     26  
+OmpR_18                  1.0000     26  OmpR_19                  1.0000     26  
+OmpR_20                  1.0000     26  OmpR_21                  1.0000     26  
+OmpR_22                  1.0000     26  OmpR_23                  1.0000     26  
+OmpR_24                  1.0000     26  OmpR_25                  1.0000     26  
+OmpR_26                  1.0000     26  OmpR_27                  1.0000     26  
+OmpR_28                  1.0000     26  OmpR_29                  1.0000     26  
+OmpR_30                  1.0000     26  OmpR_31                  1.0000     26  
+OmpR_32                  1.0000     26  OmpR_33                  1.0000     26  
+OmpR_34                  1.0000     26  OmpR_35                  1.0000     26  
+OmpR_36                  1.0000     26  OmpR_37                  1.0000     26  
+OmpR_38                  1.0000     26  OmpR_39                  1.0000     26  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme OmpR/ri_sites.fasta -oc OmpR/./ -mod oops -nmotifs 1 -minw 17 -maxw 23 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           17    maxw=           23
+nsites: minsites=       40    maxsites=       40    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1040    N=              40
+sample: seed=           10    hsfrac=          0
+        searchsize=   1040    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.336 C 0.16 G 0.136 T 0.369 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF BWWAMHNWTTKWWAYATWTYWAW MEME-1	width =  23  sites =  40  llr = 268  E-value = 5.6e-046
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif BWWAMHNWTTKWWAYATWTYWAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  13473333221337293522354
+pos.-specific     C  211143211121:15:21:3122
+probability       G  41:22121:24:121::222211
+matrix            T  45411445753661316364524
+
+         bits    2.0                        
+                 1.8                        
+                 1.6                        
+                 1.4                *       
+Relative         1.2                *       
+Entropy          1.0                *       
+(9.7 bits)       0.8            **  *       
+                 0.6    *    *  *** ** *    
+                 0.4  ***   *** ****** *    
+                 0.2 ****** ************ ***
+                 0.0 -----------------------
+
+Multilevel           GTAACTTTTTGTTACATATTTAT
+consensus            TAT AAAAAATAAGT ATACACA
+sequence             C    C   G      C      
+                                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BWWAMHNWTTKWWAYATWTYWAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site        
+-------------             ----- ---------            -----------------------
+OmpR_17                       4  3.51e-10        cga GTTACATTTAGTTACATGTTtaa           
+OmpR_16                       4  3.51e-10        aat TTTACTTTTGGTTACATATTttt           
+OmpR_26                       4  1.08e-07        tta GTTACATTTAGTAACACATAtct           
+OmpR_4                        3  7.28e-07         cc aTTAATTTTTGATATATTTAAaa c         
+OmpR_2                        3  2.15e-06         tg tAAACATATTGCTAAATGTTTtt a         
+OmpR_28                       2  3.84e-06          a gtTACACTTTCTTACATAACGCc tg        
+OmpR_0                        4  4.41e-06        gaa TTTACTGATTTAATTATTTTaat           
+OmpR_25                       3  5.07e-06         tg gTCGCATTATGTTACATAAAAaa a         
+OmpR_23                       2  5.07e-06          t ttTCACAGTTGTTACATTTCTTt tc        
+OmpR_36                       4  7.63e-06        tat GTAACAGATTATTACAAAGGact           
+OmpR_6                        4  8.71e-06        gta TTTCATATTGTTACCATTTTtat           
+OmpR_1                        1  1.13e-05          . ttcACAAATGTATGTAAATCTAA cgc       
+OmpR_33                       4  1.29e-05        cga GAAACCAAAACTTACATCTTgaa           
+OmpR_38                       4  1.66e-05        ttg CAAACCTTTGGTTACACTTTgcg           
+OmpR_9                        3  2.70e-05         tt tTACGTATCTGAAATATATGTaa c         
+OmpR_10                       3  7.54e-05         ac gAATATGATACTAAAACTTTTaa g         
+OmpR_15                       4  9.34e-05        cct GTTACGGAATATTACATTGCaac           
+OmpR_13                       4  1.04e-04        aat CTTTATCTTTGTAGCACTTTcac           
+OmpR_12                       2  1.42e-04          c taTAGATGTTTCAAAATGTAAAt gc        
+OmpR_3                        3  1.57e-04         aa aAAACTTTGTGTAATACTTGTaa c         
+OmpR_31                       3  2.33e-04         ca cGTAACATAGTTTGTATAAAAat a         
+OmpR_27                       2  2.82e-04          c ccAGGCTTTCGTTACATTTTGCa gc        
+OmpR_30                       4  3.10e-04        ttc TTAGATCATATTTGAAAAAAgat           
+OmpR_35                       2  4.08e-04          a ggAAAAATCTTAGATAAGTGTAa ag        
+OmpR_18                       4  4.89e-04        aac CTAAATATTTGTTGTTAAGCtgc           
+OmpR_37                       4  6.36e-04        att TACACACCTCGTTGCATTTCcct           
+OmpR_32                       4  6.36e-04        cca GAAAACCCTGTTTACAAAGTctg           
+OmpR_8                        1  6.36e-04          . tacATCGTTTTTGCCAAATGTAA cgg       
+OmpR_14                       4  6.92e-04        att TTTTCTTTTTGAAACCAAATctt           
+OmpR_39                       4  7.54e-04        tag GCAAACATAAATAACATTACcta           
+OmpR_11                       3  7.54e-04         tt tAAGATGTTTCATTTATCGCTat a         
+OmpR_19                       3  1.33e-03         ta tTTATCATTTCATTAACAACTga a         
+OmpR_22                       2  2.26e-03          a gaATGTTAATAAGACATGATTGt tg        
+OmpR_5                        3  2.61e-03         ac gTTATATATGTCAAGTTGTTAaa a         
+OmpR_29                       4  3.22e-03        gac CGAAATCACACTTAAAAATGatc           
+OmpR_20                       4  3.22e-03        tca GATGCTACAAAATGTAAAGTtgt           
+OmpR_7                        3  1.24e-02         tt gTTACATCCTGAAAGATGCGTcg a         
+OmpR_34                       2  1.61e-02          a tcGGGCATTATCTGAACATAAAa ca        
+OmpR_21                       3  2.73e-02         tt cGCTGGCGATGTTACATCGCGct t         
+OmpR_24                       1  6.68e-02          . caaAGGGGAGTAACTTCATTGCC ggt       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BWWAMHNWTTKWWAYATWTYWAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+OmpR_17                           3.5e-10  3_[+1]
+OmpR_16                           3.5e-10  3_[+1]
+OmpR_26                           1.1e-07  3_[+1]
+OmpR_4                            7.3e-07  2_[+1]_1
+OmpR_2                            2.1e-06  2_[+1]_1
+OmpR_28                           3.8e-06  1_[+1]_2
+OmpR_0                            4.4e-06  3_[+1]
+OmpR_25                           5.1e-06  2_[+1]_1
+OmpR_23                           5.1e-06  1_[+1]_2
+OmpR_36                           7.6e-06  3_[+1]
+OmpR_6                            8.7e-06  3_[+1]
+OmpR_1                            1.1e-05  [+1]_3
+OmpR_33                           1.3e-05  3_[+1]
+OmpR_38                           1.7e-05  3_[+1]
+OmpR_9                            2.7e-05  2_[+1]_1
+OmpR_10                           7.5e-05  2_[+1]_1
+OmpR_15                           9.3e-05  3_[+1]
+OmpR_13                            0.0001  3_[+1]
+OmpR_12                           0.00014  1_[+1]_2
+OmpR_3                            0.00016  2_[+1]_1
+OmpR_31                           0.00023  2_[+1]_1
+OmpR_27                           0.00028  1_[+1]_2
+OmpR_30                           0.00031  3_[+1]
+OmpR_35                           0.00041  1_[+1]_2
+OmpR_18                           0.00049  3_[+1]
+OmpR_37                           0.00064  3_[+1]
+OmpR_32                           0.00064  3_[+1]
+OmpR_8                            0.00064  [+1]_3
+OmpR_14                           0.00069  3_[+1]
+OmpR_39                           0.00075  3_[+1]
+OmpR_11                           0.00075  2_[+1]_1
+OmpR_19                            0.0013  2_[+1]_1
+OmpR_22                            0.0023  1_[+1]_2
+OmpR_5                             0.0026  2_[+1]_1
+OmpR_29                            0.0032  3_[+1]
+OmpR_20                            0.0032  3_[+1]
+OmpR_7                              0.012  2_[+1]_1
+OmpR_34                             0.016  1_[+1]_2
+OmpR_21                             0.027  2_[+1]_1
+OmpR_24                             0.067  [+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BWWAMHNWTTKWWAYATWTYWAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF BWWAMHNWTTKWWAYATWTYWAW width=23 seqs=40
+OmpR_17                  (    4) GTTACATTTAGTTACATGTTTAA  1 
+OmpR_16                  (    4) TTTACTTTTGGTTACATATTTTT  1 
+OmpR_26                  (    4) GTTACATTTAGTAACACATATCT  1 
+OmpR_4                   (    3) ATTAATTTTTGATATATTTAAAA  1 
+OmpR_2                   (    3) TAAACATATTGCTAAATGTTTTT  1 
+OmpR_28                  (    2) GTTACACTTTCTTACATAACGCC  1 
+OmpR_0                   (    4) TTTACTGATTTAATTATTTTAAT  1 
+OmpR_25                  (    3) GTCGCATTATGTTACATAAAAAA  1 
+OmpR_23                  (    2) TTTCACAGTTGTTACATTTCTTT  1 
+OmpR_36                  (    4) GTAACAGATTATTACAAAGGACT  1 
+OmpR_6                   (    4) TTTCATATTGTTACCATTTTTAT  1 
+OmpR_1                   (    1) TTCACAAATGTATGTAAATCTAA  1 
+OmpR_33                  (    4) GAAACCAAAACTTACATCTTGAA  1 
+OmpR_38                  (    4) CAAACCTTTGGTTACACTTTGCG  1 
+OmpR_9                   (    3) TTACGTATCTGAAATATATGTAA  1 
+OmpR_10                  (    3) GAATATGATACTAAAACTTTTAA  1 
+OmpR_15                  (    4) GTTACGGAATATTACATTGCAAC  1 
+OmpR_13                  (    4) CTTTATCTTTGTAGCACTTTCAC  1 
+OmpR_12                  (    2) TATAGATGTTTCAAAATGTAAAT  1 
+OmpR_3                   (    3) AAAACTTTGTGTAATACTTGTAA  1 
+OmpR_31                  (    3) CGTAACATAGTTTGTATAAAAAT  1 
+OmpR_27                  (    2) CCAGGCTTTCGTTACATTTTGCA  1 
+OmpR_30                  (    4) TTAGATCATATTTGAAAAAAGAT  1 
+OmpR_35                  (    2) GGAAAAATCTTAGATAAGTGTAA  1 
+OmpR_18                  (    4) CTAAATATTTGTTGTTAAGCTGC  1 
+OmpR_37                  (    4) TACACACCTCGTTGCATTTCCCT  1 
+OmpR_32                  (    4) GAAAACCCTGTTTACAAAGTCTG  1 
+OmpR_8                   (    1) TACATCGTTTTTGCCAAATGTAA  1 
+OmpR_14                  (    4) TTTTCTTTTTGAAACCAAATCTT  1 
+OmpR_39                  (    4) GCAAACATAAATAACATTACCTA  1 
+OmpR_11                  (    3) TAAGATGTTTCATTTATCGCTAT  1 
+OmpR_19                  (    3) TTTATCATTTCATTAACAACTGA  1 
+OmpR_22                  (    2) GAATGTTAATAAGACATGATTGT  1 
+OmpR_5                   (    3) GTTATATATGTCAAGTTGTTAAA  1 
+OmpR_29                  (    4) CGAAATCACACTTAAAAATGATC  1 
+OmpR_20                  (    4) GATGCTACAAAATGTAAAGTTGT  1 
+OmpR_7                   (    3) GTTACATCCTGAAAGATGCGTCG  1 
+OmpR_34                  (    2) TCGGGCATTATCTGAACATAAAA  1 
+OmpR_21                  (    3) CGCTGGCGATGTTACATCGCGCT  1 
+OmpR_24                  (    1) CAAAGGGGAGTAACTTCATTGCC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BWWAMHNWTTKWWAYATWTYWAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 23 n= 160 bayes= 1.58496 E= 5.6e-046 
+  -230    -34     56     61 
+    40   -176   -134    102 
+    79   -102   -334     79 
+   140   -176    -76    -98 
+    40     74    -54   -171 
+    29     -2   -176     61 
+    29    -54    -54     51 
+    16   -134   -134    109 
+   -13   -134   -334    140 
+   -13   -234    -34    109 
+   -98    -76     74     29 
+    29   -134  -1197    129 
+    40  -1197   -176    129 
+   140   -176    -34   -171 
+   -49     98   -234     16 
+   187   -334  -1197   -171 
+     2    -34  -1197    116 
+    87   -176    -54     29 
+   -30   -334    -54    129 
+   -49     -2    -54     70 
+     2   -102    -54     87 
+   102    -17   -134    -49 
+    61    -76   -176     70 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BWWAMHNWTTKWWAYATWTYWAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 23 nsites= 40 E= 5.6e-046 
+ 0.050000  0.200000  0.375000  0.375000 
+ 0.325000  0.075000  0.100000  0.500000 
+ 0.425000  0.125000  0.025000  0.425000 
+ 0.650000  0.075000  0.150000  0.125000 
+ 0.325000  0.425000  0.175000  0.075000 
+ 0.300000  0.250000  0.075000  0.375000 
+ 0.300000  0.175000  0.175000  0.350000 
+ 0.275000  0.100000  0.100000  0.525000 
+ 0.225000  0.100000  0.025000  0.650000 
+ 0.225000  0.050000  0.200000  0.525000 
+ 0.125000  0.150000  0.425000  0.300000 
+ 0.300000  0.100000  0.000000  0.600000 
+ 0.325000  0.000000  0.075000  0.600000 
+ 0.650000  0.075000  0.200000  0.075000 
+ 0.175000  0.500000  0.050000  0.275000 
+ 0.900000  0.025000  0.000000  0.075000 
+ 0.250000  0.200000  0.000000  0.550000 
+ 0.450000  0.075000  0.175000  0.300000 
+ 0.200000  0.025000  0.175000  0.600000 
+ 0.175000  0.250000  0.175000  0.400000 
+ 0.250000  0.125000  0.175000  0.450000 
+ 0.500000  0.225000  0.100000  0.175000 
+ 0.375000  0.150000  0.075000  0.400000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BWWAMHNWTTKWWAYATWTYWAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GTC][TA][AT]A[CA][TAC][TA][TA][TA][TAG][GT][TA][TA][AG][CT]A[TAC][AT][TA][TC][TA][AC][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.25 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+OmpR_0                           1.77e-05  3_[+1(4.41e-06)]
+OmpR_1                           4.52e-05  [+1(1.13e-05)]_3
+OmpR_2                           8.60e-06  2_[+1(2.15e-06)]_1
+OmpR_3                           6.27e-04  26
+OmpR_4                           2.91e-06  2_[+1(7.28e-07)]_1
+OmpR_5                           1.04e-02  26
+OmpR_6                           3.48e-05  3_[+1(8.71e-06)]
+OmpR_7                           4.87e-02  26
+OmpR_8                           2.54e-03  26
+OmpR_9                           1.08e-04  2_[+1(2.70e-05)]_1
+OmpR_10                          3.01e-04  2_[+1(7.54e-05)]_1
+OmpR_11                          3.01e-03  26
+OmpR_12                          5.67e-04  26
+OmpR_13                          4.15e-04  26
+OmpR_14                          2.77e-03  26
+OmpR_15                          3.74e-04  3_[+1(9.34e-05)]
+OmpR_16                          1.41e-09  3_[+1(3.51e-10)]
+OmpR_17                          1.41e-09  3_[+1(3.51e-10)]
+OmpR_18                          1.95e-03  26
+OmpR_19                          5.32e-03  26
+OmpR_20                          1.28e-02  26
+OmpR_21                          1.05e-01  26
+OmpR_22                          9.01e-03  26
+OmpR_23                          2.03e-05  1_[+1(5.07e-06)]_2
+OmpR_24                          2.42e-01  26
+OmpR_25                          2.03e-05  2_[+1(5.07e-06)]_1
+OmpR_26                          4.32e-07  3_[+1(1.08e-07)]
+OmpR_27                          1.13e-03  26
+OmpR_28                          1.53e-05  1_[+1(3.84e-06)]_2
+OmpR_29                          1.28e-02  26
+OmpR_30                          1.24e-03  26
+OmpR_31                          9.31e-04  26
+OmpR_32                          2.54e-03  26
+OmpR_33                          5.15e-05  3_[+1(1.29e-05)]
+OmpR_34                          6.30e-02  26
+OmpR_35                          1.63e-03  26
+OmpR_36                          3.05e-05  3_[+1(7.63e-06)]
+OmpR_37                          2.54e-03  26
+OmpR_38                          6.62e-05  3_[+1(1.66e-05)]
+OmpR_39                          3.01e-03  26
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

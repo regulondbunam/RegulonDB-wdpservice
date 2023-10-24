@@ -1,0 +1,289 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= FadR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+FadR_0                   1.0000     23  FadR_1                   1.0000     23  
+FadR_2                   1.0000     23  FadR_3                   1.0000     23  
+FadR_4                   1.0000     23  FadR_5                   1.0000     23  
+FadR_6                   1.0000     23  FadR_7                   1.0000     23  
+FadR_8                   1.0000     23  FadR_9                   1.0000     23  
+FadR_10                  1.0000     23  FadR_11                  1.0000     23  
+FadR_12                  1.0000     23  FadR_13                  1.0000     23  
+FadR_14                  1.0000     23  FadR_15                  1.0000     23  
+FadR_16                  1.0000     23  FadR_17                  1.0000     23  
+FadR_18                  1.0000     23  FadR_19                  1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme FadR/ri_sites.fasta -oc FadR/./ -mod oops -nmotifs 1 -minw 14 -maxw 20 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           14    maxw=           20
+nsites: minsites=       20    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             460    N=              20
+sample: seed=           10    hsfrac=          0
+        searchsize=    460    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.243 C 0.28 G 0.215 T 0.261 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF MNCTGGTCNGACCWSTWHA MEME-1	width =  19  sites =  20  llr = 202  E-value = 8.1e-039
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif MNCTGGTCNGACCWSTWHA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  531213:33:911512337
+pos.-specific     C  329111173:176:41241
+probability       G  231:97::2a::2:51112
+matrix            T  :3:7:19131132517532
+
+         bits    2.0                    
+                 1.8                    
+                 1.6       *  *         
+                 1.4       *  *         
+Relative         1.2   * * *  **        
+Entropy          1.0   * * ** **  *     
+(14.6 bits)      0.8   *** ** *** *     
+                 0.6 * ****** *** ***  *
+                 0.4 * ****** *******  *
+                 0.2 * ****** **********
+                 0.0 -------------------
+
+Multilevel           AACTGGTCCGACCAGTTCA
+consensus            CG A A AA  TTTC AA 
+sequence             GT      T        T 
+                             G          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MNCTGGTCNGACCWSTWHA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site      
+-------------             ----- ---------            -------------------
+FadR_17                       4  1.16e-08        atg ATCAGGTCAGACCACTTta t         
+FadR_14                       4  2.24e-08        ccg AACTGATCGGACTTGTTca g         
+FadR_8                        4  4.15e-08        ctc ATCTGGTACGACCAGATca c         
+FadR_16                       4  1.66e-07        tca AGCTGGTATGATGAGTTaa t         
+FadR_18                       4  3.95e-07        att AACTCATCGGATCAGTTca g         
+FadR_9                        4  4.99e-07        tcc AGCTGGTCCGACCTATAct c         
+FadR_19                       4  7.85e-07        aat GGCTGATCGGACTTGTTcg g         
+FadR_0                        4  1.09e-06        tag AACTCATCCGACCACATaa c         
+FadR_10                       3  1.35e-06         gc cACTGGTCTGATTTCTAAg at        
+FadR_2                        4  1.66e-06        gcc CTCTGGTATGATGAGTCca a         
+FadR_6                        4  2.48e-06        ctt CCCTGATAAGACCAGTAtt t         
+FadR_4                        4  4.84e-06        ctg CTCCGGTCGGACCTGGCaa c         
+FadR_1                        4  1.90e-05        cat ACCAGTTATGACCTCTGta c         
+FadR_13                       4  2.23e-05        cac AAGTGGTCAGACCTCCTac a         
+FadR_5                        4  9.26e-05        gcg GACAGGTCAGCTTTGATga c         
+FadR_7                        4  9.88e-05        act CCGCGGTTCGACCACTTtt t         
+FadR_15                       4  1.53e-04        agc GGCTGGTCCGCTGTTTCtg c         
+FadR_3                        4  1.53e-04        cac CTCAACCCCGACCAGTAta a         
+FadR_11                       3  1.73e-04         ct aGCTGGCCAGTCATCGACa ac        
+FadR_12                       5  2.88e-04       gtaA GGATGGTCTTAACACTgaa           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MNCTGGTCNGACCWSTWHA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FadR_17                           1.2e-08  3_[+1]_1
+FadR_14                           2.2e-08  3_[+1]_1
+FadR_8                            4.2e-08  3_[+1]_1
+FadR_16                           1.7e-07  3_[+1]_1
+FadR_18                             4e-07  3_[+1]_1
+FadR_9                              5e-07  3_[+1]_1
+FadR_19                           7.9e-07  3_[+1]_1
+FadR_0                            1.1e-06  3_[+1]_1
+FadR_10                           1.3e-06  2_[+1]_2
+FadR_2                            1.7e-06  3_[+1]_1
+FadR_6                            2.5e-06  3_[+1]_1
+FadR_4                            4.8e-06  3_[+1]_1
+FadR_1                            1.9e-05  3_[+1]_1
+FadR_13                           2.2e-05  3_[+1]_1
+FadR_5                            9.3e-05  3_[+1]_1
+FadR_7                            9.9e-05  3_[+1]_1
+FadR_15                           0.00015  3_[+1]_1
+FadR_3                            0.00015  3_[+1]_1
+FadR_11                           0.00017  2_[+1]_2
+FadR_12                           0.00029  4_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MNCTGGTCNGACCWSTWHA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF MNCTGGTCNGACCWSTWHA width=19 seqs=20
+FadR_17                  (    4) ATCAGGTCAGACCACTTTA  1 
+FadR_14                  (    4) AACTGATCGGACTTGTTCA  1 
+FadR_8                   (    4) ATCTGGTACGACCAGATCA  1 
+FadR_16                  (    4) AGCTGGTATGATGAGTTAA  1 
+FadR_18                  (    4) AACTCATCGGATCAGTTCA  1 
+FadR_9                   (    4) AGCTGGTCCGACCTATACT  1 
+FadR_19                  (    4) GGCTGATCGGACTTGTTCG  1 
+FadR_0                   (    4) AACTCATCCGACCACATAA  1 
+FadR_10                  (    3) CACTGGTCTGATTTCTAAG  1 
+FadR_2                   (    4) CTCTGGTATGATGAGTCCA  1 
+FadR_6                   (    4) CCCTGATAAGACCAGTATT  1 
+FadR_4                   (    4) CTCCGGTCGGACCTGGCAA  1 
+FadR_1                   (    4) ACCAGTTATGACCTCTGTA  1 
+FadR_13                  (    4) AAGTGGTCAGACCTCCTAC  1 
+FadR_5                   (    4) GACAGGTCAGCTTTGATGA  1 
+FadR_7                   (    4) CCGCGGTTCGACCACTTTT  1 
+FadR_15                  (    4) GGCTGGTCCGCTGTTTCTG  1 
+FadR_3                   (    4) CTCAACCCCGACCAGTATA  1 
+FadR_11                  (    3) AGCTGGCCAGTCATCGACA  1 
+FadR_12                  (    5) GGATGGTCTTAACACTGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MNCTGGTCNGACCWSTWHA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 100 bayes= 2 E= 8.1e-039 
+   102     24    -34  -1097 
+    29    -76     24      2 
+  -230    174   -134  -1097 
+   -30   -134  -1097    151 
+  -230   -134    174  -1097 
+     2   -234    136   -230 
+ -1097   -134  -1097    187 
+     2    146  -1097   -230 
+     2     24    -34      2 
+ -1097  -1097    190   -230 
+   179   -134  -1097   -230 
+  -230    136  -1097     29 
+  -230    124    -76    -30 
+   102  -1097  -1097    102 
+  -230     65     98   -230 
+   -71   -234   -134    151 
+     2    -76   -134    102 
+    29     46   -234     29 
+   140   -234    -76    -71 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MNCTGGTCNGACCWSTWHA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 20 E= 8.1e-039 
+ 0.500000  0.300000  0.200000  0.000000 
+ 0.300000  0.150000  0.300000  0.250000 
+ 0.050000  0.850000  0.100000  0.000000 
+ 0.200000  0.100000  0.000000  0.700000 
+ 0.050000  0.100000  0.850000  0.000000 
+ 0.250000  0.050000  0.650000  0.050000 
+ 0.000000  0.100000  0.000000  0.900000 
+ 0.250000  0.700000  0.000000  0.050000 
+ 0.250000  0.300000  0.200000  0.250000 
+ 0.000000  0.000000  0.950000  0.050000 
+ 0.850000  0.100000  0.000000  0.050000 
+ 0.050000  0.650000  0.000000  0.300000 
+ 0.050000  0.600000  0.150000  0.200000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.050000  0.400000  0.500000  0.050000 
+ 0.150000  0.050000  0.100000  0.700000 
+ 0.250000  0.150000  0.100000  0.500000 
+ 0.300000  0.350000  0.050000  0.300000 
+ 0.650000  0.050000  0.150000  0.150000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MNCTGGTCNGACCWSTWHA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[ACG][AGT]C[TA]G[GA]T[CA][CATG]GA[CT][CT][AT][GC]T[TA][CAT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FadR_0                           5.44e-06  3_[+1(1.09e-06)]_1
+FadR_1                           9.51e-05  3_[+1(1.90e-05)]_1
+FadR_2                           8.29e-06  3_[+1(1.66e-06)]_1
+FadR_3                           7.65e-04  23
+FadR_4                           2.42e-05  3_[+1(4.84e-06)]_1
+FadR_5                           4.63e-04  3_[+1(9.26e-05)]_1
+FadR_6                           1.24e-05  3_[+1(2.48e-06)]_1
+FadR_7                           4.94e-04  3_[+1(9.88e-05)]_1
+FadR_8                           2.08e-07  3_[+1(4.15e-08)]_1
+FadR_9                           2.49e-06  3_[+1(4.99e-07)]_1
+FadR_10                          6.73e-06  2_[+1(1.35e-06)]_2
+FadR_11                          8.63e-04  23
+FadR_12                          1.44e-03  23
+FadR_13                          1.11e-04  3_[+1(2.23e-05)]_1
+FadR_14                          1.12e-07  3_[+1(2.24e-08)]_1
+FadR_15                          7.65e-04  23
+FadR_16                          8.28e-07  3_[+1(1.66e-07)]_1
+FadR_17                          5.78e-08  3_[+1(1.16e-08)]_1
+FadR_18                          1.98e-06  3_[+1(3.95e-07)]_1
+FadR_19                          3.93e-06  3_[+1(7.85e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

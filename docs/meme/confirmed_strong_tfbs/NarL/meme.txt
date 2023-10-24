@@ -1,0 +1,487 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= NarL/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NarL_0                   1.0000     13  NarL_1                   1.0000     13  
+NarL_2                   1.0000     13  NarL_3                   1.0000     13  
+NarL_4                   1.0000     13  NarL_5                   1.0000     13  
+NarL_6                   1.0000     22  NarL_7                   1.0000     13  
+NarL_8                   1.0000     13  NarL_9                   1.0000     13  
+NarL_10                  1.0000     13  NarL_11                  1.0000     13  
+NarL_12                  1.0000     13  NarL_13                  1.0000     13  
+NarL_14                  1.0000     13  NarL_15                  1.0000     13  
+NarL_16                  1.0000     13  NarL_17                  1.0000     13  
+NarL_18                  1.0000     13  NarL_19                  1.0000     13  
+NarL_20                  1.0000     13  NarL_21                  1.0000     13  
+NarL_22                  1.0000     13  NarL_23                  1.0000     13  
+NarL_24                  1.0000     13  NarL_25                  1.0000     13  
+NarL_26                  1.0000     13  NarL_27                  1.0000     13  
+NarL_28                  1.0000     13  NarL_29                  1.0000     13  
+NarL_30                  1.0000     13  NarL_31                  1.0000     13  
+NarL_32                  1.0000     13  NarL_33                  1.0000     13  
+NarL_34                  1.0000     13  NarL_35                  1.0000     13  
+NarL_36                  1.0000     13  NarL_37                  1.0000     13  
+NarL_38                  1.0000     13  NarL_39                  1.0000     13  
+NarL_40                  1.0000     13  NarL_41                  1.0000     13  
+NarL_42                  1.0000     13  NarL_43                  1.0000     13  
+NarL_44                  1.0000     13  NarL_45                  1.0000     13  
+NarL_46                  1.0000     13  NarL_47                  1.0000     13  
+NarL_48                  1.0000     13  NarL_49                  1.0000     13  
+NarL_50                  1.0000     13  NarL_51                  1.0000     13  
+NarL_52                  1.0000     13  NarL_53                  1.0000     13  
+NarL_54                  1.0000     13  NarL_55                  1.0000     13  
+NarL_56                  1.0000     13  NarL_57                  1.0000     13  
+NarL_58                  1.0000     13  NarL_59                  1.0000     13  
+NarL_60                  1.0000     13  NarL_61                  1.0000     13  
+NarL_62                  1.0000     13  NarL_63                  1.0000     13  
+NarL_64                  1.0000     13  NarL_65                  1.0000     13  
+NarL_66                  1.0000     13  NarL_67                  1.0000     13  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme NarL/ri_sites.fasta -oc NarL/./ -mod oops -nmotifs 1 -minw 4 -maxw 10 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            4    maxw=           10
+nsites: minsites=       68    maxsites=       68    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             893    N=              68
+sample: seed=           10    hsfrac=          0
+        searchsize=    893    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.305 C 0.165 G 0.166 T 0.365 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF HTAVYSRTWW MEME-1	width =  10  sites =  68  llr = 217  E-value = 1.7e-029
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif HTAVYSRTWW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3183:25145
+pos.-specific     C  2::3332111
+probability       G  11122431:1
+matrix            T  481252:853
+
+         bits    2.0           
+                 1.8           
+                 1.6           
+                 1.4           
+Relative         1.2           
+Entropy          1.0   *       
+(4.6 bits)       0.8  **    *  
+                 0.6  **    *  
+                 0.4  ** * ****
+                 0.2 *** * ****
+                 0.0 ----------
+
+Multilevel           TTACTGATTA
+consensus            A  ACCG AT
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HTAVYSRTWW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+NarL_39                       1  1.70e-06          . ttaATGATTA gtc       
+NarL_38                       3  1.70e-06         gc tTAATGATta g         
+NarL_53                       3  3.88e-05         aa tTAATAATta a         
+NarL_30                       3  4.91e-05         at aTACCCATta a         
+NarL_28                       3  2.14e-04         ag tTACTCCTta t         
+NarL_19                       3  2.58e-04         ga aTACTCCTta a         
+NarL_65                       3  3.00e-04         tc cTAACCATaa a         
+NarL_44                       4  3.19e-04        tct ATAATGCttt           
+NarL_47                       3  4.72e-04         aa aTATCGGTaa t         
+NarL_41                       4  6.41e-04        att GTAATTAtaa           
+NarL_2                        1  8.42e-04          . ctaTTCGTTA gtc       
+NarL_33                       3  9.79e-04         ta aTACTACTtt c         
+NarL_46                       4  1.04e-03        tct ATATCAAttt           
+NarL_7                        3  1.04e-03         tt gTACCTATaa a         
+NarL_66                       1  1.44e-03          . taaAGGATTA gtt       
+NarL_49                       3  1.51e-03         tt cTACCGCTat t         
+NarL_17                       3  1.51e-03         ta aTACCCATct g         
+NarL_32                       3  1.67e-03         aa tTACTCCTca c         
+NarL_12                       3  1.67e-03         tc tTAGGAATtt a         
+NarL_11                       3  1.74e-03         ac tTATCCATca g         
+NarL_37                       2  1.93e-03          t ttAATAAATa cg        
+NarL_23                       2  2.03e-03          a ctATGGGTAa tg        
+NarL_64                       2  2.13e-03          a taAATGGTAt tt        
+NarL_63                       4  2.32e-03        aag TAACCAAtaa           
+NarL_55                       3  2.32e-03         ga cTAACTCTaa a         
+NarL_31                       1  2.45e-03          . ttaAGGAGTA tat       
+NarL_27                       3  2.98e-03         gt aTACCCATac c         
+NarL_43                       4  3.12e-03        att CAACTCAttt           
+NarL_54                       1  4.54e-03          . ttaAGGGGTA aaa       
+NarL_45                       4  4.54e-03        tat TTACTCCgta           
+NarL_57                       2  4.97e-03          t aaAGTGGTAt tt        
+NarL_34                       3  5.22e-03         at cTACCTATct c         
+NarL_67                       3  5.47e-03         ga aTAATCACat t         
+NarL_0                        2  6.26e-03          t ttGGTGGTAt gg        
+NarL_29                       3  6.82e-03         ct gTACTCACta t         
+NarL_6                       13  7.77e-03 tTACTCCAAT GTAGGTAtat           
+NarL_52                       2  8.11e-03          t ttGGTAGTAa tc        
+NarL_5                        3  8.11e-03         tc tTAACCCAaa a         
+NarL_60                       3  8.80e-03         ta aTACCTCTct g         
+NarL_3                        3  1.12e-02         gg gTACTTACta t         
+NarL_18                       3  1.16e-02         tg tTAATTATcc t         
+NarL_61                       3  1.21e-02         tc tTACTCCCtt t         
+NarL_4                        1  1.25e-02          . aaaATGGGTA gac       
+NarL_24                       2  1.30e-02          g gtAAGGGTAg gg        
+NarL_16                       2  1.30e-02          t aaAGGGGTAt ct        
+NarL_36                       3  1.40e-02         tt tTACCCCGat c         
+NarL_25                       2  1.45e-02          t acATCGGTAa gg        
+NarL_1                        3  1.56e-02         ac tTATCTTTtt g         
+NarL_42                       3  1.86e-02         ta cGATCGATat t         
+NarL_22                       1  1.92e-02          . atgATAAATA tca       
+NarL_14                       3  1.98e-02         tc aTCCCCATca c         
+NarL_15                       3  2.05e-02         tg tTACCCATgg g         
+NarL_62                       1  2.42e-02          . cttTGAATTA ccc       
+NarL_10                       3  2.42e-02         ct aTACTGTTgt a         
+NarL_40                       3  2.84e-02         tt gCATTAATaa a         
+NarL_21                       1  2.92e-02          . atgATAGATA aag       
+NarL_50                       1  3.11e-02          . aggCGGATTA ttt       
+NarL_35                       2  3.31e-02          g atCGGGGTAt gc        
+NarL_13                       3  3.86e-02         at tTACTTTAtt t         
+NarL_56                       2  4.36e-02          a ctTACAATTg at        
+NarL_58                       2  4.62e-02          c agTGTGGTTa tt        
+NarL_8                        1  5.05e-02          . taaAGGAGCA gtg       
+NarL_59                       2  5.51e-02          t ctGGCGGTAg at        
+NarL_26                       1  6.89e-02          . cgtGTGGTTA gtc       
+NarL_20                       2  1.54e-01          a gtCACTGTAc tc        
+NarL_9                        1  1.70e-01          . cagTGGAATA gcg       
+NarL_48                       2  2.66e-01          t atTGAGGTAg gt        
+NarL_51                       2  3.18e-01          g gcAGTGGTGc gt        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HTAVYSRTWW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NarL_39                           1.7e-06  [+1]_3
+NarL_38                           1.7e-06  2_[+1]_1
+NarL_53                           3.9e-05  2_[+1]_1
+NarL_30                           4.9e-05  2_[+1]_1
+NarL_28                           0.00021  2_[+1]_1
+NarL_19                           0.00026  2_[+1]_1
+NarL_65                            0.0003  2_[+1]_1
+NarL_44                           0.00032  3_[+1]
+NarL_47                           0.00047  2_[+1]_1
+NarL_41                           0.00064  3_[+1]
+NarL_2                            0.00084  [+1]_3
+NarL_33                           0.00098  2_[+1]_1
+NarL_46                             0.001  3_[+1]
+NarL_7                              0.001  2_[+1]_1
+NarL_66                            0.0014  [+1]_3
+NarL_49                            0.0015  2_[+1]_1
+NarL_17                            0.0015  2_[+1]_1
+NarL_32                            0.0017  2_[+1]_1
+NarL_12                            0.0017  2_[+1]_1
+NarL_11                            0.0017  2_[+1]_1
+NarL_37                            0.0019  1_[+1]_2
+NarL_23                             0.002  1_[+1]_2
+NarL_64                            0.0021  1_[+1]_2
+NarL_63                            0.0023  3_[+1]
+NarL_55                            0.0023  2_[+1]_1
+NarL_31                            0.0024  [+1]_3
+NarL_27                             0.003  2_[+1]_1
+NarL_43                            0.0031  3_[+1]
+NarL_54                            0.0045  [+1]_3
+NarL_45                            0.0045  3_[+1]
+NarL_57                             0.005  1_[+1]_2
+NarL_34                            0.0052  2_[+1]_1
+NarL_67                            0.0055  2_[+1]_1
+NarL_0                             0.0063  1_[+1]_2
+NarL_29                            0.0068  2_[+1]_1
+NarL_6                             0.0078  12_[+1]
+NarL_52                            0.0081  1_[+1]_2
+NarL_5                             0.0081  2_[+1]_1
+NarL_60                            0.0088  2_[+1]_1
+NarL_3                              0.011  2_[+1]_1
+NarL_18                             0.012  2_[+1]_1
+NarL_61                             0.012  2_[+1]_1
+NarL_4                              0.013  [+1]_3
+NarL_24                             0.013  1_[+1]_2
+NarL_16                             0.013  1_[+1]_2
+NarL_36                             0.014  2_[+1]_1
+NarL_25                             0.015  1_[+1]_2
+NarL_1                              0.016  2_[+1]_1
+NarL_42                             0.019  2_[+1]_1
+NarL_22                             0.019  [+1]_3
+NarL_14                              0.02  2_[+1]_1
+NarL_15                             0.021  2_[+1]_1
+NarL_62                             0.024  [+1]_3
+NarL_10                             0.024  2_[+1]_1
+NarL_40                             0.028  2_[+1]_1
+NarL_21                             0.029  [+1]_3
+NarL_50                             0.031  [+1]_3
+NarL_35                             0.033  1_[+1]_2
+NarL_13                             0.039  2_[+1]_1
+NarL_56                             0.044  1_[+1]_2
+NarL_58                             0.046  1_[+1]_2
+NarL_8                               0.05  [+1]_3
+NarL_59                             0.055  1_[+1]_2
+NarL_26                             0.069  [+1]_3
+NarL_20                              0.15  1_[+1]_2
+NarL_9                               0.17  [+1]_3
+NarL_48                              0.27  1_[+1]_2
+NarL_51                              0.32  1_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HTAVYSRTWW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF HTAVYSRTWW width=10 seqs=68
+NarL_39                  (    1) TTAATGATTA  1 
+NarL_38                  (    3) TTAATGATTA  1 
+NarL_53                  (    3) TTAATAATTA  1 
+NarL_30                  (    3) ATACCCATTA  1 
+NarL_28                  (    3) TTACTCCTTA  1 
+NarL_19                  (    3) ATACTCCTTA  1 
+NarL_65                  (    3) CTAACCATAA  1 
+NarL_44                  (    4) ATAATGCTTT  1 
+NarL_47                  (    3) ATATCGGTAA  1 
+NarL_41                  (    4) GTAATTATAA  1 
+NarL_2                   (    1) CTATTCGTTA  1 
+NarL_33                  (    3) ATACTACTTT  1 
+NarL_46                  (    4) ATATCAATTT  1 
+NarL_7                   (    3) GTACCTATAA  1 
+NarL_66                  (    1) TAAAGGATTA  1 
+NarL_49                  (    3) CTACCGCTAT  1 
+NarL_17                  (    3) ATACCCATCT  1 
+NarL_32                  (    3) TTACTCCTCA  1 
+NarL_12                  (    3) TTAGGAATTT  1 
+NarL_11                  (    3) TTATCCATCA  1 
+NarL_37                  (    2) TTAATAAATA  1 
+NarL_23                  (    2) CTATGGGTAA  1 
+NarL_64                  (    2) TAAATGGTAT  1 
+NarL_63                  (    4) TAACCAATAA  1 
+NarL_55                  (    3) CTAACTCTAA  1 
+NarL_31                  (    1) TTAAGGAGTA  1 
+NarL_27                  (    3) ATACCCATAC  1 
+NarL_43                  (    4) CAACTCATTT  1 
+NarL_54                  (    1) TTAAGGGGTA  1 
+NarL_45                  (    4) TTACTCCGTA  1 
+NarL_57                  (    2) AAAGTGGTAT  1 
+NarL_34                  (    3) CTACCTATCT  1 
+NarL_67                  (    3) ATAATCACAT  1 
+NarL_0                   (    2) TTGGTGGTAT  1 
+NarL_29                  (    3) GTACTCACTA  1 
+NarL_6                   (   13) GTAGGTATAT  1 
+NarL_52                  (    2) TTGGTAGTAA  1 
+NarL_5                   (    3) TTAACCCAAA  1 
+NarL_60                  (    3) ATACCTCTCT  1 
+NarL_3                   (    3) GTACTTACTA  1 
+NarL_18                  (    3) TTAATTATCC  1 
+NarL_61                  (    3) TTACTCCCTT  1 
+NarL_4                   (    1) AAAATGGGTA  1 
+NarL_24                  (    2) GTAAGGGTAG  1 
+NarL_16                  (    2) AAAGGGGTAT  1 
+NarL_36                  (    3) TTACCCCGAT  1 
+NarL_25                  (    2) ACATCGGTAA  1 
+NarL_1                   (    3) TTATCTTTTT  1 
+NarL_42                  (    3) CGATCGATAT  1 
+NarL_22                  (    1) ATGATAAATA  1 
+NarL_14                  (    3) ATCCCCATCA  1 
+NarL_15                  (    3) TTACCCATGG  1 
+NarL_62                  (    1) CTTTGAATTA  1 
+NarL_10                  (    3) ATACTGTTGT  1 
+NarL_40                  (    3) GCATTAATAA  1 
+NarL_21                  (    1) ATGATAGATA  1 
+NarL_50                  (    1) AGGCGGATTA  1 
+NarL_35                  (    2) ATCGGGGTAT  1 
+NarL_13                  (    3) TTACTTTATT  1 
+NarL_56                  (    2) CTTACAATTG  1 
+NarL_58                  (    2) AGTGTGGTTA  1 
+NarL_8                   (    1) TAAAGGAGCA  1 
+NarL_59                  (    2) CTGGCGGTAG  1 
+NarL_26                  (    1) CGTGTGGTTA  1 
+NarL_20                  (    2) GTCACTGTAC  1 
+NarL_9                   (    1) CAGTGGAATA  1 
+NarL_48                  (    2) ATTGAGGTAG  1 
+NarL_51                  (    2) GCAGTGGTGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HTAVYSRTWW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 281 bayes= 1.64725 E= 1.7e-029 
+    40    -41    -94     52 
+   -89   -252   -211    164 
+   166   -252   -130   -174 
+    40     41    -53    -60 
+  -406     41    -41     89 
+   -48      6     64    -60 
+    98    -53     21   -248 
+  -148   -211   -153    164 
+    64   -111   -252     89 
+   115   -211   -179     40 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HTAVYSRTWW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 68 E= 1.7e-029 
+ 0.323529  0.191176  0.132353  0.352941 
+ 0.132353  0.044118  0.058824  0.764706 
+ 0.779412  0.044118  0.102941  0.073529 
+ 0.323529  0.338235  0.176471  0.161765 
+ 0.014706  0.338235  0.191176  0.455882 
+ 0.176471  0.264706  0.397059  0.161765 
+ 0.485294  0.176471  0.294118  0.044118 
+ 0.088235  0.058824  0.088235  0.764706 
+ 0.382353  0.117647  0.044118  0.455882 
+ 0.544118  0.058824  0.073529  0.323529 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif HTAVYSRTWW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]TA[CA][TC][GC][AG]T[TA][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.26 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NarL_0                           2.48e-02  13
+NarL_1                           6.11e-02  13
+NarL_2                           3.36e-03  13
+NarL_3                           4.41e-02  13
+NarL_4                           4.92e-02  13
+NarL_5                           3.21e-02  13
+NarL_6                           9.65e-02  22
+NarL_7                           4.15e-03  13
+NarL_8                           1.87e-01  13
+NarL_9                           5.26e-01  13
+NarL_10                          9.32e-02  13
+NarL_11                          6.95e-03  13
+NarL_12                          6.68e-03  13
+NarL_13                          1.46e-01  13
+NarL_14                          7.70e-02  13
+NarL_15                          7.96e-02  13
+NarL_16                          5.12e-02  13
+NarL_17                          6.02e-03  13
+NarL_18                          4.58e-02  13
+NarL_19                          1.03e-03  13
+NarL_20                          4.88e-01  13
+NarL_21                          1.12e-01  13
+NarL_22                          7.46e-02  13
+NarL_23                          8.10e-03  13
+NarL_24                          5.12e-02  13
+NarL_25                          5.68e-02  13
+NarL_26                          2.48e-01  13
+NarL_27                          1.19e-02  13
+NarL_28                          8.55e-04  13
+NarL_29                          2.70e-02  13
+NarL_30                          1.96e-04  2_[+1(4.91e-05)]_1
+NarL_31                          9.76e-03  13
+NarL_32                          6.68e-03  13
+NarL_33                          3.91e-03  13
+NarL_34                          2.07e-02  13
+NarL_35                          1.26e-01  13
+NarL_36                          5.49e-02  13
+NarL_37                          7.70e-03  13
+NarL_38                          6.81e-06  2_[+1(1.70e-06)]_1
+NarL_39                          6.81e-06  [+1(1.70e-06)]_3
+NarL_40                          1.09e-01  13
+NarL_41                          2.56e-03  13
+NarL_42                          7.23e-02  13
+NarL_43                          1.24e-02  13
+NarL_44                          1.28e-03  13
+NarL_45                          1.80e-02  13
+NarL_46                          4.15e-03  13
+NarL_47                          1.89e-03  13
+NarL_48                          7.09e-01  13
+NarL_49                          6.02e-03  13
+NarL_50                          1.19e-01  13
+NarL_51                          7.83e-01  13
+NarL_52                          3.21e-02  13
+NarL_53                          1.55e-04  2_[+1(3.88e-05)]_1
+NarL_54                          1.80e-02  13
+NarL_55                          9.26e-03  13
+NarL_56                          1.63e-01  13
+NarL_57                          1.97e-02  13
+NarL_58                          1.72e-01  13
+NarL_59                          2.03e-01  13
+NarL_60                          3.47e-02  13
+NarL_61                          4.74e-02  13
+NarL_62                          9.32e-02  13
+NarL_63                          9.26e-03  13
+NarL_64                          8.49e-03  13
+NarL_65                          1.20e-03  13
+NarL_66                          5.73e-03  13
+NarL_67                          2.17e-02  13
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

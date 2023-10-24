@@ -1,0 +1,290 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= CytR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CytR_0                   1.0000     22  CytR_1                   1.0000     25  
+CytR_2                   1.0000     22  CytR_3                   1.0000     26  
+CytR_4                   1.0000     23  CytR_5                   1.0000     29  
+CytR_6                   1.0000     27  CytR_7                   1.0000     25  
+CytR_8                   1.0000     27  CytR_9                   1.0000     24  
+CytR_10                  1.0000     25  CytR_11                  1.0000     34  
+CytR_12                  1.0000     25  CytR_13                  1.0000     22  
+CytR_14                  1.0000     23  CytR_15                  1.0000     22  
+CytR_16                  1.0000     22  CytR_17                  1.0000     25  
+CytR_18                  1.0000     20  CytR_19                  1.0000     24  
+CytR_20                  1.0000     32  CytR_21                  1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme CytR/ri_sites.fasta -oc CytR/./ -mod oops -nmotifs 1 -minw 15 -maxw 21 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           15    maxw=           20
+nsites: minsites=       22    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             547    N=              22
+sample: seed=           10    hsfrac=          0
+        searchsize=    547    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.294 C 0.152 G 0.194 T 0.36 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF BDNHDCRNATTTKHK MEME-1	width =  15  sites =  22  llr = 124  E-value = 1.4e-005
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif BDNHDCRNATTTKHK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :2355:336322:31
+pos.-specific     C  3:22:7:4:1::23:
+probability       G  342:3:621:::4:4
+matrix            T  544323:22687445
+
+         bits    2.0                
+                 1.8                
+                 1.6                
+                 1.4                
+Relative         1.2           *    
+Entropy          1.0      *    *    
+(8.1 bits)       0.8      *  * **   
+                 0.6      ** ****  *
+                 0.4 **  *** ****  *
+                 0.2 ** **** *******
+                 0.0 ---------------
+
+Multilevel           TTTAACGCATTTGTT
+consensus            CGATGTAATAA TAG
+sequence             GA CT        C 
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BDNHDCRNATTTKHK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+CytR_17                       6  1.87e-06      attTA TGCAACGCATTTGCG TCatg     
+CytR_2                        1  7.49e-06          . cgtCGCGCATTTTTG ATGTatg   
+CytR_20                       7  1.98e-05     gtgAAA CGAAACATATTTTTG TGAGCAATga
+CytR_7                        2  9.59e-05          t ttGTGCGTAATTTAT TCACAAgct 
+CytR_14                       1  2.64e-04          . tttCATGAAAATTCT GTAACcgt  
+CytR_11                       6  2.64e-04      ataAC TGCAACGGATAATTT GTTGTTGCAT
+CytR_16                       6  3.32e-04      aagCT TGCATTGAACTTGTg ga        
+CytR_12                       7  3.32e-04     aaaCTT GTAAGTAGATTTCCT Taat      
+CytR_4                        2  3.32e-04          t ttAAATGTTTTATTG CAATcgg   
+CytR_19                       2  5.08e-04          c gaTTACGTAAATGAT AGAACtgt  
+CytR_5                       11  5.08e-04 attCAATATT CATCACACTTTTCAT Gaaa      
+CytR_13                       3  6.83e-04         ag tGATGCAAACTTGTA AGtag     
+CytR_10                       5  6.83e-04       gaaT GTTTGCAATTATTTG CCAcag    
+CytR_3                        2  8.25e-04          c gtGAACGCAATCGAT TACGTAAatg
+CytR_8                        8  1.08e-03    tttGAAC CAGATCGCATTACAG TGatg     
+CytR_1                        6  1.08e-03      tgaTT TGCATCACTTTTGGT GGgta     
+CytR_6                        5  1.28e-03       ccgT TTTCACGCGCTATCT GCTAAaaa  
+CytR_21                       5  2.22e-03       tatG TTTCACGCGTTGCAT Aatt      
+CytR_15                       3  3.83e-03         tc gGTTGCTAAATTGCA TTtta     
+CytR_9                        1  4.34e-03          . caaATTGGGAATGTT TGCAATtat 
+CytR_0                        1  7.17e-03          . gtgGGTAAATTTATG CAACgca   
+CytR_18                       1  1.49e-02          . caaTTTCGTTTTGCA AAttg     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BDNHDCRNATTTKHK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CytR_17                           1.9e-06  5_[+1]_5
+CytR_2                            7.5e-06  [+1]_7
+CytR_20                             2e-05  6_[+1]_11
+CytR_7                            9.6e-05  1_[+1]_9
+CytR_14                           0.00026  [+1]_8
+CytR_11                           0.00026  5_[+1]_14
+CytR_16                           0.00033  5_[+1]_2
+CytR_12                           0.00033  6_[+1]_4
+CytR_4                            0.00033  1_[+1]_7
+CytR_19                           0.00051  1_[+1]_8
+CytR_5                            0.00051  10_[+1]_4
+CytR_13                           0.00068  2_[+1]_5
+CytR_10                           0.00068  4_[+1]_6
+CytR_3                            0.00083  1_[+1]_10
+CytR_8                             0.0011  7_[+1]_5
+CytR_1                             0.0011  5_[+1]_5
+CytR_6                             0.0013  4_[+1]_8
+CytR_21                            0.0022  4_[+1]_4
+CytR_15                            0.0038  2_[+1]_5
+CytR_9                             0.0043  [+1]_9
+CytR_0                             0.0072  [+1]_7
+CytR_18                             0.015  [+1]_5
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BDNHDCRNATTTKHK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF BDNHDCRNATTTKHK width=15 seqs=22
+CytR_17                  (    6) TGCAACGCATTTGCG  1 
+CytR_2                   (    1) CGTCGCGCATTTTTG  1 
+CytR_20                  (    7) CGAAACATATTTTTG  1 
+CytR_7                   (    2) TTGTGCGTAATTTAT  1 
+CytR_14                  (    1) TTTCATGAAAATTCT  1 
+CytR_11                  (    6) TGCAACGGATAATTT  1 
+CytR_16                  (    6) TGCATTGAACTTGTG  1 
+CytR_12                  (    7) GTAAGTAGATTTCCT  1 
+CytR_4                   (    2) TTAAATGTTTTATTG  1 
+CytR_19                  (    2) GATTACGTAAATGAT  1 
+CytR_5                   (   11) CATCACACTTTTCAT  1 
+CytR_13                  (    3) TGATGCAAACTTGTA  1 
+CytR_10                  (    5) GTTTGCAATTATTTG  1 
+CytR_3                   (    2) GTGAACGCAATCGAT  1 
+CytR_8                   (    8) CAGATCGCATTACAG  1 
+CytR_1                   (    6) TGCATCACTTTTGGT  1 
+CytR_6                   (    5) TTTCACGCGCTATCT  1 
+CytR_21                  (    5) TTTCACGCGTTGCAT  1 
+CytR_15                  (    3) GGTTGCTAAATTGCA  1 
+CytR_9                   (    1) CAAATTGGGAATGTT  1 
+CytR_0                   (    1) GTGGGTAAATTTATG  1 
+CytR_18                  (    1) CAATTTCGTTTTGCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BDNHDCRNATTTKHK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 239 bayes= 3.30212 E= 1.4e-005 
+ -1110     10     10     89 
+   -11  -1110     52     73 
+    15    -48    -48     56 
+    89    -16   -248     15 
+    89  -1110     32    -11 
+ -1110    142  -1110     37 
+    37   -248    122   -243 
+    15     52    -48    -44 
+   137  -1110    -90    -11 
+    15    -90  -1110    126 
+   -11  -1110  -1110    165 
+   -44   -248   -248    156 
+  -243    -48     69     56 
+    15     10   -248     73 
+   -85  -1110     52    102 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BDNHDCRNATTTKHK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 22 E= 1.4e-005 
+ 0.000000  0.272727  0.272727  0.454545 
+ 0.227273  0.000000  0.363636  0.409091 
+ 0.272727  0.181818  0.181818  0.363636 
+ 0.454545  0.227273  0.045455  0.272727 
+ 0.454545  0.000000  0.318182  0.227273 
+ 0.000000  0.681818  0.000000  0.318182 
+ 0.318182  0.045455  0.590909  0.045455 
+ 0.272727  0.363636  0.181818  0.181818 
+ 0.636364  0.000000  0.136364  0.227273 
+ 0.272727  0.136364  0.000000  0.590909 
+ 0.227273  0.000000  0.000000  0.772727 
+ 0.181818  0.045455  0.045455  0.727273 
+ 0.045455  0.181818  0.409091  0.363636 
+ 0.272727  0.272727  0.045455  0.409091 
+ 0.136364  0.000000  0.363636  0.500000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BDNHDCRNATTTKHK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TCG][TGA][TA][ATC][AGT][CT][GA][CA][AT][TA][TA]T[GT][TAC][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.21 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CytR_0                           5.60e-02  22
+CytR_1                           1.18e-02  25
+CytR_2                           5.99e-05  [+1(7.49e-06)]_7
+CytR_3                           9.86e-03  26
+CytR_4                           2.98e-03  23
+CytR_5                           7.59e-03  29
+CytR_6                           1.65e-02  27
+CytR_7                           1.05e-03  1_[+1(9.59e-05)]_9
+CytR_8                           1.39e-02  27
+CytR_9                           4.25e-02  24
+CytR_10                          7.49e-03  25
+CytR_11                          5.27e-03  34
+CytR_12                          3.64e-03  25
+CytR_13                          5.45e-03  22
+CytR_14                          2.38e-03  23
+CytR_15                          3.02e-02  22
+CytR_16                          2.65e-03  22
+CytR_17                          2.05e-05  5_[+1(1.87e-06)]_5
+CytR_18                          8.61e-02  20
+CytR_19                          5.07e-03  24
+CytR_20                          3.56e-04  6_[+1(1.98e-05)]_11
+CytR_21                          1.98e-02  23
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

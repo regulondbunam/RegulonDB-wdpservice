@@ -1,0 +1,1053 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= ArcA/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ArcA_0                   1.0000     21  ArcA_1                   1.0000     21  
+ArcA_2                   1.0000     21  ArcA_3                   1.0000     21  
+ArcA_4                   1.0000     21  ArcA_5                   1.0000     21  
+ArcA_6                   1.0000     16  ArcA_7                   1.0000     28  
+ArcA_8                   1.0000     24  ArcA_9                   1.0000     16  
+ArcA_10                  1.0000     21  ArcA_11                  1.0000     21  
+ArcA_12                  1.0000     21  ArcA_13                  1.0000     21  
+ArcA_14                  1.0000     21  ArcA_15                  1.0000     21  
+ArcA_16                  1.0000     21  ArcA_17                  1.0000     21  
+ArcA_18                  1.0000     21  ArcA_19                  1.0000     21  
+ArcA_20                  1.0000     21  ArcA_21                  1.0000     21  
+ArcA_22                  1.0000     21  ArcA_23                  1.0000     21  
+ArcA_24                  1.0000     21  ArcA_25                  1.0000     21  
+ArcA_26                  1.0000     21  ArcA_27                  1.0000     21  
+ArcA_28                  1.0000     21  ArcA_29                  1.0000     21  
+ArcA_30                  1.0000     21  ArcA_31                  1.0000     21  
+ArcA_32                  1.0000     21  ArcA_33                  1.0000     21  
+ArcA_34                  1.0000     21  ArcA_35                  1.0000     21  
+ArcA_36                  1.0000     21  ArcA_37                  1.0000     21  
+ArcA_38                  1.0000     21  ArcA_39                  1.0000     21  
+ArcA_40                  1.0000     21  ArcA_41                  1.0000     21  
+ArcA_42                  1.0000     21  ArcA_43                  1.0000     21  
+ArcA_44                  1.0000     21  ArcA_45                  1.0000     21  
+ArcA_46                  1.0000     21  ArcA_47                  1.0000     21  
+ArcA_48                  1.0000     21  ArcA_49                  1.0000     21  
+ArcA_50                  1.0000     21  ArcA_51                  1.0000     21  
+ArcA_52                  1.0000     21  ArcA_53                  1.0000     21  
+ArcA_54                  1.0000     21  ArcA_55                  1.0000     21  
+ArcA_56                  1.0000     21  ArcA_57                  1.0000     21  
+ArcA_58                  1.0000     21  ArcA_59                  1.0000     21  
+ArcA_60                  1.0000     21  ArcA_61                  1.0000     21  
+ArcA_62                  1.0000     21  ArcA_63                  1.0000     21  
+ArcA_64                  1.0000     21  ArcA_65                  1.0000     21  
+ArcA_66                  1.0000     21  ArcA_67                  1.0000     21  
+ArcA_68                  1.0000     21  ArcA_69                  1.0000     21  
+ArcA_70                  1.0000     21  ArcA_71                  1.0000     21  
+ArcA_72                  1.0000     21  ArcA_73                  1.0000     21  
+ArcA_74                  1.0000     21  ArcA_75                  1.0000     21  
+ArcA_76                  1.0000     21  ArcA_77                  1.0000     21  
+ArcA_78                  1.0000     21  ArcA_79                  1.0000     21  
+ArcA_80                  1.0000     21  ArcA_81                  1.0000     21  
+ArcA_82                  1.0000     21  ArcA_83                  1.0000     21  
+ArcA_84                  1.0000     21  ArcA_85                  1.0000     21  
+ArcA_86                  1.0000     21  ArcA_87                  1.0000     21  
+ArcA_88                  1.0000     21  ArcA_89                  1.0000     21  
+ArcA_90                  1.0000     21  ArcA_91                  1.0000     21  
+ArcA_92                  1.0000     21  ArcA_93                  1.0000     21  
+ArcA_94                  1.0000     21  ArcA_95                  1.0000     21  
+ArcA_96                  1.0000     21  ArcA_97                  1.0000     21  
+ArcA_98                  1.0000     21  ArcA_99                  1.0000     21  
+ArcA_100                 1.0000     21  ArcA_101                 1.0000     21  
+ArcA_102                 1.0000     21  ArcA_103                 1.0000     21  
+ArcA_104                 1.0000     21  ArcA_105                 1.0000     21  
+ArcA_106                 1.0000     21  ArcA_107                 1.0000     21  
+ArcA_108                 1.0000     21  ArcA_109                 1.0000     21  
+ArcA_110                 1.0000     21  ArcA_111                 1.0000     21  
+ArcA_112                 1.0000     21  ArcA_113                 1.0000     21  
+ArcA_114                 1.0000     21  ArcA_115                 1.0000     21  
+ArcA_116                 1.0000     21  ArcA_117                 1.0000     21  
+ArcA_118                 1.0000     21  ArcA_119                 1.0000     21  
+ArcA_120                 1.0000     21  ArcA_121                 1.0000     21  
+ArcA_122                 1.0000     21  ArcA_123                 1.0000     21  
+ArcA_124                 1.0000     21  ArcA_125                 1.0000     21  
+ArcA_126                 1.0000     21  ArcA_127                 1.0000     21  
+ArcA_128                 1.0000     21  ArcA_129                 1.0000     21  
+ArcA_130                 1.0000     21  ArcA_131                 1.0000     21  
+ArcA_132                 1.0000     21  ArcA_133                 1.0000     21  
+ArcA_134                 1.0000     21  ArcA_135                 1.0000     21  
+ArcA_136                 1.0000     21  ArcA_137                 1.0000     21  
+ArcA_138                 1.0000     21  ArcA_139                 1.0000     21  
+ArcA_140                 1.0000     21  ArcA_141                 1.0000     21  
+ArcA_142                 1.0000     21  ArcA_143                 1.0000     21  
+ArcA_144                 1.0000     21  ArcA_145                 1.0000     21  
+ArcA_146                 1.0000     21  ArcA_147                 1.0000     21  
+ArcA_148                 1.0000     21  ArcA_149                 1.0000     21  
+ArcA_150                 1.0000     21  ArcA_151                 1.0000     21  
+ArcA_152                 1.0000     21  ArcA_153                 1.0000     21  
+ArcA_154                 1.0000     21  ArcA_155                 1.0000     21  
+ArcA_156                 1.0000     21  ArcA_157                 1.0000     21  
+ArcA_158                 1.0000     21  ArcA_159                 1.0000     21  
+ArcA_160                 1.0000     21  ArcA_161                 1.0000     21  
+ArcA_162                 1.0000     21  ArcA_163                 1.0000     21  
+ArcA_164                 1.0000     21  ArcA_165                 1.0000     21  
+ArcA_166                 1.0000     21  ArcA_167                 1.0000     21  
+ArcA_168                 1.0000     21  ArcA_169                 1.0000     21  
+ArcA_170                 1.0000     21  ArcA_171                 1.0000     21  
+ArcA_172                 1.0000     21  ArcA_173                 1.0000     21  
+ArcA_174                 1.0000     21  ArcA_175                 1.0000     21  
+ArcA_176                 1.0000     21  ArcA_177                 1.0000     21  
+ArcA_178                 1.0000     21  ArcA_179                 1.0000     21  
+ArcA_180                 1.0000     21  ArcA_181                 1.0000     21  
+ArcA_182                 1.0000     21  ArcA_183                 1.0000     21  
+ArcA_184                 1.0000     21  ArcA_185                 1.0000     21  
+ArcA_186                 1.0000     21  ArcA_187                 1.0000     21  
+ArcA_188                 1.0000     21  ArcA_189                 1.0000     21  
+ArcA_190                 1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme ArcA/ri_sites.fasta -oc ArcA/./ -mod oops -nmotifs 1 -minw 12 -maxw 18 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           12    maxw=           16
+nsites: minsites=      191    maxsites=      191    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            4011    N=             191
+sample: seed=           10    hsfrac=          0
+        searchsize=   4011    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.368 C 0.131 G 0.123 T 0.378 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF KTWAMWWWWWWDTWAM MEME-1	width =  16  sites = 191  llr = 1106  E-value = 2.0e-277
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif KTWAMWWWWWWDTWAM MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2147445544321483
+pos.-specific     C  111:421:111:1::5
+probability       G  5::1:1111:24:11:
+matrix            T  3851234455438411
+
+         bits    2.0                 
+                 1.8                 
+                 1.6                 
+                 1.4                 
+Relative         1.2                 
+Entropy          1.0  *          *   
+(8.4 bits)       0.8  * *        * * 
+                 0.6  ***   *    * * 
+                 0.4  **** **** *****
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           GTTACAAATTTGTAAC
+consensus            T A ATTTAAAT T A
+sequence                        A    
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTWAMWWWWWWDTWAM MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+ArcA_170                      4  1.54e-07        tga GTTAATATTATGTTAa cg        
+ArcA_13                       4  1.54e-07        tat TTTAAAAAAATGTTAc ct        
+ArcA_171                      5  3.07e-07       attG TTAACAATTTTGTAaa a         
+ArcA_65                       2  4.16e-07          a gtTACATAAATGTAAA Taac      
+ArcA_17                       3  4.16e-07         tg gTAACTTTTATTTAAC ctg       
+ArcA_72                       5  5.46e-07       tatA GTTAAATATAAGTAaa t         
+ArcA_96                       2  8.90e-07          a ttAACTTATTTATAAC Ttat      
+ArcA_77                       3  8.90e-07         aa gTTAATTTAATGTTAA gta       
+ArcA_4                        3  1.11e-06         ac aTAACAATTATTTTAC ata       
+ArcA_189                      3  1.38e-06         tg tTTAAAAATTGTTAAC aat       
+ArcA_92                       1  1.38e-06          . gttAACTATATGTAAA CAgga     
+ArcA_103                      2  1.69e-06          t atTACTTTTATTTAAC Atac      
+ArcA_94                       5  1.69e-06       attC GTTATTTATATGTTaa t         
+ArcA_93                       5  1.69e-06       ataT GTTAATAATAAGTAat g         
+ArcA_179                      3  2.07e-06         tt aTTACATAAATTTAAC cag       
+ArcA_38                       2  2.07e-06          a gtAACTTAAAAATAAC Aatc      
+ArcA_23                       4  2.07e-06        ttg ATAACAATTAATTTAc tt        
+ArcA_14                       4  2.07e-06        tat GTTTCTAATATGTTAc at        
+ArcA_180                      4  2.52e-06        aat GTAAAAAAATGGTTAa ga        
+ArcA_137                      4  2.52e-06        taa GTTAACTAAATGTTAa ta        
+ArcA_131                      2  2.52e-06          t gtAATTATATTGTAAA Cata      
+ArcA_178                      3  3.71e-06         at tTTACAAATCAGTAAC aaa       
+ArcA_98                       5  3.71e-06       cgtT GTTAATTAATCGTTac t         
+ArcA_53                       3  3.71e-06         at gTTAAATTGATGTAAC ata       
+ArcA_28                       5  3.71e-06       aaaT GTTACTAATTTGTTgc t         
+ArcA_104                      2  4.49e-06          a ttTACAATTTCATTAC Catg      
+ArcA_36                       2  5.43e-06          g ttTACAGTAATGTAAC Cttc      
+ArcA_149                      4  6.54e-06        ggt GTTGATATTATGTAAa ct        
+ArcA_156                      3  7.87e-06         ta aTAACCATTAATTAAC aat       
+ArcA_119                      4  7.87e-06        tat GTTGCTTTTTTGTAAa ca        
+ArcA_110                      3  7.87e-06         tg tTTGCATATTTTTAAC aca       
+ArcA_58                       3  7.87e-06         aa gTTACACAAAAGTTAA att       
+ArcA_11                       3  7.87e-06         tt gTTACGTTTAGGTAAC aag       
+ArcA_122                      5  1.13e-05       ataC ATAACATTTAGTTAac c         
+ArcA_99                       3  1.13e-05         at gTTTATTTTATGTAAA atc       
+ArcA_59                       5  1.13e-05       ctaT TTCACAAATAATTAac a         
+ArcA_5                        5  1.13e-05       tcaT GTAACAAATCATTTaa g         
+ArcA_95                       5  1.34e-05       tacA GTAAATAATTCGTTat t         
+ArcA_78                       4  1.34e-05        tgc ATAAAAATTTGTTAAa ta        
+ArcA_73                       5  1.34e-05       ataA GTAAATATATTGTTgc a         
+ArcA_48                       3  1.34e-05         ta aTAAAATAATTGTAAT tat       
+ArcA_155                      4  1.59e-05        tta ATTAACAATTGGTTAa ta        
+ArcA_154                      2  1.59e-05          a atTAACAATTGGTTAA Taaa      
+ArcA_151                      4  1.59e-05        gag GTTAATAATAATTATa tt        
+ArcA_102                      5  1.59e-05       aaaT GTAAAAAAGTTGTAat a         
+ArcA_91                       6  1.59e-05      gtaAA TTAAAATTTTATTgac           
+ArcA_68                       4  1.59e-05        tgc TTAACAATTTTGCAAa at        
+ArcA_56                       2  1.59e-05          t ttTATACTTTTTTTAC Accc      
+ArcA_47                       3  1.59e-05         tt gTAATTATAAGGTTAA ata       
+ArcA_12                       4  1.59e-05        gtt GTTACTTAAGTGTTAc cg        
+ArcA_100                      3  1.88e-05         at gTAAACAAATTGTGAA gtg       
+ArcA_35                       1  1.88e-05          . gatAATTATTTGTTAA ATaat     
+ArcA_29                       3  1.88e-05         ct tTAAACATAAAATTAA cat       
+ArcA_16                       3  1.88e-05         tt gCTACATTTTTATAAC ata       
+ArcA_112                      4  2.22e-05        gtt GTTATCAAATCGTTAc gc        
+ArcA_150                      5  3.04e-05       aatG TTAACAAAAATAAAac a         
+ArcA_32                       4  3.04e-05        aaa GTTACCTTATTGAAAc at        
+ArcA_160                      4  3.55e-05        ttt GTTAAATAATTGTTTt at        
+ArcA_153                      4  3.55e-05        att ATTAATCAAAATTAAc ga        
+ArcA_116                      3  3.55e-05         aa tTAACGAAGTTTTTAC gga       
+ArcA_135                      4  4.12e-05        tga GTTAATTATAATATAa tt        
+ArcA_106                      4  4.12e-05        ata ATTTCAATAAATTTAc ta        
+ArcA_136                      5  4.77e-05       taaT ATAATTATAAGTTAac t         
+ArcA_79                       4  4.77e-05        ttt TTAACCTTTTCTTAAa ga        
+ArcA_141                      4  5.51e-05        tca ATATCATTTAATTAAc ta        
+ArcA_85                       5  5.51e-05       ttaT GTCAAAGAAATGTAac c         
+ArcA_43                       3  5.51e-05         tt gTAAACATATTGCTAA atg       
+ArcA_26                       5  5.51e-05       tttT GTTGTTTTAATGTAaa t         
+ArcA_8                        7  5.51e-05     ataTTC GTCACGTTTTTATAAc ca        
+ArcA_165                      2  7.31e-05          t gtAATGATTTTGTGAA Cagc      
+ArcA_130                      4  7.31e-05        ata GTTAATTAAATGATAt tg        
+ArcA_75                       5  8.39e-05       cctT ATCAATAATTCGTTac g         
+ArcA_62                       3  8.39e-05         gt gTTAATGTTTTGTTAG aat       
+ArcA_49                       2  8.39e-05          c atAACGATGTTTTAAC Atct      
+ArcA_166                      4  9.62e-05        cat TCAACAAAGTTGTTAc aa        
+ArcA_69                       4  9.62e-05        ata ATAATCAATTGTTAAa tt        
+ArcA_52                       4  9.62e-05        aat TTAACAATTAGATCAc ac        
+ArcA_45                       3  9.62e-05         ta tTTATCATTTCATTAA caa       
+ArcA_87                       3  1.10e-04         ct gTTGCTTTTATGTATA aga       
+ArcA_51                       5  1.10e-04       ctaT GTAACCTATTAGTTtt t         
+ArcA_97                       5  1.26e-04       aatC GTTACTAAGACGTGac t         
+ArcA_88                       3  1.26e-04         at gTTACCATTCTGTTGC ttt       
+ArcA_81                       2  1.26e-04          t ttTACGCTTTGATAAC Gagc      
+ArcA_71                       5  1.26e-04       agcG GTTTCAAAATTGTGat c         
+ArcA_57                       2  1.26e-04          a ctAAACATTAGTTAAA Tcat      
+ArcA_162                      4  1.43e-04        taa GTTAATCTTAGGTGAa at        
+ArcA_138                      1  1.43e-04          . tttGAGTTTTTATTAA CAtgt     
+ArcA_133                      4  1.63e-04        att GTTACTATTTAAAATc aa        
+ArcA_113                      4  1.63e-04        tag TTTAAATTTTGACTAa tc        
+ArcA_74                       5  1.63e-04       attG GTTAATGAAATGTTga t         
+ArcA_40                       2  1.63e-04          a atATCAATAAGATAAC Agca      
+ArcA_30                       4  1.63e-04        tta TTAACATGTTTGCAAc ct        
+ArcA_175                      3  2.10e-04         aa tTAACAATGTATTCAC cga       
+ArcA_169                      4  2.10e-04        tag TTTATCAATATAATAa gg        
+ArcA_108                      4  2.10e-04        gcg CTAACAAGAAAATTAc ca        
+ArcA_70                       4  2.10e-04        tat TTAACAAAGTGATGAc at        
+ArcA_2                        5  3.42e-04       catC ATTTTAATTAATTTat t         
+ArcA_86                       5  3.85e-04       cctT GCAAACACTTTGTTac a         
+ArcA_157                      4  4.32e-04        tat GTTAATAACCATTAAt ta        
+ArcA_147                      4  4.32e-04        agt GCTAACAAAATGTTGc cg        
+ArcA_83                       4  4.32e-04        acc TTAACACTTCCATAAc aa        
+ArcA_67                       6  4.32e-04      aatTC GTATCCGTTATGTtat           
+ArcA_55                       5  4.32e-04       aaaT GTTTTTTCAATGTTac c         
+ArcA_46                       3  4.32e-04         ct tTTAATTAACTGTTTT agc       
+ArcA_33                       4  4.32e-04        ttt TAAACATAAATGTCAc ta        
+ArcA_15                       3  4.32e-04         gt aTAATATTTCCTTTAC aaa       
+ArcA_105                      2  4.84e-04          t ttCTCAATTACTTAAC Gtat      
+ArcA_64                       3  4.84e-04         at gTAAATAACATGCAAT tca       
+ArcA_18                       4  4.84e-04        aag GTTAAATCTTGGTTTa ta        
+ArcA_142                      4  5.41e-04        taa TTAACTATAATGAACc aa        
+ArcA_90                       2  5.41e-04          g ttAACGCGTAATTTAC Attc      
+ArcA_66                       6  5.41e-04      tgcTT GTTATCGAAGTGTtac           
+ArcA_134                      4  6.75e-04        att GTTACGAATTTGATTt ta        
+ArcA_120                      1  6.75e-04          . ttaGCTATAAATTGAT CAccg     
+ArcA_76                       3  6.75e-04         tc gTTAATATTTTGCGAG ttc       
+ArcA_39                       1  6.75e-04          . gcaAACAAAACATTAA CAtct     
+ArcA_21                       1  6.75e-04          . ttcATCAAACTGTTAA CGtgc     
+ArcA_101                      3  8.35e-04         tt gTTGATGATGTGTTAA aat       
+ArcA_80                       2  8.35e-04          t ttAACACACCATTTAC Atta      
+ArcA_50                       3  8.35e-04         tt gTTAAAAAAGTGTGTA gga       
+ArcA_44                       4  9.28e-04        act GAAACCTTAATTAAAc at        
+ArcA_89                       4  1.03e-03        agc GTTATCAAAATGTTGg cg        
+ArcA_82                       4  1.03e-03        atg CTAACTTAGTGTTGAc tt        
+ArcA_7                        7  1.03e-03     agtTTC ACTACGCTTTATTAAC AATact    
+ArcA_24                       4  1.14e-03        aca ACATCAATTTGATAAc aa        
+ArcA_158                      4  1.26e-03        gtt GTTAATTAAGAGCTAt gt        
+ArcA_140                      4  1.26e-03        ggc ATTGATAATCATTTTc aa        
+ArcA_37                       2  1.26e-03          a atATCAACTTGTTAAA Aaac      
+ArcA_27                       4  1.26e-03        ttg ATCACAATAAGAAAAc aa        
+ArcA_19                       3  1.26e-03         tt tTCAACATTTTATACA cta       
+ArcA_10                       3  1.26e-03         ta gCAACGCTTTGATAAC aac       
+ArcA_1                        1  1.26e-03          . ttaCTTTATAATTAAC AGact     
+ArcA_176                      4  1.39e-03        gat GTTAATTAACAATGTa tt        
+ArcA_111                      3  1.39e-03         ta gAAACATACTTGCAAC att       
+ArcA_25                       2  1.39e-03          t gcAACGTCTTATTAAC Atat      
+ArcA_129                      4  1.70e-03        gtt GGTTCATTATAGTTAa tt        
+ArcA_60                       4  1.70e-03        agt TTTAACAGGTCATAAa ca        
+ArcA_139                      4  1.87e-03        ctt ATTGAAACATGATTAa ca        
+ArcA_42                       2  2.05e-03          t ttCACATTCTGTTGAC Agat      
+ArcA_34                       4  2.05e-03        taa CTCACACATTTTAAAc at        
+ArcA_128                      1  2.26e-03          . attGAAAATGATTATC AAtgc     
+ArcA_63                       4  2.26e-03        acg GTTGAAAAAACGATTc ag        
+ArcA_20                       4  2.47e-03        aaa CAAACATATAAATCAc ag        
+ArcA_152                      4  2.71e-03        taa CAAACTGATTATTAAt ca        
+ArcA_121                      4  2.71e-03        tgc TTTAATTAATTACACt aa        
+ArcA_187                      4  2.97e-03        ccg CATAAGTTGATGTAAa ac        
+ArcA_132                      5  3.24e-03       ccgC TTTAATAGATAAACac c         
+ArcA_22                       3  3.54e-03         ac gTTTATTAGTTGTATG atg       
+ArcA_183                      3  3.86e-03         tg tATTCACATCATTAAC cgt       
+ArcA_159                      4  3.86e-03        gca ACAAAACTTGATTAAc at        
+ArcA_123                      4  4.21e-03        tgt GTTATTGACAGTTAGc at        
+ArcA_61                       3  4.58e-03         ta gTGAATAAAAGGTTGC ctg       
+ArcA_168                      3  4.97e-03         tt aCAAATCATTAACAAA aaa       
+ArcA_127                      5  4.97e-03       ccaC TTTTGCTATAAATAtc a         
+ArcA_107                      4  5.40e-03        tac CACTCATTTTATTAAc at        
+ArcA_184                      6  5.86e-03      tatGT TTTGTCAAAATGTgca           
+ArcA_164                      1  5.86e-03          . ttaATTGTAATGATTT TGtga     
+ArcA_41                       3  5.86e-03         tt cACACATGTTATTTAC tat       
+ArcA_31                       5  6.88e-03       cggC GTAATATATACGTGgg a         
+ArcA_84                       4  7.44e-03        tat CCAGCATATAATCAAc ac        
+ArcA_54                       4  7.44e-03        taa CTCAATGTTAAATTGa tg        
+ArcA_177                      4  8.03e-03        ctc GTTACGTTAAAAATTg cc        
+ArcA_0                        6  8.03e-03      cggAT TGTTCATTATATTttc           
+ArcA_186                      4  1.01e-02        gaa GTTGAAACGTGATAGc cg        
+ArcA_118                      5  1.25e-02       ccaC TTTTTTATGTTGCTtt t         
+ArcA_188                      5  1.34e-02       aaaC AATAAAATCCATTTgc g         
+ArcA_161                      4  1.34e-02        aac TTTGTTGAATGATTGt ca        
+ArcA_146                      1  1.34e-02          . acaAACGGTTAATTAT GAcac     
+ArcA_145                      6  1.55e-02      ggaGT GTTGTGTAACAATgtc           
+ArcA_125                      5  1.55e-02       ttaA ATATCGGTAATTTGta t         
+ArcA_174                      3  1.77e-02         ta tTCACCGAAAACAAAC ata       
+ArcA_190                      5  1.89e-02       tgtC ATTATCCCTACACAac a         
+ArcA_185                      2  1.89e-02          c tcTGTGTAATAAATAA Aggg      
+ArcA_182                      1  2.02e-02          . caaGTTAAATATTTCC GCgca     
+ArcA_126                      1  2.15e-02          . ttaTTTGGATAATCAA ATatt     
+ArcA_124                      4  2.15e-02        ttt GTTAGTATCTCGTCGc cg        
+ArcA_3                        1  2.15e-02          . ctaTGTTTTAATTACA GGatg     
+ArcA_172                      5  2.30e-02       gtcG GTAATACGCCGTTAat g         
+ArcA_9                        1  2.60e-02          . ttaTGTTAATAAAaag           
+ArcA_163                      4  2.94e-02        cct GTTAATCTGGACCTAc ag        
+ArcA_181                      6  3.12e-02      gacCG TTTAGTCCACTTTtta           
+ArcA_109                      4  3.51e-02        ggt CCATTTTTATCGCTAa aa        
+ArcA_117                      1  3.71e-02          . catGCGAATTAACGAA GTttt     
+ArcA_115                      5  3.71e-02       ttgA GAAAGGTGATTATCac c         
+ArcA_114                      6  6.02e-02      ttcGT TGAGAAAGGTGATtat           
+ArcA_167                      1  7.67e-02          . gtaGTATTGACAAGCC AAtta     
+ArcA_173                      4  1.28e-01        ccg TTTGTGAACCACTTGt tt        
+ArcA_148                      4  1.44e-01        gga GTTGTGATCAAGCCTg ca        
+ArcA_144                      1  1.84e-01          . gaaCCGAGGTCACAAC ATagt     
+ArcA_143                      3  1.90e-01         ca aTCGCGCGTTTACACT tat       
+ArcA_6                        1  2.10e-01          . caaATCGATAACAaca           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTWAMWWWWWWDTWAM MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ArcA_170                          1.5e-07  3_[+1]_2
+ArcA_13                           1.5e-07  3_[+1]_2
+ArcA_171                          3.1e-07  4_[+1]_1
+ArcA_65                           4.2e-07  1_[+1]_4
+ArcA_17                           4.2e-07  2_[+1]_3
+ArcA_72                           5.5e-07  4_[+1]_1
+ArcA_96                           8.9e-07  1_[+1]_4
+ArcA_77                           8.9e-07  2_[+1]_3
+ArcA_4                            1.1e-06  2_[+1]_3
+ArcA_189                          1.4e-06  2_[+1]_3
+ArcA_92                           1.4e-06  [+1]_5
+ArcA_103                          1.7e-06  1_[+1]_4
+ArcA_94                           1.7e-06  4_[+1]_1
+ArcA_93                           1.7e-06  4_[+1]_1
+ArcA_179                          2.1e-06  2_[+1]_3
+ArcA_38                           2.1e-06  1_[+1]_4
+ArcA_23                           2.1e-06  3_[+1]_2
+ArcA_14                           2.1e-06  3_[+1]_2
+ArcA_180                          2.5e-06  3_[+1]_2
+ArcA_137                          2.5e-06  3_[+1]_2
+ArcA_131                          2.5e-06  1_[+1]_4
+ArcA_178                          3.7e-06  2_[+1]_3
+ArcA_98                           3.7e-06  4_[+1]_1
+ArcA_53                           3.7e-06  2_[+1]_3
+ArcA_28                           3.7e-06  4_[+1]_1
+ArcA_104                          4.5e-06  1_[+1]_4
+ArcA_36                           5.4e-06  1_[+1]_4
+ArcA_149                          6.5e-06  3_[+1]_2
+ArcA_156                          7.9e-06  2_[+1]_3
+ArcA_119                          7.9e-06  3_[+1]_2
+ArcA_110                          7.9e-06  2_[+1]_3
+ArcA_58                           7.9e-06  2_[+1]_3
+ArcA_11                           7.9e-06  2_[+1]_3
+ArcA_122                          1.1e-05  4_[+1]_1
+ArcA_99                           1.1e-05  2_[+1]_3
+ArcA_59                           1.1e-05  4_[+1]_1
+ArcA_5                            1.1e-05  4_[+1]_1
+ArcA_95                           1.3e-05  4_[+1]_1
+ArcA_78                           1.3e-05  3_[+1]_2
+ArcA_73                           1.3e-05  4_[+1]_1
+ArcA_48                           1.3e-05  2_[+1]_3
+ArcA_155                          1.6e-05  3_[+1]_2
+ArcA_154                          1.6e-05  1_[+1]_4
+ArcA_151                          1.6e-05  3_[+1]_2
+ArcA_102                          1.6e-05  4_[+1]_1
+ArcA_91                           1.6e-05  5_[+1]
+ArcA_68                           1.6e-05  3_[+1]_2
+ArcA_56                           1.6e-05  1_[+1]_4
+ArcA_47                           1.6e-05  2_[+1]_3
+ArcA_12                           1.6e-05  3_[+1]_2
+ArcA_100                          1.9e-05  2_[+1]_3
+ArcA_35                           1.9e-05  [+1]_5
+ArcA_29                           1.9e-05  2_[+1]_3
+ArcA_16                           1.9e-05  2_[+1]_3
+ArcA_112                          2.2e-05  3_[+1]_2
+ArcA_150                            3e-05  4_[+1]_1
+ArcA_32                             3e-05  3_[+1]_2
+ArcA_160                          3.5e-05  3_[+1]_2
+ArcA_153                          3.5e-05  3_[+1]_2
+ArcA_116                          3.5e-05  2_[+1]_3
+ArcA_135                          4.1e-05  3_[+1]_2
+ArcA_106                          4.1e-05  3_[+1]_2
+ArcA_136                          4.8e-05  4_[+1]_1
+ArcA_79                           4.8e-05  3_[+1]_2
+ArcA_141                          5.5e-05  3_[+1]_2
+ArcA_85                           5.5e-05  4_[+1]_1
+ArcA_43                           5.5e-05  2_[+1]_3
+ArcA_26                           5.5e-05  4_[+1]_1
+ArcA_8                            5.5e-05  6_[+1]_2
+ArcA_165                          7.3e-05  1_[+1]_4
+ArcA_130                          7.3e-05  3_[+1]_2
+ArcA_75                           8.4e-05  4_[+1]_1
+ArcA_62                           8.4e-05  2_[+1]_3
+ArcA_49                           8.4e-05  1_[+1]_4
+ArcA_166                          9.6e-05  3_[+1]_2
+ArcA_69                           9.6e-05  3_[+1]_2
+ArcA_52                           9.6e-05  3_[+1]_2
+ArcA_45                           9.6e-05  2_[+1]_3
+ArcA_87                           0.00011  2_[+1]_3
+ArcA_51                           0.00011  4_[+1]_1
+ArcA_97                           0.00013  4_[+1]_1
+ArcA_88                           0.00013  2_[+1]_3
+ArcA_81                           0.00013  1_[+1]_4
+ArcA_71                           0.00013  4_[+1]_1
+ArcA_57                           0.00013  1_[+1]_4
+ArcA_162                          0.00014  3_[+1]_2
+ArcA_138                          0.00014  [+1]_5
+ArcA_133                          0.00016  3_[+1]_2
+ArcA_113                          0.00016  3_[+1]_2
+ArcA_74                           0.00016  4_[+1]_1
+ArcA_40                           0.00016  1_[+1]_4
+ArcA_30                           0.00016  3_[+1]_2
+ArcA_175                          0.00021  2_[+1]_3
+ArcA_169                          0.00021  3_[+1]_2
+ArcA_108                          0.00021  3_[+1]_2
+ArcA_70                           0.00021  3_[+1]_2
+ArcA_2                            0.00034  4_[+1]_1
+ArcA_86                           0.00038  4_[+1]_1
+ArcA_157                          0.00043  3_[+1]_2
+ArcA_147                          0.00043  3_[+1]_2
+ArcA_83                           0.00043  3_[+1]_2
+ArcA_67                           0.00043  5_[+1]
+ArcA_55                           0.00043  4_[+1]_1
+ArcA_46                           0.00043  2_[+1]_3
+ArcA_33                           0.00043  3_[+1]_2
+ArcA_15                           0.00043  2_[+1]_3
+ArcA_105                          0.00048  1_[+1]_4
+ArcA_64                           0.00048  2_[+1]_3
+ArcA_18                           0.00048  3_[+1]_2
+ArcA_142                          0.00054  3_[+1]_2
+ArcA_90                           0.00054  1_[+1]_4
+ArcA_66                           0.00054  5_[+1]
+ArcA_134                          0.00067  3_[+1]_2
+ArcA_120                          0.00067  [+1]_5
+ArcA_76                           0.00067  2_[+1]_3
+ArcA_39                           0.00067  [+1]_5
+ArcA_21                           0.00067  [+1]_5
+ArcA_101                          0.00084  2_[+1]_3
+ArcA_80                           0.00084  1_[+1]_4
+ArcA_50                           0.00084  2_[+1]_3
+ArcA_44                           0.00093  3_[+1]_2
+ArcA_89                             0.001  3_[+1]_2
+ArcA_82                             0.001  3_[+1]_2
+ArcA_7                              0.001  6_[+1]_6
+ArcA_24                            0.0011  3_[+1]_2
+ArcA_158                           0.0013  3_[+1]_2
+ArcA_140                           0.0013  3_[+1]_2
+ArcA_37                            0.0013  1_[+1]_4
+ArcA_27                            0.0013  3_[+1]_2
+ArcA_19                            0.0013  2_[+1]_3
+ArcA_10                            0.0013  2_[+1]_3
+ArcA_1                             0.0013  [+1]_5
+ArcA_176                           0.0014  3_[+1]_2
+ArcA_111                           0.0014  2_[+1]_3
+ArcA_25                            0.0014  1_[+1]_4
+ArcA_129                           0.0017  3_[+1]_2
+ArcA_60                            0.0017  3_[+1]_2
+ArcA_139                           0.0019  3_[+1]_2
+ArcA_42                            0.0021  1_[+1]_4
+ArcA_34                            0.0021  3_[+1]_2
+ArcA_128                           0.0023  [+1]_5
+ArcA_63                            0.0023  3_[+1]_2
+ArcA_20                            0.0025  3_[+1]_2
+ArcA_152                           0.0027  3_[+1]_2
+ArcA_121                           0.0027  3_[+1]_2
+ArcA_187                            0.003  3_[+1]_2
+ArcA_132                           0.0032  4_[+1]_1
+ArcA_22                            0.0035  2_[+1]_3
+ArcA_183                           0.0039  2_[+1]_3
+ArcA_159                           0.0039  3_[+1]_2
+ArcA_123                           0.0042  3_[+1]_2
+ArcA_61                            0.0046  2_[+1]_3
+ArcA_168                            0.005  2_[+1]_3
+ArcA_127                            0.005  4_[+1]_1
+ArcA_107                           0.0054  3_[+1]_2
+ArcA_184                           0.0059  5_[+1]
+ArcA_164                           0.0059  [+1]_5
+ArcA_41                            0.0059  2_[+1]_3
+ArcA_31                            0.0069  4_[+1]_1
+ArcA_84                            0.0074  3_[+1]_2
+ArcA_54                            0.0074  3_[+1]_2
+ArcA_177                            0.008  3_[+1]_2
+ArcA_0                              0.008  5_[+1]
+ArcA_186                             0.01  3_[+1]_2
+ArcA_118                            0.013  4_[+1]_1
+ArcA_188                            0.013  4_[+1]_1
+ArcA_161                            0.013  3_[+1]_2
+ArcA_146                            0.013  [+1]_5
+ArcA_145                            0.015  5_[+1]
+ArcA_125                            0.015  4_[+1]_1
+ArcA_174                            0.018  2_[+1]_3
+ArcA_190                            0.019  4_[+1]_1
+ArcA_185                            0.019  1_[+1]_4
+ArcA_182                             0.02  [+1]_5
+ArcA_126                            0.022  [+1]_5
+ArcA_124                            0.022  3_[+1]_2
+ArcA_3                              0.022  [+1]_5
+ArcA_172                            0.023  4_[+1]_1
+ArcA_9                              0.026  [+1]
+ArcA_163                            0.029  3_[+1]_2
+ArcA_181                            0.031  5_[+1]
+ArcA_109                            0.035  3_[+1]_2
+ArcA_117                            0.037  [+1]_5
+ArcA_115                            0.037  4_[+1]_1
+ArcA_114                             0.06  5_[+1]
+ArcA_167                            0.077  [+1]_5
+ArcA_173                             0.13  3_[+1]_2
+ArcA_148                             0.14  3_[+1]_2
+ArcA_144                             0.18  [+1]_5
+ArcA_143                             0.19  2_[+1]_3
+ArcA_6                               0.21  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTWAMWWWWWWDTWAM MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF KTWAMWWWWWWDTWAM width=16 seqs=191
+ArcA_170                 (    4) GTTAATATTATGTTAA  1 
+ArcA_13                  (    4) TTTAAAAAAATGTTAC  1 
+ArcA_171                 (    5) TTAACAATTTTGTAAA  1 
+ArcA_65                  (    2) GTTACATAAATGTAAA  1 
+ArcA_17                  (    3) GTAACTTTTATTTAAC  1 
+ArcA_72                  (    5) GTTAAATATAAGTAAA  1 
+ArcA_96                  (    2) TTAACTTATTTATAAC  1 
+ArcA_77                  (    3) GTTAATTTAATGTTAA  1 
+ArcA_4                   (    3) ATAACAATTATTTTAC  1 
+ArcA_189                 (    3) TTTAAAAATTGTTAAC  1 
+ArcA_92                  (    1) GTTAACTATATGTAAA  1 
+ArcA_103                 (    2) ATTACTTTTATTTAAC  1 
+ArcA_94                  (    5) GTTATTTATATGTTAA  1 
+ArcA_93                  (    5) GTTAATAATAAGTAAT  1 
+ArcA_179                 (    3) ATTACATAAATTTAAC  1 
+ArcA_38                  (    2) GTAACTTAAAAATAAC  1 
+ArcA_23                  (    4) ATAACAATTAATTTAC  1 
+ArcA_14                  (    4) GTTTCTAATATGTTAC  1 
+ArcA_180                 (    4) GTAAAAAAATGGTTAA  1 
+ArcA_137                 (    4) GTTAACTAAATGTTAA  1 
+ArcA_131                 (    2) GTAATTATATTGTAAA  1 
+ArcA_178                 (    3) TTTACAAATCAGTAAC  1 
+ArcA_98                  (    5) GTTAATTAATCGTTAC  1 
+ArcA_53                  (    3) GTTAAATTGATGTAAC  1 
+ArcA_28                  (    5) GTTACTAATTTGTTGC  1 
+ArcA_104                 (    2) TTTACAATTTCATTAC  1 
+ArcA_36                  (    2) TTTACAGTAATGTAAC  1 
+ArcA_149                 (    4) GTTGATATTATGTAAA  1 
+ArcA_156                 (    3) ATAACCATTAATTAAC  1 
+ArcA_119                 (    4) GTTGCTTTTTTGTAAA  1 
+ArcA_110                 (    3) TTTGCATATTTTTAAC  1 
+ArcA_58                  (    3) GTTACACAAAAGTTAA  1 
+ArcA_11                  (    3) GTTACGTTTAGGTAAC  1 
+ArcA_122                 (    5) ATAACATTTAGTTAAC  1 
+ArcA_99                  (    3) GTTTATTTTATGTAAA  1 
+ArcA_59                  (    5) TTCACAAATAATTAAC  1 
+ArcA_5                   (    5) GTAACAAATCATTTAA  1 
+ArcA_95                  (    5) GTAAATAATTCGTTAT  1 
+ArcA_78                  (    4) ATAAAAATTTGTTAAA  1 
+ArcA_73                  (    5) GTAAATATATTGTTGC  1 
+ArcA_48                  (    3) ATAAAATAATTGTAAT  1 
+ArcA_155                 (    4) ATTAACAATTGGTTAA  1 
+ArcA_154                 (    2) ATTAACAATTGGTTAA  1 
+ArcA_151                 (    4) GTTAATAATAATTATA  1 
+ArcA_102                 (    5) GTAAAAAAGTTGTAAT  1 
+ArcA_91                  (    6) TTAAAATTTTATTGAC  1 
+ArcA_68                  (    4) TTAACAATTTTGCAAA  1 
+ArcA_56                  (    2) TTTATACTTTTTTTAC  1 
+ArcA_47                  (    3) GTAATTATAAGGTTAA  1 
+ArcA_12                  (    4) GTTACTTAAGTGTTAC  1 
+ArcA_100                 (    3) GTAAACAAATTGTGAA  1 
+ArcA_35                  (    1) GATAATTATTTGTTAA  1 
+ArcA_29                  (    3) TTAAACATAAAATTAA  1 
+ArcA_16                  (    3) GCTACATTTTTATAAC  1 
+ArcA_112                 (    4) GTTATCAAATCGTTAC  1 
+ArcA_150                 (    5) TTAACAAAAATAAAAC  1 
+ArcA_32                  (    4) GTTACCTTATTGAAAC  1 
+ArcA_160                 (    4) GTTAAATAATTGTTTT  1 
+ArcA_153                 (    4) ATTAATCAAAATTAAC  1 
+ArcA_116                 (    3) TTAACGAAGTTTTTAC  1 
+ArcA_135                 (    4) GTTAATTATAATATAA  1 
+ArcA_106                 (    4) ATTTCAATAAATTTAC  1 
+ArcA_136                 (    5) ATAATTATAAGTTAAC  1 
+ArcA_79                  (    4) TTAACCTTTTCTTAAA  1 
+ArcA_141                 (    4) ATATCATTTAATTAAC  1 
+ArcA_85                  (    5) GTCAAAGAAATGTAAC  1 
+ArcA_43                  (    3) GTAAACATATTGCTAA  1 
+ArcA_26                  (    5) GTTGTTTTAATGTAAA  1 
+ArcA_8                   (    7) GTCACGTTTTTATAAC  1 
+ArcA_165                 (    2) GTAATGATTTTGTGAA  1 
+ArcA_130                 (    4) GTTAATTAAATGATAT  1 
+ArcA_75                  (    5) ATCAATAATTCGTTAC  1 
+ArcA_62                  (    3) GTTAATGTTTTGTTAG  1 
+ArcA_49                  (    2) ATAACGATGTTTTAAC  1 
+ArcA_166                 (    4) TCAACAAAGTTGTTAC  1 
+ArcA_69                  (    4) ATAATCAATTGTTAAA  1 
+ArcA_52                  (    4) TTAACAATTAGATCAC  1 
+ArcA_45                  (    3) TTTATCATTTCATTAA  1 
+ArcA_87                  (    3) GTTGCTTTTATGTATA  1 
+ArcA_51                  (    5) GTAACCTATTAGTTTT  1 
+ArcA_97                  (    5) GTTACTAAGACGTGAC  1 
+ArcA_88                  (    3) GTTACCATTCTGTTGC  1 
+ArcA_81                  (    2) TTTACGCTTTGATAAC  1 
+ArcA_71                  (    5) GTTTCAAAATTGTGAT  1 
+ArcA_57                  (    2) CTAAACATTAGTTAAA  1 
+ArcA_162                 (    4) GTTAATCTTAGGTGAA  1 
+ArcA_138                 (    1) TTTGAGTTTTTATTAA  1 
+ArcA_133                 (    4) GTTACTATTTAAAATC  1 
+ArcA_113                 (    4) TTTAAATTTTGACTAA  1 
+ArcA_74                  (    5) GTTAATGAAATGTTGA  1 
+ArcA_40                  (    2) ATATCAATAAGATAAC  1 
+ArcA_30                  (    4) TTAACATGTTTGCAAC  1 
+ArcA_175                 (    3) TTAACAATGTATTCAC  1 
+ArcA_169                 (    4) TTTATCAATATAATAA  1 
+ArcA_108                 (    4) CTAACAAGAAAATTAC  1 
+ArcA_70                  (    4) TTAACAAAGTGATGAC  1 
+ArcA_2                   (    5) ATTTTAATTAATTTAT  1 
+ArcA_86                  (    5) GCAAACACTTTGTTAC  1 
+ArcA_157                 (    4) GTTAATAACCATTAAT  1 
+ArcA_147                 (    4) GCTAACAAAATGTTGC  1 
+ArcA_83                  (    4) TTAACACTTCCATAAC  1 
+ArcA_67                  (    6) GTATCCGTTATGTTAT  1 
+ArcA_55                  (    5) GTTTTTTCAATGTTAC  1 
+ArcA_46                  (    3) TTTAATTAACTGTTTT  1 
+ArcA_33                  (    4) TAAACATAAATGTCAC  1 
+ArcA_15                  (    3) ATAATATTTCCTTTAC  1 
+ArcA_105                 (    2) TTCTCAATTACTTAAC  1 
+ArcA_64                  (    3) GTAAATAACATGCAAT  1 
+ArcA_18                  (    4) GTTAAATCTTGGTTTA  1 
+ArcA_142                 (    4) TTAACTATAATGAACC  1 
+ArcA_90                  (    2) TTAACGCGTAATTTAC  1 
+ArcA_66                  (    6) GTTATCGAAGTGTTAC  1 
+ArcA_134                 (    4) GTTACGAATTTGATTT  1 
+ArcA_120                 (    1) TTAGCTATAAATTGAT  1 
+ArcA_76                  (    3) GTTAATATTTTGCGAG  1 
+ArcA_39                  (    1) GCAAACAAAACATTAA  1 
+ArcA_21                  (    1) TTCATCAAACTGTTAA  1 
+ArcA_101                 (    3) GTTGATGATGTGTTAA  1 
+ArcA_80                  (    2) TTAACACACCATTTAC  1 
+ArcA_50                  (    3) GTTAAAAAAGTGTGTA  1 
+ArcA_44                  (    4) GAAACCTTAATTAAAC  1 
+ArcA_89                  (    4) GTTATCAAAATGTTGG  1 
+ArcA_82                  (    4) CTAACTTAGTGTTGAC  1 
+ArcA_7                   (    7) ACTACGCTTTATTAAC  1 
+ArcA_24                  (    4) ACATCAATTTGATAAC  1 
+ArcA_158                 (    4) GTTAATTAAGAGCTAT  1 
+ArcA_140                 (    4) ATTGATAATCATTTTC  1 
+ArcA_37                  (    2) ATATCAACTTGTTAAA  1 
+ArcA_27                  (    4) ATCACAATAAGAAAAC  1 
+ArcA_19                  (    3) TTCAACATTTTATACA  1 
+ArcA_10                  (    3) GCAACGCTTTGATAAC  1 
+ArcA_1                   (    1) TTACTTTATAATTAAC  1 
+ArcA_176                 (    4) GTTAATTAACAATGTA  1 
+ArcA_111                 (    3) GAAACATACTTGCAAC  1 
+ArcA_25                  (    2) GCAACGTCTTATTAAC  1 
+ArcA_129                 (    4) GGTTCATTATAGTTAA  1 
+ArcA_60                  (    4) TTTAACAGGTCATAAA  1 
+ArcA_139                 (    4) ATTGAAACATGATTAA  1 
+ArcA_42                  (    2) TTCACATTCTGTTGAC  1 
+ArcA_34                  (    4) CTCACACATTTTAAAC  1 
+ArcA_128                 (    1) ATTGAAAATGATTATC  1 
+ArcA_63                  (    4) GTTGAAAAAACGATTC  1 
+ArcA_20                  (    4) CAAACATATAAATCAC  1 
+ArcA_152                 (    4) CAAACTGATTATTAAT  1 
+ArcA_121                 (    4) TTTAATTAATTACACT  1 
+ArcA_187                 (    4) CATAAGTTGATGTAAA  1 
+ArcA_132                 (    5) TTTAATAGATAAACAC  1 
+ArcA_22                  (    3) GTTTATTAGTTGTATG  1 
+ArcA_183                 (    3) TATTCACATCATTAAC  1 
+ArcA_159                 (    4) ACAAAACTTGATTAAC  1 
+ArcA_123                 (    4) GTTATTGACAGTTAGC  1 
+ArcA_61                  (    3) GTGAATAAAAGGTTGC  1 
+ArcA_168                 (    3) ACAAATCATTAACAAA  1 
+ArcA_127                 (    5) TTTTGCTATAAATATC  1 
+ArcA_107                 (    4) CACTCATTTTATTAAC  1 
+ArcA_184                 (    6) TTTGTCAAAATGTGCA  1 
+ArcA_164                 (    1) TTAATTGTAATGATTT  1 
+ArcA_41                  (    3) CACACATGTTATTTAC  1 
+ArcA_31                  (    5) GTAATATATACGTGGG  1 
+ArcA_84                  (    4) CCAGCATATAATCAAC  1 
+ArcA_54                  (    4) CTCAATGTTAAATTGA  1 
+ArcA_177                 (    4) GTTACGTTAAAAATTG  1 
+ArcA_0                   (    6) TGTTCATTATATTTTC  1 
+ArcA_186                 (    4) GTTGAAACGTGATAGC  1 
+ArcA_118                 (    5) TTTTTTATGTTGCTTT  1 
+ArcA_188                 (    5) AATAAAATCCATTTGC  1 
+ArcA_161                 (    4) TTTGTTGAATGATTGT  1 
+ArcA_146                 (    1) ACAAACGGTTAATTAT  1 
+ArcA_145                 (    6) GTTGTGTAACAATGTC  1 
+ArcA_125                 (    5) ATATCGGTAATTTGTA  1 
+ArcA_174                 (    3) TTCACCGAAAACAAAC  1 
+ArcA_190                 (    5) ATTATCCCTACACAAC  1 
+ArcA_185                 (    2) TCTGTGTAATAAATAA  1 
+ArcA_182                 (    1) CAAGTTAAATATTTCC  1 
+ArcA_126                 (    1) TTATTTGGATAATCAA  1 
+ArcA_124                 (    4) GTTAGTATCTCGTCGC  1 
+ArcA_3                   (    1) CTATGTTTTAATTACA  1 
+ArcA_172                 (    5) GTAATACGCCGTTAAT  1 
+ArcA_9                   (    1) TTATGTTAATAAAAAG  1 
+ArcA_163                 (    4) GTTAATCTGGACCTAC  1 
+ArcA_181                 (    6) TTTAGTCCACTTTTTA  1 
+ArcA_109                 (    4) CCATTTTTATCGCTAA  1 
+ArcA_117                 (    1) CATGCGAATTAACGAA  1 
+ArcA_115                 (    5) GAAAGGTGATTATCAC  1 
+ArcA_114                 (    6) TGAGAAAGGTGATTAT  1 
+ArcA_167                 (    1) GTAGTATTGACAAGCC  1 
+ArcA_173                 (    4) TTTGTGAACCACTTGT  1 
+ArcA_148                 (    4) GTTGTGATCAAGCCTG  1 
+ArcA_144                 (    1) GAACCGAGGTCACAAC  1 
+ArcA_143                 (    3) ATCGCGCGTTTACACT  1 
+ArcA_6                   (    1) CAAATCGATAACAACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTWAMWWWWWWDTWAM MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 1146 bayes= 2.32193 E= 2.0e-277 
+   -47   -160     83     23 
+  -155   -169   -401    174 
+    73   -169   -560    105 
+   158   -460    -96    -97 
+    55     74   -301    -42 
+    58    -56   -108     47 
+    89   -135   -151     53 
+    92   -243   -190     77 
+    53   -214   -143    100 
+    77   -151   -260     87 
+    35   -128    -65     77 
+     0   -360     77     28 
+  -123   -135  -1422    169 
+    84   -243   -135     75 
+   162   -243   -169   -103 
+    38     98   -260    -85 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTWAMWWWWWWDTWAM MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 191 E= 2.0e-277 
+ 0.178010  0.083770  0.450262  0.287958 
+ 0.083770  0.078534  0.015707  0.821990 
+ 0.408377  0.078534  0.005236  0.507853 
+ 0.732984  0.010471  0.130890  0.125654 
+ 0.361257  0.424084  0.031414  0.183246 
+ 0.366492  0.172775  0.120419  0.340314 
+ 0.455497  0.099476  0.089005  0.356021 
+ 0.465969  0.047120  0.068063  0.418848 
+ 0.356021  0.057592  0.094241  0.492147 
+ 0.418848  0.089005  0.041885  0.450262 
+ 0.314136  0.104712  0.162304  0.418848 
+ 0.246073  0.020942  0.434555  0.298429 
+ 0.104712  0.099476  0.000000  0.795812 
+ 0.439791  0.047120  0.099476  0.413613 
+ 0.753927  0.047120  0.078534  0.120419 
+ 0.319372  0.502618  0.041885  0.136126 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KTWAMWWWWWWDTWAM MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GT]T[TA]A[CA][AT][AT][AT][TA][TA][TA][GTA]T[AT]A[CA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.69 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ArcA_0                           4.72e-02  21
+ArcA_1                           7.55e-03  21
+ArcA_2                           2.05e-03  21
+ArcA_3                           1.22e-01  21
+ArcA_4                           6.68e-06  2_[+1(1.11e-06)]_3
+ArcA_5                           6.76e-05  4_[+1(1.13e-05)]_1
+ArcA_6                           2.10e-01  16
+ArcA_7                           1.33e-02  28
+ArcA_8                           4.96e-04  6_[+1(5.51e-05)]_2
+ArcA_9                           2.60e-02  16
+ArcA_10                          7.55e-03  21
+ArcA_11                          4.72e-05  2_[+1(7.87e-06)]_3
+ArcA_12                          9.56e-05  3_[+1(1.59e-05)]_2
+ArcA_13                          9.24e-07  3_[+1(1.54e-07)]_2
+ArcA_14                          1.24e-05  3_[+1(2.07e-06)]_2
+ArcA_15                          2.59e-03  21
+ArcA_16                          1.13e-04  2_[+1(1.88e-05)]_3
+ArcA_17                          2.49e-06  2_[+1(4.16e-07)]_3
+ArcA_18                          2.90e-03  21
+ArcA_19                          7.55e-03  21
+ArcA_20                          1.48e-02  21
+ArcA_21                          4.04e-03  21
+ArcA_22                          2.11e-02  21
+ArcA_23                          1.24e-05  3_[+1(2.07e-06)]_2
+ArcA_24                          6.82e-03  21
+ArcA_25                          8.34e-03  21
+ArcA_26                          3.31e-04  4_[+1(5.51e-05)]_1
+ArcA_27                          7.55e-03  21
+ArcA_28                          2.23e-05  4_[+1(3.71e-06)]_1
+ArcA_29                          1.13e-04  2_[+1(1.88e-05)]_3
+ArcA_30                          9.79e-04  21
+ArcA_31                          4.05e-02  21
+ArcA_32                          1.83e-04  3_[+1(3.04e-05)]_2
+ArcA_33                          2.59e-03  21
+ArcA_34                          1.23e-02  21
+ArcA_35                          1.13e-04  [+1(1.88e-05)]_5
+ArcA_36                          3.26e-05  1_[+1(5.43e-06)]_4
+ArcA_37                          7.55e-03  21
+ArcA_38                          1.24e-05  1_[+1(2.07e-06)]_4
+ArcA_39                          4.04e-03  21
+ArcA_40                          9.79e-04  21
+ArcA_41                          3.46e-02  21
+ArcA_42                          1.23e-02  21
+ArcA_43                          3.31e-04  2_[+1(5.51e-05)]_3
+ArcA_44                          5.56e-03  21
+ArcA_45                          5.77e-04  2_[+1(9.62e-05)]_3
+ArcA_46                          2.59e-03  21
+ArcA_47                          9.56e-05  2_[+1(1.59e-05)]_3
+ArcA_48                          8.06e-05  2_[+1(1.34e-05)]_3
+ArcA_49                          5.04e-04  1_[+1(8.39e-05)]_4
+ArcA_50                          5.00e-03  21
+ArcA_51                          6.60e-04  21
+ArcA_52                          5.77e-04  3_[+1(9.62e-05)]_2
+ArcA_53                          2.23e-05  2_[+1(3.71e-06)]_3
+ArcA_54                          4.38e-02  21
+ArcA_55                          2.59e-03  21
+ArcA_56                          9.56e-05  1_[+1(1.59e-05)]_4
+ArcA_57                          7.54e-04  21
+ArcA_58                          4.72e-05  2_[+1(7.87e-06)]_3
+ArcA_59                          6.76e-05  4_[+1(1.13e-05)]_1
+ArcA_60                          1.01e-02  21
+ArcA_61                          2.71e-02  21
+ArcA_62                          5.04e-04  2_[+1(8.39e-05)]_3
+ArcA_63                          1.35e-02  21
+ArcA_64                          2.90e-03  21
+ArcA_65                          2.49e-06  1_[+1(4.16e-07)]_4
+ArcA_66                          3.24e-03  21
+ArcA_67                          2.59e-03  21
+ArcA_68                          9.56e-05  3_[+1(1.59e-05)]_2
+ArcA_69                          5.77e-04  3_[+1(9.62e-05)]_2
+ArcA_70                          1.26e-03  21
+ArcA_71                          7.54e-04  21
+ArcA_72                          3.28e-06  4_[+1(5.46e-07)]_1
+ArcA_73                          8.06e-05  4_[+1(1.34e-05)]_1
+ArcA_74                          9.79e-04  21
+ArcA_75                          5.04e-04  4_[+1(8.39e-05)]_1
+ArcA_76                          4.04e-03  21
+ArcA_77                          5.34e-06  2_[+1(8.90e-07)]_3
+ArcA_78                          8.06e-05  3_[+1(1.34e-05)]_2
+ArcA_79                          2.86e-04  3_[+1(4.77e-05)]_2
+ArcA_80                          5.00e-03  21
+ArcA_81                          7.54e-04  21
+ArcA_82                          6.16e-03  21
+ArcA_83                          2.59e-03  21
+ArcA_84                          4.38e-02  21
+ArcA_85                          3.31e-04  4_[+1(5.51e-05)]_1
+ArcA_86                          2.31e-03  21
+ArcA_87                          6.60e-04  21
+ArcA_88                          7.54e-04  21
+ArcA_89                          6.16e-03  21
+ArcA_90                          3.24e-03  21
+ArcA_91                          9.56e-05  5_[+1(1.59e-05)]
+ArcA_92                          8.26e-06  [+1(1.38e-06)]_5
+ArcA_93                          1.01e-05  4_[+1(1.69e-06)]_1
+ArcA_94                          1.01e-05  4_[+1(1.69e-06)]_1
+ArcA_95                          8.06e-05  4_[+1(1.34e-05)]_1
+ArcA_96                          5.34e-06  1_[+1(8.90e-07)]_4
+ArcA_97                          7.54e-04  21
+ArcA_98                          2.23e-05  4_[+1(3.71e-06)]_1
+ArcA_99                          6.76e-05  2_[+1(1.13e-05)]_3
+ArcA_100                         1.13e-04  2_[+1(1.88e-05)]_3
+ArcA_101                         5.00e-03  21
+ArcA_102                         9.56e-05  4_[+1(1.59e-05)]_1
+ArcA_103                         1.01e-05  1_[+1(1.69e-06)]_4
+ArcA_104                         2.70e-05  1_[+1(4.49e-06)]_4
+ArcA_105                         2.90e-03  21
+ArcA_106                         2.47e-04  3_[+1(4.12e-05)]_2
+ArcA_107                         3.20e-02  21
+ArcA_108                         1.26e-03  21
+ArcA_109                         1.93e-01  21
+ArcA_110                         4.72e-05  2_[+1(7.87e-06)]_3
+ArcA_111                         8.34e-03  21
+ArcA_112                         1.33e-04  3_[+1(2.22e-05)]_2
+ArcA_113                         9.79e-04  21
+ArcA_114                         3.11e-01  21
+ArcA_115                         2.03e-01  21
+ArcA_116                         2.13e-04  2_[+1(3.55e-05)]_3
+ArcA_117                         2.03e-01  21
+ArcA_118                         7.29e-02  21
+ArcA_119                         4.72e-05  3_[+1(7.87e-06)]_2
+ArcA_120                         4.04e-03  21
+ArcA_121                         1.62e-02  21
+ArcA_122                         6.76e-05  4_[+1(1.13e-05)]_1
+ArcA_123                         2.50e-02  21
+ArcA_124                         1.22e-01  21
+ArcA_125                         8.92e-02  21
+ArcA_126                         1.22e-01  21
+ArcA_127                         2.95e-02  21
+ArcA_128                         1.35e-02  21
+ArcA_129                         1.01e-02  21
+ArcA_130                         4.39e-04  3_[+1(7.31e-05)]_2
+ArcA_131                         1.51e-05  1_[+1(2.52e-06)]_4
+ArcA_132                         1.93e-02  21
+ArcA_133                         9.79e-04  21
+ArcA_134                         4.04e-03  21
+ArcA_135                         2.47e-04  3_[+1(4.12e-05)]_2
+ArcA_136                         2.86e-04  4_[+1(4.77e-05)]_1
+ArcA_137                         1.51e-05  3_[+1(2.52e-06)]_2
+ArcA_138                         8.60e-04  21
+ArcA_139                         1.12e-02  21
+ArcA_140                         7.55e-03  21
+ArcA_141                         3.31e-04  3_[+1(5.51e-05)]_2
+ArcA_142                         3.24e-03  21
+ArcA_143                         7.18e-01  21
+ArcA_144                         7.05e-01  21
+ArcA_145                         8.92e-02  21
+ArcA_146                         7.80e-02  21
+ArcA_147                         2.59e-03  21
+ArcA_148                         6.06e-01  21
+ArcA_149                         3.93e-05  3_[+1(6.54e-06)]_2
+ArcA_150                         1.83e-04  4_[+1(3.04e-05)]_1
+ArcA_151                         9.56e-05  3_[+1(1.59e-05)]_2
+ArcA_152                         1.62e-02  21
+ArcA_153                         2.13e-04  3_[+1(3.55e-05)]_2
+ArcA_154                         9.56e-05  1_[+1(1.59e-05)]_4
+ArcA_155                         9.56e-05  3_[+1(1.59e-05)]_2
+ArcA_156                         4.72e-05  2_[+1(7.87e-06)]_3
+ArcA_157                         2.59e-03  21
+ArcA_158                         7.55e-03  21
+ArcA_159                         2.29e-02  21
+ArcA_160                         2.13e-04  3_[+1(3.55e-05)]_2
+ArcA_161                         7.80e-02  21
+ArcA_162                         8.60e-04  21
+ArcA_163                         1.64e-01  21
+ArcA_164                         3.46e-02  21
+ArcA_165                         4.39e-04  1_[+1(7.31e-05)]_4
+ArcA_166                         5.77e-04  3_[+1(9.62e-05)]_2
+ArcA_167                         3.52e-01  21
+ArcA_168                         2.95e-02  21
+ArcA_169                         1.26e-03  21
+ArcA_170                         9.24e-07  3_[+1(1.54e-07)]_2
+ArcA_171                         1.84e-06  4_[+1(3.07e-07)]_1
+ArcA_172                         1.30e-01  21
+ArcA_173                         5.61e-01  21
+ArcA_174                         1.02e-01  21
+ArcA_175                         1.26e-03  21
+ArcA_176                         8.34e-03  21
+ArcA_177                         4.72e-02  21
+ArcA_178                         2.23e-05  2_[+1(3.71e-06)]_3
+ArcA_179                         1.24e-05  2_[+1(2.07e-06)]_3
+ArcA_180                         1.51e-05  3_[+1(2.52e-06)]_2
+ArcA_181                         1.73e-01  21
+ArcA_182                         1.15e-01  21
+ArcA_183                         2.29e-02  21
+ArcA_184                         3.46e-02  21
+ArcA_185                         1.08e-01  21
+ArcA_186                         5.90e-02  21
+ArcA_187                         1.77e-02  21
+ArcA_188                         7.80e-02  21
+ArcA_189                         8.26e-06  2_[+1(1.38e-06)]_3
+ArcA_190                         1.08e-01  21
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

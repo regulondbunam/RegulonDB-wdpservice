@@ -1,0 +1,316 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= CysB/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CysB_0                   1.0000     48  CysB_1                   1.0000     48  
+CysB_2                   1.0000     48  CysB_3                   1.0000     48  
+CysB_4                   1.0000     48  CysB_5                   1.0000     48  
+CysB_6                   1.0000     48  CysB_7                   1.0000     48  
+CysB_8                   1.0000     48  CysB_9                   1.0000     48  
+CysB_10                  1.0000     52  CysB_11                  1.0000     46  
+CysB_12                  1.0000     48  CysB_13                  1.0000     48  
+CysB_14                  1.0000     47  CysB_15                  1.0000     48  
+CysB_16                  1.0000     48  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme CysB/ri_sites.fasta -oc CysB/./ -mod oops -nmotifs 1 -minw 39 -maxw 45 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           39    maxw=           45
+nsites: minsites=       17    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             817    N=              17
+sample: seed=           10    hsfrac=          0
+        searchsize=    817    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.282 C 0.174 G 0.153 T 0.392 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW MEME-1	width =  39  sites =  17  llr = 225  E-value = 1.6e-019
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  225:44212122342541313181122266411145243
+pos.-specific     C  ::::144411411212111222:14444:1254::21:1
+probability       G  2315:122:112512::::412:124111212241:111
+matrix            T  554552247735135268625528214421422562665
+
+         bits    2.0                                        
+                 1.8                                        
+                 1.6                                        
+                 1.4                                        
+Relative         1.2                  *    *                
+Entropy          1.0    *             *    **               
+(19.1 bits)      0.8    *    *       **    **    *     *  * 
+                 0.6 *****   **     ****   **    *    *** * 
+                 0.4 *****   ** *  *****   **    ** * ******
+                 0.2 ****** ********************************
+                 0.0 ---------------------------------------
+
+Multilevel           TTATTACCTTCTGATATTTGTTATCCTTAATCCTTATTT
+consensus            AGTGACAT  TAATACA ACA T GGCCTGATGGAC AA
+sequence             G     G   A    T   T    TA      T  T   
+                                                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                             Site                
+-------------             ----- ---------            ---------------------------------------
+CysB_0                        5  2.58e-16       tctG TTATACCTTTCTGATATTTGTTATCGCCGATCCGTCTTT CTccc     
+CysB_13                       8  1.11e-11    aaaCAGG TTAGTCGATTTGGTTATTAGTTATCGCTATCCCGTCTTt aa        
+CysB_11                       5  1.78e-11       tcaT TATTTCCCTTCTGTATATAGATATGCTAAATCCTTACTT ccg       
+CysB_14                       5  3.18e-10       gttC TTATTCCCTTTTCAACTTCCAAATCACCAAACGGTATAT Aaaa      
+CysB_12                       2  3.18e-10          t taAGCACTTTTTGATATTAGCTTTGCCAAATCGTTATTC CGTTAagg  
+CysB_10                       8  2.02e-08    ataTAGT GGTTATAGTTAGCACCTTTTTTATTATTAAATCGTATTA GTCacc    
+CysB_3                        5  3.06e-08       tagG GTATTGGGTTATGCTATTTGTCATCCTTTTATTTACGAT AAtgc     
+CysB_2                        5  1.74e-07       gggA ATAGTCCCCTATGAACTTTATAATTCCTACCGTGACTTT CTtaa     
+CysB_8                        5  5.40e-07       gaaC GGAGTAATTGCATATTTAATCTTTCCTTAGCCGTTTTTT TGcta     
+CysB_5                        4  1.21e-06        act GTTGATGCTTCTGCTAATTCATTATTTATATTTATAATT TCAatt    
+CysB_7                        8  4.26e-06    aatCATC TGTGCGATAACGACTAATTCTTTTAATGAATGTTTTTAt tc        
+CysB_9                        1  6.01e-06          . tagTTTTATTATATGTATTGATATTGATAGAAATAATGA AGTAATaaa 
+CysB_16                       3  1.15e-05         tc aGATAATCCCCAATGACCTTTCATCCTCTATTCTTAAAA TAGTcct   
+CysB_6                        6  2.38e-05      tcgTG ATTTTAGCAATAGTGATTCAGGAGGGCCAAACCGAAGAA Cagc      
+CysB_15                       8  2.67e-05    tttATAT TTGGAATTTTCTTGTCTCTCCGACAGACTGACCGAATTg tt        
+CysB_1                        2  4.64e-05          a atTGAAATATTCAATAATAGTGATGAATGGGCAAATCAA CTAAAaca  
+CysB_4                        7  6.03e-05     gcgTGA TGTTACCGTGGAAGATATTTACATCGGCAATGGTGTATC gga       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CysB_0                            2.6e-16  4_[+1]_5
+CysB_13                           1.1e-11  7_[+1]_2
+CysB_11                           1.8e-11  4_[+1]_3
+CysB_14                           3.2e-10  4_[+1]_4
+CysB_12                           3.2e-10  1_[+1]_8
+CysB_10                             2e-08  7_[+1]_6
+CysB_3                            3.1e-08  4_[+1]_5
+CysB_2                            1.7e-07  4_[+1]_5
+CysB_8                            5.4e-07  4_[+1]_5
+CysB_5                            1.2e-06  3_[+1]_6
+CysB_7                            4.3e-06  7_[+1]_2
+CysB_9                              6e-06  [+1]_9
+CysB_16                           1.2e-05  2_[+1]_7
+CysB_6                            2.4e-05  5_[+1]_4
+CysB_15                           2.7e-05  7_[+1]_2
+CysB_1                            4.6e-05  1_[+1]_8
+CysB_4                              6e-05  6_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW width=39 seqs=17
+CysB_0                   (    5) TTATACCTTTCTGATATTTGTTATCGCCGATCCGTCTTT  1 
+CysB_13                  (    8) TTAGTCGATTTGGTTATTAGTTATCGCTATCCCGTCTTT  1 
+CysB_11                  (    5) TATTTCCCTTCTGTATATAGATATGCTAAATCCTTACTT  1 
+CysB_14                  (    5) TTATTCCCTTTTCAACTTCCAAATCACCAAACGGTATAT  1 
+CysB_12                  (    2) TAAGCACTTTTTGATATTAGCTTTGCCAAATCGTTATTC  1 
+CysB_10                  (    8) GGTTATAGTTAGCACCTTTTTTATTATTAAATCGTATTA  1 
+CysB_3                   (    5) GTATTGGGTTATGCTATTTGTCATCCTTTTATTTACGAT  1 
+CysB_2                   (    5) ATAGTCCCCTATGAACTTTATAATTCCTACCGTGACTTT  1 
+CysB_8                   (    5) GGAGTAATTGCATATTTAATCTTTCCTTAGCCGTTTTTT  1 
+CysB_5                   (    4) GTTGATGCTTCTGCTAATTCATTATTTATATTTATAATT  1 
+CysB_7                   (    8) TGTGCGATAACGACTAATTCTTTTAATGAATGTTTTTAT  1 
+CysB_9                   (    1) TAGTTTTATTATATGTATTGATATTGATAGAAATAATGA  1 
+CysB_16                  (    3) AGATAATCCCCAATGACCTTTCATCCTCTATTCTTAAAA  1 
+CysB_6                   (    6) ATTTTAGCAATAGTGATTCAGGAGGGCCAAACCGAAGAA  1 
+CysB_15                  (    8) TTGGAATTTTCTTGTCTCTCCGACAGACTGACCGAATTG  1 
+CysB_1                   (    2) ATTGAAATATTCAATAATAGTGATGAATGGGCAAATCAA  1 
+CysB_4                   (    7) TGTTACCGTGGAAGATATTTACATCGGCAATGGTGTATC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 39 n= 171 bayes= 3.17932 E= 1.6e-019 
+    -6  -1073    -11    111 
+   -48  -1073     21    111 
+    94  -1073   -111     74 
+ -1073  -1073     89    111 
+    74   -111  -1073     94 
+    52     47   -111    -48 
+    -6     47    -11    -48 
+  -106     47    -53     52 
+   -48   -111  -1073    152 
+  -106   -211   -111    152 
+    -6     70   -211     26 
+    -6   -211    -53    111 
+    26   -111     89   -106 
+    74    -53   -111     26 
+    -6   -211    -53    111 
+   111    -11  -1073     -6 
+    52   -211  -1073    126 
+  -206   -111  -1073    174 
+    26   -111  -1073    126 
+  -106    -11     70     -6 
+    26    -53   -211     94 
+  -106    -53    -53    111 
+   164  -1073  -1073     -6 
+  -206   -211   -211    174 
+  -106     70    -11     -6 
+    -6     47     47   -206 
+   -48     47   -211     74 
+   -48     47   -211     74 
+   139  -1073   -111     -6 
+   126   -211    -11   -106 
+    52    -53   -211     74 
+  -206    106    -53     -6 
+  -106     70    -11     -6 
+  -106  -1073     70     94 
+    52  -1073   -211    126 
+   111    -11  -1073     -6 
+   -48   -111   -111    126 
+    52  -1073   -211    126 
+    26   -111   -211    111 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 39 nsites= 17 E= 1.6e-019 
+ 0.235294  0.000000  0.235294  0.529412 
+ 0.176471  0.000000  0.294118  0.529412 
+ 0.470588  0.000000  0.117647  0.411765 
+ 0.000000  0.000000  0.470588  0.529412 
+ 0.411765  0.117647  0.000000  0.470588 
+ 0.352941  0.352941  0.117647  0.176471 
+ 0.235294  0.352941  0.235294  0.176471 
+ 0.117647  0.352941  0.176471  0.352941 
+ 0.176471  0.117647  0.000000  0.705882 
+ 0.117647  0.058824  0.117647  0.705882 
+ 0.235294  0.411765  0.058824  0.294118 
+ 0.235294  0.058824  0.176471  0.529412 
+ 0.294118  0.117647  0.470588  0.117647 
+ 0.411765  0.176471  0.117647  0.294118 
+ 0.235294  0.058824  0.176471  0.529412 
+ 0.529412  0.235294  0.000000  0.235294 
+ 0.352941  0.058824  0.000000  0.588235 
+ 0.058824  0.117647  0.000000  0.823529 
+ 0.294118  0.117647  0.000000  0.588235 
+ 0.117647  0.235294  0.411765  0.235294 
+ 0.294118  0.176471  0.058824  0.470588 
+ 0.117647  0.176471  0.176471  0.529412 
+ 0.764706  0.000000  0.000000  0.235294 
+ 0.058824  0.058824  0.058824  0.823529 
+ 0.117647  0.411765  0.235294  0.235294 
+ 0.235294  0.352941  0.352941  0.058824 
+ 0.176471  0.352941  0.058824  0.411765 
+ 0.176471  0.352941  0.058824  0.411765 
+ 0.647059  0.000000  0.117647  0.235294 
+ 0.588235  0.058824  0.235294  0.117647 
+ 0.352941  0.176471  0.058824  0.411765 
+ 0.058824  0.529412  0.176471  0.235294 
+ 0.117647  0.411765  0.235294  0.235294 
+ 0.117647  0.000000  0.411765  0.470588 
+ 0.352941  0.000000  0.058824  0.588235 
+ 0.529412  0.235294  0.000000  0.235294 
+ 0.176471  0.117647  0.117647  0.588235 
+ 0.352941  0.000000  0.058824  0.588235 
+ 0.294118  0.117647  0.058824  0.529412 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TKWKWHNBTTHTRWTAWTWBWTATBVYYAAWCBKWATWW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TAG][TG][AT][TG][TA][AC][CAG][CT]TT[CTA][TA][GA][AT][TA][ACT][TA]T[TA][GCT][TA]T[AT]T[CGT][CGA][TC][TC][AT][AG][TA][CT][CGT][TG][TA][ACT]T[TA][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.28 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CysB_0                           2.58e-15  4_[+1(2.58e-16)]_5
+CysB_1                           4.64e-04  1_[+1(4.64e-05)]_8
+CysB_2                           1.74e-06  4_[+1(1.74e-07)]_5
+CysB_3                           3.06e-07  4_[+1(3.06e-08)]_5
+CysB_4                           6.03e-04  6_[+1(6.03e-05)]_3
+CysB_5                           1.21e-05  3_[+1(1.21e-06)]_6
+CysB_6                           2.38e-04  5_[+1(2.38e-05)]_4
+CysB_7                           4.26e-05  7_[+1(4.26e-06)]_2
+CysB_8                           5.40e-06  4_[+1(5.40e-07)]_5
+CysB_9                           6.01e-05  [+1(6.01e-06)]_9
+CysB_10                          2.83e-07  7_[+1(2.02e-08)]_6
+CysB_11                          1.42e-10  4_[+1(1.78e-11)]_3
+CysB_12                          3.18e-09  1_[+1(3.18e-10)]_8
+CysB_13                          1.11e-10  7_[+1(1.11e-11)]_2
+CysB_14                          2.86e-09  4_[+1(3.18e-10)]_4
+CysB_15                          2.67e-04  7_[+1(2.67e-05)]_2
+CysB_16                          1.15e-04  2_[+1(1.15e-05)]_7
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

@@ -1,0 +1,237 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= TorR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+TorR_0                   1.0000     16  TorR_1                   1.0000     16  
+TorR_2                   1.0000     16  TorR_3                   1.0000     16  
+TorR_4                   1.0000     16  TorR_5                   1.0000     16  
+TorR_6                   1.0000     16  TorR_7                   1.0000     16  
+TorR_8                   1.0000     16  TorR_9                   1.0000     16  
+TorR_10                  1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme TorR/ri_sites.fasta -oc TorR/./ -mod oops -nmotifs 1 -minw 7 -maxw 13 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            7    maxw=           13
+nsites: minsites=       11    maxsites=       11    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             176    N=              11
+sample: seed=           10    hsfrac=          0
+        searchsize=    176    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.347 C 0.17 G 0.131 T 0.352 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAKMTRTWCANAW MEME-1	width =  13  sites =  11  llr = 77  E-value = 5.2e-008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAKMTRTWCANAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  65:4132419275
+pos.-specific     C  22261:::7:221
+probability       G  213:25::1:31:
+matrix            T  :25:6286114:5
+
+         bits    2.0              
+                 1.8              
+                 1.6          *   
+                 1.4       *  *   
+Relative         1.2       *  *   
+Entropy          1.0    *  ** * * 
+(10.1 bits)      0.8    *  ** * * 
+                 0.6 * ******** **
+                 0.4 ********** **
+                 0.2 ********** **
+                 0.0 -------------
+
+Multilevel           AATCTGTTCATAA
+consensus              GA A A  G T
+sequence                          
+                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKMTRTWCANAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+TorR_6                        3  1.39e-05         ag aATATGAACAGat a         
+TorR_10                       1  2.32e-05          . ccgCTGTTCATAT ttg       
+TorR_7                        1  4.54e-05          . attCGATTCACAT tta       
+TorR_5                        3  8.44e-05         ca gATATGAACAGaa t         
+TorR_8                        4  9.29e-05        tat AATCTTTAAAaaa           
+TorR_2                        3  1.14e-04         at gACATATACAGaa a         
+TorR_4                        1  2.54e-04          . aacCAGTTCAACA cgc       
+TorR_9                        3  4.39e-04         gt aAGCCGTTCATcc t         
+TorR_3                        1  4.74e-04          . actCGATTCACGT ttt       
+TorR_0                        1  6.29e-04          . agtCTGTTTTTAA tat       
+TorR_1                        1  9.40e-04          . ctgATTTTGATAT ttt       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKMTRTWCANAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TorR_6                            1.4e-05  2_[+1]_1
+TorR_10                           2.3e-05  [+1]_3
+TorR_7                            4.5e-05  [+1]_3
+TorR_5                            8.4e-05  2_[+1]_1
+TorR_8                            9.3e-05  3_[+1]
+TorR_2                            0.00011  2_[+1]_1
+TorR_4                            0.00025  [+1]_3
+TorR_9                            0.00044  2_[+1]_1
+TorR_3                            0.00047  [+1]_3
+TorR_0                            0.00063  [+1]_3
+TorR_1                            0.00094  [+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKMTRTWCANAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAKMTRTWCANAW width=13 seqs=11
+TorR_6                   (    3) AATATGAACAGAT  1 
+TorR_10                  (    1) CCGCTGTTCATAT  1 
+TorR_7                   (    1) ATTCGATTCACAT  1 
+TorR_5                   (    3) GATATGAACAGAA  1 
+TorR_8                   (    4) AATCTTTAAAAAA  1 
+TorR_2                   (    3) GACATATACAGAA  1 
+TorR_4                   (    1) AACCAGTTCAACA  1 
+TorR_9                   (    3) AAGCCGTTCATCC  1 
+TorR_3                   (    1) ACTCGATTCACGT  1 
+TorR_0                   (    1) AGTCTGTTTTTAA  1 
+TorR_1                   (    1) CTGATTTTGATAT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKMTRTWCANAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 44 bayes= 1.58496 E= 5.2e-008 
+   137    -48    -48  -1010 
+   115    -48   -148    -44 
+ -1010    -48     10    115 
+    56    132  -1010  -1010 
+  -143   -148    -48    137 
+    15  -1010    110    -44 
+   -44  -1010  -1010    173 
+    56  -1010  -1010    137 
+  -143    152   -148   -143 
+   188  -1010  -1010   -143 
+   -44    -48     10     56 
+   156    -48   -148  -1010 
+    89   -148  -1010     89 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKMTRTWCANAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 11 E= 5.2e-008 
+ 0.636364  0.181818  0.181818  0.000000 
+ 0.545455  0.181818  0.090909  0.181818 
+ 0.000000  0.181818  0.272727  0.545455 
+ 0.363636  0.636364  0.000000  0.000000 
+ 0.090909  0.090909  0.181818  0.636364 
+ 0.272727  0.000000  0.545455  0.181818 
+ 0.181818  0.000000  0.000000  0.818182 
+ 0.363636  0.000000  0.000000  0.636364 
+ 0.090909  0.727273  0.090909  0.090909 
+ 0.909091  0.000000  0.000000  0.090909 
+ 0.181818  0.181818  0.272727  0.363636 
+ 0.727273  0.181818  0.090909  0.000000 
+ 0.454545  0.090909  0.000000  0.454545 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAKMTRTWCANAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+AA[TG][CA]T[GA]T[TA]CA[TG]A[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.21 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TorR_0                           2.51e-03  16
+TorR_1                           3.75e-03  16
+TorR_2                           4.55e-04  16
+TorR_3                           1.89e-03  16
+TorR_4                           1.01e-03  16
+TorR_5                           3.37e-04  2_[+1(8.44e-05)]_1
+TorR_6                           5.56e-05  2_[+1(1.39e-05)]_1
+TorR_7                           1.82e-04  [+1(4.54e-05)]_3
+TorR_8                           3.72e-04  3_[+1(9.29e-05)]
+TorR_9                           1.75e-03  16
+TorR_10                          9.28e-05  [+1(2.32e-05)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

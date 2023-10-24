@@ -1,0 +1,283 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= PhoB/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PhoB_0                   1.0000     26  PhoB_1                   1.0000     25  
+PhoB_2                   1.0000     25  PhoB_3                   1.0000     25  
+PhoB_4                   1.0000     25  PhoB_5                   1.0000     25  
+PhoB_6                   1.0000     25  PhoB_7                   1.0000     25  
+PhoB_8                   1.0000     25  PhoB_9                   1.0000     25  
+PhoB_10                  1.0000     25  PhoB_11                  1.0000     25  
+PhoB_12                  1.0000     25  PhoB_13                  1.0000     25  
+PhoB_14                  1.0000     25  PhoB_15                  1.0000     26  
+PhoB_16                  1.0000     25  PhoB_17                  1.0000     25  
+PhoB_18                  1.0000     25  PhoB_19                  1.0000     27  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme PhoB/ri_sites.fasta -oc PhoB/./ -mod oops -nmotifs 1 -minw 16 -maxw 22 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           16    maxw=           22
+nsites: minsites=       20    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             504    N=              20
+sample: seed=           10    hsfrac=          0
+        searchsize=    504    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.327 C 0.212 G 0.143 T 0.317 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGWCABAWWWMTGWMA MEME-1	width =  16  sites =  20  llr = 159  E-value = 6.6e-019
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGWCABAWWWMTGWMA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  223381855441:349
+pos.-specific     C  :126:3211:61:161
+probability       G  161122::11::8:11
+matrix            T  82521414451826::
+
+         bits    2.0                 
+                 1.8                 
+                 1.6                 
+                 1.4                 
+Relative         1.2             *  *
+Entropy          1.0 *   * *    **  *
+(11.4 bits)      0.8 *   * *    *** *
+                 0.6 *   * ** *******
+                 0.4 ** ** **********
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           TGTCATAAATCTGTCA
+consensus             TAA C TTAA TAA 
+sequence                  G          
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGWCABAWWWMTGWMA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+PhoB_6                        5  8.51e-10       tctC TGTCATAAAACTGTCA TAttc     
+PhoB_7                        5  1.45e-07       ttcC TTACATATAACTGTCA CCtgt     
+PhoB_17                       5  4.65e-07       aatC TGTAATATATCTTTAA CAatc     
+PhoB_12                       5  6.23e-07       gccT TGTCATCTTTCTGACA CCtta     
+PhoB_18                       5  1.11e-06       tcaC TGTCATCACTCTGTCA TCttt     
+PhoB_9                        5  1.11e-06       cagC TGTCATAAAGTTGTCA CGgcc     
+PhoB_3                        6  1.66e-06      attTA TGACAGATTTATGAAA Agct      
+PhoB_5                        5  4.06e-06       tcaT TGCAACAATTATGAAA CAaga     
+PhoB_11                       5  3.94e-05       aaaA AGTTATTTTTCTGTAA TTcga     
+PhoB_10                       5  4.33e-05       ttaC TATCTTACAAATGTAA CAaaa     
+PhoB_4                        5  9.66e-05       ttaT TGCAACACAAATGCAA CAata     
+PhoB_0                        6  1.15e-04      aatTT TGCATAATTAATGTAA AGacc     
+PhoB_1                        5  1.72e-04       tgcT TGTCACAAAAAAGTGG TAgac     
+PhoB_2                        5  1.85e-04       gcaA AATGACAATTTTGTCA TTttt     
+PhoB_13                       5  2.52e-04       cagG TTGAACAAAACATACA CAaaa     
+PhoB_16                       6  4.45e-04      gttGT TTACGCTTTTATTACA Gatt      
+PhoB_8                        5  5.45e-04       ccaC TCACGGAAGTCTGCCA TTccc     
+PhoB_14                       5  7.51e-04       aaaA ATATAGATCTCCGTCA CAttt     
+PhoB_19                       7  4.10e-03     cgcCTT GCGTGAAAAACTGTCC GGtgc     
+PhoB_15                       6  1.38e-02      cgcGG GATCAGCAAGCCTAGC GGcag     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGWCABAWWWMTGWMA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PhoB_6                            8.5e-10  4_[+1]_5
+PhoB_7                            1.4e-07  4_[+1]_5
+PhoB_17                           4.7e-07  4_[+1]_5
+PhoB_12                           6.2e-07  4_[+1]_5
+PhoB_18                           1.1e-06  4_[+1]_5
+PhoB_9                            1.1e-06  4_[+1]_5
+PhoB_3                            1.7e-06  5_[+1]_4
+PhoB_5                            4.1e-06  4_[+1]_5
+PhoB_11                           3.9e-05  4_[+1]_5
+PhoB_10                           4.3e-05  4_[+1]_5
+PhoB_4                            9.7e-05  4_[+1]_5
+PhoB_0                            0.00011  5_[+1]_5
+PhoB_1                            0.00017  4_[+1]_5
+PhoB_2                            0.00019  4_[+1]_5
+PhoB_13                           0.00025  4_[+1]_5
+PhoB_16                           0.00045  5_[+1]_4
+PhoB_8                            0.00054  4_[+1]_5
+PhoB_14                           0.00075  4_[+1]_5
+PhoB_19                            0.0041  6_[+1]_5
+PhoB_15                             0.014  5_[+1]_5
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGWCABAWWWMTGWMA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGWCABAWWWMTGWMA width=16 seqs=20
+PhoB_6                   (    5) TGTCATAAAACTGTCA  1 
+PhoB_7                   (    5) TTACATATAACTGTCA  1 
+PhoB_17                  (    5) TGTAATATATCTTTAA  1 
+PhoB_12                  (    5) TGTCATCTTTCTGACA  1 
+PhoB_18                  (    5) TGTCATCACTCTGTCA  1 
+PhoB_9                   (    5) TGTCATAAAGTTGTCA  1 
+PhoB_3                   (    6) TGACAGATTTATGAAA  1 
+PhoB_5                   (    5) TGCAACAATTATGAAA  1 
+PhoB_11                  (    5) AGTTATTTTTCTGTAA  1 
+PhoB_10                  (    5) TATCTTACAAATGTAA  1 
+PhoB_4                   (    5) TGCAACACAAATGCAA  1 
+PhoB_0                   (    6) TGCATAATTAATGTAA  1 
+PhoB_1                   (    5) TGTCACAAAAAAGTGG  1 
+PhoB_2                   (    5) AATGACAATTTTGTCA  1 
+PhoB_13                  (    5) TTGAACAAAACATACA  1 
+PhoB_16                  (    6) TTACGCTTTTATTACA  1 
+PhoB_8                   (    5) TCACGGAAGTCTGCCA  1 
+PhoB_14                  (    5) ATATAGATCTCCGTCA  1 
+PhoB_19                  (    7) GCGTGAAAAACTGTCC  1 
+PhoB_15                  (    6) GATCAGCAAGCCTAGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGWCABAWWWMTGWMA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 204 bayes= 3.20163 E= 6.6e-019 
+   -71  -1097   -134    161 
+   -71   -134    111    -30 
+     2    -76   -134    102 
+     2    111   -234    -71 
+   161  -1097    -76   -130 
+  -130     24    -34     70 
+   161    -76  -1097   -130 
+   102   -134  -1097     70 
+   102   -134   -234     51 
+    70  -1097   -134    102 
+    51    111  -1097   -130 
+  -130   -134  -1097    170 
+ -1097  -1097    165    -30 
+    29   -134  -1097    129 
+    51    111   -134  -1097 
+   179   -134   -234  -1097 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGWCABAWWWMTGWMA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 20 E= 6.6e-019 
+ 0.150000  0.000000  0.100000  0.750000 
+ 0.150000  0.100000  0.550000  0.200000 
+ 0.250000  0.150000  0.100000  0.500000 
+ 0.250000  0.550000  0.050000  0.150000 
+ 0.750000  0.000000  0.150000  0.100000 
+ 0.100000  0.300000  0.200000  0.400000 
+ 0.750000  0.150000  0.000000  0.100000 
+ 0.500000  0.100000  0.000000  0.400000 
+ 0.500000  0.100000  0.050000  0.350000 
+ 0.400000  0.000000  0.100000  0.500000 
+ 0.350000  0.550000  0.000000  0.100000 
+ 0.100000  0.100000  0.000000  0.800000 
+ 0.000000  0.000000  0.800000  0.200000 
+ 0.300000  0.100000  0.000000  0.600000 
+ 0.350000  0.550000  0.100000  0.000000 
+ 0.850000  0.100000  0.050000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGWCABAWWWMTGWMA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[GT][TA][CA]A[TCG]A[AT][AT][TA][CA]T[GT][TA][CA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PhoB_0                           1.26e-03  26
+PhoB_1                           1.71e-03  25
+PhoB_2                           1.85e-03  25
+PhoB_3                           1.66e-05  5_[+1(1.66e-06)]_4
+PhoB_4                           9.66e-04  4_[+1(9.66e-05)]_5
+PhoB_5                           4.06e-05  4_[+1(4.06e-06)]_5
+PhoB_6                           8.51e-09  4_[+1(8.51e-10)]_5
+PhoB_7                           1.45e-06  4_[+1(1.45e-07)]_5
+PhoB_8                           5.44e-03  25
+PhoB_9                           1.11e-05  4_[+1(1.11e-06)]_5
+PhoB_10                          4.33e-04  4_[+1(4.33e-05)]_5
+PhoB_11                          3.94e-04  4_[+1(3.94e-05)]_5
+PhoB_12                          6.23e-06  4_[+1(6.23e-07)]_5
+PhoB_13                          2.51e-03  25
+PhoB_14                          7.48e-03  25
+PhoB_15                          1.42e-01  26
+PhoB_16                          4.45e-03  25
+PhoB_17                          4.65e-06  4_[+1(4.65e-07)]_5
+PhoB_18                          1.11e-05  4_[+1(1.11e-06)]_5
+PhoB_19                          4.81e-02  27
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

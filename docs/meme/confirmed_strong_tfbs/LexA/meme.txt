@@ -1,0 +1,304 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= LexA/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+LexA_0                   1.0000     26  LexA_1                   1.0000     22  
+LexA_2                   1.0000     22  LexA_3                   1.0000     22  
+LexA_4                   1.0000     22  LexA_5                   1.0000     26  
+LexA_6                   1.0000     26  LexA_7                   1.0000     26  
+LexA_8                   1.0000     26  LexA_9                   1.0000     26  
+LexA_10                  1.0000     26  LexA_11                  1.0000     26  
+LexA_12                  1.0000     26  LexA_13                  1.0000     26  
+LexA_14                  1.0000     26  LexA_15                  1.0000     26  
+LexA_16                  1.0000     26  LexA_17                  1.0000     26  
+LexA_18                  1.0000     26  LexA_19                  1.0000     26  
+LexA_20                  1.0000     26  LexA_21                  1.0000     26  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme LexA/ri_sites.fasta -oc LexA/./ -mod oops -nmotifs 1 -minw 17 -maxw 23 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           17    maxw=           22
+nsites: minsites=       22    maxsites=       22    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             556    N=              22
+sample: seed=           10    hsfrac=          0
+        searchsize=    556    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.326 C 0.189 G 0.162 T 0.324 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WWACTGTWTATAHAHMCAGYAW MEME-1	width =  22  sites =  22  llr = 266  E-value = 2.6e-059
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WWACTGTWTATAHAHMCAGYAW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  336::::517273636:8:153
+pos.-specific     C  1229:::11:1122249::3::
+probability       G  1:2::a3:11:1::1::18222
+matrix            T  55::a:736161524:1:1525
+
+         bits    2.0     **                
+                 1.8     **                
+                 1.6     **                
+                 1.4    ***          *     
+Relative         1.2    ***          *     
+Entropy          1.0    ****        ***    
+(17.4 bits)      0.8    ****  *     ****   
+                 0.6   *****  *** * ****   
+                 0.4  ************* **** **
+                 0.2 **********************
+                 0.0 ----------------------
+
+Multilevel           TTACTGTATATATATACAGTAT
+consensus            AAG   GT  A A AC   CGA
+sequence                         C C       
+                                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWACTGTWTATAHAHMCAGYAW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                     Site       
+-------------             ----- ---------            ----------------------
+LexA_10                       3  1.82e-11         ga cTACTGTATATAAAAACAGTAt aa        
+LexA_16                       3  4.46e-11         ct tTACTGTATATAAAACCAGTTt at        
+LexA_21                       3  6.35e-10         tt tACCTGTATAAATAACCAGTAt at        
+LexA_6                        3  1.99e-09         tt tTGCTGTATATACTCACAGCAt aa        
+LexA_7                        3  1.14e-08         ca tAACTGTATATACACCCAGGGg gc        
+LexA_14                       3  2.51e-08         ct tCGCTGGATATCTATCCAGCAt tt        
+LexA_13                       4  2.51e-08        cct TCGCTGGATATCTATCCAGCat t         
+LexA_9                        3  3.65e-08         tg aTACTGTATGAGCATACAGTAt aa        
+LexA_17                       3  6.66e-08         tt aTACTGTACACAATAACAGTAa tg        
+LexA_1                        1  1.47e-07          . gaaCTGTTTTTTTATCCAGtat           
+LexA_18                       3  2.26e-07         at tTACTGATGATATATACAGGTa tt        
+LexA_11                       3  2.52e-07         ct aTACTGTACGTATCGACAGTTt ag        
+LexA_20                       3  6.83e-07         ca cTCCTGTTAATCCATACAGCAa ca        
+LexA_12                       3  1.31e-06         aa tGACTGTATAAAACCACAGCCa at        
+LexA_15                       3  2.03e-06         ca aTATTGGCTGTTTATACAGTAt tt        
+LexA_5                        3  2.21e-06         aa tCCCTGTTCAAATCAACAGGGg gt        
+LexA_0                        5  1.95e-05       cggA CTGATGGTTATATAAACATagg           
+LexA_19                       3  2.70e-05         gt gCACTGTATAAAAATCCTATAc tg        
+LexA_3                        1  4.39e-05          . taaCTGGTTAGATAAATGCaat           
+LexA_2                        1  1.63e-04          . ttcCTGTGGATAACCATGTgta           
+LexA_8                        4  1.71e-04        aat AAGCTGGCGTTGATGCCAGCgg c         
+LexA_4                        1  5.51e-04          . aaaCTGTCATCACTCATCTtga           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWACTGTWTATAHAHMCAGYAW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LexA_10                           1.8e-11  2_[+1]_2
+LexA_16                           4.5e-11  2_[+1]_2
+LexA_21                           6.4e-10  2_[+1]_2
+LexA_6                              2e-09  2_[+1]_2
+LexA_7                            1.1e-08  2_[+1]_2
+LexA_14                           2.5e-08  2_[+1]_2
+LexA_13                           2.5e-08  3_[+1]_1
+LexA_9                            3.7e-08  2_[+1]_2
+LexA_17                           6.7e-08  2_[+1]_2
+LexA_1                            1.5e-07  [+1]
+LexA_18                           2.3e-07  2_[+1]_2
+LexA_11                           2.5e-07  2_[+1]_2
+LexA_20                           6.8e-07  2_[+1]_2
+LexA_12                           1.3e-06  2_[+1]_2
+LexA_15                             2e-06  2_[+1]_2
+LexA_5                            2.2e-06  2_[+1]_2
+LexA_0                              2e-05  4_[+1]
+LexA_19                           2.7e-05  2_[+1]_2
+LexA_3                            4.4e-05  [+1]
+LexA_2                            0.00016  [+1]
+LexA_8                            0.00017  3_[+1]_1
+LexA_4                            0.00055  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWACTGTWTATAHAHMCAGYAW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WWACTGTWTATAHAHMCAGYAW width=22 seqs=22
+LexA_10                  (    3) CTACTGTATATAAAAACAGTAT  1 
+LexA_16                  (    3) TTACTGTATATAAAACCAGTTT  1 
+LexA_21                  (    3) TACCTGTATAAATAACCAGTAT  1 
+LexA_6                   (    3) TTGCTGTATATACTCACAGCAT  1 
+LexA_7                   (    3) TAACTGTATATACACCCAGGGG  1 
+LexA_14                  (    3) TCGCTGGATATCTATCCAGCAT  1 
+LexA_13                  (    4) TCGCTGGATATCTATCCAGCAT  1 
+LexA_9                   (    3) ATACTGTATGAGCATACAGTAT  1 
+LexA_17                  (    3) ATACTGTACACAATAACAGTAA  1 
+LexA_1                   (    1) GAACTGTTTTTTTATCCAGTAT  1 
+LexA_18                  (    3) TTACTGATGATATATACAGGTA  1 
+LexA_11                  (    3) ATACTGTACGTATCGACAGTTT  1 
+LexA_20                  (    3) CTCCTGTTAATCCATACAGCAA  1 
+LexA_12                  (    3) TGACTGTATAAAACCACAGCCA  1 
+LexA_15                  (    3) ATATTGGCTGTTTATACAGTAT  1 
+LexA_5                   (    3) TCCCTGTTCAAATCAACAGGGG  1 
+LexA_0                   (    5) CTGATGGTTATATAAACATAGG  1 
+LexA_19                  (    3) GCACTGTATAAAAATCCTATAC  1 
+LexA_3                   (    1) TAACTGGTTAGATAAATGCAAT  1 
+LexA_2                   (    1) TTCCTGTGGATAACCATGTGTA  1 
+LexA_8                   (    4) AAGCTGGCGTTGATGCCAGCGG  1 
+LexA_4                   (    1) AAACTGTCATCACTCATCTTGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWACTGTWTATAHAHMCAGYAW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 22 n= 94 bayes= 1.71049 E= 2.6e-059 
+    15    -90   -148    102 
+    15    -48   -248    102 
+   126    -48    -16  -1110 
+  -243    184  -1110   -243 
+ -1110  -1110  -1110    202 
+ -1110  -1110    198  -1110 
+  -243  -1110     10    147 
+   115    -90   -248     15 
+  -144    -90    -90    137 
+   156  -1110    -90    -85 
+   -11   -148   -248    137 
+   147    -90   -148   -144 
+    37    -16  -1110     89 
+   137    -48  -1110    -44 
+    37    -16   -148     56 
+   137     52  -1110  -1110 
+ -1110    177  -1110    -85 
+   173   -248   -148   -243 
+  -243   -248    160    -85 
+  -144     10    -48     89 
+   115   -248    -16    -44 
+    15   -248    -48    102 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWACTGTWTATAHAHMCAGYAW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 22 nsites= 22 E= 2.6e-059 
+ 0.272727  0.136364  0.090909  0.500000 
+ 0.272727  0.181818  0.045455  0.500000 
+ 0.590909  0.181818  0.227273  0.000000 
+ 0.045455  0.909091  0.000000  0.045455 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.045455  0.000000  0.272727  0.681818 
+ 0.545455  0.136364  0.045455  0.272727 
+ 0.090909  0.136364  0.136364  0.636364 
+ 0.727273  0.000000  0.136364  0.136364 
+ 0.227273  0.090909  0.045455  0.636364 
+ 0.681818  0.136364  0.090909  0.090909 
+ 0.318182  0.227273  0.000000  0.454545 
+ 0.636364  0.181818  0.000000  0.181818 
+ 0.318182  0.227273  0.090909  0.363636 
+ 0.636364  0.363636  0.000000  0.000000 
+ 0.000000  0.863636  0.000000  0.136364 
+ 0.818182  0.045455  0.090909  0.045455 
+ 0.045455  0.045455  0.772727  0.136364 
+ 0.090909  0.272727  0.181818  0.454545 
+ 0.545455  0.045455  0.227273  0.181818 
+ 0.272727  0.045455  0.181818  0.500000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWACTGTWTATAHAHMCAGYAW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][TA][AG]CTG[TG][AT]TA[TA]A[TAC]A[TAC][AC]CAG[TC][AG][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.31 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+LexA_0                           9.76e-05  4_[+1(1.95e-05)]
+LexA_1                           1.47e-07  [+1(1.47e-07)]
+LexA_2                           1.63e-04  22
+LexA_3                           4.39e-05  [+1(4.39e-05)]
+LexA_4                           5.51e-04  22
+LexA_5                           1.10e-05  2_[+1(2.21e-06)]_2
+LexA_6                           9.97e-09  2_[+1(1.99e-09)]_2
+LexA_7                           5.70e-08  2_[+1(1.14e-08)]_2
+LexA_8                           8.54e-04  26
+LexA_9                           1.83e-07  2_[+1(3.65e-08)]_2
+LexA_10                          9.08e-11  2_[+1(1.82e-11)]_2
+LexA_11                          1.26e-06  2_[+1(2.52e-07)]_2
+LexA_12                          6.53e-06  2_[+1(1.31e-06)]_2
+LexA_13                          1.25e-07  3_[+1(2.51e-08)]_1
+LexA_14                          1.25e-07  2_[+1(2.51e-08)]_2
+LexA_15                          1.01e-05  2_[+1(2.03e-06)]_2
+LexA_16                          2.23e-10  2_[+1(4.46e-11)]_2
+LexA_17                          3.33e-07  2_[+1(6.66e-08)]_2
+LexA_18                          1.13e-06  2_[+1(2.26e-07)]_2
+LexA_19                          1.35e-04  2_[+1(2.70e-05)]_2
+LexA_20                          3.42e-06  2_[+1(6.83e-07)]_2
+LexA_21                          3.18e-09  2_[+1(6.35e-10)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

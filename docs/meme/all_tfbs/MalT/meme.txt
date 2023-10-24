@@ -1,0 +1,243 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= MalT/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+MalT_0                   1.0000     16  MalT_1                   1.0000     16  
+MalT_2                   1.0000     16  MalT_3                   1.0000     16  
+MalT_4                   1.0000     16  MalT_5                   1.0000     16  
+MalT_6                   1.0000     16  MalT_7                   1.0000     16  
+MalT_8                   1.0000     16  MalT_9                   1.0000     16  
+MalT_10                  1.0000     16  MalT_11                  1.0000     16  
+MalT_12                  1.0000     16  MalT_13                  1.0000     16  
+MalT_14                  1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme MalT/ri_sites.fasta -oc MalT/./ -mod oops -nmotifs 1 -minw 7 -maxw 13 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            7    maxw=           13
+nsites: minsites=       15    maxsites=       15    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             240    N=              15
+sample: seed=           10    hsfrac=          0
+        searchsize=    240    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.192 C 0.279 G 0.321 T 0.208 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF KGMTSAK MEME-1	width =   7  sites =  15  llr = 59  E-value = 1.9e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif KGMTSAK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::5::71
+pos.-specific     C  125:531
+probability       G  57:25:5
+matrix            T  51181:3
+
+         bits    2.0        
+                 1.8        
+                 1.6        
+                 1.4        
+Relative         1.2    * * 
+Entropy          1.0    * * 
+(5.7 bits)       0.8 **** * 
+                 0.6 ****** 
+                 0.4 *******
+                 0.2 *******
+                 0.0 -------
+
+Multilevel           GGATCAG
+consensus            TCCGGCT
+sequence                    
+                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KGMTSAK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value             Site
+-------------             ----- ---------            -------
+MalT_14                       6  1.20e-04      tcaGA TGATGAG Tgat      
+MalT_11                       6  3.68e-04      ctcAG GGATGAG Tttt      
+MalT_5                        9  3.68e-04   aggCGGGA GGATGag a         
+MalT_3                        6  3.68e-04      ccgCA GGATGAG Gaag      
+MalT_1                        3  8.52e-04         ct tGCTCAT CCCCgca   
+MalT_4                        6  2.98e-03      atgGG GGAGGAG Gcgg      
+MalT_0                        6  5.17e-03      taaGT GGTTGAG Atca      
+MalT_8                        9  6.27e-03   aggGGCAA GGAGGat g         
+MalT_10                       3  6.88e-03         gc tTCTCAT CCTGtgg   
+MalT_12                       3  8.34e-03         ag tTATCCG CCCCcgt   
+MalT_13                       3  1.21e-02         cg tCCTCCT CCCCcaa   
+MalT_9                        3  1.81e-02         at cGCTCAC CCTTgct   
+MalT_7                        6  1.81e-02      ggtGG GGCGTAG Gggc      
+MalT_2                        6  2.03e-02      gcaAC TCCTCCC Tgcc      
+MalT_6                        3  2.88e-02         aa tCCTCCA CCCCctg   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KGMTSAK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MalT_14                           0.00012  5_[+1]_4
+MalT_11                           0.00037  5_[+1]_4
+MalT_5                            0.00037  8_[+1]_1
+MalT_3                            0.00037  5_[+1]_4
+MalT_1                            0.00085  2_[+1]_7
+MalT_4                              0.003  5_[+1]_4
+MalT_0                             0.0052  5_[+1]_4
+MalT_8                             0.0063  8_[+1]_1
+MalT_10                            0.0069  2_[+1]_7
+MalT_12                            0.0083  2_[+1]_7
+MalT_13                             0.012  2_[+1]_7
+MalT_9                              0.018  2_[+1]_7
+MalT_7                              0.018  5_[+1]_4
+MalT_2                               0.02  5_[+1]_4
+MalT_6                              0.029  2_[+1]_7
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KGMTSAK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF KGMTSAK width=7 seqs=15
+MalT_14                  (    6) TGATGAG  1 
+MalT_11                  (    6) GGATGAG  1 
+MalT_5                   (    9) GGATGAG  1 
+MalT_3                   (    6) GGATGAG  1 
+MalT_1                   (    3) TGCTCAT  1 
+MalT_4                   (    6) GGAGGAG  1 
+MalT_0                   (    6) GGTTGAG  1 
+MalT_8                   (    9) GGAGGAT  1 
+MalT_10                  (    3) TTCTCAT  1 
+MalT_12                  (    3) TTATCCG  1 
+MalT_13                  (    3) TCCTCCT  1 
+MalT_9                   (    3) CGCTCAC  1 
+MalT_7                   (    6) GGCGTAG  1 
+MalT_2                   (    6) TCCTCCC  1 
+MalT_6                   (    3) TCCTCCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KGMTSAK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 7 n= 150 bayes= 3.16993 E= 1.9e+001 
+ -1055   -193     88     92 
+ -1055    -34    139    -88 
+    92     88  -1055   -188 
+ -1055  -1055    -34    170 
+ -1055     88     88   -188 
+   158      7  -1055  -1055 
+  -188    -93    107     12 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KGMTSAK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 7 nsites= 15 E= 1.9e+001 
+ 0.000000  0.066667  0.466667  0.466667 
+ 0.000000  0.200000  0.666667  0.133333 
+ 0.466667  0.466667  0.000000  0.066667 
+ 0.000000  0.000000  0.200000  0.800000 
+ 0.000000  0.466667  0.466667  0.066667 
+ 0.733333  0.266667  0.000000  0.000000 
+ 0.066667  0.133333  0.533333  0.266667 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KGMTSAK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GT][GC][AC][TG][CG][AC][GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.20 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+MalT_0                           5.05e-02  16
+MalT_1                           8.49e-03  16
+MalT_2                           1.86e-01  16
+MalT_3                           3.67e-03  16
+MalT_4                           2.94e-02  16
+MalT_5                           3.67e-03  16
+MalT_6                           2.53e-01  16
+MalT_7                           1.67e-01  16
+MalT_8                           6.09e-02  16
+MalT_9                           1.67e-01  16
+MalT_10                          6.68e-02  16
+MalT_11                          3.67e-03  16
+MalT_12                          8.03e-02  16
+MalT_13                          1.14e-01  16
+MalT_14                          1.20e-03  16
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

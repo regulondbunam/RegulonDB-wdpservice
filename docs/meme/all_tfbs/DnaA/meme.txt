@@ -1,0 +1,294 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= DnaA/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+DnaA_0                   1.0000     15  DnaA_1                   1.0000     15  
+DnaA_2                   1.0000     15  DnaA_3                   1.0000     15  
+DnaA_4                   1.0000     15  DnaA_5                   1.0000     15  
+DnaA_6                   1.0000     15  DnaA_7                   1.0000     15  
+DnaA_8                   1.0000     15  DnaA_9                   1.0000     15  
+DnaA_10                  1.0000     15  DnaA_11                  1.0000     15  
+DnaA_12                  1.0000     15  DnaA_13                  1.0000     15  
+DnaA_14                  1.0000     15  DnaA_15                  1.0000     15  
+DnaA_16                  1.0000     15  DnaA_17                  1.0000     15  
+DnaA_18                  1.0000     15  DnaA_19                  1.0000     15  
+DnaA_20                  1.0000     15  DnaA_21                  1.0000     15  
+DnaA_22                  1.0000     15  DnaA_23                  1.0000     15  
+DnaA_24                  1.0000     15  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme DnaA/ri_sites.fasta -oc DnaA/./ -mod oops -nmotifs 1 -minw 6 -maxw 12 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            6    maxw=           12
+nsites: minsites=       25    maxsites=       25    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             375    N=              25
+sample: seed=           10    hsfrac=          0
+        searchsize=    375    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.363 C 0.179 G 0.168 T 0.291 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTRTSSAYAA MEME-1	width =  10  sites =  25  llr = 138  E-value = 1.5e-022
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTRTSSAYAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:5:229287
+pos.-specific     C  2:1:35:5::
+probability       G  ::4143:::2
+matrix            T  691911:321
+
+         bits    2.0           
+                 1.8           
+                 1.6  *    *   
+                 1.4  * *  *   
+Relative         1.2  * *  *   
+Entropy          1.0  * *  * * 
+(8.0 bits)       0.8  * *  * **
+                 0.6  * *  * **
+                 0.4 ****  ****
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           TTATGCACAA
+consensus            C G CG TT 
+sequence                    A  
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTRTSSAYAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+DnaA_23                       3  2.71e-06         ct tTATCCACAA aaa       
+DnaA_17                       4  2.71e-06        gag TTATCCACAa ag        
+DnaA_22                       4  1.70e-05        aat TTATTCACAa gc        
+DnaA_21                       3  2.77e-05         ac tTGTGGATAA aat       
+DnaA_8                        4  5.00e-05        cag TTATCCACTa tt        
+DnaA_1                        4  6.07e-05        gag TTATCCACAg cc        
+DnaA_20                       3  8.01e-05         ag tTATCCACAT gac       
+DnaA_14                       4  9.72e-05        ata CTGTACACAa ta        
+DnaA_16                       3  1.15e-04         gg cTATGGAAAA tga       
+DnaA_7                        3  1.15e-04         tc cTGTGGATAA cca       
+DnaA_3                        3  1.15e-04         tc cTGTGGATAA atc       
+DnaA_18                       5  2.70e-04       aaaG TTATGCACtt g         
+DnaA_0                        4  3.06e-04        aaa ATATCCACAg cg        
+DnaA_11                       3  6.56e-04         ct tTGGGGATAA ccc       
+DnaA_13                       4  1.02e-03        ttt TTATCCAGTa ta        
+DnaA_15                       3  1.33e-03         ta cTGTATATAA aac       
+DnaA_6                        3  1.43e-03         ag tTCTGGAAAG tcc       
+DnaA_10                       3  1.67e-03         aa aTGTTAAAAA agc       
+DnaA_9                        3  2.43e-03         cc aTGTGTATTA gag       
+DnaA_24                       6  2.64e-03      gatGT TAATTAAcaa           
+DnaA_4                        3  5.55e-03         at cTGTGAGAAA cag       
+DnaA_12                       4  6.23e-03        aaa TTTTGCTCAt ga        
+DnaA_5                        3  7.97e-03         aa aTCGGGAAAA tct       
+DnaA_2                        5  1.01e-02       tcaT TTTCACACta t         
+DnaA_19                       3  1.08e-01         gt gGATAAATCG gga       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTRTSSAYAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DnaA_23                           2.7e-06  2_[+1]_3
+DnaA_17                           2.7e-06  3_[+1]_2
+DnaA_22                           1.7e-05  3_[+1]_2
+DnaA_21                           2.8e-05  2_[+1]_3
+DnaA_8                              5e-05  3_[+1]_2
+DnaA_1                            6.1e-05  3_[+1]_2
+DnaA_20                             8e-05  2_[+1]_3
+DnaA_14                           9.7e-05  3_[+1]_2
+DnaA_16                           0.00011  2_[+1]_3
+DnaA_7                            0.00011  2_[+1]_3
+DnaA_3                            0.00011  2_[+1]_3
+DnaA_18                           0.00027  4_[+1]_1
+DnaA_0                            0.00031  3_[+1]_2
+DnaA_11                           0.00066  2_[+1]_3
+DnaA_13                             0.001  3_[+1]_2
+DnaA_15                            0.0013  2_[+1]_3
+DnaA_6                             0.0014  2_[+1]_3
+DnaA_10                            0.0017  2_[+1]_3
+DnaA_9                             0.0024  2_[+1]_3
+DnaA_24                            0.0026  5_[+1]
+DnaA_4                             0.0056  2_[+1]_3
+DnaA_12                            0.0062  3_[+1]_2
+DnaA_5                              0.008  2_[+1]_3
+DnaA_2                               0.01  4_[+1]_1
+DnaA_19                              0.11  2_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTRTSSAYAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTRTSSAYAA width=10 seqs=25
+DnaA_23                  (    3) TTATCCACAA  1 
+DnaA_17                  (    4) TTATCCACAA  1 
+DnaA_22                  (    4) TTATTCACAA  1 
+DnaA_21                  (    3) TTGTGGATAA  1 
+DnaA_8                   (    4) TTATCCACTA  1 
+DnaA_1                   (    4) TTATCCACAG  1 
+DnaA_20                  (    3) TTATCCACAT  1 
+DnaA_14                  (    4) CTGTACACAA  1 
+DnaA_16                  (    3) CTATGGAAAA  1 
+DnaA_7                   (    3) CTGTGGATAA  1 
+DnaA_3                   (    3) CTGTGGATAA  1 
+DnaA_18                  (    5) TTATGCACTT  1 
+DnaA_0                   (    4) ATATCCACAG  1 
+DnaA_11                  (    3) TTGGGGATAA  1 
+DnaA_13                  (    4) TTATCCAGTA  1 
+DnaA_15                  (    3) CTGTATATAA  1 
+DnaA_6                   (    3) TTCTGGAAAG  1 
+DnaA_10                  (    3) ATGTTAAAAA  1 
+DnaA_9                   (    3) ATGTGTATTA  1 
+DnaA_24                  (    6) TAATTAACAA  1 
+DnaA_4                   (    3) CTGTGAGAAA  1 
+DnaA_12                  (    4) TTTTGCTCAT  1 
+DnaA_5                   (    3) ATCGGGAAAA  1 
+DnaA_2                   (    5) TTTCACACTA  1 
+DnaA_19                  (    3) GGATAAATCG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTRTSSAYAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 150 bayes= 2.32193 E= 1.5e-022 
+   -62     -8   -266    119 
+  -262  -1129   -266    190 
+    96   -167     50   -162 
+ -1129   -266   -167    184 
+   -62     14     79   -104 
+   -62     92     14   -162 
+   190  -1129   -266   -262 
+   -30     92   -266     19 
+   163   -266  -1129    -30 
+   155  -1129    -67   -104 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTRTSSAYAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 25 E= 1.5e-022 
+ 0.160000  0.240000  0.040000  0.560000 
+ 0.040000  0.000000  0.040000  0.920000 
+ 0.480000  0.080000  0.360000  0.080000 
+ 0.000000  0.040000  0.080000  0.880000 
+ 0.160000  0.280000  0.440000  0.120000 
+ 0.160000  0.480000  0.280000  0.080000 
+ 0.920000  0.000000  0.040000  0.040000 
+ 0.200000  0.480000  0.040000  0.280000 
+ 0.760000  0.040000  0.000000  0.200000 
+ 0.720000  0.000000  0.160000  0.120000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTRTSSAYAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]T[AG]T[GC][CG]A[CTA][AT]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.20 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DnaA_0                           1.83e-03  15
+DnaA_1                           3.64e-04  3_[+1(6.07e-05)]_2
+DnaA_2                           5.88e-02  15
+DnaA_3                           6.90e-04  15
+DnaA_4                           3.29e-02  15
+DnaA_5                           4.69e-02  15
+DnaA_6                           8.55e-03  15
+DnaA_7                           6.90e-04  15
+DnaA_8                           3.00e-04  3_[+1(5.00e-05)]_2
+DnaA_9                           1.45e-02  15
+DnaA_10                          9.96e-03  15
+DnaA_11                          3.93e-03  15
+DnaA_12                          3.68e-02  15
+DnaA_13                          6.11e-03  15
+DnaA_14                          5.83e-04  3_[+1(9.72e-05)]_2
+DnaA_15                          7.98e-03  15
+DnaA_16                          6.90e-04  15
+DnaA_17                          1.63e-05  3_[+1(2.71e-06)]_2
+DnaA_18                          1.62e-03  15
+DnaA_19                          2.98e-01  15
+DnaA_20                          4.81e-04  2_[+1(8.01e-05)]_3
+DnaA_21                          1.66e-04  2_[+1(2.77e-05)]_3
+DnaA_22                          1.02e-04  3_[+1(1.70e-05)]_2
+DnaA_23                          1.63e-05  2_[+1(2.71e-06)]_3
+DnaA_24                          1.58e-02  15
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

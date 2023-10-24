@@ -1,0 +1,277 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= NarP/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NarP_0                   1.0000     22  NarP_1                   1.0000     22  
+NarP_2                   1.0000     22  NarP_3                   1.0000     22  
+NarP_4                   1.0000     22  NarP_5                   1.0000     22  
+NarP_6                   1.0000     22  NarP_7                   1.0000     22  
+NarP_8                   1.0000     22  NarP_9                   1.0000     22  
+NarP_10                  1.0000     22  NarP_11                  1.0000     22  
+NarP_12                  1.0000     22  NarP_13                  1.0000     22  
+NarP_14                  1.0000     22  NarP_15                  1.0000     22  
+NarP_16                  1.0000     22  NarP_17                  1.0000     22  
+NarP_18                  1.0000     13  NarP_19                  1.0000     13  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme NarP/ri_sites.fasta -oc NarP/./ -mod oops -nmotifs 1 -minw 13 -maxw 19 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           13    maxw=           13
+nsites: minsites=       20    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             422    N=              20
+sample: seed=           10    hsfrac=          0
+        searchsize=    422    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.296 C 0.197 G 0.194 T 0.313 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ACCNMTWHAKRGG MEME-1	width =  13  sites =  20  llr = 105  E-value = 2.1e-005
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ACCNMTWHAKRGG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  7312415461331
+pos.-specific     C  17745:121:1:1
+probability       G  :::3221:25576
+matrix            T  3:32174425212
+
+         bits    2.0              
+                 1.8              
+                 1.6              
+                 1.4              
+Relative         1.2              
+Entropy          1.0  *           
+(7.6 bits)       0.8 ***  *   * * 
+                 0.6 ***  *   * * 
+                 0.4 *** *********
+                 0.2 *** *********
+                 0.0 -------------
+
+Multilevel           ACCCCTAAAGGGG
+consensus            TATGAGTTGTAAT
+sequence                A   C  T  
+                        T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCNMTWHAKRGG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site   
+-------------             ----- ---------            -------------
+NarP_3                        1  2.14e-06          . accCATTAAGGAG TATATAaag 
+NarP_2                       10  2.14e-06  cagCAATAT ACCCATTAAGgag           
+NarP_13                      10  3.84e-06  attTTGACT ACTCATTAATggg           
+NarP_12                       1  3.84e-06          . actCATTAATGGG CATAATttt 
+NarP_15                       1  1.76e-05          . accAATAAATGGT ATTTAAaat 
+NarP_14                      10  1.76e-05  taaAAAGTA ACCAATAAATggt           
+NarP_7                       10  3.29e-05  cgtTTTTCT ACCGCTATTGagg           
+NarP_6                        1  3.29e-05          . accGCTATTGAGG TAGGTCaat 
+NarP_9                        1  3.87e-05          . aacTCTAAAGTGG TATTTTaca 
+NarP_8                       10  3.87e-05  ataCTGACT AACTCTAAAGtgg           
+NarP_5                        9  1.04e-04   cagGTTTT ACCCCGATCGGgg t         
+NarP_16                       6  1.89e-03      aagCC TCTGCTACGTAAG Ggtt      
+NarP_11                       9  2.05e-03   tgcGTAAT ACCTCTCTGGCgg t         
+NarP_0                        9  2.39e-03   agtTTCAC TACGCTTTATTaa c         
+NarP_1                        7  3.46e-03     attAAC AATACTTTCTGGC gac       
+NarP_4                        1  1.73e-02          . cccCGATCGGGGT ATGCATctt 
+NarP_17                       6  1.96e-02      ctaCG TAAGGGTTATAGC Tttt      
+NarP_18                       1  2.28e-02          . tccTAACCATaaa           
+NarP_10                       3  4.19e-02         cc tCTCTGGCGGTAG ATCCctg   
+NarP_19                       1  7.89e-02          . taaAGGATTAgtt           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCNMTWHAKRGG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NarP_3                            2.1e-06  [+1]_9
+NarP_2                            2.1e-06  9_[+1]
+NarP_13                           3.8e-06  9_[+1]
+NarP_12                           3.8e-06  [+1]_9
+NarP_15                           1.8e-05  [+1]_9
+NarP_14                           1.8e-05  9_[+1]
+NarP_7                            3.3e-05  9_[+1]
+NarP_6                            3.3e-05  [+1]_9
+NarP_9                            3.9e-05  [+1]_9
+NarP_8                            3.9e-05  9_[+1]
+NarP_5                             0.0001  8_[+1]_1
+NarP_16                            0.0019  5_[+1]_4
+NarP_11                            0.0021  8_[+1]_1
+NarP_0                             0.0024  8_[+1]_1
+NarP_1                             0.0035  6_[+1]_3
+NarP_4                              0.017  [+1]_9
+NarP_17                              0.02  5_[+1]_4
+NarP_18                             0.023  [+1]
+NarP_10                             0.042  2_[+1]_7
+NarP_19                             0.079  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCNMTWHAKRGG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ACCNMTWHAKRGG width=13 seqs=20
+NarP_3                   (    1) ACCCATTAAGGAG  1 
+NarP_2                   (   10) ACCCATTAAGGAG  1 
+NarP_13                  (   10) ACTCATTAATGGG  1 
+NarP_12                  (    1) ACTCATTAATGGG  1 
+NarP_15                  (    1) ACCAATAAATGGT  1 
+NarP_14                  (   10) ACCAATAAATGGT  1 
+NarP_7                   (   10) ACCGCTATTGAGG  1 
+NarP_6                   (    1) ACCGCTATTGAGG  1 
+NarP_9                   (    1) AACTCTAAAGTGG  1 
+NarP_8                   (   10) AACTCTAAAGTGG  1 
+NarP_5                   (    9) ACCCCGATCGGGG  1 
+NarP_16                  (    6) TCTGCTACGTAAG  1 
+NarP_11                  (    9) ACCTCTCTGGCGG  1 
+NarP_0                   (    9) TACGCTTTATTAA  1 
+NarP_1                   (    7) AATACTTTCTGGC  1 
+NarP_4                   (    1) CCCCGATCGGGGT  1 
+NarP_17                  (    6) TAAGGGTTATAGC  1 
+NarP_18                  (    1) TCCTAACCATAAA  1 
+NarP_10                  (    3) TCTCTGGCGGTAG  1 
+NarP_19                  (    1) TAAAGGATTAGTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCNMTWHAKRGG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 13 n= 182 bayes= 3.01792 E= 2.1e-005 
+   140   -234  -1097     29 
+    29    146  -1097  -1097 
+  -130    136  -1097      2 
+   -30     46     -2    -30 
+    51     82    -76   -230 
+  -130  -1097    -34    151 
+    87   -134   -234     70 
+    70    -34  -1097     70 
+   116   -134    -34    -71 
+  -230  -1097     98     87 
+     2   -234     98    -30 
+    29  -1097    136   -230 
+  -130   -134    124    -30 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCNMTWHAKRGG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 13 nsites= 20 E= 2.1e-005 
+ 0.650000  0.050000  0.000000  0.300000 
+ 0.300000  0.700000  0.000000  0.000000 
+ 0.100000  0.650000  0.000000  0.250000 
+ 0.200000  0.350000  0.250000  0.200000 
+ 0.350000  0.450000  0.150000  0.050000 
+ 0.100000  0.000000  0.200000  0.700000 
+ 0.450000  0.100000  0.050000  0.400000 
+ 0.400000  0.200000  0.000000  0.400000 
+ 0.550000  0.100000  0.200000  0.150000 
+ 0.050000  0.000000  0.500000  0.450000 
+ 0.250000  0.050000  0.500000  0.200000 
+ 0.300000  0.000000  0.650000  0.050000 
+ 0.100000  0.100000  0.600000  0.200000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ACCNMTWHAKRGG MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][CA][CT][CGAT][CA][TG][AT][ATC][AG][GT][GAT][GA][GT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.21 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NarP_0                           2.37e-02  22
+NarP_1                           3.40e-02  22
+NarP_2                           2.14e-05  9_[+1(2.14e-06)]
+NarP_3                           2.14e-05  [+1(2.14e-06)]_9
+NarP_4                           1.60e-01  22
+NarP_5                           1.04e-03  22
+NarP_6                           3.29e-04  [+1(3.29e-05)]_9
+NarP_7                           3.29e-04  9_[+1(3.29e-05)]
+NarP_8                           3.87e-04  9_[+1(3.87e-05)]
+NarP_9                           3.87e-04  [+1(3.87e-05)]_9
+NarP_10                          3.48e-01  22
+NarP_11                          2.03e-02  22
+NarP_12                          3.84e-05  [+1(3.84e-06)]_9
+NarP_13                          3.84e-05  9_[+1(3.84e-06)]
+NarP_14                          1.76e-04  9_[+1(1.76e-05)]
+NarP_15                          1.76e-04  [+1(1.76e-05)]_9
+NarP_16                          1.88e-02  22
+NarP_17                          1.79e-01  22
+NarP_18                          2.28e-02  13
+NarP_19                          7.89e-02  13
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

@@ -1,0 +1,240 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= GntR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+GntR_0                   1.0000     26  GntR_1                   1.0000     26  
+GntR_2                   1.0000     26  GntR_3                   1.0000     26  
+GntR_4                   1.0000     26  GntR_5                   1.0000     26  
+GntR_6                   1.0000     26  GntR_7                   1.0000     26  
+GntR_8                   1.0000     26  GntR_9                   1.0000     26  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme GntR/ri_sites.fasta -oc GntR/./ -mod oops -nmotifs 1 -minw 17 -maxw 23 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           17    maxw=           23
+nsites: minsites=       10    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             260    N=              10
+sample: seed=           10    hsfrac=          0
+        searchsize=    260    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.338 C 0.208 G 0.162 T 0.292 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGTTACCCRTAACAKTW MEME-1	width =  17  sites =  10  llr = 127  E-value = 1.9e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGTTACCCRTAACAKTW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:1291::4:97:9225
+pos.-specific     C  2::1:767::::a::11
+probability       G  :8::11225::::132:
+matrix            T  6297:1211a13::554
+
+         bits    2.0          *  *    
+                 1.8          *  *    
+                 1.6   * *    ** **   
+                 1.4   * *    ** **   
+Relative         1.2  ** *    *****   
+Entropy          1.0  ** *    *****   
+(18.3 bits)      0.8  ****  * *****   
+                 0.6 *************** *
+                 0.4 *************** *
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           TGTTACCCGTAACATTA
+consensus            AT A  GGA  T  GAT
+sequence             C     T       AG 
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTACCCRTAACAKTW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+GntR_0                        7  1.97e-09     gatAAC AGTTACCCGTAACATTT tta       
+GntR_1                        7  1.08e-08     ggaCAA TGTTACCGATAACAGTT acc       
+GntR_2                        7  1.65e-08     gccAGA TGTTACCCGTATCATTC aca       
+GntR_4                        8  4.46e-08    ccaCAAT TGTTACGCGTAACAAAt cg        
+GntR_3                        7  6.51e-08     aatTGA CGTTACCCATAACAAAT gaa       
+GntR_5                        7  8.13e-08     tggTTA TTTTACCGGTAACATGA tct       
+GntR_7                        7  2.57e-07     ttaCTA TGTTACGCATAACGTGA tgt       
+GntR_9                        1  3.23e-06          . tgtAATTCTTATCAGTA GAAATAaaa 
+GntR_8                        7  3.99e-05     cacGTC AGAAAATTGTTACATTA cta       
+GntR_6                        8  4.40e-05    agcACGG CTTCGGCCATATCAGCa ag        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTACCCRTAACAKTW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GntR_0                              2e-09  6_[+1]_3
+GntR_1                            1.1e-08  6_[+1]_3
+GntR_2                            1.7e-08  6_[+1]_3
+GntR_4                            4.5e-08  7_[+1]_2
+GntR_3                            6.5e-08  6_[+1]_3
+GntR_5                            8.1e-08  6_[+1]_3
+GntR_7                            2.6e-07  6_[+1]_3
+GntR_9                            3.2e-06  [+1]_9
+GntR_8                              4e-05  6_[+1]_3
+GntR_6                            4.4e-05  7_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTACCCRTAACAKTW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGTTACCCRTAACAKTW width=17 seqs=10
+GntR_0                   (    7) AGTTACCCGTAACATTT  1 
+GntR_1                   (    7) TGTTACCGATAACAGTT  1 
+GntR_2                   (    7) TGTTACCCGTATCATTC  1 
+GntR_4                   (    8) TGTTACGCGTAACAAAT  1 
+GntR_3                   (    7) CGTTACCCATAACAAAT  1 
+GntR_5                   (    7) TTTTACCGGTAACATGA  1 
+GntR_7                   (    7) TGTTACGCATAACGTGA  1 
+GntR_9                   (    1) TGTAATTCTTATCAGTA  1 
+GntR_8                   (    7) AGAAAATTGTTACATTA  1 
+GntR_6                   (    8) CTTCGGCCATATCAGCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTACCCRTAACAKTW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 100 bayes= 3.16993 E= 1.9e-017 
+   -30    -34   -997    129 
+  -997   -997    165    -30 
+  -130   -997   -997    187 
+   -30   -134   -997    151 
+   187   -997   -134   -997 
+  -130    146   -134   -130 
+  -997    124    -34    -30 
+  -997    146    -34   -130 
+    70   -997     98   -130 
+  -997   -997   -997    202 
+   187   -997   -997   -130 
+   151   -997   -997     29 
+  -997    198   -997   -997 
+   187   -997   -134   -997 
+   -30   -997     24    102 
+   -30   -134    -34    102 
+   102   -134   -997     70 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTACCCRTAACAKTW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 10 E= 1.9e-017 
+ 0.200000  0.200000  0.000000  0.600000 
+ 0.000000  0.000000  0.800000  0.200000 
+ 0.100000  0.000000  0.000000  0.900000 
+ 0.200000  0.100000  0.000000  0.700000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.100000  0.700000  0.100000  0.100000 
+ 0.000000  0.600000  0.200000  0.200000 
+ 0.000000  0.700000  0.200000  0.100000 
+ 0.400000  0.000000  0.500000  0.100000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.900000  0.000000  0.000000  0.100000 
+ 0.700000  0.000000  0.000000  0.300000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.200000  0.000000  0.300000  0.500000 
+ 0.200000  0.100000  0.200000  0.500000 
+ 0.500000  0.100000  0.000000  0.400000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGTTACCCRTAACAKTW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TAC][GT]T[TA]AC[CGT][CG][GA]TA[AT]CA[TGA][TAG][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.21 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GntR_0                           1.97e-08  6_[+1(1.97e-09)]_3
+GntR_1                           1.08e-07  6_[+1(1.08e-08)]_3
+GntR_2                           1.65e-07  6_[+1(1.65e-08)]_3
+GntR_3                           6.51e-07  6_[+1(6.51e-08)]_3
+GntR_4                           4.46e-07  7_[+1(4.46e-08)]_2
+GntR_5                           8.13e-07  6_[+1(8.13e-08)]_3
+GntR_6                           4.40e-04  7_[+1(4.40e-05)]_2
+GntR_7                           2.57e-06  6_[+1(2.57e-07)]_3
+GntR_8                           3.99e-04  6_[+1(3.99e-05)]_3
+GntR_9                           3.23e-05  [+1(3.23e-06)]_9
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

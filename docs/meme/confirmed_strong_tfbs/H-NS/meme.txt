@@ -1,0 +1,446 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= H-NS/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+H-NS_0                   1.0000     16  H-NS_1                   1.0000     26  
+H-NS_2                   1.0000     25  H-NS_3                   1.0000     41  
+H-NS_4                   1.0000     38  H-NS_5                   1.0000     26  
+H-NS_6                   1.0000     21  H-NS_7                   1.0000     16  
+H-NS_8                   1.0000     21  H-NS_9                   1.0000     21  
+H-NS_10                  1.0000     21  H-NS_11                  1.0000     16  
+H-NS_12                  1.0000     16  H-NS_13                  1.0000     23  
+H-NS_14                  1.0000     16  H-NS_15                  1.0000     16  
+H-NS_16                  1.0000     16  H-NS_17                  1.0000     16  
+H-NS_18                  1.0000     16  H-NS_19                  1.0000     21  
+H-NS_20                  1.0000     21  H-NS_21                  1.0000     21  
+H-NS_22                  1.0000     21  H-NS_23                  1.0000     16  
+H-NS_24                  1.0000     21  H-NS_25                  1.0000     21  
+H-NS_26                  1.0000     21  H-NS_27                  1.0000     21  
+H-NS_28                  1.0000     21  H-NS_29                  1.0000     21  
+H-NS_30                  1.0000     21  H-NS_31                  1.0000     21  
+H-NS_32                  1.0000     21  H-NS_33                  1.0000     21  
+H-NS_34                  1.0000     21  H-NS_35                  1.0000     21  
+H-NS_36                  1.0000     21  H-NS_37                  1.0000     21  
+H-NS_38                  1.0000     21  H-NS_39                  1.0000     21  
+H-NS_40                  1.0000     21  H-NS_41                  1.0000     21  
+H-NS_42                  1.0000     21  H-NS_43                  1.0000     21  
+H-NS_44                  1.0000     21  H-NS_45                  1.0000     21  
+H-NS_46                  1.0000     21  H-NS_47                  1.0000     21  
+H-NS_48                  1.0000     21  H-NS_49                  1.0000     21  
+H-NS_50                  1.0000     21  H-NS_51                  1.0000     21  
+H-NS_52                  1.0000     21  H-NS_53                  1.0000     21  
+H-NS_54                  1.0000     21  H-NS_55                  1.0000     16  
+H-NS_56                  1.0000     16  H-NS_57                  1.0000     16  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme H-NS/ri_sites.fasta -oc H-NS/./ -mod oops -nmotifs 1 -minw 12 -maxw 18 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           12    maxw=           16
+nsites: minsites=       58    maxsites=       58    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1206    N=              58
+sample: seed=           10    hsfrac=          0
+        searchsize=   1206    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.344 C 0.152 G 0.153 T 0.351 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATWWAWYRWWWW MEME-1	width =  12  sites =  58  llr = 250  E-value = 7.6e-025
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATWWAWYRWWWW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  814464:45453
+pos.-specific     C  1::13:41211:
+probability       G  :12::12212:2
+matrix            T  284525423245
+
+         bits    2.0             
+                 1.8             
+                 1.6             
+                 1.4             
+Relative         1.2             
+Entropy          1.0 **          
+(6.2 bits)       0.8 **          
+                 0.6 ** ***    * 
+                 0.4 ******* * **
+                 0.2 ************
+                 0.0 ------------
+
+Multilevel           ATATATTAAAAT
+consensus              TACACGTTTA
+sequence                   G  G  
+                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATWWAWYRWWWW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site  
+-------------             ----- ---------            ------------
+H-NS_24                       2  2.94e-06          g atTTAATAAAAA TTTCCtaa  
+H-NS_45                       4  5.51e-06        gat ATTTATCATATT AATaga    
+H-NS_56                       1  2.15e-05          . ataAATTAAATG Aatg      
+H-NS_13                       7  2.72e-05     caaCCG ATTAATCATAAA TAtga     
+H-NS_6                        8  5.19e-05    tttAATA ATAAAACGAATa ac        
+H-NS_1                        9  6.35e-05   cttCGCTG ATTAAAGAAATA GCGgta    
+H-NS_41                       7  7.73e-05     tggGTA ATATATCGACAT aga       
+H-NS_4                        9  1.35e-04   cctTTTGC AAATAATAAAAT AACAAATTAT
+H-NS_55                       5  1.90e-04       gttA ATATATCCAgaa           
+H-NS_57                       1  2.63e-04          . ataTCATTTAAT Tata      
+H-NS_38                       2  2.63e-04          t agAAATTAAAAA TCTTTata  
+H-NS_18                       5  2.63e-04       gtaT ATTTATTGGatt           
+H-NS_9                        1  2.63e-04          . ataATTCAAGTT AATAACctt 
+H-NS_39                       6  3.06e-04      tggCA ATTAAATTAGAA Atta      
+H-NS_17                       5  3.06e-04       ctgA ATTAAGCGAaaa           
+H-NS_26                       8  3.55e-04    cagAAAA TTATTTTAAATt tc        
+H-NS_37                       3  4.11e-04         tt aTAAAATATTTG GCGAgca   
+H-NS_53                      10  4.73e-04  atcTTTAGG ATTAATCCTttt           
+H-NS_3                       17  6.22e-04 CGTATTTTTA ATAATTGAAGTT TATATTTTAC
+H-NS_36                      10  7.10e-04  agcGTTCAA ATATATCGAaca           
+H-NS_22                       8  8.09e-04    tccACTA ATTTATTCCATg tc        
+H-NS_51                       8  9.17e-04    tacATAA ATTTAACCAGAg aa        
+H-NS_19                       8  9.17e-04    tatGGTT ATTTCATACCAt aa        
+H-NS_0                        2  9.17e-04          t aaATATTTTAAT cag       
+H-NS_21                       6  1.47e-03      attCC ATGTCACACTTT Tcgc      
+H-NS_10                       3  1.47e-03         gg aTATCAGTTATA TTTAaac   
+H-NS_8                        3  1.65e-03         tt aTTAAATAAGCA CATTtaa   
+H-NS_5                        9  1.65e-03   agcAACAA ATATAACCTTTG TGGagc    
+H-NS_44                       6  1.84e-03      taaCT ATGAATTAGATG Aagt      
+H-NS_46                       9  2.28e-03   aatGTGAC ATGAATCAGGaa g         
+H-NS_50                      10  2.80e-03  tgcTCGGAA ATATTTGTTgtt           
+H-NS_49                       8  3.41e-03    ttgTACC TTATCTCGACAa at        
+H-NS_2                       13  4.52e-03 cGGTAATGCG TTTTATTCCCat t         
+H-NS_52                       7  4.95e-03     aaaTGT TTATCTTTTCAT gat       
+H-NS_40                       6  5.42e-03      gacAA ATAAAGGAATCT Ttct      
+H-NS_34                       1  5.42e-03          . attCTGGAAAAA ACTGGGcta 
+H-NS_7                        2  5.91e-03          c aaAATATATTTT ccc       
+H-NS_48                       5  6.44e-03       ttaC ATTCCTGGCTAT TGcac     
+H-NS_30                       6  6.44e-03      cagGC TTTACACTTTAT Gctt      
+H-NS_28                       3  6.44e-03         gc aATTAATGTGAG TTAGctc   
+H-NS_23                       1  7.62e-03          . atcTCGTTAATT Actg      
+H-NS_47                       8  9.68e-03    ccgCGTC TTTTCTGGCTAa tt        
+H-NS_42                       1  9.68e-03          . aaaAAGTGACTA TTTCCAttg 
+H-NS_35                       6  9.68e-03      tttCA AAAGAACAAATT Ctgg      
+H-NS_54                       8  1.13e-02    gcgCGAA ATGCTGCAATTa at        
+H-NS_25                       2  1.13e-02          g ttTTAGGCTGAT TTGGTtga  
+H-NS_33                       6  1.21e-02      taaCA ATTTCACACAGG Aaac      
+H-NS_20                       8  1.21e-02    cgcATCT TTGTTATGCTAt gg        
+H-NS_16                       4  1.31e-02        gct ATGATACAAAtc a         
+H-NS_14                       5  1.31e-02       gtgG CTTAATGCAcat           
+H-NS_15                       1  1.61e-02          . agaCCATTAAAG Cagt      
+H-NS_43                       9  1.72e-02   atcAGGGG TTGCCTCAGAtt c         
+H-NS_31                       8  2.37e-02    tcgTATG TTGTGTGGAATt gt        
+H-NS_32                       3  3.00e-02         tg tGGAATTGTGAG CGGAtaa   
+H-NS_12                       5  3.36e-02       tccA CTTTATTGCtgt           
+H-NS_29                       4  3.74e-02        gtt AGCTCACTCATT AGGcac    
+H-NS_27                       6  4.15e-02      ttgTC AGGCCGGAATAA Ctcc      
+H-NS_11                       3  4.15e-02         cc cGGCATTAAGTa ag        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATWWAWYRWWWW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+H-NS_24                           2.9e-06  1_[+1]_8
+H-NS_45                           5.5e-06  3_[+1]_6
+H-NS_56                           2.2e-05  [+1]_4
+H-NS_13                           2.7e-05  6_[+1]_5
+H-NS_6                            5.2e-05  7_[+1]_2
+H-NS_1                            6.4e-05  8_[+1]_6
+H-NS_41                           7.7e-05  6_[+1]_3
+H-NS_4                            0.00014  8_[+1]_18
+H-NS_55                           0.00019  4_[+1]
+H-NS_57                           0.00026  [+1]_4
+H-NS_38                           0.00026  1_[+1]_8
+H-NS_18                           0.00026  4_[+1]
+H-NS_9                            0.00026  [+1]_9
+H-NS_39                           0.00031  5_[+1]_4
+H-NS_17                           0.00031  4_[+1]
+H-NS_26                           0.00036  7_[+1]_2
+H-NS_37                           0.00041  2_[+1]_7
+H-NS_53                           0.00047  9_[+1]
+H-NS_3                            0.00062  16_[+1]_13
+H-NS_36                           0.00071  9_[+1]
+H-NS_22                           0.00081  7_[+1]_2
+H-NS_51                           0.00092  7_[+1]_2
+H-NS_19                           0.00092  7_[+1]_2
+H-NS_0                            0.00092  1_[+1]_3
+H-NS_21                            0.0015  5_[+1]_4
+H-NS_10                            0.0015  2_[+1]_7
+H-NS_8                             0.0016  2_[+1]_7
+H-NS_5                             0.0016  8_[+1]_6
+H-NS_44                            0.0018  5_[+1]_4
+H-NS_46                            0.0023  8_[+1]_1
+H-NS_50                            0.0028  9_[+1]
+H-NS_49                            0.0034  7_[+1]_2
+H-NS_2                             0.0045  12_[+1]_1
+H-NS_52                             0.005  6_[+1]_3
+H-NS_40                            0.0054  5_[+1]_4
+H-NS_34                            0.0054  [+1]_9
+H-NS_7                             0.0059  1_[+1]_3
+H-NS_48                            0.0064  4_[+1]_5
+H-NS_30                            0.0064  5_[+1]_4
+H-NS_28                            0.0064  2_[+1]_7
+H-NS_23                            0.0076  [+1]_4
+H-NS_47                            0.0097  7_[+1]_2
+H-NS_42                            0.0097  [+1]_9
+H-NS_35                            0.0097  5_[+1]_4
+H-NS_54                             0.011  7_[+1]_2
+H-NS_25                             0.011  1_[+1]_8
+H-NS_33                             0.012  5_[+1]_4
+H-NS_20                             0.012  7_[+1]_2
+H-NS_16                             0.013  3_[+1]_1
+H-NS_14                             0.013  4_[+1]
+H-NS_15                             0.016  [+1]_4
+H-NS_43                             0.017  8_[+1]_1
+H-NS_31                             0.024  7_[+1]_2
+H-NS_32                              0.03  2_[+1]_7
+H-NS_12                             0.034  4_[+1]
+H-NS_29                             0.037  3_[+1]_6
+H-NS_27                             0.041  5_[+1]_4
+H-NS_11                             0.041  2_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATWWAWYRWWWW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATWWAWYRWWWW width=12 seqs=58
+H-NS_24                  (    2) ATTTAATAAAAA  1 
+H-NS_45                  (    4) ATTTATCATATT  1 
+H-NS_56                  (    1) ATAAATTAAATG  1 
+H-NS_13                  (    7) ATTAATCATAAA  1 
+H-NS_6                   (    8) ATAAAACGAATA  1 
+H-NS_1                   (    9) ATTAAAGAAATA  1 
+H-NS_41                  (    7) ATATATCGACAT  1 
+H-NS_4                   (    9) AAATAATAAAAT  1 
+H-NS_55                  (    5) ATATATCCAGAA  1 
+H-NS_57                  (    1) ATATCATTTAAT  1 
+H-NS_38                  (    2) AGAAATTAAAAA  1 
+H-NS_18                  (    5) ATTTATTGGATT  1 
+H-NS_9                   (    1) ATAATTCAAGTT  1 
+H-NS_39                  (    6) ATTAAATTAGAA  1 
+H-NS_17                  (    5) ATTAAGCGAAAA  1 
+H-NS_26                  (    8) TTATTTTAAATT  1 
+H-NS_37                  (    3) ATAAAATATTTG  1 
+H-NS_53                  (   10) ATTAATCCTTTT  1 
+H-NS_3                   (   17) ATAATTGAAGTT  1 
+H-NS_36                  (   10) ATATATCGAACA  1 
+H-NS_22                  (    8) ATTTATTCCATG  1 
+H-NS_51                  (    8) ATTTAACCAGAG  1 
+H-NS_19                  (    8) ATTTCATACCAT  1 
+H-NS_0                   (    2) AAATATTTTAAT  1 
+H-NS_21                  (    6) ATGTCACACTTT  1 
+H-NS_10                  (    3) ATATCAGTTATA  1 
+H-NS_8                   (    3) ATTAAATAAGCA  1 
+H-NS_5                   (    9) ATATAACCTTTG  1 
+H-NS_44                  (    6) ATGAATTAGATG  1 
+H-NS_46                  (    9) ATGAATCAGGAA  1 
+H-NS_50                  (   10) ATATTTGTTGTT  1 
+H-NS_49                  (    8) TTATCTCGACAA  1 
+H-NS_2                   (   13) TTTTATTCCCAT  1 
+H-NS_52                  (    7) TTATCTTTTCAT  1 
+H-NS_40                  (    6) ATAAAGGAATCT  1 
+H-NS_34                  (    1) ATTCTGGAAAAA  1 
+H-NS_7                   (    2) AAAATATATTTT  1 
+H-NS_48                  (    5) ATTCCTGGCTAT  1 
+H-NS_30                  (    6) TTTACACTTTAT  1 
+H-NS_28                  (    3) AATTAATGTGAG  1 
+H-NS_23                  (    1) ATCTCGTTAATT  1 
+H-NS_47                  (    8) TTTTCTGGCTAA  1 
+H-NS_42                  (    1) AAAAAGTGACTA  1 
+H-NS_35                  (    6) AAAGAACAAATT  1 
+H-NS_54                  (    8) ATGCTGCAATTA  1 
+H-NS_25                  (    2) TTTTAGGCTGAT  1 
+H-NS_33                  (    6) ATTTCACACAGG  1 
+H-NS_20                  (    8) TTGTTATGCTAT  1 
+H-NS_16                  (    4) ATGATACAAATC  1 
+H-NS_14                  (    5) CTTAATGCACAT  1 
+H-NS_15                  (    1) AGACCATTAAAG  1 
+H-NS_43                  (    9) TTGCCTCAGATT  1 
+H-NS_31                  (    8) TTGTGTGGAATT  1 
+H-NS_32                  (    3) TGGAATTGTGAG  1 
+H-NS_12                  (    5) CTTTATTGCTGT  1 
+H-NS_29                  (    4) AGCTCACTCATT  1 
+H-NS_27                  (    6) AGGCCGGAATAA  1 
+H-NS_11                  (    3) CGGCATTAAGTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATWWAWYRWWWW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 12 n= 568 bayes= 3.13637 E= 7.6e-025 
+   162   -229  -1250    -38 
+  -125  -1250   -130    169 
+    69   -288    -42     62 
+    56   -107   -388    102 
+   121      3   -388    -66 
+    62  -1250    -88     97 
+ -1250     51    -30     81 
+    87    -88     -7    -51 
+   102    -56   -188      7 
+    87   -107    -30    -13 
+    92   -229   -288     87 
+    41   -388    -56     97 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATWWAWYRWWWW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 12 nsites= 58 E= 7.6e-025 
+ 0.758621  0.051724  0.000000  0.189655 
+ 0.103448  0.000000  0.103448  0.793103 
+ 0.396552  0.034483  0.189655  0.379310 
+ 0.362069  0.120690  0.017241  0.500000 
+ 0.568966  0.258621  0.017241  0.155172 
+ 0.379310  0.000000  0.137931  0.482759 
+ 0.000000  0.362069  0.206897  0.431034 
+ 0.448276  0.137931  0.241379  0.172414 
+ 0.500000  0.172414  0.068966  0.258621 
+ 0.448276  0.120690  0.206897  0.224138 
+ 0.465517  0.051724  0.034483  0.448276 
+ 0.327586  0.017241  0.172414  0.482759 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATWWAWYRWWWW MEME-1 regular expression
+--------------------------------------------------------------------------------
+AT[AT][TA][AC][TA][TCG][AG][AT][ATG][AT][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.24 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+H-NS_0                           4.58e-03  16
+H-NS_1                           9.53e-04  8_[+1(6.35e-05)]_6
+H-NS_2                           6.15e-02  25
+H-NS_3                           1.85e-02  41
+H-NS_4                           3.05e-03  38
+H-NS_5                           2.44e-02  26
+H-NS_6                           5.19e-04  7_[+1(5.19e-05)]_2
+H-NS_7                           2.92e-02  16
+H-NS_8                           1.63e-02  21
+H-NS_9                           2.62e-03  21
+H-NS_10                          1.46e-02  21
+H-NS_11                          1.91e-01  16
+H-NS_12                          1.57e-01  16
+H-NS_13                          3.26e-04  6_[+1(2.72e-05)]_5
+H-NS_14                          6.36e-02  16
+H-NS_15                          7.80e-02  16
+H-NS_16                          6.36e-02  16
+H-NS_17                          1.53e-03  16
+H-NS_18                          1.31e-03  16
+H-NS_19                          9.13e-03  21
+H-NS_20                          1.15e-01  21
+H-NS_21                          1.46e-02  21
+H-NS_22                          8.06e-03  21
+H-NS_23                          3.75e-02  16
+H-NS_24                          2.94e-05  1_[+1(2.94e-06)]_8
+H-NS_25                          1.07e-01  21
+H-NS_26                          2.62e-03  21
+H-NS_27                          3.45e-01  21
+H-NS_28                          6.26e-02  21
+H-NS_29                          3.17e-01  21
+H-NS_30                          6.26e-02  21
+H-NS_31                          2.14e-01  21
+H-NS_32                          2.63e-01  21
+H-NS_33                          1.15e-01  21
+H-NS_34                          5.29e-02  21
+H-NS_35                          9.27e-02  21
+H-NS_36                          7.08e-03  21
+H-NS_37                          4.10e-03  21
+H-NS_38                          2.62e-03  21
+H-NS_39                          3.06e-03  21
+H-NS_40                          5.29e-02  21
+H-NS_41                          7.73e-04  6_[+1(7.73e-05)]_3
+H-NS_42                          9.27e-02  21
+H-NS_43                          1.60e-01  21
+H-NS_44                          1.82e-02  21
+H-NS_45                          5.51e-05  3_[+1(5.51e-06)]_6
+H-NS_46                          2.25e-02  21
+H-NS_47                          9.27e-02  21
+H-NS_48                          6.26e-02  21
+H-NS_49                          3.36e-02  21
+H-NS_50                          2.76e-02  21
+H-NS_51                          9.13e-03  21
+H-NS_52                          4.84e-02  21
+H-NS_53                          4.72e-03  21
+H-NS_54                          1.07e-01  21
+H-NS_55                          9.52e-04  16
+H-NS_56                          1.08e-04  [+1(2.15e-05)]_4
+H-NS_57                          1.31e-03  16
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

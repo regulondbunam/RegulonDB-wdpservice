@@ -1,0 +1,269 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= AraC/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+AraC_0                   1.0000     23  AraC_1                   1.0000     23  
+AraC_2                   1.0000     25  AraC_3                   1.0000     23  
+AraC_4                   1.0000     23  AraC_5                   1.0000     23  
+AraC_6                   1.0000     23  AraC_7                   1.0000     23  
+AraC_8                   1.0000     23  AraC_9                   1.0000     23  
+AraC_10                  1.0000     23  AraC_11                  1.0000     23  
+AraC_12                  1.0000     23  AraC_13                  1.0000     23  
+AraC_14                  1.0000     23  AraC_15                  1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme AraC/ri_sites.fasta -oc AraC/./ -mod oops -nmotifs 1 -minw 14 -maxw 20 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           14    maxw=           20
+nsites: minsites=       16    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             370    N=              16
+sample: seed=           10    hsfrac=          0
+        searchsize=    370    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.319 C 0.214 G 0.189 T 0.278 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ABRGMNKDWHHDDCYATA MEME-1	width =  18  sites =  16  llr = 104  E-value = 3.2e-004
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ABRGMNKDWHHDDCYATA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  715234146343311618
+pos.-specific     C  :311531:1331:8511:
+probability       G  23461243:1:431:211
+matrix            T  14:1124444325:4171
+
+         bits    2.0                   
+                 1.8                   
+                 1.6                   
+                 1.4                   
+Relative         1.2                   
+Entropy          1.0              *   *
+(9.3 bits)       0.8 * *     *    *   *
+                 0.6 * *     *   ******
+                 0.4 * *** *** * ******
+                 0.2 ***** ************
+                 0.0 ------------------
+
+Multilevel           ATAGCATAATAGTCCATA
+consensus             CG ACGTTCTAA T   
+sequence              G     G AC G     
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABRGMNKDWHHDDCYATA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+AraC_7                        3  6.61e-09         cc aTAGCATTTTTATCCATA aga       
+AraC_2                        5  8.06e-08       ataC AGAGCAGGAAAATCCATA acc       
+AraC_10                       3  4.57e-06         tc aCGGCAGAAAAGTCCACA ttg       
+AraC_14                       3  5.27e-06         tc gCAGCAATTTAATCCATA ttt       
+AraC_11                       3  3.13e-05         ga aGAAACCAATTGTCCATA ttg       
+AraC_9                        3  1.39e-04         gc gTAACAAAAGTGTCTATA atc       
+AraC_13                       3  1.68e-04         at tCAGCAGGATAATGAATA cag       
+AraC_3                        5  2.22e-04       tctT ATGGATTAATCTGCTGtg c         
+AraC_4                        5  3.47e-04       attT ATGCACGTTCTCACTGta a         
+AraC_5                        5  1.06e-03       cctT ATGTCTTTTCCCGCTAaa t         
+AraC_12                       3  1.14e-03         ag aGGGGCGAATTATCTCTT ggc       
+AraC_8                        3  1.31e-03         ga tTAGCGGATCCTACCTGA cgc       
+AraC_1                        6  1.51e-03      caaTA GCAGTGTGAAATAACata           
+AraC_15                       3  2.11e-03         tt aTGCTGTTTCCGACCTGA cac       
+AraC_6                        5  4.58e-03       caaC AAGGATTTCCAGGCTAat c         
+AraC_0                        5  1.64e-02       attG AGCAACTGAAAGGGAGtg c         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABRGMNKDWHHDDCYATA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AraC_7                            6.6e-09  2_[+1]_3
+AraC_2                            8.1e-08  4_[+1]_3
+AraC_10                           4.6e-06  2_[+1]_3
+AraC_14                           5.3e-06  2_[+1]_3
+AraC_11                           3.1e-05  2_[+1]_3
+AraC_9                            0.00014  2_[+1]_3
+AraC_13                           0.00017  2_[+1]_3
+AraC_3                            0.00022  4_[+1]_1
+AraC_4                            0.00035  4_[+1]_1
+AraC_5                             0.0011  4_[+1]_1
+AraC_12                            0.0011  2_[+1]_3
+AraC_8                             0.0013  2_[+1]_3
+AraC_1                             0.0015  5_[+1]
+AraC_15                            0.0021  2_[+1]_3
+AraC_6                             0.0046  4_[+1]_1
+AraC_0                              0.016  4_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABRGMNKDWHHDDCYATA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ABRGMNKDWHHDDCYATA width=18 seqs=16
+AraC_7                   (    3) ATAGCATTTTTATCCATA  1 
+AraC_2                   (    5) AGAGCAGGAAAATCCATA  1 
+AraC_10                  (    3) ACGGCAGAAAAGTCCACA  1 
+AraC_14                  (    3) GCAGCAATTTAATCCATA  1 
+AraC_11                  (    3) AGAAACCAATTGTCCATA  1 
+AraC_9                   (    3) GTAACAAAAGTGTCTATA  1 
+AraC_13                  (    3) TCAGCAGGATAATGAATA  1 
+AraC_3                   (    5) ATGGATTAATCTGCTGTG  1 
+AraC_4                   (    5) ATGCACGTTCTCACTGTA  1 
+AraC_5                   (    5) ATGTCTTTTCCCGCTAAA  1 
+AraC_12                  (    3) AGGGGCGAATTATCTCTT  1 
+AraC_8                   (    3) TTAGCGGATCCTACCTGA  1 
+AraC_1                   (    6) GCAGTGTGAAATAACATA  1 
+AraC_15                  (    3) ATGCTGTTTCCGACCTGA  1 
+AraC_6                   (    5) AAGGATTTCCAGGCTAAT  1 
+AraC_0                   (    5) AGCAACTGAAAGGGAGTG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABRGMNKDWHHDDCYATA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 98 bayes= 2.35755 E= 3.2e-004 
+   148  -1064    -44    -98 
+  -197     -2     -2     83 
+   102   -202     78  -1064 
+   -39   -102    130   -197 
+    35     98   -202    -98 
+    61     -2    -44    -39 
+   -98   -202     56     83 
+    61  -1064     -2     61 
+   119   -202  -1064     61 
+     2     30   -202     61 
+    83     -2  -1064     35 
+    35   -102     56    -39 
+     2  -1064     -2    102 
+  -197    168   -102  -1064 
+   -98     98  -1064     61 
+   134   -202    -44    -98 
+   -98   -202   -102    148 
+   161  -1064   -102    -98 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABRGMNKDWHHDDCYATA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 16 E= 3.2e-004 
+ 0.687500  0.000000  0.187500  0.125000 
+ 0.062500  0.250000  0.250000  0.437500 
+ 0.500000  0.062500  0.437500  0.000000 
+ 0.187500  0.125000  0.625000  0.062500 
+ 0.312500  0.500000  0.062500  0.125000 
+ 0.375000  0.250000  0.187500  0.187500 
+ 0.125000  0.062500  0.375000  0.437500 
+ 0.375000  0.000000  0.250000  0.375000 
+ 0.562500  0.062500  0.000000  0.375000 
+ 0.250000  0.312500  0.062500  0.375000 
+ 0.437500  0.250000  0.000000  0.312500 
+ 0.312500  0.125000  0.375000  0.187500 
+ 0.250000  0.000000  0.250000  0.500000 
+ 0.062500  0.812500  0.125000  0.000000 
+ 0.125000  0.500000  0.000000  0.375000 
+ 0.625000  0.062500  0.187500  0.125000 
+ 0.125000  0.062500  0.125000  0.687500 
+ 0.750000  0.000000  0.125000  0.125000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ABRGMNKDWHHDDCYATA MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TCG][AG]G[CA][AC][TG][ATG][AT][TCA][ATC][GA][TAG]C[CT]ATA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+AraC_0                           9.45e-02  23
+AraC_1                           9.02e-03  23
+AraC_2                           6.45e-07  4_[+1(8.06e-08)]_3
+AraC_3                           1.33e-03  23
+AraC_4                           2.08e-03  23
+AraC_5                           6.33e-03  23
+AraC_6                           2.72e-02  23
+AraC_7                           3.96e-08  2_[+1(6.61e-09)]_3
+AraC_8                           7.85e-03  23
+AraC_9                           8.31e-04  23
+AraC_10                          2.74e-05  2_[+1(4.57e-06)]_3
+AraC_11                          1.88e-04  2_[+1(3.13e-05)]_3
+AraC_12                          6.81e-03  23
+AraC_13                          1.01e-03  23
+AraC_14                          3.16e-05  2_[+1(5.27e-06)]_3
+AraC_15                          1.26e-02  23
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************
