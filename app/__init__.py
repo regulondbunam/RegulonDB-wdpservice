@@ -85,7 +85,7 @@ def meme_metadata_collection(collection):
                 return content
         elif os.path.isdir(url_file):
             url="/wdps/metadata/meme/"+collection+"/"
-            fileList = os.listdir(dir)
+            fileList = os.listdir(url_file)
             dirData = []
             
             for file in fileList:
@@ -117,17 +117,27 @@ def meme_collection_tf(collection, tf):
 def meme_metadata_tf(collection, tf):
     route_script = __file__
     abs = os.path.dirname(os.path.abspath(route_script))
-    dir = abs.replace("app", "docs")+'/meme/'+collection+'/'+tf
+    dir = abs.replace("app", "docs")+'/meme/'+collection
     try:
-        fileList = os.listdir(dir)
-        dirData = []
-        url="/wdps/meme/"+collection+'/'+tf+'/'
-        for file in fileList:
-            dirData.append({
-               "label": file,
-               "url": url+file 
-            })
-        return jsonify(dirData)
+        url_file = os.path.join(dir, tf)
+        if os.path.isfile(url_file):
+            with open(url_file, 'r') as file:
+                content = file.read()
+                return content
+        elif os.path.isdir(url_file):
+            url="/wdps/meme/"+collection+"/"+tf+"/"
+            fileList = os.listdir(url_file)
+            dirData = []
+            
+            for file in fileList:
+                dirData.append({
+                "label": file,
+                "url": url+file 
+                })
+            
+            return jsonify(dirData)
+        else:
+            return f"{collection} no existe."
     except Exception as e:
         print(e)
         return "file no found"
