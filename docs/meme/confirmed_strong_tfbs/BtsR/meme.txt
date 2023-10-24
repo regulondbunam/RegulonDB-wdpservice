@@ -1,0 +1,237 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= BtsR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+BtsR_0                   1.0000     35  BtsR_1                   1.0000     17  
+BtsR_2                   1.0000     17  BtsR_3                   1.0000     17  
+BtsR_4                   1.0000     17  BtsR_5                   1.0000     17  
+BtsR_6                   1.0000     17  BtsR_7                   1.0000     17  
+BtsR_8                   1.0000     17  BtsR_9                   1.0000     17  
+BtsR_10                  1.0000     17  BtsR_11                  1.0000     17  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme BtsR/ri_sites.fasta -oc BtsR/./ -mod oops -nmotifs 1 -minw 8 -maxw 14 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           14
+nsites: minsites=       12    maxsites=       12    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             222    N=              12
+sample: seed=           10    hsfrac=          0
+        searchsize=    222    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.306 C 0.185 G 0.167 T 0.342 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATYSMTDARNT MEME-1	width =  11  sites =  12  llr = 68  E-value = 9.4e-004
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATYSMTDARNT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  a2:1333763:
+pos.-specific     C  :1554:12:3:
+probability       G  :2:31:3:332
+matrix            T  :6522842138
+
+         bits    2.0 *          
+                 1.8 *          
+                 1.6 *          
+                 1.4 *         *
+Relative         1.2 *    *    *
+Entropy          1.0 * *  *    *
+(8.1 bits)       0.8 * *  * ** *
+                 0.6 * *  * ** *
+                 0.4 ***  * ** *
+                 0.2 ********* *
+                 0.0 -----------
+
+Multilevel           ATCCCTTAAAT
+consensus              TGAAA GC 
+sequence                   G  G 
+                              T 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYSMTDARNT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site  
+-------------             ----- ---------            -----------
+BtsR_0                       13  4.33e-06 gACCGCTTAC ATCCCTAAAAT AACCACTCAg
+BtsR_1                        4  2.18e-05        tta ATTTCTTAAAT gta       
+BtsR_11                       4  1.03e-04        ctc ATTCATCAATT ttt       
+BtsR_6                        4  1.46e-04        cac ATTCTTGAGAT gtg       
+BtsR_7                        4  3.40e-04        ata AACGCTAAACT tgc       
+BtsR_9                        4  5.27e-04        aat AGCCGTTAACT gac       
+BtsR_5                        4  8.77e-04        aaa ATCACAAAATT ggt       
+BtsR_10                       2  1.14e-03          a atCCCTTTGGG GAttg     
+BtsR_2                        4  3.45e-03        ttg ATTTAAGATTT gta       
+BtsR_3                        1  4.35e-03          . accCATTTAGG GCTgat    
+BtsR_4                        4  4.58e-03        gta AGTGAATCGGT tca       
+BtsR_8                        4  5.06e-03        tgg AATGTTGCGCT aat       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYSMTDARNT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BtsR_0                            4.3e-06  12_[+1]_12
+BtsR_1                            2.2e-05  3_[+1]_3
+BtsR_11                            0.0001  3_[+1]_3
+BtsR_6                            0.00015  3_[+1]_3
+BtsR_7                            0.00034  3_[+1]_3
+BtsR_9                            0.00053  3_[+1]_3
+BtsR_5                            0.00088  3_[+1]_3
+BtsR_10                            0.0011  1_[+1]_5
+BtsR_2                             0.0035  3_[+1]_3
+BtsR_3                             0.0044  [+1]_6
+BtsR_4                             0.0046  3_[+1]_3
+BtsR_8                             0.0051  3_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYSMTDARNT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATYSMTDARNT width=11 seqs=12
+BtsR_0                   (   13) ATCCCTAAAAT  1 
+BtsR_1                   (    4) ATTTCTTAAAT  1 
+BtsR_11                  (    4) ATTCATCAATT  1 
+BtsR_6                   (    4) ATTCTTGAGAT  1 
+BtsR_7                   (    4) AACGCTAAACT  1 
+BtsR_9                   (    4) AGCCGTTAACT  1 
+BtsR_5                   (    4) ATCACAAAATT  1 
+BtsR_10                  (    2) ATCCCTTTGGG  1 
+BtsR_2                   (    4) ATTTAAGATTT  1 
+BtsR_3                   (    1) ACCCATTTAGG  1 
+BtsR_4                   (    4) AGTGAATCGGT  1 
+BtsR_8                   (    4) AATGTTGCGCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYSMTDARNT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 11 n= 102 bayes= 2.90689 E= 9.4e-004 
+   202  -1023  -1023  -1023 
+   -56   -161    -61    124 
+ -1023     98  -1023    102 
+  -156     98     -2    -56 
+    44     71   -161    -56 
+     2  -1023  -1023    161 
+     2   -161     -2     76 
+   144    -61  -1023    -56 
+   124  -1023     39   -156 
+     2     -2     -2      2 
+ -1023  -1023    -61    176 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYSMTDARNT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 11 nsites= 12 E= 9.4e-004 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.166667  0.083333  0.166667  0.583333 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.083333  0.500000  0.250000  0.166667 
+ 0.333333  0.416667  0.083333  0.166667 
+ 0.250000  0.000000  0.000000  0.750000 
+ 0.250000  0.083333  0.250000  0.416667 
+ 0.666667  0.166667  0.000000  0.166667 
+ 0.583333  0.000000  0.333333  0.083333 
+ 0.250000  0.250000  0.250000  0.250000 
+ 0.000000  0.000000  0.166667  0.833333 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATYSMTDARNT MEME-1 regular expression
+--------------------------------------------------------------------------------
+AT[CT][CG][CA][TA][TAG]A[AG][ACGT]T
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.20 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+BtsR_0                           1.08e-04  12_[+1(4.33e-06)]_12
+BtsR_1                           1.53e-04  3_[+1(2.18e-05)]_3
+BtsR_2                           2.39e-02  17
+BtsR_3                           3.01e-02  17
+BtsR_4                           3.17e-02  17
+BtsR_5                           6.12e-03  17
+BtsR_6                           1.02e-03  17
+BtsR_7                           2.38e-03  17
+BtsR_8                           3.49e-02  17
+BtsR_9                           3.68e-03  17
+BtsR_10                          7.98e-03  17
+BtsR_11                          7.19e-04  17
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

@@ -1,0 +1,272 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= FlhDC/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+FlhDC_0                  1.0000     23  FlhDC_1                  1.0000     23  
+FlhDC_2                  1.0000     23  FlhDC_3                  1.0000     23  
+FlhDC_4                  1.0000     23  FlhDC_5                  1.0000     23  
+FlhDC_6                  1.0000     23  FlhDC_7                  1.0000     24  
+FlhDC_8                  1.0000     23  FlhDC_9                  1.0000     24  
+FlhDC_10                 1.0000     23  FlhDC_11                 1.0000     23  
+FlhDC_12                 1.0000     23  FlhDC_13                 1.0000     23  
+FlhDC_14                 1.0000     23  FlhDC_15                 1.0000     24  
+FlhDC_16                 1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme FlhDC/ri_sites.fasta -oc FlhDC/./ -mod oops -nmotifs 1 -minw 14 -maxw 20 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           14    maxw=           20
+nsites: minsites=       17    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             394    N=              17
+sample: seed=           10    hsfrac=          0
+        searchsize=    394    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.246 C 0.284 G 0.193 T 0.277 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YTAWTSVCSSMAWTAAC MEME-1	width =  17  sites =  17  llr = 117  E-value = 4.2e-008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YTAWTSVCSSMAWTAAC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  11741:222:5741652
+pos.-specific     C  41:125555541::115
+probability       G  12:1132244121:221
+matrix            T  56356212:11169112
+
+         bits    2.0                  
+                 1.8                  
+                 1.6                  
+                 1.4              *   
+Relative         1.2   *          *   
+Entropy          1.0   *          *   
+(9.9 bits)       0.8   *        ***   
+                 0.6  ** **   * ***   
+                 0.4 ******  *********
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           TTATTCCCCCAATTAAC
+consensus            C TA GA GGC A GGT
+sequence                   G          
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTAWTSVCSSMAWTAAC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+FlhDC_5                       6  1.66e-06      gccCC TTATTCCCGCTATTAaa a         
+FlhDC_12                      7  8.86e-06     tttGCG TTTATTCCGCCGATaac           
+FlhDC_2                       3  1.01e-05         cc tGTAACCCCCAAATAAC Ccct      
+FlhDC_14                      6  1.65e-05      ggcGT CTTTTCCGGCCATTGtc g         
+FlhDC_9                       7  1.65e-05     ataGGC TGATTCAAGGCATTTac g         
+FlhDC_10                      4  1.87e-05        gcg TTATCGGCGGAATAAAC gca       
+FlhDC_3                       6  2.10e-05      accCA CTAATCGTCCGATTAaa a         
+FlhDC_4                       3  4.63e-05         tg tTAGTCGCCGAAATACT Cttt      
+FlhDC_11                      6  9.56e-05      ggtCG CTATTTATGCCGTTGat g         
+FlhDC_6                       3  1.06e-04         tt tCTATCCGCCAATAAAC Ccgt      
+FlhDC_16                      6  1.41e-04      gccCC TTACTCAAACCATTGaa c         
+FlhDC_1                       6  2.05e-04      cgcGT CTTTTCCCCGCTTTGtt g         
+FlhDC_7                       6  1.03e-03      tgtTG CTATTTAGCGCCTTTGt ct        
+FlhDC_13                      3  2.04e-03         ac aGATGGCAAGAAATAGC Gcct      
+FlhDC_0                       3  2.31e-03         gc cTAACGTCAGAGGTAGC Accg      
+FlhDC_15                      4  2.46e-03        cag CAAAAGCCCTAAATCCC Gcct      
+FlhDC_8                       3  1.05e-02         aa gAAACGGTCTAAATAGG Ctga      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTAWTSVCSSMAWTAAC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FlhDC_5                           1.7e-06  5_[+1]_1
+FlhDC_12                          8.9e-06  6_[+1]
+FlhDC_2                             1e-05  2_[+1]_4
+FlhDC_14                          1.7e-05  5_[+1]_1
+FlhDC_9                           1.7e-05  6_[+1]_1
+FlhDC_10                          1.9e-05  3_[+1]_3
+FlhDC_3                           2.1e-05  5_[+1]_1
+FlhDC_4                           4.6e-05  2_[+1]_4
+FlhDC_11                          9.6e-05  5_[+1]_1
+FlhDC_6                           0.00011  2_[+1]_4
+FlhDC_16                          0.00014  5_[+1]_1
+FlhDC_1                            0.0002  5_[+1]_1
+FlhDC_7                             0.001  5_[+1]_2
+FlhDC_13                            0.002  2_[+1]_4
+FlhDC_0                            0.0023  2_[+1]_4
+FlhDC_15                           0.0025  3_[+1]_4
+FlhDC_8                             0.011  2_[+1]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTAWTSVCSSMAWTAAC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YTAWTSVCSSMAWTAAC width=17 seqs=17
+FlhDC_5                  (    6) TTATTCCCGCTATTAAA  1 
+FlhDC_12                 (    7) TTTATTCCGCCGATAAC  1 
+FlhDC_2                  (    3) TGTAACCCCCAAATAAC  1 
+FlhDC_14                 (    6) CTTTTCCGGCCATTGTC  1 
+FlhDC_9                  (    7) TGATTCAAGGCATTTAC  1 
+FlhDC_10                 (    4) TTATCGGCGGAATAAAC  1 
+FlhDC_3                  (    6) CTAATCGTCCGATTAAA  1 
+FlhDC_4                  (    3) TTAGTCGCCGAAATACT  1 
+FlhDC_11                 (    6) CTATTTATGCCGTTGAT  1 
+FlhDC_6                  (    3) TCTATCCGCCAATAAAC  1 
+FlhDC_16                 (    6) TTACTCAAACCATTGAA  1 
+FlhDC_1                  (    6) CTTTTCCCCGCTTTGTT  1 
+FlhDC_7                  (    6) CTATTTAGCGCCTTTGT  1 
+FlhDC_13                 (    3) AGATGGCAAGAAATAGC  1 
+FlhDC_0                  (    3) CTAACGTCAGAGGTAGC  1 
+FlhDC_15                 (    4) CAAAAGCCCTAAATCCC  1 
+FlhDC_8                  (    3) GAAACGGTCTAAATAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTAWTSVCSSMAWTAAC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 122 bayes= 2.62678 E= 4.2e-008 
+  -206     70   -211     94 
+  -106   -211    -53    139 
+   152  -1073  -1073     26 
+    74   -211   -211     94 
+  -106    -53   -211    139 
+ -1073    106     21    -48 
+    -6     89    -11   -206 
+   -48     89    -53    -48 
+   -48     89     47  -1073 
+ -1073     89     70   -106 
+    94     70   -211   -206 
+   152   -211    -53   -206 
+    52  -1073   -211    126 
+  -106  -1073  -1073    184 
+   126   -211    -11   -106 
+   111   -111    -11   -106 
+   -48    106   -211     -6 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTAWTSVCSSMAWTAAC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 17 E= 4.2e-008 
+ 0.058824  0.411765  0.058824  0.470588 
+ 0.117647  0.058824  0.176471  0.647059 
+ 0.705882  0.000000  0.000000  0.294118 
+ 0.411765  0.058824  0.058824  0.470588 
+ 0.117647  0.176471  0.058824  0.647059 
+ 0.000000  0.529412  0.294118  0.176471 
+ 0.235294  0.470588  0.235294  0.058824 
+ 0.176471  0.470588  0.176471  0.176471 
+ 0.176471  0.470588  0.352941  0.000000 
+ 0.000000  0.470588  0.411765  0.117647 
+ 0.470588  0.411765  0.058824  0.058824 
+ 0.705882  0.058824  0.176471  0.058824 
+ 0.352941  0.000000  0.058824  0.588235 
+ 0.117647  0.000000  0.000000  0.882353 
+ 0.588235  0.058824  0.235294  0.117647 
+ 0.529412  0.117647  0.235294  0.117647 
+ 0.176471  0.529412  0.058824  0.235294 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YTAWTSVCSSMAWTAAC MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TC]T[AT][TA]T[CG][CAG]C[CG][CG][AC]A[TA]T[AG][AG][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FlhDC_0                          1.61e-02  23
+FlhDC_1                          1.43e-03  23
+FlhDC_2                          7.05e-05  2_[+1(1.01e-05)]_4
+FlhDC_3                          1.47e-04  5_[+1(2.10e-05)]_1
+FlhDC_4                          3.24e-04  2_[+1(4.63e-05)]_4
+FlhDC_5                          1.16e-05  5_[+1(1.66e-06)]_1
+FlhDC_6                          7.39e-04  23
+FlhDC_7                          8.23e-03  24
+FlhDC_8                          7.14e-02  23
+FlhDC_9                          1.32e-04  6_[+1(1.65e-05)]_1
+FlhDC_10                         1.31e-04  3_[+1(1.87e-05)]_3
+FlhDC_11                         6.70e-04  5_[+1(9.56e-05)]_1
+FlhDC_12                         6.21e-05  6_[+1(8.86e-06)]
+FlhDC_13                         1.42e-02  23
+FlhDC_14                         1.16e-04  5_[+1(1.65e-05)]_1
+FlhDC_15                         1.95e-02  24
+FlhDC_16                         9.88e-04  23
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

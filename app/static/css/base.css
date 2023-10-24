@@ -13,23 +13,23 @@ body {
 
   .animationFrame1{
     width: 0;
-    animation: typing 2s steps(38) 1s 1 normal both;
+    animation: typing 1s steps(38) 1s 1 normal both;
   }
 
   .animationFrame2{
     width: 0;
-    animation: typing 4s steps(38) 1s 1 normal both;
-    animation-delay: 2s;
+    animation: typing 2s steps(38) 1s 1 normal both;
+    animation-delay: 1s;
   }
 
   .animationFrame3{
     width: 0;
-    animation: typing 4s steps(38) 1s 1 normal both;
-    animation-delay: 4s;
+    animation: typing 2s steps(38) 1s 1 normal both;
+    animation-delay: 2s;
   }
   
   .description {
-    color: #02AE00;
+    color: #ffffff;
     overflow: hidden;
     white-space: nowrap;
     font-family: monospace;

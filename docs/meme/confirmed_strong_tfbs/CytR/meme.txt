@@ -1,0 +1,286 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= CytR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CytR_0                   1.0000     22  CytR_1                   1.0000     25  
+CytR_2                   1.0000     22  CytR_3                   1.0000     26  
+CytR_4                   1.0000     23  CytR_5                   1.0000     29  
+CytR_6                   1.0000     27  CytR_7                   1.0000     25  
+CytR_8                   1.0000     27  CytR_9                   1.0000     24  
+CytR_10                  1.0000     25  CytR_11                  1.0000     25  
+CytR_12                  1.0000     22  CytR_13                  1.0000     23  
+CytR_14                  1.0000     22  CytR_15                  1.0000     22  
+CytR_16                  1.0000     25  CytR_17                  1.0000     20  
+CytR_18                  1.0000     24  CytR_19                  1.0000     32  
+CytR_20                  1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme CytR/ri_sites.fasta -oc CytR/./ -mod oops -nmotifs 1 -minw 15 -maxw 21 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           15    maxw=           20
+nsites: minsites=       21    maxsites=       21    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             513    N=              21
+sample: seed=           10    hsfrac=          0
+        searchsize=    513    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.288 C 0.154 G 0.195 T 0.363 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF DYGCWWWVHWDWTWK MEME-1	width =  15  sites =  21  llr = 122  E-value = 1.5e-006
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif DYGCWWWVHWDWTWK MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  41:15324262333:
+pos.-specific     C  :4:6::224:1::11
+probability       G  2:722:14::2::23
+matrix            T  453:375:4347745
+
+         bits    2.0                
+                 1.8                
+                 1.6                
+                 1.4                
+Relative         1.2                
+Entropy          1.0      *     *   
+(8.4 bits)       0.8   *  *   * **  
+                 0.6  *****   * **  
+                 0.4  *****   * ** *
+                 0.2 ********** ****
+                 0.0 ---------------
+
+Multilevel           ATGCATTACATTTTT
+consensus            TCTGTAAGTTAAAAG
+sequence                       G    
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DYGCWWWVHWDWTWK MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+CytR_15                       5  1.51e-05       aagC TTGCATTGAACTTGT gga       
+CytR_5                        8  2.07e-05    attCAAT ATTCATCACACTTTT CATGaaa   
+CytR_1                        5  2.07e-05       tgaT TTGCATCACTTTTGG TGGgta    
+CytR_20                       9  2.83e-05   tatGTTTC ACGCGTTGCATAatt           
+CytR_19                       6  9.64e-05      gtgAA ACGAAACATATTTTT GTGAGCAATg
+CytR_8                       12  1.23e-04 ttGAACCAGA TCGCATTACAGTGat g         
+CytR_16                       5  1.94e-04       attT ATGCAACGCATTTGC GTCatg    
+CytR_12                       5  4.00e-04       agtG ATGCAAACTTGTAAG tag       
+CytR_4                        1  4.00e-04          . tttAAATGTTTTATT GCAATcgg  
+CytR_10                       2  5.31e-04          g aaTGTTTGCAATTAT TTGCCAcag 
+CytR_9                       10  5.31e-04  caaATTGGG AATGTTTGCAATtat           
+CytR_17                       6  5.82e-04      caaTT TCGTTTTGCAAAttg           
+CytR_13                       1  5.82e-04          . tttCATGAAAATTCT GTAACcgt  
+CytR_7                        4  6.94e-04        ttt GTGCGTAATTTATTC ACAAgct   
+CytR_14                       1  1.06e-03          . tcgGTTGCTAAATTG CATTtta   
+CytR_2                        5  1.06e-03       cgtC GCGCATTTTTGATGT atg       
+CytR_0                        1  1.23e-03          . gtgGGTAAATTTATG CAACgca   
+CytR_3                        6  2.21e-03      cgtGA ACGCAATCGATTACG TAAatg    
+CytR_11                       4  3.05e-03        aaa CTTGTAAGTAGATTT CCTTaat   
+CytR_18                       4  4.61e-03        cga TTACGTAAATGATAG AACtgt    
+CytR_6                       11  1.74e-02 ccgTTTTCAC GCGCTATCTGCTAAa aa        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DYGCWWWVHWDWTWK MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CytR_15                           1.5e-05  4_[+1]_3
+CytR_5                            2.1e-05  7_[+1]_7
+CytR_1                            2.1e-05  4_[+1]_6
+CytR_20                           2.8e-05  8_[+1]
+CytR_19                           9.6e-05  5_[+1]_12
+CytR_8                            0.00012  11_[+1]_1
+CytR_16                           0.00019  4_[+1]_6
+CytR_12                            0.0004  4_[+1]_3
+CytR_4                             0.0004  [+1]_8
+CytR_10                           0.00053  1_[+1]_9
+CytR_9                            0.00053  9_[+1]
+CytR_17                           0.00058  5_[+1]
+CytR_13                           0.00058  [+1]_8
+CytR_7                            0.00069  3_[+1]_7
+CytR_14                            0.0011  [+1]_7
+CytR_2                             0.0011  4_[+1]_3
+CytR_0                             0.0012  [+1]_7
+CytR_3                             0.0022  5_[+1]_6
+CytR_11                            0.0031  3_[+1]_7
+CytR_18                            0.0046  3_[+1]_6
+CytR_6                              0.017  10_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DYGCWWWVHWDWTWK MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF DYGCWWWVHWDWTWK width=15 seqs=21
+CytR_15                  (    5) TTGCATTGAACTTGT  1 
+CytR_5                   (    8) ATTCATCACACTTTT  1 
+CytR_1                   (    5) TTGCATCACTTTTGG  1 
+CytR_20                  (    9) ACGCGTTGCATAATT  1 
+CytR_19                  (    6) ACGAAACATATTTTT  1 
+CytR_8                   (   12) TCGCATTACAGTGAT  1 
+CytR_16                  (    5) ATGCAACGCATTTGC  1 
+CytR_12                  (    5) ATGCAAACTTGTAAG  1 
+CytR_4                   (    1) TTTAAATGTTTTATT  1 
+CytR_10                  (    2) AATGTTTGCAATTAT  1 
+CytR_9                   (   10) AATGTTTGCAATTAT  1 
+CytR_17                  (    6) TCGTTTTGCAAATTG  1 
+CytR_13                  (    1) TTTCATGAAAATTCT  1 
+CytR_7                   (    4) GTGCGTAATTTATTC  1 
+CytR_14                  (    1) TCGGTTGCTAAATTG  1 
+CytR_2                   (    5) GCGCATTTTTGATGT  1 
+CytR_0                   (    1) GTGGGTAAATTTATG  1 
+CytR_3                   (    6) ACGCAATCGATTACG  1 
+CytR_11                  (    4) CTTGTAAGTAGATTT  1 
+CytR_18                  (    4) TTACGTAAATGATAG  1 
+CytR_6                   (   11) GCGCTATCTGCTAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DYGCWWWVHWDWTWK MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 219 bayes= 3.23704 E= 1.5e-006 
+    63   -241    -41     63 
+  -137     58  -1104    109 
+  -237  -1104    139     22 
+  -137    128     -9   -237 
+   109  -1104    -41     22 
+    44  -1104  -1104    144 
+    -5    -41   -141     95 
+    63    -41     58   -237 
+   -37     58   -241     63 
+   133  -1104   -241     44 
+    -5    -83     -9     63 
+    44  -1104  -1104    144 
+    22  -1104   -241    144 
+    22   -141    -41     80 
+  -237   -141     39    109 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DYGCWWWVHWDWTWK MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 21 E= 1.5e-006 
+ 0.380952  0.047619  0.190476  0.380952 
+ 0.095238  0.380952  0.000000  0.523810 
+ 0.047619  0.000000  0.666667  0.285714 
+ 0.095238  0.619048  0.238095  0.047619 
+ 0.523810  0.000000  0.190476  0.285714 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.238095  0.190476  0.095238  0.476190 
+ 0.380952  0.190476  0.380952  0.047619 
+ 0.190476  0.380952  0.047619  0.380952 
+ 0.619048  0.000000  0.047619  0.333333 
+ 0.238095  0.142857  0.238095  0.380952 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.285714  0.000000  0.047619  0.666667 
+ 0.285714  0.095238  0.190476  0.428571 
+ 0.047619  0.095238  0.333333  0.523810 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DYGCWWWVHWDWTWK MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][TC][GT][CG][AT][TA][TA][AG][CT][AT][TAG][TA][TA][TA][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CytR_0                           9.84e-03  22
+CytR_1                           2.28e-04  4_[+1(2.07e-05)]_6
+CytR_2                           8.41e-03  22
+CytR_3                           2.62e-02  26
+CytR_4                           3.60e-03  23
+CytR_5                           3.11e-04  7_[+1(2.07e-05)]_7
+CytR_6                           2.04e-01  27
+CytR_7                           7.61e-03  25
+CytR_8                           1.60e-03  27
+CytR_9                           5.30e-03  24
+CytR_10                          5.82e-03  25
+CytR_11                          3.31e-02  25
+CytR_12                          3.20e-03  22
+CytR_13                          5.22e-03  23
+CytR_14                          8.41e-03  22
+CytR_15                          1.20e-04  4_[+1(1.51e-05)]_3
+CytR_16                          2.13e-03  25
+CytR_17                          3.48e-03  20
+CytR_18                          4.51e-02  24
+CytR_19                          1.73e-03  5_[+1(9.64e-05)]_12
+CytR_20                          2.54e-04  8_[+1(2.83e-05)]
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

@@ -1,0 +1,564 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= FNR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+FNR_0                    1.0000     20  FNR_1                    1.0000     20  
+FNR_2                    1.0000     20  FNR_3                    1.0000     20  
+FNR_4                    1.0000     20  FNR_5                    1.0000     21  
+FNR_6                    1.0000     21  FNR_7                    1.0000     21  
+FNR_8                    1.0000     21  FNR_9                    1.0000     21  
+FNR_10                   1.0000     21  FNR_11                   1.0000     21  
+FNR_12                   1.0000     21  FNR_13                   1.0000     21  
+FNR_14                   1.0000     21  FNR_15                   1.0000     21  
+FNR_16                   1.0000     21  FNR_17                   1.0000     21  
+FNR_18                   1.0000     21  FNR_19                   1.0000     21  
+FNR_20                   1.0000     21  FNR_21                   1.0000     21  
+FNR_22                   1.0000     21  FNR_23                   1.0000     21  
+FNR_24                   1.0000     21  FNR_25                   1.0000     21  
+FNR_26                   1.0000     21  FNR_27                   1.0000     21  
+FNR_28                   1.0000     21  FNR_29                   1.0000     21  
+FNR_30                   1.0000     21  FNR_31                   1.0000     21  
+FNR_32                   1.0000     20  FNR_33                   1.0000     21  
+FNR_34                   1.0000     21  FNR_35                   1.0000     21  
+FNR_36                   1.0000     21  FNR_37                   1.0000     21  
+FNR_38                   1.0000     21  FNR_39                   1.0000     21  
+FNR_40                   1.0000     21  FNR_41                   1.0000     21  
+FNR_42                   1.0000     21  FNR_43                   1.0000     20  
+FNR_44                   1.0000     20  FNR_45                   1.0000     20  
+FNR_46                   1.0000     20  FNR_47                   1.0000     20  
+FNR_48                   1.0000     20  FNR_49                   1.0000     20  
+FNR_50                   1.0000     20  FNR_51                   1.0000     20  
+FNR_52                   1.0000     20  FNR_53                   1.0000     20  
+FNR_54                   1.0000     20  FNR_55                   1.0000     20  
+FNR_56                   1.0000     20  FNR_57                   1.0000     20  
+FNR_58                   1.0000     20  FNR_59                   1.0000     20  
+FNR_60                   1.0000     20  FNR_61                   1.0000     20  
+FNR_62                   1.0000     20  FNR_63                   1.0000     20  
+FNR_64                   1.0000     20  FNR_65                   1.0000     20  
+FNR_66                   1.0000     20  FNR_67                   1.0000     20  
+FNR_68                   1.0000     20  FNR_69                   1.0000     20  
+FNR_70                   1.0000     20  FNR_71                   1.0000     20  
+FNR_72                   1.0000     20  FNR_73                   1.0000     20  
+FNR_74                   1.0000     20  FNR_75                   1.0000     20  
+FNR_76                   1.0000     20  FNR_77                   1.0000     20  
+FNR_78                   1.0000     20  FNR_79                   1.0000     20  
+FNR_80                   1.0000     20  FNR_81                   1.0000     20  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme FNR/ri_sites.fasta -oc FNR/./ -mod oops -nmotifs 1 -minw 11 -maxw 17 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           11    maxw=           17
+nsites: minsites=       82    maxsites=       82    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1677    N=              82
+sample: seed=           10    hsfrac=          0
+        searchsize=   1677    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.366 C 0.144 G 0.135 T 0.355 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF DWTTGAWHTWDWTCAAH MEME-1	width =  17  sites =  82  llr = 472  E-value = 6.5e-109
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif DWTTGAWHTWDWTCAAH MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  34322934253512863
+pos.-specific     C  111:21131111:5122
+probability       G  21::5:11112211111
+matrix            T  44681:53633382:14
+
+         bits    2.0                  
+                 1.8                  
+                 1.6                  
+                 1.4                  
+Relative         1.2    * *           
+Entropy          1.0    * *      * *  
+(8.3 bits)       0.8    * *      * *  
+                 0.6   ** *      * *  
+                 0.4  *** *  *   * ** 
+                 0.2 ********** ******
+                 0.0 -----------------
+
+Multilevel           TATTGATATATATCAAT
+consensus            ATAAA ACATAT    A
+sequence             G      T  G      
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWTTGAWHTWDWTCAAH MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+FNR_78                        2  1.62e-09          t taTTGATTTAAATCAAa ga        
+FNR_1                         2  3.30e-09          t gtTTGATATATATCAAt tg        
+FNR_57                        2  6.17e-09          g aaTTGATATTTATCAAt gt        
+FNR_61                        2  2.88e-08          g atATGATCTATATCAAt tt        
+FNR_49                        2  4.80e-08          a atTTGATTTACATCAAt aa        
+FNR_47                        2  4.80e-08          g taATGATAAATATCAAt ga        
+FNR_2                         2  1.31e-07          a aaTTGATTTAAATCACa tt        
+FNR_48                        2  2.07e-07          c gtTTGATTTACATCAAa tt        
+FNR_50                        2  4.91e-07          a aaTTGACAAATATCAAt ta        
+FNR_44                        2  4.91e-07          c taTTGATATGGATTAAt aa        
+FNR_54                        2  6.04e-07          c atTTGAGATACATCAAt ta        
+FNR_81                        2  1.09e-06          t aaTTGATAACGATCAAt gt        
+FNR_80                        2  1.60e-06          a aaTTAATCCAGATCAAt aa        
+FNR_56                        2  1.60e-06          t gtTTGATATTTATCATa tt        
+FNR_70                        2  3.91e-06          a acTTGATTAACATCAAt tt        
+FNR_64                        1  4.63e-06          . catTGATATTTATCATT acc       
+FNR_75                        2  7.59e-06          a aaTTGCGCTAAATCAAt ct        
+FNR_65                        2  7.59e-06          t gaTTGATTCCTATCAAa aa        
+FNR_46                        2  7.59e-06          c tcTTGATCGTTATCAAt tc        
+FNR_43                        2  7.59e-06          t tcATGATTTCAATCAAa ac        
+FNR_77                        2  1.42e-05          a ctTTGAGCTACATCAAa aa        
+FNR_68                        2  1.91e-05          c taTTGAGGTAGGTCAAt tt        
+FNR_74                        2  5.85e-05          c aaTTGATTAAAGACAAc at        
+FNR_51                        2  5.85e-05          a atTTGATCTACATCTCt tt        
+FNR_0                         2  6.67e-05          a gtTTGAGCGAAGTCAAt aa        
+FNR_58                        2  7.59e-05          a aaTTGTTCTCGATCAAa tt        
+FNR_18                        4  8.62e-05        ggg TTTTCAAATAGATAGac a         
+FNR_79                        2  9.79e-05          a agTTGATGTAAAACAAt aa        
+FNR_45                        2  9.79e-05          a atTTGCGCTATCTCAAt tt        
+FNR_67                        2  1.25e-04          g taAAAAACCACATCAAt ta        
+FNR_15                        4  1.25e-04        ttt TAAACATAAATGTCAct a         
+FNR_4                         2  2.54e-04          t gaTTGCTTATTATCAGt gc        
+FNR_69                        2  2.85e-04          t ttTTGATTTCGCGCAAa aa        
+FNR_66                        2  3.18e-04          a aaTTGTTTAACGTCAAa tt        
+FNR_22                        4  3.18e-04        ttg TAATTATAAGGTTAAat a         
+FNR_52                        2  3.96e-04          c ctTTGATACCGAACAAt aa        
+FNR_72                        2  4.41e-04          t cgTTGACTTTAGTCAAa at        
+FNR_17                        3  4.41e-04         tt tATAGCATTTTTTTAAc tg        
+FNR_23                        1  5.45e-04          . taaTAAAATAATTGTAA Ttat      
+FNR_60                        2  6.70e-04          g ttTTGATCTGGTTTGCc gc        
+FNR_53                        2  6.70e-04          c taTTGATCCAGAACAGg ta        
+FNR_34                        5  6.70e-04       gtaA ATTAAAATTTTATTgac           
+FNR_73                        2  7.42e-04          t taTTGATCTTACGCATc ct        
+FNR_42                        2  7.42e-04          g ggTTAACATTTTTTAAC tgt       
+FNR_25                        2  7.42e-04          g tgATCACAAATTTTAAA cag       
+FNR_11                        4  8.20e-04        atg TAAACAAATTAATACaa c         
+FNR_3                         2  8.20e-04          a caTTAACCTGGCTCAAa ga        
+FNR_12                        2  1.21e-03          t taTTAACATGTTTGCAA cct       
+FNR_21                        3  1.33e-03         ag gTTAAATATCGGTAATt tg        
+FNR_5                         2  1.33e-03          t acTACAATTTATTAACT gtt       
+FNR_63                        2  1.46e-03          g ttTTCATGGAATTTACc ac        
+FNR_31                        3  1.46e-03         ta gAGTAAAATATTTGATt at        
+FNR_16                        2  1.46e-03          t aaCTCACACATTTTAAA cat       
+FNR_9                         2  1.46e-03          c gtTTCAAAGTTGTAACT atg       
+FNR_40                        4  1.60e-03        ctg ATAACATCCTGGTAAaa t         
+FNR_24                        4  1.60e-03        agg TCCTCATTTTAATAAcc c         
+FNR_8                         1  1.75e-03          . tttAACGATTATTAAAC Tata      
+FNR_62                        2  1.92e-03          g ggCAAAATAAAATCAAa ta        
+FNR_19                        3  1.92e-03         ga tAATCAAATATTTACTc cg        
+FNR_38                        5  2.50e-03       aatG TAAAAAAATGGTTAaga           
+FNR_55                        2  3.23e-03          c ttTTGATCCTGCTACAg gt        
+FNR_20                        5  3.51e-03       cttT TAATTAACTGTTTTagc           
+FNR_14                        2  4.13e-03          a aaGTTACCTTATTGAAA cat       
+FNR_10                        2  4.13e-03          a gtAACAAAGTATTCACC tta       
+FNR_29                        5  4.47e-03       gtgT TAATGTTTTGTTAGaat           
+FNR_76                        2  5.66e-03          t ccTTGATGCAAAGCACt at        
+FNR_7                         5  6.11e-03       acgT TTATTAGTTGTATGatg           
+FNR_36                        4  7.10e-03        ccc ATATGAACGAATTATta a         
+FNR_6                         2  8.23e-03          t tcATCAAACTGTTAACG tgc       
+FNR_32                        4  1.02e-02        atc TTATCGTTTGATTTaca           
+FNR_27                        5  1.17e-02       cggG GTAAAAAAAAGGTTgca           
+FNR_37                        3  1.25e-02         aa cTTAACGTAAAAACAAc tt        
+FNR_71                        2  1.43e-02          t ttTTGATCTCACCCGGt aa        
+FNR_59                        2  1.63e-02          g aaTTGATCGAACAGCAg gc        
+FNR_35                        5  2.51e-02       attG GTAAAACCATTGTTgct           
+FNR_39                        4  2.66e-02        ata GCAACAACTAAACAAcc a         
+FNR_30                        5  2.99e-02       acgG TTGAAAAAACGATTcag           
+FNR_13                        5  2.99e-02       cggC GTAATATATACGTGgga           
+FNR_26                        4  5.34e-02        cct GGTTTATAAATAGTGtg g         
+FNR_28                        1  6.76e-02          . tagTGAATAAAAGGTTG Cctg      
+FNR_33                        5  9.16e-02       ttcA GTCAACGGAGTATTaca           
+FNR_41                        1  1.03e-01          . accAACATTGCGACAAC Ctca      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWTTGAWHTWDWTCAAH MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FNR_78                            1.6e-09  1_[+1]_2
+FNR_1                             3.3e-09  1_[+1]_2
+FNR_57                            6.2e-09  1_[+1]_2
+FNR_61                            2.9e-08  1_[+1]_2
+FNR_49                            4.8e-08  1_[+1]_2
+FNR_47                            4.8e-08  1_[+1]_2
+FNR_2                             1.3e-07  1_[+1]_2
+FNR_48                            2.1e-07  1_[+1]_2
+FNR_50                            4.9e-07  1_[+1]_2
+FNR_44                            4.9e-07  1_[+1]_2
+FNR_54                              6e-07  1_[+1]_2
+FNR_81                            1.1e-06  1_[+1]_2
+FNR_80                            1.6e-06  1_[+1]_2
+FNR_56                            1.6e-06  1_[+1]_2
+FNR_70                            3.9e-06  1_[+1]_2
+FNR_64                            4.6e-06  [+1]_3
+FNR_75                            7.6e-06  1_[+1]_2
+FNR_65                            7.6e-06  1_[+1]_2
+FNR_46                            7.6e-06  1_[+1]_2
+FNR_43                            7.6e-06  1_[+1]_2
+FNR_77                            1.4e-05  1_[+1]_2
+FNR_68                            1.9e-05  1_[+1]_2
+FNR_74                            5.8e-05  1_[+1]_2
+FNR_51                            5.8e-05  1_[+1]_2
+FNR_0                             6.7e-05  1_[+1]_2
+FNR_58                            7.6e-05  1_[+1]_2
+FNR_18                            8.6e-05  3_[+1]_1
+FNR_79                            9.8e-05  1_[+1]_2
+FNR_45                            9.8e-05  1_[+1]_2
+FNR_67                            0.00013  1_[+1]_2
+FNR_15                            0.00013  3_[+1]_1
+FNR_4                             0.00025  1_[+1]_2
+FNR_69                            0.00028  1_[+1]_2
+FNR_66                            0.00032  1_[+1]_2
+FNR_22                            0.00032  3_[+1]_1
+FNR_52                             0.0004  1_[+1]_2
+FNR_72                            0.00044  1_[+1]_2
+FNR_17                            0.00044  2_[+1]_2
+FNR_23                            0.00055  [+1]_4
+FNR_60                            0.00067  1_[+1]_2
+FNR_53                            0.00067  1_[+1]_2
+FNR_34                            0.00067  4_[+1]
+FNR_73                            0.00074  1_[+1]_2
+FNR_42                            0.00074  1_[+1]_3
+FNR_25                            0.00074  1_[+1]_3
+FNR_11                            0.00082  3_[+1]_1
+FNR_3                             0.00082  1_[+1]_2
+FNR_12                             0.0012  1_[+1]_3
+FNR_21                             0.0013  2_[+1]_2
+FNR_5                              0.0013  1_[+1]_3
+FNR_63                             0.0015  1_[+1]_2
+FNR_31                             0.0015  2_[+1]_2
+FNR_16                             0.0015  1_[+1]_3
+FNR_9                              0.0015  1_[+1]_3
+FNR_40                             0.0016  3_[+1]_1
+FNR_24                             0.0016  3_[+1]_1
+FNR_8                              0.0018  [+1]_4
+FNR_62                             0.0019  1_[+1]_2
+FNR_19                             0.0019  2_[+1]_2
+FNR_38                             0.0025  4_[+1]
+FNR_55                             0.0032  1_[+1]_2
+FNR_20                             0.0035  4_[+1]
+FNR_14                             0.0041  1_[+1]_3
+FNR_10                             0.0041  1_[+1]_3
+FNR_29                             0.0045  4_[+1]
+FNR_76                             0.0057  1_[+1]_2
+FNR_7                              0.0061  4_[+1]
+FNR_36                             0.0071  3_[+1]_1
+FNR_6                              0.0082  1_[+1]_3
+FNR_32                               0.01  3_[+1]
+FNR_27                              0.012  4_[+1]
+FNR_37                              0.013  2_[+1]_2
+FNR_71                              0.014  1_[+1]_2
+FNR_59                              0.016  1_[+1]_2
+FNR_35                              0.025  4_[+1]
+FNR_39                              0.027  3_[+1]_1
+FNR_30                               0.03  4_[+1]
+FNR_13                               0.03  4_[+1]
+FNR_26                              0.053  3_[+1]_1
+FNR_28                              0.068  [+1]_4
+FNR_33                              0.092  4_[+1]
+FNR_41                                0.1  [+1]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWTTGAWHTWDWTCAAH MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF DWTTGAWHTWDWTCAAH width=17 seqs=82
+FNR_78                   (    2) TATTGATTTAAATCAAA  1 
+FNR_1                    (    2) GTTTGATATATATCAAT  1 
+FNR_57                   (    2) AATTGATATTTATCAAT  1 
+FNR_61                   (    2) ATATGATCTATATCAAT  1 
+FNR_49                   (    2) ATTTGATTTACATCAAT  1 
+FNR_47                   (    2) TAATGATAAATATCAAT  1 
+FNR_2                    (    2) AATTGATTTAAATCACA  1 
+FNR_48                   (    2) GTTTGATTTACATCAAA  1 
+FNR_50                   (    2) AATTGACAAATATCAAT  1 
+FNR_44                   (    2) TATTGATATGGATTAAT  1 
+FNR_54                   (    2) ATTTGAGATACATCAAT  1 
+FNR_81                   (    2) AATTGATAACGATCAAT  1 
+FNR_80                   (    2) AATTAATCCAGATCAAT  1 
+FNR_56                   (    2) GTTTGATATTTATCATA  1 
+FNR_70                   (    2) ACTTGATTAACATCAAT  1 
+FNR_64                   (    1) CATTGATATTTATCATT  1 
+FNR_75                   (    2) AATTGCGCTAAATCAAT  1 
+FNR_65                   (    2) GATTGATTCCTATCAAA  1 
+FNR_46                   (    2) TCTTGATCGTTATCAAT  1 
+FNR_43                   (    2) TCATGATTTCAATCAAA  1 
+FNR_77                   (    2) CTTTGAGCTACATCAAA  1 
+FNR_68                   (    2) TATTGAGGTAGGTCAAT  1 
+FNR_74                   (    2) AATTGATTAAAGACAAC  1 
+FNR_51                   (    2) ATTTGATCTACATCTCT  1 
+FNR_0                    (    2) GTTTGAGCGAAGTCAAT  1 
+FNR_58                   (    2) AATTGTTCTCGATCAAA  1 
+FNR_18                   (    4) TTTTCAAATAGATAGAC  1 
+FNR_79                   (    2) AGTTGATGTAAAACAAT  1 
+FNR_45                   (    2) ATTTGCGCTATCTCAAT  1 
+FNR_67                   (    2) TAAAAAACCACATCAAT  1 
+FNR_15                   (    4) TAAACATAAATGTCACT  1 
+FNR_4                    (    2) GATTGCTTATTATCAGT  1 
+FNR_69                   (    2) TTTTGATTTCGCGCAAA  1 
+FNR_66                   (    2) AATTGTTTAACGTCAAA  1 
+FNR_22                   (    4) TAATTATAAGGTTAAAT  1 
+FNR_52                   (    2) CTTTGATACCGAACAAT  1 
+FNR_72                   (    2) CGTTGACTTTAGTCAAA  1 
+FNR_17                   (    3) TATAGCATTTTTTTAAC  1 
+FNR_23                   (    1) TAATAAAATAATTGTAA  1 
+FNR_60                   (    2) TTTTGATCTGGTTTGCC  1 
+FNR_53                   (    2) TATTGATCCAGAACAGG  1 
+FNR_34                   (    5) ATTAAAATTTTATTGAC  1 
+FNR_73                   (    2) TATTGATCTTACGCATC  1 
+FNR_42                   (    2) GGTTAACATTTTTTAAC  1 
+FNR_25                   (    2) TGATCACAAATTTTAAA  1 
+FNR_11                   (    4) TAAACAAATTAATACAA  1 
+FNR_3                    (    2) CATTAACCTGGCTCAAA  1 
+FNR_12                   (    2) TATTAACATGTTTGCAA  1 
+FNR_21                   (    3) GTTAAATATCGGTAATT  1 
+FNR_5                    (    2) ACTACAATTTATTAACT  1 
+FNR_63                   (    2) TTTTCATGGAATTTACC  1 
+FNR_31                   (    3) GAGTAAAATATTTGATT  1 
+FNR_16                   (    2) AACTCACACATTTTAAA  1 
+FNR_9                    (    2) GTTTCAAAGTTGTAACT  1 
+FNR_40                   (    4) ATAACATCCTGGTAAAA  1 
+FNR_24                   (    4) TCCTCATTTTAATAACC  1 
+FNR_8                    (    1) TTTAACGATTATTAAAC  1 
+FNR_62                   (    2) GGCAAAATAAAATCAAA  1 
+FNR_19                   (    3) TAATCAAATATTTACTC  1 
+FNR_38                   (    5) TAAAAAAATGGTTAAGA  1 
+FNR_55                   (    2) TTTTGATCCTGCTACAG  1 
+FNR_20                   (    5) TAATTAACTGTTTTAGC  1 
+FNR_14                   (    2) AAGTTACCTTATTGAAA  1 
+FNR_10                   (    2) GTAACAAAGTATTCACC  1 
+FNR_29                   (    5) TAATGTTTTGTTAGAAT  1 
+FNR_76                   (    2) CCTTGATGCAAAGCACT  1 
+FNR_7                    (    5) TTATTAGTTGTATGATG  1 
+FNR_36                   (    4) ATATGAACGAATTATTA  1 
+FNR_6                    (    2) TCATCAAACTGTTAACG  1 
+FNR_32                   (    4) TTATCGTTTGATTTACA  1 
+FNR_27                   (    5) GTAAAAAAAAGGTTGCA  1 
+FNR_37                   (    3) CTTAACGTAAAAACAAC  1 
+FNR_71                   (    2) TTTTGATCTCACCCGGT  1 
+FNR_59                   (    2) AATTGATCGAACAGCAG  1 
+FNR_35                   (    5) GTAAAACCATTGTTGCT  1 
+FNR_39                   (    4) GCAACAACTAAACAACC  1 
+FNR_30                   (    5) TTGAAAAAACGATTCAG  1 
+FNR_13                   (    5) GTAATATATACGTGGGA  1 
+FNR_26                   (    4) GGTTTATAAATAGTGTG  1 
+FNR_28                   (    1) TAGTGAATAAAAGGTTG  1 
+FNR_33                   (    5) GTCAACGGAGTATTACA  1 
+FNR_41                   (    1) ACCAACATTGCGACAAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWTTGAWHTWDWTCAAH MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 365 bayes= 1.78711 E= 6.5e-109 
+    25   -157    -21     71 
+    79   -121   -180     67 
+    19   -206   -238    131 
+    -1  -1300  -1300    162 
+   -16    -47    105   -175 
+   179   -138   -438   -275 
+     6   -121   -106    106 
+    62     14   -206     19 
+   -16   -106   -157    122 
+    99   -121    -80      6 
+    37   -106    -13     42 
+   102   -157    -68      6 
+  -133   -338   -206    173 
+   -43    105   -121    -43 
+   167   -180   -138   -233 
+   131    -38   -180   -101 
+    37    -38   -138     67 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWTTGAWHTWDWTCAAH MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 82 E= 6.5e-109 
+ 0.292683  0.085366  0.219512  0.402439 
+ 0.426829  0.109756  0.073171  0.390244 
+ 0.280488  0.060976  0.048780  0.609756 
+ 0.243902  0.000000  0.000000  0.756098 
+ 0.219512  0.182927  0.524390  0.073171 
+ 0.853659  0.097561  0.012195  0.036585 
+ 0.256098  0.109756  0.121951  0.512195 
+ 0.378049  0.280488  0.060976  0.280488 
+ 0.219512  0.121951  0.085366  0.573171 
+ 0.487805  0.109756  0.146341  0.256098 
+ 0.317073  0.121951  0.231707  0.329268 
+ 0.500000  0.085366  0.158537  0.256098 
+ 0.097561  0.024390  0.060976  0.817073 
+ 0.182927  0.524390  0.109756  0.182927 
+ 0.780488  0.073171  0.097561  0.048780 
+ 0.609756  0.195122  0.073171  0.121951 
+ 0.317073  0.195122  0.097561  0.390244 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWTTGAWHTWDWTCAAH MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TAG][AT][TA][TA][GA]A[TA][ACT][TA][AT][TAG][AT]TCAA[TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.29 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+FNR_0                            2.67e-04  1_[+1(6.67e-05)]_2
+FNR_1                            1.32e-08  1_[+1(3.30e-09)]_2
+FNR_2                            5.24e-07  1_[+1(1.31e-07)]_2
+FNR_3                            3.28e-03  20
+FNR_4                            1.02e-03  20
+FNR_5                            6.04e-03  21
+FNR_6                            4.05e-02  21
+FNR_7                            3.02e-02  21
+FNR_8                            8.74e-03  21
+FNR_9                            7.28e-03  21
+FNR_10                           2.05e-02  21
+FNR_11                           4.09e-03  21
+FNR_12                           6.04e-03  21
+FNR_13                           1.41e-01  21
+FNR_14                           2.05e-02  21
+FNR_15                           6.27e-04  21
+FNR_16                           7.28e-03  21
+FNR_17                           2.21e-03  21
+FNR_18                           4.31e-04  3_[+1(8.62e-05)]_1
+FNR_19                           9.56e-03  21
+FNR_20                           1.74e-02  21
+FNR_21                           6.63e-03  21
+FNR_22                           1.59e-03  21
+FNR_23                           2.72e-03  21
+FNR_24                           7.98e-03  21
+FNR_25                           3.70e-03  21
+FNR_26                           2.40e-01  21
+FNR_27                           5.72e-02  21
+FNR_28                           2.95e-01  21
+FNR_29                           2.22e-02  21
+FNR_30                           1.41e-01  21
+FNR_31                           7.28e-03  21
+FNR_32                           4.01e-02  20
+FNR_33                           3.82e-01  21
+FNR_34                           3.35e-03  21
+FNR_35                           1.19e-01  21
+FNR_36                           3.50e-02  21
+FNR_37                           6.11e-02  21
+FNR_38                           1.24e-02  21
+FNR_39                           1.26e-01  21
+FNR_40                           7.98e-03  21
+FNR_41                           4.20e-01  21
+FNR_42                           3.70e-03  21
+FNR_43                           3.03e-05  1_[+1(7.59e-06)]_2
+FNR_44                           1.96e-06  1_[+1(4.91e-07)]_2
+FNR_45                           3.91e-04  1_[+1(9.79e-05)]_2
+FNR_46                           3.03e-05  1_[+1(7.59e-06)]_2
+FNR_47                           1.92e-07  1_[+1(4.80e-08)]_2
+FNR_48                           8.26e-07  1_[+1(2.07e-07)]_2
+FNR_49                           1.92e-07  1_[+1(4.80e-08)]_2
+FNR_50                           1.96e-06  1_[+1(4.91e-07)]_2
+FNR_51                           2.34e-04  1_[+1(5.85e-05)]_2
+FNR_52                           1.58e-03  20
+FNR_53                           2.68e-03  20
+FNR_54                           2.41e-06  1_[+1(6.04e-07)]_2
+FNR_55                           1.28e-02  20
+FNR_56                           6.39e-06  1_[+1(1.60e-06)]_2
+FNR_57                           2.47e-08  1_[+1(6.17e-09)]_2
+FNR_58                           3.04e-04  1_[+1(7.59e-05)]_2
+FNR_59                           6.37e-02  20
+FNR_60                           2.68e-03  20
+FNR_61                           1.15e-07  1_[+1(2.88e-08)]_2
+FNR_62                           7.66e-03  20
+FNR_63                           5.83e-03  20
+FNR_64                           1.85e-05  [+1(4.63e-06)]_3
+FNR_65                           3.03e-05  1_[+1(7.59e-06)]_2
+FNR_66                           1.27e-03  20
+FNR_67                           5.02e-04  20
+FNR_68                           7.65e-05  1_[+1(1.91e-05)]_2
+FNR_69                           1.14e-03  20
+FNR_70                           1.56e-05  1_[+1(3.91e-06)]_2
+FNR_71                           5.61e-02  20
+FNR_72                           1.76e-03  20
+FNR_73                           2.96e-03  20
+FNR_74                           2.34e-04  1_[+1(5.85e-05)]_2
+FNR_75                           3.03e-05  1_[+1(7.59e-06)]_2
+FNR_76                           2.25e-02  20
+FNR_77                           5.67e-05  1_[+1(1.42e-05)]_2
+FNR_78                           6.48e-09  1_[+1(1.62e-09)]_2
+FNR_79                           3.91e-04  1_[+1(9.79e-05)]_2
+FNR_80                           6.39e-06  1_[+1(1.60e-06)]_2
+FNR_81                           4.38e-06  1_[+1(1.09e-06)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

@@ -1,0 +1,441 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= CpxR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CpxR_0                   1.0000     21  CpxR_1                   1.0000     19  
+CpxR_2                   1.0000     21  CpxR_3                   1.0000     21  
+CpxR_4                   1.0000     22  CpxR_5                   1.0000     20  
+CpxR_6                   1.0000     20  CpxR_7                   1.0000     20  
+CpxR_8                   1.0000     21  CpxR_9                   1.0000     21  
+CpxR_10                  1.0000     23  CpxR_11                  1.0000     19  
+CpxR_12                  1.0000     24  CpxR_13                  1.0000     20  
+CpxR_14                  1.0000     21  CpxR_15                  1.0000     21  
+CpxR_16                  1.0000     21  CpxR_17                  1.0000     21  
+CpxR_18                  1.0000     21  CpxR_19                  1.0000     21  
+CpxR_20                  1.0000     22  CpxR_21                  1.0000     21  
+CpxR_22                  1.0000     22  CpxR_23                  1.0000     21  
+CpxR_24                  1.0000     20  CpxR_25                  1.0000     21  
+CpxR_26                  1.0000     21  CpxR_27                  1.0000     21  
+CpxR_28                  1.0000     21  CpxR_29                  1.0000     21  
+CpxR_30                  1.0000     21  CpxR_31                  1.0000     17  
+CpxR_32                  1.0000     21  CpxR_33                  1.0000     21  
+CpxR_34                  1.0000     21  CpxR_35                  1.0000     21  
+CpxR_36                  1.0000     23  CpxR_37                  1.0000     21  
+CpxR_38                  1.0000     20  CpxR_39                  1.0000     22  
+CpxR_40                  1.0000     21  CpxR_41                  1.0000     21  
+CpxR_42                  1.0000     21  CpxR_43                  1.0000     24  
+CpxR_44                  1.0000     21  CpxR_45                  1.0000     22  
+CpxR_46                  1.0000     21  CpxR_47                  1.0000     21  
+CpxR_48                  1.0000     21  CpxR_49                  1.0000     22  
+CpxR_50                  1.0000     21  CpxR_51                  1.0000     25  
+CpxR_52                  1.0000     21  CpxR_53                  1.0000     21  
+CpxR_54                  1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme CpxR/ri_sites.fasta -oc CpxR/./ -mod oops -nmotifs 1 -minw 12 -maxw 18 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           12    maxw=           17
+nsites: minsites=       55    maxsites=       55    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1161    N=              55
+sample: seed=           10    hsfrac=          0
+        searchsize=   1161    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.345 C 0.162 G 0.156 T 0.337 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WKTAAHDWWDYGTWAH MEME-1	width =  16  sites =  55  llr = 287  E-value = 3.8e-046
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WKTAAHDWWDYGTWAH MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  3::6743544222574
+pos.-specific     C  2112:31221311113
+probability       G  15:::1311216::11
+matrix            T  4482324333517512
+
+         bits    2.0                 
+                 1.8                 
+                 1.6                 
+                 1.4                 
+Relative         1.2                 
+Entropy          1.0   * *           
+(7.5 bits)       0.8   * *       **  
+                 0.6  ****       *** 
+                 0.4  ****      **** 
+                 0.2 ****************
+                 0.0 ----------------
+
+Multilevel           TGTAAATAAATGTTAA
+consensus            AT  TCATTTCA A C
+sequence                  TG  G     T
+                                     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKTAAHDWWDYGTWAH MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site    
+-------------             ----- ---------            ----------------
+CpxR_9                        4  3.76e-08        aca TGTAACTAAATGTAAc tc        
+CpxR_34                       3  1.26e-07         aa tGTAAAAATATATAAA ctt       
+CpxR_28                       3  7.45e-07         gg tGTAAAACAACGTAAA gtc       
+CpxR_50                       3  2.18e-06         gc aGTAAAAAGACGTAAA ctt       
+CpxR_35                       3  4.75e-06         at tGTAATTTTTCGTAAT aat       
+CpxR_29                       3  4.75e-06         tg tGTAAAGAAGGGTAAA aaa       
+CpxR_24                       2  1.15e-05          g atTTAAGATTTGTAAT ggc       
+CpxR_54                       3  3.00e-05         cg cGTAAAGTAAGGTAAA taa       
+CpxR_44                       3  3.00e-05         ta cGTAAAATTAGGTAAA ggg       
+CpxR_33                       3  4.05e-05         tg cGTAAAGATGGGTAAA act       
+CpxR_18                       3  4.68e-05         at cGTAACGCAGCGTTAA caa       
+CpxR_3                        3  8.18e-05         tt tTTAAAATTGTGCAAT aaa       
+CpxR_26                       3  1.07e-04         cg aGTTACATTTAGTTAC atg       
+CpxR_14                       3  1.07e-04         ag cGTAAATGAGAGTAAA agc       
+CpxR_15                       3  1.22e-04         tc cGTAACGTGGCGTAAA cgg       
+CpxR_19                       3  1.38e-04         aa tTTTACTTTTGGTTAC ata       
+CpxR_12                       7  1.38e-04     gagGAA AGTCAGTTAATGTAAt gc        
+CpxR_22                       4  1.57e-04        caa GTTATCTGTTTGTTAA gtc       
+CpxR_21                       3  1.78e-04         cc tGTTACGGAATATTAC att       
+CpxR_52                       3  2.01e-04         ag aGTAAAAGCTTGTAAG cgg       
+CpxR_0                        4  2.55e-04        tat TTTTTATATGCATTAt ta        
+CpxR_7                        4  3.61e-04        aag GTTAACATTTTAATat a         
+CpxR_40                       3  4.52e-04         ag tGTAAAACCCCGTTTA cac       
+CpxR_27                       6  5.04e-04      tatCA TTTCTAAACTTAAtaa           
+CpxR_6                        1  5.04e-04          . tttCTAAACTTAATAA Aacc      
+CpxR_43                       3  7.69e-04         tt tGTAAAGACGAACAAT AAAttt    
+CpxR_25                       6  7.69e-04      ttaCA TTTAGTTACATGTtta           
+CpxR_8                        1  7.69e-04          . tttAGTTACATGTTTA ACact     
+CpxR_48                       3  1.39e-03         ca gGTAAAGCACTGAAAG acg       
+CpxR_32                       3  1.39e-03         ag tGTCAGCCTGTGTAAA tcc       
+CpxR_42                       3  1.53e-03         tc aGTAAATTACCGTCAG att       
+CpxR_23                       3  1.68e-03         at tGAAATCAGATGTAAT cca       
+CpxR_5                        5  1.84e-03       aacT TTTCTATCATTTCtaa           
+CpxR_46                       3  2.20e-03         ca aTTTACATTTTTTTGC act       
+CpxR_36                       4  2.20e-03        att TCTATGAAAATATTGA Cgta      
+CpxR_4                        2  2.20e-03          g tgCAATAAAAACCAAA TGtac     
+CpxR_39                       3  2.41e-03         ac aTTTACAAATTCTTTG Cact      
+CpxR_38                       2  2.63e-03          c atTTTATAAACATTCC gct       
+CpxR_31                       2  3.39e-03          t tgCATTTACATTTtga           
+CpxR_45                       3  3.99e-03         tc gCTAACGCGTAGATAA Aata      
+CpxR_37                       6  5.47e-03      tctTT TGTCTCGATATACatt           
+CpxR_53                       3  5.91e-03         ac aCTTTCATTGTTTTAC cgt       
+CpxR_49                       4  6.37e-03        gcg GTAAACTAAGCGTTGT ccc       
+CpxR_41                       3  6.37e-03         cg aACAATAAATTTTTAC ctt       
+CpxR_17                       3  6.37e-03         gc cGCAACTCCCTGAAAC gct       
+CpxR_20                       4  6.86e-03        ttt CTTTTTGAAACCAAAT ctt       
+CpxR_1                        2  6.86e-03          t atGCATTATTAGTAAg tt        
+CpxR_2                        1  9.82e-03          . agtAAGTTATCACCAT TTgta     
+CpxR_10                       8  1.37e-02    tatAAAA GGGCATGATAATTtac           
+CpxR_51                      10  1.46e-02  atcGTAAAC TCTCTATCGTTGAatc           
+CpxR_11                       2  1.46e-02          g acCAAAGAATACTTGc ac        
+CpxR_16                       3  1.56e-02         ca tTTGACTTATACTTGC ctg       
+CpxR_47                       3  1.88e-02         cc gGTAAAGAGATCACCA tcg       
+CpxR_30                       4  2.97e-02        gtg CTTATTTCGCCATTCc gc        
+CpxR_13                       2  5.40e-02          c gtCATTCAGACGATTC cag       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKTAAHDWWDYGTWAH MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CpxR_9                            3.8e-08  3_[+1]_2
+CpxR_34                           1.3e-07  2_[+1]_3
+CpxR_28                           7.5e-07  2_[+1]_3
+CpxR_50                           2.2e-06  2_[+1]_3
+CpxR_35                           4.8e-06  2_[+1]_3
+CpxR_29                           4.8e-06  2_[+1]_3
+CpxR_24                           1.2e-05  1_[+1]_3
+CpxR_54                             3e-05  2_[+1]_3
+CpxR_44                             3e-05  2_[+1]_3
+CpxR_33                             4e-05  2_[+1]_3
+CpxR_18                           4.7e-05  2_[+1]_3
+CpxR_3                            8.2e-05  2_[+1]_3
+CpxR_26                           0.00011  2_[+1]_3
+CpxR_14                           0.00011  2_[+1]_3
+CpxR_15                           0.00012  2_[+1]_3
+CpxR_19                           0.00014  2_[+1]_3
+CpxR_12                           0.00014  6_[+1]_2
+CpxR_22                           0.00016  3_[+1]_3
+CpxR_21                           0.00018  2_[+1]_3
+CpxR_52                            0.0002  2_[+1]_3
+CpxR_0                            0.00026  3_[+1]_2
+CpxR_7                            0.00036  3_[+1]_1
+CpxR_40                           0.00045  2_[+1]_3
+CpxR_27                            0.0005  5_[+1]
+CpxR_6                             0.0005  [+1]_4
+CpxR_43                           0.00077  2_[+1]_6
+CpxR_25                           0.00077  5_[+1]
+CpxR_8                            0.00077  [+1]_5
+CpxR_48                            0.0014  2_[+1]_3
+CpxR_32                            0.0014  2_[+1]_3
+CpxR_42                            0.0015  2_[+1]_3
+CpxR_23                            0.0017  2_[+1]_3
+CpxR_5                             0.0018  4_[+1]
+CpxR_46                            0.0022  2_[+1]_3
+CpxR_36                            0.0022  3_[+1]_4
+CpxR_4                             0.0022  1_[+1]_5
+CpxR_39                            0.0024  2_[+1]_4
+CpxR_38                            0.0026  1_[+1]_3
+CpxR_31                            0.0034  1_[+1]
+CpxR_45                             0.004  2_[+1]_4
+CpxR_37                            0.0055  5_[+1]
+CpxR_53                            0.0059  2_[+1]_3
+CpxR_49                            0.0064  3_[+1]_3
+CpxR_41                            0.0064  2_[+1]_3
+CpxR_17                            0.0064  2_[+1]_3
+CpxR_20                            0.0069  3_[+1]_3
+CpxR_1                             0.0069  1_[+1]_2
+CpxR_2                             0.0098  [+1]_5
+CpxR_10                             0.014  7_[+1]
+CpxR_51                             0.015  9_[+1]
+CpxR_11                             0.015  1_[+1]_2
+CpxR_16                             0.016  2_[+1]_3
+CpxR_47                             0.019  2_[+1]_3
+CpxR_30                              0.03  3_[+1]_2
+CpxR_13                             0.054  1_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKTAAHDWWDYGTWAH MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WKTAAHDWWDYGTWAH width=16 seqs=55
+CpxR_9                   (    4) TGTAACTAAATGTAAC  1 
+CpxR_34                  (    3) TGTAAAAATATATAAA  1 
+CpxR_28                  (    3) TGTAAAACAACGTAAA  1 
+CpxR_50                  (    3) AGTAAAAAGACGTAAA  1 
+CpxR_35                  (    3) TGTAATTTTTCGTAAT  1 
+CpxR_29                  (    3) TGTAAAGAAGGGTAAA  1 
+CpxR_24                  (    2) ATTTAAGATTTGTAAT  1 
+CpxR_54                  (    3) CGTAAAGTAAGGTAAA  1 
+CpxR_44                  (    3) CGTAAAATTAGGTAAA  1 
+CpxR_33                  (    3) CGTAAAGATGGGTAAA  1 
+CpxR_18                  (    3) CGTAACGCAGCGTTAA  1 
+CpxR_3                   (    3) TTTAAAATTGTGCAAT  1 
+CpxR_26                  (    3) AGTTACATTTAGTTAC  1 
+CpxR_14                  (    3) CGTAAATGAGAGTAAA  1 
+CpxR_15                  (    3) CGTAACGTGGCGTAAA  1 
+CpxR_19                  (    3) TTTTACTTTTGGTTAC  1 
+CpxR_12                  (    7) AGTCAGTTAATGTAAT  1 
+CpxR_22                  (    4) GTTATCTGTTTGTTAA  1 
+CpxR_21                  (    3) TGTTACGGAATATTAC  1 
+CpxR_52                  (    3) AGTAAAAGCTTGTAAG  1 
+CpxR_0                   (    4) TTTTTATATGCATTAT  1 
+CpxR_7                   (    4) GTTAACATTTTAATAT  1 
+CpxR_40                  (    3) TGTAAAACCCCGTTTA  1 
+CpxR_27                  (    6) TTTCTAAACTTAATAA  1 
+CpxR_6                   (    1) TTTCTAAACTTAATAA  1 
+CpxR_43                  (    3) TGTAAAGACGAACAAT  1 
+CpxR_25                  (    6) TTTAGTTACATGTTTA  1 
+CpxR_8                   (    1) TTTAGTTACATGTTTA  1 
+CpxR_48                  (    3) GGTAAAGCACTGAAAG  1 
+CpxR_32                  (    3) TGTCAGCCTGTGTAAA  1 
+CpxR_42                  (    3) AGTAAATTACCGTCAG  1 
+CpxR_23                  (    3) TGAAATCAGATGTAAT  1 
+CpxR_5                   (    5) TTTCTATCATTTCTAA  1 
+CpxR_46                  (    3) ATTTACATTTTTTTGC  1 
+CpxR_36                  (    4) TCTATGAAAATATTGA  1 
+CpxR_4                   (    2) TGCAATAAAAACCAAA  1 
+CpxR_39                  (    3) ATTTACAAATTCTTTG  1 
+CpxR_38                  (    2) ATTTTATAAACATTCC  1 
+CpxR_31                  (    2) TGCATTTACATTTTGA  1 
+CpxR_45                  (    3) GCTAACGCGTAGATAA  1 
+CpxR_37                  (    6) TGTCTCGATATACATT  1 
+CpxR_53                  (    3) ACTTTCATTGTTTTAC  1 
+CpxR_49                  (    4) GTAAACTAAGCGTTGT  1 
+CpxR_41                  (    3) AACAATAAATTTTTAC  1 
+CpxR_17                  (    3) CGCAACTCCCTGAAAC  1 
+CpxR_20                  (    4) CTTTTTGAAACCAAAT  1 
+CpxR_1                   (    2) ATGCATTATTAGTAAG  1 
+CpxR_2                   (    1) AGTAAGTTATCACCAT  1 
+CpxR_10                  (    8) GGGCATGATAATTTAC  1 
+CpxR_51                  (   10) TCTCTATCGTTGAATC  1 
+CpxR_11                  (    2) ACCAAAGAATACTTGC  1 
+CpxR_16                  (    3) TTTGACTTATACTTGC  1 
+CpxR_47                  (    3) GGTAAAGAGATCACCA  1 
+CpxR_30                  (    4) CTTATTTCGCCATTCC  1 
+CpxR_13                  (    2) GTCATTCAGACGATTC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKTAAHDWWDYGTWAH MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 16 n= 336 bayes= 2.35307 E= 3.8e-046 
+     5    -63    -80     83 
+  -375   -148    105     56 
+  -276   -122   -280    173 
+   137    -63   -380    -44 
+   153  -1243   -280      5 
+    77     20   -180    -17 
+    33   -222     10     56 
+   100    -48   -180      5 
+    63    -63    -80     33 
+    56   -148    -34     49 
+   -59      0   -148    100 
+   -17   -122    115   -117 
+   -44   -122  -1243    153 
+    89   -222  -1243    100 
+   153   -222   -122    -95 
+    77     10   -148    -17 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKTAAHDWWDYGTWAH MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 16 nsites= 55 E= 3.8e-046 
+ 0.254545  0.163636  0.145455  0.436364 
+ 0.018182  0.090909  0.527273  0.363636 
+ 0.036364  0.109091  0.036364  0.818182 
+ 0.636364  0.163636  0.018182  0.181818 
+ 0.709091  0.000000  0.036364  0.254545 
+ 0.418182  0.290909  0.072727  0.218182 
+ 0.309091  0.054545  0.272727  0.363636 
+ 0.490909  0.181818  0.072727  0.254545 
+ 0.381818  0.163636  0.145455  0.309091 
+ 0.363636  0.090909  0.200000  0.345455 
+ 0.163636  0.254545  0.090909  0.490909 
+ 0.218182  0.109091  0.563636  0.109091 
+ 0.181818  0.109091  0.000000  0.709091 
+ 0.454545  0.054545  0.000000  0.490909 
+ 0.709091  0.054545  0.109091  0.127273 
+ 0.418182  0.272727  0.090909  0.218182 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WKTAAHDWWDYGTWAH MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][GT]TA[AT][ACT][TAG][AT][AT][ATG][TC][GA]T[TA]A[ACT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.25 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CpxR_0                           1.53e-03  21
+CpxR_1                           2.72e-02  19
+CpxR_2                           5.75e-02  21
+CpxR_3                           4.91e-04  2_[+1(8.18e-05)]_3
+CpxR_4                           1.53e-02  22
+CpxR_5                           9.17e-03  20
+CpxR_6                           2.52e-03  20
+CpxR_7                           1.81e-03  20
+CpxR_8                           4.61e-03  21
+CpxR_9                           2.25e-07  3_[+1(3.76e-08)]_2
+CpxR_10                          1.05e-01  23
+CpxR_11                          5.73e-02  19
+CpxR_12                          1.24e-03  24
+CpxR_13                          2.42e-01  20
+CpxR_14                          6.41e-04  21
+CpxR_15                          7.30e-04  21
+CpxR_16                          9.00e-02  21
+CpxR_17                          3.76e-02  21
+CpxR_18                          2.81e-04  2_[+1(4.68e-05)]_3
+CpxR_19                          8.30e-04  21
+CpxR_20                          4.71e-02  22
+CpxR_21                          1.07e-03  21
+CpxR_22                          1.10e-03  22
+CpxR_23                          1.00e-02  21
+CpxR_24                          5.76e-05  1_[+1(1.15e-05)]_3
+CpxR_25                          4.61e-03  21
+CpxR_26                          6.41e-04  21
+CpxR_27                          3.02e-03  21
+CpxR_28                          4.47e-06  2_[+1(7.45e-07)]_3
+CpxR_29                          2.85e-05  2_[+1(4.75e-06)]_3
+CpxR_30                          1.65e-01  21
+CpxR_31                          6.76e-03  17
+CpxR_32                          8.32e-03  21
+CpxR_33                          2.43e-04  2_[+1(4.05e-05)]_3
+CpxR_34                          7.58e-07  2_[+1(1.26e-07)]_3
+CpxR_35                          2.85e-05  2_[+1(4.75e-06)]_3
+CpxR_36                          1.75e-02  23
+CpxR_37                          3.24e-02  21
+CpxR_38                          1.31e-02  20
+CpxR_39                          1.67e-02  22
+CpxR_40                          2.71e-03  21
+CpxR_41                          3.76e-02  21
+CpxR_42                          9.14e-03  21
+CpxR_43                          6.90e-03  24
+CpxR_44                          1.80e-04  2_[+1(3.00e-05)]_3
+CpxR_45                          2.76e-02  22
+CpxR_46                          1.31e-02  21
+CpxR_47                          1.07e-01  21
+CpxR_48                          8.32e-03  21
+CpxR_49                          4.38e-02  22
+CpxR_50                          1.31e-05  2_[+1(2.18e-06)]_3
+CpxR_51                          1.37e-01  25
+CpxR_52                          1.20e-03  21
+CpxR_53                          3.49e-02  21
+CpxR_54                          1.80e-04  2_[+1(3.00e-05)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

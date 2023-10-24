@@ -1,0 +1,319 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= Cra/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Cra_0                    1.0000     24  Cra_1                    1.0000     24  
+Cra_2                    1.0000     24  Cra_3                    1.0000     24  
+Cra_4                    1.0000     24  Cra_5                    1.0000     24  
+Cra_6                    1.0000     24  Cra_7                    1.0000     24  
+Cra_8                    1.0000     24  Cra_9                    1.0000     24  
+Cra_10                   1.0000     24  Cra_11                   1.0000     24  
+Cra_12                   1.0000     22  Cra_13                   1.0000     22  
+Cra_14                   1.0000     24  Cra_15                   1.0000     24  
+Cra_16                   1.0000     24  Cra_17                   1.0000     24  
+Cra_18                   1.0000     24  Cra_19                   1.0000     24  
+Cra_20                   1.0000     24  Cra_21                   1.0000     24  
+Cra_22                   1.0000     22  Cra_23                   1.0000     24  
+Cra_24                   1.0000     24  Cra_25                   1.0000     24  
+Cra_26                   1.0000     24  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme Cra/ri_sites.fasta -oc Cra/./ -mod oops -nmotifs 1 -minw 15 -maxw 21 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           15    maxw=           21
+nsites: minsites=       27    maxsites=       27    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             642    N=              27
+sample: seed=           10    hsfrac=          0
+        searchsize=    642    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.288 C 0.198 G 0.199 T 0.315 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF DWRCTGAAWCGWTTCAGC MEME-1	width =  18  sites =  27  llr = 267  E-value = 4.5e-057
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif DWRCTGAAWCGWTTCAGC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  434111993:15:11611
+pos.-specific     C  11161:::17:1::7:26
+probability       G  2151:71:119:1:::5:
+matrix            T  45:382:141:4982313
+
+         bits    2.0                   
+                 1.8                   
+                 1.6             *     
+                 1.4           * *     
+Relative         1.2       **  * **    
+Entropy          1.0     * **  * **    
+(14.3 bits)      0.8     **** ******* *
+                 0.6     **** ******* *
+                 0.4   ****** ******* *
+                 0.2 ******************
+                 0.0 ------------------
+
+Multilevel           ATGCTGAATCGATTCAGC
+consensus            TAAT    A  T  TTCT
+sequence                               
+                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWRCTGAAWCGWTTCAGC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                   Site     
+-------------             ----- ---------            ------------------
+Cra_24                        3  1.43e-08         at tTGCTGAATGGATTCAGT Ctta      
+Cra_15                        3  3.79e-08         cc tAGCTGAAGCGTTTCAGT Cgat      
+Cra_8                         3  7.01e-08         ag tTGCTGAATCGTTTTTTC Aacc      
+Cra_26                        3  1.63e-07         ac tGACTGAAACGTTTTTGC Ccta      
+Cra_19                        3  3.13e-07         ca aAGCTGAATCGATTTTAT Gatt      
+Cra_22                        2  3.56e-07          t ttGCTTGAACGATTCACC gtt       
+Cra_14                        3  3.56e-07         ct gACCTGAATCAATTCAGC Agga      
+Cra_13                        2  5.14e-07          g atGCTGAAAGGTGTCAGC ttt       
+Cra_10                        3  5.80e-07         at tTGATGAACCGTTTCATC Attg      
+Cra_0                         3  1.05e-06         cc gAATTGAACCGATTCACT Tacc      
+Cra_21                        3  1.82e-06         ga cTCTTGAATGGTTTCAGC Actt      
+Cra_17                        3  1.82e-06         cg aTCGTTAAGCGATTCAGC Acct      
+Cra_20                        3  3.41e-06         gc gAGCTGAATCGCTTAACC Tggt      
+Cra_12                        2  4.61e-06          c atGCTGAAGCGAGACACC agg       
+Cra_5                         2  4.61e-06          g aaATTAAATCATTTCAAC TTggt     
+Cra_18                        3  6.16e-06         gc gTGGTGAATCGATACTTT Accg      
+Cra_25                        3  9.84e-06         gg aCAGTTAACCGATTCAGT Gcca      
+Cra_6                         2  1.68e-05          t ttATTGTAAGGATTTTGC GGcgt     
+Cra_23                        3  1.83e-05         at aTTTGTAAACGATTCAGC Ttaa      
+Cra_16                        3  1.83e-05         gg tTGCTGAATCGTTAAGGT Aggc      
+Cra_9                         3  3.01e-05         aa tGATTGACACGATTCCGC Ttga      
+Cra_1                         3  1.32e-04         gt tGATCGATACGATCCTGC Tcca      
+Cra_4                         4  2.22e-04        aaa AAACAAGAACGTTTTACA tga       
+Cra_7                         3  2.51e-04         aa aTGCAAATTTGCTTCAAC Aaaa      
+Cra_2                         4  3.02e-04        tta GGGCTGATTTATTACTAC aca       
+Cra_11                        3  4.28e-04         at cAAACTGATCGATTCACA Agat      
+Cra_3                         4  7.34e-04        act ACACCGAAATATTTTTTA tat       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWRCTGAAWCGWTTCAGC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cra_24                            1.4e-08  2_[+1]_4
+Cra_15                            3.8e-08  2_[+1]_4
+Cra_8                               7e-08  2_[+1]_4
+Cra_26                            1.6e-07  2_[+1]_4
+Cra_19                            3.1e-07  2_[+1]_4
+Cra_22                            3.6e-07  1_[+1]_3
+Cra_14                            3.6e-07  2_[+1]_4
+Cra_13                            5.1e-07  1_[+1]_3
+Cra_10                            5.8e-07  2_[+1]_4
+Cra_0                               1e-06  2_[+1]_4
+Cra_21                            1.8e-06  2_[+1]_4
+Cra_17                            1.8e-06  2_[+1]_4
+Cra_20                            3.4e-06  2_[+1]_4
+Cra_12                            4.6e-06  1_[+1]_3
+Cra_5                             4.6e-06  1_[+1]_5
+Cra_18                            6.2e-06  2_[+1]_4
+Cra_25                            9.8e-06  2_[+1]_4
+Cra_6                             1.7e-05  1_[+1]_5
+Cra_23                            1.8e-05  2_[+1]_4
+Cra_16                            1.8e-05  2_[+1]_4
+Cra_9                               3e-05  2_[+1]_4
+Cra_1                             0.00013  2_[+1]_4
+Cra_4                             0.00022  3_[+1]_3
+Cra_7                             0.00025  2_[+1]_4
+Cra_2                              0.0003  3_[+1]_3
+Cra_11                            0.00043  2_[+1]_4
+Cra_3                             0.00073  3_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWRCTGAAWCGWTTCAGC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF DWRCTGAAWCGWTTCAGC width=18 seqs=27
+Cra_24                   (    3) TTGCTGAATGGATTCAGT  1 
+Cra_15                   (    3) TAGCTGAAGCGTTTCAGT  1 
+Cra_8                    (    3) TTGCTGAATCGTTTTTTC  1 
+Cra_26                   (    3) TGACTGAAACGTTTTTGC  1 
+Cra_19                   (    3) AAGCTGAATCGATTTTAT  1 
+Cra_22                   (    2) TTGCTTGAACGATTCACC  1 
+Cra_14                   (    3) GACCTGAATCAATTCAGC  1 
+Cra_13                   (    2) ATGCTGAAAGGTGTCAGC  1 
+Cra_10                   (    3) TTGATGAACCGTTTCATC  1 
+Cra_0                    (    3) GAATTGAACCGATTCACT  1 
+Cra_21                   (    3) CTCTTGAATGGTTTCAGC  1 
+Cra_17                   (    3) ATCGTTAAGCGATTCAGC  1 
+Cra_20                   (    3) GAGCTGAATCGCTTAACC  1 
+Cra_12                   (    2) ATGCTGAAGCGAGACACC  1 
+Cra_5                    (    2) AAATTAAATCATTTCAAC  1 
+Cra_18                   (    3) GTGGTGAATCGATACTTT  1 
+Cra_25                   (    3) ACAGTTAACCGATTCAGT  1 
+Cra_6                    (    2) TTATTGTAAGGATTTTGC  1 
+Cra_23                   (    3) ATTTGTAAACGATTCAGC  1 
+Cra_16                   (    3) TTGCTGAATCGTTAAGGT  1 
+Cra_9                    (    3) TGATTGACACGATTCCGC  1 
+Cra_1                    (    3) TGATCGATACGATCCTGC  1 
+Cra_4                    (    4) AAACAAGAACGTTTTACA  1 
+Cra_7                    (    3) ATGCAAATTTGCTTCAAC  1 
+Cra_2                    (    4) GGGCTGATTTATTACTAC  1 
+Cra_11                   (    3) CAAACTGATCGATTCACA  1 
+Cra_3                    (    4) ACACCGAAATATTTTTTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWRCTGAAWCGWTTCAGC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 18 n= 183 bayes= 2.53051 E= 4.5e-057 
+    59   -178    -46     59 
+    27   -178    -78     97 
+    59   -119     92   -273 
+  -173    113   -119      8 
+  -173   -119   -277    166 
+  -115  -1140    147    -41 
+   179  -1140   -119   -273 
+   179   -277  -1140   -115 
+    44   -119   -119     85 
+ -1140    154    -78   -115 
+   -73  -1140    175  -1140 
+   108   -178  -1140     73 
+ -1140  -1140   -178    191 
+   -73   -277  -1140    173 
+  -173    147  -1140    -15 
+   136   -277   -277     27 
+   -73    -19     92    -73 
+  -115    131  -1140      8 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWRCTGAAWCGWTTCAGC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 18 nsites= 27 E= 4.5e-057 
+ 0.370370  0.074074  0.185185  0.370370 
+ 0.296296  0.074074  0.148148  0.481481 
+ 0.370370  0.111111  0.481481  0.037037 
+ 0.074074  0.555556  0.111111  0.259259 
+ 0.074074  0.111111  0.037037  0.777778 
+ 0.111111  0.000000  0.703704  0.185185 
+ 0.851852  0.000000  0.111111  0.037037 
+ 0.851852  0.037037  0.000000  0.111111 
+ 0.333333  0.111111  0.111111  0.444444 
+ 0.000000  0.740741  0.148148  0.111111 
+ 0.148148  0.000000  0.851852  0.000000 
+ 0.518519  0.074074  0.000000  0.407407 
+ 0.000000  0.000000  0.074074  0.925926 
+ 0.148148  0.037037  0.000000  0.814815 
+ 0.074074  0.703704  0.000000  0.222222 
+ 0.629630  0.037037  0.037037  0.296296 
+ 0.148148  0.222222  0.481481  0.148148 
+ 0.111111  0.629630  0.000000  0.259259 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DWRCTGAAWCGWTTCAGC MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][TA][GA][CT]TGAA[TA]CG[AT]TT[CT][AT][GC][CT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.23 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Cra_0                            7.32e-06  2_[+1(1.05e-06)]_4
+Cra_1                            9.24e-04  24
+Cra_2                            2.11e-03  24
+Cra_3                            5.13e-03  24
+Cra_4                            1.55e-03  24
+Cra_5                            3.22e-05  1_[+1(4.61e-06)]_5
+Cra_6                            1.17e-04  1_[+1(1.68e-05)]_5
+Cra_7                            1.76e-03  24
+Cra_8                            4.90e-07  2_[+1(7.01e-08)]_4
+Cra_9                            2.11e-04  2_[+1(3.01e-05)]_4
+Cra_10                           4.06e-06  2_[+1(5.80e-07)]_4
+Cra_11                           2.99e-03  24
+Cra_12                           2.30e-05  1_[+1(4.61e-06)]_3
+Cra_13                           2.57e-06  1_[+1(5.14e-07)]_3
+Cra_14                           2.49e-06  2_[+1(3.56e-07)]_4
+Cra_15                           2.66e-07  2_[+1(3.79e-08)]_4
+Cra_16                           1.28e-04  2_[+1(1.83e-05)]_4
+Cra_17                           1.27e-05  2_[+1(1.82e-06)]_4
+Cra_18                           4.31e-05  2_[+1(6.16e-06)]_4
+Cra_19                           2.19e-06  2_[+1(3.13e-07)]_4
+Cra_20                           2.39e-05  2_[+1(3.41e-06)]_4
+Cra_21                           1.27e-05  2_[+1(1.82e-06)]_4
+Cra_22                           1.78e-06  1_[+1(3.56e-07)]_3
+Cra_23                           1.28e-04  2_[+1(1.83e-05)]_4
+Cra_24                           1.00e-07  2_[+1(1.43e-08)]_4
+Cra_25                           6.89e-05  2_[+1(9.84e-06)]_4
+Cra_26                           1.14e-06  2_[+1(1.63e-07)]_4
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

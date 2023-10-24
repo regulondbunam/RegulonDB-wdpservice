@@ -1,6 +1,6 @@
 import os
 import ssl
-from flask import Flask, Response, send_file, request, render_template, make_response
+from flask import Flask, Response, send_file, request, render_template, make_response, jsonify
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
 from app.controllers.ecoli.gene import Gene_collection
@@ -41,6 +41,25 @@ def meme_dir():
     except Exception as e:
         return "file no found"
 
+@app.route('/wdps/metadata/meme/')
+def meme_metadata_dir():
+    route_script = __file__
+    abs = os.path.dirname(os.path.abspath(route_script))
+    dir = abs.replace("app", "docs")+'/meme/'
+    try:
+        fileList = os.listdir(dir)
+        dirData = []
+        url="/wdps/metadata/meme/"
+        for file in fileList:
+            dirData.append({
+               "label": file,
+               "url": url+file 
+            })
+        return jsonify(dirData)
+    except Exception as e:
+        print(e)
+        return "file no found"
+
 
 @app.route('/wdps/meme/<collection>')
 def meme_collection(collection):
@@ -51,6 +70,35 @@ def meme_collection(collection):
         fileList = os.listdir(dir)
         return render_template('dir.html', list=fileList, url="/wdps/meme/"+collection+'/')
     except Exception as e:
+        return "file no found"
+
+@app.route('/wdps/metadata/meme/<collection>')
+def meme_metadata_collection(collection):
+    route_script = __file__
+    abs = os.path.dirname(os.path.abspath(route_script))
+    dir = abs.replace("app", "docs")+'/meme/'
+    try: 
+        url_file = os.path.join(dir, collection)
+        if os.path.isfile(url_file):
+            with open(url_file, 'r') as file:
+                content = file.read()
+                return content
+        elif os.path.isdir(url_file):
+            url="/wdps/metadata/meme/"+collection+"/"
+            fileList = os.listdir(url_file)
+            dirData = []
+            
+            for file in fileList:
+                dirData.append({
+                "label": file,
+                "url": url+file 
+                })
+            
+            return jsonify(dirData)
+        else:
+            return f"{collection} no existe."
+    except Exception as e:
+        print(e)
         return "file no found"
 
 
@@ -65,6 +113,34 @@ def meme_collection_tf(collection, tf):
     except Exception as e:
         return "file no found"
 
+@app.route('/wdps/metadata/meme/<collection>/<tf>')
+def meme_metadata_tf(collection, tf):
+    route_script = __file__
+    abs = os.path.dirname(os.path.abspath(route_script))
+    dir = abs.replace("app", "docs")+'/meme/'+collection
+    try:
+        url_file = os.path.join(dir, tf)
+        if os.path.isfile(url_file):
+            with open(url_file, 'r') as file:
+                content = file.read()
+                return content
+        elif os.path.isdir(url_file):
+            url="/wdps/meme/"+collection+"/"+tf+"/"
+            fileList = os.listdir(url_file)
+            dirData = []
+            
+            for file in fileList:
+                dirData.append({
+                "label": file,
+                "url": url+file 
+                })
+            
+            return jsonify(dirData)
+        else:
+            return f"{collection} no existe."
+    except Exception as e:
+        print(e)
+        return "file no found"
 
 @app.route('/wdps/meme/<collection>/<tf>/<file_name>')
 def meme_file(collection, tf, file_name):

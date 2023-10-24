@@ -1,0 +1,2060 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= Nac/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Nac_0                    1.0000     21  Nac_1                    1.0000     21  
+Nac_2                    1.0000     23  Nac_3                    1.0000     23  
+Nac_4                    1.0000     23  Nac_5                    1.0000     23  
+Nac_6                    1.0000     23  Nac_7                    1.0000     23  
+Nac_8                    1.0000     23  Nac_9                    1.0000     23  
+Nac_10                   1.0000     23  Nac_11                   1.0000     23  
+Nac_12                   1.0000     23  Nac_13                   1.0000     23  
+Nac_14                   1.0000     23  Nac_15                   1.0000     23  
+Nac_16                   1.0000     23  Nac_17                   1.0000     23  
+Nac_18                   1.0000     23  Nac_19                   1.0000     23  
+Nac_20                   1.0000     23  Nac_21                   1.0000     23  
+Nac_22                   1.0000     23  Nac_23                   1.0000     23  
+Nac_24                   1.0000     23  Nac_25                   1.0000     23  
+Nac_26                   1.0000     23  Nac_27                   1.0000     23  
+Nac_28                   1.0000     23  Nac_29                   1.0000     23  
+Nac_30                   1.0000     23  Nac_31                   1.0000     23  
+Nac_32                   1.0000     23  Nac_33                   1.0000     23  
+Nac_34                   1.0000     23  Nac_35                   1.0000     23  
+Nac_36                   1.0000     23  Nac_37                   1.0000     23  
+Nac_38                   1.0000     23  Nac_39                   1.0000     23  
+Nac_40                   1.0000     23  Nac_41                   1.0000     23  
+Nac_42                   1.0000     23  Nac_43                   1.0000     23  
+Nac_44                   1.0000     23  Nac_45                   1.0000     23  
+Nac_46                   1.0000     23  Nac_47                   1.0000     23  
+Nac_48                   1.0000     23  Nac_49                   1.0000     23  
+Nac_50                   1.0000     23  Nac_51                   1.0000     23  
+Nac_52                   1.0000     23  Nac_53                   1.0000     23  
+Nac_54                   1.0000     23  Nac_55                   1.0000     23  
+Nac_56                   1.0000     23  Nac_57                   1.0000     23  
+Nac_58                   1.0000     23  Nac_59                   1.0000     23  
+Nac_60                   1.0000     23  Nac_61                   1.0000     23  
+Nac_62                   1.0000     23  Nac_63                   1.0000     23  
+Nac_64                   1.0000     23  Nac_65                   1.0000     23  
+Nac_66                   1.0000     23  Nac_67                   1.0000     23  
+Nac_68                   1.0000     23  Nac_69                   1.0000     23  
+Nac_70                   1.0000     23  Nac_71                   1.0000     23  
+Nac_72                   1.0000     23  Nac_73                   1.0000     23  
+Nac_74                   1.0000     23  Nac_75                   1.0000     23  
+Nac_76                   1.0000     23  Nac_77                   1.0000     23  
+Nac_78                   1.0000     23  Nac_79                   1.0000     23  
+Nac_80                   1.0000     23  Nac_81                   1.0000     23  
+Nac_82                   1.0000     23  Nac_83                   1.0000     23  
+Nac_84                   1.0000     23  Nac_85                   1.0000     23  
+Nac_86                   1.0000     23  Nac_87                   1.0000     23  
+Nac_88                   1.0000     23  Nac_89                   1.0000     23  
+Nac_90                   1.0000     23  Nac_91                   1.0000     23  
+Nac_92                   1.0000     23  Nac_93                   1.0000     23  
+Nac_94                   1.0000     23  Nac_95                   1.0000     23  
+Nac_96                   1.0000     23  Nac_97                   1.0000     23  
+Nac_98                   1.0000     23  Nac_99                   1.0000     23  
+Nac_100                  1.0000     23  Nac_101                  1.0000     23  
+Nac_102                  1.0000     23  Nac_103                  1.0000     23  
+Nac_104                  1.0000     23  Nac_105                  1.0000     23  
+Nac_106                  1.0000     23  Nac_107                  1.0000     23  
+Nac_108                  1.0000     23  Nac_109                  1.0000     23  
+Nac_110                  1.0000     23  Nac_111                  1.0000     23  
+Nac_112                  1.0000     23  Nac_113                  1.0000     23  
+Nac_114                  1.0000     23  Nac_115                  1.0000     23  
+Nac_116                  1.0000     23  Nac_117                  1.0000     23  
+Nac_118                  1.0000     23  Nac_119                  1.0000     23  
+Nac_120                  1.0000     23  Nac_121                  1.0000     23  
+Nac_122                  1.0000     23  Nac_123                  1.0000     23  
+Nac_124                  1.0000     23  Nac_125                  1.0000     23  
+Nac_126                  1.0000     23  Nac_127                  1.0000     23  
+Nac_128                  1.0000     21  Nac_129                  1.0000     23  
+Nac_130                  1.0000     23  Nac_131                  1.0000     23  
+Nac_132                  1.0000     23  Nac_133                  1.0000     23  
+Nac_134                  1.0000     23  Nac_135                  1.0000     23  
+Nac_136                  1.0000     23  Nac_137                  1.0000     23  
+Nac_138                  1.0000     23  Nac_139                  1.0000     23  
+Nac_140                  1.0000     23  Nac_141                  1.0000     23  
+Nac_142                  1.0000     23  Nac_143                  1.0000     23  
+Nac_144                  1.0000     23  Nac_145                  1.0000     23  
+Nac_146                  1.0000     23  Nac_147                  1.0000     23  
+Nac_148                  1.0000     23  Nac_149                  1.0000     23  
+Nac_150                  1.0000     23  Nac_151                  1.0000     23  
+Nac_152                  1.0000     23  Nac_153                  1.0000     23  
+Nac_154                  1.0000     23  Nac_155                  1.0000     23  
+Nac_156                  1.0000     23  Nac_157                  1.0000     23  
+Nac_158                  1.0000     23  Nac_159                  1.0000     23  
+Nac_160                  1.0000     23  Nac_161                  1.0000     23  
+Nac_162                  1.0000     23  Nac_163                  1.0000     23  
+Nac_164                  1.0000     23  Nac_165                  1.0000     23  
+Nac_166                  1.0000     23  Nac_167                  1.0000     23  
+Nac_168                  1.0000     23  Nac_169                  1.0000     23  
+Nac_170                  1.0000     23  Nac_171                  1.0000     23  
+Nac_172                  1.0000     23  Nac_173                  1.0000     23  
+Nac_174                  1.0000     23  Nac_175                  1.0000     23  
+Nac_176                  1.0000     23  Nac_177                  1.0000     23  
+Nac_178                  1.0000     23  Nac_179                  1.0000     23  
+Nac_180                  1.0000     23  Nac_181                  1.0000     23  
+Nac_182                  1.0000     23  Nac_183                  1.0000     23  
+Nac_184                  1.0000     23  Nac_185                  1.0000     23  
+Nac_186                  1.0000     23  Nac_187                  1.0000     23  
+Nac_188                  1.0000     23  Nac_189                  1.0000     23  
+Nac_190                  1.0000     23  Nac_191                  1.0000     23  
+Nac_192                  1.0000     23  Nac_193                  1.0000     23  
+Nac_194                  1.0000     23  Nac_195                  1.0000     23  
+Nac_196                  1.0000     23  Nac_197                  1.0000     23  
+Nac_198                  1.0000     23  Nac_199                  1.0000     23  
+Nac_200                  1.0000     23  Nac_201                  1.0000     23  
+Nac_202                  1.0000     23  Nac_203                  1.0000     23  
+Nac_204                  1.0000     23  Nac_205                  1.0000     23  
+Nac_206                  1.0000     23  Nac_207                  1.0000     23  
+Nac_208                  1.0000     23  Nac_209                  1.0000     23  
+Nac_210                  1.0000     23  Nac_211                  1.0000     23  
+Nac_212                  1.0000     23  Nac_213                  1.0000     23  
+Nac_214                  1.0000     23  Nac_215                  1.0000     23  
+Nac_216                  1.0000     23  Nac_217                  1.0000     23  
+Nac_218                  1.0000     23  Nac_219                  1.0000     23  
+Nac_220                  1.0000     23  Nac_221                  1.0000     23  
+Nac_222                  1.0000     23  Nac_223                  1.0000     23  
+Nac_224                  1.0000     23  Nac_225                  1.0000     23  
+Nac_226                  1.0000     23  Nac_227                  1.0000     23  
+Nac_228                  1.0000     23  Nac_229                  1.0000     23  
+Nac_230                  1.0000     23  Nac_231                  1.0000     23  
+Nac_232                  1.0000     23  Nac_233                  1.0000     23  
+Nac_234                  1.0000     23  Nac_235                  1.0000     23  
+Nac_236                  1.0000     23  Nac_237                  1.0000     23  
+Nac_238                  1.0000     23  Nac_239                  1.0000     23  
+Nac_240                  1.0000     23  Nac_241                  1.0000     23  
+Nac_242                  1.0000     23  Nac_243                  1.0000     23  
+Nac_244                  1.0000     23  Nac_245                  1.0000     23  
+Nac_246                  1.0000     23  Nac_247                  1.0000     23  
+Nac_248                  1.0000     23  Nac_249                  1.0000     23  
+Nac_250                  1.0000     23  Nac_251                  1.0000     23  
+Nac_252                  1.0000     23  Nac_253                  1.0000     23  
+Nac_254                  1.0000     23  Nac_255                  1.0000     23  
+Nac_256                  1.0000     23  Nac_257                  1.0000     23  
+Nac_258                  1.0000     23  Nac_259                  1.0000     23  
+Nac_260                  1.0000     23  Nac_261                  1.0000     23  
+Nac_262                  1.0000     23  Nac_263                  1.0000     23  
+Nac_264                  1.0000     23  Nac_265                  1.0000     23  
+Nac_266                  1.0000     23  Nac_267                  1.0000     23  
+Nac_268                  1.0000     23  Nac_269                  1.0000     23  
+Nac_270                  1.0000     23  Nac_271                  1.0000     23  
+Nac_272                  1.0000     23  Nac_273                  1.0000     23  
+Nac_274                  1.0000     23  Nac_275                  1.0000     23  
+Nac_276                  1.0000     23  Nac_277                  1.0000     23  
+Nac_278                  1.0000     23  Nac_279                  1.0000     23  
+Nac_280                  1.0000     23  Nac_281                  1.0000     23  
+Nac_282                  1.0000     23  Nac_283                  1.0000     23  
+Nac_284                  1.0000     23  Nac_285                  1.0000     23  
+Nac_286                  1.0000     23  Nac_287                  1.0000     23  
+Nac_288                  1.0000     23  Nac_289                  1.0000     23  
+Nac_290                  1.0000     23  Nac_291                  1.0000     23  
+Nac_292                  1.0000     23  Nac_293                  1.0000     23  
+Nac_294                  1.0000     23  Nac_295                  1.0000     23  
+Nac_296                  1.0000     23  Nac_297                  1.0000     23  
+Nac_298                  1.0000     23  Nac_299                  1.0000     23  
+Nac_300                  1.0000     23  Nac_301                  1.0000     23  
+Nac_302                  1.0000     23  Nac_303                  1.0000     23  
+Nac_304                  1.0000     23  Nac_305                  1.0000     23  
+Nac_306                  1.0000     23  Nac_307                  1.0000     23  
+Nac_308                  1.0000     23  Nac_309                  1.0000     23  
+Nac_310                  1.0000     23  Nac_311                  1.0000     23  
+Nac_312                  1.0000     23  Nac_313                  1.0000     23  
+Nac_314                  1.0000     23  Nac_315                  1.0000     23  
+Nac_316                  1.0000     23  Nac_317                  1.0000     23  
+Nac_318                  1.0000     23  Nac_319                  1.0000     23  
+Nac_320                  1.0000     23  Nac_321                  1.0000     23  
+Nac_322                  1.0000     23  Nac_323                  1.0000     23  
+Nac_324                  1.0000     23  Nac_325                  1.0000     23  
+Nac_326                  1.0000     23  Nac_327                  1.0000     23  
+Nac_328                  1.0000     23  Nac_329                  1.0000     23  
+Nac_330                  1.0000     23  Nac_331                  1.0000     23  
+Nac_332                  1.0000     23  Nac_333                  1.0000     23  
+Nac_334                  1.0000     23  Nac_335                  1.0000     23  
+Nac_336                  1.0000     23  Nac_337                  1.0000     23  
+Nac_338                  1.0000     23  Nac_339                  1.0000     23  
+Nac_340                  1.0000     23  Nac_341                  1.0000     23  
+Nac_342                  1.0000     23  Nac_343                  1.0000     23  
+Nac_344                  1.0000     23  Nac_345                  1.0000     23  
+Nac_346                  1.0000     23  Nac_347                  1.0000     23  
+Nac_348                  1.0000     23  Nac_349                  1.0000     23  
+Nac_350                  1.0000     23  Nac_351                  1.0000     23  
+Nac_352                  1.0000     23  Nac_353                  1.0000     23  
+Nac_354                  1.0000     23  Nac_355                  1.0000     23  
+Nac_356                  1.0000     23  Nac_357                  1.0000     23  
+Nac_358                  1.0000     23  Nac_359                  1.0000     23  
+Nac_360                  1.0000     23  Nac_361                  1.0000     23  
+Nac_362                  1.0000     23  Nac_363                  1.0000     23  
+Nac_364                  1.0000     23  Nac_365                  1.0000     23  
+Nac_366                  1.0000     23  Nac_367                  1.0000     23  
+Nac_368                  1.0000     23  Nac_369                  1.0000     23  
+Nac_370                  1.0000     23  Nac_371                  1.0000     23  
+Nac_372                  1.0000     23  Nac_373                  1.0000     23  
+Nac_374                  1.0000     23  Nac_375                  1.0000     23  
+Nac_376                  1.0000     23  Nac_377                  1.0000     23  
+Nac_378                  1.0000     23  Nac_379                  1.0000     23  
+Nac_380                  1.0000     23  Nac_381                  1.0000     23  
+Nac_382                  1.0000     23  Nac_383                  1.0000     23  
+Nac_384                  1.0000     23  Nac_385                  1.0000     23  
+Nac_386                  1.0000     23  Nac_387                  1.0000     23  
+Nac_388                  1.0000     23  Nac_389                  1.0000     23  
+Nac_390                  1.0000     23  Nac_391                  1.0000     23  
+Nac_392                  1.0000     23  Nac_393                  1.0000     23  
+Nac_394                  1.0000     23  Nac_395                  1.0000     21  
+Nac_396                  1.0000     23  Nac_397                  1.0000     23  
+Nac_398                  1.0000     23  Nac_399                  1.0000     23  
+Nac_400                  1.0000     23  Nac_401                  1.0000     23  
+Nac_402                  1.0000     23  Nac_403                  1.0000     21  
+Nac_404                  1.0000     21  Nac_405                  1.0000     21  
+Nac_406                  1.0000     21  Nac_407                  1.0000     21  
+Nac_408                  1.0000     21  Nac_409                  1.0000     21  
+Nac_410                  1.0000     21  Nac_411                  1.0000     21  
+Nac_412                  1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme Nac/ri_sites.fasta -oc Nac/./ -mod oops -nmotifs 1 -minw 14 -maxw 20 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           14    maxw=           20
+nsites: minsites=      413    maxsites=      413    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            9471    N=             413
+sample: seed=           10    hsfrac=          0
+        searchsize=   9471    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.328 C 0.164 G 0.174 T 0.334 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF DNYATAARNWWWHBTTATGV MEME-1	width =  20  sites = 413  llr = 2819  E-value = 8.0e-896
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif DNYATAARNWWWHBTTATGV MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  32291663344332119:23
+pos.-specific     C  235::2122111242:::12
+probability       G  321:1:2421112211::53
+matrix            T  233:921233443267:a22
+
+         bits    2.0                     
+                 1.8                  *  
+                 1.6    *             *  
+                 1.4    **           **  
+Relative         1.2    **           **  
+Entropy          1.0    **           **  
+(9.8 bits)       0.8    **          ***  
+                 0.6    ***         ***  
+                 0.4    ****       ****  
+                 0.2   *****  ***  ***** 
+                 0.0 --------------------
+
+Multilevel           GCCATAAGTATTACTTATGG
+consensus            ATT  T AATAATG    AA
+sequence             TA      C    T      
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DNYATAARNWWWHBTTATGV MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+Nac_8                         2  7.38e-08          t atTATAAATAAAAGTTATGa aa        
+Nac_367                       4  1.14e-07        gaa ACAATAACTATTAGTTAtga           
+Nac_56                        3  2.55e-07         aa tGAATAAGAAATCGTTATgg a         
+Nac_400                       4  2.90e-07        ttg ATTATAAAAAAAACTTAtta           
+Nac_100                       2  3.73e-07          a atTATAAGGATATTTTATGc gc        
+Nac_357                       4  6.81e-07        taa ATAATAAGGATAATTTAtgc           
+Nac_178                       1  6.81e-07          . accATAAGCTAATGTGATGA tca       
+Nac_152                       1  9.60e-07          . tccATTGGATTTACTTATAG gtt       
+Nac_302                       1  1.07e-06          . ttcATAAAAAATACTGATTG tta       
+Nac_294                       3  1.20e-06         tg gCCATTGATATTGCTTATga a         
+Nac_350                       1  1.34e-06          . tacATATTTTAATGTTATGG aag       
+Nac_292                       3  1.49e-06         tg gCTATTAGAAATTCCTATgc a         
+Nac_115                       3  1.66e-06         ct tGCATAAGATAAACTAATtg t         
+Nac_346                       1  1.84e-06          . gatATATGTTTATTTTATGT aaa       
+Nac_280                       1  1.84e-06          . ctaATAAAGAATAATTATGG gca       
+Nac_119                       1  1.84e-06          . ggcATAATACTTTTTTATGC cgt       
+Nac_65                        2  1.84e-06          t aaCATTAAATTAACTTATAc aa        
+Nac_237                       1  2.04e-06          . agaATACGCATAACTTATGA agc       
+Nac_361                       2  2.26e-06          t gcTATTAGTAAAATCTATGa ga        
+Nac_212                       1  2.26e-06          . acaATAATCATACTTTATGA aga       
+Nac_267                       1  2.51e-06          . tccATAAGTTACGCTTATTT aaa       
+Nac_95                        2  2.51e-06          a aaAATAAGAAAAGATTATGc aa        
+Nac_72                        2  2.51e-06          a ttTATAATTAATCTTTATAa gt        
+Nac_50                        2  2.51e-06          c aaCATAAGAGAAACCTATGc ca        
+Nac_39                        2  2.51e-06          a aaTATCAGCTATTCTTATAa ag        
+Nac_397                       1  2.77e-06          . ttcATCAATTTTTCTTATTT taa       
+Nac_230                       3  2.77e-06         aa tCCATAGGATTTACATATaa t         
+Nac_37                        2  2.77e-06          g ggGATAACCATATTTTATGg cg        
+Nac_15                        2  2.77e-06          t tcCATAACAAATGGTTATTc at        
+Nac_225                       3  3.06e-06         ca gGCATAAGGATAAGATATgt t         
+Nac_166                       1  3.06e-06          . ttcATAAATTTCATCTATGA gaa       
+Nac_381                       4  3.38e-06        ccc GTGATAACCATTTTTTAtgc           
+Nac_149                       3  3.38e-06         tt cTTATCAATTATGCTTATgg g         
+Nac_311                       1  3.73e-06          . tccATAAGCCGCTCTTATGA tta       
+Nac_167                       1  4.10e-06          . tatATTAGTAAAGCTTATTA ctg       
+Nac_252                       1  4.51e-06          . aatATAAGGAAATCATATAA ata       
+Nac_186                       4  4.51e-06        ggt AACATACGGTATTGTTAttg           
+Nac_169                       3  4.51e-06         aa aTAATAAGGAAAAGTGATga c         
+Nac_9                         2  4.51e-06          g aaCATAGCCATTTCATATGg at        
+Nac_403                       1  5.97e-06          . gacATCAGCAATTCCTATtg g         
+Nac_241                       1  5.97e-06          . attATAAGCTTTCTGTATGG ggt       
+Nac_44                        2  5.97e-06          a taAATTGAAATATCTTATGa cg        
+Nac_253                       1  6.54e-06          . gatATAAAAAATACATATTC aat       
+Nac_243                       2  6.54e-06          g gaAATAAGAGGTTATTATGg ga        
+Nac_238                       3  6.54e-06         tt aACATTTGTTAGACTTATgg t         
+Nac_104                       2  6.54e-06          a tcCATTGATATAACTTATAt at        
+Nac_81                        3  6.54e-06         tt gGCATAGATAATACTTATcc g         
+Nac_36                        2  6.54e-06          a atTATATATAAATCTTATTt at        
+Nac_379                       3  7.16e-06         aa aATATCCGAATTTTTTATgg c         
+Nac_103                       2  7.16e-06          t tgCATAACCTTTAATTATTc at        
+Nac_23                        2  7.16e-06          g tcCATAAATGATTATTATCg ta        
+Nac_298                       2  7.83e-06          t gtTATAACTCTTCCTGATGg ca        
+Nac_396                       1  8.55e-06          . gacATTAGACAAGGTTATGC tct       
+Nac_102                       2  8.55e-06          c gtCATAAGCGAATCTGATTg tg        
+Nac_97                        2  9.34e-06          t ttTATTGGATTTACTTATAc gg        
+Nac_374                       1  1.02e-05          . gttATAAGGAGTGATTATGT ctg       
+Nac_362                       3  1.02e-05         gg aAAATAAGCATCTATTATtg t         
+Nac_288                       3  1.11e-05         gt cTCATAAGGTTCGTTTATag a         
+Nac_52                        2  1.11e-05          a caCATAAAAATATAATATGt tt        
+Nac_14                        2  1.11e-05          a tgAATAAGCTAACGCTATGa tg        
+Nac_182                       4  1.21e-05        tcc TATATTGAAAAAGCTTAtga           
+Nac_130                       2  1.21e-05          a gcAATTAAAAAAATTTATTc cg        
+Nac_163                       3  1.31e-05         aa aCTATTATTGAAGCTTATga a         
+Nac_148                       3  1.43e-05         tc aCAATAAGAAAACAATATgt c         
+Nac_399                       4  1.55e-05        gct GTCATATATAATGATGAtgg           
+Nac_244                       3  1.55e-05         ga tAGATAAAGTTATCTTATcg t         
+Nac_141                       2  1.55e-05          g gaTATAAGCGATTTTTATCa ga        
+Nac_123                       1  1.55e-05          . cttATTAGTTTTTCTGATTG cca       
+Nac_109                       2  1.55e-05          t caCATTAAATATGATTATGt ac        
+Nac_31                        3  1.55e-05         at gCTATTGCTTAATCTTATta a         
+Nac_265                       1  1.68e-05          . atcATCAATAAAACCGATGG aag       
+Nac_398                       2  1.82e-05          c gcTATTAGGATTTGATATTg cc        
+Nac_392                       4  1.82e-05        cac ACAATATGGATTTTTTAtcg           
+Nac_378                       3  1.82e-05         ta tTAATATGAAACACTTATac t         
+Nac_360                       3  1.82e-05         tt tATATAAAGGAATATTATgt c         
+Nac_369                       3  1.98e-05         at gGCATAACCGAATCGTATga a         
+Nac_313                       2  1.98e-05          c gcCATATCGAACGCTTATGc ga        
+Nac_310                       1  1.98e-05          . aatATAAGGAAAACCAATGC aag       
+Nac_401                       1  2.14e-05          . agcATTCATTTTTCATATGA ttt       
+Nac_351                       3  2.14e-05         ta aATATAAAATTAATATATat g         
+Nac_349                       1  2.14e-05          . gccATCAACAATACAAATGG ggc       
+Nac_337                       2  2.14e-05          c ctCATCATAAATATCTATGa ac        
+Nac_133                       2  2.14e-05          t gtCATTAATAAAGGCTATAa cc        
+Nac_126                       2  2.14e-05          t aaCATAATGGAAACCTATGc tg        
+Nac_121                       1  2.14e-05          . tcaATTAATGAACTTTATGA att       
+Nac_53                        2  2.14e-05          a atCATCACGATTATTTATTc cc        
+Nac_327                       3  2.31e-05         ca gACATTAATAAACCCGATgg g         
+Nac_203                       3  2.31e-05         gt aCTATTTACAAAACCTATgg t         
+Nac_170                       4  2.31e-05        gcg TTCATCACCTTATGTGAtgg           
+Nac_132                       1  2.31e-05          . accATAAAGGGATATTATGT tta       
+Nac_131                       2  2.31e-05          c aaCATAAAGTGGCGTTATGg ct        
+Nac_93                        2  2.31e-05          a taCATTAGACAAAAATATGg gc        
+Nac_74                        3  2.31e-05         gg cTTATTAGTTATCGATATga c         
+Nac_41                        2  2.31e-05          c tcTATAAGCTGTAGTGATAa aa        
+Nac_146                       1  2.50e-05          . ttcATTGGCAAAATTGATGG gcg       
+Nac_88                        2  2.50e-05          a gtAATAATAAAATATGATGt tt        
+Nac_43                        2  2.50e-05          a gcAATTGTATATTGTTATGt aa        
+Nac_402                       2  2.70e-05          g aaAATTAGTGGAACTTATGc cg        
+Nac_365                       3  2.70e-05         gg gCTATAAATAAGACCTATtt t         
+Nac_249                       4  2.70e-05        tca GCCATGAACAAAAATTAtgg           
+Nac_137                       2  2.70e-05          t acCATCAAAACCTGTTATGg at        
+Nac_91                        2  2.70e-05          g tcCATCGCTAATTATTATTg gt        
+Nac_73                        2  2.70e-05          t tgAATCATTATTTGCTATGg gt        
+Nac_375                       2  2.91e-05          a aaGATAATCCTTGTTTATGg at        
+Nac_335                       1  2.91e-05          . gctATTACAAATCCTAATAA ttc       
+Nac_319                       4  2.91e-05        tga ACAATATCTTAATGATAtga           
+Nac_297                       4  2.91e-05        cgg ACCATAAAAATTTATAAtct           
+Nac_2                         2  2.91e-05          a gcGATAGTTTTTACTTATCa ct        
+Nac_334                       3  3.14e-05         aa aCAATTAGGCAAACTTATtc a         
+Nac_214                       1  3.14e-05          . ttaATAATTAATTTATATAT tta       
+Nac_99                        2  3.14e-05          c atTGTAAGGATAACTTATGa ac        
+Nac_86                        3  3.14e-05         ct cGGATACGAATATATTATga c         
+Nac_341                       1  3.39e-05          . gtaATTGTTATGTCTTATGG cct       
+Nac_323                       2  3.39e-05          c ggCATAAATTTCTTTGATAc cg        
+Nac_138                       1  3.39e-05          . gccAGAAACGTTTCTTATTG acg       
+Nac_285                       4  3.65e-05        gcg GTCATTGAGTTTAACTAtgg           
+Nac_63                        3  3.65e-05         cg aTGATACGGTTTTGTTATta a         
+Nac_312                       1  3.92e-05          . accATAATGTCACCTTATAT tcg       
+Nac_281                       1  3.92e-05          . gttATAGGGTTCAGTTATAT aaa       
+Nac_277                       3  3.92e-05         ca aTTATCCATTTTTGTTATtg g         
+Nac_223                       3  3.92e-05         gg aGTATTCAGAAAATTTATga a         
+Nac_181                       1  3.92e-05          . cacCTAAGATTAACTTATGT aac       
+Nac_165                       3  3.92e-05         gc gGCATAATTGATGATGATgg c         
+Nac_111                       4  3.92e-05        ggc ACCATCAGTTACACCAAtga           
+Nac_388                       4  4.22e-05        aat TACATATCTCTTCCTGAtga           
+Nac_235                       1  4.22e-05          . gtcATACATTTCTGCTATGT tgt       
+Nac_202                       2  4.22e-05          g agTATTATCATTTATTATAc cc        
+Nac_195                       4  4.22e-05        cca AACTTAAATAAAACTTAtac           
+Nac_162                       1  4.22e-05          . accATTGTCTTTTTTTATAT ttg       
+Nac_144                       2  4.22e-05          g gtCATAAAATATGTCGATAa gg        
+Nac_82                        2  4.22e-05          c agCATAACGATTAATGATAc ac        
+Nac_47                        2  4.22e-05          g ttAATAAATTTAACTTAAGg tt        
+Nac_404                       1  4.87e-05          . tctATCATAATCTCTTATtt g         
+Nac_389                       4  4.87e-05        ctg GGAATAATTTTATTTTCtgg           
+Nac_263                       1  4.87e-05          . aaaATATTCAATATTTATAT att       
+Nac_158                       1  4.87e-05          . tatATCGTTTTATGTTATGC gct       
+Nac_107                       2  4.87e-05          c ccTATAACTATACATGATGt ca        
+Nac_54                        3  4.87e-05         tg gCAATCGGTAAATTTAATga g         
+Nac_28                        2  4.87e-05          t gtAATAACAATTCCCGATAg tc        
+Nac_17                        2  4.87e-05          c gcTATAAATATTCACAATAg gg        
+Nac_317                       2  5.23e-05          g tgCATATACAAGTTTTATTg tg        
+Nac_270                       2  5.23e-05          c gcCATTGCCTGTGCTTATGc ct        
+Nac_117                       3  5.23e-05         ag cGCATTTCCTTTCTTTATgg c         
+Nac_46                        2  5.23e-05          a taCATATAATAAAACTATTa ta        
+Nac_371                       2  5.61e-05          g acGATATGATTTACCTATCg cc        
+Nac_188                       3  5.61e-05         ga aACATCGGTAATACTTTTgg c         
+Nac_173                       3  5.61e-05         ta aAAATATATAAACTTGATga t         
+Nac_161                       1  5.61e-05          . gtcATTAAATTTTCCAATAT gcg       
+Nac_49                        3  5.61e-05         tt aATAAAAGCCATACTTATag c         
+Nac_190                       1  6.01e-05          . accAGATAAATATCCTATGA ata       
+Nac_110                       2  6.01e-05          a atCATAAGATTCTGATATCt ta        
+Nac_76                        3  6.01e-05         cc gGTATCACTTTTCTTAATga c         
+Nac_40                        2  6.01e-05          a ttAATTATCTTTACTAATAa tc        
+Nac_407                       1  6.44e-05          . ttcATATAAAAAATATATtt c         
+Nac_364                       3  6.44e-05         ta tTTATAAGAACTTGTAATac a         
+Nac_339                       3  6.44e-05         tc gCCAGAACTCAAACTGATgg a         
+Nac_262                       3  6.44e-05         ga gGAATACGTTAAACCTATcg g         
+Nac_231                       2  6.44e-05          t ccCATCACCGTTGCTTATAa cc        
+Nac_215                       1  6.44e-05          . tttAGTAGTTTTCCTTATTG tgg       
+Nac_33                        2  6.44e-05          c aaAATAAGACAAATCAATGa ca        
+Nac_283                       3  6.89e-05         gc cGAATATGATTATCTGATtg t         
+Nac_272                       1  6.89e-05          . gtcATATTCCTTACATATAA ctg       
+Nac_245                       1  6.89e-05          . ttcATAAAAAACCTTAATAT acg       
+Nac_175                       4  6.89e-05        tgc CCCATAAGAATTCACAAtta           
+Nac_124                       3  6.89e-05         cg gAGATAATCGATGGTTATgc g         
+Nac_90                        2  6.89e-05          t caCATAATTTGTCATTATTc at        
+Nac_55                        2  6.89e-05          c gcAATAAGTTATGTTTTTAa at        
+Nac_19                        2  6.89e-05          t ggCATAGGAATTTTATATCt tt        
+Nac_5                         2  6.89e-05          g gtTATAAATTTCCGCAATGg ca        
+Nac_324                       1  7.37e-05          . gccATAAGCCTTTCCTCTGT taa       
+Nac_282                       4  7.37e-05        ggc TCTAAAAGCTGTCGTTAtgg           
+Nac_273                       2  7.37e-05          a acCATCCGTAAAAGTGATAa ag        
+Nac_127                       1  7.37e-05          . tgcATCGTCATCTTTTATGG cgc       
+Nac_333                       2  7.88e-05          g gaTATTACCTTCGGTTATAg gt        
+Nac_321                       3  7.88e-05         at gGCATCGCTGATGTTTATgg t         
+Nac_295                       3  7.88e-05         gc gGCATATCGTTTCCTGATtg a         
+Nac_264                       3  7.88e-05         aa gGGATAACTAACGGCTATgg a         
+Nac_261                       3  7.88e-05         aa tCAATAACCTGAAGATATgt g         
+Nac_89                        2  7.88e-05          c aaGATAAGCAAAAGTGATTt at        
+Nac_61                        2  7.88e-05          g atTATCAGGATGTGCTATGa at        
+Nac_308                       2  8.43e-05          g taAATCGACGAAACTTATGa tg        
+Nac_259                       1  8.43e-05          . ttcATTGAATTACCTTATCC ttg       
+Nac_227                       3  8.43e-05         aa tTCATTCATTTGACTTATac t         
+Nac_156                       2  8.43e-05          g ccCATCTGCAAACGTTATTa cc        
+Nac_151                       3  8.43e-05         aa tGTATAAGTCTTGGAAATgg g         
+Nac_147                       1  8.43e-05          . gccATCTTATTTCGTAATGG att       
+Nac_29                        2  8.43e-05          c tcAAGAAGAAAGAATTATGa cg        
+Nac_25                        3  8.43e-05         cc gCCATCATTGAACGTGATgg c         
+Nac_18                        2  8.43e-05          a ttGATAACAAATGCTGATAt tg        
+Nac_125                       3  9.00e-05         cc cGCATATGACGAAGTTATtg c         
+Nac_390                       4  9.61e-05        tac AACATAATCCCACCTTAtta           
+Nac_382                       4  9.61e-05        ttc TGCATTGTTATTCTTTAttc           
+Nac_276                       4  9.61e-05        cag CCGATAGGTCATTTTAAtgg           
+Nac_240                       1  9.61e-05          . ttgATAAGCATCGGGTATGG cag       
+Nac_57                        2  9.61e-05          a tgCAAAAGTATTTTGTATGc gt        
+Nac_393                       2  1.02e-04          a acCATCGAACTGCCTTATGa ag        
+Nac_386                       2  1.02e-04          c ttTATACAAAAATGATATAc ct        
+Nac_236                       2  1.02e-04          c gaTATCGGTGAATCTGATGa cg        
+Nac_10                        1  1.02e-04          . gttATTCACTAAAGTAATGG caa       
+Nac_352                       2  1.09e-04          a ggTATAAGCGTTTCAGATTg ga        
+Nac_342                       4  1.09e-04        gta TCGATACAATAGTGTTAtgt           
+Nac_366                       2  1.16e-04          t ggCATTCCTTTTTACTATGc gc        
+Nac_325                       3  1.16e-04         gg cCTATAAGGAGATTCAATga a         
+Nac_322                       4  1.16e-04        ggc CTTATATTCATTCTTAAtgg           
+Nac_221                       1  1.16e-04          . tggATAGCATTTTTGTATGG ttt       
+Nac_142                       3  1.16e-04         aa gTAATAATTTGCACATATtg g         
+Nac_92                        3  1.16e-04         ac gCTATAAGGCGTTGTTCTgg t         
+Nac_406                       1  1.24e-04          . gcaATATTATTTTTTGATat g         
+Nac_345                       3  1.24e-04         aa tATATCAATTCCACTTATaa t         
+Nac_229                       4  1.24e-04        ccc GGTAGAACCGTTCCTTAtga           
+Nac_134                       1  1.24e-04          . tgcATCGTTTTTAATTATTC ccg       
+Nac_94                        3  1.24e-04         ca aCTATCTGCTTTTCTTCTgg a         
+Nac_380                       2  1.32e-04          c aaTATAACCTATTGTTTTAa tg        
+Nac_211                       3  1.32e-04         cg aACATATGCTGGACGTATgg t         
+Nac_198                       1  1.32e-04          . cgtATAAAACTTTTCTATCG ccc       
+Nac_196                       3  1.32e-04         gc gTCATAAGATTCGTTTTTaa g         
+Nac_136                       3  1.32e-04         aa cTAATACGGTTCTCTGATga g         
+Nac_96                        2  1.32e-04          g acCATAAGCCTCACGAATGc gt        
+Nac_45                        2  1.32e-04          a aaAATAGGGAGAAATGATGg ag        
+Nac_340                       2  1.41e-04          a gcCAAACATCTTCGTTATGg ga        
+Nac_332                       4  1.41e-04        agc ATCATACGGGGCAATTAtgg           
+Nac_78                        2  1.41e-04          t ccCATAAGGAGTTTTTCTTg at        
+Nac_34                        3  1.41e-04         at gTCATTTATGAATGTTATca a         
+Nac_338                       3  1.49e-04         ag gTTAAAGGAGTTAATTATgg a         
+Nac_194                       2  1.49e-04          g ggCATTGCTTTTTCCAATGc ct        
+Nac_179                       1  1.49e-04          . gctATACCGAACCGTTATTA cac       
+Nac_176                       1  1.49e-04          . gatATATGTTATATGAATGT tta       
+Nac_85                        2  1.49e-04          t cgTATAAAAAGATCGGATGg cg        
+Nac_84                        2  1.49e-04          t tcCATAAAGCAAACCAATTc ct        
+Nac_114                       2  1.59e-04          a gcCATTCGTGAAAGTTATCc ga        
+Nac_66                        2  1.59e-04          a taAATAGGTATAAAGAATGg ga        
+Nac_62                        2  1.59e-04          t ccCATAACTAATTAGGATTa tt        
+Nac_51                        2  1.59e-04          a atCATTCGCCATGATTATAa ta        
+Nac_279                       2  1.69e-04          c aaTATTGTTGGTACTTATGt cc        
+Nac_246                       3  1.69e-04         cg gGAATAAAAAGAAGGAATgg a         
+Nac_6                         2  1.69e-04          g aaTAAACGTCTTACTTATAg aa        
+Nac_318                       1  1.79e-04          . aacATCACACGAAGTGATGG taa       
+Nac_309                       1  1.79e-04          . gtaATCGCGTTTCCTTATAT ttc       
+Nac_247                       2  1.79e-04          t gcTATAACAAAAGCACATGg cg        
+Nac_210                       1  1.79e-04          . cctATAAGTTTGGGTAATAT gtg       
+Nac_208                       3  1.79e-04         aa gCTAAAACCCTTTTTTATaa a         
+Nac_171                       1  1.79e-04          . gctATCGGGTAAACCTATCG cta       
+Nac_35                        2  1.79e-04          g cgCATCAGTAAACGCTATCa ac        
+Nac_376                       4  1.90e-04        tct TGAATATAAAAAACAGAtgc           
+Nac_363                       1  1.90e-04          . tccATAATTTTTCCTGAAGG ttg       
+Nac_315                       1  1.90e-04          . tccATTGTGTTTATGTATGT cgg       
+Nac_268                       1  1.90e-04          . cagATAATGAAGCCTTATTG att       
+Nac_239                       1  1.90e-04          . agcATAACTGTCGGATATAG cgc       
+Nac_191                       3  1.90e-04         gc gCTATTCCTTTTTCTGATtt g         
+Nac_101                       2  1.90e-04          a tcCATTCGAACTCTTTATAc tg        
+Nac_48                        3  1.90e-04         ct aTCATCCCAAAAAACTATgc g         
+Nac_3                         2  1.90e-04          t caAATTCATATACATTATGc ca        
+Nac_326                       4  2.02e-04        tgg AACATCAGAGAAAACTAttc           
+Nac_172                       1  2.02e-04          . ttaATTGTTTTTTTTAATAG cgg       
+Nac_348                       4  2.14e-04        agt GCCAGATACAACGCTTAtgc           
+Nac_255                       3  2.14e-04         tg gTTATCGAAACCATTTATgg t         
+Nac_254                       3  2.14e-04         tc gACATAAGGTGATCGTCTga a         
+Nac_218                       1  2.14e-04          . gccAAAAGAAGACGTTATCA ttg       
+Nac_174                       2  2.14e-04          g caTATTGTCTTTATTGATGg ca        
+Nac_67                        2  2.14e-04          c atCATAGAGAAAATAAATAa cc        
+Nac_384                       1  2.27e-04          . ctcATTCAATAAAGTGATAA gta       
+Nac_355                       3  2.27e-04         ta tTCATTCAGTCTATTTATaa t         
+Nac_257                       3  2.27e-04         tg tCAATTTCCCTTCCTTATta g         
+Nac_24                        3  2.27e-04         tg gATATACAAGATTCTTTTga t         
+Nac_287                       4  2.40e-04        cct GGTCTAAGGTTTTGTGAtgg           
+Nac_68                        2  2.40e-04          t acCATCATTTCCTCCTATAg gc        
+Nac_21                        2  2.40e-04          c taCATACGAGCTTATTATAc ac        
+Nac_11                        2  2.40e-04          a cgCATACTCTCTCCTTATAa cc        
+Nac_385                       3  2.54e-04         tc tGAATAGGTATAAGGGATgt a         
+Nac_289                       2  2.54e-04          a cgCATTCGGTACACTTATCg ct        
+Nac_228                       2  2.54e-04          t ggTATAAGCGACACGAATGa ac        
+Nac_219                       3  2.54e-04         gc tTTATAAGCCGATTAAATga t         
+Nac_60                        3  2.54e-04         tt gCCATCACGTTCTGGTATtg g         
+Nac_30                        2  2.54e-04          a taGATTAACCAACCTAATGa aa        
+Nac_383                       2  2.69e-04          g gtGATAATTCTTTTGGATGg aa        
+Nac_358                       2  2.69e-04          c tgCATTATTGGTGCTTATCa tg        
+Nac_278                       3  2.69e-04         tt gCCATTAATTTTTCCGTTga g         
+Nac_207                       2  2.69e-04          t gcCATAAGTCCTGGCGATAg cc        
+Nac_199                       3  2.69e-04         gc aAAATCGAATTTGCCTATta t         
+Nac_64                        3  2.69e-04         tg cCCATATGAACGAATTATta a         
+Nac_38                        3  2.69e-04         ct gCCAAAAGCCAAAGTTATcc a         
+Nac_22                        2  2.69e-04          g ctTATCTTTTCTTCTTATGt tc        
+Nac_299                       3  2.85e-04         ta tGAATATCTTACATATATgt g         
+Nac_296                       1  2.85e-04          . aacATCGCATTTAACTATAT tgt       
+Nac_274                       2  2.85e-04          c gcTATATCAGAAACATATCa tt        
+Nac_224                       2  2.85e-04          t ggCAGAAGAAAAAGCTATCc cg        
+Nac_20                        2  2.85e-04          g ggCATATCATCCCTTTATAg ag        
+Nac_377                       4  3.01e-04        agt CGTATAAATTCAATGTAttg           
+Nac_316                       4  3.01e-04        agc CCTATCGCACATGGTTAtgc           
+Nac_234                       3  3.01e-04         aa tACATACAAAATAAAAATta t         
+Nac_232                       2  3.01e-04          c gcCAAAGCGTTTTCCTATAa cg        
+Nac_187                       1  3.01e-04          . ccaATCGCAATTGGTTATAT cgt       
+Nac_153                       4  3.01e-04        atc GCCAAAGGTCACGCTTAtgt           
+Nac_112                       3  3.01e-04         ta tTCATAACTATTCCTTACat c         
+Nac_269                       1  3.19e-04          . gctATAACACCACCCTATAT atg       
+Nac_306                       1  3.37e-04          . accATAAGCTTTGCTAAAAA tag       
+Nac_222                       1  3.37e-04          . tttATAACACTAACAAATCG aga       
+Nac_189                       3  3.37e-04         at gAAATAAGCTTTTTCTCTac c         
+Nac_32                        2  3.37e-04          a gtCCTAAGTTTTAAATATAt ca        
+Nac_394                       1  3.56e-04          . gtaTTAAGCCGTGCTTATGA tta       
+Nac_251                       1  3.56e-04          . agaTTAAACATACCTTATAC aag       
+Nac_204                       2  3.56e-04          g atGATAAGCCAAATCGATAa gc        
+Nac_201                       3  3.56e-04         at gGTATTTTCAGAGATTATga a         
+Nac_184                       4  3.56e-04        gac CGTATTCATACTTCCTAtga           
+Nac_106                       2  3.56e-04          t gcTATCATCCGCCCTTATGc tt        
+Nac_80                        2  3.56e-04          g tcAATAAAGATAGCGGATAt tt        
+Nac_77                        2  3.56e-04          g gcGAGAAGCCGTTCTTATTa cc        
+Nac_16                        2  3.56e-04          g ttGATATGATCACGTTATAc cc        
+Nac_271                       1  3.76e-04          . aacTGAAGAGTAACTTATGG ctg       
+Nac_192                       4  3.76e-04        tct GCCATAAGCTTTGTTACttc           
+Nac_122                       1  3.76e-04          . gtgATATTGCTCTCCTATGG aga       
+Nac_79                        2  3.76e-04          t atCATAGGTAGGCCAAATGa gg        
+Nac_58                        2  3.96e-04          a ctCATTCATAACGCTAATGc tg        
+Nac_336                       2  4.18e-04          g caTATAAGTTGCTGGAATGa tt        
+Nac_159                       1  4.18e-04          . aacATAATTTGGGCTAATTT tct       
+Nac_248                       4  4.41e-04        cgg GTCAGACGCTGGTGTTAtgg           
+Nac_206                       2  4.41e-04          g ggTATAAGGCTTAAAGATAt ct        
+Nac_129                       3  4.41e-04         gc cCTATAAAAGGAGGGTATgc a         
+Nac_75                        2  4.41e-04          g acGATCGTTATTTTTAATAa tg        
+Nac_205                       4  4.65e-04        aag CGTATTAGTGAGATTTAtca           
+Nac_120                       2  4.65e-04          t ggCAGTTTTGTTTCTTATGc cc        
+Nac_87                        2  4.65e-04          g tcCGTATTAAAAAATTATGt tg        
+Nac_42                        3  4.65e-04         ta gTGATAAGCTTTTCGTCTta c         
+Nac_359                       1  4.90e-04          . ccgATAAGTAAAGGCCATGG ctc       
+Nac_177                       1  4.90e-04          . ggaATAAGGACGGTATATGA cta       
+Nac_304                       3  5.16e-04         ta cTAAGAGGAAAAAAATATgg a         
+Nac_286                       3  5.16e-04         gt aCGAACAGTATTTTGTATgg g         
+Nac_200                       1  5.16e-04          . cacATTTCTTATCATAATAA att       
+Nac_164                       4  5.16e-04        tac CTAAAAGGAAGACGTTAtgg           
+Nac_13                        3  5.16e-04         tg tTCGTCAAATTGAGTTATgg c         
+Nac_344                       2  5.44e-04          t acCAGAGATAGGGCTTATGc at        
+Nac_329                       1  5.44e-04          . ttcAGAGCGATCGCTTATAA gga       
+Nac_307                       4  5.44e-04        cgc TATATAGCGCTGGCCTAtga           
+Nac_293                       4  5.44e-04        gga ACCGTCATTCGTACTTAtgg           
+Nac_250                       4  5.44e-04        ttc GCCCTAACAAAAAGTGAtat           
+Nac_301                       4  5.72e-04        agt AGCATTTGGTTTTCTCAtac           
+Nac_185                       3  5.72e-04         at tAATTAAGGAAAGCATATgc g         
+Nac_157                       1  5.72e-04          . cacATCGGAGGCTGTTATGC cac       
+Nac_354                       3  6.02e-04         tg tCCGTAAGGAGTCACTATgg c         
+Nac_197                       1  6.02e-04          . cccATACGATGTGGGTATCG cat       
+Nac_145                       2  6.34e-04          a acAATTAGCGGACATTATCa gc        
+Nac_343                       2  6.67e-04          a gcATTACAATTTTGTAATGa ac        
+Nac_256                       1  6.67e-04          . cttAGCTATTATAGTTATAG aga       
+Nac_216                       2  7.37e-04          g ggCATAGCGAAAACTTCTCt gc        
+Nac_347                       4  7.74e-04        caa CCCAGACGAAAATGAGAtgg           
+Nac_226                       2  7.74e-04          g gaCAGAATTAATGGCTATCt ca        
+Nac_154                       3  7.74e-04         tc aCCATAAAAAAGCCGCATgt t         
+Nac_59                        2  7.74e-04          t tcCATACTCTGTCAATATAt cc        
+Nac_135                       1  8.13e-04          . gtgAATACCCTTACTTATTG gta       
+Nac_284                       2  8.54e-04          g gaTATGCAAAACGCTTATGc ca        
+Nac_116                       3  8.54e-04         at gTCAAAAGCCCCACTTATac g         
+Nac_7                         2  8.54e-04          a tcAGTAAGCCTACGCTATGg aa        
+Nac_353                       1  8.96e-04          . accATAATTTTCTTAACTGA ggt       
+Nac_300                       4  9.40e-04        ctc TGCATTTTGGGGTGTTAtgg           
+Nac_275                       1  9.40e-04          . cctATAAGTCGGATGAATGG aat       
+Nac_258                       3  9.40e-04         ct cTGATAAGGAGCCGGTATgt t         
+Nac_220                       1  9.40e-04          . tccATATCATTTTTGCATAG act       
+Nac_113                       4  9.40e-04        gga AGTATAGATGTCCTTGAtta           
+Nac_98                        2  9.40e-04          c tgGATTGGTAACCCGTATAa ga        
+Nac_118                       3  9.86e-04         ga aTCATAAGGTAGAAACATgc t         
+Nac_373                       3  1.03e-03         cg tTAATTGCTTTCTTTTTTgg c         
+Nac_372                       3  1.03e-03         ca gAGGTTTAAATTTCTTATgt a         
+Nac_305                       4  1.03e-03        tga CCTATACACCGGGCTTAttg           
+Nac_217                       1  1.03e-03          . tcgCTAAATTTTTCTAATCG aat       
+Nac_143                       3  1.03e-03         ct cGCATTCTGTTTTGTAATtc c         
+Nac_83                        2  1.08e-03          a acCATCACATCCTACAATGg ca        
+Nac_266                       4  1.14e-03        cca AATATTACGCTTATCAAtac           
+Nac_69                        2  1.14e-03          a tgGACAACCTATTTTTATGg cc        
+Nac_387                       3  1.37e-03         at gGGATATGATTTTCTTACat c         
+Nac_209                       3  1.43e-03         ca gGCATAAGAGGATCGCATta t         
+Nac_160                       3  1.50e-03         ca tATAAAGGAGGAACGTATgg c         
+Nac_260                       2  1.57e-03          g gcAAGATAAACAGGTTATTa cc        
+Nac_168                       3  1.71e-03         ga gTGAGCTAGCTTGCTTATgg t         
+Nac_331                       1  1.87e-03          . ataAGTAGATGAATATATAT act       
+Nac_150                       3  1.96e-03         tt aACATTAGATCTAAATCTta g         
+Nac_4                         2  1.96e-03          a taCATCCAATTTTTCTCTTa tt        
+Nac_314                       4  2.13e-03        tcg GTCATGGACGAAGCCTAtaa           
+Nac_12                        3  2.33e-03         ga cACTAAGCTCTTTCTTATgg c         
+Nac_328                       3  2.43e-03         gg cCCATAAATTTTTACGCTcc c         
+Nac_140                       3  2.43e-03         ag cGAATCACACTGATCTATat c         
+Nac_356                       4  2.64e-03        tgg ATTATAAGAGCTGGGCAtgg           
+Nac_330                       3  2.64e-03         tg aTGATGAGAAGAAGAAATga t         
+Nac_27                        2  2.75e-03          a agAATTATCCTAGGGGATGc tg        
+Nac_26                        2  2.75e-03          a agAATTATCCTAGGGGATGc tg        
+Nac_303                       3  2.87e-03         ga aCGATATCAAACCGATCTgg g         
+Nac_391                       3  3.12e-03         gg tCGAGATCGAAAAAATATaa c         
+Nac_370                       1  3.12e-03          . ggcATACTAAGGAGGAATAA aaa       
+Nac_183                       3  3.52e-03         ag cAAATAACGTTTACCGCTcg c         
+Nac_213                       1  3.67e-03          . gtaCTGGCTAAATGTTATGG cgg       
+Nac_155                       3  3.82e-03         ga cTCATGCCTTTCACTGATat c         
+Nac_290                       3  3.97e-03         cg cTCATAAGAAATCCTTTCtt a         
+Nac_70                        2  3.97e-03          t acGCTAGCGTAGCCTTATAg at        
+Nac_320                       1  4.13e-03          . agtATAAGTACCGCCTTTCA tca       
+Nac_233                       2  4.65e-03          a tgAATAAGAAGGTGTTAACc ct        
+Nac_71                        3  4.83e-03         ct gTCAGGAATTATTTTTCTtg c         
+Nac_405                       1  6.78e-03          . ttcATATTGCCGCAATATta t         
+Nac_193                       3  6.78e-03         ag cATATAAGGAAAAGAGAGaa t         
+Nac_139                       3  7.29e-03         gt gCATAACGGAGGACTTATgg c         
+Nac_291                       3  8.13e-03         ca tCATAACCCTTTCCTTATac a         
+Nac_108                       2  9.69e-03          t aaCATAAGGAGTGCATTATg cg        
+Nac_242                       1  1.04e-02          . gccAGAAGAGCCGGATCTGG cgc       
+Nac_180                       2  1.27e-02          g ccTATCTATAACGCCATTGt ct        
+Nac_411                       2  1.32e-02          t taCCGTCACATTCTTGAtgg           
+Nac_395                       2  1.50e-02          a acCCTTATATATTAATAcga           
+Nac_408                       1  2.19e-02          . cacACATGCAATAATCATtc a         
+Nac_105                       2  3.58e-02          t aaGAAGAAAAAGACATTTGg tt        
+Nac_410                       1  3.89e-02          . tggTTATGAGATTACTCTcg t         
+Nac_1                         1  5.07e-02          . tcaTTAGCTTCGTTTATTgc a         
+Nac_0                         1  7.70e-02          . tgaATAAATTTTCTCAGGgg c         
+Nac_128                       1  9.04e-02          . gatTTTCTTATGCGGATTga t         
+Nac_412                       2  1.33e-01          c atAAACAACATAAGCACaat           
+Nac_368                       4  3.54e-01        cag ATCAGTTTTTTCCGCCTaat           
+Nac_409                       1  4.89e-01          . gaaGGCTAAAATAGAATGaa t         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DNYATAARNWWWHBTTATGV MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Nac_8                             7.4e-08  1_[+1]_2
+Nac_367                           1.1e-07  3_[+1]
+Nac_56                            2.6e-07  2_[+1]_1
+Nac_400                           2.9e-07  3_[+1]
+Nac_100                           3.7e-07  1_[+1]_2
+Nac_357                           6.8e-07  3_[+1]
+Nac_178                           6.8e-07  [+1]_3
+Nac_152                           9.6e-07  [+1]_3
+Nac_302                           1.1e-06  [+1]_3
+Nac_294                           1.2e-06  2_[+1]_1
+Nac_350                           1.3e-06  [+1]_3
+Nac_292                           1.5e-06  2_[+1]_1
+Nac_115                           1.7e-06  2_[+1]_1
+Nac_346                           1.8e-06  [+1]_3
+Nac_280                           1.8e-06  [+1]_3
+Nac_119                           1.8e-06  [+1]_3
+Nac_65                            1.8e-06  1_[+1]_2
+Nac_237                             2e-06  [+1]_3
+Nac_361                           2.3e-06  1_[+1]_2
+Nac_212                           2.3e-06  [+1]_3
+Nac_267                           2.5e-06  [+1]_3
+Nac_95                            2.5e-06  1_[+1]_2
+Nac_72                            2.5e-06  1_[+1]_2
+Nac_50                            2.5e-06  1_[+1]_2
+Nac_39                            2.5e-06  1_[+1]_2
+Nac_397                           2.8e-06  [+1]_3
+Nac_230                           2.8e-06  2_[+1]_1
+Nac_37                            2.8e-06  1_[+1]_2
+Nac_15                            2.8e-06  1_[+1]_2
+Nac_225                           3.1e-06  2_[+1]_1
+Nac_166                           3.1e-06  [+1]_3
+Nac_381                           3.4e-06  3_[+1]
+Nac_149                           3.4e-06  2_[+1]_1
+Nac_311                           3.7e-06  [+1]_3
+Nac_167                           4.1e-06  [+1]_3
+Nac_252                           4.5e-06  [+1]_3
+Nac_186                           4.5e-06  3_[+1]
+Nac_169                           4.5e-06  2_[+1]_1
+Nac_9                             4.5e-06  1_[+1]_2
+Nac_403                             6e-06  [+1]_1
+Nac_241                             6e-06  [+1]_3
+Nac_44                              6e-06  1_[+1]_2
+Nac_253                           6.5e-06  [+1]_3
+Nac_243                           6.5e-06  1_[+1]_2
+Nac_238                           6.5e-06  2_[+1]_1
+Nac_104                           6.5e-06  1_[+1]_2
+Nac_81                            6.5e-06  2_[+1]_1
+Nac_36                            6.5e-06  1_[+1]_2
+Nac_379                           7.2e-06  2_[+1]_1
+Nac_103                           7.2e-06  1_[+1]_2
+Nac_23                            7.2e-06  1_[+1]_2
+Nac_298                           7.8e-06  1_[+1]_2
+Nac_396                           8.6e-06  [+1]_3
+Nac_102                           8.6e-06  1_[+1]_2
+Nac_97                            9.3e-06  1_[+1]_2
+Nac_374                             1e-05  [+1]_3
+Nac_362                             1e-05  2_[+1]_1
+Nac_288                           1.1e-05  2_[+1]_1
+Nac_52                            1.1e-05  1_[+1]_2
+Nac_14                            1.1e-05  1_[+1]_2
+Nac_182                           1.2e-05  3_[+1]
+Nac_130                           1.2e-05  1_[+1]_2
+Nac_163                           1.3e-05  2_[+1]_1
+Nac_148                           1.4e-05  2_[+1]_1
+Nac_399                           1.6e-05  3_[+1]
+Nac_244                           1.6e-05  2_[+1]_1
+Nac_141                           1.6e-05  1_[+1]_2
+Nac_123                           1.6e-05  [+1]_3
+Nac_109                           1.6e-05  1_[+1]_2
+Nac_31                            1.6e-05  2_[+1]_1
+Nac_265                           1.7e-05  [+1]_3
+Nac_398                           1.8e-05  1_[+1]_2
+Nac_392                           1.8e-05  3_[+1]
+Nac_378                           1.8e-05  2_[+1]_1
+Nac_360                           1.8e-05  2_[+1]_1
+Nac_369                             2e-05  2_[+1]_1
+Nac_313                             2e-05  1_[+1]_2
+Nac_310                             2e-05  [+1]_3
+Nac_401                           2.1e-05  [+1]_3
+Nac_351                           2.1e-05  2_[+1]_1
+Nac_349                           2.1e-05  [+1]_3
+Nac_337                           2.1e-05  1_[+1]_2
+Nac_133                           2.1e-05  1_[+1]_2
+Nac_126                           2.1e-05  1_[+1]_2
+Nac_121                           2.1e-05  [+1]_3
+Nac_53                            2.1e-05  1_[+1]_2
+Nac_327                           2.3e-05  2_[+1]_1
+Nac_203                           2.3e-05  2_[+1]_1
+Nac_170                           2.3e-05  3_[+1]
+Nac_132                           2.3e-05  [+1]_3
+Nac_131                           2.3e-05  1_[+1]_2
+Nac_93                            2.3e-05  1_[+1]_2
+Nac_74                            2.3e-05  2_[+1]_1
+Nac_41                            2.3e-05  1_[+1]_2
+Nac_146                           2.5e-05  [+1]_3
+Nac_88                            2.5e-05  1_[+1]_2
+Nac_43                            2.5e-05  1_[+1]_2
+Nac_402                           2.7e-05  1_[+1]_2
+Nac_365                           2.7e-05  2_[+1]_1
+Nac_249                           2.7e-05  3_[+1]
+Nac_137                           2.7e-05  1_[+1]_2
+Nac_91                            2.7e-05  1_[+1]_2
+Nac_73                            2.7e-05  1_[+1]_2
+Nac_375                           2.9e-05  1_[+1]_2
+Nac_335                           2.9e-05  [+1]_3
+Nac_319                           2.9e-05  3_[+1]
+Nac_297                           2.9e-05  3_[+1]
+Nac_2                             2.9e-05  1_[+1]_2
+Nac_334                           3.1e-05  2_[+1]_1
+Nac_214                           3.1e-05  [+1]_3
+Nac_99                            3.1e-05  1_[+1]_2
+Nac_86                            3.1e-05  2_[+1]_1
+Nac_341                           3.4e-05  [+1]_3
+Nac_323                           3.4e-05  1_[+1]_2
+Nac_138                           3.4e-05  [+1]_3
+Nac_285                           3.6e-05  3_[+1]
+Nac_63                            3.6e-05  2_[+1]_1
+Nac_312                           3.9e-05  [+1]_3
+Nac_281                           3.9e-05  [+1]_3
+Nac_277                           3.9e-05  2_[+1]_1
+Nac_223                           3.9e-05  2_[+1]_1
+Nac_181                           3.9e-05  [+1]_3
+Nac_165                           3.9e-05  2_[+1]_1
+Nac_111                           3.9e-05  3_[+1]
+Nac_388                           4.2e-05  3_[+1]
+Nac_235                           4.2e-05  [+1]_3
+Nac_202                           4.2e-05  1_[+1]_2
+Nac_195                           4.2e-05  3_[+1]
+Nac_162                           4.2e-05  [+1]_3
+Nac_144                           4.2e-05  1_[+1]_2
+Nac_82                            4.2e-05  1_[+1]_2
+Nac_47                            4.2e-05  1_[+1]_2
+Nac_404                           4.9e-05  [+1]_1
+Nac_389                           4.9e-05  3_[+1]
+Nac_263                           4.9e-05  [+1]_3
+Nac_158                           4.9e-05  [+1]_3
+Nac_107                           4.9e-05  1_[+1]_2
+Nac_54                            4.9e-05  2_[+1]_1
+Nac_28                            4.9e-05  1_[+1]_2
+Nac_17                            4.9e-05  1_[+1]_2
+Nac_317                           5.2e-05  1_[+1]_2
+Nac_270                           5.2e-05  1_[+1]_2
+Nac_117                           5.2e-05  2_[+1]_1
+Nac_46                            5.2e-05  1_[+1]_2
+Nac_371                           5.6e-05  1_[+1]_2
+Nac_188                           5.6e-05  2_[+1]_1
+Nac_173                           5.6e-05  2_[+1]_1
+Nac_161                           5.6e-05  [+1]_3
+Nac_49                            5.6e-05  2_[+1]_1
+Nac_190                             6e-05  [+1]_3
+Nac_110                             6e-05  1_[+1]_2
+Nac_76                              6e-05  2_[+1]_1
+Nac_40                              6e-05  1_[+1]_2
+Nac_407                           6.4e-05  [+1]_1
+Nac_364                           6.4e-05  2_[+1]_1
+Nac_339                           6.4e-05  2_[+1]_1
+Nac_262                           6.4e-05  2_[+1]_1
+Nac_231                           6.4e-05  1_[+1]_2
+Nac_215                           6.4e-05  [+1]_3
+Nac_33                            6.4e-05  1_[+1]_2
+Nac_283                           6.9e-05  2_[+1]_1
+Nac_272                           6.9e-05  [+1]_3
+Nac_245                           6.9e-05  [+1]_3
+Nac_175                           6.9e-05  3_[+1]
+Nac_124                           6.9e-05  2_[+1]_1
+Nac_90                            6.9e-05  1_[+1]_2
+Nac_55                            6.9e-05  1_[+1]_2
+Nac_19                            6.9e-05  1_[+1]_2
+Nac_5                             6.9e-05  1_[+1]_2
+Nac_324                           7.4e-05  [+1]_3
+Nac_282                           7.4e-05  3_[+1]
+Nac_273                           7.4e-05  1_[+1]_2
+Nac_127                           7.4e-05  [+1]_3
+Nac_333                           7.9e-05  1_[+1]_2
+Nac_321                           7.9e-05  2_[+1]_1
+Nac_295                           7.9e-05  2_[+1]_1
+Nac_264                           7.9e-05  2_[+1]_1
+Nac_261                           7.9e-05  2_[+1]_1
+Nac_89                            7.9e-05  1_[+1]_2
+Nac_61                            7.9e-05  1_[+1]_2
+Nac_308                           8.4e-05  1_[+1]_2
+Nac_259                           8.4e-05  [+1]_3
+Nac_227                           8.4e-05  2_[+1]_1
+Nac_156                           8.4e-05  1_[+1]_2
+Nac_151                           8.4e-05  2_[+1]_1
+Nac_147                           8.4e-05  [+1]_3
+Nac_29                            8.4e-05  1_[+1]_2
+Nac_25                            8.4e-05  2_[+1]_1
+Nac_18                            8.4e-05  1_[+1]_2
+Nac_125                             9e-05  2_[+1]_1
+Nac_390                           9.6e-05  3_[+1]
+Nac_382                           9.6e-05  3_[+1]
+Nac_276                           9.6e-05  3_[+1]
+Nac_240                           9.6e-05  [+1]_3
+Nac_57                            9.6e-05  1_[+1]_2
+Nac_393                            0.0001  1_[+1]_2
+Nac_386                            0.0001  1_[+1]_2
+Nac_236                            0.0001  1_[+1]_2
+Nac_10                             0.0001  [+1]_3
+Nac_352                           0.00011  1_[+1]_2
+Nac_342                           0.00011  3_[+1]
+Nac_366                           0.00012  1_[+1]_2
+Nac_325                           0.00012  2_[+1]_1
+Nac_322                           0.00012  3_[+1]
+Nac_221                           0.00012  [+1]_3
+Nac_142                           0.00012  2_[+1]_1
+Nac_92                            0.00012  2_[+1]_1
+Nac_406                           0.00012  [+1]_1
+Nac_345                           0.00012  2_[+1]_1
+Nac_229                           0.00012  3_[+1]
+Nac_134                           0.00012  [+1]_3
+Nac_94                            0.00012  2_[+1]_1
+Nac_380                           0.00013  1_[+1]_2
+Nac_211                           0.00013  2_[+1]_1
+Nac_198                           0.00013  [+1]_3
+Nac_196                           0.00013  2_[+1]_1
+Nac_136                           0.00013  2_[+1]_1
+Nac_96                            0.00013  1_[+1]_2
+Nac_45                            0.00013  1_[+1]_2
+Nac_340                           0.00014  1_[+1]_2
+Nac_332                           0.00014  3_[+1]
+Nac_78                            0.00014  1_[+1]_2
+Nac_34                            0.00014  2_[+1]_1
+Nac_338                           0.00015  2_[+1]_1
+Nac_194                           0.00015  1_[+1]_2
+Nac_179                           0.00015  [+1]_3
+Nac_176                           0.00015  [+1]_3
+Nac_85                            0.00015  1_[+1]_2
+Nac_84                            0.00015  1_[+1]_2
+Nac_114                           0.00016  1_[+1]_2
+Nac_66                            0.00016  1_[+1]_2
+Nac_62                            0.00016  1_[+1]_2
+Nac_51                            0.00016  1_[+1]_2
+Nac_279                           0.00017  1_[+1]_2
+Nac_246                           0.00017  2_[+1]_1
+Nac_6                             0.00017  1_[+1]_2
+Nac_318                           0.00018  [+1]_3
+Nac_309                           0.00018  [+1]_3
+Nac_247                           0.00018  1_[+1]_2
+Nac_210                           0.00018  [+1]_3
+Nac_208                           0.00018  2_[+1]_1
+Nac_171                           0.00018  [+1]_3
+Nac_35                            0.00018  1_[+1]_2
+Nac_376                           0.00019  3_[+1]
+Nac_363                           0.00019  [+1]_3
+Nac_315                           0.00019  [+1]_3
+Nac_268                           0.00019  [+1]_3
+Nac_239                           0.00019  [+1]_3
+Nac_191                           0.00019  2_[+1]_1
+Nac_101                           0.00019  1_[+1]_2
+Nac_48                            0.00019  2_[+1]_1
+Nac_3                             0.00019  1_[+1]_2
+Nac_326                            0.0002  3_[+1]
+Nac_172                            0.0002  [+1]_3
+Nac_348                           0.00021  3_[+1]
+Nac_255                           0.00021  2_[+1]_1
+Nac_254                           0.00021  2_[+1]_1
+Nac_218                           0.00021  [+1]_3
+Nac_174                           0.00021  1_[+1]_2
+Nac_67                            0.00021  1_[+1]_2
+Nac_384                           0.00023  [+1]_3
+Nac_355                           0.00023  2_[+1]_1
+Nac_257                           0.00023  2_[+1]_1
+Nac_24                            0.00023  2_[+1]_1
+Nac_287                           0.00024  3_[+1]
+Nac_68                            0.00024  1_[+1]_2
+Nac_21                            0.00024  1_[+1]_2
+Nac_11                            0.00024  1_[+1]_2
+Nac_385                           0.00025  2_[+1]_1
+Nac_289                           0.00025  1_[+1]_2
+Nac_228                           0.00025  1_[+1]_2
+Nac_219                           0.00025  2_[+1]_1
+Nac_60                            0.00025  2_[+1]_1
+Nac_30                            0.00025  1_[+1]_2
+Nac_383                           0.00027  1_[+1]_2
+Nac_358                           0.00027  1_[+1]_2
+Nac_278                           0.00027  2_[+1]_1
+Nac_207                           0.00027  1_[+1]_2
+Nac_199                           0.00027  2_[+1]_1
+Nac_64                            0.00027  2_[+1]_1
+Nac_38                            0.00027  2_[+1]_1
+Nac_22                            0.00027  1_[+1]_2
+Nac_299                           0.00028  2_[+1]_1
+Nac_296                           0.00028  [+1]_3
+Nac_274                           0.00028  1_[+1]_2
+Nac_224                           0.00028  1_[+1]_2
+Nac_20                            0.00028  1_[+1]_2
+Nac_377                            0.0003  3_[+1]
+Nac_316                            0.0003  3_[+1]
+Nac_234                            0.0003  2_[+1]_1
+Nac_232                            0.0003  1_[+1]_2
+Nac_187                            0.0003  [+1]_3
+Nac_153                            0.0003  3_[+1]
+Nac_112                            0.0003  2_[+1]_1
+Nac_269                           0.00032  [+1]_3
+Nac_306                           0.00034  [+1]_3
+Nac_222                           0.00034  [+1]_3
+Nac_189                           0.00034  2_[+1]_1
+Nac_32                            0.00034  1_[+1]_2
+Nac_394                           0.00036  [+1]_3
+Nac_251                           0.00036  [+1]_3
+Nac_204                           0.00036  1_[+1]_2
+Nac_201                           0.00036  2_[+1]_1
+Nac_184                           0.00036  3_[+1]
+Nac_106                           0.00036  1_[+1]_2
+Nac_80                            0.00036  1_[+1]_2
+Nac_77                            0.00036  1_[+1]_2
+Nac_16                            0.00036  1_[+1]_2
+Nac_271                           0.00038  [+1]_3
+Nac_192                           0.00038  3_[+1]
+Nac_122                           0.00038  [+1]_3
+Nac_79                            0.00038  1_[+1]_2
+Nac_58                             0.0004  1_[+1]_2
+Nac_336                           0.00042  1_[+1]_2
+Nac_159                           0.00042  [+1]_3
+Nac_248                           0.00044  3_[+1]
+Nac_206                           0.00044  1_[+1]_2
+Nac_129                           0.00044  2_[+1]_1
+Nac_75                            0.00044  1_[+1]_2
+Nac_205                           0.00047  3_[+1]
+Nac_120                           0.00047  1_[+1]_2
+Nac_87                            0.00047  1_[+1]_2
+Nac_42                            0.00047  2_[+1]_1
+Nac_359                           0.00049  [+1]_3
+Nac_177                           0.00049  [+1]_3
+Nac_304                           0.00052  2_[+1]_1
+Nac_286                           0.00052  2_[+1]_1
+Nac_200                           0.00052  [+1]_3
+Nac_164                           0.00052  3_[+1]
+Nac_13                            0.00052  2_[+1]_1
+Nac_344                           0.00054  1_[+1]_2
+Nac_329                           0.00054  [+1]_3
+Nac_307                           0.00054  3_[+1]
+Nac_293                           0.00054  3_[+1]
+Nac_250                           0.00054  3_[+1]
+Nac_301                           0.00057  3_[+1]
+Nac_185                           0.00057  2_[+1]_1
+Nac_157                           0.00057  [+1]_3
+Nac_354                            0.0006  2_[+1]_1
+Nac_197                            0.0006  [+1]_3
+Nac_145                           0.00063  1_[+1]_2
+Nac_343                           0.00067  1_[+1]_2
+Nac_256                           0.00067  [+1]_3
+Nac_216                           0.00074  1_[+1]_2
+Nac_347                           0.00077  3_[+1]
+Nac_226                           0.00077  1_[+1]_2
+Nac_154                           0.00077  2_[+1]_1
+Nac_59                            0.00077  1_[+1]_2
+Nac_135                           0.00081  [+1]_3
+Nac_284                           0.00085  1_[+1]_2
+Nac_116                           0.00085  2_[+1]_1
+Nac_7                             0.00085  1_[+1]_2
+Nac_353                            0.0009  [+1]_3
+Nac_300                           0.00094  3_[+1]
+Nac_275                           0.00094  [+1]_3
+Nac_258                           0.00094  2_[+1]_1
+Nac_220                           0.00094  [+1]_3
+Nac_113                           0.00094  3_[+1]
+Nac_98                            0.00094  1_[+1]_2
+Nac_118                           0.00099  2_[+1]_1
+Nac_373                             0.001  2_[+1]_1
+Nac_372                             0.001  2_[+1]_1
+Nac_305                             0.001  3_[+1]
+Nac_217                             0.001  [+1]_3
+Nac_143                             0.001  2_[+1]_1
+Nac_83                             0.0011  1_[+1]_2
+Nac_266                            0.0011  3_[+1]
+Nac_69                             0.0011  1_[+1]_2
+Nac_387                            0.0014  2_[+1]_1
+Nac_209                            0.0014  2_[+1]_1
+Nac_160                            0.0015  2_[+1]_1
+Nac_260                            0.0016  1_[+1]_2
+Nac_168                            0.0017  2_[+1]_1
+Nac_331                            0.0019  [+1]_3
+Nac_150                             0.002  2_[+1]_1
+Nac_4                               0.002  1_[+1]_2
+Nac_314                            0.0021  3_[+1]
+Nac_12                             0.0023  2_[+1]_1
+Nac_328                            0.0024  2_[+1]_1
+Nac_140                            0.0024  2_[+1]_1
+Nac_356                            0.0026  3_[+1]
+Nac_330                            0.0026  2_[+1]_1
+Nac_27                             0.0028  1_[+1]_2
+Nac_26                             0.0028  1_[+1]_2
+Nac_303                            0.0029  2_[+1]_1
+Nac_391                            0.0031  2_[+1]_1
+Nac_370                            0.0031  [+1]_3
+Nac_183                            0.0035  2_[+1]_1
+Nac_213                            0.0037  [+1]_3
+Nac_155                            0.0038  2_[+1]_1
+Nac_290                             0.004  2_[+1]_1
+Nac_70                              0.004  1_[+1]_2
+Nac_320                            0.0041  [+1]_3
+Nac_233                            0.0046  1_[+1]_2
+Nac_71                             0.0048  2_[+1]_1
+Nac_405                            0.0068  [+1]_1
+Nac_193                            0.0068  2_[+1]_1
+Nac_139                            0.0073  2_[+1]_1
+Nac_291                            0.0081  2_[+1]_1
+Nac_108                            0.0097  1_[+1]_2
+Nac_242                              0.01  [+1]_3
+Nac_180                             0.013  1_[+1]_2
+Nac_411                             0.013  1_[+1]
+Nac_395                             0.015  1_[+1]
+Nac_408                             0.022  [+1]_1
+Nac_105                             0.036  1_[+1]_2
+Nac_410                             0.039  [+1]_1
+Nac_1                               0.051  [+1]_1
+Nac_0                               0.077  [+1]_1
+Nac_128                              0.09  [+1]_1
+Nac_412                              0.13  1_[+1]
+Nac_368                              0.35  3_[+1]
+Nac_409                              0.49  [+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DNYATAARNWWWHBTTATGV MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF DNYATAARNWWWHBTTATGV width=20 seqs=413
+Nac_8                    (    2) ATTATAAATAAAAGTTATGA  1 
+Nac_367                  (    4) ACAATAACTATTAGTTATGA  1 
+Nac_56                   (    3) TGAATAAGAAATCGTTATGG  1 
+Nac_400                  (    4) ATTATAAAAAAAACTTATTA  1 
+Nac_100                  (    2) ATTATAAGGATATTTTATGC  1 
+Nac_357                  (    4) ATAATAAGGATAATTTATGC  1 
+Nac_178                  (    1) ACCATAAGCTAATGTGATGA  1 
+Nac_152                  (    1) TCCATTGGATTTACTTATAG  1 
+Nac_302                  (    1) TTCATAAAAAATACTGATTG  1 
+Nac_294                  (    3) GCCATTGATATTGCTTATGA  1 
+Nac_350                  (    1) TACATATTTTAATGTTATGG  1 
+Nac_292                  (    3) GCTATTAGAAATTCCTATGC  1 
+Nac_115                  (    3) TGCATAAGATAAACTAATTG  1 
+Nac_346                  (    1) GATATATGTTTATTTTATGT  1 
+Nac_280                  (    1) CTAATAAAGAATAATTATGG  1 
+Nac_119                  (    1) GGCATAATACTTTTTTATGC  1 
+Nac_65                   (    2) AACATTAAATTAACTTATAC  1 
+Nac_237                  (    1) AGAATACGCATAACTTATGA  1 
+Nac_361                  (    2) GCTATTAGTAAAATCTATGA  1 
+Nac_212                  (    1) ACAATAATCATACTTTATGA  1 
+Nac_267                  (    1) TCCATAAGTTACGCTTATTT  1 
+Nac_95                   (    2) AAAATAAGAAAAGATTATGC  1 
+Nac_72                   (    2) TTTATAATTAATCTTTATAA  1 
+Nac_50                   (    2) AACATAAGAGAAACCTATGC  1 
+Nac_39                   (    2) AATATCAGCTATTCTTATAA  1 
+Nac_397                  (    1) TTCATCAATTTTTCTTATTT  1 
+Nac_230                  (    3) TCCATAGGATTTACATATAA  1 
+Nac_37                   (    2) GGGATAACCATATTTTATGG  1 
+Nac_15                   (    2) TCCATAACAAATGGTTATTC  1 
+Nac_225                  (    3) GGCATAAGGATAAGATATGT  1 
+Nac_166                  (    1) TTCATAAATTTCATCTATGA  1 
+Nac_381                  (    4) GTGATAACCATTTTTTATGC  1 
+Nac_149                  (    3) CTTATCAATTATGCTTATGG  1 
+Nac_311                  (    1) TCCATAAGCCGCTCTTATGA  1 
+Nac_167                  (    1) TATATTAGTAAAGCTTATTA  1 
+Nac_252                  (    1) AATATAAGGAAATCATATAA  1 
+Nac_186                  (    4) AACATACGGTATTGTTATTG  1 
+Nac_169                  (    3) ATAATAAGGAAAAGTGATGA  1 
+Nac_9                    (    2) AACATAGCCATTTCATATGG  1 
+Nac_403                  (    1) GACATCAGCAATTCCTATTG  1 
+Nac_241                  (    1) ATTATAAGCTTTCTGTATGG  1 
+Nac_44                   (    2) TAAATTGAAATATCTTATGA  1 
+Nac_253                  (    1) GATATAAAAAATACATATTC  1 
+Nac_243                  (    2) GAAATAAGAGGTTATTATGG  1 
+Nac_238                  (    3) AACATTTGTTAGACTTATGG  1 
+Nac_104                  (    2) TCCATTGATATAACTTATAT  1 
+Nac_81                   (    3) GGCATAGATAATACTTATCC  1 
+Nac_36                   (    2) ATTATATATAAATCTTATTT  1 
+Nac_379                  (    3) AATATCCGAATTTTTTATGG  1 
+Nac_103                  (    2) TGCATAACCTTTAATTATTC  1 
+Nac_23                   (    2) TCCATAAATGATTATTATCG  1 
+Nac_298                  (    2) GTTATAACTCTTCCTGATGG  1 
+Nac_396                  (    1) GACATTAGACAAGGTTATGC  1 
+Nac_102                  (    2) GTCATAAGCGAATCTGATTG  1 
+Nac_97                   (    2) TTTATTGGATTTACTTATAC  1 
+Nac_374                  (    1) GTTATAAGGAGTGATTATGT  1 
+Nac_362                  (    3) AAAATAAGCATCTATTATTG  1 
+Nac_288                  (    3) CTCATAAGGTTCGTTTATAG  1 
+Nac_52                   (    2) CACATAAAAATATAATATGT  1 
+Nac_14                   (    2) TGAATAAGCTAACGCTATGA  1 
+Nac_182                  (    4) TATATTGAAAAAGCTTATGA  1 
+Nac_130                  (    2) GCAATTAAAAAAATTTATTC  1 
+Nac_163                  (    3) ACTATTATTGAAGCTTATGA  1 
+Nac_148                  (    3) ACAATAAGAAAACAATATGT  1 
+Nac_399                  (    4) GTCATATATAATGATGATGG  1 
+Nac_244                  (    3) TAGATAAAGTTATCTTATCG  1 
+Nac_141                  (    2) GATATAAGCGATTTTTATCA  1 
+Nac_123                  (    1) CTTATTAGTTTTTCTGATTG  1 
+Nac_109                  (    2) CACATTAAATATGATTATGT  1 
+Nac_31                   (    3) GCTATTGCTTAATCTTATTA  1 
+Nac_265                  (    1) ATCATCAATAAAACCGATGG  1 
+Nac_398                  (    2) GCTATTAGGATTTGATATTG  1 
+Nac_392                  (    4) ACAATATGGATTTTTTATCG  1 
+Nac_378                  (    3) TTAATATGAAACACTTATAC  1 
+Nac_360                  (    3) TATATAAAGGAATATTATGT  1 
+Nac_369                  (    3) GGCATAACCGAATCGTATGA  1 
+Nac_313                  (    2) GCCATATCGAACGCTTATGC  1 
+Nac_310                  (    1) AATATAAGGAAAACCAATGC  1 
+Nac_401                  (    1) AGCATTCATTTTTCATATGA  1 
+Nac_351                  (    3) AATATAAAATTAATATATAT  1 
+Nac_349                  (    1) GCCATCAACAATACAAATGG  1 
+Nac_337                  (    2) CTCATCATAAATATCTATGA  1 
+Nac_133                  (    2) GTCATTAATAAAGGCTATAA  1 
+Nac_126                  (    2) AACATAATGGAAACCTATGC  1 
+Nac_121                  (    1) TCAATTAATGAACTTTATGA  1 
+Nac_53                   (    2) ATCATCACGATTATTTATTC  1 
+Nac_327                  (    3) GACATTAATAAACCCGATGG  1 
+Nac_203                  (    3) ACTATTTACAAAACCTATGG  1 
+Nac_170                  (    4) TTCATCACCTTATGTGATGG  1 
+Nac_132                  (    1) ACCATAAAGGGATATTATGT  1 
+Nac_131                  (    2) AACATAAAGTGGCGTTATGG  1 
+Nac_93                   (    2) TACATTAGACAAAAATATGG  1 
+Nac_74                   (    3) CTTATTAGTTATCGATATGA  1 
+Nac_41                   (    2) TCTATAAGCTGTAGTGATAA  1 
+Nac_146                  (    1) TTCATTGGCAAAATTGATGG  1 
+Nac_88                   (    2) GTAATAATAAAATATGATGT  1 
+Nac_43                   (    2) GCAATTGTATATTGTTATGT  1 
+Nac_402                  (    2) AAAATTAGTGGAACTTATGC  1 
+Nac_365                  (    3) GCTATAAATAAGACCTATTT  1 
+Nac_249                  (    4) GCCATGAACAAAAATTATGG  1 
+Nac_137                  (    2) ACCATCAAAACCTGTTATGG  1 
+Nac_91                   (    2) TCCATCGCTAATTATTATTG  1 
+Nac_73                   (    2) TGAATCATTATTTGCTATGG  1 
+Nac_375                  (    2) AAGATAATCCTTGTTTATGG  1 
+Nac_335                  (    1) GCTATTACAAATCCTAATAA  1 
+Nac_319                  (    4) ACAATATCTTAATGATATGA  1 
+Nac_297                  (    4) ACCATAAAAATTTATAATCT  1 
+Nac_2                    (    2) GCGATAGTTTTTACTTATCA  1 
+Nac_334                  (    3) ACAATTAGGCAAACTTATTC  1 
+Nac_214                  (    1) TTAATAATTAATTTATATAT  1 
+Nac_99                   (    2) ATTGTAAGGATAACTTATGA  1 
+Nac_86                   (    3) CGGATACGAATATATTATGA  1 
+Nac_341                  (    1) GTAATTGTTATGTCTTATGG  1 
+Nac_323                  (    2) GGCATAAATTTCTTTGATAC  1 
+Nac_138                  (    1) GCCAGAAACGTTTCTTATTG  1 
+Nac_285                  (    4) GTCATTGAGTTTAACTATGG  1 
+Nac_63                   (    3) ATGATACGGTTTTGTTATTA  1 
+Nac_312                  (    1) ACCATAATGTCACCTTATAT  1 
+Nac_281                  (    1) GTTATAGGGTTCAGTTATAT  1 
+Nac_277                  (    3) ATTATCCATTTTTGTTATTG  1 
+Nac_223                  (    3) AGTATTCAGAAAATTTATGA  1 
+Nac_181                  (    1) CACCTAAGATTAACTTATGT  1 
+Nac_165                  (    3) GGCATAATTGATGATGATGG  1 
+Nac_111                  (    4) ACCATCAGTTACACCAATGA  1 
+Nac_388                  (    4) TACATATCTCTTCCTGATGA  1 
+Nac_235                  (    1) GTCATACATTTCTGCTATGT  1 
+Nac_202                  (    2) AGTATTATCATTTATTATAC  1 
+Nac_195                  (    4) AACTTAAATAAAACTTATAC  1 
+Nac_162                  (    1) ACCATTGTCTTTTTTTATAT  1 
+Nac_144                  (    2) GTCATAAAATATGTCGATAA  1 
+Nac_82                   (    2) AGCATAACGATTAATGATAC  1 
+Nac_47                   (    2) TTAATAAATTTAACTTAAGG  1 
+Nac_404                  (    1) TCTATCATAATCTCTTATTT  1 
+Nac_389                  (    4) GGAATAATTTTATTTTCTGG  1 
+Nac_263                  (    1) AAAATATTCAATATTTATAT  1 
+Nac_158                  (    1) TATATCGTTTTATGTTATGC  1 
+Nac_107                  (    2) CCTATAACTATACATGATGT  1 
+Nac_54                   (    3) GCAATCGGTAAATTTAATGA  1 
+Nac_28                   (    2) GTAATAACAATTCCCGATAG  1 
+Nac_17                   (    2) GCTATAAATATTCACAATAG  1 
+Nac_317                  (    2) TGCATATACAAGTTTTATTG  1 
+Nac_270                  (    2) GCCATTGCCTGTGCTTATGC  1 
+Nac_117                  (    3) CGCATTTCCTTTCTTTATGG  1 
+Nac_46                   (    2) TACATATAATAAAACTATTA  1 
+Nac_371                  (    2) ACGATATGATTTACCTATCG  1 
+Nac_188                  (    3) AACATCGGTAATACTTTTGG  1 
+Nac_173                  (    3) AAAATATATAAACTTGATGA  1 
+Nac_161                  (    1) GTCATTAAATTTTCCAATAT  1 
+Nac_49                   (    3) AATAAAAGCCATACTTATAG  1 
+Nac_190                  (    1) ACCAGATAAATATCCTATGA  1 
+Nac_110                  (    2) ATCATAAGATTCTGATATCT  1 
+Nac_76                   (    3) GGTATCACTTTTCTTAATGA  1 
+Nac_40                   (    2) TTAATTATCTTTACTAATAA  1 
+Nac_407                  (    1) TTCATATAAAAAATATATTT  1 
+Nac_364                  (    3) TTTATAAGAACTTGTAATAC  1 
+Nac_339                  (    3) GCCAGAACTCAAACTGATGG  1 
+Nac_262                  (    3) GGAATACGTTAAACCTATCG  1 
+Nac_231                  (    2) CCCATCACCGTTGCTTATAA  1 
+Nac_215                  (    1) TTTAGTAGTTTTCCTTATTG  1 
+Nac_33                   (    2) AAAATAAGACAAATCAATGA  1 
+Nac_283                  (    3) CGAATATGATTATCTGATTG  1 
+Nac_272                  (    1) GTCATATTCCTTACATATAA  1 
+Nac_245                  (    1) TTCATAAAAAACCTTAATAT  1 
+Nac_175                  (    4) CCCATAAGAATTCACAATTA  1 
+Nac_124                  (    3) GAGATAATCGATGGTTATGC  1 
+Nac_90                   (    2) CACATAATTTGTCATTATTC  1 
+Nac_55                   (    2) GCAATAAGTTATGTTTTTAA  1 
+Nac_19                   (    2) GGCATAGGAATTTTATATCT  1 
+Nac_5                    (    2) GTTATAAATTTCCGCAATGG  1 
+Nac_324                  (    1) GCCATAAGCCTTTCCTCTGT  1 
+Nac_282                  (    4) TCTAAAAGCTGTCGTTATGG  1 
+Nac_273                  (    2) ACCATCCGTAAAAGTGATAA  1 
+Nac_127                  (    1) TGCATCGTCATCTTTTATGG  1 
+Nac_333                  (    2) GATATTACCTTCGGTTATAG  1 
+Nac_321                  (    3) GGCATCGCTGATGTTTATGG  1 
+Nac_295                  (    3) GGCATATCGTTTCCTGATTG  1 
+Nac_264                  (    3) GGGATAACTAACGGCTATGG  1 
+Nac_261                  (    3) TCAATAACCTGAAGATATGT  1 
+Nac_89                   (    2) AAGATAAGCAAAAGTGATTT  1 
+Nac_61                   (    2) ATTATCAGGATGTGCTATGA  1 
+Nac_308                  (    2) TAAATCGACGAAACTTATGA  1 
+Nac_259                  (    1) TTCATTGAATTACCTTATCC  1 
+Nac_227                  (    3) TTCATTCATTTGACTTATAC  1 
+Nac_156                  (    2) CCCATCTGCAAACGTTATTA  1 
+Nac_151                  (    3) TGTATAAGTCTTGGAAATGG  1 
+Nac_147                  (    1) GCCATCTTATTTCGTAATGG  1 
+Nac_29                   (    2) TCAAGAAGAAAGAATTATGA  1 
+Nac_25                   (    3) GCCATCATTGAACGTGATGG  1 
+Nac_18                   (    2) TTGATAACAAATGCTGATAT  1 
+Nac_125                  (    3) CGCATATGACGAAGTTATTG  1 
+Nac_390                  (    4) AACATAATCCCACCTTATTA  1 
+Nac_382                  (    4) TGCATTGTTATTCTTTATTC  1 
+Nac_276                  (    4) CCGATAGGTCATTTTAATGG  1 
+Nac_240                  (    1) TTGATAAGCATCGGGTATGG  1 
+Nac_57                   (    2) TGCAAAAGTATTTTGTATGC  1 
+Nac_393                  (    2) ACCATCGAACTGCCTTATGA  1 
+Nac_386                  (    2) TTTATACAAAAATGATATAC  1 
+Nac_236                  (    2) GATATCGGTGAATCTGATGA  1 
+Nac_10                   (    1) GTTATTCACTAAAGTAATGG  1 
+Nac_352                  (    2) GGTATAAGCGTTTCAGATTG  1 
+Nac_342                  (    4) TCGATACAATAGTGTTATGT  1 
+Nac_366                  (    2) GGCATTCCTTTTTACTATGC  1 
+Nac_325                  (    3) CCTATAAGGAGATTCAATGA  1 
+Nac_322                  (    4) CTTATATTCATTCTTAATGG  1 
+Nac_221                  (    1) TGGATAGCATTTTTGTATGG  1 
+Nac_142                  (    3) GTAATAATTTGCACATATTG  1 
+Nac_92                   (    3) GCTATAAGGCGTTGTTCTGG  1 
+Nac_406                  (    1) GCAATATTATTTTTTGATAT  1 
+Nac_345                  (    3) TATATCAATTCCACTTATAA  1 
+Nac_229                  (    4) GGTAGAACCGTTCCTTATGA  1 
+Nac_134                  (    1) TGCATCGTTTTTAATTATTC  1 
+Nac_94                   (    3) ACTATCTGCTTTTCTTCTGG  1 
+Nac_380                  (    2) AATATAACCTATTGTTTTAA  1 
+Nac_211                  (    3) AACATATGCTGGACGTATGG  1 
+Nac_198                  (    1) CGTATAAAACTTTTCTATCG  1 
+Nac_196                  (    3) GTCATAAGATTCGTTTTTAA  1 
+Nac_136                  (    3) CTAATACGGTTCTCTGATGA  1 
+Nac_96                   (    2) ACCATAAGCCTCACGAATGC  1 
+Nac_45                   (    2) AAAATAGGGAGAAATGATGG  1 
+Nac_340                  (    2) GCCAAACATCTTCGTTATGG  1 
+Nac_332                  (    4) ATCATACGGGGCAATTATGG  1 
+Nac_78                   (    2) CCCATAAGGAGTTTTTCTTG  1 
+Nac_34                   (    3) GTCATTTATGAATGTTATCA  1 
+Nac_338                  (    3) GTTAAAGGAGTTAATTATGG  1 
+Nac_194                  (    2) GGCATTGCTTTTTCCAATGC  1 
+Nac_179                  (    1) GCTATACCGAACCGTTATTA  1 
+Nac_176                  (    1) GATATATGTTATATGAATGT  1 
+Nac_85                   (    2) CGTATAAAAAGATCGGATGG  1 
+Nac_84                   (    2) TCCATAAAGCAAACCAATTC  1 
+Nac_114                  (    2) GCCATTCGTGAAAGTTATCC  1 
+Nac_66                   (    2) TAAATAGGTATAAAGAATGG  1 
+Nac_62                   (    2) CCCATAACTAATTAGGATTA  1 
+Nac_51                   (    2) ATCATTCGCCATGATTATAA  1 
+Nac_279                  (    2) AATATTGTTGGTACTTATGT  1 
+Nac_246                  (    3) GGAATAAAAAGAAGGAATGG  1 
+Nac_6                    (    2) AATAAACGTCTTACTTATAG  1 
+Nac_318                  (    1) AACATCACACGAAGTGATGG  1 
+Nac_309                  (    1) GTAATCGCGTTTCCTTATAT  1 
+Nac_247                  (    2) GCTATAACAAAAGCACATGG  1 
+Nac_210                  (    1) CCTATAAGTTTGGGTAATAT  1 
+Nac_208                  (    3) GCTAAAACCCTTTTTTATAA  1 
+Nac_171                  (    1) GCTATCGGGTAAACCTATCG  1 
+Nac_35                   (    2) CGCATCAGTAAACGCTATCA  1 
+Nac_376                  (    4) TGAATATAAAAAACAGATGC  1 
+Nac_363                  (    1) TCCATAATTTTTCCTGAAGG  1 
+Nac_315                  (    1) TCCATTGTGTTTATGTATGT  1 
+Nac_268                  (    1) CAGATAATGAAGCCTTATTG  1 
+Nac_239                  (    1) AGCATAACTGTCGGATATAG  1 
+Nac_191                  (    3) GCTATTCCTTTTTCTGATTT  1 
+Nac_101                  (    2) TCCATTCGAACTCTTTATAC  1 
+Nac_48                   (    3) ATCATCCCAAAAAACTATGC  1 
+Nac_3                    (    2) CAAATTCATATACATTATGC  1 
+Nac_326                  (    4) AACATCAGAGAAAACTATTC  1 
+Nac_172                  (    1) TTAATTGTTTTTTTTAATAG  1 
+Nac_348                  (    4) GCCAGATACAACGCTTATGC  1 
+Nac_255                  (    3) GTTATCGAAACCATTTATGG  1 
+Nac_254                  (    3) GACATAAGGTGATCGTCTGA  1 
+Nac_218                  (    1) GCCAAAAGAAGACGTTATCA  1 
+Nac_174                  (    2) CATATTGTCTTTATTGATGG  1 
+Nac_67                   (    2) ATCATAGAGAAAATAAATAA  1 
+Nac_384                  (    1) CTCATTCAATAAAGTGATAA  1 
+Nac_355                  (    3) TTCATTCAGTCTATTTATAA  1 
+Nac_257                  (    3) TCAATTTCCCTTCCTTATTA  1 
+Nac_24                   (    3) GATATACAAGATTCTTTTGA  1 
+Nac_287                  (    4) GGTCTAAGGTTTTGTGATGG  1 
+Nac_68                   (    2) ACCATCATTTCCTCCTATAG  1 
+Nac_21                   (    2) TACATACGAGCTTATTATAC  1 
+Nac_11                   (    2) CGCATACTCTCTCCTTATAA  1 
+Nac_385                  (    3) TGAATAGGTATAAGGGATGT  1 
+Nac_289                  (    2) CGCATTCGGTACACTTATCG  1 
+Nac_228                  (    2) GGTATAAGCGACACGAATGA  1 
+Nac_219                  (    3) TTTATAAGCCGATTAAATGA  1 
+Nac_60                   (    3) GCCATCACGTTCTGGTATTG  1 
+Nac_30                   (    2) TAGATTAACCAACCTAATGA  1 
+Nac_383                  (    2) GTGATAATTCTTTTGGATGG  1 
+Nac_358                  (    2) TGCATTATTGGTGCTTATCA  1 
+Nac_278                  (    3) GCCATTAATTTTTCCGTTGA  1 
+Nac_207                  (    2) GCCATAAGTCCTGGCGATAG  1 
+Nac_199                  (    3) AAAATCGAATTTGCCTATTA  1 
+Nac_64                   (    3) CCCATATGAACGAATTATTA  1 
+Nac_38                   (    3) GCCAAAAGCCAAAGTTATCC  1 
+Nac_22                   (    2) CTTATCTTTTCTTCTTATGT  1 
+Nac_299                  (    3) TGAATATCTTACATATATGT  1 
+Nac_296                  (    1) AACATCGCATTTAACTATAT  1 
+Nac_274                  (    2) GCTATATCAGAAACATATCA  1 
+Nac_224                  (    2) GGCAGAAGAAAAAGCTATCC  1 
+Nac_20                   (    2) GGCATATCATCCCTTTATAG  1 
+Nac_377                  (    4) CGTATAAATTCAATGTATTG  1 
+Nac_316                  (    4) CCTATCGCACATGGTTATGC  1 
+Nac_234                  (    3) TACATACAAAATAAAAATTA  1 
+Nac_232                  (    2) GCCAAAGCGTTTTCCTATAA  1 
+Nac_187                  (    1) CCAATCGCAATTGGTTATAT  1 
+Nac_153                  (    4) GCCAAAGGTCACGCTTATGT  1 
+Nac_112                  (    3) TTCATAACTATTCCTTACAT  1 
+Nac_269                  (    1) GCTATAACACCACCCTATAT  1 
+Nac_306                  (    1) ACCATAAGCTTTGCTAAAAA  1 
+Nac_222                  (    1) TTTATAACACTAACAAATCG  1 
+Nac_189                  (    3) GAAATAAGCTTTTTCTCTAC  1 
+Nac_32                   (    2) GTCCTAAGTTTTAAATATAT  1 
+Nac_394                  (    1) GTATTAAGCCGTGCTTATGA  1 
+Nac_251                  (    1) AGATTAAACATACCTTATAC  1 
+Nac_204                  (    2) ATGATAAGCCAAATCGATAA  1 
+Nac_201                  (    3) GGTATTTTCAGAGATTATGA  1 
+Nac_184                  (    4) CGTATTCATACTTCCTATGA  1 
+Nac_106                  (    2) GCTATCATCCGCCCTTATGC  1 
+Nac_80                   (    2) TCAATAAAGATAGCGGATAT  1 
+Nac_77                   (    2) GCGAGAAGCCGTTCTTATTA  1 
+Nac_16                   (    2) TTGATATGATCACGTTATAC  1 
+Nac_271                  (    1) AACTGAAGAGTAACTTATGG  1 
+Nac_192                  (    4) GCCATAAGCTTTGTTACTTC  1 
+Nac_122                  (    1) GTGATATTGCTCTCCTATGG  1 
+Nac_79                   (    2) ATCATAGGTAGGCCAAATGA  1 
+Nac_58                   (    2) CTCATTCATAACGCTAATGC  1 
+Nac_336                  (    2) CATATAAGTTGCTGGAATGA  1 
+Nac_159                  (    1) AACATAATTTGGGCTAATTT  1 
+Nac_248                  (    4) GTCAGACGCTGGTGTTATGG  1 
+Nac_206                  (    2) GGTATAAGGCTTAAAGATAT  1 
+Nac_129                  (    3) CCTATAAAAGGAGGGTATGC  1 
+Nac_75                   (    2) ACGATCGTTATTTTTAATAA  1 
+Nac_205                  (    4) CGTATTAGTGAGATTTATCA  1 
+Nac_120                  (    2) GGCAGTTTTGTTTCTTATGC  1 
+Nac_87                   (    2) TCCGTATTAAAAAATTATGT  1 
+Nac_42                   (    3) GTGATAAGCTTTTCGTCTTA  1 
+Nac_359                  (    1) CCGATAAGTAAAGGCCATGG  1 
+Nac_177                  (    1) GGAATAAGGACGGTATATGA  1 
+Nac_304                  (    3) CTAAGAGGAAAAAAATATGG  1 
+Nac_286                  (    3) ACGAACAGTATTTTGTATGG  1 
+Nac_200                  (    1) CACATTTCTTATCATAATAA  1 
+Nac_164                  (    4) CTAAAAGGAAGACGTTATGG  1 
+Nac_13                   (    3) TTCGTCAAATTGAGTTATGG  1 
+Nac_344                  (    2) ACCAGAGATAGGGCTTATGC  1 
+Nac_329                  (    1) TTCAGAGCGATCGCTTATAA  1 
+Nac_307                  (    4) TATATAGCGCTGGCCTATGA  1 
+Nac_293                  (    4) ACCGTCATTCGTACTTATGG  1 
+Nac_250                  (    4) GCCCTAACAAAAAGTGATAT  1 
+Nac_301                  (    4) AGCATTTGGTTTTCTCATAC  1 
+Nac_185                  (    3) TAATTAAGGAAAGCATATGC  1 
+Nac_157                  (    1) CACATCGGAGGCTGTTATGC  1 
+Nac_354                  (    3) TCCGTAAGGAGTCACTATGG  1 
+Nac_197                  (    1) CCCATACGATGTGGGTATCG  1 
+Nac_145                  (    2) ACAATTAGCGGACATTATCA  1 
+Nac_343                  (    2) GCATTACAATTTTGTAATGA  1 
+Nac_256                  (    1) CTTAGCTATTATAGTTATAG  1 
+Nac_216                  (    2) GGCATAGCGAAAACTTCTCT  1 
+Nac_347                  (    4) CCCAGACGAAAATGAGATGG  1 
+Nac_226                  (    2) GACAGAATTAATGGCTATCT  1 
+Nac_154                  (    3) ACCATAAAAAAGCCGCATGT  1 
+Nac_59                   (    2) TCCATACTCTGTCAATATAT  1 
+Nac_135                  (    1) GTGAATACCCTTACTTATTG  1 
+Nac_284                  (    2) GATATGCAAAACGCTTATGC  1 
+Nac_116                  (    3) GTCAAAAGCCCCACTTATAC  1 
+Nac_7                    (    2) TCAGTAAGCCTACGCTATGG  1 
+Nac_353                  (    1) ACCATAATTTTCTTAACTGA  1 
+Nac_300                  (    4) TGCATTTTGGGGTGTTATGG  1 
+Nac_275                  (    1) CCTATAAGTCGGATGAATGG  1 
+Nac_258                  (    3) CTGATAAGGAGCCGGTATGT  1 
+Nac_220                  (    1) TCCATATCATTTTTGCATAG  1 
+Nac_113                  (    4) AGTATAGATGTCCTTGATTA  1 
+Nac_98                   (    2) TGGATTGGTAACCCGTATAA  1 
+Nac_118                  (    3) ATCATAAGGTAGAAACATGC  1 
+Nac_373                  (    3) TTAATTGCTTTCTTTTTTGG  1 
+Nac_372                  (    3) GAGGTTTAAATTTCTTATGT  1 
+Nac_305                  (    4) CCTATACACCGGGCTTATTG  1 
+Nac_217                  (    1) TCGCTAAATTTTTCTAATCG  1 
+Nac_143                  (    3) CGCATTCTGTTTTGTAATTC  1 
+Nac_83                   (    2) ACCATCACATCCTACAATGG  1 
+Nac_266                  (    4) AATATTACGCTTATCAATAC  1 
+Nac_69                   (    2) TGGACAACCTATTTTTATGG  1 
+Nac_387                  (    3) GGGATATGATTTTCTTACAT  1 
+Nac_209                  (    3) GGCATAAGAGGATCGCATTA  1 
+Nac_160                  (    3) TATAAAGGAGGAACGTATGG  1 
+Nac_260                  (    2) GCAAGATAAACAGGTTATTA  1 
+Nac_168                  (    3) GTGAGCTAGCTTGCTTATGG  1 
+Nac_331                  (    1) ATAAGTAGATGAATATATAT  1 
+Nac_150                  (    3) AACATTAGATCTAAATCTTA  1 
+Nac_4                    (    2) TACATCCAATTTTTCTCTTA  1 
+Nac_314                  (    4) GTCATGGACGAAGCCTATAA  1 
+Nac_12                   (    3) CACTAAGCTCTTTCTTATGG  1 
+Nac_328                  (    3) CCCATAAATTTTTACGCTCC  1 
+Nac_140                  (    3) CGAATCACACTGATCTATAT  1 
+Nac_356                  (    4) ATTATAAGAGCTGGGCATGG  1 
+Nac_330                  (    3) ATGATGAGAAGAAGAAATGA  1 
+Nac_27                   (    2) AGAATTATCCTAGGGGATGC  1 
+Nac_26                   (    2) AGAATTATCCTAGGGGATGC  1 
+Nac_303                  (    3) ACGATATCAAACCGATCTGG  1 
+Nac_391                  (    3) TCGAGATCGAAAAAATATAA  1 
+Nac_370                  (    1) GGCATACTAAGGAGGAATAA  1 
+Nac_183                  (    3) CAAATAACGTTTACCGCTCG  1 
+Nac_213                  (    1) GTACTGGCTAAATGTTATGG  1 
+Nac_155                  (    3) CTCATGCCTTTCACTGATAT  1 
+Nac_290                  (    3) CTCATAAGAAATCCTTTCTT  1 
+Nac_70                   (    2) ACGCTAGCGTAGCCTTATAG  1 
+Nac_320                  (    1) AGTATAAGTACCGCCTTTCA  1 
+Nac_233                  (    2) TGAATAAGAAGGTGTTAACC  1 
+Nac_71                   (    3) GTCAGGAATTATTTTTCTTG  1 
+Nac_405                  (    1) TTCATATTGCCGCAATATTA  1 
+Nac_193                  (    3) CATATAAGGAAAAGAGAGAA  1 
+Nac_139                  (    3) GCATAACGGAGGACTTATGG  1 
+Nac_291                  (    3) TCATAACCCTTTCCTTATAC  1 
+Nac_108                  (    2) AACATAAGGAGTGCATTATG  1 
+Nac_242                  (    1) GCCAGAAGAGCCGGATCTGG  1 
+Nac_180                  (    2) CCTATCTATAACGCCATTGT  1 
+Nac_411                  (    2) TACCGTCACATTCTTGATGG  1 
+Nac_395                  (    2) ACCCTTATATATTAATACGA  1 
+Nac_408                  (    1) CACACATGCAATAATCATTC  1 
+Nac_105                  (    2) AAGAAGAAAAAGACATTTGG  1 
+Nac_410                  (    1) TGGTTATGAGATTACTCTCG  1 
+Nac_1                    (    1) TCATTAGCTTCGTTTATTGC  1 
+Nac_0                    (    1) TGAATAAATTTTCTCAGGGG  1 
+Nac_128                  (    1) GATTTTCTTATGCGGATTGA  1 
+Nac_412                  (    2) ATAAACAACATAAGCACAAT  1 
+Nac_368                  (    4) ATCAGTTTTTTCCGCCTAAT  1 
+Nac_409                  (    1) GAAGGCTAAAATAGAATGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DNYATAARNWWWHBTTATGV MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 1624 bayes= 1.55199 E= 8.0e-896 
+    13    -69     35      2 
+   -13     34    -41      9 
+   -34     83   -136      5 
+   192   -354   -371   -308 
+  -227   -571   -196    184 
+   133    -76   -371    -22 
+   119   -104    -58    -74 
+     9    -45     63    -62 
+    26    -25    -56     38 
+    69    -88   -113     50 
+    63   -185    -91     75 
+    46    -88   -154     83 
+    44    -50    -63     39 
+   -71     65     -7    -24 
+   -89    -56   -150    130 
+   -78   -339    -83    149 
+   189   -239   -671   -267 
+  -386   -471   -513    197 
+    -8   -158    100    -50 
+    26    -46     46    -52 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DNYATAARNWWWHBTTATGV MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 413 E= 8.0e-896 
+ 0.268765  0.157385  0.324455  0.249395 
+ 0.225182  0.322034  0.191283  0.261501 
+ 0.193705  0.452785  0.099274  0.254237 
+ 0.929782  0.021792  0.019370  0.029056 
+ 0.050847  0.004843  0.065375  0.878935 
+ 0.619855  0.150121  0.019370  0.210654 
+ 0.559322  0.123487  0.169492  0.147700 
+ 0.261501  0.186441  0.392252  0.159806 
+ 0.295400  0.213075  0.171913  0.319613 
+ 0.397094  0.138015  0.116223  0.348668 
+ 0.380145  0.070218  0.135593  0.414044 
+ 0.338983  0.138015  0.087167  0.435835 
+ 0.334140  0.179177  0.164649  0.322034 
+ 0.150121  0.399516  0.242131  0.208232 
+ 0.133172  0.171913  0.089588  0.605327 
+ 0.142857  0.024213  0.142857  0.690073 
+ 0.910412  0.048426  0.002421  0.038741 
+ 0.016949  0.009685  0.007264  0.966102 
+ 0.232446  0.084746  0.508475  0.174334 
+ 0.295400  0.184019  0.348668  0.171913 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DNYATAARNWWWHBTTATGV MEME-1 regular expression
+--------------------------------------------------------------------------------
+[GAT][CTA][CT]AT[AT]A[GA][TAC][AT][TA][TA][AT][CGT]TTAT[GA][GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  5.03 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Nac_0                            1.48e-01  21
+Nac_1                            9.88e-02  21
+Nac_2                            1.17e-04  1_[+1(2.91e-05)]_2
+Nac_3                            7.61e-04  23
+Nac_4                            7.80e-03  23
+Nac_5                            2.76e-04  1_[+1(6.89e-05)]_2
+Nac_6                            6.75e-04  23
+Nac_7                            3.41e-03  23
+Nac_8                            2.95e-07  1_[+1(7.38e-08)]_2
+Nac_9                            1.80e-05  1_[+1(4.51e-06)]_2
+Nac_10                           4.10e-04  23
+Nac_11                           9.61e-04  23
+Nac_12                           9.27e-03  23
+Nac_13                           2.06e-03  23
+Nac_14                           4.44e-05  1_[+1(1.11e-05)]_2
+Nac_15                           1.11e-05  1_[+1(2.77e-06)]_2
+Nac_16                           1.42e-03  23
+Nac_17                           1.95e-04  1_[+1(4.87e-05)]_2
+Nac_18                           3.37e-04  1_[+1(8.43e-05)]_2
+Nac_19                           2.76e-04  1_[+1(6.89e-05)]_2
+Nac_20                           1.14e-03  23
+Nac_21                           9.61e-04  23
+Nac_22                           1.08e-03  23
+Nac_23                           2.86e-05  1_[+1(7.16e-06)]_2
+Nac_24                           9.07e-04  23
+Nac_25                           3.37e-04  2_[+1(8.43e-05)]_1
+Nac_26                           1.10e-02  23
+Nac_27                           1.10e-02  23
+Nac_28                           1.95e-04  1_[+1(4.87e-05)]_2
+Nac_29                           3.37e-04  1_[+1(8.43e-05)]_2
+Nac_30                           1.02e-03  23
+Nac_31                           6.20e-05  2_[+1(1.55e-05)]_1
+Nac_32                           1.35e-03  23
+Nac_33                           2.57e-04  1_[+1(6.44e-05)]_2
+Nac_34                           5.62e-04  23
+Nac_35                           7.17e-04  23
+Nac_36                           2.62e-05  1_[+1(6.54e-06)]_2
+Nac_37                           1.11e-05  1_[+1(2.77e-06)]_2
+Nac_38                           1.08e-03  23
+Nac_39                           1.00e-05  1_[+1(2.51e-06)]_2
+Nac_40                           2.40e-04  1_[+1(6.01e-05)]_2
+Nac_41                           9.25e-05  1_[+1(2.31e-05)]_2
+Nac_42                           1.86e-03  23
+Nac_43                           1.00e-04  1_[+1(2.50e-05)]_2
+Nac_44                           2.39e-05  1_[+1(5.97e-06)]_2
+Nac_45                           5.28e-04  23
+Nac_46                           2.09e-04  1_[+1(5.23e-05)]_2
+Nac_47                           1.69e-04  1_[+1(4.22e-05)]_2
+Nac_48                           7.61e-04  23
+Nac_49                           2.24e-04  2_[+1(5.61e-05)]_1
+Nac_50                           1.00e-05  1_[+1(2.51e-06)]_2
+Nac_51                           6.35e-04  23
+Nac_52                           4.44e-05  1_[+1(1.11e-05)]_2
+Nac_53                           8.55e-05  1_[+1(2.14e-05)]_2
+Nac_54                           1.95e-04  2_[+1(4.87e-05)]_1
+Nac_55                           2.76e-04  1_[+1(6.89e-05)]_2
+Nac_56                           1.02e-06  2_[+1(2.55e-07)]_1
+Nac_57                           3.84e-04  1_[+1(9.61e-05)]_2
+Nac_58                           1.58e-03  23
+Nac_59                           3.09e-03  23
+Nac_60                           1.02e-03  23
+Nac_61                           3.15e-04  1_[+1(7.88e-05)]_2
+Nac_62                           6.35e-04  23
+Nac_63                           1.46e-04  2_[+1(3.65e-05)]_1
+Nac_64                           1.08e-03  23
+Nac_65                           7.36e-06  1_[+1(1.84e-06)]_2
+Nac_66                           6.35e-04  23
+Nac_67                           8.56e-04  23
+Nac_68                           9.61e-04  23
+Nac_69                           4.54e-03  23
+Nac_70                           1.58e-02  23
+Nac_71                           1.92e-02  23
+Nac_72                           1.00e-05  1_[+1(2.51e-06)]_2
+Nac_73                           1.08e-04  1_[+1(2.70e-05)]_2
+Nac_74                           9.25e-05  2_[+1(2.31e-05)]_1
+Nac_75                           1.76e-03  23
+Nac_76                           2.40e-04  2_[+1(6.01e-05)]_1
+Nac_77                           1.42e-03  23
+Nac_78                           5.62e-04  23
+Nac_79                           1.50e-03  23
+Nac_80                           1.42e-03  23
+Nac_81                           2.62e-05  2_[+1(6.54e-06)]_1
+Nac_82                           1.69e-04  1_[+1(4.22e-05)]_2
+Nac_83                           4.33e-03  23
+Nac_84                           5.98e-04  23
+Nac_85                           5.98e-04  23
+Nac_86                           1.26e-04  2_[+1(3.14e-05)]_1
+Nac_87                           1.86e-03  23
+Nac_88                           1.00e-04  1_[+1(2.50e-05)]_2
+Nac_89                           3.15e-04  1_[+1(7.88e-05)]_2
+Nac_90                           2.76e-04  1_[+1(6.89e-05)]_2
+Nac_91                           1.08e-04  1_[+1(2.70e-05)]_2
+Nac_92                           4.66e-04  23
+Nac_93                           9.25e-05  1_[+1(2.31e-05)]_2
+Nac_94                           4.96e-04  23
+Nac_95                           1.00e-05  1_[+1(2.51e-06)]_2
+Nac_96                           5.28e-04  23
+Nac_97                           3.73e-05  1_[+1(9.34e-06)]_2
+Nac_98                           3.76e-03  23
+Nac_99                           1.26e-04  1_[+1(3.14e-05)]_2
+Nac_100                          1.49e-06  1_[+1(3.73e-07)]_2
+Nac_101                          7.61e-04  23
+Nac_102                          3.42e-05  1_[+1(8.55e-06)]_2
+Nac_103                          2.86e-05  1_[+1(7.16e-06)]_2
+Nac_104                          2.62e-05  1_[+1(6.54e-06)]_2
+Nac_105                          1.36e-01  23
+Nac_106                          1.42e-03  23
+Nac_107                          1.95e-04  1_[+1(4.87e-05)]_2
+Nac_108                          3.82e-02  23
+Nac_109                          6.20e-05  1_[+1(1.55e-05)]_2
+Nac_110                          2.40e-04  1_[+1(6.01e-05)]_2
+Nac_111                          1.57e-04  3_[+1(3.92e-05)]
+Nac_112                          1.20e-03  23
+Nac_113                          3.76e-03  23
+Nac_114                          6.35e-04  23
+Nac_115                          6.63e-06  2_[+1(1.66e-06)]_1
+Nac_116                          3.41e-03  23
+Nac_117                          2.09e-04  2_[+1(5.23e-05)]_1
+Nac_118                          3.94e-03  23
+Nac_119                          7.36e-06  [+1(1.84e-06)]_3
+Nac_120                          1.86e-03  23
+Nac_121                          8.55e-05  [+1(2.14e-05)]_3
+Nac_122                          1.50e-03  23
+Nac_123                          6.20e-05  [+1(1.55e-05)]_3
+Nac_124                          2.76e-04  2_[+1(6.89e-05)]_1
+Nac_125                          3.60e-04  2_[+1(9.00e-05)]_1
+Nac_126                          8.55e-05  1_[+1(2.14e-05)]_2
+Nac_127                          2.95e-04  [+1(7.37e-05)]_3
+Nac_128                          1.73e-01  21
+Nac_129                          1.76e-03  23
+Nac_130                          4.83e-05  1_[+1(1.21e-05)]_2
+Nac_131                          9.25e-05  1_[+1(2.31e-05)]_2
+Nac_132                          9.25e-05  [+1(2.31e-05)]_3
+Nac_133                          8.55e-05  1_[+1(2.14e-05)]_2
+Nac_134                          4.96e-04  23
+Nac_135                          3.25e-03  23
+Nac_136                          5.28e-04  23
+Nac_137                          1.08e-04  1_[+1(2.70e-05)]_2
+Nac_138                          1.35e-04  [+1(3.39e-05)]_3
+Nac_139                          2.89e-02  23
+Nac_140                          9.67e-03  23
+Nac_141                          6.20e-05  1_[+1(1.55e-05)]_2
+Nac_142                          4.66e-04  23
+Nac_143                          4.13e-03  23
+Nac_144                          1.69e-04  1_[+1(4.22e-05)]_2
+Nac_145                          2.53e-03  23
+Nac_146                          1.00e-04  [+1(2.50e-05)]_3
+Nac_147                          3.37e-04  [+1(8.43e-05)]_3
+Nac_148                          5.71e-05  2_[+1(1.43e-05)]_1
+Nac_149                          1.35e-05  2_[+1(3.38e-06)]_1
+Nac_150                          7.80e-03  23
+Nac_151                          3.37e-04  2_[+1(8.43e-05)]_1
+Nac_152                          3.84e-06  [+1(9.60e-07)]_3
+Nac_153                          1.20e-03  23
+Nac_154                          3.09e-03  23
+Nac_155                          1.52e-02  23
+Nac_156                          3.37e-04  1_[+1(8.43e-05)]_2
+Nac_157                          2.29e-03  23
+Nac_158                          1.95e-04  [+1(4.87e-05)]_3
+Nac_159                          1.67e-03  23
+Nac_160                          5.98e-03  23
+Nac_161                          2.24e-04  [+1(5.61e-05)]_3
+Nac_162                          1.69e-04  [+1(4.22e-05)]_3
+Nac_163                          5.25e-05  2_[+1(1.31e-05)]_1
+Nac_164                          2.06e-03  23
+Nac_165                          1.57e-04  2_[+1(3.92e-05)]_1
+Nac_166                          1.23e-05  [+1(3.06e-06)]_3
+Nac_167                          1.64e-05  [+1(4.10e-06)]_3
+Nac_168                          6.84e-03  23
+Nac_169                          1.80e-05  2_[+1(4.51e-06)]_1
+Nac_170                          9.25e-05  3_[+1(2.31e-05)]
+Nac_171                          7.17e-04  23
+Nac_172                          8.07e-04  23
+Nac_173                          2.24e-04  2_[+1(5.61e-05)]_1
+Nac_174                          8.56e-04  23
+Nac_175                          2.76e-04  3_[+1(6.89e-05)]
+Nac_176                          5.98e-04  23
+Nac_177                          1.96e-03  23
+Nac_178                          2.72e-06  [+1(6.81e-07)]_3
+Nac_179                          5.98e-04  23
+Nac_180                          4.99e-02  23
+Nac_181                          1.57e-04  [+1(3.92e-05)]_3
+Nac_182                          4.83e-05  3_[+1(1.21e-05)]
+Nac_183                          1.40e-02  23
+Nac_184                          1.42e-03  23
+Nac_185                          2.29e-03  23
+Nac_186                          1.80e-05  3_[+1(4.51e-06)]
+Nac_187                          1.20e-03  23
+Nac_188                          2.24e-04  2_[+1(5.61e-05)]_1
+Nac_189                          1.35e-03  23
+Nac_190                          2.40e-04  [+1(6.01e-05)]_3
+Nac_191                          7.61e-04  23
+Nac_192                          1.50e-03  23
+Nac_193                          2.68e-02  23
+Nac_194                          5.98e-04  23
+Nac_195                          1.69e-04  3_[+1(4.22e-05)]
+Nac_196                          5.28e-04  23
+Nac_197                          2.41e-03  23
+Nac_198                          5.28e-04  23
+Nac_199                          1.08e-03  23
+Nac_200                          2.06e-03  23
+Nac_201                          1.42e-03  23
+Nac_202                          1.69e-04  1_[+1(4.22e-05)]_2
+Nac_203                          9.25e-05  2_[+1(2.31e-05)]_1
+Nac_204                          1.42e-03  23
+Nac_205                          1.86e-03  23
+Nac_206                          1.76e-03  23
+Nac_207                          1.08e-03  23
+Nac_208                          7.17e-04  23
+Nac_209                          5.72e-03  23
+Nac_210                          7.17e-04  23
+Nac_211                          5.28e-04  23
+Nac_212                          9.06e-06  [+1(2.26e-06)]_3
+Nac_213                          1.46e-02  23
+Nac_214                          1.26e-04  [+1(3.14e-05)]_3
+Nac_215                          2.57e-04  [+1(6.44e-05)]_3
+Nac_216                          2.94e-03  23
+Nac_217                          4.13e-03  23
+Nac_218                          8.56e-04  23
+Nac_219                          1.02e-03  23
+Nac_220                          3.76e-03  23
+Nac_221                          4.66e-04  23
+Nac_222                          1.35e-03  23
+Nac_223                          1.57e-04  2_[+1(3.92e-05)]_1
+Nac_224                          1.14e-03  23
+Nac_225                          1.23e-05  2_[+1(3.06e-06)]_1
+Nac_226                          3.09e-03  23
+Nac_227                          3.37e-04  2_[+1(8.43e-05)]_1
+Nac_228                          1.02e-03  23
+Nac_229                          4.96e-04  23
+Nac_230                          1.11e-05  2_[+1(2.77e-06)]_1
+Nac_231                          2.57e-04  1_[+1(6.44e-05)]_2
+Nac_232                          1.20e-03  23
+Nac_233                          1.85e-02  23
+Nac_234                          1.20e-03  23
+Nac_235                          1.69e-04  [+1(4.22e-05)]_3
+Nac_236                          4.10e-04  23
+Nac_237                          8.17e-06  [+1(2.04e-06)]_3
+Nac_238                          2.62e-05  2_[+1(6.54e-06)]_1
+Nac_239                          7.61e-04  23
+Nac_240                          3.84e-04  [+1(9.61e-05)]_3
+Nac_241                          2.39e-05  [+1(5.97e-06)]_3
+Nac_242                          4.09e-02  23
+Nac_243                          2.62e-05  1_[+1(6.54e-06)]_2
+Nac_244                          6.20e-05  2_[+1(1.55e-05)]_1
+Nac_245                          2.76e-04  [+1(6.89e-05)]_3
+Nac_246                          6.75e-04  23
+Nac_247                          7.17e-04  23
+Nac_248                          1.76e-03  23
+Nac_249                          1.08e-04  3_[+1(2.70e-05)]
+Nac_250                          2.17e-03  23
+Nac_251                          1.42e-03  23
+Nac_252                          1.80e-05  [+1(4.51e-06)]_3
+Nac_253                          2.62e-05  [+1(6.54e-06)]_3
+Nac_254                          8.56e-04  23
+Nac_255                          8.56e-04  23
+Nac_256                          2.66e-03  23
+Nac_257                          9.07e-04  23
+Nac_258                          3.76e-03  23
+Nac_259                          3.37e-04  [+1(8.43e-05)]_3
+Nac_260                          6.26e-03  23
+Nac_261                          3.15e-04  2_[+1(7.88e-05)]_1
+Nac_262                          2.57e-04  2_[+1(6.44e-05)]_1
+Nac_263                          1.95e-04  [+1(4.87e-05)]_3
+Nac_264                          3.15e-04  2_[+1(7.88e-05)]_1
+Nac_265                          6.73e-05  [+1(1.68e-05)]_3
+Nac_266                          4.54e-03  23
+Nac_267                          1.00e-05  [+1(2.51e-06)]_3
+Nac_268                          7.61e-04  23
+Nac_269                          1.27e-03  23
+Nac_270                          2.09e-04  1_[+1(5.23e-05)]_2
+Nac_271                          1.50e-03  23
+Nac_272                          2.76e-04  [+1(6.89e-05)]_3
+Nac_273                          2.95e-04  1_[+1(7.37e-05)]_2
+Nac_274                          1.14e-03  23
+Nac_275                          3.76e-03  23
+Nac_276                          3.84e-04  3_[+1(9.61e-05)]
+Nac_277                          1.57e-04  2_[+1(3.92e-05)]_1
+Nac_278                          1.08e-03  23
+Nac_279                          6.75e-04  23
+Nac_280                          7.36e-06  [+1(1.84e-06)]_3
+Nac_281                          1.57e-04  [+1(3.92e-05)]_3
+Nac_282                          2.95e-04  3_[+1(7.37e-05)]
+Nac_283                          2.76e-04  2_[+1(6.89e-05)]_1
+Nac_284                          3.41e-03  23
+Nac_285                          1.46e-04  3_[+1(3.65e-05)]
+Nac_286                          2.06e-03  23
+Nac_287                          9.61e-04  23
+Nac_288                          4.44e-05  2_[+1(1.11e-05)]_1
+Nac_289                          1.02e-03  23
+Nac_290                          1.58e-02  23
+Nac_291                          3.10e-02  23
+Nac_292                          5.96e-06  2_[+1(1.49e-06)]_1
+Nac_293                          2.17e-03  23
+Nac_294                          4.80e-06  2_[+1(1.20e-06)]_1
+Nac_295                          3.15e-04  2_[+1(7.88e-05)]_1
+Nac_296                          1.14e-03  23
+Nac_297                          1.17e-04  3_[+1(2.91e-05)]
+Nac_298                          3.13e-05  1_[+1(7.83e-06)]_2
+Nac_299                          1.14e-03  23
+Nac_300                          3.76e-03  23
+Nac_301                          2.29e-03  23
+Nac_302                          4.29e-06  [+1(1.07e-06)]_3
+Nac_303                          1.14e-02  23
+Nac_304                          2.06e-03  23
+Nac_305                          4.13e-03  23
+Nac_306                          1.35e-03  23
+Nac_307                          2.17e-03  23
+Nac_308                          3.37e-04  1_[+1(8.43e-05)]_2
+Nac_309                          7.17e-04  23
+Nac_310                          7.90e-05  [+1(1.98e-05)]_3
+Nac_311                          1.49e-05  [+1(3.73e-06)]_3
+Nac_312                          1.57e-04  [+1(3.92e-05)]_3
+Nac_313                          7.90e-05  1_[+1(1.98e-05)]_2
+Nac_314                          8.51e-03  23
+Nac_315                          7.61e-04  23
+Nac_316                          1.20e-03  23
+Nac_317                          2.09e-04  1_[+1(5.23e-05)]_2
+Nac_318                          7.17e-04  23
+Nac_319                          1.17e-04  3_[+1(2.91e-05)]
+Nac_320                          1.64e-02  23
+Nac_321                          3.15e-04  2_[+1(7.88e-05)]_1
+Nac_322                          4.66e-04  23
+Nac_323                          1.35e-04  1_[+1(3.39e-05)]_2
+Nac_324                          2.95e-04  [+1(7.37e-05)]_3
+Nac_325                          4.66e-04  23
+Nac_326                          8.07e-04  23
+Nac_327                          9.25e-05  2_[+1(2.31e-05)]_1
+Nac_328                          9.67e-03  23
+Nac_329                          2.17e-03  23
+Nac_330                          1.05e-02  23
+Nac_331                          7.47e-03  23
+Nac_332                          5.62e-04  23
+Nac_333                          3.15e-04  1_[+1(7.88e-05)]_2
+Nac_334                          1.26e-04  2_[+1(3.14e-05)]_1
+Nac_335                          1.17e-04  [+1(2.91e-05)]_3
+Nac_336                          1.67e-03  23
+Nac_337                          8.55e-05  1_[+1(2.14e-05)]_2
+Nac_338                          5.98e-04  23
+Nac_339                          2.57e-04  2_[+1(6.44e-05)]_1
+Nac_340                          5.62e-04  23
+Nac_341                          1.35e-04  [+1(3.39e-05)]_3
+Nac_342                          4.37e-04  23
+Nac_343                          2.66e-03  23
+Nac_344                          2.17e-03  23
+Nac_345                          4.96e-04  23
+Nac_346                          7.36e-06  [+1(1.84e-06)]_3
+Nac_347                          3.09e-03  23
+Nac_348                          8.56e-04  23
+Nac_349                          8.55e-05  [+1(2.14e-05)]_3
+Nac_350                          5.35e-06  [+1(1.34e-06)]_3
+Nac_351                          8.55e-05  2_[+1(2.14e-05)]_1
+Nac_352                          4.37e-04  23
+Nac_353                          3.58e-03  23
+Nac_354                          2.41e-03  23
+Nac_355                          9.07e-04  23
+Nac_356                          1.05e-02  23
+Nac_357                          2.72e-06  3_[+1(6.81e-07)]
+Nac_358                          1.08e-03  23
+Nac_359                          1.96e-03  23
+Nac_360                          7.30e-05  2_[+1(1.82e-05)]_1
+Nac_361                          9.06e-06  1_[+1(2.26e-06)]_2
+Nac_362                          4.07e-05  2_[+1(1.02e-05)]_1
+Nac_363                          7.61e-04  23
+Nac_364                          2.57e-04  2_[+1(6.44e-05)]_1
+Nac_365                          1.08e-04  2_[+1(2.70e-05)]_1
+Nac_366                          4.66e-04  23
+Nac_367                          4.54e-07  3_[+1(1.14e-07)]
+Nac_368                          8.26e-01  23
+Nac_369                          7.90e-05  2_[+1(1.98e-05)]_1
+Nac_370                          1.24e-02  23
+Nac_371                          2.24e-04  1_[+1(5.61e-05)]_2
+Nac_372                          4.13e-03  23
+Nac_373                          4.13e-03  23
+Nac_374                          4.07e-05  [+1(1.02e-05)]_3
+Nac_375                          1.17e-04  1_[+1(2.91e-05)]_2
+Nac_376                          7.61e-04  23
+Nac_377                          1.20e-03  23
+Nac_378                          7.30e-05  2_[+1(1.82e-05)]_1
+Nac_379                          2.86e-05  2_[+1(7.16e-06)]_1
+Nac_380                          5.28e-04  23
+Nac_381                          1.35e-05  3_[+1(3.38e-06)]
+Nac_382                          3.84e-04  3_[+1(9.61e-05)]
+Nac_383                          1.08e-03  23
+Nac_384                          9.07e-04  23
+Nac_385                          1.02e-03  23
+Nac_386                          4.10e-04  23
+Nac_387                          5.46e-03  23
+Nac_388                          1.69e-04  3_[+1(4.22e-05)]
+Nac_389                          1.95e-04  3_[+1(4.87e-05)]
+Nac_390                          3.84e-04  3_[+1(9.61e-05)]
+Nac_391                          1.24e-02  23
+Nac_392                          7.30e-05  3_[+1(1.82e-05)]
+Nac_393                          4.10e-04  23
+Nac_394                          1.42e-03  23
+Nac_395                          2.98e-02  21
+Nac_396                          3.42e-05  [+1(8.55e-06)]_3
+Nac_397                          1.11e-05  [+1(2.77e-06)]_3
+Nac_398                          7.30e-05  1_[+1(1.82e-05)]_2
+Nac_399                          6.20e-05  3_[+1(1.55e-05)]
+Nac_400                          1.16e-06  3_[+1(2.90e-07)]
+Nac_401                          8.55e-05  [+1(2.14e-05)]_3
+Nac_402                          1.08e-04  1_[+1(2.70e-05)]_2
+Nac_403                          1.19e-05  [+1(5.97e-06)]_1
+Nac_404                          9.74e-05  [+1(4.87e-05)]_1
+Nac_405                          1.35e-02  21
+Nac_406                          2.48e-04  21
+Nac_407                          1.29e-04  [+1(6.44e-05)]_1
+Nac_408                          4.32e-02  21
+Nac_409                          7.39e-01  21
+Nac_410                          7.62e-02  21
+Nac_411                          2.61e-02  21
+Nac_412                          2.48e-01  21
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

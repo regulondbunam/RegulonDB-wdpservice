@@ -1,0 +1,1000 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= CRP/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+CRP_0                    1.0000     28  CRP_1                    1.0000     28  
+CRP_2                    1.0000     28  CRP_3                    1.0000     28  
+CRP_4                    1.0000     28  CRP_5                    1.0000     28  
+CRP_6                    1.0000     28  CRP_7                    1.0000     28  
+CRP_8                    1.0000     28  CRP_9                    1.0000     28  
+CRP_10                   1.0000     28  CRP_11                   1.0000     28  
+CRP_12                   1.0000     28  CRP_13                   1.0000     28  
+CRP_14                   1.0000     28  CRP_15                   1.0000     28  
+CRP_16                   1.0000     28  CRP_17                   1.0000     28  
+CRP_18                   1.0000     28  CRP_19                   1.0000     28  
+CRP_20                   1.0000     22  CRP_21                   1.0000     22  
+CRP_22                   1.0000     22  CRP_23                   1.0000     22  
+CRP_24                   1.0000     28  CRP_25                   1.0000     28  
+CRP_26                   1.0000     28  CRP_27                   1.0000     26  
+CRP_28                   1.0000     22  CRP_29                   1.0000     22  
+CRP_30                   1.0000     28  CRP_31                   1.0000     22  
+CRP_32                   1.0000     22  CRP_33                   1.0000     22  
+CRP_34                   1.0000     22  CRP_35                   1.0000     23  
+CRP_36                   1.0000     29  CRP_37                   1.0000     21  
+CRP_38                   1.0000     25  CRP_39                   1.0000     28  
+CRP_40                   1.0000     28  CRP_41                   1.0000     28  
+CRP_42                   1.0000     28  CRP_43                   1.0000     28  
+CRP_44                   1.0000     28  CRP_45                   1.0000     28  
+CRP_46                   1.0000     28  CRP_47                   1.0000     28  
+CRP_48                   1.0000     28  CRP_49                   1.0000     28  
+CRP_50                   1.0000     28  CRP_51                   1.0000     28  
+CRP_52                   1.0000     28  CRP_53                   1.0000     28  
+CRP_54                   1.0000     28  CRP_55                   1.0000     28  
+CRP_56                   1.0000     28  CRP_57                   1.0000     28  
+CRP_58                   1.0000     28  CRP_59                   1.0000     28  
+CRP_60                   1.0000     28  CRP_61                   1.0000     28  
+CRP_62                   1.0000     28  CRP_63                   1.0000     22  
+CRP_64                   1.0000     28  CRP_65                   1.0000     28  
+CRP_66                   1.0000     28  CRP_67                   1.0000     28  
+CRP_68                   1.0000     28  CRP_69                   1.0000     28  
+CRP_70                   1.0000     28  CRP_71                   1.0000     28  
+CRP_72                   1.0000     28  CRP_73                   1.0000     28  
+CRP_74                   1.0000     28  CRP_75                   1.0000     28  
+CRP_76                   1.0000     28  CRP_77                   1.0000     28  
+CRP_78                   1.0000     28  CRP_79                   1.0000     28  
+CRP_80                   1.0000     28  CRP_81                   1.0000     28  
+CRP_82                   1.0000     28  CRP_83                   1.0000     28  
+CRP_84                   1.0000     28  CRP_85                   1.0000     28  
+CRP_86                   1.0000     28  CRP_87                   1.0000     28  
+CRP_88                   1.0000     28  CRP_89                   1.0000     28  
+CRP_90                   1.0000     28  CRP_91                   1.0000     28  
+CRP_92                   1.0000     28  CRP_93                   1.0000     28  
+CRP_94                   1.0000     28  CRP_95                   1.0000     28  
+CRP_96                   1.0000     28  CRP_97                   1.0000     28  
+CRP_98                   1.0000     28  CRP_99                   1.0000     28  
+CRP_100                  1.0000     28  CRP_101                  1.0000     28  
+CRP_102                  1.0000     28  CRP_103                  1.0000     28  
+CRP_104                  1.0000     28  CRP_105                  1.0000     28  
+CRP_106                  1.0000     28  CRP_107                  1.0000     28  
+CRP_108                  1.0000     28  CRP_109                  1.0000     28  
+CRP_110                  1.0000     28  CRP_111                  1.0000     28  
+CRP_112                  1.0000     28  CRP_113                  1.0000     28  
+CRP_114                  1.0000     28  CRP_115                  1.0000     28  
+CRP_116                  1.0000     28  CRP_117                  1.0000     28  
+CRP_118                  1.0000     28  CRP_119                  1.0000     28  
+CRP_120                  1.0000     28  CRP_121                  1.0000     28  
+CRP_122                  1.0000     28  CRP_123                  1.0000     28  
+CRP_124                  1.0000     28  CRP_125                  1.0000     28  
+CRP_126                  1.0000     28  CRP_127                  1.0000     28  
+CRP_128                  1.0000     28  CRP_129                  1.0000     28  
+CRP_130                  1.0000     28  CRP_131                  1.0000     28  
+CRP_132                  1.0000     28  CRP_133                  1.0000     28  
+CRP_134                  1.0000     28  CRP_135                  1.0000     28  
+CRP_136                  1.0000     28  CRP_137                  1.0000     28  
+CRP_138                  1.0000     28  CRP_139                  1.0000     28  
+CRP_140                  1.0000     28  CRP_141                  1.0000     28  
+CRP_142                  1.0000     28  CRP_143                  1.0000     28  
+CRP_144                  1.0000     28  CRP_145                  1.0000     28  
+CRP_146                  1.0000     28  CRP_147                  1.0000     28  
+CRP_148                  1.0000     28  CRP_149                  1.0000     28  
+CRP_150                  1.0000     28  CRP_151                  1.0000     28  
+CRP_152                  1.0000     28  CRP_153                  1.0000     28  
+CRP_154                  1.0000     28  CRP_155                  1.0000     28  
+CRP_156                  1.0000     28  CRP_157                  1.0000     28  
+CRP_158                  1.0000     28  CRP_159                  1.0000     28  
+CRP_160                  1.0000     28  CRP_161                  1.0000     28  
+CRP_162                  1.0000     28  CRP_163                  1.0000     28  
+CRP_164                  1.0000     28  CRP_165                  1.0000     28  
+CRP_166                  1.0000     28  CRP_167                  1.0000     28  
+CRP_168                  1.0000     28  CRP_169                  1.0000     28  
+CRP_170                  1.0000     28  CRP_171                  1.0000     28  
+CRP_172                  1.0000     28  CRP_173                  1.0000     28  
+CRP_174                  1.0000     28  CRP_175                  1.0000     28  
+CRP_176                  1.0000     28  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme CRP/ri_sites.fasta -oc CRP/./ -mod oops -nmotifs 1 -minw 19 -maxw 25 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           19    maxw=           21
+nsites: minsites=      177    maxsites=      177    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            4874    N=             177
+sample: seed=           10    hsfrac=          0
+        searchsize=   4874    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.304 C 0.192 G 0.185 T 0.319 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WWDTGTGATNNDNNTCACAWW MEME-1	width =  21  sites = 177  llr = 1324  E-value = 2.2e-355
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WWDTGTGATNNDNNTCACAWW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  444111182224241172734
+pos.-specific     C  1112:1:124322218:7121
+probability       G  112:8:8:1222321:2111:
+matrix            T  444718115232328111145
+
+         bits    2.0                      
+                 1.8                      
+                 1.6                      
+                 1.4                      
+Relative         1.2       *              
+Entropy          1.0     ****       *     
+(10.8 bits)      0.8    *****      ***    
+                 0.6    *****      *****  
+                 0.4 ** *****      ***** *
+                 0.2 *********     *******
+                 0.0 ---------------------
+
+Multilevel           AAATGTGATCTAGATCACATT
+consensus            TTT      GCGTC     AA
+sequence                      A TAG       
+                                 C        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDTGTGATNNDNNTCACAWW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+CRP_16                        4  1.14e-09        taa ATATGTGATATGAATCACATA Ttta      
+CRP_10                        4  5.18e-09        gat AGATGTGATCTGGATCACATA Caag      
+CRP_141                       4  1.60e-08        caa AAATGTGACACTACTCACATT Taaa      
+CRP_138                       4  1.71e-08        tat TTATGTGATTGATATCACACA Aaag      
+CRP_168                       4  1.95e-08        aac ATGTGTGATCGTCATCACAAT Tcga      
+CRP_132                       4  3.66e-08        caa AAATGTGATACCAATCACAGA Atac      
+CRP_172                       4  6.29e-08        gca AATTGCGATCTAAATCAAATT Aatc      
+CRP_5                         4  6.66e-08        gat TTATGTGATTTGCATCACTTT Tggt      
+CRP_134                       4  7.06e-08        caa AAATGTTATCCACATCACAAT Ttcg      
+CRP_140                       4  7.49e-08        ata TCTTGTGATTCAGATCACAAA Gatt      
+CRP_158                       4  7.94e-08        aat TAATGAGATTCAGATCACATA Taaa      
+CRP_145                       4  8.92e-08        tcc ATGTGTGAAGTTGATCACAAA Ttta      
+CRP_112                       5  8.92e-08       atcC ATGTGTGAAGTTGATCACAAA ttt       
+CRP_120                       4  1.33e-07        aac GATTGTGATTCGATTCACATT Taaa      
+CRP_156                       4  1.65e-07        gca AATTGTGAACATCATCACGTT Catc      
+CRP_87                        4  2.55e-07        ctt TTGTGTGATGCAAGCCACATT Tttg      
+CRP_85                        4  3.31e-07        gaa TTATTTGAACCAGATCGCATT Acag      
+CRP_127                       4  4.07e-07        gtt TTGTGTGATCTGCATCACGCA Ttat      
+CRP_128                       4  4.99e-07        tat TAAAGTGATGGTAGTCACATA Aagt      
+CRP_108                       4  5.24e-07        cac AAATTTGAAGTAGCTCACACT Tata      
+CRP_13                        4  5.24e-07        tgt TTATTTGATACCCATCACACT Ttca      
+CRP_65                        4  5.79e-07        cgg ATAAGTGACCGAAATCACACT Taaa      
+CRP_40                        5  6.39e-07       tttC CTTTGTGATAAAAATCACTTT ttt       
+CRP_49                        4  6.72e-07        aaa AAGTGTGACCCGGTTCACGTA Gcga      
+CRP_45                        4  6.72e-07        tca ATTTGTGATCAACCCCACACA Ttat      
+CRP_169                       4  8.16e-07        cac TTTAGTGAAGCAGATCGCATT Ataa      
+CRP_86                        4  8.16e-07        ctt AATTGTGATGTGTATCGAAGT Gtgt      
+CRP_62                        4  1.04e-06        taa AAGTGTGATGTGAGTCAGATA Aatg      
+CRP_147                       4  1.09e-06        ttc TTTTGTGAATCAGATCAGAAA Acca      
+CRP_21                        1  1.20e-06          . ttaTGAGATTTTCATCACAca t         
+CRP_142                       4  1.51e-06        gcg TTTTGTGATGAACGTCACGTC Aatt      
+CRP_61                        4  1.81e-06        tca ATCTGTGAGTGATTTCACAGT Atct      
+CRP_64                        4  1.90e-06        tat TTTTGTGAGCTGTTTCGCGTT Atca      
+CRP_149                       4  2.08e-06        gcg AAGCGTGATGCATCTCACCTT Ttca      
+CRP_144                       4  2.17e-06        cgt TTTTGTGATCGTTATCTCGAT Attt      
+CRP_78                        4  2.27e-06        aat TAATGTGAGTTAGCTCACTCA Ttag      
+CRP_32                        1  2.72e-06          . ttcTGCGATGCATGTCAAAta a         
+CRP_91                        4  2.84e-06        aca TTGTTTGATATTTATCATATT Aata      
+CRP_23                        1  2.84e-06          . aagTGTGATGAACTTCAAAtc a         
+CRP_121                       4  3.10e-06        tgg AATTGTGACACAGTGCAAATT Caga      
+CRP_20                        1  3.24e-06          . aaaTTTGTTCCTCTTCACAtt t         
+CRP_76                        4  3.69e-06        cca TAATGTTATACATATCACTCT Aaaa      
+CRP_146                       4  3.85e-06        tgt TATCGTGACCTGGATCACTGT Tcag      
+CRP_129                       4  3.85e-06        aat AAGTGTGACCGCCGTCATATT Acag      
+CRP_99                        4  3.85e-06        aaa AATAGAGATCTACTTCACAAA Tcaa      
+CRP_56                        4  3.85e-06        tgg TGATGTGATGCTCACCGCATT Tcct      
+CRP_96                        4  4.38e-06        ggg AGATGTGAGCCAGCTCACCAT Aaaa      
+CRP_137                       4  4.57e-06        tta ATTTGTGAGTGGTCGCACATA Tcct      
+CRP_28                        1  4.98e-06          . gaaTGCGATTCCACTCACAat a         
+CRP_74                        4  5.41e-06        att AAATGTGAATTGCCGCACACA Ttat      
+CRP_48                        4  5.65e-06        ttt TCACGTGAACGTTCTCACAAT Tatt      
+CRP_7                         4  6.14e-06        tat ATCTGTGATGGCAACCACAGT Ttga      
+CRP_46                        4  6.67e-06        gtg TTGTGTGAGAGTAATCACGCT Tctg      
+CRP_69                        4  7.55e-06        gtc TTTTGTGAGTTTTGTCACCAA Atat      
+CRP_173                       4  8.89e-06        tgt AATTGTGATCACGCCCGCACA Taac      
+CRP_90                        4  1.00e-05        gca AAGTGTGCCGTAGTTCACGAT Ctcg      
+CRP_103                       4  1.09e-05        gcg AGATATGATCTATATCAATTT Ctca      
+CRP_159                       6  1.13e-05      ctaAA ATTTGCGATGCGTCGCGCATt tt        
+CRP_157                       4  1.13e-05        aaa ATTTGCGATGCGTCGCGCATT Tttg      
+CRP_47                        4  1.13e-05        aaa AAACTTGATGCACGTCAAAAA Atga      
+CRP_115                       4  1.23e-05        ggt TTGTGCGAGCCAGCTCAAACT Tttt      
+CRP_171                       4  1.27e-05        ttg AAACGTGATAGCCGTCAAACA Aatt      
+CRP_82                        4  1.27e-05        caa TTCTGTAACAGAGATCACACA Aagc      
+CRP_162                       4  1.38e-05        ata TTTTGTGACACGAATTGCAAA Tctg      
+CRP_153                       4  1.38e-05        cga TAATATGACCAACCTCTCATA Attt      
+CRP_88                        4  1.43e-05        aca AAATGTGGCGTGGATCACTAT Aatg      
+CRP_41                        4  1.68e-05        aca CTTTGTGATCTCTCTCGCACC Cgat      
+CRP_29                        1  1.74e-05          . tttCGTGACAGGAATCACGga g         
+CRP_12                        4  1.74e-05        aaa TAACGCGACTTTTATCACTTT Ttag      
+CRP_42                        4  1.88e-05        ctg TTCTGTGCATCCCGTCACAAA Ttcc      
+CRP_109                       3  1.95e-05         gg tAATGTGACGTCCTTTGCATA CAtgc     
+CRP_93                        4  1.95e-05        tta GAATTTGATCTCGCTCACATG Ttac      
+CRP_107                       4  2.03e-05        ttt TAGTGAGGCATAAATCACATT Acgc      
+CRP_38                        1  2.28e-05          . tttTGTGATCTAAATTGTAGT Acaa      
+CRP_72                        4  2.36e-05        cat TGCTGTGACTCGATTCACGAA Gtcc      
+CRP_52                        4  2.36e-05        aag AATTTTGCGCTAAAGCACATT Tctg      
+CRP_102                       4  2.45e-05        ccg AAATGTGAAGAGGGTCATAAC Caca      
+CRP_81                        4  2.64e-05        att TTATGTGCGCATCTCCACATT Accg      
+CRP_77                        4  2.64e-05        aca AAACGTGATCAACCCCTCAAT Tttc      
+CRP_125                       4  2.74e-05        gaa AATTGGAATATCCATCACATA Acga      
+CRP_58                        4  2.74e-05        ctt TTTTGTGGCCTGCTTCAAACT Ttcg      
+CRP_114                       4  2.96e-05        tga TTTTGTGATCTGTTTAAATGT Ttta      
+CRP_68                        4  3.07e-05        tga AAATTTAATTCGTATCGCAAA Ttaa      
+CRP_25                        4  3.18e-05        ggc ATCAGCGACATCTGTCACATT Cctg      
+CRP_15                        4  3.18e-05        tat TTTCGTGAAATCTGTCACTGA Agaa      
+CRP_152                       4  3.30e-05        tag AACTGTGAAACGAAACATATT Tttg      
+CRP_83                        4  3.30e-05        tga TTATTTGCACGGCGTCACACT Ttgc      
+CRP_80                        4  3.30e-05        gaa TTTCGTGATGTTGCTTGCAAA Aatc      
+CRP_30                        5  3.42e-05       gatT TTTATTGACGCACAGCACATT ggc       
+CRP_57                        4  3.96e-05        agt TCTTATGACGCTCTTCACACT Ctgc      
+CRP_54                        4  4.11e-05        aaa TTCTTAGAAACCGATCACATA Cagc      
+CRP_26                        4  4.26e-05        aat AACTGCGAGCATGGTCATATT Ttta      
+CRP_164                       4  4.57e-05        att ATTTGCGGGTCGCGTCACATT Taat      
+CRP_139                       3  4.74e-05         ca tAACATGCTGTAGATCACATC AGgtg     
+CRP_4                         4  4.74e-05        tat TCAGGTGACCGGTTTCACAAA Tata      
+CRP_31                        1  5.46e-05          . taaTGTGATCTATGTAGGAtc a         
+CRP_150                       5  5.86e-05       gtaA ATTCGTGATAGCTGTCGTAAA gct       
+CRP_113                       4  5.86e-05        tta AGAGGTGATTTTGATCACGGA Ataa      
+CRP_105                       4  6.29e-05        gaa AAATTCAATATTCATCACACT Tttc      
+CRP_126                       4  6.51e-05        cgt CATGGTGATGAGTATCACGAA Aaaa      
+CRP_24                        4  6.51e-05        caa TAGCGTTAACTGCTTCAAATT Tttg      
+CRP_67                        4  6.74e-05        gaa AACCGTGCTCCCACTCGCAGT Catc      
+CRP_148                       4  6.98e-05        ata AATAGTGACGCGCTTCGCAAC Cttt      
+CRP_92                        4  6.98e-05        caa AATAGTGACCTCGCGCAAAAT Gcac      
+CRP_165                       4  7.22e-05        taa TTTGTTGCTTTTGATCACAAT Aaga      
+CRP_51                        4  8.01e-05        cac TAATTTATTCCATGTCACACT Tttc      
+CRP_94                        4  8.29e-05        aat TCTTGTGATGTGGTTAACCAA Tttc      
+CRP_50                        4  8.57e-05        gat ATTTATGAGCAGCATCGAAAA Atag      
+CRP_106                       4  9.18e-05        tgt AAATGTAAGCTGTGCCACGTT Ttta      
+CRP_161                       4  9.49e-05        taa CGGAGTGATCGAGTTAACATT Gtta      
+CRP_0                         4  9.49e-05        gta AAACGTTTTATCTGTCACATA Atca      
+CRP_151                       4  9.82e-05        tgt AAACGTGAACGCAATCGATTA Cgta      
+CRP_130                       4  9.82e-05        gcc AACTGCGACCACGGTCACAGC Gcct      
+CRP_136                       2  1.05e-04          a ttATTTGCCACAGGTAACAAA AAAcca    
+CRP_133                       4  1.05e-04        caa TTATTTGCCACAGGTAACAAA Aaac      
+CRP_101                       7  1.09e-04     tggGTA TAACGTGATCATATCAACAga a         
+CRP_176                       4  1.20e-04        cag GAGTGCGAGTCTGCTCGCATA Atca      
+CRP_27                        4  1.46e-04        att TTATGTAATAAAATTCATGGt aa        
+CRP_160                       4  1.66e-04        caa ATATGCGTTTCAGTTAACGTT Tcag      
+CRP_124                       4  1.72e-04        tcg TTTTGTTACCTGCCTCTAACT Ttgt      
+CRP_53                        4  1.72e-04        ctg CGATGTGATATTGCTCTCCTA Tgga      
+CRP_59                        4  1.83e-04        ctt TTGCGTGATCTGTCGCCCAAA Tact      
+CRP_71                        5  1.95e-04       gcaA TTCTTTGATCCATCTCAGAGG att       
+CRP_118                       4  2.02e-04        tga ACTTGTGGATAAAATCACGGT Ctga      
+CRP_143                       4  2.22e-04        taa ATTACGGATCTTCATCACATA Aaat      
+CRP_131                       5  2.29e-04       aagG AGTTGTGATCAAGCCTGCACA aaa       
+CRP_117                       4  2.29e-04        gcc AACTGTGATAGTGTCATCATT Ttca      
+CRP_174                       4  2.44e-04        gca CTTCGTGAACGATCCCACGAA Ttta      
+CRP_100                       4  2.51e-04        ata GGGTGCGAAATCCGTCACAGT Tcaa      
+CRP_79                        4  2.68e-04        ggc TTCTGTGAACTAAACCGAGGT Catg      
+CRP_111                       2  2.76e-04          a agATGTGATTAGATTATTATT CTTtta    
+CRP_95                        4  2.76e-04        tca AGATGTGATTAGATTATTATT Cttt      
+CRP_163                       4  3.52e-04        gta AATAATGAAAAGGATGACATA Ttcg      
+CRP_135                       4  3.74e-04        tca CGATGTGAGGAAATTAACATG Aatc      
+CRP_43                        4  3.74e-04        tcc TGGCGTTACCCTTGTCGCAAA Gaag      
+CRP_39                        4  3.86e-04        ttt TTTTGTGATCACTCCGGCTTT Tttc      
+CRP_19                        4  4.48e-04        gtc GGTCGTGATATTGCTCACGCC Aaac      
+CRP_70                        4  5.66e-04        aaa AACTGGAACGCTTTTCGCATT Ctga      
+CRP_119                       4  6.18e-04        ggt ATTTCATCTCTATGTCACATT Ttgt      
+CRP_73                        4  7.12e-04        agc GAATATGCGCGAAATCAAACA Attc      
+CRP_6                         4  1.02e-03        taa AAATGTGACGCAAAGAGGTTT Ttgg      
+CRP_14                        4  1.24e-03        tca AATTGACTTTCTCATCACATC Atct      
+CRP_110                       5  1.27e-03       gctT CAGCATGACCCAGGTCGCCTT ccg       
+CRP_60                        4  1.34e-03        act TTTGTTGCTGACCTTCAAAAA Ttac      
+CRP_36                        4  1.34e-03        cct GACTGTGATCAAACCCGATCT TTttt     
+CRP_17                        4  1.42e-03        taa GTGAGAGAACAATGTCAAACA Aacc      
+CRP_9                         4  1.84e-03        aca AAATGTCGTTGCGCGCACAGT Acag      
+CRP_1                         6  1.89e-03      actTT CTTCGTAACGCCTCGCAAATt tc        
+CRP_97                        4  2.04e-03        aga AAACGTGATTTAACGCCTGAT Ttgt      
+CRP_175                       4  2.15e-03        tgg AATTGTGAGCGGATAACAATT Tcac      
+CRP_89                        5  2.38e-03       ggaA GCCTGGGATGAAAGTGACATT tga       
+CRP_170                       4  2.50e-03        aaa TATTGTGACATATGTTTTGTC Aaaa      
+CRP_33                        1  2.50e-03          . cttTGTGAGACATTGCCGAta g         
+CRP_123                       4  2.90e-03        ggt GGTTGTGATGGTGGTATGAAA Aaag      
+CRP_75                        4  3.12e-03        caa AATGACGCATGAAATCACGTT Tcac      
+CRP_98                        4  3.53e-03        ctt ACATCTTGAAATAATCACATT Gatt      
+CRP_8                         4  3.70e-03        tat TTCCGACGAATAGATCACAAT Ttat      
+CRP_167                       4  4.07e-03        ttg TTCTGCATATTAATTGACATT Tcta      
+CRP_22                        1  4.69e-03          . accTGTCACAAATCACAAAaa g         
+CRP_104                       4  5.39e-03        ccg CCTTGTCATCTTTCTGACACC Ttac      
+CRP_35                        1  5.51e-03          . tgtTGTGCGGATAAACACCTg ct        
+CRP_44                        4  6.18e-03        tat TGGAATGAAGAGAGTAACGAA Tggc      
+CRP_155                       4  8.42e-03        cga TGGTGCGCATGATAACGCCTT Ttag      
+CRP_154                       6  8.42e-03      cacGA TGGTGCGCATGATAACGCCTt tt        
+CRP_18                        4  8.80e-03        ctt CCAGCAGATACAACTCACACA Atgc      
+CRP_3                         4  9.18e-03        cca TAAATCGAGCCTGCTCCCAGC Agaa      
+CRP_55                        4  1.13e-02        gca TTTCCTGAAAATTCACGCTGT Atct      
+CRP_11                        4  1.18e-02        cgt GGTTGGGAAGGGGTTCACTGG Cttg      
+CRP_122                       6  1.26e-02      ctgGA AAGTACGTTTGCAGTGAAATa ac        
+CRP_34                        1  1.64e-02          . cggCGTGAGCGTTGTAAGTaa a         
+CRP_66                        6  1.84e-02      agaTC CTGCGTGAAGCAGCAGTAAAt ct        
+CRP_63                        1  2.69e-02          . aagTGTGATGCCAGTTTGCgg t         
+CRP_84                        5  2.84e-02       gtgT TAAATTGATCACGTTTTAGAC cat       
+CRP_116                       2  3.28e-02          a taTAGATCTCCGTCACATTTT TGCgtt    
+CRP_166                       7  3.33e-02     tgtTAA ATGTGTTTTGCTCATAGTGtg g         
+CRP_2                         4  7.31e-02        taa ATCTGCATCGGAATTTGCAGG Cgaa      
+CRP_37                        1  2.52e-01          . tcaCAATTAAGATCACAGaaa           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDTGTGATNNDNNTCACAWW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CRP_16                            1.1e-09  3_[+1]_4
+CRP_10                            5.2e-09  3_[+1]_4
+CRP_141                           1.6e-08  3_[+1]_4
+CRP_138                           1.7e-08  3_[+1]_4
+CRP_168                             2e-08  3_[+1]_4
+CRP_132                           3.7e-08  3_[+1]_4
+CRP_172                           6.3e-08  3_[+1]_4
+CRP_5                             6.7e-08  3_[+1]_4
+CRP_134                           7.1e-08  3_[+1]_4
+CRP_140                           7.5e-08  3_[+1]_4
+CRP_158                           7.9e-08  3_[+1]_4
+CRP_145                           8.9e-08  3_[+1]_4
+CRP_112                           8.9e-08  4_[+1]_3
+CRP_120                           1.3e-07  3_[+1]_4
+CRP_156                           1.7e-07  3_[+1]_4
+CRP_87                            2.5e-07  3_[+1]_4
+CRP_85                            3.3e-07  3_[+1]_4
+CRP_127                           4.1e-07  3_[+1]_4
+CRP_128                             5e-07  3_[+1]_4
+CRP_108                           5.2e-07  3_[+1]_4
+CRP_13                            5.2e-07  3_[+1]_4
+CRP_65                            5.8e-07  3_[+1]_4
+CRP_40                            6.4e-07  4_[+1]_3
+CRP_49                            6.7e-07  3_[+1]_4
+CRP_45                            6.7e-07  3_[+1]_4
+CRP_169                           8.2e-07  3_[+1]_4
+CRP_86                            8.2e-07  3_[+1]_4
+CRP_62                              1e-06  3_[+1]_4
+CRP_147                           1.1e-06  3_[+1]_4
+CRP_21                            1.2e-06  [+1]_1
+CRP_142                           1.5e-06  3_[+1]_4
+CRP_61                            1.8e-06  3_[+1]_4
+CRP_64                            1.9e-06  3_[+1]_4
+CRP_149                           2.1e-06  3_[+1]_4
+CRP_144                           2.2e-06  3_[+1]_4
+CRP_78                            2.3e-06  3_[+1]_4
+CRP_32                            2.7e-06  [+1]_1
+CRP_91                            2.8e-06  3_[+1]_4
+CRP_23                            2.8e-06  [+1]_1
+CRP_121                           3.1e-06  3_[+1]_4
+CRP_20                            3.2e-06  [+1]_1
+CRP_76                            3.7e-06  3_[+1]_4
+CRP_146                           3.9e-06  3_[+1]_4
+CRP_129                           3.9e-06  3_[+1]_4
+CRP_99                            3.9e-06  3_[+1]_4
+CRP_56                            3.9e-06  3_[+1]_4
+CRP_96                            4.4e-06  3_[+1]_4
+CRP_137                           4.6e-06  3_[+1]_4
+CRP_28                              5e-06  [+1]_1
+CRP_74                            5.4e-06  3_[+1]_4
+CRP_48                            5.6e-06  3_[+1]_4
+CRP_7                             6.1e-06  3_[+1]_4
+CRP_46                            6.7e-06  3_[+1]_4
+CRP_69                            7.5e-06  3_[+1]_4
+CRP_173                           8.9e-06  3_[+1]_4
+CRP_90                              1e-05  3_[+1]_4
+CRP_103                           1.1e-05  3_[+1]_4
+CRP_159                           1.1e-05  5_[+1]_2
+CRP_157                           1.1e-05  3_[+1]_4
+CRP_47                            1.1e-05  3_[+1]_4
+CRP_115                           1.2e-05  3_[+1]_4
+CRP_171                           1.3e-05  3_[+1]_4
+CRP_82                            1.3e-05  3_[+1]_4
+CRP_162                           1.4e-05  3_[+1]_4
+CRP_153                           1.4e-05  3_[+1]_4
+CRP_88                            1.4e-05  3_[+1]_4
+CRP_41                            1.7e-05  3_[+1]_4
+CRP_29                            1.7e-05  [+1]_1
+CRP_12                            1.7e-05  3_[+1]_4
+CRP_42                            1.9e-05  3_[+1]_4
+CRP_109                             2e-05  2_[+1]_5
+CRP_93                              2e-05  3_[+1]_4
+CRP_107                             2e-05  3_[+1]_4
+CRP_38                            2.3e-05  [+1]_4
+CRP_72                            2.4e-05  3_[+1]_4
+CRP_52                            2.4e-05  3_[+1]_4
+CRP_102                           2.5e-05  3_[+1]_4
+CRP_81                            2.6e-05  3_[+1]_4
+CRP_77                            2.6e-05  3_[+1]_4
+CRP_125                           2.7e-05  3_[+1]_4
+CRP_58                            2.7e-05  3_[+1]_4
+CRP_114                             3e-05  3_[+1]_4
+CRP_68                            3.1e-05  3_[+1]_4
+CRP_25                            3.2e-05  3_[+1]_4
+CRP_15                            3.2e-05  3_[+1]_4
+CRP_152                           3.3e-05  3_[+1]_4
+CRP_83                            3.3e-05  3_[+1]_4
+CRP_80                            3.3e-05  3_[+1]_4
+CRP_30                            3.4e-05  4_[+1]_3
+CRP_57                              4e-05  3_[+1]_4
+CRP_54                            4.1e-05  3_[+1]_4
+CRP_26                            4.3e-05  3_[+1]_4
+CRP_164                           4.6e-05  3_[+1]_4
+CRP_139                           4.7e-05  2_[+1]_5
+CRP_4                             4.7e-05  3_[+1]_4
+CRP_31                            5.5e-05  [+1]_1
+CRP_150                           5.9e-05  4_[+1]_3
+CRP_113                           5.9e-05  3_[+1]_4
+CRP_105                           6.3e-05  3_[+1]_4
+CRP_126                           6.5e-05  3_[+1]_4
+CRP_24                            6.5e-05  3_[+1]_4
+CRP_67                            6.7e-05  3_[+1]_4
+CRP_148                             7e-05  3_[+1]_4
+CRP_92                              7e-05  3_[+1]_4
+CRP_165                           7.2e-05  3_[+1]_4
+CRP_51                              8e-05  3_[+1]_4
+CRP_94                            8.3e-05  3_[+1]_4
+CRP_50                            8.6e-05  3_[+1]_4
+CRP_106                           9.2e-05  3_[+1]_4
+CRP_161                           9.5e-05  3_[+1]_4
+CRP_0                             9.5e-05  3_[+1]_4
+CRP_151                           9.8e-05  3_[+1]_4
+CRP_130                           9.8e-05  3_[+1]_4
+CRP_136                           0.00011  1_[+1]_6
+CRP_133                           0.00011  3_[+1]_4
+CRP_101                           0.00011  6_[+1]_1
+CRP_176                           0.00012  3_[+1]_4
+CRP_27                            0.00015  3_[+1]_2
+CRP_160                           0.00017  3_[+1]_4
+CRP_124                           0.00017  3_[+1]_4
+CRP_53                            0.00017  3_[+1]_4
+CRP_59                            0.00018  3_[+1]_4
+CRP_71                             0.0002  4_[+1]_3
+CRP_118                            0.0002  3_[+1]_4
+CRP_143                           0.00022  3_[+1]_4
+CRP_131                           0.00023  4_[+1]_3
+CRP_117                           0.00023  3_[+1]_4
+CRP_174                           0.00024  3_[+1]_4
+CRP_100                           0.00025  3_[+1]_4
+CRP_79                            0.00027  3_[+1]_4
+CRP_111                           0.00028  1_[+1]_6
+CRP_95                            0.00028  3_[+1]_4
+CRP_163                           0.00035  3_[+1]_4
+CRP_135                           0.00037  3_[+1]_4
+CRP_43                            0.00037  3_[+1]_4
+CRP_39                            0.00039  3_[+1]_4
+CRP_19                            0.00045  3_[+1]_4
+CRP_70                            0.00057  3_[+1]_4
+CRP_119                           0.00062  3_[+1]_4
+CRP_73                            0.00071  3_[+1]_4
+CRP_6                               0.001  3_[+1]_4
+CRP_14                             0.0012  3_[+1]_4
+CRP_110                            0.0013  4_[+1]_3
+CRP_60                             0.0013  3_[+1]_4
+CRP_36                             0.0013  3_[+1]_5
+CRP_17                             0.0014  3_[+1]_4
+CRP_9                              0.0018  3_[+1]_4
+CRP_1                              0.0019  5_[+1]_2
+CRP_97                              0.002  3_[+1]_4
+CRP_175                            0.0021  3_[+1]_4
+CRP_89                             0.0024  4_[+1]_3
+CRP_170                            0.0025  3_[+1]_4
+CRP_33                             0.0025  [+1]_1
+CRP_123                            0.0029  3_[+1]_4
+CRP_75                             0.0031  3_[+1]_4
+CRP_98                             0.0035  3_[+1]_4
+CRP_8                              0.0037  3_[+1]_4
+CRP_167                            0.0041  3_[+1]_4
+CRP_22                             0.0047  [+1]_1
+CRP_104                            0.0054  3_[+1]_4
+CRP_35                             0.0055  [+1]_2
+CRP_44                             0.0062  3_[+1]_4
+CRP_155                            0.0084  3_[+1]_4
+CRP_154                            0.0084  5_[+1]_2
+CRP_18                             0.0088  3_[+1]_4
+CRP_3                              0.0092  3_[+1]_4
+CRP_55                              0.011  3_[+1]_4
+CRP_11                              0.012  3_[+1]_4
+CRP_122                             0.013  5_[+1]_2
+CRP_34                              0.016  [+1]_1
+CRP_66                              0.018  5_[+1]_2
+CRP_63                              0.027  [+1]_1
+CRP_84                              0.028  4_[+1]_3
+CRP_116                             0.033  1_[+1]_6
+CRP_166                             0.033  6_[+1]_1
+CRP_2                               0.073  3_[+1]_4
+CRP_37                               0.25  [+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDTGTGATNNDNNTCACAWW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WWDTGTGATNNDNNTCACAWW width=21 seqs=177
+CRP_16                   (    4) ATATGTGATATGAATCACATA  1 
+CRP_10                   (    4) AGATGTGATCTGGATCACATA  1 
+CRP_141                  (    4) AAATGTGACACTACTCACATT  1 
+CRP_138                  (    4) TTATGTGATTGATATCACACA  1 
+CRP_168                  (    4) ATGTGTGATCGTCATCACAAT  1 
+CRP_132                  (    4) AAATGTGATACCAATCACAGA  1 
+CRP_172                  (    4) AATTGCGATCTAAATCAAATT  1 
+CRP_5                    (    4) TTATGTGATTTGCATCACTTT  1 
+CRP_134                  (    4) AAATGTTATCCACATCACAAT  1 
+CRP_140                  (    4) TCTTGTGATTCAGATCACAAA  1 
+CRP_158                  (    4) TAATGAGATTCAGATCACATA  1 
+CRP_145                  (    4) ATGTGTGAAGTTGATCACAAA  1 
+CRP_112                  (    5) ATGTGTGAAGTTGATCACAAA  1 
+CRP_120                  (    4) GATTGTGATTCGATTCACATT  1 
+CRP_156                  (    4) AATTGTGAACATCATCACGTT  1 
+CRP_87                   (    4) TTGTGTGATGCAAGCCACATT  1 
+CRP_85                   (    4) TTATTTGAACCAGATCGCATT  1 
+CRP_127                  (    4) TTGTGTGATCTGCATCACGCA  1 
+CRP_128                  (    4) TAAAGTGATGGTAGTCACATA  1 
+CRP_108                  (    4) AAATTTGAAGTAGCTCACACT  1 
+CRP_13                   (    4) TTATTTGATACCCATCACACT  1 
+CRP_65                   (    4) ATAAGTGACCGAAATCACACT  1 
+CRP_40                   (    5) CTTTGTGATAAAAATCACTTT  1 
+CRP_49                   (    4) AAGTGTGACCCGGTTCACGTA  1 
+CRP_45                   (    4) ATTTGTGATCAACCCCACACA  1 
+CRP_169                  (    4) TTTAGTGAAGCAGATCGCATT  1 
+CRP_86                   (    4) AATTGTGATGTGTATCGAAGT  1 
+CRP_62                   (    4) AAGTGTGATGTGAGTCAGATA  1 
+CRP_147                  (    4) TTTTGTGAATCAGATCAGAAA  1 
+CRP_21                   (    1) TTATGAGATTTTCATCACACA  1 
+CRP_142                  (    4) TTTTGTGATGAACGTCACGTC  1 
+CRP_61                   (    4) ATCTGTGAGTGATTTCACAGT  1 
+CRP_64                   (    4) TTTTGTGAGCTGTTTCGCGTT  1 
+CRP_149                  (    4) AAGCGTGATGCATCTCACCTT  1 
+CRP_144                  (    4) TTTTGTGATCGTTATCTCGAT  1 
+CRP_78                   (    4) TAATGTGAGTTAGCTCACTCA  1 
+CRP_32                   (    1) TTCTGCGATGCATGTCAAATA  1 
+CRP_91                   (    4) TTGTTTGATATTTATCATATT  1 
+CRP_23                   (    1) AAGTGTGATGAACTTCAAATC  1 
+CRP_121                  (    4) AATTGTGACACAGTGCAAATT  1 
+CRP_20                   (    1) AAATTTGTTCCTCTTCACATT  1 
+CRP_76                   (    4) TAATGTTATACATATCACTCT  1 
+CRP_146                  (    4) TATCGTGACCTGGATCACTGT  1 
+CRP_129                  (    4) AAGTGTGACCGCCGTCATATT  1 
+CRP_99                   (    4) AATAGAGATCTACTTCACAAA  1 
+CRP_56                   (    4) TGATGTGATGCTCACCGCATT  1 
+CRP_96                   (    4) AGATGTGAGCCAGCTCACCAT  1 
+CRP_137                  (    4) ATTTGTGAGTGGTCGCACATA  1 
+CRP_28                   (    1) GAATGCGATTCCACTCACAAT  1 
+CRP_74                   (    4) AAATGTGAATTGCCGCACACA  1 
+CRP_48                   (    4) TCACGTGAACGTTCTCACAAT  1 
+CRP_7                    (    4) ATCTGTGATGGCAACCACAGT  1 
+CRP_46                   (    4) TTGTGTGAGAGTAATCACGCT  1 
+CRP_69                   (    4) TTTTGTGAGTTTTGTCACCAA  1 
+CRP_173                  (    4) AATTGTGATCACGCCCGCACA  1 
+CRP_90                   (    4) AAGTGTGCCGTAGTTCACGAT  1 
+CRP_103                  (    4) AGATATGATCTATATCAATTT  1 
+CRP_159                  (    6) ATTTGCGATGCGTCGCGCATT  1 
+CRP_157                  (    4) ATTTGCGATGCGTCGCGCATT  1 
+CRP_47                   (    4) AAACTTGATGCACGTCAAAAA  1 
+CRP_115                  (    4) TTGTGCGAGCCAGCTCAAACT  1 
+CRP_171                  (    4) AAACGTGATAGCCGTCAAACA  1 
+CRP_82                   (    4) TTCTGTAACAGAGATCACACA  1 
+CRP_162                  (    4) TTTTGTGACACGAATTGCAAA  1 
+CRP_153                  (    4) TAATATGACCAACCTCTCATA  1 
+CRP_88                   (    4) AAATGTGGCGTGGATCACTAT  1 
+CRP_41                   (    4) CTTTGTGATCTCTCTCGCACC  1 
+CRP_29                   (    1) TTTCGTGACAGGAATCACGGA  1 
+CRP_12                   (    4) TAACGCGACTTTTATCACTTT  1 
+CRP_42                   (    4) TTCTGTGCATCCCGTCACAAA  1 
+CRP_109                  (    3) TAATGTGACGTCCTTTGCATA  1 
+CRP_93                   (    4) GAATTTGATCTCGCTCACATG  1 
+CRP_107                  (    4) TAGTGAGGCATAAATCACATT  1 
+CRP_38                   (    1) TTTTGTGATCTAAATTGTAGT  1 
+CRP_72                   (    4) TGCTGTGACTCGATTCACGAA  1 
+CRP_52                   (    4) AATTTTGCGCTAAAGCACATT  1 
+CRP_102                  (    4) AAATGTGAAGAGGGTCATAAC  1 
+CRP_81                   (    4) TTATGTGCGCATCTCCACATT  1 
+CRP_77                   (    4) AAACGTGATCAACCCCTCAAT  1 
+CRP_125                  (    4) AATTGGAATATCCATCACATA  1 
+CRP_58                   (    4) TTTTGTGGCCTGCTTCAAACT  1 
+CRP_114                  (    4) TTTTGTGATCTGTTTAAATGT  1 
+CRP_68                   (    4) AAATTTAATTCGTATCGCAAA  1 
+CRP_25                   (    4) ATCAGCGACATCTGTCACATT  1 
+CRP_15                   (    4) TTTCGTGAAATCTGTCACTGA  1 
+CRP_152                  (    4) AACTGTGAAACGAAACATATT  1 
+CRP_83                   (    4) TTATTTGCACGGCGTCACACT  1 
+CRP_80                   (    4) TTTCGTGATGTTGCTTGCAAA  1 
+CRP_30                   (    5) TTTATTGACGCACAGCACATT  1 
+CRP_57                   (    4) TCTTATGACGCTCTTCACACT  1 
+CRP_54                   (    4) TTCTTAGAAACCGATCACATA  1 
+CRP_26                   (    4) AACTGCGAGCATGGTCATATT  1 
+CRP_164                  (    4) ATTTGCGGGTCGCGTCACATT  1 
+CRP_139                  (    3) TAACATGCTGTAGATCACATC  1 
+CRP_4                    (    4) TCAGGTGACCGGTTTCACAAA  1 
+CRP_31                   (    1) TAATGTGATCTATGTAGGATC  1 
+CRP_150                  (    5) ATTCGTGATAGCTGTCGTAAA  1 
+CRP_113                  (    4) AGAGGTGATTTTGATCACGGA  1 
+CRP_105                  (    4) AAATTCAATATTCATCACACT  1 
+CRP_126                  (    4) CATGGTGATGAGTATCACGAA  1 
+CRP_24                   (    4) TAGCGTTAACTGCTTCAAATT  1 
+CRP_67                   (    4) AACCGTGCTCCCACTCGCAGT  1 
+CRP_148                  (    4) AATAGTGACGCGCTTCGCAAC  1 
+CRP_92                   (    4) AATAGTGACCTCGCGCAAAAT  1 
+CRP_165                  (    4) TTTGTTGCTTTTGATCACAAT  1 
+CRP_51                   (    4) TAATTTATTCCATGTCACACT  1 
+CRP_94                   (    4) TCTTGTGATGTGGTTAACCAA  1 
+CRP_50                   (    4) ATTTATGAGCAGCATCGAAAA  1 
+CRP_106                  (    4) AAATGTAAGCTGTGCCACGTT  1 
+CRP_161                  (    4) CGGAGTGATCGAGTTAACATT  1 
+CRP_0                    (    4) AAACGTTTTATCTGTCACATA  1 
+CRP_151                  (    4) AAACGTGAACGCAATCGATTA  1 
+CRP_130                  (    4) AACTGCGACCACGGTCACAGC  1 
+CRP_136                  (    2) TTATTTGCCACAGGTAACAAA  1 
+CRP_133                  (    4) TTATTTGCCACAGGTAACAAA  1 
+CRP_101                  (    7) TAACGTGATCATATCAACAGA  1 
+CRP_176                  (    4) GAGTGCGAGTCTGCTCGCATA  1 
+CRP_27                   (    4) TTATGTAATAAAATTCATGGT  1 
+CRP_160                  (    4) ATATGCGTTTCAGTTAACGTT  1 
+CRP_124                  (    4) TTTTGTTACCTGCCTCTAACT  1 
+CRP_53                   (    4) CGATGTGATATTGCTCTCCTA  1 
+CRP_59                   (    4) TTGCGTGATCTGTCGCCCAAA  1 
+CRP_71                   (    5) TTCTTTGATCCATCTCAGAGG  1 
+CRP_118                  (    4) ACTTGTGGATAAAATCACGGT  1 
+CRP_143                  (    4) ATTACGGATCTTCATCACATA  1 
+CRP_131                  (    5) AGTTGTGATCAAGCCTGCACA  1 
+CRP_117                  (    4) AACTGTGATAGTGTCATCATT  1 
+CRP_174                  (    4) CTTCGTGAACGATCCCACGAA  1 
+CRP_100                  (    4) GGGTGCGAAATCCGTCACAGT  1 
+CRP_79                   (    4) TTCTGTGAACTAAACCGAGGT  1 
+CRP_111                  (    2) AGATGTGATTAGATTATTATT  1 
+CRP_95                   (    4) AGATGTGATTAGATTATTATT  1 
+CRP_163                  (    4) AATAATGAAAAGGATGACATA  1 
+CRP_135                  (    4) CGATGTGAGGAAATTAACATG  1 
+CRP_43                   (    4) TGGCGTTACCCTTGTCGCAAA  1 
+CRP_39                   (    4) TTTTGTGATCACTCCGGCTTT  1 
+CRP_19                   (    4) GGTCGTGATATTGCTCACGCC  1 
+CRP_70                   (    4) AACTGGAACGCTTTTCGCATT  1 
+CRP_119                  (    4) ATTTCATCTCTATGTCACATT  1 
+CRP_73                   (    4) GAATATGCGCGAAATCAAACA  1 
+CRP_6                    (    4) AAATGTGACGCAAAGAGGTTT  1 
+CRP_14                   (    4) AATTGACTTTCTCATCACATC  1 
+CRP_110                  (    5) CAGCATGACCCAGGTCGCCTT  1 
+CRP_60                   (    4) TTTGTTGCTGACCTTCAAAAA  1 
+CRP_36                   (    4) GACTGTGATCAAACCCGATCT  1 
+CRP_17                   (    4) GTGAGAGAACAATGTCAAACA  1 
+CRP_9                    (    4) AAATGTCGTTGCGCGCACAGT  1 
+CRP_1                    (    6) CTTCGTAACGCCTCGCAAATT  1 
+CRP_97                   (    4) AAACGTGATTTAACGCCTGAT  1 
+CRP_175                  (    4) AATTGTGAGCGGATAACAATT  1 
+CRP_89                   (    5) GCCTGGGATGAAAGTGACATT  1 
+CRP_170                  (    4) TATTGTGACATATGTTTTGTC  1 
+CRP_33                   (    1) CTTTGTGAGACATTGCCGATA  1 
+CRP_123                  (    4) GGTTGTGATGGTGGTATGAAA  1 
+CRP_75                   (    4) AATGACGCATGAAATCACGTT  1 
+CRP_98                   (    4) ACATCTTGAAATAATCACATT  1 
+CRP_8                    (    4) TTCCGACGAATAGATCACAAT  1 
+CRP_167                  (    4) TTCTGCATATTAATTGACATT  1 
+CRP_22                   (    1) ACCTGTCACAAATCACAAAAA  1 
+CRP_104                  (    4) CCTTGTCATCTTTCTGACACC  1 
+CRP_35                   (    1) TGTTGTGCGGATAAACACCTG  1 
+CRP_44                   (    4) TGGAATGAAGAGAGTAACGAA  1 
+CRP_155                  (    4) TGGTGCGCATGATAACGCCTT  1 
+CRP_154                  (    6) TGGTGCGCATGATAACGCCTT  1 
+CRP_18                   (    4) CCAGCAGATACAACTCACACA  1 
+CRP_3                    (    4) TAAATCGAGCCTGCTCCCAGC  1 
+CRP_55                   (    4) TTTCCTGAAAATTCACGCTGT  1 
+CRP_11                   (    4) GGTTGGGAAGGGGTTCACTGG  1 
+CRP_122                  (    6) AAGTACGTTTGCAGTGAAATA  1 
+CRP_34                   (    1) CGGCGTGAGCGTTGTAAGTAA  1 
+CRP_66                   (    6) CTGCGTGAAGCAGCAGTAAAT  1 
+CRP_63                   (    1) AAGTGTGATGCCAGTTTGCGG  1 
+CRP_84                   (    5) TAAATTGATCACGTTTTAGAC  1 
+CRP_116                  (    2) TATAGATCTCCGTCACATTTT  1 
+CRP_166                  (    7) ATGTGTTTTGCTCATAGTGTG  1 
+CRP_2                    (    4) ATCTGCATCGGAATTTGCAGG  1 
+CRP_37                   (    1) TCACAATTAAGATCACAGAAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDTGTGATNNDNNTCACAWW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 21 n= 1334 bayes= 2.70857 E= 2.2e-355 
+    82   -168   -191     77 
+    75   -191   -103     68 
+    51   -103    -54     51 
+  -144    -63   -268    152 
+  -186   -317    163   -105 
+  -186   -103   -317    166 
+  -198   -317    174   -198 
+   170   -132   -249   -212 
+   -36    -36   -103     98 
+   -20     51    -10    -40 
+   -40     26    -45     39 
+    64    -63    -13    -16 
+     2    -24      9     11 
+    56    -10    -32    -32 
+  -212   -158   -168    166 
+  -127    167   -268   -227 
+   152   -317    -40   -174 
+   -69    149   -217   -164 
+   151   -217    -85   -127 
+     5    -63    -91     86 
+    60   -168   -249    103 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDTGTGATNNDNNTCACAWW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 21 nsites= 177 E= 2.2e-355 
+ 0.435028  0.079096  0.067797  0.418079 
+ 0.412429  0.067797  0.124294  0.395480 
+ 0.350282  0.124294  0.175141  0.350282 
+ 0.090395  0.163842  0.039548  0.706215 
+ 0.067797  0.028249  0.785311  0.118644 
+ 0.067797  0.124294  0.028249  0.779661 
+ 0.062147  0.028249  0.847458  0.062147 
+ 0.796610  0.101695  0.045198  0.056497 
+ 0.192090  0.197740  0.124294  0.485876 
+ 0.214689  0.361582  0.237288  0.186441 
+ 0.186441  0.305085  0.186441  0.322034 
+ 0.384181  0.163842  0.231638  0.220339 
+ 0.248588  0.214689  0.271186  0.265537 
+ 0.361582  0.237288  0.203390  0.197740 
+ 0.056497  0.084746  0.079096  0.779661 
+ 0.101695  0.807910  0.039548  0.050847 
+ 0.706215  0.028249  0.192090  0.073446 
+ 0.152542  0.711864  0.056497  0.079096 
+ 0.700565  0.056497  0.141243  0.101695 
+ 0.254237  0.163842  0.135593  0.446328 
+ 0.372881  0.079096  0.045198  0.502825 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDTGTGATNNDNNTCACAWW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][AT][AT]TGTGAT[CGA][TC][AGT][GTAC][ACG]TCACA[TA][TA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.65 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+CRP_0                            7.59e-04  3_[+1(9.49e-05)]_4
+CRP_1                            1.50e-02  28
+CRP_2                            4.55e-01  28
+CRP_3                            7.11e-02  28
+CRP_4                            3.79e-04  3_[+1(4.74e-05)]_4
+CRP_5                            5.33e-07  3_[+1(6.66e-08)]_4
+CRP_6                            8.16e-03  28
+CRP_7                            4.91e-05  3_[+1(6.14e-06)]_4
+CRP_8                            2.92e-02  28
+CRP_9                            1.46e-02  28
+CRP_10                           4.15e-08  3_[+1(5.18e-09)]_4
+CRP_11                           9.08e-02  28
+CRP_12                           1.39e-04  3_[+1(1.74e-05)]_4
+CRP_13                           4.19e-06  3_[+1(5.24e-07)]_4
+CRP_14                           9.87e-03  28
+CRP_15                           2.55e-04  3_[+1(3.18e-05)]_4
+CRP_16                           9.10e-09  3_[+1(1.14e-09)]_4
+CRP_17                           1.13e-02  28
+CRP_18                           6.82e-02  28
+CRP_19                           3.58e-03  28
+CRP_20                           6.48e-06  [+1(3.24e-06)]_1
+CRP_21                           2.39e-06  [+1(1.20e-06)]_1
+CRP_22                           9.35e-03  22
+CRP_23                           5.68e-06  [+1(2.84e-06)]_1
+CRP_24                           5.21e-04  3_[+1(6.51e-05)]_4
+CRP_25                           2.55e-04  3_[+1(3.18e-05)]_4
+CRP_26                           3.41e-04  3_[+1(4.26e-05)]_4
+CRP_27                           8.77e-04  26
+CRP_28                           9.95e-06  [+1(4.98e-06)]_1
+CRP_29                           3.48e-05  [+1(1.74e-05)]_1
+CRP_30                           2.74e-04  4_[+1(3.42e-05)]_3
+CRP_31                           1.09e-04  [+1(5.46e-05)]_1
+CRP_32                           5.43e-06  [+1(2.72e-06)]_1
+CRP_33                           4.99e-03  22
+CRP_34                           3.25e-02  22
+CRP_35                           1.64e-02  23
+CRP_36                           1.20e-02  29
+CRP_37                           2.52e-01  21
+CRP_38                           1.14e-04  [+1(2.28e-05)]_4
+CRP_39                           3.08e-03  28
+CRP_40                           5.12e-06  4_[+1(6.39e-07)]_3
+CRP_41                           1.34e-04  3_[+1(1.68e-05)]_4
+CRP_42                           1.50e-04  3_[+1(1.88e-05)]_4
+CRP_43                           2.99e-03  28
+CRP_44                           4.84e-02  28
+CRP_45                           5.37e-06  3_[+1(6.72e-07)]_4
+CRP_46                           5.34e-05  3_[+1(6.67e-06)]_4
+CRP_47                           9.05e-05  3_[+1(1.13e-05)]_4
+CRP_48                           4.52e-05  3_[+1(5.65e-06)]_4
+CRP_49                           5.37e-06  3_[+1(6.72e-07)]_4
+CRP_50                           6.86e-04  3_[+1(8.57e-05)]_4
+CRP_51                           6.41e-04  3_[+1(8.01e-05)]_4
+CRP_52                           1.89e-04  3_[+1(2.36e-05)]_4
+CRP_53                           1.37e-03  28
+CRP_54                           3.29e-04  3_[+1(4.11e-05)]_4
+CRP_55                           8.73e-02  28
+CRP_56                           3.08e-05  3_[+1(3.85e-06)]_4
+CRP_57                           3.17e-04  3_[+1(3.96e-05)]_4
+CRP_58                           2.20e-04  3_[+1(2.74e-05)]_4
+CRP_59                           1.47e-03  28
+CRP_60                           1.07e-02  28
+CRP_61                           1.45e-05  3_[+1(1.81e-06)]_4
+CRP_62                           8.31e-06  3_[+1(1.04e-06)]_4
+CRP_63                           5.30e-02  22
+CRP_64                           1.52e-05  3_[+1(1.90e-06)]_4
+CRP_65                           4.64e-06  3_[+1(5.79e-07)]_4
+CRP_66                           1.38e-01  28
+CRP_67                           5.39e-04  3_[+1(6.74e-05)]_4
+CRP_68                           2.45e-04  3_[+1(3.07e-05)]_4
+CRP_69                           6.04e-05  3_[+1(7.55e-06)]_4
+CRP_70                           4.52e-03  28
+CRP_71                           1.56e-03  28
+CRP_72                           1.89e-04  3_[+1(2.36e-05)]_4
+CRP_73                           5.68e-03  28
+CRP_74                           4.33e-05  3_[+1(5.41e-06)]_4
+CRP_75                           2.47e-02  28
+CRP_76                           2.95e-05  3_[+1(3.69e-06)]_4
+CRP_77                           2.11e-04  3_[+1(2.64e-05)]_4
+CRP_78                           1.82e-05  3_[+1(2.27e-06)]_4
+CRP_79                           2.14e-03  28
+CRP_80                           2.64e-04  3_[+1(3.30e-05)]_4
+CRP_81                           2.11e-04  3_[+1(2.64e-05)]_4
+CRP_82                           1.02e-04  3_[+1(1.27e-05)]_4
+CRP_83                           2.64e-04  3_[+1(3.30e-05)]_4
+CRP_84                           2.06e-01  28
+CRP_85                           2.65e-06  3_[+1(3.31e-07)]_4
+CRP_86                           6.53e-06  3_[+1(8.16e-07)]_4
+CRP_87                           2.04e-06  3_[+1(2.55e-07)]_4
+CRP_88                           1.15e-04  3_[+1(1.43e-05)]_4
+CRP_89                           1.89e-02  28
+CRP_90                           8.03e-05  3_[+1(1.00e-05)]_4
+CRP_91                           2.27e-05  3_[+1(2.84e-06)]_4
+CRP_92                           5.58e-04  3_[+1(6.98e-05)]_4
+CRP_93                           1.56e-04  3_[+1(1.95e-05)]_4
+CRP_94                           6.63e-04  3_[+1(8.29e-05)]_4
+CRP_95                           2.21e-03  28
+CRP_96                           3.50e-05  3_[+1(4.38e-06)]_4
+CRP_97                           1.62e-02  28
+CRP_98                           2.79e-02  28
+CRP_99                           3.08e-05  3_[+1(3.85e-06)]_4
+CRP_100                          2.01e-03  28
+CRP_101                          8.69e-04  28
+CRP_102                          1.96e-04  3_[+1(2.45e-05)]_4
+CRP_103                          8.70e-05  3_[+1(1.09e-05)]_4
+CRP_104                          4.23e-02  28
+CRP_105                          5.03e-04  3_[+1(6.29e-05)]_4
+CRP_106                          7.34e-04  3_[+1(9.18e-05)]_4
+CRP_107                          1.62e-04  3_[+1(2.03e-05)]_4
+CRP_108                          4.19e-06  3_[+1(5.24e-07)]_4
+CRP_109                          1.56e-04  2_[+1(1.95e-05)]_5
+CRP_110                          1.01e-02  28
+CRP_111                          2.21e-03  28
+CRP_112                          7.13e-07  4_[+1(8.92e-08)]_3
+CRP_113                          4.69e-04  3_[+1(5.86e-05)]_4
+CRP_114                          2.36e-04  3_[+1(2.96e-05)]_4
+CRP_115                          9.80e-05  3_[+1(1.23e-05)]_4
+CRP_116                          2.34e-01  28
+CRP_117                          1.83e-03  28
+CRP_118                          1.61e-03  28
+CRP_119                          4.93e-03  28
+CRP_120                          1.06e-06  3_[+1(1.33e-07)]_4
+CRP_121                          2.48e-05  3_[+1(3.10e-06)]_4
+CRP_122                          9.64e-02  28
+CRP_123                          2.30e-02  28
+CRP_124                          1.37e-03  28
+CRP_125                          2.20e-04  3_[+1(2.74e-05)]_4
+CRP_126                          5.21e-04  3_[+1(6.51e-05)]_4
+CRP_127                          3.25e-06  3_[+1(4.07e-07)]_4
+CRP_128                          3.99e-06  3_[+1(4.99e-07)]_4
+CRP_129                          3.08e-05  3_[+1(3.85e-06)]_4
+CRP_130                          7.86e-04  3_[+1(9.82e-05)]_4
+CRP_131                          1.83e-03  28
+CRP_132                          2.93e-07  3_[+1(3.66e-08)]_4
+CRP_133                          8.40e-04  28
+CRP_134                          5.65e-07  3_[+1(7.06e-08)]_4
+CRP_135                          2.99e-03  28
+CRP_136                          8.40e-04  28
+CRP_137                          3.66e-05  3_[+1(4.57e-06)]_4
+CRP_138                          1.37e-07  3_[+1(1.71e-08)]_4
+CRP_139                          3.79e-04  2_[+1(4.74e-05)]_5
+CRP_140                          5.99e-07  3_[+1(7.49e-08)]_4
+CRP_141                          1.28e-07  3_[+1(1.60e-08)]_4
+CRP_142                          1.21e-05  3_[+1(1.51e-06)]_4
+CRP_143                          1.77e-03  28
+CRP_144                          1.74e-05  3_[+1(2.17e-06)]_4
+CRP_145                          7.13e-07  3_[+1(8.92e-08)]_4
+CRP_146                          3.08e-05  3_[+1(3.85e-06)]_4
+CRP_147                          8.71e-06  3_[+1(1.09e-06)]_4
+CRP_148                          5.58e-04  3_[+1(6.98e-05)]_4
+CRP_149                          1.66e-05  3_[+1(2.08e-06)]_4
+CRP_150                          4.69e-04  4_[+1(5.86e-05)]_3
+CRP_151                          7.86e-04  3_[+1(9.82e-05)]_4
+CRP_152                          2.64e-04  3_[+1(3.30e-05)]_4
+CRP_153                          1.10e-04  3_[+1(1.38e-05)]_4
+CRP_154                          6.54e-02  28
+CRP_155                          6.54e-02  28
+CRP_156                          1.32e-06  3_[+1(1.65e-07)]_4
+CRP_157                          9.05e-05  3_[+1(1.13e-05)]_4
+CRP_158                          6.35e-07  3_[+1(7.94e-08)]_4
+CRP_159                          9.05e-05  5_[+1(1.13e-05)]_2
+CRP_160                          1.33e-03  28
+CRP_161                          7.59e-04  3_[+1(9.49e-05)]_4
+CRP_162                          1.10e-04  3_[+1(1.38e-05)]_4
+CRP_163                          2.82e-03  28
+CRP_164                          3.66e-04  3_[+1(4.57e-05)]_4
+CRP_165                          5.78e-04  3_[+1(7.22e-05)]_4
+CRP_166                          2.20e-01  28
+CRP_167                          3.21e-02  28
+CRP_168                          1.56e-07  3_[+1(1.95e-08)]_4
+CRP_169                          6.53e-06  3_[+1(8.16e-07)]_4
+CRP_170                          1.98e-02  28
+CRP_171                          1.02e-04  3_[+1(1.27e-05)]_4
+CRP_172                          5.03e-07  3_[+1(6.29e-08)]_4
+CRP_173                          7.11e-05  3_[+1(8.89e-06)]_4
+CRP_174                          1.95e-03  28
+CRP_175                          1.71e-02  28
+CRP_176                          9.60e-04  28
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

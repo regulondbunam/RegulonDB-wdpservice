@@ -1,0 +1,230 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= SrsR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+SrsR_0                   1.0000     17  SrsR_1                   1.0000     17  
+SrsR_2                   1.0000     17  SrsR_3                   1.0000     17  
+SrsR_4                   1.0000     17  SrsR_5                   1.0000     17  
+SrsR_6                   1.0000     17  SrsR_7                   1.0000     17  
+SrsR_8                   1.0000     17  SrsR_9                   1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme SrsR/ri_sites.fasta -oc SrsR/./ -mod oops -nmotifs 1 -minw 8 -maxw 14 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=            8    maxw=           14
+nsites: minsites=       10    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             175    N=              10
+sample: seed=           10    hsfrac=          0
+        searchsize=    175    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.24 C 0.286 G 0.217 T 0.257 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CARRHTYTGMHS MEME-1	width =  12  sites =  10  llr = 74  E-value = 1.5e-005
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CARRHTYTGMHS MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  283642:::53:
+pos.-specific     C  8:::21411446
+probability       G  :1541:::8::4
+matrix            T  :12:3769113:
+
+         bits    2.0             
+                 1.8             
+                 1.6        *    
+                 1.4        *    
+Relative         1.2 *      *    
+Entropy          1.0 ** *  ***  *
+(10.7 bits)      0.8 ** * ****  *
+                 0.6 **** ***** *
+                 0.4 **** *******
+                 0.2 ************
+                 0.0 ------------
+
+Multilevel           CAGAATTTGACC
+consensus            A AGTAC  CAG
+sequence               T C     T 
+                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CARRHTYTGMHS MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                Site  
+-------------             ----- ---------            ------------
+SrsR_7                        5  2.31e-06       gcaT CAAAATCTGAcc c         
+SrsR_4                        5  5.26e-06       ccgT CAAAATTTGAtg c         
+SrsR_5                        5  5.96e-06       ctgT CAGACTCTGAcc c         
+SrsR_6                        5  6.55e-06       ccgT CAAAATCTGAcg c         
+SrsR_1                        5  1.27e-05       ggcG CAGGTTTTGCtg g         
+SrsR_8                        5  1.21e-04       ctcG CTGGTTTTGCac t         
+SrsR_0                        5  3.32e-04       tgaA AAGGCATTGCcg t         
+SrsR_2                        5  5.99e-04       gtgA CGGATTTCGCac c         
+SrsR_3                        5  1.94e-03       acaG CATAACCTTTac a         
+SrsR_9                       11  2.23e-03 cctGATGCAC AATGGATTCatc           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CARRHTYTGMHS MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SrsR_7                            2.3e-06  4_[+1]_1
+SrsR_4                            5.3e-06  4_[+1]_1
+SrsR_5                              6e-06  4_[+1]_1
+SrsR_6                            6.5e-06  4_[+1]_1
+SrsR_1                            1.3e-05  4_[+1]_1
+SrsR_8                            0.00012  4_[+1]_1
+SrsR_0                            0.00033  4_[+1]_1
+SrsR_2                             0.0006  4_[+1]_1
+SrsR_3                             0.0019  4_[+1]_1
+SrsR_9                             0.0022  10_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CARRHTYTGMHS MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CARRHTYTGMHS width=12 seqs=10
+SrsR_7                   (    5) CAAAATCTGACC  1 
+SrsR_4                   (    5) CAAAATTTGATG  1 
+SrsR_5                   (    5) CAGACTCTGACC  1 
+SrsR_6                   (    5) CAAAATCTGACG  1 
+SrsR_1                   (    5) CAGGTTTTGCTG  1 
+SrsR_8                   (    5) CTGGTTTTGCAC  1 
+SrsR_0                   (    5) AAGGCATTGCCG  1 
+SrsR_2                   (    5) CGGATTTCGCAC  1 
+SrsR_3                   (    5) CATAACCTTTAC  1 
+SrsR_9                   (   11) AATGGATTCATC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CARRHTYTGMHS MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 12 n= 65 bayes= 2.45943 E= 1.5e-005 
+   -30    165   -997   -997 
+   170   -997   -134   -130 
+    29   -997     98    -30 
+   129   -997     65   -997 
+    70    -34   -134     29 
+   -30   -134   -997    151 
+  -997     65   -997    129 
+  -997   -134   -997    187 
+  -997   -134    165   -130 
+   102     65   -997   -130 
+    29     65   -997     29 
+  -997    124     65   -997 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CARRHTYTGMHS MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 12 nsites= 10 E= 1.5e-005 
+ 0.200000  0.800000  0.000000  0.000000 
+ 0.800000  0.000000  0.100000  0.100000 
+ 0.300000  0.000000  0.500000  0.200000 
+ 0.600000  0.000000  0.400000  0.000000 
+ 0.400000  0.200000  0.100000  0.300000 
+ 0.200000  0.100000  0.000000  0.700000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.000000  0.100000  0.000000  0.900000 
+ 0.000000  0.100000  0.800000  0.100000 
+ 0.500000  0.400000  0.000000  0.100000 
+ 0.300000  0.400000  0.000000  0.300000 
+ 0.000000  0.600000  0.400000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CARRHTYTGMHS MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CA]A[GAT][AG][ATC][TA][TC]TG[AC][CAT][CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.21 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+SrsR_0                           1.99e-03  17
+SrsR_1                           7.62e-05  4_[+1(1.27e-05)]_1
+SrsR_2                           3.59e-03  17
+SrsR_3                           1.16e-02  17
+SrsR_4                           3.16e-05  4_[+1(5.26e-06)]_1
+SrsR_5                           3.58e-05  4_[+1(5.96e-06)]_1
+SrsR_6                           3.93e-05  4_[+1(6.55e-06)]_1
+SrsR_7                           1.39e-05  4_[+1(2.31e-06)]_1
+SrsR_8                           7.26e-04  17
+SrsR_9                           2.43e-02  22
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

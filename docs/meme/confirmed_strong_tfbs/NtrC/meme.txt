@@ -1,0 +1,254 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= NtrC/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+NtrC_0                   1.0000     24  NtrC_1                   1.0000     23  
+NtrC_2                   1.0000     23  NtrC_3                   1.0000     23  
+NtrC_4                   1.0000     23  NtrC_5                   1.0000     23  
+NtrC_6                   1.0000     23  NtrC_7                   1.0000     23  
+NtrC_8                   1.0000     23  NtrC_9                   1.0000     23  
+NtrC_10                  1.0000     23  NtrC_11                  1.0000     23  
+NtrC_12                  1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme NtrC/ri_sites.fasta -oc NtrC/./ -mod oops -nmotifs 1 -minw 14 -maxw 20 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           14    maxw=           20
+nsites: minsites=       13    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             300    N=              13
+sample: seed=           10    hsfrac=          0
+        searchsize=    300    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.263 C 0.253 G 0.243 T 0.24 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TGCMCHANWWTGGTGCA MEME-1	width =  17  sites =  13  llr = 136  E-value = 7.6e-020
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TGCMCHANWWTGGTGCA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  21:4228355:1::::6
+pos.-specific     C  117465222::1:2:a1
+probability       G  162111:222:8a:a:2
+matrix            T  6222221323a1:8::1
+
+         bits    2.0           * * ** 
+                 1.8           * * ** 
+                 1.6           * * ** 
+                 1.4           * * ** 
+Relative         1.2           * **** 
+Entropy          1.0       *   * **** 
+(15.1 bits)      0.8   *   *   ****** 
+                 0.6 * *   *  ********
+                 0.4 *** * *  ********
+                 0.2 ******* *********
+                 0.0 -----------------
+
+Multilevel           TGCACCAAAATGGTGCA
+consensus            AT C A TTT   C  G
+sequence                  T G         
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCMCHANWWTGGTGCA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+NtrC_7                        4  3.52e-10        tgg TGCCCCAGAATGGTGCA tct       
+NtrC_5                        4  1.39e-09        taa TGCACTAAAATGGTGCA acc       
+NtrC_4                        4  3.47e-08        tga AGCACTATATTGGTGCA aca       
+NtrC_3                        4  1.75e-07        cat TGCACCAACATGGTGCT taa       
+NtrC_12                       4  1.10e-06        cgc TGCGTCAGAATGGCGCA gta       
+NtrC_6                        4  2.05e-06        tag CGCACCAGATTGGTGCC cca       
+NtrC_9                        4  3.75e-06        gag TGCACAATTTTAGCGCA cca       
+NtrC_11                       4  4.49e-06        aaa TGCCCGCTTTTGGTGCG cgc       
+NtrC_2                        4  1.86e-05        aac ATTCACATCGTGGTGCA gcc       
+NtrC_10                       4  3.69e-05        atg ATGTCAACGATGGCGCA aaa       
+NtrC_1                        4  4.20e-05        ccc TTTTGCACGATGGTGCG cat       
+NtrC_8                        4  2.08e-04        att GCCCTATAAATCGTGCA tca       
+NtrC_0                        4  4.00e-04        gca TAGCATCATGTTGTGCG Gata      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCMCHANWWTGGTGCA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NtrC_7                            3.5e-10  3_[+1]_3
+NtrC_5                            1.4e-09  3_[+1]_3
+NtrC_4                            3.5e-08  3_[+1]_3
+NtrC_3                            1.7e-07  3_[+1]_3
+NtrC_12                           1.1e-06  3_[+1]_3
+NtrC_6                            2.1e-06  3_[+1]_3
+NtrC_9                            3.7e-06  3_[+1]_3
+NtrC_11                           4.5e-06  3_[+1]_3
+NtrC_2                            1.9e-05  3_[+1]_3
+NtrC_10                           3.7e-05  3_[+1]_3
+NtrC_1                            4.2e-05  3_[+1]_3
+NtrC_8                            0.00021  3_[+1]_3
+NtrC_0                             0.0004  3_[+1]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCMCHANWWTGGTGCA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TGCMCHANWWTGGTGCA width=17 seqs=13
+NtrC_7                   (    4) TGCCCCAGAATGGTGCA  1 
+NtrC_5                   (    4) TGCACTAAAATGGTGCA  1 
+NtrC_4                   (    4) AGCACTATATTGGTGCA  1 
+NtrC_3                   (    4) TGCACCAACATGGTGCT  1 
+NtrC_12                  (    4) TGCGTCAGAATGGCGCA  1 
+NtrC_6                   (    4) CGCACCAGATTGGTGCC  1 
+NtrC_9                   (    4) TGCACAATTTTAGCGCA  1 
+NtrC_11                  (    4) TGCCCGCTTTTGGTGCG  1 
+NtrC_2                   (    4) ATTCACATCGTGGTGCA  1 
+NtrC_10                  (    4) ATGTCAACGATGGCGCA  1 
+NtrC_1                   (    4) TTTTGCACGATGGTGCG  1 
+NtrC_8                   (    4) GCCCTATAAATCGTGCA  1 
+NtrC_0                   (    4) TAGCATCATGTTGTGCG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCMCHANWWTGGTGCA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 92 bayes= 2.60334 E= 7.6e-020 
+    -9   -172   -172    132 
+  -167   -172    128     -9 
+ -1035    145    -72    -68 
+    64     60   -172    -68 
+   -68    128   -172    -68 
+    -9     86   -172     -9 
+   164    -72  -1035   -167 
+    32    -72    -14     32 
+    91    -72    -72     -9 
+   113  -1035    -72     32 
+ -1035  -1035  -1035    202 
+  -167   -172    160   -167 
+ -1035  -1035    198  -1035 
+ -1035    -14  -1035    164 
+ -1035  -1035    198  -1035 
+ -1035    198  -1035  -1035 
+   132   -172    -14   -167 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCMCHANWWTGGTGCA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 13 E= 7.6e-020 
+ 0.230769  0.076923  0.076923  0.615385 
+ 0.076923  0.076923  0.615385  0.230769 
+ 0.000000  0.692308  0.153846  0.153846 
+ 0.384615  0.384615  0.076923  0.153846 
+ 0.153846  0.615385  0.076923  0.153846 
+ 0.230769  0.461538  0.076923  0.230769 
+ 0.769231  0.153846  0.000000  0.076923 
+ 0.307692  0.153846  0.230769  0.307692 
+ 0.461538  0.153846  0.153846  0.230769 
+ 0.538462  0.000000  0.153846  0.307692 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.076923  0.076923  0.769231  0.076923 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.230769  0.000000  0.769231 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.615385  0.076923  0.230769  0.076923 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TGCMCHANWWTGGTGCA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][GT]C[AC]C[CAT]A[ATG][AT][AT]TGG[TC]GC[AG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+NtrC_0                           3.19e-03  24
+NtrC_1                           2.94e-04  3_[+1(4.20e-05)]_3
+NtrC_2                           1.30e-04  3_[+1(1.86e-05)]_3
+NtrC_3                           1.22e-06  3_[+1(1.75e-07)]_3
+NtrC_4                           2.43e-07  3_[+1(3.47e-08)]_3
+NtrC_5                           9.71e-09  3_[+1(1.39e-09)]_3
+NtrC_6                           1.44e-05  3_[+1(2.05e-06)]_3
+NtrC_7                           2.47e-09  3_[+1(3.52e-10)]_3
+NtrC_8                           1.45e-03  23
+NtrC_9                           2.62e-05  3_[+1(3.75e-06)]_3
+NtrC_10                          2.59e-04  3_[+1(3.69e-05)]_3
+NtrC_11                          3.14e-05  3_[+1(4.49e-06)]_3
+NtrC_12                          7.73e-06  3_[+1(1.10e-06)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

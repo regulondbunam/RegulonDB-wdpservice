@@ -1,0 +1,276 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= IscR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+IscR_0                   1.0000     31  IscR_1                   1.0000     31  
+IscR_2                   1.0000     31  IscR_3                   1.0000     31  
+IscR_4                   1.0000     31  IscR_5                   1.0000     31  
+IscR_6                   1.0000     31  IscR_7                   1.0000     31  
+IscR_8                   1.0000     31  IscR_9                   1.0000     31  
+IscR_10                  1.0000     31  IscR_11                  1.0000     31  
+IscR_12                  1.0000     31  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme IscR/ri_sites.fasta -oc IscR/./ -mod oops -nmotifs 1 -minw 22 -maxw 28 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           22    maxw=           28
+nsites: minsites=       13    maxsites=       13    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             403    N=              13
+sample: seed=           10    hsfrac=          0
+        searchsize=    403    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.335 C 0.181 G 0.176 T 0.308 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TAWANCYRHHYWRWWTRBKVGGKTATDW MEME-1	width =  28  sites =  13  llr = 151  E-value = 6.6e-016
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TAWANCYRHHYWRWWTRBKVGGKTATDW MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2958211554:564316:2422125235
+pos.-specific     C  1111276223621112:322:12:2112
+probability       G  2:::3::2::123::14232765:1:3:
+matrix            T  5:5122323332:566:54221382734
+
+         bits    2.0                             
+                 1.8                             
+                 1.6  *                          
+                 1.4  *                          
+Relative         1.2  * *                   *    
+Entropy          1.0  * *            *      *    
+(16.8 bits)      0.8  * * **   * *** *   *  * *  
+                 0.6  *** **   * *****   *  * * *
+                 0.4 **** ** *** ******  ** *** *
+                 0.2 **** ************** ********
+                 0.0 ----------------------------
+
+Multilevel           TAAAGCCAAACAATTTATTAGGGTATAA
+consensus            A T ATTGTCTTGAACGCGC ATATAGT
+sequence                 C   CT       G G      T 
+                         T                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWANCYRHHYWRWWTRBKVGGKTATDW MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site          
+-------------             ----- ---------            ----------------------------
+IscR_6                        3  6.50e-09         ta aATAGTTGACCAATTTACTCGGGAATgt c         
+IscR_3                        4  2.77e-08        aga TAAATCCACACAGTTTGTATTGTTTtgt           
+IscR_1                        1  2.77e-08          . taaATCCACACAGTTTGTATTGTTTTGT gca       
+IscR_10                       3  3.14e-08         at tATAACCAACTAAAATAGTCAACTATta g         
+IscR_9                        3  4.01e-08         ag aATACTTGAACGAAATACCAGGGTATta g         
+IscR_2                        3  9.08e-08         ca tAAAGCCTTATTATTGATGAGGCTATca t         
+IscR_8                        3  4.85e-07         gc gATAACCCTTCTGTTTGCTGGTGTTTaa g         
+IscR_5                        3  5.87e-07         ta aATACCCGACTAAATCAGTCAAGTAAat a         
+IscR_0                        3  7.79e-07         ag cAAATCAATACACTTCAGGGGGGTATta t         
+IscR_7                        3  6.65e-06         tt tATAACCATTTGAAATGTGAGCAAAAgc c         
+IscR_4                        2  9.51e-06          g taAAGCCCCTGCGTTTGCTGGGTTGAAc tg        
+IscR_11                       1  2.36e-04          . gccTGTTAACCCACACATCAGGGTCTAT gct       
+IscR_12                       3  4.00e-04         aa tAACCATTATCTAACAATGAGATACCta a         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWANCYRHHYWRWWTRBKVGGKTATDW MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+IscR_6                            6.5e-09  2_[+1]_1
+IscR_3                            2.8e-08  3_[+1]
+IscR_1                            2.8e-08  [+1]_3
+IscR_10                           3.1e-08  2_[+1]_1
+IscR_9                              4e-08  2_[+1]_1
+IscR_2                            9.1e-08  2_[+1]_1
+IscR_8                            4.8e-07  2_[+1]_1
+IscR_5                            5.9e-07  2_[+1]_1
+IscR_0                            7.8e-07  2_[+1]_1
+IscR_7                            6.7e-06  2_[+1]_1
+IscR_4                            9.5e-06  1_[+1]_2
+IscR_11                           0.00024  [+1]_3
+IscR_12                            0.0004  2_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWANCYRHHYWRWWTRBKVGGKTATDW MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TAWANCYRHHYWRWWTRBKVGGKTATDW width=28 seqs=13
+IscR_6                   (    3) AATAGTTGACCAATTTACTCGGGAATGT  1 
+IscR_3                   (    4) TAAATCCACACAGTTTGTATTGTTTTGT  1 
+IscR_1                   (    1) TAAATCCACACAGTTTGTATTGTTTTGT  1 
+IscR_10                  (    3) TATAACCAACTAAAATAGTCAACTATTA  1 
+IscR_9                   (    3) AATACTTGAACGAAATACCAGGGTATTA  1 
+IscR_2                   (    3) TAAAGCCTTATTATTGATGAGGCTATCA  1 
+IscR_8                   (    3) GATAACCCTTCTGTTTGCTGGTGTTTAA  1 
+IscR_5                   (    3) AATACCCGACTAAATCAGTCAAGTAAAT  1 
+IscR_0                   (    3) CAAATCAATACACTTCAGGGGGGTATTA  1 
+IscR_7                   (    3) TATAACCATTTGAAATGTGAGCAAAAGC  1 
+IscR_4                   (    2) TAAAGCCCCTGCGTTTGCTGGGTTGAAC  1 
+IscR_11                  (    1) GCCTGTTAACCCACACATCAGGGTCTAT  1 
+IscR_12                  (    3) TAACCATTATCTAACAATGAGATACCTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWANCYRHHYWRWWTRBKVGGKTATDW MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 28 n= 52 bayes= 1.58496 E= 6.6e-016 
+    -9   -172    -72    113 
+   191   -172  -1035  -1035 
+    91   -172  -1035     91 
+   178   -172  -1035   -167 
+    -9    -14     28     -9 
+  -167    145  -1035     -9 
+  -167    128  -1035     32 
+    91    -72    -14    -68 
+    91    -14  -1035     32 
+    64     28  -1035     32 
+ -1035    128   -172     32 
+    91    -72    -72     -9 
+   132   -172     28  -1035 
+    64   -172  -1035    113 
+    32   -172  -1035    132 
+  -167    -14   -172    132 
+   132  -1035     60  -1035 
+ -1035     28    -14     91 
+   -68    -72     28     64 
+    64    -14    -14    -68 
+   -68  -1035    145    -68 
+    -9   -172    128   -167 
+  -167    -72     86     32 
+    -9  -1035  -1035    164 
+   113    -72   -172     -9 
+    -9   -172  -1035    149 
+    32   -172     28     32 
+    91    -72  -1035     64 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWANCYRHHYWRWWTRBKVGGKTATDW MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 28 nsites= 13 E= 6.6e-016 
+ 0.230769  0.076923  0.153846  0.538462 
+ 0.923077  0.076923  0.000000  0.000000 
+ 0.461538  0.076923  0.000000  0.461538 
+ 0.846154  0.076923  0.000000  0.076923 
+ 0.230769  0.230769  0.307692  0.230769 
+ 0.076923  0.692308  0.000000  0.230769 
+ 0.076923  0.615385  0.000000  0.307692 
+ 0.461538  0.153846  0.230769  0.153846 
+ 0.461538  0.230769  0.000000  0.307692 
+ 0.384615  0.307692  0.000000  0.307692 
+ 0.000000  0.615385  0.076923  0.307692 
+ 0.461538  0.153846  0.153846  0.230769 
+ 0.615385  0.076923  0.307692  0.000000 
+ 0.384615  0.076923  0.000000  0.538462 
+ 0.307692  0.076923  0.000000  0.615385 
+ 0.076923  0.230769  0.076923  0.615385 
+ 0.615385  0.000000  0.384615  0.000000 
+ 0.000000  0.307692  0.230769  0.461538 
+ 0.153846  0.153846  0.307692  0.384615 
+ 0.384615  0.230769  0.230769  0.153846 
+ 0.153846  0.000000  0.692308  0.153846 
+ 0.230769  0.076923  0.615385  0.076923 
+ 0.076923  0.153846  0.461538  0.307692 
+ 0.230769  0.000000  0.000000  0.769231 
+ 0.538462  0.153846  0.076923  0.230769 
+ 0.230769  0.076923  0.000000  0.692308 
+ 0.307692  0.076923  0.307692  0.307692 
+ 0.461538  0.153846  0.000000  0.384615 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TAWANCYRHHYWRWWTRBKVGGKTATDW MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]A[AT]A[GACT][CT][CT][AG][ATC][ACT][CT][AT][AG][TA][TA][TC][AG][TCG][TG][ACG]G[GA][GT][TA][AT][TA][AGT][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.25 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+IscR_0                           3.11e-06  2_[+1(7.79e-07)]_1
+IscR_1                           1.11e-07  [+1(2.77e-08)]_3
+IscR_2                           3.63e-07  2_[+1(9.08e-08)]_1
+IscR_3                           1.11e-07  3_[+1(2.77e-08)]
+IscR_4                           3.81e-05  1_[+1(9.51e-06)]_2
+IscR_5                           2.35e-06  2_[+1(5.87e-07)]_1
+IscR_6                           2.60e-08  2_[+1(6.50e-09)]_1
+IscR_7                           2.66e-05  2_[+1(6.65e-06)]_1
+IscR_8                           1.94e-06  2_[+1(4.85e-07)]_1
+IscR_9                           1.60e-07  2_[+1(4.01e-08)]_1
+IscR_10                          1.26e-07  2_[+1(3.14e-08)]_1
+IscR_11                          9.46e-04  31
+IscR_12                          1.60e-03  31
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

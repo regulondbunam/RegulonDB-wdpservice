@@ -1,0 +1,285 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= PurR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+PurR_0                   1.0000     22  PurR_1                   1.0000     22  
+PurR_2                   1.0000     22  PurR_3                   1.0000     22  
+PurR_4                   1.0000     22  PurR_5                   1.0000     22  
+PurR_6                   1.0000     22  PurR_7                   1.0000     22  
+PurR_8                   1.0000     22  PurR_9                   1.0000     22  
+PurR_10                  1.0000     22  PurR_11                  1.0000     22  
+PurR_12                  1.0000     22  PurR_13                  1.0000     22  
+PurR_14                  1.0000     22  PurR_15                  1.0000     22  
+PurR_16                  1.0000     22  PurR_17                  1.0000     22  
+PurR_18                  1.0000     22  PurR_19                  1.0000     22  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme PurR/ri_sites.fasta -oc PurR/./ -mod oops -nmotifs 1 -minw 13 -maxw 19 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           13    maxw=           19
+nsites: minsites=       20    maxsites=       20    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             440    N=              20
+sample: seed=           10    hsfrac=          0
+        searchsize=    440    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.268 C 0.232 G 0.225 T 0.275 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ASGCAAACGTTTDCSTT MEME-1	width =  17  sites =  20  llr = 276  E-value = 2.4e-071
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ASGCAAACGTTTDCSTT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  82:3aa7::1::2:111
+pos.-specific     C  15:7::1a::::19331
+probability       G  23a:::1:a311315:2
+matrix            T  11:1::2::7aa41276
+
+         bits    2.0   * ** **        
+                 1.8   * ** ** **     
+                 1.6   * ** ** **     
+                 1.4   * ** ** ** *   
+Relative         1.2   * ** ** ** *   
+Entropy          1.0   **** ** ** *   
+(19.9 bits)      0.8 * **** ***** * * 
+                 0.6 * ********** * * 
+                 0.4 * ********** * **
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           ACGCAAACGTTTTCGTT
+consensus             G A     G  G CCG
+sequence              A          A    
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASGCAAACGTTTDCSTT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+PurR_0                        4  5.54e-11        cac ACGCAAACGTTTTCGTt ta        
+PurR_6                        5  7.81e-10       cccT ACGCAAACGTTTTCTtt t         
+PurR_2                        4  1.79e-09        gtt GCGCAAACGTTTTCGTt ac        
+PurR_10                       4  4.15e-09        taa AGGCAAACGTTTACCTt gc        
+PurR_8                        4  1.15e-08        gcc ACGCAACCGTTTTCCTt gc        
+PurR_3                        4  1.31e-08        tcc ACGCAAACGGTTTCGTc ag        
+PurR_15                       4  5.34e-08        cgc AAGAAAACGTTTTCGCg ag        
+PurR_5                        4  5.97e-08        ccg ACGCAATCGGTTACCTt ga        
+PurR_4                        4  6.64e-08        caa AGGAAAACGTTTCCGCt ta        
+PurR_12                       4  8.19e-08        gtc TCGCAAACGTTTGCTTt cc        
+PurR_7                        4  1.48e-07        gtt CGGAAAACGTTTGCGTt tt        
+PurR_1                        4  2.14e-07        gat ACGCAAACGTGTGCGTc tg        
+PurR_17                       4  3.89e-07        tag ATGCAATCGGTTACGCt ct        
+PurR_11                       4  7.26e-07        aac GAGCAAACGTTTCCACt ac        
+PurR_14                       4  1.04e-06        tga AGGTAATCGTTTGCGTa aa        
+PurR_16                       4  2.13e-06        aaa AAGAAACCGGTTGCGCa gt        
+PurR_13                       4  2.26e-06        gct GCGCAAGCGTTTTCCAg aa        
+PurR_9                        4  2.26e-06        tgg ATGCAAACGATTTCAAg ga        
+PurR_18                       4  3.19e-06        ttg AGGAAAACGATTGGCTg aa        
+PurR_19                       4  5.38e-06        ttt AAGCAAACGGTGATTTt ga        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASGCAAACGTTTDCSTT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PurR_0                            5.5e-11  3_[+1]_2
+PurR_6                            7.8e-10  4_[+1]_1
+PurR_2                            1.8e-09  3_[+1]_2
+PurR_10                           4.2e-09  3_[+1]_2
+PurR_8                            1.1e-08  3_[+1]_2
+PurR_3                            1.3e-08  3_[+1]_2
+PurR_15                           5.3e-08  3_[+1]_2
+PurR_5                              6e-08  3_[+1]_2
+PurR_4                            6.6e-08  3_[+1]_2
+PurR_12                           8.2e-08  3_[+1]_2
+PurR_7                            1.5e-07  3_[+1]_2
+PurR_1                            2.1e-07  3_[+1]_2
+PurR_17                           3.9e-07  3_[+1]_2
+PurR_11                           7.3e-07  3_[+1]_2
+PurR_14                             1e-06  3_[+1]_2
+PurR_16                           2.1e-06  3_[+1]_2
+PurR_13                           2.3e-06  3_[+1]_2
+PurR_9                            2.3e-06  3_[+1]_2
+PurR_18                           3.2e-06  3_[+1]_2
+PurR_19                           5.4e-06  3_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASGCAAACGTTTDCSTT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ASGCAAACGTTTDCSTT width=17 seqs=20
+PurR_0                   (    4) ACGCAAACGTTTTCGTT  1 
+PurR_6                   (    5) ACGCAAACGTTTTCTTT  1 
+PurR_2                   (    4) GCGCAAACGTTTTCGTT  1 
+PurR_10                  (    4) AGGCAAACGTTTACCTT  1 
+PurR_8                   (    4) ACGCAACCGTTTTCCTT  1 
+PurR_3                   (    4) ACGCAAACGGTTTCGTC  1 
+PurR_15                  (    4) AAGAAAACGTTTTCGCG  1 
+PurR_5                   (    4) ACGCAATCGGTTACCTT  1 
+PurR_4                   (    4) AGGAAAACGTTTCCGCT  1 
+PurR_12                  (    4) TCGCAAACGTTTGCTTT  1 
+PurR_7                   (    4) CGGAAAACGTTTGCGTT  1 
+PurR_1                   (    4) ACGCAAACGTGTGCGTC  1 
+PurR_17                  (    4) ATGCAATCGGTTACGCT  1 
+PurR_11                  (    4) GAGCAAACGTTTCCACT  1 
+PurR_14                  (    4) AGGTAATCGTTTGCGTA  1 
+PurR_16                  (    4) AAGAAACCGGTTGCGCA  1 
+PurR_13                  (    4) GCGCAAGCGTTTTCCAG  1 
+PurR_9                   (    4) ATGCAAACGATTTCAAG  1 
+PurR_18                  (    4) AGGAAAACGATTGGCTG  1 
+PurR_19                  (    4) AAGCAAACGGTGATTTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASGCAAACGTTTDCSTT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 120 bayes= 2.32193 E= 2.4e-071 
+   161   -234    -76   -230 
+   -30     82     -2   -130 
+ -1097  -1097    198  -1097 
+     2    146  -1097   -230 
+   202  -1097  -1097  -1097 
+   202  -1097  -1097  -1097 
+   151   -134   -234    -71 
+ -1097    198  -1097  -1097 
+ -1097  -1097    198  -1097 
+  -130  -1097     -2    140 
+ -1097  -1097   -234    195 
+ -1097  -1097   -234    195 
+   -30   -134     24     70 
+ -1097    182   -234   -230 
+  -130     -2     98    -71 
+  -130     -2  -1097    140 
+  -130   -134    -34    129 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASGCAAACGTTTDCSTT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 20 E= 2.4e-071 
+ 0.750000  0.050000  0.150000  0.050000 
+ 0.200000  0.450000  0.250000  0.100000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.250000  0.700000  0.000000  0.050000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.700000  0.100000  0.050000  0.150000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.100000  0.000000  0.250000  0.650000 
+ 0.000000  0.000000  0.050000  0.950000 
+ 0.000000  0.000000  0.050000  0.950000 
+ 0.200000  0.100000  0.300000  0.400000 
+ 0.000000  0.900000  0.050000  0.050000 
+ 0.100000  0.250000  0.500000  0.150000 
+ 0.100000  0.250000  0.000000  0.650000 
+ 0.100000  0.100000  0.200000  0.600000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ASGCAAACGTTTDCSTT MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[CGA]G[CA]AAACG[TG]TT[TGA]C[GC][TC][TG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+PurR_0                           3.32e-10  3_[+1(5.54e-11)]_2
+PurR_1                           1.29e-06  3_[+1(2.14e-07)]_2
+PurR_2                           1.07e-08  3_[+1(1.79e-09)]_2
+PurR_3                           7.84e-08  3_[+1(1.31e-08)]_2
+PurR_4                           3.98e-07  3_[+1(6.64e-08)]_2
+PurR_5                           3.58e-07  3_[+1(5.97e-08)]_2
+PurR_6                           4.68e-09  4_[+1(7.81e-10)]_1
+PurR_7                           8.91e-07  3_[+1(1.48e-07)]_2
+PurR_8                           6.90e-08  3_[+1(1.15e-08)]_2
+PurR_9                           1.35e-05  3_[+1(2.26e-06)]_2
+PurR_10                          2.49e-08  3_[+1(4.15e-09)]_2
+PurR_11                          4.36e-06  3_[+1(7.26e-07)]_2
+PurR_12                          4.92e-07  3_[+1(8.19e-08)]_2
+PurR_13                          1.35e-05  3_[+1(2.26e-06)]_2
+PurR_14                          6.23e-06  3_[+1(1.04e-06)]_2
+PurR_15                          3.20e-07  3_[+1(5.34e-08)]_2
+PurR_16                          1.28e-05  3_[+1(2.13e-06)]_2
+PurR_17                          2.33e-06  3_[+1(3.89e-07)]_2
+PurR_18                          1.91e-05  3_[+1(3.19e-06)]_2
+PurR_19                          3.23e-05  3_[+1(5.38e-06)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

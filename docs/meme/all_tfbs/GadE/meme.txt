@@ -1,0 +1,236 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= GadE/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+GadE_0                   1.0000     26  GadE_1                   1.0000     26  
+GadE_2                   1.0000     26  GadE_3                   1.0000     26  
+GadE_4                   1.0000     26  GadE_5                   1.0000     26  
+GadE_6                   1.0000     26  GadE_7                   1.0000     26  
+GadE_8                   1.0000     26  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme GadE/ri_sites.fasta -oc GadE/./ -mod oops -nmotifs 1 -minw 17 -maxw 23 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           17    maxw=           23
+nsites: minsites=        9    maxsites=        9    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             234    N=               9
+sample: seed=           10    hsfrac=          0
+        searchsize=    234    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.303 C 0.132 G 0.15 T 0.415 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TADDADTTTVHTAWTTA MEME-1	width =  17  sites =   9  llr = 86  E-value = 6.3e-005
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TADDADTTTVHTAWTTA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  163273:1233:832:6
+pos.-specific     C  :2::2::1:2312:1:1
+probability       G  ::44:21:23:::1:21
+matrix            T  922314986139:6782
+
+         bits    2.0                  
+                 1.8                  
+                 1.6 *                
+                 1.4 *     *    *     
+Relative         1.2 *     *    **  * 
+Entropy          1.0 *     **   **  * 
+(13.8 bits)      0.8 *   * **   ** ** 
+                 0.6 **  * ***  ***** 
+                 0.4 ********* *******
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           TAGGATTTTAATATTTA
+consensus             CATCA  AGC CAAGT
+sequence              TTA G  GCT      
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TADDADTTTVHTAWTTA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+GadE_5                        5  2.40e-10       acaT TAGGATTTTGTTATTTA AAcac     
+GadE_7                        5  1.97e-06       cttA TAGGCGTTTACTATATT GAaca     
+GadE_0                       10  1.97e-06  tcgATTTAA TAAAAATTTCCTAAttg           
+GadE_6                        5  4.71e-06       taaC TTTTTGTTTGCTATTTA CAagc     
+GadE_4                        6  2.03e-05      ttgTG TCAGATTTTTTTATCTC Ctga      
+GadE_3                        6  5.32e-05      cagTG TCGAAATTGATTCGTGA Cggc      
+GadE_8                        5  5.69e-05       ggaC AAGGATGTAAATAATGA AAagg     
+GadE_1                        4  6.08e-05        aat TAATCTTAGGATAAATT TTTatt    
+GadE_2                        6  2.00e-04      tgtTT TTTTAATCACACCTTTA Tcct      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TADDADTTTVHTAWTTA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GadE_5                            2.4e-10  4_[+1]_5
+GadE_7                              2e-06  4_[+1]_5
+GadE_0                              2e-06  9_[+1]
+GadE_6                            4.7e-06  4_[+1]_5
+GadE_4                              2e-05  5_[+1]_4
+GadE_3                            5.3e-05  5_[+1]_4
+GadE_8                            5.7e-05  4_[+1]_5
+GadE_1                            6.1e-05  3_[+1]_6
+GadE_2                             0.0002  5_[+1]_4
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TADDADTTTVHTAWTTA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TADDADTTTVHTAWTTA width=17 seqs=9
+GadE_5                   (    5) TAGGATTTTGTTATTTA  1 
+GadE_7                   (    5) TAGGCGTTTACTATATT  1 
+GadE_0                   (   10) TAAAAATTTCCTAATTG  1 
+GadE_6                   (    5) TTTTTGTTTGCTATTTA  1 
+GadE_4                   (    6) TCAGATTTTTTTATCTC  1 
+GadE_3                   (    6) TCGAAATTGATTCGTGA  1 
+GadE_8                   (    5) AAGGATGTAAATAATGA  1 
+GadE_1                   (    4) TAATCTTAGGATAAATT  1 
+GadE_2                   (    6) TTTTAATCACACCTTTA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TADDADTTTVHTAWTTA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 90 bayes= 3.16993 E= 6.3e-005 
+  -114   -982   -982    185 
+   117    -19   -982    -15 
+    44   -982     81    -15 
+   -15   -982     81     44 
+   144    -19   -982   -114 
+    44   -982    -19     85 
+  -982   -982   -119    185 
+  -114   -119   -982    166 
+   -15   -982    -19    117 
+    44    -19     39   -114 
+    44     39   -982     44 
+  -982   -119   -982    185 
+   166    -19   -982   -982 
+    44   -982   -119    117 
+   -15   -119   -982    144 
+  -982   -982    -19    166 
+   117   -119   -119    -15 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TADDADTTTVHTAWTTA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 9 E= 6.3e-005 
+ 0.111111  0.000000  0.000000  0.888889 
+ 0.555556  0.222222  0.000000  0.222222 
+ 0.333333  0.000000  0.444444  0.222222 
+ 0.222222  0.000000  0.444444  0.333333 
+ 0.666667  0.222222  0.000000  0.111111 
+ 0.333333  0.000000  0.222222  0.444444 
+ 0.000000  0.000000  0.111111  0.888889 
+ 0.111111  0.111111  0.000000  0.777778 
+ 0.222222  0.000000  0.222222  0.555556 
+ 0.333333  0.222222  0.333333  0.111111 
+ 0.333333  0.333333  0.000000  0.333333 
+ 0.000000  0.111111  0.000000  0.888889 
+ 0.777778  0.222222  0.000000  0.000000 
+ 0.333333  0.000000  0.111111  0.555556 
+ 0.222222  0.111111  0.000000  0.666667 
+ 0.000000  0.000000  0.222222  0.777778 
+ 0.555556  0.111111  0.111111  0.222222 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TADDADTTTVHTAWTTA MEME-1 regular expression
+--------------------------------------------------------------------------------
+T[ACT][GAT][GTA][AC][TAG]TT[TAG][AGC][ACT]T[AC][TA][TA][TG][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.21 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+GadE_0                           1.97e-05  9_[+1(1.97e-06)]
+GadE_1                           6.08e-04  3_[+1(6.08e-05)]_6
+GadE_2                           2.00e-03  26
+GadE_3                           5.32e-04  5_[+1(5.32e-05)]_4
+GadE_4                           2.03e-04  5_[+1(2.03e-05)]_4
+GadE_5                           2.40e-09  4_[+1(2.40e-10)]_5
+GadE_6                           4.71e-05  4_[+1(4.71e-06)]_5
+GadE_7                           1.97e-05  4_[+1(1.97e-06)]_5
+GadE_8                           5.69e-04  4_[+1(5.69e-05)]_5
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

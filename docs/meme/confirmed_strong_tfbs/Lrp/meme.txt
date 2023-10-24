@@ -1,0 +1,758 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= Lrp/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Lrp_0                    1.0000     22  Lrp_1                    1.0000     22  
+Lrp_2                    1.0000     22  Lrp_3                    1.0000     21  
+Lrp_4                    1.0000     21  Lrp_5                    1.0000     21  
+Lrp_6                    1.0000     21  Lrp_7                    1.0000     21  
+Lrp_8                    1.0000     21  Lrp_9                    1.0000     21  
+Lrp_10                   1.0000     21  Lrp_11                   1.0000     21  
+Lrp_12                   1.0000     21  Lrp_13                   1.0000     21  
+Lrp_14                   1.0000     21  Lrp_15                   1.0000     18  
+Lrp_16                   1.0000     18  Lrp_17                   1.0000     18  
+Lrp_18                   1.0000     18  Lrp_19                   1.0000     18  
+Lrp_20                   1.0000     18  Lrp_21                   1.0000     21  
+Lrp_22                   1.0000     21  Lrp_23                   1.0000     21  
+Lrp_24                   1.0000     21  Lrp_25                   1.0000     21  
+Lrp_26                   1.0000     21  Lrp_27                   1.0000     21  
+Lrp_28                   1.0000     21  Lrp_29                   1.0000     21  
+Lrp_30                   1.0000     21  Lrp_31                   1.0000     21  
+Lrp_32                   1.0000     21  Lrp_33                   1.0000     21  
+Lrp_34                   1.0000     21  Lrp_35                   1.0000     21  
+Lrp_36                   1.0000     21  Lrp_37                   1.0000     21  
+Lrp_38                   1.0000     21  Lrp_39                   1.0000     21  
+Lrp_40                   1.0000     21  Lrp_41                   1.0000     21  
+Lrp_42                   1.0000     21  Lrp_43                   1.0000     21  
+Lrp_44                   1.0000     21  Lrp_45                   1.0000     21  
+Lrp_46                   1.0000     21  Lrp_47                   1.0000     21  
+Lrp_48                   1.0000     21  Lrp_49                   1.0000     21  
+Lrp_50                   1.0000     21  Lrp_51                   1.0000     21  
+Lrp_52                   1.0000     21  Lrp_53                   1.0000     21  
+Lrp_54                   1.0000     21  Lrp_55                   1.0000     21  
+Lrp_56                   1.0000     21  Lrp_57                   1.0000     21  
+Lrp_58                   1.0000     21  Lrp_59                   1.0000     21  
+Lrp_60                   1.0000     21  Lrp_61                   1.0000     21  
+Lrp_62                   1.0000     21  Lrp_63                   1.0000     21  
+Lrp_64                   1.0000     21  Lrp_65                   1.0000     21  
+Lrp_66                   1.0000     21  Lrp_67                   1.0000     21  
+Lrp_68                   1.0000     21  Lrp_69                   1.0000     21  
+Lrp_70                   1.0000     21  Lrp_71                   1.0000     21  
+Lrp_72                   1.0000     21  Lrp_73                   1.0000     21  
+Lrp_74                   1.0000     21  Lrp_75                   1.0000     21  
+Lrp_76                   1.0000     21  Lrp_77                   1.0000     21  
+Lrp_78                   1.0000     21  Lrp_79                   1.0000     21  
+Lrp_80                   1.0000     21  Lrp_81                   1.0000     21  
+Lrp_82                   1.0000     21  Lrp_83                   1.0000     21  
+Lrp_84                   1.0000     21  Lrp_85                   1.0000     21  
+Lrp_86                   1.0000     18  Lrp_87                   1.0000     21  
+Lrp_88                   1.0000     18  Lrp_89                   1.0000     21  
+Lrp_90                   1.0000     21  Lrp_91                   1.0000     21  
+Lrp_92                   1.0000     21  Lrp_93                   1.0000     21  
+Lrp_94                   1.0000     21  Lrp_95                   1.0000     18  
+Lrp_96                   1.0000     31  Lrp_97                   1.0000     21  
+Lrp_98                   1.0000     21  Lrp_99                   1.0000     18  
+Lrp_100                  1.0000     21  Lrp_101                  1.0000     21  
+Lrp_102                  1.0000     21  Lrp_103                  1.0000     18  
+Lrp_104                  1.0000     21  Lrp_105                  1.0000     21  
+Lrp_106                  1.0000     21  Lrp_107                  1.0000     21  
+Lrp_108                  1.0000     21  Lrp_109                  1.0000     21  
+Lrp_110                  1.0000     21  Lrp_111                  1.0000     21  
+Lrp_112                  1.0000     21  Lrp_113                  1.0000     21  
+Lrp_114                  1.0000     21  Lrp_115                  1.0000     21  
+Lrp_116                  1.0000     21  Lrp_117                  1.0000     21  
+Lrp_118                  1.0000     18  Lrp_119                  1.0000     21  
+Lrp_120                  1.0000     21  Lrp_121                  1.0000     21  
+Lrp_122                  1.0000     21  Lrp_123                  1.0000     21  
+Lrp_124                  1.0000     21  Lrp_125                  1.0000     21  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme Lrp/ri_sites.fasta -oc Lrp/./ -mod oops -nmotifs 1 -minw 12 -maxw 18 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           12    maxw=           18
+nsites: minsites=      126    maxsites=      126    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            2623    N=             126
+sample: seed=           10    hsfrac=          0
+        searchsize=   2623    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.303 C 0.191 G 0.205 T 0.301 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CAGHATWWWATDCTR MEME-1	width =  15  sites = 126  llr = 529  E-value = 4.9e-082
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CAGHATWWWATDCTR MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  152262455523113
+pos.-specific     C  5114:1:::12:731
+probability       G  1262322111:3:16
+matrix            T  21121544526426:
+
+         bits    2.0                
+                 1.8                
+                 1.6                
+                 1.4                
+Relative         1.2                
+Entropy          1.0                
+(6.1 bits)       0.8                
+                 0.6     *  ** * * *
+                 0.4   * * *********
+                 0.2 *** ***********
+                 0.0 ---------------
+
+Multilevel           CAGCATAAAATTCTG
+consensus            TGAAGATTTTAGTCA
+sequence                T       A   
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGHATWWWATDCTR MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+Lrp_91                        3  8.71e-08         gg cAGTATAAAATGCTG Gttt      
+Lrp_105                       5  1.96e-07       ataA CAGCACAAAATTCTg tt        
+Lrp_7                         4  3.06e-07        atg TAGAATTTTATTCTG aat       
+Lrp_10                        4  1.81e-06        gaa CGGAATTTTATGCTG gat       
+Lrp_73                        5  2.70e-06       cagA TAGCATTAAATATTg ca        
+Lrp_75                        5  4.27e-06       accC CAGCATATAAATCCa gt        
+Lrp_69                        6  6.48e-06      cacCG CAGAATAATCATCtg c         
+Lrp_95                        3  9.26e-06         gt cAGAAAATTATTTta a         
+Lrp_88                        3  9.26e-06         gt cAGAAAATTATTTta a         
+Lrp_31                        5  1.05e-05       gaaA TAGTGTTTTATACTg gt        
+Lrp_60                        5  1.73e-05       agtG CAGTGAAAAAATCTg cc        
+Lrp_49                        5  1.82e-05       ctgA CGGCGTTAAATACCg tt        
+Lrp_52                        5  2.26e-05       gctG CAAAATTATCTGCTg tt        
+Lrp_72                        3  2.66e-05         tg cAGAATTAACAACTG Gagc      
+Lrp_82                        5  2.94e-05       cacT AAGCATTAAAATTTg cg        
+Lrp_28                        5  3.62e-05       caaC CAGGATAAAATGTCa gc        
+Lrp_51                        3  4.00e-05         ga cAACATTTTCTGCTA Accc      
+Lrp_76                        5  4.65e-05       gtgA CGGTTAAAAATTCTg aa        
+Lrp_56                        3  5.14e-05         ac cAGCATATTCATCCA Agaa      
+Lrp_46                        3  5.67e-05         ga cGGCATAATATTACG Acgc      
+Lrp_45                        5  6.24e-05       ttgT CAGGAAAAATTTCCa gc        
+Lrp_39                        5  7.20e-05       tatT CTGCATTTTTTATTg aa        
+Lrp_41                        3  7.55e-05         tt tAGCAGAGTATGCTG Ctaa      
+Lrp_114                       4  8.29e-05        caa TAGAATATTAAGCCA aca       
+Lrp_38                        5  8.29e-05       gtaG TAGCAGAAAATGCTc ta        
+Lrp_21                        4  9.98e-05        agc CAGCGATATACGCTA tgc       
+Lrp_62                        5  1.20e-04       cgcC CAGCGAAAAATAATg ca        
+Lrp_65                        3  1.31e-04         ct cGGGGTGAAATTCCG Cgcg      
+Lrp_78                        5  1.37e-04       ttgA CCGGGCATAATTCTg aa        
+Lrp_115                       4  1.43e-04        atg CAATATAAACATCTA taa       
+Lrp_79                        3  1.50e-04         ag cAACATCAAATTCCA Atta      
+Lrp_53                        6  1.50e-04      tggGG CCAGATAATATGTtg a         
+Lrp_77                        6  1.56e-04      tggTA ACGGATGAAATTCtg a         
+Lrp_123                       4  1.86e-04        tcg CCGGATTTTATTCGG aat       
+Lrp_30                        6  1.86e-04      aacCA CAGAATATTGCACta a         
+Lrp_120                       4  1.94e-04        aat CTTGAAATTATTCTG aga       
+Lrp_24                        5  2.03e-04       tgaT CCGCAAAATACACCg cg        
+Lrp_36                        6  2.21e-04      accTG CAGTATTGTTTGCcg c         
+Lrp_40                        3  2.30e-04         ac cCGAATTTTTCACTG Gagc      
+Lrp_44                        3  2.95e-04         cc gGGATTTATATGCTG Gcaa      
+Lrp_83                        4  3.47e-04        ctc AAAATTTTTATGCTG gcg       
+Lrp_110                       4  3.61e-04        gat TAGATTATTATTCTT tta       
+Lrp_29                        5  3.61e-04       gttG CAGGATAAAGCACCg ct        
+Lrp_9                         4  3.61e-04        gtt CAGCAGGAGATACTA aag       
+Lrp_96                        4  4.07e-04        cgt AAGCGTGTATTTTTG TGAGCTGTTT
+Lrp_71                        5  4.24e-04       tttC CGGTTTTTTATTCTc tt        
+Lrp_63                        3  4.24e-04         gt cGAAGAAAAATGCCG Agga      
+Lrp_35                        2  4.24e-04          a ccAGAGATATTTCTG CTggt     
+Lrp_67                        6  5.15e-04      atgTT CAGGAAAAACAGTtg c         
+Lrp_111                       4  5.56e-04        gaa TAATATTTTCAACTG agt       
+Lrp_80                        3  5.56e-04         tt cCGCATAATCAGCCA Tgta      
+Lrp_37                        6  5.99e-04      gaaAG CAGCATGAAAATTaa a         
+Lrp_32                        5  5.99e-04       ggaT TGGCACAAAAATTTa ac        
+Lrp_12                        4  6.22e-04        ccg GAGAATTTTTTTCTT tgc       
+Lrp_55                        5  6.96e-04       tttA CAGAGTAAAGCGTTg gg        
+Lrp_47                        3  6.96e-04         cg cACTATTTTTCACTG Gaga      
+Lrp_119                       6  8.37e-04      attCG TGTTGGATTATTCtg c         
+Lrp_101                       5  8.37e-04       ttcG TGTTGGATTATTCTg ca        
+Lrp_57                        5  8.68e-04       ccaG CTGTGGATTACGCTg tc        
+Lrp_90                        6  9.00e-04      aacAG TAGCATGAAACGTca t         
+Lrp_68                        4  9.00e-04        ggc CAACAAAATCATTCG tga       
+Lrp_102                       5  9.67e-04       ctgA CAGTAAAAACATCGg ct        
+Lrp_16                        3  1.00e-03         ta cGAAGTTTAATTCtt t         
+Lrp_58                        3  1.04e-03         aa cAGCAGAAAGCACCA Gtga      
+Lrp_25                        5  1.15e-03       tttC CCGCACAATGATCCg ca        
+Lrp_93                        2  1.19e-03          c gaGCATTAATTCTTG CCtcc     
+Lrp_74                        3  1.24e-03         ag gCTAATATTATGCCG Ggcg      
+Lrp_43                        4  1.24e-03        tga GAACATTTGTTGCTG ttg       
+Lrp_54                        5  1.37e-03       cgaA CAGTATTTTGTATGg gg        
+Lrp_50                        6  1.47e-03      aagCG CAGGGCAAAAAGTcg a         
+Lrp_26                        3  1.57e-03         aa tACTTTTTTATGCCG Ttta      
+Lrp_59                        5  1.62e-03       cagA CAGATAAAAATTACa ga        
+Lrp_89                        3  1.74e-03         ct tAAAGATAAAATCCA Tttt      
+Lrp_33                        5  1.74e-03       agcA CAGCGAAAAGTTGTa ta        
+Lrp_2                         3  1.74e-03         gg cCAGATAATACTCTC TGgcc     
+Lrp_70                        6  1.79e-03      cgaCG AAGCGCAAAATATca g         
+Lrp_97                        6  2.25e-03      tgtGG TAGCACAGAATAAtg a         
+Lrp_34                        2  2.48e-03          a cgGCGCTATTTTGTG TTgca     
+Lrp_61                        6  2.56e-03      gaaGA AAGCGTGAAAAACag a         
+Lrp_0                         1  2.73e-03          . tgcCAATTAATATTA TCAAttt   
+Lrp_15                        3  2.90e-03         ga aAGCAAAAATAAAtg c         
+Lrp_66                        3  4.17e-03         gg cAGAACAAAGCACAG Atta      
+Lrp_5                         2  4.42e-03          a tgGAGGATTTTATCG TTtct     
+Lrp_81                        3  5.11e-03         ta gAGCGCGAAACTCCA Caga      
+Lrp_48                        2  5.11e-03          g caGGGATGTTTTCTC TGcca     
+Lrp_106                       1  5.89e-03          . tgaCATTCAGTGCTG TCAaat    
+Lrp_86                        2  6.41e-03          t caTTATTCTGTGCTa cc        
+Lrp_6                         4  6.41e-03        aat GTCTGGTTTATTCTG cat       
+Lrp_1                         5  8.87e-03       tctC TTATTAGTTTTTCTG att       
+Lrp_64                        3  1.04e-02         at tAGCAAGAAAAACGC Caga      
+Lrp_124                       2  1.37e-02          a taTTGTCTTATTCAA ATtga     
+Lrp_23                        1  1.40e-02          . tccCATAATGTGGTG CTGgcc    
+Lrp_4                         5  1.40e-02       tacC CCGTGTTTATGTCTc tg        
+Lrp_109                       4  1.44e-02        atg CGAGTTGTCATACTG gga       
+Lrp_3                         4  1.51e-02        ttc CTCCTGTTTATTCTT att       
+Lrp_116                       1  1.62e-02          . tgcATGTAAATACCA TGTtta    
+Lrp_107                       3  1.74e-02         aa aGGCATATAACAGAG Ggtt      
+Lrp_99                        2  1.74e-02          a agGCATATAACAGAg gg        
+Lrp_100                       3  1.82e-02         aa tAACATGAAAGTTAA Agta      
+Lrp_87                        4  2.04e-02        cgc ATTCGGTTTTTTTTA ccc       
+Lrp_42                        2  3.04e-02          c atGCGGTTGATCCTG CGggt     
+Lrp_27                        4  3.37e-02        cca GGGAAGTTCCAGCTG atg       
+Lrp_8                         6  3.44e-02      attCA GCCGATTTATTATca a         
+Lrp_113                       4  3.74e-02        ctt CCTCATTCTTCTCTC caa       
+Lrp_94                        1  4.30e-02          . aggAACGTTATCCGG ACGttc    
+Lrp_13                        4  4.38e-02        gtg GAGCACCTCATTTCA agc       
+Lrp_17                        2  4.65e-02          a tgATTCAATTATCGg gt        
+Lrp_104                       3  4.83e-02         cc tTAAAAACATAACCG Agga      
+Lrp_18                        2  5.11e-02          a ccTGATTTTCTCCTt tc        
+Lrp_22                        3  5.31e-02         at cTACAAAAACTGACT Aaat      
+Lrp_14                        1  6.26e-02          . cctCATTGTTGTCGG CGCtct    
+Lrp_125                       6  7.08e-02      accAT TTTGATGGTTATTta t         
+Lrp_121                       6  7.21e-02      gttAT TTATCCTGAATTTtg c         
+Lrp_84                        2  7.46e-02          t taTTTATTACCGTCA TTcat     
+Lrp_20                        3  8.68e-02         ga tAATTAAAGAGGTta a         
+Lrp_92                        5  9.12e-02       gacA GTCAGGAATTGACTg tt        
+Lrp_19                        1  1.12e-01          . ggtTAGCATATTCAC ctt       
+Lrp_117                       3  1.14e-01         gg cATGTTGTACTAAAA Atcg      
+Lrp_108                       4  1.26e-01        gtg GTGTGGTAGGCGTTG cca       
+Lrp_112                       4  1.34e-01        agt CAGGGAGATGTGAGC cag       
+Lrp_98                        1  1.42e-01          . agaATGGACTTGCCG ACTgat    
+Lrp_103                       1  1.76e-01          . ccgCACCGAAAGGTC cgg       
+Lrp_122                       2  2.10e-01          t gaAACGGAGCTGCCA TGctc     
+Lrp_85                        5  2.15e-01       ctgT TTACCCCTATTTCAa cc        
+Lrp_11                        2  2.79e-01          t atCAGAGTGCCACTA ATccg     
+Lrp_118                       2  3.56e-01          g agTCCGGGGTTTTTg tt        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGHATWWWATDCTR MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Lrp_91                            8.7e-08  2_[+1]_4
+Lrp_105                             2e-07  4_[+1]_2
+Lrp_7                             3.1e-07  3_[+1]_3
+Lrp_10                            1.8e-06  3_[+1]_3
+Lrp_73                            2.7e-06  4_[+1]_2
+Lrp_75                            4.3e-06  4_[+1]_2
+Lrp_69                            6.5e-06  5_[+1]_1
+Lrp_95                            9.3e-06  2_[+1]_1
+Lrp_88                            9.3e-06  2_[+1]_1
+Lrp_31                              1e-05  4_[+1]_2
+Lrp_60                            1.7e-05  4_[+1]_2
+Lrp_49                            1.8e-05  4_[+1]_2
+Lrp_52                            2.3e-05  4_[+1]_2
+Lrp_72                            2.7e-05  2_[+1]_4
+Lrp_82                            2.9e-05  4_[+1]_2
+Lrp_28                            3.6e-05  4_[+1]_2
+Lrp_51                              4e-05  2_[+1]_4
+Lrp_76                            4.6e-05  4_[+1]_2
+Lrp_56                            5.1e-05  2_[+1]_4
+Lrp_46                            5.7e-05  2_[+1]_4
+Lrp_45                            6.2e-05  4_[+1]_2
+Lrp_39                            7.2e-05  4_[+1]_2
+Lrp_41                            7.6e-05  2_[+1]_4
+Lrp_114                           8.3e-05  3_[+1]_3
+Lrp_38                            8.3e-05  4_[+1]_2
+Lrp_21                             0.0001  3_[+1]_3
+Lrp_62                            0.00012  4_[+1]_2
+Lrp_65                            0.00013  2_[+1]_4
+Lrp_78                            0.00014  4_[+1]_2
+Lrp_115                           0.00014  3_[+1]_3
+Lrp_79                            0.00015  2_[+1]_4
+Lrp_53                            0.00015  5_[+1]_1
+Lrp_77                            0.00016  5_[+1]_1
+Lrp_123                           0.00019  3_[+1]_3
+Lrp_30                            0.00019  5_[+1]_1
+Lrp_120                           0.00019  3_[+1]_3
+Lrp_24                             0.0002  4_[+1]_2
+Lrp_36                            0.00022  5_[+1]_1
+Lrp_40                            0.00023  2_[+1]_4
+Lrp_44                             0.0003  2_[+1]_4
+Lrp_83                            0.00035  3_[+1]_3
+Lrp_110                           0.00036  3_[+1]_3
+Lrp_29                            0.00036  4_[+1]_2
+Lrp_9                             0.00036  3_[+1]_3
+Lrp_96                            0.00041  3_[+1]_13
+Lrp_71                            0.00042  4_[+1]_2
+Lrp_63                            0.00042  2_[+1]_4
+Lrp_35                            0.00042  1_[+1]_5
+Lrp_67                            0.00051  5_[+1]_1
+Lrp_111                           0.00056  3_[+1]_3
+Lrp_80                            0.00056  2_[+1]_4
+Lrp_37                             0.0006  5_[+1]_1
+Lrp_32                             0.0006  4_[+1]_2
+Lrp_12                            0.00062  3_[+1]_3
+Lrp_55                             0.0007  4_[+1]_2
+Lrp_47                             0.0007  2_[+1]_4
+Lrp_119                           0.00084  5_[+1]_1
+Lrp_101                           0.00084  4_[+1]_2
+Lrp_57                            0.00087  4_[+1]_2
+Lrp_90                             0.0009  5_[+1]_1
+Lrp_68                             0.0009  3_[+1]_3
+Lrp_102                           0.00097  4_[+1]_2
+Lrp_16                              0.001  2_[+1]_1
+Lrp_58                              0.001  2_[+1]_4
+Lrp_25                             0.0012  4_[+1]_2
+Lrp_93                             0.0012  1_[+1]_5
+Lrp_74                             0.0012  2_[+1]_4
+Lrp_43                             0.0012  3_[+1]_3
+Lrp_54                             0.0014  4_[+1]_2
+Lrp_50                             0.0015  5_[+1]_1
+Lrp_26                             0.0016  2_[+1]_4
+Lrp_59                             0.0016  4_[+1]_2
+Lrp_89                             0.0017  2_[+1]_4
+Lrp_33                             0.0017  4_[+1]_2
+Lrp_2                              0.0017  2_[+1]_5
+Lrp_70                             0.0018  5_[+1]_1
+Lrp_97                             0.0023  5_[+1]_1
+Lrp_34                             0.0025  1_[+1]_5
+Lrp_61                             0.0026  5_[+1]_1
+Lrp_0                              0.0027  [+1]_7
+Lrp_15                             0.0029  2_[+1]_1
+Lrp_66                             0.0042  2_[+1]_4
+Lrp_5                              0.0044  1_[+1]_5
+Lrp_81                             0.0051  2_[+1]_4
+Lrp_48                             0.0051  1_[+1]_5
+Lrp_106                            0.0059  [+1]_6
+Lrp_86                             0.0064  1_[+1]_2
+Lrp_6                              0.0064  3_[+1]_3
+Lrp_1                              0.0089  4_[+1]_3
+Lrp_64                               0.01  2_[+1]_4
+Lrp_124                             0.014  1_[+1]_5
+Lrp_23                              0.014  [+1]_6
+Lrp_4                               0.014  4_[+1]_2
+Lrp_109                             0.014  3_[+1]_3
+Lrp_3                               0.015  3_[+1]_3
+Lrp_116                             0.016  [+1]_6
+Lrp_107                             0.017  2_[+1]_4
+Lrp_99                              0.017  1_[+1]_2
+Lrp_100                             0.018  2_[+1]_4
+Lrp_87                               0.02  3_[+1]_3
+Lrp_42                               0.03  1_[+1]_5
+Lrp_27                              0.034  3_[+1]_3
+Lrp_8                               0.034  5_[+1]_1
+Lrp_113                             0.037  3_[+1]_3
+Lrp_94                              0.043  [+1]_6
+Lrp_13                              0.044  3_[+1]_3
+Lrp_17                              0.046  1_[+1]_2
+Lrp_104                             0.048  2_[+1]_4
+Lrp_18                              0.051  1_[+1]_2
+Lrp_22                              0.053  2_[+1]_4
+Lrp_14                              0.063  [+1]_6
+Lrp_125                             0.071  5_[+1]_1
+Lrp_121                             0.072  5_[+1]_1
+Lrp_84                              0.075  1_[+1]_5
+Lrp_20                              0.087  2_[+1]_1
+Lrp_92                              0.091  4_[+1]_2
+Lrp_19                               0.11  [+1]_3
+Lrp_117                              0.11  2_[+1]_4
+Lrp_108                              0.13  3_[+1]_3
+Lrp_112                              0.13  3_[+1]_3
+Lrp_98                               0.14  [+1]_6
+Lrp_103                              0.18  [+1]_3
+Lrp_122                              0.21  1_[+1]_5
+Lrp_85                               0.21  4_[+1]_2
+Lrp_11                               0.28  1_[+1]_5
+Lrp_118                              0.36  1_[+1]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGHATWWWATDCTR MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CAGHATWWWATDCTR width=15 seqs=126
+Lrp_91                   (    3) CAGTATAAAATGCTG  1 
+Lrp_105                  (    5) CAGCACAAAATTCTG  1 
+Lrp_7                    (    4) TAGAATTTTATTCTG  1 
+Lrp_10                   (    4) CGGAATTTTATGCTG  1 
+Lrp_73                   (    5) TAGCATTAAATATTG  1 
+Lrp_75                   (    5) CAGCATATAAATCCA  1 
+Lrp_69                   (    6) CAGAATAATCATCTG  1 
+Lrp_95                   (    3) CAGAAAATTATTTTA  1 
+Lrp_88                   (    3) CAGAAAATTATTTTA  1 
+Lrp_31                   (    5) TAGTGTTTTATACTG  1 
+Lrp_60                   (    5) CAGTGAAAAAATCTG  1 
+Lrp_49                   (    5) CGGCGTTAAATACCG  1 
+Lrp_52                   (    5) CAAAATTATCTGCTG  1 
+Lrp_72                   (    3) CAGAATTAACAACTG  1 
+Lrp_82                   (    5) AAGCATTAAAATTTG  1 
+Lrp_28                   (    5) CAGGATAAAATGTCA  1 
+Lrp_51                   (    3) CAACATTTTCTGCTA  1 
+Lrp_76                   (    5) CGGTTAAAAATTCTG  1 
+Lrp_56                   (    3) CAGCATATTCATCCA  1 
+Lrp_46                   (    3) CGGCATAATATTACG  1 
+Lrp_45                   (    5) CAGGAAAAATTTCCA  1 
+Lrp_39                   (    5) CTGCATTTTTTATTG  1 
+Lrp_41                   (    3) TAGCAGAGTATGCTG  1 
+Lrp_114                  (    4) TAGAATATTAAGCCA  1 
+Lrp_38                   (    5) TAGCAGAAAATGCTC  1 
+Lrp_21                   (    4) CAGCGATATACGCTA  1 
+Lrp_62                   (    5) CAGCGAAAAATAATG  1 
+Lrp_65                   (    3) CGGGGTGAAATTCCG  1 
+Lrp_78                   (    5) CCGGGCATAATTCTG  1 
+Lrp_115                  (    4) CAATATAAACATCTA  1 
+Lrp_79                   (    3) CAACATCAAATTCCA  1 
+Lrp_53                   (    6) CCAGATAATATGTTG  1 
+Lrp_77                   (    6) ACGGATGAAATTCTG  1 
+Lrp_123                  (    4) CCGGATTTTATTCGG  1 
+Lrp_30                   (    6) CAGAATATTGCACTA  1 
+Lrp_120                  (    4) CTTGAAATTATTCTG  1 
+Lrp_24                   (    5) CCGCAAAATACACCG  1 
+Lrp_36                   (    6) CAGTATTGTTTGCCG  1 
+Lrp_40                   (    3) CCGAATTTTTCACTG  1 
+Lrp_44                   (    3) GGGATTTATATGCTG  1 
+Lrp_83                   (    4) AAAATTTTTATGCTG  1 
+Lrp_110                  (    4) TAGATTATTATTCTT  1 
+Lrp_29                   (    5) CAGGATAAAGCACCG  1 
+Lrp_9                    (    4) CAGCAGGAGATACTA  1 
+Lrp_96                   (    4) AAGCGTGTATTTTTG  1 
+Lrp_71                   (    5) CGGTTTTTTATTCTC  1 
+Lrp_63                   (    3) CGAAGAAAAATGCCG  1 
+Lrp_35                   (    2) CCAGAGATATTTCTG  1 
+Lrp_67                   (    6) CAGGAAAAACAGTTG  1 
+Lrp_111                  (    4) TAATATTTTCAACTG  1 
+Lrp_80                   (    3) CCGCATAATCAGCCA  1 
+Lrp_37                   (    6) CAGCATGAAAATTAA  1 
+Lrp_32                   (    5) TGGCACAAAAATTTA  1 
+Lrp_12                   (    4) GAGAATTTTTTTCTT  1 
+Lrp_55                   (    5) CAGAGTAAAGCGTTG  1 
+Lrp_47                   (    3) CACTATTTTTCACTG  1 
+Lrp_119                  (    6) TGTTGGATTATTCTG  1 
+Lrp_101                  (    5) TGTTGGATTATTCTG  1 
+Lrp_57                   (    5) CTGTGGATTACGCTG  1 
+Lrp_90                   (    6) TAGCATGAAACGTCA  1 
+Lrp_68                   (    4) CAACAAAATCATTCG  1 
+Lrp_102                  (    5) CAGTAAAAACATCGG  1 
+Lrp_16                   (    3) CGAAGTTTAATTCTT  1 
+Lrp_58                   (    3) CAGCAGAAAGCACCA  1 
+Lrp_25                   (    5) CCGCACAATGATCCG  1 
+Lrp_93                   (    2) GAGCATTAATTCTTG  1 
+Lrp_74                   (    3) GCTAATATTATGCCG  1 
+Lrp_43                   (    4) GAACATTTGTTGCTG  1 
+Lrp_54                   (    5) CAGTATTTTGTATGG  1 
+Lrp_50                   (    6) CAGGGCAAAAAGTCG  1 
+Lrp_26                   (    3) TACTTTTTTATGCCG  1 
+Lrp_59                   (    5) CAGATAAAAATTACA  1 
+Lrp_89                   (    3) TAAAGATAAAATCCA  1 
+Lrp_33                   (    5) CAGCGAAAAGTTGTA  1 
+Lrp_2                    (    3) CCAGATAATACTCTC  1 
+Lrp_70                   (    6) AAGCGCAAAATATCA  1 
+Lrp_97                   (    6) TAGCACAGAATAATG  1 
+Lrp_34                   (    2) CGGCGCTATTTTGTG  1 
+Lrp_61                   (    6) AAGCGTGAAAAACAG  1 
+Lrp_0                    (    1) TGCCAATTAATATTA  1 
+Lrp_15                   (    3) AAGCAAAAATAAATG  1 
+Lrp_66                   (    3) CAGAACAAAGCACAG  1 
+Lrp_5                    (    2) TGGAGGATTTTATCG  1 
+Lrp_81                   (    3) GAGCGCGAAACTCCA  1 
+Lrp_48                   (    2) CAGGGATGTTTTCTC  1 
+Lrp_106                  (    1) TGACATTCAGTGCTG  1 
+Lrp_86                   (    2) CATTATTCTGTGCTA  1 
+Lrp_6                    (    4) GTCTGGTTTATTCTG  1 
+Lrp_1                    (    5) TTATTAGTTTTTCTG  1 
+Lrp_64                   (    3) TAGCAAGAAAAACGC  1 
+Lrp_124                  (    2) TATTGTCTTATTCAA  1 
+Lrp_23                   (    1) TCCCATAATGTGGTG  1 
+Lrp_4                    (    5) CCGTGTTTATGTCTC  1 
+Lrp_109                  (    4) CGAGTTGTCATACTG  1 
+Lrp_3                    (    4) CTCCTGTTTATTCTT  1 
+Lrp_116                  (    1) TGCATGTAAATACCA  1 
+Lrp_107                  (    3) AGGCATATAACAGAG  1 
+Lrp_99                   (    2) AGGCATATAACAGAG  1 
+Lrp_100                  (    3) TAACATGAAAGTTAA  1 
+Lrp_87                   (    4) ATTCGGTTTTTTTTA  1 
+Lrp_42                   (    2) ATGCGGTTGATCCTG  1 
+Lrp_27                   (    4) GGGAAGTTCCAGCTG  1 
+Lrp_8                    (    6) GCCGATTTATTATCA  1 
+Lrp_113                  (    4) CCTCATTCTTCTCTC  1 
+Lrp_94                   (    1) AGGAACGTTATCCGG  1 
+Lrp_13                   (    4) GAGCACCTCATTTCA  1 
+Lrp_17                   (    2) TGATTCAATTATCGG  1 
+Lrp_104                  (    3) TTAAAAACATAACCG  1 
+Lrp_18                   (    2) CCTGATTTTCTCCTT  1 
+Lrp_22                   (    3) CTACAAAAACTGACT  1 
+Lrp_14                   (    1) CCTCATTGTTGTCGG  1 
+Lrp_125                  (    6) TTTGATGGTTATTTA  1 
+Lrp_121                  (    6) TTATCCTGAATTTTG  1 
+Lrp_84                   (    2) TATTTATTACCGTCA  1 
+Lrp_20                   (    3) TAATTAAAGAGGTTA  1 
+Lrp_92                   (    5) GTCAGGAATTGACTG  1 
+Lrp_19                   (    1) GGTTAGCATATTCAC  1 
+Lrp_117                  (    3) CATGTTGTACTAAAA  1 
+Lrp_108                  (    4) GTGTGGTAGGCGTTG  1 
+Lrp_112                  (    4) CAGGGAGATGTGAGC  1 
+Lrp_98                   (    1) AGAATGGACTTGCCG  1 
+Lrp_103                  (    1) CCGCACCGAAAGGTC  1 
+Lrp_122                  (    2) GAAACGGAGCTGCCA  1 
+Lrp_85                   (    5) TTACCCCTATTTCAA  1 
+Lrp_11                   (    2) ATCAGAGTGCCACTA  1 
+Lrp_118                  (    2) AGTCCGGGGTTTTTG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGHATWWWATDCTR MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 859 bayes= 2.54039 E= 4.9e-082 
+  -105    104   -119      0 
+   109    -83    -30    -95 
+   -25   -168    123   -105 
+    -5     64    -68    -25 
+   126   -300      0    -95 
+   -20   -100    -61    100 
+    83   -241    -68     54 
+    98   -300   -183     75 
+    88   -300   -200     88 
+   113    -83   -130    -20 
+   -25    -75   -268    129 
+     5   -300     13     83 
+  -195    136   -241     -5 
+  -163      9   -200    126 
+    29   -168    117   -237 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGHATWWWATDCTR MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 126 E= 4.9e-082 
+ 0.119048  0.523810  0.111111  0.246032 
+ 0.523810  0.142857  0.206349  0.126984 
+ 0.206349  0.079365  0.595238  0.119048 
+ 0.238095  0.396825  0.158730  0.206349 
+ 0.587302  0.031746  0.253968  0.126984 
+ 0.214286  0.126984  0.166667  0.492063 
+ 0.436508  0.047619  0.158730  0.357143 
+ 0.484127  0.031746  0.071429  0.412698 
+ 0.452381  0.031746  0.063492  0.452381 
+ 0.539683  0.142857  0.103175  0.214286 
+ 0.206349  0.150794  0.039683  0.603175 
+ 0.253968  0.031746  0.277778  0.436508 
+ 0.063492  0.650794  0.047619  0.238095 
+ 0.079365  0.269841  0.063492  0.587302 
+ 0.301587  0.079365  0.571429  0.047619 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGHATWWWATDCTR MEME-1 regular expression
+--------------------------------------------------------------------------------
+[CT][AG][GA][CAT][AG][TA][AT][AT][AT][AT][TA][TGA][CT][TC][GA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.39 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Lrp_0                            2.16e-02  22
+Lrp_1                            6.88e-02  22
+Lrp_2                            1.38e-02  22
+Lrp_3                            1.01e-01  21
+Lrp_4                            9.40e-02  21
+Lrp_5                            3.06e-02  21
+Lrp_6                            4.40e-02  21
+Lrp_7                            2.14e-06  3_[+1(3.06e-07)]_3
+Lrp_8                            5.45e-02  21
+Lrp_9                            2.53e-03  21
+Lrp_10                           1.27e-05  3_[+1(1.81e-06)]_3
+Lrp_11                           8.63e-01  21
+Lrp_12                           4.35e-03  21
+Lrp_13                           2.69e-01  21
+Lrp_14                           3.64e-01  21
+Lrp_15                           1.16e-02  18
+Lrp_16                           4.00e-03  18
+Lrp_17                           1.58e-01  18
+Lrp_18                           1.89e-01  18
+Lrp_19                           3.88e-02  18
+Lrp_20                           3.05e-01  18
+Lrp_21                           6.99e-04  3_[+1(9.98e-05)]_3
+Lrp_22                           3.17e-01  21
+Lrp_23                           2.64e-02  21
+Lrp_24                           1.42e-03  21
+Lrp_25                           8.04e-03  21
+Lrp_26                           1.09e-02  21
+Lrp_27                           2.14e-01  21
+Lrp_28                           2.53e-04  4_[+1(3.62e-05)]_2
+Lrp_29                           2.53e-03  21
+Lrp_30                           1.30e-03  21
+Lrp_31                           7.32e-05  4_[+1(1.05e-05)]_2
+Lrp_32                           4.19e-03  21
+Lrp_33                           1.21e-02  21
+Lrp_34                           1.72e-02  21
+Lrp_35                           2.96e-03  21
+Lrp_36                           1.54e-03  21
+Lrp_37                           4.19e-03  21
+Lrp_38                           5.81e-04  4_[+1(8.29e-05)]_2
+Lrp_39                           5.04e-04  4_[+1(7.20e-05)]_2
+Lrp_40                           1.61e-03  21
+Lrp_41                           5.29e-04  2_[+1(7.55e-05)]_4
+Lrp_42                           1.94e-01  21
+Lrp_43                           8.62e-03  21
+Lrp_44                           2.07e-03  21
+Lrp_45                           4.37e-04  4_[+1(6.24e-05)]_2
+Lrp_46                           3.97e-04  2_[+1(5.67e-05)]_4
+Lrp_47                           4.86e-03  21
+Lrp_48                           3.53e-02  21
+Lrp_49                           1.28e-04  4_[+1(1.82e-05)]_2
+Lrp_50                           1.02e-02  21
+Lrp_51                           2.80e-04  2_[+1(4.00e-05)]_4
+Lrp_52                           1.58e-04  4_[+1(2.26e-05)]_2
+Lrp_53                           1.05e-03  21
+Lrp_54                           9.55e-03  21
+Lrp_55                           4.86e-03  21
+Lrp_56                           3.59e-04  2_[+1(5.14e-05)]_4
+Lrp_57                           6.06e-03  21
+Lrp_58                           7.24e-03  21
+Lrp_59                           1.13e-02  21
+Lrp_60                           1.21e-04  4_[+1(1.73e-05)]_2
+Lrp_61                           1.78e-02  21
+Lrp_62                           8.40e-04  21
+Lrp_63                           2.96e-03  21
+Lrp_64                           7.03e-02  21
+Lrp_65                           9.18e-04  21
+Lrp_66                           2.88e-02  21
+Lrp_67                           3.60e-03  21
+Lrp_68                           6.28e-03  21
+Lrp_69                           4.54e-05  5_[+1(6.48e-06)]_1
+Lrp_70                           1.25e-02  21
+Lrp_71                           2.96e-03  21
+Lrp_72                           1.86e-04  2_[+1(2.66e-05)]_4
+Lrp_73                           1.89e-05  4_[+1(2.70e-06)]_2
+Lrp_74                           8.62e-03  21
+Lrp_75                           2.99e-05  4_[+1(4.27e-06)]_2
+Lrp_76                           3.25e-04  4_[+1(4.65e-05)]_2
+Lrp_77                           1.09e-03  21
+Lrp_78                           9.60e-04  21
+Lrp_79                           1.05e-03  21
+Lrp_80                           3.88e-03  21
+Lrp_81                           3.53e-02  21
+Lrp_82                           2.06e-04  4_[+1(2.94e-05)]_2
+Lrp_83                           2.43e-03  21
+Lrp_84                           4.19e-01  21
+Lrp_85                           8.16e-01  21
+Lrp_86                           2.54e-02  18
+Lrp_87                           3.73e-02  21
+Lrp_88                           3.71e-05  2_[+1(9.26e-06)]_1
+Lrp_89                           1.21e-02  21
+Lrp_90                           6.28e-03  21
+Lrp_91                           6.09e-07  2_[+1(8.71e-08)]_4
+Lrp_92                           2.93e-01  21
+Lrp_93                           8.33e-03  21
+Lrp_94                           2.65e-01  21
+Lrp_95                           3.71e-05  2_[+1(9.26e-06)]_1
+Lrp_96                           6.90e-03  31
+Lrp_97                           1.57e-02  21
+Lrp_98                           6.57e-01  21
+Lrp_99                           6.77e-02  18
+Lrp_100                          1.21e-01  21
+Lrp_101                          5.84e-03  21
+Lrp_102                          6.75e-03  21
+Lrp_103                          4.27e-01  18
+Lrp_104                          2.93e-01  21
+Lrp_105                          1.37e-06  4_[+1(1.96e-07)]_2
+Lrp_106                          4.05e-02  21
+Lrp_107                          1.15e-01  21
+Lrp_108                          5.70e-01  21
+Lrp_109                          9.62e-02  21
+Lrp_110                          2.53e-03  21
+Lrp_111                          3.88e-03  21
+Lrp_112                          4.59e-01  21
+Lrp_113                          2.34e-01  21
+Lrp_114                          5.81e-04  3_[+1(8.29e-05)]_3
+Lrp_115                          1.00e-03  21
+Lrp_116                          1.08e-01  21
+Lrp_117                          3.63e-02  21
+Lrp_118                          7.29e-01  18
+Lrp_119                          5.84e-03  21
+Lrp_120                          1.36e-03  21
+Lrp_121                          4.08e-01  21
+Lrp_122                          8.08e-01  21
+Lrp_123                          1.30e-03  21
+Lrp_124                          9.18e-02  21
+Lrp_125                          4.02e-01  21
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

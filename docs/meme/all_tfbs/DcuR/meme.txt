@@ -1,0 +1,234 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= DcuR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+DcuR_0                   1.0000     23  DcuR_1                   1.0000     23  
+DcuR_2                   1.0000     23  DcuR_3                   1.0000     23  
+DcuR_4                   1.0000     23  DcuR_5                   1.0000     23  
+DcuR_6                   1.0000     23  DcuR_7                   1.0000     23  
+DcuR_8                   1.0000     23  DcuR_9                   1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme DcuR/ri_sites.fasta -oc DcuR/./ -mod oops -nmotifs 1 -minw 14 -maxw 20 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           14    maxw=           20
+nsites: minsites=       10    maxsites=       10    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             230    N=              10
+sample: seed=           10    hsfrac=          0
+        searchsize=    230    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.378 C 0.1 G 0.135 T 0.387 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTTAATHWHTAWWA MEME-1	width =  14  sites =  10  llr = 85  E-value = 5.0e-007
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTTAATHWHTAWWA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:386146418555
+pos.-specific     C  :::2:22:3::::1
+probability       G  ::::2211:1::12
+matrix            T  8a7:2533382542
+
+         bits    2.0  *            
+                 1.8  *            
+                 1.6  *            
+                 1.4  *            
+Relative         1.2 ****      *   
+Entropy          1.0 ****     ***  
+(12.3 bits)      0.8 ****   * ***  
+                 0.6 *****  * **** 
+                 0.4 *****  ****** 
+                 0.2 **************
+                 0.0 --------------
+
+Multilevel           TTTAATAAATAAAA
+consensus            A ACGCTTC TTTG
+sequence                 TGC T    T
+                                   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTAATHWHTAWWA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site   
+-------------             ----- ---------            --------------
+DcuR_0                        6  4.61e-07      attGA TTTAATGAATAAAA Tttg      
+DcuR_6                        5  2.73e-06       atgG TTTAGTAATTAAAT TAatc     
+DcuR_8                       10  3.55e-06  taaCAAAAG TTAATTAACTAtta           
+DcuR_1                        7  1.57e-05     aatGAT TTTAAGTTTTTTAA tta       
+DcuR_3                        6  3.86e-05      cacAA ATTAATAATTAAGG Ggta      
+DcuR_2                        2  4.22e-05          g ttTAGCTTATATTG TGGTCatt  
+DcuR_9                        7  8.31e-05     ggtGTT TTTAATTTCAAAAC gct       
+DcuR_7                        1  1.39e-04          . ttaCAAAACTTTAA AAAGTGctg 
+DcuR_5                        6  2.45e-04      tgcTA TTTCTGCGATAATA Gcaa      
+DcuR_4                        7  4.12e-04     cgcCAT ATAAACCAAGATTT aac       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTAATHWHTAWWA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DcuR_0                            4.6e-07  5_[+1]_4
+DcuR_6                            2.7e-06  4_[+1]_5
+DcuR_8                            3.5e-06  9_[+1]
+DcuR_1                            1.6e-05  6_[+1]_3
+DcuR_3                            3.9e-05  5_[+1]_4
+DcuR_2                            4.2e-05  1_[+1]_8
+DcuR_9                            8.3e-05  6_[+1]_3
+DcuR_7                            0.00014  [+1]_9
+DcuR_5                            0.00024  5_[+1]_4
+DcuR_4                            0.00041  6_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTAATHWHTAWWA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTTAATHWHTAWWA width=14 seqs=10
+DcuR_0                   (    6) TTTAATGAATAAAA  1 
+DcuR_6                   (    5) TTTAGTAATTAAAT  1 
+DcuR_8                   (   10) TTAATTAACTATTA  1 
+DcuR_1                   (    7) TTTAAGTTTTTTAA  1 
+DcuR_3                   (    6) ATTAATAATTAAGG  1 
+DcuR_2                   (    2) TTTAGCTTATATTG  1 
+DcuR_9                   (    7) TTTAATTTCAAAAC  1 
+DcuR_7                   (    1) TTACAAAACTTTAA  1 
+DcuR_5                   (    6) TTTCTGCGATAATA  1 
+DcuR_4                   (    7) ATAAACCAAGATTT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTAATHWHTAWWA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 14 n= 100 bayes= 3.16993 E= 5.0e-007 
+   -30   -997   -997    170 
+  -997   -997   -997    202 
+    29   -997   -997    151 
+   170    -34   -997   -997 
+   129   -997    -34    -30 
+  -130    -34    -34    102 
+    70    -34   -134     29 
+   129   -997   -134     29 
+    70     24   -997     29 
+  -130   -997   -134    170 
+   170   -997   -997    -30 
+   102   -997   -997    102 
+   102   -997   -134     70 
+   102   -134    -34    -30 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTAATHWHTAWWA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 14 nsites= 10 E= 5.0e-007 
+ 0.200000  0.000000  0.000000  0.800000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.300000  0.000000  0.000000  0.700000 
+ 0.800000  0.200000  0.000000  0.000000 
+ 0.600000  0.000000  0.200000  0.200000 
+ 0.100000  0.200000  0.200000  0.500000 
+ 0.400000  0.200000  0.100000  0.300000 
+ 0.600000  0.000000  0.100000  0.300000 
+ 0.400000  0.300000  0.000000  0.300000 
+ 0.100000  0.000000  0.100000  0.800000 
+ 0.800000  0.000000  0.000000  0.200000 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.500000  0.000000  0.100000  0.400000 
+ 0.500000  0.100000  0.200000  0.200000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTAATHWHTAWWA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA]T[TA][AC][AGT][TCG][ATC][AT][ACT]T[AT][AT][AT][AGT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.21 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+DcuR_0                           4.61e-06  5_[+1(4.61e-07)]_4
+DcuR_1                           1.57e-04  6_[+1(1.57e-05)]_3
+DcuR_2                           4.22e-04  1_[+1(4.22e-05)]_8
+DcuR_3                           3.86e-04  5_[+1(3.86e-05)]_4
+DcuR_4                           4.12e-03  23
+DcuR_5                           2.44e-03  23
+DcuR_6                           2.73e-05  4_[+1(2.73e-06)]_5
+DcuR_7                           1.39e-03  23
+DcuR_8                           3.55e-05  9_[+1(3.55e-06)]
+DcuR_9                           8.31e-04  6_[+1(8.31e-05)]_3
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

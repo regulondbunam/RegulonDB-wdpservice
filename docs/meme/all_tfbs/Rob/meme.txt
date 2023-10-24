@@ -1,0 +1,272 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= Rob/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Rob_0                    1.0000     26  Rob_1                    1.0000     26  
+Rob_2                    1.0000     26  Rob_3                    1.0000     26  
+Rob_4                    1.0000     26  Rob_5                    1.0000     26  
+Rob_6                    1.0000     26  Rob_7                    1.0000     26  
+Rob_8                    1.0000     26  Rob_9                    1.0000     26  
+Rob_10                   1.0000     26  Rob_11                   1.0000     26  
+Rob_12                   1.0000     26  Rob_13                   1.0000     26  
+Rob_14                   1.0000     26  Rob_15                   1.0000     26  
+Rob_16                   1.0000     26  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme Rob/ri_sites.fasta -oc Rob/./ -mod oops -nmotifs 1 -minw 17 -maxw 23 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           17    maxw=           23
+nsites: minsites=       17    maxsites=       17    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             442    N=              17
+sample: seed=           10    hsfrac=          0
+        searchsize=    442    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.314 C 0.217 G 0.172 T 0.296 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATVGCACDWWWBGYYAA MEME-1	width =  17  sites =  17  llr = 147  E-value = 2.5e-017
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATVGCACDWWWBGYYAA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  7141:824454121:96
+pos.-specific     C  :32:a:6:1112:4311
+probability       G  1:39:1:4211371111
+matrix            T  2611:2124444146:2
+
+         bits    2.0     *            
+                 1.8     *            
+                 1.6     *            
+                 1.4    **          * 
+Relative         1.2    **          * 
+Entropy          1.0    ***         * 
+(12.5 bits)      0.8 ** ****     *  * 
+                 0.6 ** ****     * ** 
+                 0.4 ** ***** *  *****
+                 0.2 *****************
+                 0.0 -----------------
+
+Multilevel           ATAGCACATATTGCTAA
+consensus             CG   AGATAGATC T
+sequence               C    T   C     
+                                      
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATVGCACDWWWBGYYAA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                  Site     
+-------------             ----- ---------            -----------------
+Rob_16                        4  1.11e-07        cct ATGGCACGTAACGCCAA CCTttt    
+Rob_4                         7  6.63e-07     gctAAA ACAGCAAAAAATGCTAT tat       
+Rob_3                         4  6.63e-07        tac ATGGCACGAAAGACCAA ACAttt    
+Rob_10                        3  8.82e-07         tg aCAGCACTGAATGTCAA AACAaaa   
+Rob_7                         4  1.73e-06        gac TTTGCACATTTTGCTAA TTTcac    
+Rob_8                         4  1.97e-06        taa ATAGCTCACTTTGTTAA CAActt    
+Rob_6                         4  6.44e-06        tca GTGGCACGTTTGGCGAA ATTcag    
+Rob_9                         4  8.91e-06        aaa GTCGCTCGTTACGTTAA AAAttg    
+Rob_15                        4  3.18e-05        aat ACGACACGTTTCATTAA GATttt    
+Rob_14                        6  3.80e-05      ccgTA ATCGCACGGGTGGATAA Gcgt      
+Rob_5                         4  4.93e-05        ctg ACCGCACAAAAGGGGAG TGCttt    
+Rob_0                         4  6.87e-05        cta AAAGCTATAACTGTTAA ACAcaa    
+Rob_11                        4  1.38e-04        gtc ATCGCATAAACCACTAC ATCttg    
+Rob_13                        6  3.34e-04      ccgAT TTAGCAAAACGTGGCAT Cggt      
+Rob_12                        4  4.03e-04        agt ACGGCATTGATAATCAT TTTcaa    
+Rob_2                         4  6.45e-04        tct ATAGCGCATTTTTCTCG CTTacc    
+Rob_1                         9  1.46e-03   ctcCTCTT TTATCAATTTGGGTTgt t         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATVGCACDWWWBGYYAA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rob_16                            1.1e-07  3_[+1]_6
+Rob_4                             6.6e-07  6_[+1]_3
+Rob_3                             6.6e-07  3_[+1]_6
+Rob_10                            8.8e-07  2_[+1]_7
+Rob_7                             1.7e-06  3_[+1]_6
+Rob_8                               2e-06  3_[+1]_6
+Rob_6                             6.4e-06  3_[+1]_6
+Rob_9                             8.9e-06  3_[+1]_6
+Rob_15                            3.2e-05  3_[+1]_6
+Rob_14                            3.8e-05  5_[+1]_4
+Rob_5                             4.9e-05  3_[+1]_6
+Rob_0                             6.9e-05  3_[+1]_6
+Rob_11                            0.00014  3_[+1]_6
+Rob_13                            0.00033  5_[+1]_4
+Rob_12                             0.0004  3_[+1]_6
+Rob_2                             0.00064  3_[+1]_6
+Rob_1                              0.0015  8_[+1]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATVGCACDWWWBGYYAA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATVGCACDWWWBGYYAA width=17 seqs=17
+Rob_16                   (    4) ATGGCACGTAACGCCAA  1 
+Rob_4                    (    7) ACAGCAAAAAATGCTAT  1 
+Rob_3                    (    4) ATGGCACGAAAGACCAA  1 
+Rob_10                   (    3) ACAGCACTGAATGTCAA  1 
+Rob_7                    (    4) TTTGCACATTTTGCTAA  1 
+Rob_8                    (    4) ATAGCTCACTTTGTTAA  1 
+Rob_6                    (    4) GTGGCACGTTTGGCGAA  1 
+Rob_9                    (    4) GTCGCTCGTTACGTTAA  1 
+Rob_15                   (    4) ACGACACGTTTCATTAA  1 
+Rob_14                   (    6) ATCGCACGGGTGGATAA  1 
+Rob_5                    (    4) ACCGCACAAAAGGGGAG  1 
+Rob_0                    (    4) AAAGCTATAACTGTTAA  1 
+Rob_11                   (    4) ATCGCATAAACCACTAC  1 
+Rob_13                   (    6) TTAGCAAAACGTGGCAT  1 
+Rob_12                   (    4) ACGGCATTGATAATCAT  1 
+Rob_2                    (    4) ATAGCGCATTTTTCTCG  1 
+Rob_1                    (    9) TTATCAATTTGGGTTGT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATVGCACDWWWBGYYAA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 17 n= 170 bayes= 3.16993 E= 2.5e-017 
+   152  -1073   -111    -48 
+  -206     21  -1073    139 
+    74    -11     21   -206 
+  -206  -1073    180   -206 
+ -1073    198  -1073  -1073 
+   164  -1073   -211    -48 
+    -6    135  -1073   -106 
+    74  -1073     47     -6 
+    52   -211    -53     74 
+    94   -211   -211     74 
+    52   -111   -111     74 
+  -206    -11     21     74 
+    -6  -1073    147   -206 
+  -206     70   -111     74 
+ -1073     21   -111    126 
+   184   -211   -211  -1073 
+   126   -211   -111     -6 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATVGCACDWWWBGYYAA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 17 nsites= 17 E= 2.5e-017 
+ 0.705882  0.000000  0.117647  0.176471 
+ 0.058824  0.294118  0.000000  0.647059 
+ 0.411765  0.235294  0.294118  0.058824 
+ 0.058824  0.000000  0.882353  0.058824 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.764706  0.000000  0.058824  0.176471 
+ 0.235294  0.647059  0.000000  0.117647 
+ 0.411765  0.000000  0.352941  0.235294 
+ 0.352941  0.058824  0.176471  0.411765 
+ 0.470588  0.058824  0.058824  0.411765 
+ 0.352941  0.117647  0.117647  0.411765 
+ 0.058824  0.235294  0.294118  0.411765 
+ 0.235294  0.000000  0.705882  0.058824 
+ 0.058824  0.411765  0.117647  0.411765 
+ 0.000000  0.294118  0.117647  0.588235 
+ 0.882353  0.058824  0.058824  0.000000 
+ 0.588235  0.058824  0.117647  0.235294 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATVGCACDWWWBGYYAA MEME-1 regular expression
+--------------------------------------------------------------------------------
+A[TC][AGC]GCA[CA][AGT][TA][AT][TA][TGC][GA][CT][TC]A[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.22 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Rob_0                            6.87e-04  3_[+1(6.87e-05)]_6
+Rob_1                            1.45e-02  26
+Rob_2                            6.43e-03  26
+Rob_3                            6.63e-06  3_[+1(6.63e-07)]_6
+Rob_4                            6.63e-06  6_[+1(6.63e-07)]_3
+Rob_5                            4.93e-04  3_[+1(4.93e-05)]_6
+Rob_6                            6.44e-05  3_[+1(6.44e-06)]_6
+Rob_7                            1.73e-05  3_[+1(1.73e-06)]_6
+Rob_8                            1.97e-05  3_[+1(1.97e-06)]_6
+Rob_9                            8.91e-05  3_[+1(8.91e-06)]_6
+Rob_10                           8.82e-06  2_[+1(8.82e-07)]_7
+Rob_11                           1.38e-03  26
+Rob_12                           4.03e-03  26
+Rob_13                           3.34e-03  26
+Rob_14                           3.80e-04  5_[+1(3.80e-05)]_4
+Rob_15                           3.18e-04  3_[+1(3.18e-05)]_6
+Rob_16                           1.11e-06  3_[+1(1.11e-07)]_6
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

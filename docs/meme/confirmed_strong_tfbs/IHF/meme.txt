@@ -1,0 +1,524 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= IHF/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+IHF_0                    1.0000     19  IHF_1                    1.0000     36  
+IHF_2                    1.0000     66  IHF_3                    1.0000     19  
+IHF_4                    1.0000     20  IHF_5                    1.0000     21  
+IHF_6                    1.0000     22  IHF_7                    1.0000     22  
+IHF_8                    1.0000     19  IHF_9                    1.0000     19  
+IHF_10                   1.0000     19  IHF_11                   1.0000     19  
+IHF_12                   1.0000     19  IHF_13                   1.0000     19  
+IHF_14                   1.0000     19  IHF_15                   1.0000     19  
+IHF_16                   1.0000     19  IHF_17                   1.0000     19  
+IHF_18                   1.0000     19  IHF_19                   1.0000     19  
+IHF_20                   1.0000     19  IHF_21                   1.0000     19  
+IHF_22                   1.0000     19  IHF_23                   1.0000     19  
+IHF_24                   1.0000     19  IHF_25                   1.0000     19  
+IHF_26                   1.0000     19  IHF_27                   1.0000     19  
+IHF_28                   1.0000     20  IHF_29                   1.0000     19  
+IHF_30                   1.0000     19  IHF_31                   1.0000     19  
+IHF_32                   1.0000     19  IHF_33                   1.0000     19  
+IHF_34                   1.0000     19  IHF_35                   1.0000     19  
+IHF_36                   1.0000     19  IHF_37                   1.0000     19  
+IHF_38                   1.0000     19  IHF_39                   1.0000     19  
+IHF_40                   1.0000     19  IHF_41                   1.0000     19  
+IHF_42                   1.0000     19  IHF_43                   1.0000     19  
+IHF_44                   1.0000     19  IHF_45                   1.0000     19  
+IHF_46                   1.0000     19  IHF_47                   1.0000     19  
+IHF_48                   1.0000     19  IHF_49                   1.0000     19  
+IHF_50                   1.0000     19  IHF_51                   1.0000     19  
+IHF_52                   1.0000     19  IHF_53                   1.0000     19  
+IHF_54                   1.0000     19  IHF_55                   1.0000     19  
+IHF_56                   1.0000     19  IHF_57                   1.0000     19  
+IHF_58                   1.0000     19  IHF_59                   1.0000     19  
+IHF_60                   1.0000     19  IHF_61                   1.0000     19  
+IHF_62                   1.0000     19  IHF_63                   1.0000     19  
+IHF_64                   1.0000     19  IHF_65                   1.0000     19  
+IHF_66                   1.0000     19  IHF_67                   1.0000     19  
+IHF_68                   1.0000     19  IHF_69                   1.0000     19  
+IHF_70                   1.0000     19  IHF_71                   1.0000     19  
+IHF_72                   1.0000     19  IHF_73                   1.0000     19  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme IHF/ri_sites.fasta -oc IHF/./ -mod oops -nmotifs 1 -minw 10 -maxw 16 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           10    maxw=           16
+nsites: minsites=       74    maxsites=       74    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            1480    N=              74
+sample: seed=           10    hsfrac=          0
+        searchsize=   1480    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.339 C 0.159 G 0.142 T 0.359 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WWDATCAWTHWVTTA MEME-1	width =  15  sites =  74  llr = 295  E-value = 9.4e-039
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WWDATCAWTHWVTTA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  444622742343126
+pos.-specific     C  11:116112222:11
+probability       G  12212::22113111
+matrix            T  444351245431762
+
+         bits    2.0                
+                 1.8                
+                 1.6                
+                 1.4                
+Relative         1.2                
+Entropy          1.0       *        
+(5.7 bits)       0.8      **     *  
+                 0.6    * **     * *
+                 0.4    * **     ***
+                 0.2 *********** ***
+                 0.0 ---------------
+
+Multilevel           TTAATCATTTAATTA
+consensus            AATTAATAAATG  T
+sequence               G G    C C   
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDATCAWTHWVTTA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+IHF_49                        5  4.44e-08       tttC AATATCATTTAAtta           
+IHF_8                         2  1.02e-06          t aaAATCAATAACTTA ttc       
+IHF_56                        2  2.20e-06          t aaTAACAATAAATTA aaa       
+IHF_61                        2  3.62e-06          t ttAATCATCTAATTT gac       
+IHF_3                         2  1.07e-05          t atAATCAGTACGTTA cca       
+IHF_65                        2  2.39e-05          a aaGAACAATTGGTTA taa       
+IHF_2                        40  2.39e-05 TAATATAACG AGTTACATTTAGTTA CATGTTTAAc
+IHF_73                        3  4.96e-05         ag tTTAACTATTTGTTt ta        
+IHF_1                        10  4.96e-05  tttATATGC ATTATTAGTAAGTTA TCACCATTTg
+IHF_31                        2  5.91e-05          t gtTATCAACAAGTTA tca       
+IHF_37                        2  8.32e-05          a aaAAACAACAATTTA tat       
+IHF_23                        4  8.32e-05        tta ATTTACAGTCTGTta t         
+IHF_30                        3  1.15e-04         ac tGAATCAGGCTGTTa at        
+IHF_9                         2  1.15e-04          t aaTTTCAGTCATTTA ata       
+IHF_4                         3  1.58e-04         ag aTTCTCAGTATGTTA ggg       
+IHF_71                        2  1.84e-04          g atTTTCAAATTATTC gat       
+IHF_45                        2  3.33e-04          t gaTATCAATGGCTTA tca       
+IHF_34                        2  3.33e-04          g taAATCAGGTAGTTG gcg       
+IHF_6                         2  3.33e-04          g aaTTGCAATTTATTG AATttg    
+IHF_63                        4  5.06e-04        gag TAATTCATTGATTca a         
+IHF_47                        5  5.06e-04       ctgC AAAACCATACCCtta           
+IHF_68                        2  5.79e-04          c atTATCTAACAATGA gat       
+IHF_69                        2  7.54e-04          c ttTATAAATCAAAAA gat       
+IHF_64                        3  7.54e-04         ct tTAATTTATAGATTt ca        
+IHF_16                        2  7.54e-04          t gtAATCAAGCACTAA ggg       
+IHF_50                        4  8.58e-04        taa TGAACCAACTGCTta c         
+IHF_10                        2  8.58e-04          t tcAGTCATTTAATAA aga       
+IHF_57                        2  9.73e-04          c tgTAACCTGTTGTTA att       
+IHF_53                        2  9.73e-04          g aaGAAACTTTTGTTA aag       
+IHF_43                        5  9.73e-04       caaC AGAATCAATAATgtt           
+IHF_0                         2  9.73e-04          t taACTCATTGATTTT aat       
+IHF_60                        3  1.25e-03         tc aTTTGTTTTTCATTa gg        
+IHF_36                        2  1.25e-03          c ttTTGAAATTCATCA atc       
+IHF_40                        5  1.58e-03       ggcT AATAGATTTATTttt           
+IHF_42                        5  2.00e-03       ctgC TGTTTAATATGCttt           
+IHF_33                        2  2.24e-03          t ttTATCCGAATGTAA gaa       
+IHF_22                        4  2.50e-03        att TTAAGTTTATGATtt t         
+IHF_20                        2  2.50e-03          c tgAAGCATCCCGTGA ccg       
+IHF_7                         4  2.79e-03        aat TTGCACATTTTTGTA Ggcc      
+IHF_46                        3  3.11e-03         tt tGGATAATCAAATAt tt        
+IHF_27                        3  3.84e-03         ta tGATGATTTTTATGa gt        
+IHF_5                         5  4.72e-03       tatA TCGAACAAGGACTTt ca        
+IHF_59                        3  5.22e-03         gc aACAAAACTTGATTa ac        
+IHF_58                        3  5.76e-03         ca cCATTCATGTTATTc tc        
+IHF_26                        3  5.76e-03         at tTATACAAATCAGCa at        
+IHF_70                        3  6.98e-03         gc gAATGAATAGTTTTa ct        
+IHF_51                        2  6.98e-03          a gtTGACAAAAGGTTA tag       
+IHF_41                        2  6.98e-03          g taTAGCAACTGCGGA aaa       
+IHF_38                        3  6.98e-03         ta gAGATCAAGCCTTAa cg        
+IHF_32                        2  7.67e-03          g cgATTCAGCACCTTA cct       
+IHF_52                        2  1.01e-02          t ttGTTAAAGTTGACA aaa       
+IHF_39                        2  1.01e-02          t tgATGAATTTCAAAA gac       
+IHF_18                        2  1.10e-02          c aaTCGCAACTGTTAA caa       
+IHF_29                        4  1.20e-02        cgg CTTACTATTTGGTtc g         
+IHF_72                        4  1.82e-02        cca ATAATCTCATTCTgg c         
+IHF_55                        5  1.82e-02       catC TCGAAAAATCAAgga           
+IHF_25                        4  1.97e-02        tat CAGACAATTCCGTga c         
+IHF_17                        4  1.97e-02        gag TAATTCTCTGACTct t         
+IHF_54                        3  2.13e-02         gt tGATATTTAAAGGTa tt        
+IHF_19                        2  2.48e-02          c gcAATCAGCCTGTCT gtt       
+IHF_14                        5  2.48e-02       ctgC ATGTTCCTCAAAgaa           
+IHF_62                        4  3.09e-02        tta TTGATTATAAAGGgc t         
+IHF_67                        2  3.32e-02          t taGAACACGCTGAAT aaa       
+IHF_11                        2  3.32e-02          a caAACAATGCTTTAT gaa       
+IHF_66                        5  3.56e-02       tttA TAGAGTAAAAACaat           
+IHF_44                        3  3.56e-02         tt tTCATCTCGTTGATt cc        
+IHF_13                        3  4.07e-02         ca aTTGTAAGTGCATGt aa        
+IHF_48                        2  4.64e-02          g aaAAGTACGGCATTG ata       
+IHF_28                        6  5.61e-02      aacTT AAGGGTTTTCAAata           
+IHF_24                        4  6.70e-02        gca CCGTGAAAAATCTca t         
+IHF_35                        5  9.80e-02       cgcC ATAAGCCTGATCctg           
+IHF_15                        2  1.31e-01          c ttCCTCTTTTTCAAC agc       
+IHF_21                        2  1.75e-01          g gtTACCTGCGTGCTT ctg       
+IHF_12                        2  2.63e-01          c ccTTCCTTATTAGCC gct       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDATCAWTHWVTTA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+IHF_49                            4.4e-08  4_[+1]
+IHF_8                               1e-06  1_[+1]_3
+IHF_56                            2.2e-06  1_[+1]_3
+IHF_61                            3.6e-06  1_[+1]_3
+IHF_3                             1.1e-05  1_[+1]_3
+IHF_65                            2.4e-05  1_[+1]_3
+IHF_2                             2.4e-05  39_[+1]_12
+IHF_73                              5e-05  2_[+1]_2
+IHF_1                               5e-05  9_[+1]_12
+IHF_31                            5.9e-05  1_[+1]_3
+IHF_37                            8.3e-05  1_[+1]_3
+IHF_23                            8.3e-05  3_[+1]_1
+IHF_30                            0.00012  2_[+1]_2
+IHF_9                             0.00012  1_[+1]_3
+IHF_4                             0.00016  2_[+1]_3
+IHF_71                            0.00018  1_[+1]_3
+IHF_45                            0.00033  1_[+1]_3
+IHF_34                            0.00033  1_[+1]_3
+IHF_6                             0.00033  1_[+1]_6
+IHF_63                            0.00051  3_[+1]_1
+IHF_47                            0.00051  4_[+1]
+IHF_68                            0.00058  1_[+1]_3
+IHF_69                            0.00075  1_[+1]_3
+IHF_64                            0.00075  2_[+1]_2
+IHF_16                            0.00075  1_[+1]_3
+IHF_50                            0.00086  3_[+1]_1
+IHF_10                            0.00086  1_[+1]_3
+IHF_57                            0.00097  1_[+1]_3
+IHF_53                            0.00097  1_[+1]_3
+IHF_43                            0.00097  4_[+1]
+IHF_0                             0.00097  1_[+1]_3
+IHF_60                             0.0012  2_[+1]_2
+IHF_36                             0.0012  1_[+1]_3
+IHF_40                             0.0016  4_[+1]
+IHF_42                              0.002  4_[+1]
+IHF_33                             0.0022  1_[+1]_3
+IHF_22                             0.0025  3_[+1]_1
+IHF_20                             0.0025  1_[+1]_3
+IHF_7                              0.0028  3_[+1]_4
+IHF_46                             0.0031  2_[+1]_2
+IHF_27                             0.0038  2_[+1]_2
+IHF_5                              0.0047  4_[+1]_2
+IHF_59                             0.0052  2_[+1]_2
+IHF_58                             0.0058  2_[+1]_2
+IHF_26                             0.0058  2_[+1]_2
+IHF_70                              0.007  2_[+1]_2
+IHF_51                              0.007  1_[+1]_3
+IHF_41                              0.007  1_[+1]_3
+IHF_38                              0.007  2_[+1]_2
+IHF_32                             0.0077  1_[+1]_3
+IHF_52                               0.01  1_[+1]_3
+IHF_39                               0.01  1_[+1]_3
+IHF_18                              0.011  1_[+1]_3
+IHF_29                              0.012  3_[+1]_1
+IHF_72                              0.018  3_[+1]_1
+IHF_55                              0.018  4_[+1]
+IHF_25                               0.02  3_[+1]_1
+IHF_17                               0.02  3_[+1]_1
+IHF_54                              0.021  2_[+1]_2
+IHF_19                              0.025  1_[+1]_3
+IHF_14                              0.025  4_[+1]
+IHF_62                              0.031  3_[+1]_1
+IHF_67                              0.033  1_[+1]_3
+IHF_11                              0.033  1_[+1]_3
+IHF_66                              0.036  4_[+1]
+IHF_44                              0.036  2_[+1]_2
+IHF_13                              0.041  2_[+1]_2
+IHF_48                              0.046  1_[+1]_3
+IHF_28                              0.056  5_[+1]
+IHF_24                              0.067  3_[+1]_1
+IHF_35                              0.098  4_[+1]
+IHF_15                               0.13  1_[+1]_3
+IHF_21                               0.18  1_[+1]_3
+IHF_12                               0.26  1_[+1]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDATCAWTHWVTTA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WWDATCAWTHWVTTA width=15 seqs=74
+IHF_49                   (    5) AATATCATTTAATTA  1 
+IHF_8                    (    2) AAAATCAATAACTTA  1 
+IHF_56                   (    2) AATAACAATAAATTA  1 
+IHF_61                   (    2) TTAATCATCTAATTT  1 
+IHF_3                    (    2) ATAATCAGTACGTTA  1 
+IHF_65                   (    2) AAGAACAATTGGTTA  1 
+IHF_2                    (   40) AGTTACATTTAGTTA  1 
+IHF_73                   (    3) TTTAACTATTTGTTT  1 
+IHF_1                    (   10) ATTATTAGTAAGTTA  1 
+IHF_31                   (    2) GTTATCAACAAGTTA  1 
+IHF_37                   (    2) AAAAACAACAATTTA  1 
+IHF_23                   (    4) ATTTACAGTCTGTTA  1 
+IHF_30                   (    3) TGAATCAGGCTGTTA  1 
+IHF_9                    (    2) AATTTCAGTCATTTA  1 
+IHF_4                    (    3) ATTCTCAGTATGTTA  1 
+IHF_71                   (    2) ATTTTCAAATTATTC  1 
+IHF_45                   (    2) GATATCAATGGCTTA  1 
+IHF_34                   (    2) TAAATCAGGTAGTTG  1 
+IHF_6                    (    2) AATTGCAATTTATTG  1 
+IHF_63                   (    4) TAATTCATTGATTCA  1 
+IHF_47                   (    5) AAAACCATACCCTTA  1 
+IHF_68                   (    2) ATTATCTAACAATGA  1 
+IHF_69                   (    2) TTTATAAATCAAAAA  1 
+IHF_64                   (    3) TTAATTTATAGATTT  1 
+IHF_16                   (    2) GTAATCAAGCACTAA  1 
+IHF_50                   (    4) TGAACCAACTGCTTA  1 
+IHF_10                   (    2) TCAGTCATTTAATAA  1 
+IHF_57                   (    2) TGTAACCTGTTGTTA  1 
+IHF_53                   (    2) AAGAAACTTTTGTTA  1 
+IHF_43                   (    5) AGAATCAATAATGTT  1 
+IHF_0                    (    2) TAACTCATTGATTTT  1 
+IHF_60                   (    3) ATTTGTTTTTCATTA  1 
+IHF_36                   (    2) TTTTGAAATTCATCA  1 
+IHF_40                   (    5) AATAGATTTATTTTT  1 
+IHF_42                   (    5) TGTTTAATATGCTTT  1 
+IHF_33                   (    2) TTTATCCGAATGTAA  1 
+IHF_22                   (    4) TTAAGTTTATGATTT  1 
+IHF_20                   (    2) TGAAGCATCCCGTGA  1 
+IHF_7                    (    4) TTGCACATTTTTGTA  1 
+IHF_46                   (    3) TGGATAATCAAATAT  1 
+IHF_27                   (    3) TGATGATTTTTATGA  1 
+IHF_5                    (    5) TCGAACAAGGACTTT  1 
+IHF_59                   (    3) AACAAAACTTGATTA  1 
+IHF_58                   (    3) CCATTCATGTTATTC  1 
+IHF_26                   (    3) TTATACAAATCAGCA  1 
+IHF_70                   (    3) GAATGAATAGTTTTA  1 
+IHF_51                   (    2) GTTGACAAAAGGTTA  1 
+IHF_41                   (    2) TATAGCAACTGCGGA  1 
+IHF_38                   (    3) GAGATCAAGCCTTAA  1 
+IHF_32                   (    2) CGATTCAGCACCTTA  1 
+IHF_52                   (    2) TTGTTAAAGTTGACA  1 
+IHF_39                   (    2) TGATGAATTTCAAAA  1 
+IHF_18                   (    2) AATCGCAACTGTTAA  1 
+IHF_29                   (    4) CTTACTATTTGGTTC  1 
+IHF_72                   (    4) ATAATCTCATTCTGG  1 
+IHF_55                   (    5) TCGAAAAATCAAGGA  1 
+IHF_25                   (    4) CAGACAATTCCGTGA  1 
+IHF_17                   (    4) TAATTCTCTGACTCT  1 
+IHF_54                   (    3) TGATATTTAAAGGTA  1 
+IHF_19                   (    2) GCAATCAGCCTGTCT  1 
+IHF_14                   (    5) ATGTTCCTCAAAGAA  1 
+IHF_62                   (    4) TTGATTATAAAGGGC  1 
+IHF_67                   (    2) TAGAACACGCTGAAT  1 
+IHF_11                   (    2) CAAACAATGCTTTAT  1 
+IHF_66                   (    5) TAGAGTAAAAACAAT  1 
+IHF_44                   (    3) TTCATCTCGTTGATT  1 
+IHF_13                   (    3) ATTGTAAGTGCATGT  1 
+IHF_48                   (    2) AAAAGTACGGCATTG  1 
+IHF_28                   (    6) AAGGGTTTTCAAATA  1 
+IHF_24                   (    4) CCGTGAAAAATCTCA  1 
+IHF_35                   (    5) ATAAGCCTGATCCTG  1 
+IHF_15                   (    2) TTCCTCTTTTTCAAC  1 
+IHF_21                   (    2) GTTACCTGCGTGCTT  1 
+IHF_12                   (    2) CCTTCCTTATTAGCC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDATCAWTHWVTTA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 15 n= 444 bayes= 2.32193 E= 9.4e-039 
+    57   -142   -123     81 
+    51   -142    -65     67 
+    67   -265    -33     57 
+   127   -191   -223     21 
+   -19   -142    -23     94 
+   -19    135  -1285    -86 
+   157   -191  -1285    -28 
+    51   -165    -65     72 
+   -28    -65    -53     90 
+    14    -33   -106     72 
+    51    -65    -77     46 
+    40    -33     35    -73 
+  -119   -323   -106    160 
+   -49   -123   -106    127 
+   131   -165   -191     -2 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDATCAWTHWVTTA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 15 nsites= 74 E= 9.4e-039 
+ 0.364865  0.094595  0.108108  0.432432 
+ 0.351351  0.094595  0.162162  0.391892 
+ 0.391892  0.040541  0.202703  0.364865 
+ 0.594595  0.067568  0.054054  0.283784 
+ 0.216216  0.094595  0.216216  0.472973 
+ 0.216216  0.648649  0.000000  0.135135 
+ 0.729730  0.067568  0.000000  0.202703 
+ 0.351351  0.081081  0.162162  0.405405 
+ 0.202703  0.162162  0.175676  0.459459 
+ 0.270270  0.202703  0.121622  0.405405 
+ 0.351351  0.162162  0.148649  0.337838 
+ 0.324324  0.202703  0.324324  0.148649 
+ 0.108108  0.027027  0.121622  0.743243 
+ 0.175676  0.108108  0.121622  0.594595 
+ 0.608108  0.081081  0.067568  0.243243 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WWDATCAWTHWVTTA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][TA][ATG][AT][TAG][CA][AT][TA][TA][TAC][AT][AGC]TT[AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.29 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+IHF_0                            4.86e-03  19
+IHF_1                            1.09e-03  9_[+1(4.96e-05)]_12
+IHF_2                            1.24e-03  39_[+1(2.39e-05)]_12
+IHF_3                            5.36e-05  1_[+1(1.07e-05)]_3
+IHF_4                            9.49e-04  20
+IHF_5                            3.26e-02  21
+IHF_6                            2.66e-03  22
+IHF_7                            2.21e-02  22
+IHF_8                            5.10e-06  1_[+1(1.02e-06)]_3
+IHF_9                            5.77e-04  19
+IHF_10                           4.28e-03  19
+IHF_11                           5.50e-03  19
+IHF_12                           7.83e-01  19
+IHF_13                           1.88e-01  19
+IHF_14                           1.18e-01  19
+IHF_15                           5.04e-01  19
+IHF_16                           3.76e-03  19
+IHF_17                           9.48e-02  19
+IHF_18                           5.39e-02  19
+IHF_19                           1.18e-01  19
+IHF_20                           1.24e-02  19
+IHF_21                           6.18e-01  19
+IHF_22                           2.20e-03  19
+IHF_23                           4.16e-04  3_[+1(8.32e-05)]_1
+IHF_24                           2.93e-01  19
+IHF_25                           9.48e-02  19
+IHF_26                           2.85e-02  19
+IHF_27                           1.91e-02  19
+IHF_28                           2.93e-01  20
+IHF_29                           5.87e-02  19
+IHF_30                           5.77e-04  19
+IHF_31                           2.96e-04  1_[+1(5.91e-05)]_3
+IHF_32                           3.78e-02  19
+IHF_33                           1.11e-02  19
+IHF_34                           1.67e-03  19
+IHF_35                           4.03e-01  19
+IHF_36                           6.21e-03  19
+IHF_37                           4.16e-04  1_[+1(8.32e-05)]_3
+IHF_38                           3.44e-02  19
+IHF_39                           4.94e-02  19
+IHF_40                           7.89e-03  19
+IHF_41                           3.44e-02  19
+IHF_42                           9.94e-03  19
+IHF_43                           4.86e-03  19
+IHF_44                           1.66e-01  19
+IHF_45                           1.67e-03  19
+IHF_46                           1.55e-02  19
+IHF_47                           2.53e-03  19
+IHF_48                           2.12e-01  19
+IHF_49                           2.22e-07  4_[+1(4.44e-08)]
+IHF_50                           4.28e-03  19
+IHF_51                           3.44e-02  19
+IHF_52                           4.94e-02  19
+IHF_53                           4.86e-03  19
+IHF_54                           5.87e-02  19
+IHF_55                           8.78e-02  19
+IHF_56                           1.10e-05  1_[+1(2.20e-06)]_3
+IHF_57                           4.86e-03  19
+IHF_58                           2.85e-02  19
+IHF_59                           2.58e-02  19
+IHF_60                           6.21e-03  19
+IHF_61                           1.81e-05  1_[+1(3.62e-06)]_3
+IHF_62                           1.45e-01  19
+IHF_63                           2.53e-03  19
+IHF_64                           3.76e-03  19
+IHF_65                           1.19e-04  1_[+1(2.39e-05)]_3
+IHF_66                           1.66e-01  19
+IHF_67                           1.55e-01  19
+IHF_68                           2.89e-03  19
+IHF_69                           3.76e-03  19
+IHF_70                           3.44e-02  19
+IHF_71                           9.22e-04  19
+IHF_72                           7.51e-02  19
+IHF_73                           2.48e-04  2_[+1(4.96e-05)]_2
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************

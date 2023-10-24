@@ -1,0 +1,377 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.0 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= OxyR/ri_sites.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+OxyR_0                   1.0000     23  OxyR_1                   1.0000     23  
+OxyR_2                   1.0000     23  OxyR_3                   1.0000     23  
+OxyR_4                   1.0000     23  OxyR_5                   1.0000     23  
+OxyR_6                   1.0000     23  OxyR_7                   1.0000     23  
+OxyR_8                   1.0000     23  OxyR_9                   1.0000     23  
+OxyR_10                  1.0000     23  OxyR_11                  1.0000     23  
+OxyR_12                  1.0000     23  OxyR_13                  1.0000     23  
+OxyR_14                  1.0000     23  OxyR_15                  1.0000     23  
+OxyR_16                  1.0000     23  OxyR_17                  1.0000     23  
+OxyR_18                  1.0000     23  OxyR_19                  1.0000     23  
+OxyR_20                  1.0000     23  OxyR_21                  1.0000     23  
+OxyR_22                  1.0000     23  OxyR_23                  1.0000     23  
+OxyR_24                  1.0000     23  OxyR_25                  1.0000     23  
+OxyR_26                  1.0000     23  OxyR_27                  1.0000     23  
+OxyR_28                  1.0000     23  OxyR_29                  1.0000     23  
+OxyR_30                  1.0000     23  OxyR_31                  1.0000     52  
+OxyR_32                  1.0000     23  OxyR_33                  1.0000     23  
+OxyR_34                  1.0000     23  OxyR_35                  1.0000     23  
+OxyR_36                  1.0000     23  OxyR_37                  1.0000     23  
+OxyR_38                  1.0000     23  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme OxyR/ri_sites.fasta -oc OxyR/./ -mod oops -nmotifs 1 -minw 14 -maxw 20 -bfile ../U00096.3.bfile -dna -maxsize 100000 -norand -seed 10 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           14    maxw=           20
+nsites: minsites=       39    maxsites=       39    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=             926    N=              39
+sample: seed=           10    hsfrac=          0
+        searchsize=    926    norand=        yes    csites=       1000
+Letter frequencies in dataset:
+A 0.324 C 0.184 G 0.161 T 0.332 
+Background letter frequencies (from file ../U00096.3.bfile):
+A 0.246 C 0.254 G 0.254 T 0.246 
+Background model order: 4
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TRATMRDYWWWAHYTATCDM MEME-1	width =  20  sites =  39  llr = 198  E-value = 1.3e-023
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TRATMRDYWWWAHYTATCDM MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  34625321433531251245
+pos.-specific     C  2211312311123612:513
+probability       G  :21:163111211111113:
+matrix            T  62272:35454233628232
+
+         bits    2.0                     
+                 1.8                     
+                 1.6                     
+                 1.4                     
+Relative         1.2                     
+Entropy          1.0                 *   
+(7.3 bits)       0.8                 *   
+                 0.6 * ** *        * *   
+                 0.4 * ** *   *   ** *  *
+                 0.2 ****** *************
+                 0.0 --------------------
+
+Multilevel           TAATAGTTATTACCTATCAA
+consensus            AGTACAGCTAA ATA  TGC
+sequence                 T A     T     TT
+                                         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRATMRDYWWWAHYTATCDM MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site      
+-------------             ----- ---------            --------------------
+OxyR_4                        3  3.14e-08         ag tAAAAGGCATAACCTATCac t         
+OxyR_38                       3  4.56e-07         at tAATAGATAATGCCAATCaa a         
+OxyR_7                        3  5.74e-06         ag tTATAGCTTTTAGCAATTaa t         
+OxyR_1                        3  1.47e-05         tg cTATCGGGTAAACCTATCgc t         
+OxyR_8                        3  1.71e-05         ga aAGTAGGTTTAACCTGTTgc a         
+OxyR_17                       3  2.29e-05         at tGATAGTTTATATTCATGta a         
+OxyR_11                       3  2.29e-05         ta tGATTAGCAATCATTATCat t         
+OxyR_3                        3  2.65e-05         at cGATAAGTTTTACCTTACaa c         
+OxyR_34                       3  3.05e-05         gg tAATAGGCACAGGCTATCtt a         
+OxyR_20                       3  3.52e-05         ac cTATCGCCATGAACTATCgt g         
+OxyR_0                        3  4.63e-05         at tGATAATGATAACCAATAtc a         
+OxyR_35                       3  6.06e-05         tt aAATAGTCATTTTCAATAca a         
+OxyR_18                       3  7.88e-05         ta tGTAAGATCTCAACTATCgc a         
+OxyR_31                      26  1.67e-04 AATTCAGGCG TAATCAACAACCCTTGTCTA TAGTtag   
+OxyR_19                       3  2.67e-04         ga tAATCGTTCATTGCTATTct a         
+OxyR_10                       3  2.67e-04         gc tAATGCGTTTCCATTATCaa a         
+OxyR_13                       3  3.35e-04         aa tAATTGCTACAAATTTGTaa c         
+OxyR_5                        3  3.75e-04         tt tTTCTGATTTGACCTCTCac a         
+OxyR_2                        3  4.67e-04         ag aAATCACCACAATCCATTta a         
+OxyR_36                       3  5.78e-04         tt tTATCGATCGTTTATATCga t         
+OxyR_32                       4  1.07e-03        agc AATTAGTTCTTCTTCCTcac           
+OxyR_6                        3  1.30e-03         gc tGCACTTTTTTACCTATCtc t         
+OxyR_25                       1  1.43e-03          . taaTCGTAATGAATATGAGA agt       
+OxyR_15                       3  1.43e-03         ag tCATAATCCTGGTCTATCag a         
+OxyR_9                        2  1.43e-03          g tcATAGGTAAGAGCTTAGAt ca        
+OxyR_14                       3  2.26e-03         ag aATAAAACGATCAATATCta t         
+OxyR_12                       3  2.47e-03         gc aACATGATTTCATCTCTTtc a         
+OxyR_22                       3  4.13e-03         tc tGTTAGCAATAACAGGTTga t         
+OxyR_37                       4  8.35e-03        ctg CGACTATCATACCTATTgaa           
+OxyR_33                       3  8.35e-03         at cCGTGGATTAATTCAATTat a         
+OxyR_21                       2  8.99e-03          a aaGTTATTTCCATTTCTGCa at        
+OxyR_28                       4  1.11e-02        cgg TTACTGTATATTCCTCAagc           
+OxyR_16                       3  1.37e-02         at aAAACAGATTGTTGTCTGga a         
+OxyR_30                       1  1.79e-02          . cgtAACGGTAACACTGTAGA ggg       
+OxyR_27                       4  3.46e-02        ctc TTGTCCGTGCAATAGCTcaa           
+OxyR_26                       3  4.77e-02         ta aCTCTGGAGGAAACTGTTtt g         
+OxyR_29                       1  5.02e-02          . tcgGCATGAATAATTTGCGC ttg       
+OxyR_23                       3  5.83e-02         ac aCATAGCCGGTGCTATACtt a         
+OxyR_24                       4  6.41e-02        agg CATAAATCTATGAGGAGaga           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRATMRDYWWWAHYTATCDM MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+OxyR_4                            3.1e-08  2_[+1]_1
+OxyR_38                           4.6e-07  2_[+1]_1
+OxyR_7                            5.7e-06  2_[+1]_1
+OxyR_1                            1.5e-05  2_[+1]_1
+OxyR_8                            1.7e-05  2_[+1]_1
+OxyR_17                           2.3e-05  2_[+1]_1
+OxyR_11                           2.3e-05  2_[+1]_1
+OxyR_3                            2.6e-05  2_[+1]_1
+OxyR_34                           3.1e-05  2_[+1]_1
+OxyR_20                           3.5e-05  2_[+1]_1
+OxyR_0                            4.6e-05  2_[+1]_1
+OxyR_35                           6.1e-05  2_[+1]_1
+OxyR_18                           7.9e-05  2_[+1]_1
+OxyR_31                           0.00017  25_[+1]_7
+OxyR_19                           0.00027  2_[+1]_1
+OxyR_10                           0.00027  2_[+1]_1
+OxyR_13                           0.00034  2_[+1]_1
+OxyR_5                            0.00037  2_[+1]_1
+OxyR_2                            0.00047  2_[+1]_1
+OxyR_36                           0.00058  2_[+1]_1
+OxyR_32                            0.0011  3_[+1]
+OxyR_6                             0.0013  2_[+1]_1
+OxyR_25                            0.0014  [+1]_3
+OxyR_15                            0.0014  2_[+1]_1
+OxyR_9                             0.0014  1_[+1]_2
+OxyR_14                            0.0023  2_[+1]_1
+OxyR_12                            0.0025  2_[+1]_1
+OxyR_22                            0.0041  2_[+1]_1
+OxyR_37                            0.0084  3_[+1]
+OxyR_33                            0.0084  2_[+1]_1
+OxyR_21                             0.009  1_[+1]_2
+OxyR_28                             0.011  3_[+1]
+OxyR_16                             0.014  2_[+1]_1
+OxyR_30                             0.018  [+1]_3
+OxyR_27                             0.035  3_[+1]
+OxyR_26                             0.048  2_[+1]_1
+OxyR_29                              0.05  [+1]_3
+OxyR_23                             0.058  2_[+1]_1
+OxyR_24                             0.064  3_[+1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRATMRDYWWWAHYTATCDM MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TRATMRDYWWWAHYTATCDM width=20 seqs=39
+OxyR_4                   (    3) TAAAAGGCATAACCTATCAC  1 
+OxyR_38                  (    3) TAATAGATAATGCCAATCAA  1 
+OxyR_7                   (    3) TTATAGCTTTTAGCAATTAA  1 
+OxyR_1                   (    3) CTATCGGGTAAACCTATCGC  1 
+OxyR_8                   (    3) AAGTAGGTTTAACCTGTTGC  1 
+OxyR_17                  (    3) TGATAGTTTATATTCATGTA  1 
+OxyR_11                  (    3) TGATTAGCAATCATTATCAT  1 
+OxyR_3                   (    3) CGATAAGTTTTACCTTACAA  1 
+OxyR_34                  (    3) TAATAGGCACAGGCTATCTT  1 
+OxyR_20                  (    3) CTATCGCCATGAACTATCGT  1 
+OxyR_0                   (    3) TGATAATGATAACCAATATC  1 
+OxyR_35                  (    3) AAATAGTCATTTTCAATACA  1 
+OxyR_18                  (    3) TGTAAGATCTCAACTATCGC  1 
+OxyR_31                  (   26) TAATCAACAACCCTTGTCTA  1 
+OxyR_19                  (    3) TAATCGTTCATTGCTATTCT  1 
+OxyR_10                  (    3) TAATGCGTTTCCATTATCAA  1 
+OxyR_13                  (    3) TAATTGCTACAAATTTGTAA  1 
+OxyR_5                   (    3) TTTCTGATTTGACCTCTCAC  1 
+OxyR_2                   (    3) AAATCACCACAATCCATTTA  1 
+OxyR_36                  (    3) TTATCGATCGTTTATATCGA  1 
+OxyR_32                  (    4) AATTAGTTCTTCTTCCTCAC  1 
+OxyR_6                   (    3) TGCACTTTTTTACCTATCTC  1 
+OxyR_25                  (    1) TAATCGTAATGAATATGAGA  1 
+OxyR_15                  (    3) TCATAATCCTGGTCTATCAG  1 
+OxyR_9                   (    2) TCATAGGTAAGAGCTTAGAT  1 
+OxyR_14                  (    3) AATAAAACGATCAATATCTA  1 
+OxyR_12                  (    3) AACATGATTTCATCTCTTTC  1 
+OxyR_22                  (    3) TGTTAGCAATAACAGGTTGA  1 
+OxyR_37                  (    4) CGACTATCATACCTATTGAA  1 
+OxyR_33                  (    3) CCGTGGATTAATTCAATTAT  1 
+OxyR_21                  (    2) AAGTTATTTCCATTTCTGCA  1 
+OxyR_28                  (    4) TTACTGTATATTCCTCAAGC  1 
+OxyR_16                  (    3) AAAACAGATTGTTGTCTGGA  1 
+OxyR_30                  (    1) CGTAACGGTAACACTGTAGA  1 
+OxyR_27                  (    4) TTGTCCGTGCAATAGCTCAA  1 
+OxyR_26                  (    3) ACTCTGGAGGAAACTGTTTT  1 
+OxyR_29                  (    1) TCGGCATGAATAATTTGCGC  1 
+OxyR_23                  (    3) ACATAGCCGGTGCTATACTT  1 
+OxyR_24                  (    4) CATAAATCTATGAGGAGAGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRATMRDYWWWAHYTATCDM MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 20 n= 185 bayes= 1.90442 E= 1.3e-023 
+     6    -50  -1193    120 
+    83    -72    -14    -45 
+   132   -231    -99    -26 
+   -26   -131   -331    144 
+    91     15   -231    -26 
+    32   -172    122   -326 
+   -26    -72     28     44 
+   -94     28   -131     91 
+    64    -99   -131     64 
+    44    -99   -172     91 
+    44    -99    -72     64 
+   113    -50    -99    -68 
+    20     39   -131     20 
+  -126    115   -231     20 
+   -26   -172   -172    138 
+   106    -50    -99    -45 
+  -126  -1193   -131    169 
+   -68     94    -99     -9 
+    55   -172     28      6 
+    99     15   -331    -26 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRATMRDYWWWAHYTATCDM MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 39 E= 1.3e-023 
+ 0.256410  0.179487  0.000000  0.564103 
+ 0.435897  0.153846  0.230769  0.179487 
+ 0.615385  0.051282  0.128205  0.205128 
+ 0.205128  0.102564  0.025641  0.666667 
+ 0.461538  0.282051  0.051282  0.205128 
+ 0.307692  0.076923  0.589744  0.025641 
+ 0.205128  0.153846  0.307692  0.333333 
+ 0.128205  0.307692  0.102564  0.461538 
+ 0.384615  0.128205  0.102564  0.384615 
+ 0.333333  0.128205  0.076923  0.461538 
+ 0.333333  0.128205  0.153846  0.384615 
+ 0.538462  0.179487  0.128205  0.153846 
+ 0.282051  0.333333  0.102564  0.282051 
+ 0.102564  0.564103  0.051282  0.282051 
+ 0.205128  0.076923  0.076923  0.641026 
+ 0.512821  0.179487  0.128205  0.179487 
+ 0.102564  0.000000  0.102564  0.794872 
+ 0.153846  0.487179  0.128205  0.230769 
+ 0.358974  0.076923  0.307692  0.256410 
+ 0.487179  0.282051  0.025641  0.205128 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TRATMRDYWWWAHYTATCDM MEME-1 regular expression
+--------------------------------------------------------------------------------
+[TA][AG][AT][TA][ACT][GA][TGA][TC][AT][TA][TA]A[CAT][CT][TA]AT[CT][AGT][ACT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.24 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+OxyR_0                           1.85e-04  2_[+1(4.63e-05)]_1
+OxyR_1                           5.89e-05  2_[+1(1.47e-05)]_1
+OxyR_2                           1.86e-03  23
+OxyR_3                           1.06e-04  2_[+1(2.65e-05)]_1
+OxyR_4                           1.26e-07  2_[+1(3.14e-08)]_1
+OxyR_5                           1.50e-03  23
+OxyR_6                           5.17e-03  23
+OxyR_7                           2.30e-05  2_[+1(5.74e-06)]_1
+OxyR_8                           6.84e-05  2_[+1(1.71e-05)]_1
+OxyR_9                           5.69e-03  23
+OxyR_10                          1.07e-03  23
+OxyR_11                          9.18e-05  2_[+1(2.29e-05)]_1
+OxyR_12                          9.86e-03  23
+OxyR_13                          1.34e-03  23
+OxyR_14                          9.02e-03  23
+OxyR_15                          5.69e-03  23
+OxyR_16                          5.38e-02  23
+OxyR_17                          9.18e-05  2_[+1(2.29e-05)]_1
+OxyR_18                          3.15e-04  2_[+1(7.88e-05)]_1
+OxyR_19                          1.07e-03  23
+OxyR_20                          1.41e-04  2_[+1(3.52e-05)]_1
+OxyR_21                          3.55e-02  23
+OxyR_22                          1.64e-02  23
+OxyR_23                          2.13e-01  23
+OxyR_24                          2.33e-01  23
+OxyR_25                          5.69e-03  23
+OxyR_26                          1.78e-01  23
+OxyR_27                          1.31e-01  23
+OxyR_28                          4.39e-02  23
+OxyR_29                          1.86e-01  23
+OxyR_30                          6.96e-02  23
+OxyR_31                          5.49e-03  52
+OxyR_32                          4.26e-03  23
+OxyR_33                          3.30e-02  23
+OxyR_34                          1.22e-04  2_[+1(3.05e-05)]_1
+OxyR_35                          2.42e-04  2_[+1(6.06e-05)]_1
+OxyR_36                          2.31e-03  23
+OxyR_37                          3.30e-02  23
+OxyR_38                          1.82e-06  2_[+1(4.56e-07)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: Laura-2.local
+
+********************************************************************************
