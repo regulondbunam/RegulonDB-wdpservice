@@ -48,3 +48,22 @@ def handle_file(category, tfbs, filename):
         return send_from_directory(tfbs_path, filename, as_attachment=True)
     else:
         return send_from_directory(tfbs_path, filename)
+
+# Nueva ruta para devolver el contenido del directorio del proyecto en formato JSON
+@meme_bp.route('/directory_content', methods=['GET'])
+def directory_content():
+    content = {}
+    for category in ['all_tfbs', 'confirmed_strong_tfbs']:
+        category_path = os.path.join(MEME_DOCS_PATH, category)
+        if os.path.exists(category_path):
+            content[category] = os.listdir(category_path)
+    return jsonify(content)
+
+# Nueva ruta para acceder al README.md
+@meme_bp.route('/readme', methods=['GET'])
+def readme():
+    readme_path = os.path.join(MEME_DOCS_PATH, 'README.md')
+    if not os.path.exists(readme_path):
+        abort(404)
+    
+    return send_from_directory(MEME_DOCS_PATH, 'README.md')
