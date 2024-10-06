@@ -1,9 +1,12 @@
-from flask import Blueprint, jsonify, render_template, send_from_directory, abort
+from flask import Blueprint, jsonify, render_template, send_from_directory, abort, request
 import os
 
-meme_bp = Blueprint('meme', __name__, url_prefix='/meme')
+meme_bp = Blueprint('meme', __name__, url_prefix='/wdps/meme')
 
-MEME_DOCS_PATH = os.path.join(os.path.dirname(__file__), '../..', 'docs', 'meme')
+MEME_DOCS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..', 'docs', 'meme'))
+
+def is_path_safe(base_directory, target_path):
+    return os.path.commonpath([base_directory]) == os.path.commonpath([base_directory, target_path])
 
 # Ruta para listar las categorías principales
 @meme_bp.route('/')
@@ -31,11 +34,17 @@ def list_tfbs_content(category, tfbs):
     files = os.listdir(tfbs_path)
     return render_template('meme/tfbs_list.html', category=category, tfbs=tfbs, files=files)
 
-# Ruta para descargar un archivo específico
+# Ruta única para ver o descargar un archivo específico
 @meme_bp.route('/<category>/<tfbs>/<filename>')
-def download_file(category, tfbs, filename):
+def handle_file(category, tfbs, filename):
     tfbs_path = os.path.join(MEME_DOCS_PATH, category, tfbs)
-    if not os.path.exists(os.path.join(tfbs_path, filename)):
+    file_path = os.path.abspath(os.path.join(tfbs_path, filename))
+    
+    if not os.path.exists(file_path) or not is_path_safe(MEME_DOCS_PATH, file_path):
         abort(404)
 
-    return send_from_directory(tfbs_path, filename, as_attachment=True)
+    # Determinar si la solicitud debe ver o descargar el archivo
+    if request.args.get('download') == 'true':
+        return send_from_directory(tfbs_path, filename, as_attachment=True)
+    else:
+        return send_from_directory(tfbs_path, filename)

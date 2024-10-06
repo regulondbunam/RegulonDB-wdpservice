@@ -8,7 +8,11 @@
     <h1>{{ tfbs }} - File List</h1>
     <ul>
         {% for file in files %}
-            <li><a href="{{ url_for('meme.download_file', category=category, tfbs=tfbs, filename=file) }}">{{ file }}</a></li>
+        <li>
+            {{ file }} 
+            <a href="{{ url_for('meme.handle_file', category=category, tfbs=tfbs, filename=file) }}">View</a> |
+            <a href="{{ url_for('meme.handle_file', category=category, tfbs=tfbs, filename=file, download='true') }}">Download</a>
+        </li>
         {% endfor %}
     </ul>
     <a href="{{ url_for('meme.list_category', category=category) }}">Back to {{ category }}</a>
