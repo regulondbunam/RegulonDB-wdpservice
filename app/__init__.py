@@ -1,12 +1,15 @@
 import os
 import ssl
-from flask import Flask, Response, send_file, request, render_template, make_response, jsonify
+import time
+from flask import Flask, Response, send_file, request, render_template, make_response, jsonify, abort
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
-from app.controllers.ecoli.gene import Gene_collection
 from app.processes_HT.ht_process import HTprocess
 from app.ht.dataset.datasets import DatasetsSearch
-from app.controllers.ecoli import collection_list
+from app.gramatical_tool.process_riset import process_file_content
+#from app.controllers.ecoli.gene import Gene_collection
+
+#from app.controllers.ecoli import collection_list
 
 
 app = Flask(__name__)
@@ -26,10 +29,80 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def index():
     return render_template('/home/index.html')
 
+
+#gramatical-tool prceses
+@app.route('/wdps/gramaticalTool/')
+def gramatical_tool():
+    """Devuelve un mensaje simple para confirmar que la API está funcionando."""
+    return "RegulonExplorer API gramaticaltool is running!"
+
+@app.route(
+    "/wdps/gramaticalTool/process/",
+    methods=['POST']
+)
+def process_riset_endpoint():
+    """
+    Procesa un archivo RISet.tsv.
+    Recibe un archivo .tsv vía multipart/form-data, lo procesa y devuelve
+    un JSON con 'stats' y 'options'.
+    """
+    client_host = request.remote_addr # Obtener la IP del cliente en Flask
+    print(f"Petición POST a /process/ recibida desde: {client_host}")
+    start_time = time.time()
+
+    # Flask maneja los archivos subidos a través de request.files
+    # El nombre 'risetFile' debe coincidir con el nombre del campo en el formulario multipart/form-data
+    if 'risetFile' not in request.files:
+        print("No se encontró el archivo 'risetFile' en la petición.")
+        abort(400, description="No se encontró el archivo 'risetFile'. Por favor, sube un archivo .tsv.")
+
+    riset_file = request.files['risetFile']
+
+    if not riset_file.filename or not riset_file.filename.lower().endswith(".tsv"):
+        print(f"Tipo de archivo inválido o sin nombre: {riset_file.filename}")
+        abort(400, description="Tipo de archivo inválido. Por favor sube un archivo .tsv con extensión.")
+
+    print(f"Procesando archivo: {riset_file.filename} (Content-Type: {riset_file.content_type})")
+
+    try:
+        # Flask UploadedFile objects tienen un atributo `stream` que es un objeto similar a un archivo.
+        # Esto es equivalente a `risetFile.file` de FastAPI.
+        result_data = process_file_content(riset_file.stream)
+
+        # Verificar si la función de procesamiento devolvió un error interno controlado
+        if isinstance(result_data, dict) and "error" in result_data:
+            error_detail = result_data['error']
+            print(f"Error durante el procesamiento del contenido del archivo: {error_detail}")
+            # Usamos 422: Unprocessable Content - El archivo se recibió pero la lógica falló
+            abort(422, description=f"Error procesando el archivo: {error_detail}")
+
+        # Verificar si el resultado tiene la estructura esperada {stats, options}
+        if not isinstance(result_data, dict) or "stats" not in result_data or "options" not in result_data:
+            print(f"Error: La función process_file_content no devolvió el formato esperado {{stats, options}}.")
+            abort(500, description="Error interno del servidor: formato de respuesta inesperado del procesamiento.")
+
+        end_time = time.time()
+        processing_time = end_time - start_time
+        num_regions = len(result_data.get("stats", []))
+        print(f"Archivo '{riset_file.filename}' procesado con éxito en {processing_time:.3f} segundos. {num_regions} regiones encontradas.")
+
+        # Éxito: Devolver el objeto completo con 'stats' y 'options'
+        return jsonify(result_data)
+
+    except Exception as e:
+        # Captura cualquier otro error inesperado
+        print(f"Error inesperado en el endpoint /process/: {type(e).__name__} - {e}")
+        import traceback
+        traceback.print_exc() # Imprimir el traceback completo para más detalle
+        abort(500, description=f"Error inesperado en el servidor durante el procesamiento.")
+    finally:
+        # Flask se encarga automáticamente de cerrar los archivos temporales de subida
+        # una vez que la solicitud ha terminado, por lo que no es necesario un `close()` explícito aquí.
+        pass
+
+
 # MEME collection
 # @app.route('/wdps/meme', defaults={'collection': None, 'tf': None, 'file_name': None})
-
-
 @app.route('/wdps/meme/')
 def meme_dir():
     route_script = __file__
@@ -191,13 +264,12 @@ def ecoli_page():
 
 @app.route('/wdps/ecoli/<collection_name>', methods=["GET", "POST"])
 def ecoli_collection_list(collection_name):
-    return collection_list(collection_name, gql_service, browser_url)
+    return "Service in maintenance sorry"
 
 
 @app.route('/wdps/ecoli/gene/<id>/<format>')
 def ecoli_gene_id(id, format):
-    collection = Gene_collection(gql_service, browser_url)
-    return collection.getGeneById(id, format)
+    return "Service in maintenance sorry"
 
 
 @app.route('/wdps/ecoli/dtt/<format>/<variables>')
