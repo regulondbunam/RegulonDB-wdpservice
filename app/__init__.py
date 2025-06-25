@@ -3,10 +3,8 @@ import ssl
 from flask import Flask, Response, send_file, request, render_template, make_response, jsonify
 from flask_cors import CORS
 from sgqlc.endpoint.http import HTTPEndpoint
-from app.controllers.ecoli.gene import Gene_collection
 from app.processes_HT.ht_process import HTprocess
 from app.ht.dataset.datasets import DatasetsSearch
-from app.controllers.ecoli import collection_list
 
 
 app = Flask(__name__)
@@ -191,13 +189,12 @@ def ecoli_page():
 
 @app.route('/wdps/ecoli/<collection_name>', methods=["GET", "POST"])
 def ecoli_collection_list(collection_name):
-    return collection_list(collection_name, gql_service, browser_url)
+    return "Service in maintenance sorry"
 
 
 @app.route('/wdps/ecoli/gene/<id>/<format>')
 def ecoli_gene_id(id, format):
-    collection = Gene_collection(gql_service, browser_url)
-    return collection.getGeneById(id, format)
+    return "Service in maintenance sorry"
 
 
 @app.route('/wdps/ecoli/dtt/<format>/<variables>')

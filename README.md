@@ -38,22 +38,12 @@ minimum requirements
 #### Install Dependencies server
 
 ```shell
-apt-get install -y wkhtmltopdf
+apt-get install wkhtmltopdf
 
 apt-get install xvfb
 
-apt-get install -y fonts-liberation libasound2 libnspr4 libnss3 wget xdg-utils
+apt-get install fonts-liberation libasound2 libnspr4 libnss3 wget xdg-utils
 
-wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt-get update
-sudo apt-get install libappindicator1
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-```
-
-It is important to know the version of chrome that has been installed, this to download the corresponding driver in the installation of the service, to know the version try the following command
-
-```shell
-    google-chrome --version
 ```
 
 ### Client
@@ -94,14 +84,6 @@ on Windows
 virtualenv venv
 
 ```
-**Step 4 activate Download chrome driver**
-Depending on the version of chrome installed on your server, download the corresponding driver.
-
-https://chromedriver.chromium.org/downloads
-
-Once downloaded, rename the file to "chromedriver" and move it to the folder inside the flask app/static/drivers project.
-
-This step is essential for processing images coming from RegulonDb-Browser.
 
 **Step 3 activate venv**
 on project directory
